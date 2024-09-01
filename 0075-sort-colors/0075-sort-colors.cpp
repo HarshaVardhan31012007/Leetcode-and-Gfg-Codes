@@ -13,12 +13,20 @@ public:
           tc++;
           i++;
         }
-        for(int i=0;i<zc;i++)
-        nums[i]=0;
-        for(int i=zc;i<zc+oc;i++)
+        i=0;
+        while(zc--){
+            nums[i]=0;
+            i++;
+        }
+       while(oc--){
         nums[i]=1;
-        for(int i=zc+oc;i<n;i++)
+        i++;
+       }
+       while(tc--){
         nums[i]=2;
+        i++;
+       }
+    
         
     }
 };
