@@ -1,18 +1,23 @@
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        sort(nums.begin(),nums.end());
-        int n=nums.size();
-        int ans=0;
-        int i=0;
-        while(i<n){
-            if((i+1<n)&&nums[i]==nums[i+1])
-            i+=2;
-            else{
-                ans=nums[i];
-                break;
-            }
+
+        unordered_map<int,int>freqmap;
+
+        for(int i=0;i<nums.size();i++)
+        {
+            int num=nums[i];
+            freqmap[num]=freqmap[num]+1;
         }
-        return ans;
+        
+        for(int i=0;i<nums.size();i++)
+        {   int num=nums[i];
+            if(freqmap[num]==1)
+            return num;
+        }
+
+        return -1;
+
     }
-};
+
+}; 
