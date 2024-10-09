@@ -10,7 +10,7 @@ void reverse(vector<int>&nums,int l,int h){
 
 }
 
-    void rotate(vector<int>& nums, int k) {
+    void rotate(vector<int>&nums, int k) {
         int n=nums.size();
         k=k%n;
         int l=0;
