@@ -42,14 +42,14 @@ public:
             int ans=binarysearch(0,pivotIndex,target,nums);
             return ans;
         }
-        // else if(target>=nums[pivotIndex+1]&&target<=nums[n-1]){
-        //     int ans=binarysearch(pivotIndex+1,n-1,target,nums);
-        //     return ans;
-        // }
-        else{
+        else if(pivotIndex+1<n&&target>=nums[pivotIndex+1]&&target<=nums[n-1]){
             int ans=binarysearch(pivotIndex+1,n-1,target,nums);
             return ans;
         }
+        // else{
+        //     int ans=binarysearch(pivotIndex+1,n-1,target,nums);
+        //     return ans;
+        // }
         return -1;
     }
 };
