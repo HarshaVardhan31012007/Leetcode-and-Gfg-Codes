@@ -10,13 +10,25 @@ class Solution {
   public:
 
     int missingNumber(int n, vector<int>& arr) {
-           int sum=n*(n+1)/2;
-           
-           for(int i=0;i<n-1;i++)
-          sum=sum-arr[i];
-           
-           return sum;
-        
+           sort(arr.begin(),arr.end());
+           int s=0;
+           int e=n-2;
+           int ansIndex=-1;
+           while(s<=e){
+           int mid=s+(e-s)/2;
+           int diff=arr[mid]-mid;
+           if(diff==1){
+               s=mid+1;
+               if(s>n-2)
+               ansIndex=n;
+           }
+           else if(diff>1){
+               ansIndex=mid+1;
+               e=mid-1;
+           }
+           mid=s+(e-s)/2;
+           }
+           return ansIndex;
     }
 };
 
