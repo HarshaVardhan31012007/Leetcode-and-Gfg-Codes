@@ -15,6 +15,7 @@ public:
             sum2 += A[i];
             rightSum = max(rightSum, sum2); 
             }
-        return max({maxSubArray(A, L, mid-1), maxSubArray(A, mid+1, R), leftSum + A[mid] + rightSum} );
+       return max({maxSubArray(A, L, mid-1), maxSubArray(A, mid+1, R), leftSum + A[mid] + rightSum} );
     }	
+    	
 };
