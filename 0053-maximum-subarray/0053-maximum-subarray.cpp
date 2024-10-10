@@ -1,7 +1,7 @@
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
-        return maxSubArray(nums, 0, size(nums)-1);
+        return maxSubArray(nums, 0, nums.size()-1);
     }
     int maxSubArray(vector<int>& A, int L, int R){
         if(L > R) return INT_MIN;
@@ -15,6 +15,6 @@ public:
             curSum += A[i],
             rightSum = max(rightSum, curSum);        
 		// return max of 3 cases 
-        return max({ maxSubArray(A, L, mid-1), maxSubArray(A, mid+1, R), leftSum + A[mid] + rightSum });
+        return max({maxSubArray(A, L, mid-1), maxSubArray(A, mid+1, R), leftSum + A[mid] + rightSum} );
     }	
 };
