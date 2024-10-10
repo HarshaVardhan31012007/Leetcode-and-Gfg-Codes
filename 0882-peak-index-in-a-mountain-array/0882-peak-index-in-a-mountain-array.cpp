@@ -14,8 +14,6 @@ public:
         e=mid-1;
         if(mid==0)
         s++;
-        if(mid==n-1)
-        e--;
         mid=s+(e-s)/2;
         }
     return -1;
