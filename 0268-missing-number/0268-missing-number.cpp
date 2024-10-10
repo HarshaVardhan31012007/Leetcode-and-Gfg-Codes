@@ -15,13 +15,13 @@ public:
             }
             else if(diff==0){
                  s=mid+1;
+                if(s>n-1)
+                    ansIndex=n;
             }
             mid=s+(e-s)/2;
         }
     
     
-    if(ansIndex==-1)
-            return n;
      return ansIndex;
 }
 };
