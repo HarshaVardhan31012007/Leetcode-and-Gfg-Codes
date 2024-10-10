@@ -42,7 +42,7 @@ public:
             int ans=binarysearch(0,pivotIndex,target,nums);
             return ans;
         }
-        // else if(target>=nums[pivotIndex+1]&&target<=n-1){
+        // else if(target>=nums[pivotIndex+1]&&target<=nums[n-1]){
         //     int ans=binarysearch(pivotIndex+1,n-1,target,nums);
         //     return ans;
         // }
