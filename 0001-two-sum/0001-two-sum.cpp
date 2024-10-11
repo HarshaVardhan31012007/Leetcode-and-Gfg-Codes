@@ -9,7 +9,6 @@ public:
                 if(nums[i]+nums[j]==target){
                     p.push_back(i);
                     p.push_back(j);
-                    return p;
                 }
                 
             }
