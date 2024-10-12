@@ -11,7 +11,8 @@ public:
                 return mid;
 
                 if(mid*mid<x){
-                ans=abs(mid);
+                //ans=abs(mid);
+                ans=mid;
                 s=mid+1;
                 }
                 
