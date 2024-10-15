@@ -13,10 +13,8 @@ class Solution {
         //  sort(nums.begin(),nums.end());
         // int ans=-1;
         //  for(int i=0;i<n;i++){
-        //      if(nums[i]==nums[i+1]){
-        //          ans=i+1;
-        //          break;
-        //      }
+        //      if(nums[i]==nums[i+1])
+        //      return i+1;
         //  }
         //  return ans;
         
@@ -33,6 +31,7 @@ class Solution {
     // return ans;
     
     
+    // int ans=-1;
     // for(int i=0;i<n;i++){
     //         for(int j=i+1;j<n;j++){
     //             if(nums[i]==nums[j])
@@ -40,18 +39,31 @@ class Solution {
     //         }
     // }
     // return ans;
-    //  }
     
-    unordered_map<int,int>mpp;
+    // unordered_map<int,int>mpp;
+    // for(int i=0;i<n;i++){
+    //     int a=nums[i];
+    //     mpp[a]=mpp[a]+1;
+    // }
+    // for(int i=0;i<n;i++){
+    //     if(mpp[nums[i]]>1)
+    //     return i+1;
+    // }
+    //   return -1;
+    
+    int *b=new int[10000000];
+    for(int i=0;i<n;i++){
+        b[i]=0;
+    }
     for(int i=0;i<n;i++){
         int a=nums[i];
-        mpp[a]=mpp[a]+1;
+        b[a]=b[a]+1;
     }
     for(int i=0;i<n;i++){
-        if(mpp[nums[i]]>1)
+        if(b[nums[i]]>1)
         return i+1;
     }
-       return -1;
+      return -1;
      }
 };
 
