@@ -51,7 +51,7 @@ class Solution {
     // }
     //   return -1;
     
-    int *b=new int[10000000];
+    int *b=new int[1000000000];
     for(int i=0;i<n;i++){
         b[i]=0;
     }
