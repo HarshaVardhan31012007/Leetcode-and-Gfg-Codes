@@ -11,7 +11,7 @@ public:
             return s;
             if(nums[mid]>nums[mid+1])
             return mid;
-            if(nums[s]>nums[mid])
+            else if(nums[s]>nums[mid])
             e=mid-1;
             else
             s=mid+1;
@@ -42,7 +42,8 @@ public:
             int ans=binarysearch(0,pivotIndex,target,nums);
             return ans;
         }
-        else if(pivotIndex+1<n&&target>=nums[pivotIndex+1]&&target<=nums[n-1]){
+        // else if(pivotIndex+1<n&&target>=nums[pivotIndex+1]&&target<=nums[n-1])
+        else{
             int ans=binarysearch(pivotIndex+1,n-1,target,nums);
             return ans;
         }
