@@ -5,8 +5,14 @@ public:
         //     s.erase(s.find(part),part.length());
         // }
         // return s;
-        while(s.find(part)!=-1){
+        // while(s.find(part)!=-1){
+        //     s.erase(s.find(part),part.length());
+        // }
+        // return s;
+        int findkaIndex=s.find(part);
+        while(findkaIndex!=-1){
             s.erase(s.find(part),part.length());
+            findkaIndex=s.find(part);
         }
         return s;
     //     string x = s;
