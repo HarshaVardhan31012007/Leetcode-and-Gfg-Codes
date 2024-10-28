@@ -18,8 +18,9 @@ public:
     }
     bool validPalindrome(string s) {
         int i=0,j=s.size()-1;
-        for(int i=0;i<s.size();i++){
+        while(i<=j){
             if(s[i]==s[j]){
+                i++;
                 j--;
             }
             else{
