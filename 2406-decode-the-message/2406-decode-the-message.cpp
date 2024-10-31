@@ -6,7 +6,7 @@ public:
         int i=0;
         char d=' ';
         mpp[d]=d;
-        while(start<='z'&& i<key.length()){
+        while(start<='z'){
             char c=key[i];
             if(mpp.find(c)!=mpp.end())
             i++;
