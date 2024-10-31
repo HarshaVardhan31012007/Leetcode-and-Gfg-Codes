@@ -9,12 +9,12 @@ public:
         //     s.erase(s.find(part),part.length());
         // }
         // return s;
-        int findkaIndex=s.find(part);
-        while(findkaIndex!=-1){
-            s.erase(s.find(part),part.length());
-            findkaIndex=s.find(part);
-        }
-        return s;
+        // int findkaIndex=s.find(part);
+        // while(findkaIndex!=-1){
+        //     s.erase(s.find(part),part.length());
+        //     findkaIndex=s.find(part);
+        // }
+        // return s;
     //     string x = s;
 	// int n = s.size(), m = part.size(), i, j;
 	// for (i = 0, j = 0; i < n; i++) {
@@ -23,5 +23,17 @@ public:
 	// 		j -= m;
 	// }
 	// return x.substr(0, j);
+int findkaIndex=s.find(part);
+        while(1){
+            if(findkaIndex==string::npos)
+            return s;
+            else
+            s.erase(s.find(part),part.length());
+            findkaIndex=s.find(part);
+        }
+        return s;
+
+
+
     }
 };
