@@ -39,14 +39,33 @@ public:
         // vector<bool>temp(n,true);
         // temp[0]=temp[1]=false;
         // int ans=0;
-        // for(int i=2;i<n;i++){
-        //    for(int j=2*i;j<n;j+=i){
+        // for(int i=2;i*i<=n;i++){
+        //    for(int j=i*i;j<n;j+=i){
         //         temp[j]=false;
         //    }
-        //    if(temp[i])
-        //    ans++;
+        // }
+        // for(int i=0;i<n;i++){
+        //     if(temp[i])
+        //     ans++;
         // }
         
+        //return ans;
+
+        // if(n==0) return 0;
+        // vector<bool>temp(n,true);
+        // temp[0]=temp[1]=false;
+        // int ans=0;
+        // for( int i=2;i<=sqrt(n);i++){
+        //     int j=i*i;
+        //     while(j<n){
+        //         temp[j]=false;
+        //         j=j+i;
+        //     }
+        // }
+        // for(int i=0;i<n;i++){
+        //     if(temp[i])
+        //     ans++;
+        // }
         // return ans;
     }
 };
