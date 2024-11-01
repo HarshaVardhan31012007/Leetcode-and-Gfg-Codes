@@ -3,7 +3,7 @@ public:
     void normalise(string &s){
        unordered_map<char,char>mpp;
        char start='a';
-       for(int i=0;i<s.size();i++){
+       for(int i=0;i<s.length();i++){
           char c=s[i];
           if(mpp.find(c)==mpp.end()){
             mpp[c]=start;
