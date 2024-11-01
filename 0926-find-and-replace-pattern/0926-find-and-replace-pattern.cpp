@@ -24,7 +24,8 @@ public:
            string c=words[i];
            string ccopy=c;
            normalise(ccopy);
-           if(ccopy==pattern)
+        //    if(ccopy==pattern)
+        if(ccopy.compare(pattern)==0)
            ans.push_back(c);
         }
         return ans;
