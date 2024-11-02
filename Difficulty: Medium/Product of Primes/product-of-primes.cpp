@@ -66,7 +66,7 @@ public:
     }
     
 
-        return product;
+        return product%a;
         
         
     }
