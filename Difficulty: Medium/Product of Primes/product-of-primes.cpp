@@ -61,12 +61,14 @@ public:
      long long a=pow(10,9)+7;
     long long  product=1;
     for( int i=0;i<ss.size();i++){
-         if(ss[i])
-         product=(product*(L+i))%a;
+         if(ss[i]){
+        long long p=(L+i)%a;
+         product=(product*p)%a;
+         }
     }
     
 
-        return product%a;
+        return product;
         
         
     }
