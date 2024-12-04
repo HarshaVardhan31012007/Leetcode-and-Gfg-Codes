@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0053-maximum-subarray](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0054-spiral-matrix) |
+| [0068-text-justification](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0068-text-justification) |
 | [0074-search-a-2d-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0075-sort-colors) |
 | [0136-single-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0136-single-number) |
@@ -113,10 +114,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0054-spiral-matrix) |
+| [0068-text-justification](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0068-text-justification) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2021-remove-all-occurrences-of-a-substring) |
 ## String
 |  |
 | ------- |
+| [0068-text-justification](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0068-text-justification) |
 | [0125-valid-palindrome](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0125-valid-palindrome) |
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
 | [0647-palindromic-substrings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0647-palindromic-substrings) |
