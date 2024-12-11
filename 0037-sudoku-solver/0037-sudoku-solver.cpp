@@ -96,8 +96,7 @@ public:
           }
                 return false;
     }
-    void solveSudoku(vector<vector<char>>& board) {
-        int n=board.size();
+    void solveSudoku(vector<vector<char>>& board){
         int row=0;
         int col=0;
         solve(board,row,col);
