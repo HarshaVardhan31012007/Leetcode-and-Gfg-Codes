@@ -28,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0068-text-justification](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0068-text-justification) |
 | [0074-search-a-2d-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0075-sort-colors) |
+| [0079-word-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0079-word-search) |
 | [0136-single-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0136-single-number) |
 | [0162-find-peak-element](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0162-find-peak-element) |
 | [0189-rotate-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0189-rotate-array) |
@@ -124,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0037-sudoku-solver](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0037-sudoku-solver) |
 | [0054-spiral-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0054-spiral-matrix) |
 | [0074-search-a-2d-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0074-search-a-2d-matrix) |
+| [0079-word-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0079-word-search) |
 | [0240-search-a-2d-matrix-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0240-search-a-2d-matrix-ii) |
 ## Sliding Window
 |  |
@@ -142,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0022-generate-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0022-generate-parentheses) |
 | [0068-text-justification](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0068-text-justification) |
+| [0079-word-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0125-valid-palindrome) |
 | [0151-reverse-words-in-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0151-reverse-words-in-a-string) |
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
@@ -192,6 +195,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0051-n-queens](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0051-n-queens) |
 | [0052-n-queens-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0052-n-queens-ii) |
 | [0077-combinations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0077-combinations) |
+| [0079-word-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0079-word-search) |
 | [0800-letter-case-permutation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0800-letter-case-permutation) |
 | [1160-letter-tile-possibilities](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1160-letter-tile-possibilities) |
 <!---LeetCode Topics End-->
