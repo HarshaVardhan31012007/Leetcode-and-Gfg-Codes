@@ -190,6 +190,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0037-sudoku-solver](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0037-sudoku-solver) |
 | [0046-permutations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0051-n-queens) |
+| [0077-combinations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0077-combinations) |
 | [0800-letter-case-permutation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0800-letter-case-permutation) |
 | [1160-letter-tile-possibilities](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1160-letter-tile-possibilities) |
 <!---LeetCode Topics End-->
