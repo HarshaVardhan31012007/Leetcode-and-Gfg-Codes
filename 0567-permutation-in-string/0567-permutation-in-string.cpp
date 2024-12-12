@@ -2,7 +2,7 @@ class Solution {
 public:
 bool isSame(unordered_map<char,int>mpp,unordered_map<char,int>wfreq,string s1){
     for(int i=0;i<s1.length();i++){
-        if(mpp[s1[i]]!=wfreq[s1[i]])//we can do with array of 26 charcters 
+        if(mpp[s1[i]]!=wfreq[s1[i]])//we can do with array of 26 charcters use s[i]-'a'initilize int frq[26]={0};
         return false;
     }
     return true;
