@@ -14,10 +14,12 @@ public:
        //recursive call
        int dx[]={-1,1,0,0};
        int dy[]={0,0,-1,1};
-       bool found=0;
-       for(int i=0;i<4;i++){
-        found=found||solve(board,word,row+dx[i],col+dy[i],k+1);
-       }
+    //    bool found=0;
+    //    for(int i=0;i<4;i++){
+    //     found=found||solve(board,word,row+dx[i],col+dy[i],k+1);
+    //    }
+    bool found=solve(board,word,row+1,col,k+1)||solve(board,word,row,col+1,k+1)||solve(board,word,row-1,col,k+1)||solve(board,word,row,col-1,k+1);
+
        //unvisit
        board[row][col]=temp;
 
