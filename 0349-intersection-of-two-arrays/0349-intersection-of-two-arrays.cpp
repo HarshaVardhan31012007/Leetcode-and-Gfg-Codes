@@ -1,26 +1,26 @@
 class Solution {
 public:
-    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
-        vector<int>ans;
-         sort(nums1.begin(),nums1.end());
-         sort(nums2.begin(),nums2.end());
-        for(int i=0;i<nums1.size();i++){
-            if(i+1<nums1.size()&&nums1[i]==nums1[i+1])
-            continue;
-            for(int j=0;j<nums2.size();j++){
-                 if(j+1<nums2.size()&&nums2[j]==nums2[j+1])
-                  continue;
-               if(nums1[i]<nums2[j]) break;
-                if(nums1[i]==nums2[j]){
-                    ans.push_back(nums1[i]);
-                }
-            }
-        }
-       //sort(ans.begin(),ans.end());
-      // ans.erase(unique(ans.begin(),ans.end()),ans.end());
+    // vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+    //     vector<int>ans;
+    //      sort(nums1.begin(),nums1.end());
+    //      sort(nums2.begin(),nums2.end());
+    //     for(int i=0;i<nums1.size();i++){
+    //         if(i+1<nums1.size()&&nums1[i]==nums1[i+1])
+    //         continue;
+    //         for(int j=0;j<nums2.size();j++){
+    //              if(j+1<nums2.size()&&nums2[j]==nums2[j+1])
+    //               continue;
+    //            if(nums1[i]<nums2[j]) break;
+    //             if(nums1[i]==nums2[j]){
+    //                 ans.push_back(nums1[i]);
+    //             }
+    //         }
+    //     }
+    //    sort(ans.begin(),ans.end());
+    //    ans.erase(unique(ans.begin(),ans.end()),ans.end());
 
-        return ans;
-    }
+    //     return ans;
+    // }
 
 
 
@@ -79,20 +79,20 @@ public:
     // }
 
 
-        // vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
-        // vector<int>ans;
-        // unordered_map<int,int>mpp;
-        // for(int i=0;i<nums1.size();i++){
-        //     mpp[nums1[i]]++;
-        // }
-        // for(int j=0;j<nums2.size();j++){
-        // auto it=mpp.find(nums2[j]);
-        // if(it!=mpp.end()&&it->second>0){
-        //     ans.push_back(nums2[j]);
-        //    // mpp[nums2[j]]=0;
-        //    mpp.erase(nums2[j]);
-        // }
-        // }
-        // return ans;
-        //}
+        vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        vector<int>ans;
+        unordered_map<int,int>mpp;
+        for(int i=0;i<nums1.size();i++){
+            mpp[nums1[i]]++;
+        }
+        for(int j=0;j<nums2.size();j++){
+        auto it=mpp.find(nums2[j]);
+        if(it!=mpp.end()&&it->second>0){
+            ans.push_back(nums2[j]);
+           // mpp[nums2[j]]=0;
+           mpp.erase(nums2[j]);
+        }
+        }
+        return ans;
+        }
 };
