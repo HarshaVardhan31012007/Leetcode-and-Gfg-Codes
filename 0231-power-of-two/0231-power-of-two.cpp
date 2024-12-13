@@ -21,6 +21,19 @@ public:
 
         //if(n==INT_MIN) return false;
         return (n!=0)&&(n!=INT_MIN&&(n&n-1)==0);
+       
 
+       int count=1;
+       int x=n;
+       while(x){
+        int bit=x&1;
+        if(bit==1)
+        count++;
+        x=x>>1;
+       }
+       if(count==1)
+       return true;
+
+       return false;
     }
 };
