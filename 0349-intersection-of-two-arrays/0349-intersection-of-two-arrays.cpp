@@ -4,6 +4,7 @@ public:
     //     vector<int>ans;
     //     for(int i=0;i<nums1.size();i++){
     //         for(int j=0;j<nums2.size();j++){
+    //            if(nums[i]<nums[j]) break;
     //             if(nums1[i]==nums2[j]){
     //                 ans.push_back(nums1[i]);
     //             }
@@ -21,17 +22,40 @@ public:
         vector<int>ans;
         sort(nums1.begin(),nums1.end());
         sort(nums2.begin(),nums2.end());
-        int m=nums1.size();
-        int n=nums2.size();
+        //int m=nums1.size();
+        //int n=nums2.size();
         int i=0;
         int j=0;
-        int las=-1;
-        while(i<m&&j<n){
+
+        //1
+        // int las=-1;
+        // while(i<m&&j<n){
+        //     if(nums1[i]==nums2[j]){
+        //         if(las!=nums1[i]){
+        //         ans.push_back(nums1[i]);
+        //         las=nums1[i];
+        //         }
+        //         i++;
+        //         j++;
+        //     }
+
+        //2
+        // while(i<m&&j<n){
+        //     if(nums1[i]==nums2[j]){
+        //         ans.push_back(nums1[i]);
+        //         i++;
+        //         j++;
+        //     }
+
+        
+            while(i<nums1.size()&&j<nums2.size()){
+
+            if((i>0)&&(nums1[i]==nums1[i-1])){
+                i++;
+                continue;
+            }
             if(nums1[i]==nums2[j]){
-                if(las!=nums1[i]){
                 ans.push_back(nums1[i]);
-                las=nums1[i];
-                }
                 i++;
                 j++;
             }
@@ -40,7 +64,7 @@ public:
             else if(nums1[i]>nums2[j])
             j++;
         }
-       // ans.erase(unique(ans.begin(),ans.end()),ans.end());//instead of this at starting point use set datastructure and convert into vector
+    //for 2   // ans.erase(unique(ans.begin(),ans.end()),ans.end());//instead of this at starting point use set datastructure and convert into vector
         return ans;
     }
 
