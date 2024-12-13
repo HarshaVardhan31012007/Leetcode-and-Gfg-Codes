@@ -36,9 +36,11 @@ public:
     //         else if(nums1[i]>nums2[j])
     //         j++;
     //     }
-    //     ans.erase(unique(ans.begin(),ans.end()),ans.end());
+    //     ans.erase(unique(ans.begin(),ans.end()),ans.end());//instead of this at starting point use set datastructure and convert into vector
     //     return ans;
     // }
+
+
         vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
         vector<int>ans;
         unordered_map<int,int>mpp;
@@ -49,7 +51,8 @@ public:
         auto it=mpp.find(nums2[j]);
         if(it!=mpp.end()&&it->second>0){
             ans.push_back(nums2[j]);
-            mpp[nums2[j]]=0;
+           // mpp[nums2[j]]=0;
+           mpp.erase(nums2[j]);
         }
         }
         return ans;
