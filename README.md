@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0069-sqrtx](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0069-sqrtx) |
 | [0189-rotate-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0189-rotate-array) |
 | [0204-count-primes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0204-count-primes) |
+| [0231-power-of-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0268-missing-number) |
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2106-find-greatest-common-divisor-of-array) |
@@ -52,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0029-divide-two-integers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0029-divide-two-integers) |
 | [0136-single-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0136-single-number) |
+| [0231-power-of-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0287-find-the-duplicate-number) |
 | [0473-matchsticks-to-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0473-matchsticks-to-square) |
@@ -206,4 +208,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0473-matchsticks-to-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0473-matchsticks-to-square) |
+## Recursion
+|  |
+| ------- |
+| [0231-power-of-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0231-power-of-two) |
 <!---LeetCode Topics End-->
