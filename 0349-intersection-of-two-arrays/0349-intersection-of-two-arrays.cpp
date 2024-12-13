@@ -22,8 +22,8 @@ public:
         vector<int>ans;
         sort(nums1.begin(),nums1.end());
         sort(nums2.begin(),nums2.end());
-        //int m=nums1.size();
-        //int n=nums2.size();
+        int m=nums1.size();
+        int n=nums2.size();
         int i=0;
         int j=0;
 
@@ -48,9 +48,13 @@ public:
         //     }
 
         
-            while(i<nums1.size()&&j<nums2.size()){
+            while(i<m&&j<n){
 
-            if((i>0)&&(nums1[i]==nums1[i-1])){
+            // if((i>0)&&(nums1[i]==nums1[i-1])){//first only should be condition i>)
+            //     i++;
+            //     continue;
+            // }
+            if((i+1<m)&&(nums1[i]==nums1[i+1])){
                 i++;
                 continue;
             }
