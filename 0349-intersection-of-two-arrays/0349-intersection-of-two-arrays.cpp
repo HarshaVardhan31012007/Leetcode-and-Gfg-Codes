@@ -5,7 +5,11 @@ public:
          sort(nums1.begin(),nums1.end());
          sort(nums2.begin(),nums2.end());
         for(int i=0;i<nums1.size();i++){
+            if(i+1<nums1.size()&&nums1[i]==nums1[i+1])
+            continue;
             for(int j=0;j<nums2.size();j++){
+                 if(j+1<nums2.size()&&nums2[j]==nums2[j+1])
+                  continue;
                if(nums1[i]<nums2[j]) break;
                 if(nums1[i]==nums2[j]){
                     ans.push_back(nums1[i]);
@@ -13,7 +17,7 @@ public:
             }
         }
        //sort(ans.begin(),ans.end());
-       ans.erase(unique(ans.begin(),ans.end()),ans.end());
+      // ans.erase(unique(ans.begin(),ans.end()),ans.end());
 
         return ans;
     }
