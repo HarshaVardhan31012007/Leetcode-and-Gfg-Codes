@@ -37,7 +37,7 @@ public:
         // int las=-1;
         // while(i<m&&j<n){
         //     if(nums1[i]==nums2[j]){
-        //         if(las!=nums1[i]){
+        //         if(las!=nums1[i]){ or we can use ans.back()!=nums[i]
         //         ans.push_back(nums1[i]);
         //         las=nums1[i];
         //         }
