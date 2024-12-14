@@ -13,9 +13,9 @@ public:
           else
           return 0.0;
          }
-         if(n==INT_MAX&&(x==1.0||x==-1.0)){
-            return x;
-         }
+        //  if(n==INT_MAX&&(x==1.0||x==-1.0)){
+        //     return x;
+        //  }
         int N=abs(n);
         if(x==1.0)
         return 1.0;
