@@ -1,16 +1,15 @@
 class Solution {
 public:
-    // int solve(vector<int>& prices,int buyc,int sellc,int i){
-    //     if(i==prices.size()){
+    void solve(vector<int>& prices,int &bestbuy,int &maxProfit,int i){
+        if(i==prices.size()){
+           return;
+        }
+       if(prices[i]<bestbuy) bestbuy=prices[i];
+       int todayProfit=prices[i]-bestbuy;
+       maxProfit=max(maxProfit,todayProfit);
 
-    //     }
-    //     buyc=prices[i];
-    //     int maxi=INT_MIN;
-    //     for(int j=i+1;j<prices.size();j++){
-    //       maxi=max(maxi,prices[j]);
-    //     }
-
-    // }
+       solve(prices,bestbuy,maxProfit,i+1);
+    }
     int maxProfit(vector<int>& prices) {
         //method 1
         // int n=prices.size();
@@ -25,17 +24,22 @@ public:
         // return maxi;
        
         //method 2
-        int n=prices.size();
-        int maxi=INT_MIN;
-        int bestbuy=prices[0];
-        for(int i=0;i<n;i++){
-            if(prices[i]>=bestbuy){
-                maxi=max(maxi,prices[i]-bestbuy);
-            }
-            bestbuy=min(bestbuy,prices[i]);
-        }
-        return maxi;
+        // int n=prices.size();
+        // int maxi=INT_MIN;//if INT-MIN then if condition me equality hona chahihe//if 0 is there then equality no need
+        // int bestbuy=prices[0];
+        // for(int i=0;i<n;i++){
+        //     if(prices[i]>=bestbuy){
+        //         maxi=max(maxi,prices[i]-bestbuy);
+        //     }
+        //     bestbuy=min(bestbuy,prices[i]);
+        // }
+        // return maxi;
 
         //method 3
+        int bestbuy=INT_MAX;
+        int maxProfit=INT_MIN;
+        int i=0;
+        solve(prices,bestbuy,maxProfit,i);
+        return maxProfit;
     }
 };
