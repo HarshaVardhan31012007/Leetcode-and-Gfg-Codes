@@ -26,10 +26,10 @@ public:
             j++;
         
     }
-    int size=unionarr.size();
-    for(int i=0;i<size;i++){
-        a[i]=unionarr[i];
-    }
-
+    // int size=unionarr.size();
+    // for(int i=0;i<size;i++){
+    //     a[i]=unionarr[i];
+    // }
+  a.assign(unionarr.begin(),unionarr.end());
     }
 };
