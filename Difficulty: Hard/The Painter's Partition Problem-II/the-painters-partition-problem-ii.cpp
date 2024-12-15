@@ -8,20 +8,20 @@ using namespace std;
 
 class Solution {
   public:
-   bool possible(vector<int>&arr,int n,int k,long long int sol){//sol means solution
-        long long int pageSum=0;
+   bool possible(vector<int>&arr,int n,int k,int sol){//sol means solution
+        int timeSum=0;
         int c=1;
         for(int i=0;i<n;i++){
             if(arr[i]>sol)
             return false;
-            if(pageSum+arr[i]>sol){
+            if(timeSum+arr[i]>sol){
                 c++;
                 if(c>k)
                 return false;
-                pageSum=arr[i];
+                timeSum=arr[i];
             }
             else{
-                pageSum+=arr[i];
+                timeSum+=arr[i];
             }
         }
         return true;
@@ -29,12 +29,12 @@ class Solution {
     
     int minTime(vector<int>& arr, int k) {
         int n=arr.size();
-       // if(n<k) return -1;
-        long long int s=0;
-        long long int e=accumulate(arr.begin(),arr.end(),0);
-        long long int ans=-1;
+       // if(n<k) return -1;//this line should not be there
+        int s=0;
+        int e=accumulate(arr.begin(),arr.end(),0);
+        int ans=-1;
         while(s<=e){
-            long long int mid=s+(e-s)/2;
+            int mid=s+(e-s)/2;
             if(possible(arr,n,k,mid)){
                 ans=mid;
                 e=mid-1;
