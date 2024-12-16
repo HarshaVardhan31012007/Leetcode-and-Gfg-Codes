@@ -54,23 +54,20 @@ public:
         return ans;
 
         //method 2
-        // string s="";
         // int i=0;
         // int ans=0;
         // int n=chars.size();
-        // while(i<n){
+        // while(i<n){//tc: big of n//sc: big of 1
         //     int j=i+1;
         //     while(j<n&&chars[i]==chars[j]){
         //         j++;
         //     }
         //     int count=j-i;
-        //     s.push_back(chars[j-1]);
-        //     ans++;
+        //     chars[ans++]=chars[j-1];
         //     if(count>1){
         //         string n=to_string(count);
         //         for(char ch:n){
-        //             s.push_back(ch);
-        //             ans++;
+        //             char[ans++]=ch;
         //         }
 
         //     }
