@@ -10,7 +10,7 @@ public:
         for(int i=1;i<chars.size();i++){
            if(chars[i-1]==chars[i]){
            count++;
-           if(i==chars.size()-1&&count>1){
+           if(i==chars.size()-1){//always count>1
              s.push_back(chars[i]);
              ans++;
              string n=to_string(count);
@@ -40,7 +40,6 @@ public:
              s.push_back(chars[i]);
              ans++;
             }
-
         }
         }
         for(int i=0;i<s.length();i++){
