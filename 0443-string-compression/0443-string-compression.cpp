@@ -20,11 +20,6 @@ public:
              }
              
            }
-           if(i==chars.size()-1&&count==1){
-            s.push_back(chars[i]);
-            ans++;
-           }
-     
            }
            else{
              if(count==1){
