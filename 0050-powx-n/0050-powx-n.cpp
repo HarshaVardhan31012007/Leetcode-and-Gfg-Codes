@@ -28,7 +28,6 @@ public:
         // return (n>0)?product:1/product;
 
         //method 2
-        double product=1;
         //cases for decreasing time
         if(n==0) return 1.0;
         if(n==1) return x;
