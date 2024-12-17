@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0068-text-justification](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0068-text-justification) |
 | [0074-search-a-2d-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0075-sort-colors) |
+| [0078-subsets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0079-word-search) |
 | [0088-merge-sorted-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0088-merge-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -62,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0029-divide-two-integers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0029-divide-two-integers) |
+| [0078-subsets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0078-subsets) |
 | [0136-single-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0136-single-number) |
 | [0231-power-of-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0268-missing-number) |
@@ -233,6 +235,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0051-n-queens](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0051-n-queens) |
 | [0052-n-queens-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0052-n-queens-ii) |
 | [0077-combinations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0077-combinations) |
+| [0078-subsets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0079-word-search) |
 | [0473-matchsticks-to-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0473-matchsticks-to-square) |
 | [0800-letter-case-permutation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0800-letter-case-permutation) |
