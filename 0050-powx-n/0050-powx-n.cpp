@@ -31,6 +31,7 @@ public:
         double product=1;
         //cases for decreasing time
         if(n==0) return 1.0;
+        if(n==1) return x;
         if(x==0) return 0.0;
         if(x==1.0) return 1.0;
         if(x==-1.0&&n%2==0) return 1.0;
