@@ -13,6 +13,7 @@ public:
            while(p<q){
            
             long long int sum=(long long int)arr[i]+(long long int)arr[j]+(long long int)arr[p]+(long long int)arr[q];
+           //not correct//  int sum=arr[i]+arr[j]+arr[p]+arr[q];
             if(sum<target)
             p++;
             else if(sum>target)
