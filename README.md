@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
+| [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -176,6 +177,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0079-word-search) |
 | [0240-search-a-2d-matrix-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0240-search-a-2d-matrix-ii) |
+| [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 ## Sliding Window
 |  |
 | ------- |
@@ -187,6 +189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0054-spiral-matrix) |
 | [0068-text-justification](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0068-text-justification) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2021-remove-all-occurrences-of-a-substring) |
+| [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 ## String
 |  |
 | ------- |
@@ -299,4 +302,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0206-reverse-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0234-palindrome-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0908-middle-of-the-linked-list) |
+## Depth-First Search
+|  |
+| ------- |
+| [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
+## Breadth-First Search
+|  |
+| ------- |
+| [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 <!---LeetCode Topics End-->
