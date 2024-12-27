@@ -45,6 +45,7 @@ public:
             curr=forward;
             position++;
         }
+        //recursive calls
         if(curr!=NULL){
             ListNode *recursivehead=reverseKGroup(curr,k);
             head->next=recursivehead;
