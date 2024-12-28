@@ -48,32 +48,135 @@ void freeList(struct Node* head) {
 class Solution {
   public:
     // Function to sort a linked list of 0s, 1s and 2s.
+    // void insertatTail(Node *toMove,Node *&head,Node *&tail){
+    //     if(head==NULL&&tail==NULL){
+    //         head=toMove;
+    //         tail=toMove;
+    //     }
+    //     else{
+    //         tail->next=toMove;
+    //         tail=toMove;
+    //     }
+    // }
     Node* segregate(Node* head) {
+    //method1
+    // Node *temp=head;
+    // int onesc=0;int zerosc=0;int twosc=0;
+    // while(temp!=NULL){
+    //     if(temp->data==0)
+    //     zerosc++;
+    //     if(temp->data==1)
+    //     onesc++;
+    //     if(temp->data==2)
+    //     twosc++;
+    //     temp=temp->next;
+    // }
+    // Node*temp1=head;
+    // while(zerosc--){
+    //     temp1->data=0;
+    //     temp1=temp1->next;
+    // }
+    // while(onesc--){
+    //     temp1->data=1;
+    //     temp1=temp1->next;
+    // }
+    // while(twosc--&&temp1!=NULL){
+    //     temp1->data=2;
+    //     temp1=temp1->next;
+    // }
+    // return head;
+    
+    
+    //method 2
+    Node *zeroHead=new Node(-1);
+    Node *zeroTail=zeroHead;
+    
+    Node *oneHead=new Node(-1);
+    Node *oneTail=oneHead;
+    
+    Node *twoHead=new Node(-1);
+    Node *twoTail=twoHead;
+    
     Node *temp=head;
-    int onesc=0;int zerosc=0;int twosc=0;
-    while(temp!=NULL){
-        if(temp->data==0)
-        zerosc++;
-        if(temp->data==1)
-        onesc++;
-        if(temp->data==2)
-        twosc++;
+    
+    while(temp){
+        
+        if(temp->data==0){
+           zeroTail->next=temp;
+           zeroTail=temp;
+        }
+        if(temp->data==1){
+           oneTail->next=temp;
+          oneTail=temp;
+        }
+        if(temp->data==2){
+            twoTail->next=temp;
+            twoTail=twoTail->next;
+        }
         temp=temp->next;
     }
-    Node*temp1=head;
-    while(zerosc--){
-        temp1->data=0;
-        temp1=temp1->next;
+    //merge
+    //empty cases
+    if(oneHead->next!=NULL){
+        zeroTail->next=oneHead->next;
     }
-    while(onesc--){
-        temp1->data=1;
-        temp1=temp1->next;
+    else{
+        zeroTail->next=twoHead->next;
     }
-    while(twosc--&&temp1!=NULL){
-        temp1->data=2;
-        temp1=temp1->next;
-    }
+    oneTail->next=twoHead->next;
+    twoTail->next=nullptr;
+    head=zeroHead->next;
+    delete oneHead;
+    delete zeroHead;
+    delete twoHead;
     return head;
+    //method3
+    // Node *zeroHead=NULL;
+    // Node *zeroTail=NULL;
+    
+    // Node *oneHead=NULL;
+    // Node *oneTail=NULL;
+    
+    // Node *twoHead=NULL;
+    // Node *twoTail=NULL;
+    
+    // Node *temp=head;
+    
+    // while(temp!=NULL){
+    //     Node *toMove=temp;
+    //     temp=temp->next;
+    //     toMove->next=NULL;
+    //     if(toMove->data==0){
+    //         insertatTail(toMove,zeroHead,zeroTail);
+    //     }
+    //     if(toMove->data==1){
+    //         insertatTail(toMove,oneHead,oneTail);
+    //     }
+    //     if(toMove->data==2){
+    //         insertatTail(toMove,twoHead,twoTail);
+    //     }
+    // }
+    // //merge
+    // //empty cases
+    // if(zeroHead!=NULL){
+    //     if(oneHead!=NULL){
+    //       zeroTail->next=oneHead;
+    //       oneTail->next=twoHead;
+    //     }
+    //     else{
+    //         zeroTail->next=twoHead;
+    //     }
+    //     return zeroHead;
+    // }
+    // else{
+    //     if(oneHead!=NULL){
+    //         oneTail->next=twoHead;
+    //         return oneHead;
+    //     }
+    //     else{
+    //         return twoHead;
+    //     }
+    // }
     }
 };
 
