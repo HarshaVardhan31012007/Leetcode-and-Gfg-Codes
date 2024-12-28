@@ -40,41 +40,60 @@ struct Node
 };
 
 */
-
+void solve(Node *head,int &carry){
+    if(!head)
+    return;
+    solve(head->next,carry);
+    int sum=head->data+carry;
+    head->data=sum%10;
+    carry=sum/10;
+}
 class Solution {
   public:
-    Node* reverselist(Node *&head){
-        Node *prev=NULL;
-        Node *curr=head;
-        while(curr!=NULL){
-            Node *forward=curr->next;
-            curr->next=prev;
-            prev=curr;
-            curr=forward;
-        }
-        return prev;
-    }
+    // Node* reverselist(Node *&head){
+    //     Node *prev=NULL;
+    //     Node *curr=head;
+    //     while(curr!=NULL){
+    //         Node *forward=curr->next;
+    //         curr->next=prev;
+    //         prev=curr;
+    //         curr=forward;
+    //     }
+    //     return prev;
+    // }
     Node* addOne(Node* head) {
-        //reverse
-        head=reverselist(head);
-        //add 1
-        int carry=1;
-        Node *temp=head;
-        while(temp!=NULL){
-            int sum=carry+temp->data;
-            temp->data=sum%10;
-            carry=sum/10;
-            //special case for last node
-            if(temp->next==NULL&&carry!=0){
-                Node *newNode=new Node(carry);
-                temp->next=newNode;
-                temp=newNode;
-            }
-            temp=temp->next;
-        }
-        //reverse
-        head=reverselist(head);
+        // //reverse
+        // head=reverselist(head);
+        // //add 1
+        // int carry=1;
+        // Node *temp=head;
+        // while(temp!=NULL){
+        //     int sum=carry+temp->data;
+        //     temp->data=sum%10;
+        //     carry=sum/10;
+        //     if(carry==0)
+        //     break;
+        //     //special case for last node
+        //     if(temp->next==NULL&&carry!=0){
+        //         Node *newNode=new Node(carry);
+        //         temp->next=newNode;
+        //         temp=newNode;
+        //     }
+        //     temp=temp->next;
+        // }
+        // //reverse
+        // head=reverselist(head);
         
+        // return head;
+        
+        //method 2
+        int carry=1;
+        solve(head,carry);
+        if(carry){
+            Node *newNode=new Node(carry);
+            newNode->next=head;
+            head=newNode;
+        }
         return head;
     }
 };
