@@ -74,6 +74,7 @@ public:
            temp2=temp2?temp2->next:nullptr;
         }
         ListNode *finalAns=ans->next;
+        delete ans;
         return finalAns;
     }
 };
