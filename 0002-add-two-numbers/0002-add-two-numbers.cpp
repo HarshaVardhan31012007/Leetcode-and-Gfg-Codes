@@ -10,19 +10,19 @@
  */
 class Solution {
 public:
-     ListNode *recursive(ListNode* l1,ListNode *l2,int carry){
-        if(!l1&&!l2&&!carry)
-        return 0;//return NULL
+    //  ListNode *recursive(ListNode* l1,ListNode *l2,int carry){
+    //     if(!l1&&!l2&&!carry)
+    //     return 0;//return NULL
 
-            int a=l1?l1->val:0;
-            int b=l2?l2->val:0;
-            int sum=a+b+carry;
-            int digit=sum%10;
-            carry=sum/10;
-            ListNode *ans=new ListNode(digit);
-            ans->next=recursive(l1?l1->next:l1,l2?l2->next:l2,carry);
-            return ans;
-     }
+    //         int a=l1?l1->val:0;
+    //         int b=l2?l2->val:0;
+    //         int sum=a+b+carry;
+    //         int digit=sum%10;
+    //         carry=sum/10;
+    //         ListNode *ans=new ListNode(digit);
+    //         ans->next=recursive(l1?l1->next:l1,l2?l2->next:l2,carry);
+    //         return ans;
+    //  }
     // void insertatTail(ListNode *&ansHead,ListNode *&ansTail,int digit){
     //     if(ansHead==NULL&&ansHead==NULL){
     //         ListNode *newNode=new ListNode(digit);
@@ -80,7 +80,7 @@ public:
         // }
         // return (ans==0)?l1:l2;
        
-       //with using extraspace
+     //method2  //with using extraspace
     //    int carry=0;
     //     ListNode *ansHead=NULL;
     //     ListNode *ansTail=NULL;
@@ -111,28 +111,27 @@ public:
     //     }
     //     return ansHead;
 
-       //method 2//simplifying code with extraspace//iterative
-        // int carry=0;
-        // ListNode *ans=new ListNode(-1);
-        // ListNode *it=ans;
-        // ListNode *temp1=l1;
-        // ListNode *temp2=l2;
-        // while(temp1||temp2||carry){
-        //     int a=temp1?temp1->val:0;
-        //     int b=temp2?temp2->val:0;
-        //     int sum=a+b+carry;
-        //     int digit=sum%10;
-        //     carry=sum/10;
-        //     it->next=new ListNode(digit);
-        //     it=it->next;
-        //    temp1=temp1?temp1->next:nullptr;
-        //    temp2=temp2?temp2->next:nullptr;
-        // }
-        // ListNode *finalAns=ans->next;
-        // delete ans;
-        // return finalAns;
+       //method 3//simplifying code with extraspace//iterative
+        int carry=0;
+        ListNode *ans=new ListNode(-1);
+        ListNode *it=ans;
+        while(l1||l2||carry){
+            int a=l1?l1->val:0;
+            int b=l2?l2->val:0;
+            int sum=a+b+carry;
+            int digit=sum%10;
+            carry=sum/10;
+            it->next=new ListNode(digit);
+            it=it->next;
+            l1=l1?l1->next:nullptr;
+            l2=l2?l2->next:nullptr;
+        }
+        ListNode *finalAns=ans->next;
+        delete ans;
+        return finalAns;  
 
+        //method 4
         //simple code//recursive
-        return recursive(l1,l2,0);
+        //return recursive(l1,l2,0);
     }
 };
