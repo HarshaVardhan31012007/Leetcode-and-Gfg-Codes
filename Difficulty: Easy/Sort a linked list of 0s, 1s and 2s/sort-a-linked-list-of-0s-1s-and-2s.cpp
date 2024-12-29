@@ -60,18 +60,18 @@ class Solution {
     // }
     Node* segregate(Node* head) {
     //method1
-    // Node *temp=head;
-    // int onesc=0;int zerosc=0;int twosc=0;
-    // while(temp!=NULL){
-    //     if(temp->data==0)
-    //     zerosc++;
-    //     if(temp->data==1)
-    //     onesc++;
-    //     if(temp->data==2)
-    //     twosc++;
-    //     temp=temp->next;
-    // }
-    // Node*temp1=head;
+    Node *temp=head;
+    int onesc=0;int zerosc=0;int twosc=0;
+    while(temp!=NULL){
+        if(temp->data==0)
+        zerosc++;
+        if(temp->data==1)
+        onesc++;
+        if(temp->data==2)
+        twosc++;
+        temp=temp->next;
+    }
+    Node*temp1=head;
     // while(zerosc--){
     //     temp1->data=0;
     //     temp1=temp1->next;
@@ -85,51 +85,68 @@ class Solution {
     //     temp1=temp1->next;
     // }
     // return head;
-    
-    
-    //method 2
-    Node *zeroHead=new Node(-1);
-    Node *zeroTail=zeroHead;
-    
-    Node *oneHead=new Node(-1);
-    Node *oneTail=oneHead;
-    
-    Node *twoHead=new Node(-1);
-    Node *twoTail=twoHead;
-    
-    Node *temp=head;
-    
-    while(temp){
-        
-        if(temp->data==0){
-           zeroTail->next=temp;
-           zeroTail=temp;
+    while(temp1!=NULL){
+        if(zerosc!=0){
+            temp1->data=0;
+            zerosc--;
         }
-        if(temp->data==1){
-           oneTail->next=temp;
-          oneTail=temp;
+        else if(onesc!=0){
+            temp1->data=1;
+            onesc--;
         }
-        if(temp->data==2){
-            twoTail->next=temp;
-            twoTail=twoTail->next;
+        else if(twosc!=0){
+            temp1->data=2;
+            twosc--;
         }
-        temp=temp->next;
+        temp1=temp1->next;
     }
-    //merge
-    //empty cases
-    if(oneHead->next!=NULL){
-        zeroTail->next=oneHead->next;
-    }
-    else{
-        zeroTail->next=twoHead->next;
-    }
-    oneTail->next=twoHead->next;
-    twoTail->next=nullptr;
-    head=zeroHead->next;
-    delete oneHead;
-    delete zeroHead;
-    delete twoHead;
+    
     return head;
+    //method 2
+    // Node *zeroHead=new Node(-1);
+    // Node *zeroTail=zeroHead;
+    
+    // Node *oneHead=new Node(-1);
+    // Node *oneTail=oneHead;
+    
+    // Node *twoHead=new Node(-1);
+    // Node *twoTail=twoHead;
+    
+    // Node *temp=head;
+    
+    // while(temp){
+        
+    //     if(temp->data==0){
+    //       zeroTail->next=temp;
+    //       zeroTail=temp;
+    //     }
+    //     if(temp->data==1){
+    //       oneTail->next=temp;
+    //       oneTail=temp;
+    //     }
+    //     if(temp->data==2){
+    //         twoTail->next=temp;
+    //         twoTail=twoTail->next;
+    //     }
+    //     temp=temp->next;
+    // }
+    // //merge
+    // //empty cases
+    // if(oneHead->next!=NULL){
+    //     zeroTail->next=oneHead->next;
+    // }
+    // else{
+    //     zeroTail->next=twoHead->next;
+    // }
+    // oneTail->next=twoHead->next;
+    // twoTail->next=nullptr;
+    // head=zeroHead->next;
+    // delete oneHead;
+    // delete zeroHead;
+    // delete twoHead;
+    // return head;
+    
+    
     //method3
     // Node *zeroHead=NULL;
     // Node *zeroTail=NULL;
