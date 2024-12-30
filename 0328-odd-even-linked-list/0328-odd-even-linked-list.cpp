@@ -11,33 +11,49 @@
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
-        if(head==NULL||head->next==NULL||head->next->next==NULL){
+        // if(head==NULL||head->next==NULL||head->next->next==NULL){
+        //     return head;
+        // }
+        // ListNode *prev=head;
+        // ListNode *curr=head->next;
+        // ListNode  *evenHead=head->next;
+        // int len=0;
+        // ListNode *temp=head;
+        // while(temp!=NULL){
+        //  len++;
+        //  temp=temp->next;
+        // }
+        // if(len%2==1){
+        // while(curr!=NULL){
+        //     prev->next=curr->next;
+        //     prev=curr;
+        //     curr=curr->next; 
+        // }
+        // }
+        // else{
+        //     while(curr->next!=NULL){
+        //     prev->next=curr->next;
+        //     prev=curr;
+        //     curr=curr->next; 
+        // }
+        // }
+        // prev->next=evenHead;
+        // return head;
+
+        //method 2
+        if(head==NULL||head->next==NULL){
             return head;
         }
-        ListNode *prev=head;
-        ListNode *curr=head->next;
-        ListNode  *evenHead=head->next;
-        int len=0;
-        ListNode *temp=head;
-        while(temp!=NULL){
-         len++;
-         temp=temp->next;
+        ListNode *h1=head;
+        ListNode *h2=head->next;
+        ListNode *evenHead=h2;
+        while(h2&&h2->next){
+            h1->next=h2->next;
+            h2->next=h2->next->next;
+            h1=h1->next;
+            h2=h2->next;
         }
-        if(len%2==1){
-        while(curr!=NULL){
-            prev->next=curr->next;
-            prev=curr;
-            curr=curr->next; 
-        }
-        }
-        else{
-            while(curr->next!=NULL){
-            prev->next=curr->next;
-            prev=curr;
-            curr=curr->next; 
-        }
-        }
-        prev->next=evenHead;
+        h1->next=evenHead;
         return head;
     }
 };
