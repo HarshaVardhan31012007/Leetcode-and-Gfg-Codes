@@ -24,7 +24,7 @@ public:
         }
         else{
             prev=prev->next;
-            temp=temp->next;//no need
+            //temp=temp->next;//no need
         }
         temp=prev->next;
         }
