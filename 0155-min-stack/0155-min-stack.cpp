@@ -10,11 +10,11 @@ public:
             v.push_back({val,val});
         }
         else{
-            // int minAns=val;
-            // if(minAns>v.back()).second)
-            // minAns=v.back().second;
-            // v.push_back(val,minAns);
-            v.push_back({val,v.back().second<val?v.back().second:val});
+            int minAns=val;
+            if(minAns>v.back().second)
+            minAns=v.back().second;
+            v.push_back({val,minAns});
+            // v.push_back({val,v.back().second<val?v.back().second:val});
         }
     }
     
