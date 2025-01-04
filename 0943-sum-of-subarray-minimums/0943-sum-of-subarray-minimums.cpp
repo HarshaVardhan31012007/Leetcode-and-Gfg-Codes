@@ -6,7 +6,7 @@ public:
         st.push(-1);
         for(int i=0;i<arr.size();i++){
             int element=arr[i];
-            while(st.top()!=-1&&arr[st.top()]>element){//equality hona
+            while(st.top()!=-1&&arr[st.top()]>element){//equality hona if next no equality
                st.pop();
             }
             prev.push_back(st.top());
@@ -21,7 +21,7 @@ public:
         st.push(-1);
         for(int i=arr.size()-1;i>=0;i--){
             int element=arr[i];
-            while(st.top()!=-1&&arr[st.top()]>=element){//no equality
+            while(st.top()!=-1&&arr[st.top()]>=element){//no equality if prev has eqaulity
                st.pop();
             }
             next.push_back(st.top());
