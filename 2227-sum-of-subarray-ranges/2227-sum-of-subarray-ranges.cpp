@@ -43,7 +43,7 @@ public:
         }
         return sum;
     }
-     auto findprevsmaller1(vector<int>&arr){
+     auto findprevgreater(vector<int>&arr){
         vector<int>prev;
         stack<int>st;
         st.push(-1);
@@ -57,7 +57,7 @@ public:
         }
         return prev;
     }
-    auto findnextsmaller1(vector<int>&arr){
+    auto findnextgreater(vector<int>&arr){
         //vector<int>next(arr.size(),-1);
         vector<int>next;
         stack<int>st;
@@ -73,8 +73,8 @@ public:
         return next;
     }
     long long int sumSubarrayMaxs(vector<int>& arr) {
-        auto prev=findprevsmaller1(arr);
-        auto next=findnextsmaller1(arr);
+        auto prev=findprevgreater(arr);
+        auto next=findnextgreater(arr);
         //another way
         reverse(next.begin(),next.end());
         long long sum=0;
