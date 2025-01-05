@@ -24,7 +24,7 @@ public:
                 st.push(sign);
                 result=0;
                 sign=1;
-                num=0;
+              //  num=0;//no need
             }
             else if(s[i]==')'){
                 result+=sign*num;
