@@ -6,7 +6,8 @@ public:
         int num=0;
         int sign=1;
         for(int i=0;i<s.length();i++){
-            if(s[i]>='0'&&s[i]<='9'){
+            //if(s[i]>='0'&&s[i]<='9')
+            if(isdigit(s[i])){
                num=num*10+(s[i]-'0');
             }
             else if(s[i]=='+'){
@@ -15,7 +16,9 @@ public:
                 num=0;
             }
             else if(s[i]=='-'){
+                cout<<sign<<endl;
                 result=result+num*sign;
+                cout<<result<<endl;
                 sign=-1;
                 num=0;
             }
@@ -33,6 +36,7 @@ public:
                 st.pop();
                 result+=st.top();
                 st.pop();
+                //sign=1;//no need
             }
         }
         result+=sign*num;
