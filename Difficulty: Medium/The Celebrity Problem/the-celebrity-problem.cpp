@@ -11,29 +11,69 @@ using namespace std;
 class Solution {
   public:
     // Function to find if there is a celebrity in the party or not.
-    int checkrow(vector<vector<int> >& mat,int i){
-       for(int j=0;j<mat[i].size();j++){
-           if(mat[i][j]==1)
-           return 0;
-       } 
-       return 1;
-    }
-    int checkcol(vector<vector<int> >& mat,int j){
-       for(int i=0;i<mat.size();i++){
-           if(i!=j&&mat[i][j]==0)
-           return 0;
-       } 
-       return 1;
-    }
+    //method 1
+    // int checkrow(vector<vector<int> >& mat,int i){
+    //   for(int j=0;j<mat[i].size();j++){
+    //       if(mat[i][j]==1)
+    //       return 0;
+    //   } 
+    //   return 1;
+    // }
+    // int checkcol(vector<vector<int> >& mat,int j){
+    //   for(int i=0;i<mat.size();i++){
+    //       if(i!=j&&mat[i][j]==0)
+    //       return 0;
+    //   } 
+    //   return 1;
+    // }
+    // int celebrity(vector<vector<int> >& mat) {
+    //     //method 1
+    //     for(int i=0;i<mat.size();i++){
+    //         int ans1=checkrow(mat,i);
+    //         int ans2=checkcol(mat,i);
+    //         if(ans1==1&&ans2==1)
+    //         return i;
+    //     }
+    //     return -1;
+    // }
+    
+    
+    
+    //method 2
+    
     int celebrity(vector<vector<int> >& mat) {
-        //method 1
-        for(int i=0;i<mat.size();i++){
-            int ans1=checkrow(mat,i);
-            int ans2=checkcol(mat,i);
-            if(ans1==1&&ans2==1)
-            return i;
-        }
-        return -1;
+        //method 2
+       stack<int>s;
+       int n=mat.size();
+       for(int i=0;i<mat.size();i++){
+           s.push(i);
+       }
+       
+       while(s.size()!=1){
+           int a=s.top();
+           s.pop();
+           int b=s.top();
+           s.pop();
+           if(mat[a][b]){
+               s.push(b);
+           }
+           else if(mat[b][a]){
+               s.push(a);
+           }
+       }
+        int mightbecelebrity=s.top();
+        s.pop();
+          int i=mightbecelebrity;
+          for(int j=0;j<mat[i].size();j++){
+          if(mat[i][j]==1)
+          return -1;
+          }
+          int j=mightbecelebrity;
+           for(int i=0;i<mat.size();i++){
+          if(i!=j&&mat[i][j]==0)
+          return -1;
+           }
+           return mightbecelebrity;
     }
 };
 
