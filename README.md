@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0078-subsets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0079-word-search) |
 | [0084-largest-rectangle-in-histogram](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0084-largest-rectangle-in-histogram) |
+| [0085-maximal-rectangle](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0085-maximal-rectangle) |
 | [0088-merge-sorted-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0088-merge-sorted-array) |
 | [0090-subsets-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0090-subsets-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -180,6 +181,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0022-generate-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0022-generate-parentheses) |
 | [0053-maximum-subarray](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0053-maximum-subarray) |
+| [0085-maximal-rectangle](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0085-maximal-rectangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0131-palindrome-partitioning](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0131-palindrome-partitioning) |
 | [0473-matchsticks-to-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0473-matchsticks-to-square) |
@@ -193,6 +195,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0054-spiral-matrix) |
 | [0074-search-a-2d-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0079-word-search) |
+| [0085-maximal-rectangle](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0085-maximal-rectangle) |
 | [0200-number-of-islands](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0200-number-of-islands) |
 | [0240-search-a-2d-matrix-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0240-search-a-2d-matrix-ii) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
@@ -241,6 +244,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0020-valid-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0020-valid-parentheses) |
 | [0084-largest-rectangle-in-histogram](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0084-largest-rectangle-in-histogram) |
+| [0085-maximal-rectangle](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0085-maximal-rectangle) |
 | [0155-min-stack](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0155-min-stack) |
 | [0224-basic-calculator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0224-basic-calculator) |
 | [0234-palindrome-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0234-palindrome-linked-list) |
@@ -370,6 +374,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0084-largest-rectangle-in-histogram) |
+| [0085-maximal-rectangle](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0085-maximal-rectangle) |
 | [0943-sum-of-subarray-minimums](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0943-sum-of-subarray-minimums) |
 | [2227-sum-of-subarray-ranges](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2227-sum-of-subarray-ranges) |
 ## Design
