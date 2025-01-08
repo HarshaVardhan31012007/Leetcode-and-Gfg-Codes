@@ -49,19 +49,65 @@ class Solution {
            s.push(i);
        }
        
-       while(s.size()!=1){
-           int a=s.top();
-           s.pop();
-           int b=s.top();
-           s.pop();
-           if(mat[a][b]){
-               s.push(b);
-           }
-           else if(mat[b][a]){
-               s.push(a);
-           }
-       }
-        int mightbecelebrity=s.top();
+    //   while(s.size()!=-1){
+    //       int a=s.top();
+    //       s.pop();
+    //       int b=s.top();
+    //       s.pop();
+        //   if(mat[a][b]){
+        //b might be celebriy not exact
+        //       s.push(b);
+        //   }
+        //it is valid
+        //if a dpesnot know b and b does not know a 
+        //that means both are not celebrity pop both
+        //   else if(mat[b][a]){
+        //  a might be celebriy not exact
+        //       s.push(a);
+        //   }
+        //it also works but above is more correct
+        //  else{
+        //       s.push(a);
+        //   }
+       //}
+        // int mightbecelebrity=s.top();
+        // s.pop();
+        //   int i=mightbecelebrity;
+        //   for(int j=0;j<mat[i].size();j++){
+        //   if(mat[i][j]==1)
+        //   return -1;
+        //   }
+        //   int j=mightbecelebrity;
+        //   for(int i=0;i<mat.size();i++){
+        //   if(i!=j&&mat[i][j]==0)
+        //   return -1;
+        //   }
+        //   return mightbecelebrity;
+        
+        
+        
+        while(!s.empty()){
+            int a=s.top();
+            s.pop();
+            if(!s.empty()){
+            int b=s.top();
+            s.pop();
+            if(mat[a][b]==1&&mat[b][a]==0){
+                s.push(b);
+            }
+            if(mat[b][a]==1&&mat[a][b]==0){
+                s.push(a);
+            }
+            if(s.empty()){
+                return -1;
+            }
+            }
+            else if(s.empty()){
+                s.push(a);
+                break;
+            }
+        }
+          int mightbecelebrity=s.top();
         s.pop();
           int i=mightbecelebrity;
           for(int j=0;j<mat[i].size();j++){
@@ -69,11 +115,12 @@ class Solution {
           return -1;
           }
           int j=mightbecelebrity;
-           for(int i=0;i<mat.size();i++){
+          for(int i=0;i<mat.size();i++){
           if(i!=j&&mat[i][j]==0)
           return -1;
-           }
-           return mightbecelebrity;
+          }
+          return mightbecelebrity;
+        
     }
 };
 
