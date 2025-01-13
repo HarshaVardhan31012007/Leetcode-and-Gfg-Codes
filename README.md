@@ -50,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0200-number-of-islands) |
 | [0204-count-primes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0204-count-primes) |
 | [0238-product-of-array-except-self](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0238-product-of-array-except-self) |
+| [0239-sliding-window-maximum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0239-sliding-window-maximum) |
 | [0240-search-a-2d-matrix-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0240-search-a-2d-matrix-ii) |
 | [0268-missing-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0283-move-zeroes) |
@@ -202,6 +203,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sliding Window
 |  |
 | ------- |
+| [0239-sliding-window-maximum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0239-sliding-window-maximum) |
 | [0567-permutation-in-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0567-permutation-in-string) |
 | [0643-maximum-average-subarray-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0643-maximum-average-subarray-i) |
 ## Simulation
@@ -315,6 +317,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0239-sliding-window-maximum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0239-sliding-window-maximum) |
 | [0948-sort-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0948-sort-an-array) |
 ## Merge Sort
 |  |
@@ -381,4 +384,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0155-min-stack) |
+## Queue
+|  |
+| ------- |
+| [0239-sliding-window-maximum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0239-sliding-window-maximum) |
+## Monotonic Queue
+|  |
+| ------- |
+| [0239-sliding-window-maximum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0239-sliding-window-maximum) |
 <!---LeetCode Topics End-->
