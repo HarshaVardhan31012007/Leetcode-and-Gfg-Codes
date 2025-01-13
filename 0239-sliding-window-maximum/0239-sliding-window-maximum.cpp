@@ -45,6 +45,7 @@ public:
         //store indices
         for(int i=0;i<k;i++){
             while(!q.empty()&&arr[q.back()]<arr[i]){
+                cout<<q.back()<<endl;
             q.pop_back();
             }
             q.push_back(i);
