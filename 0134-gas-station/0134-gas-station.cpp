@@ -38,20 +38,41 @@ public:
         // return ans;
 
         //method 2
+        // int balance=0;
+        // int deficient=0;
+        // int start=0;
+        // int n=gas.size();
+        // for(int i=0;i<n;i++){
+        //     balance=balance+gas[i]-cost[i];
+        //     if(balance<0){
+        //         deficient=deficient+balance;
+        //         start=i+1;
+        //         balance=0;
+        //     }
+        // }
+        // if(balance+deficient>=0){
+        //     return start;
+        // }
+        // return -1;
+
+
+        //method 3
         int balance=0;
         int deficient=0;
-        int start=0;
         int n=gas.size();
+        deque<int>q;
         for(int i=0;i<n;i++){
             balance=balance+gas[i]-cost[i];
+            q.push_back(i);
             if(balance<0){
                 deficient=deficient+balance;
-                start=i+1;
+                while(!q.empty())
+                q.pop_back();
                 balance=0;
             }
         }
         if(balance+deficient>=0){
-            return start;
+            return q.front();
         }
         return -1;
     }
