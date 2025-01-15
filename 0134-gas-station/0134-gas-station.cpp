@@ -60,14 +60,19 @@ public:
         int balance=0;
         int deficient=0;
         int n=gas.size();
-        deque<int>q;
+        // deque<int>q;
+        queue<int>q;
         for(int i=0;i<n;i++){
             balance=balance+gas[i]-cost[i];
-            q.push_back(i);
+            // q.push_back(i);
+            q.push(i);
             if(balance<0){
                 deficient=deficient+balance;
-                while(!q.empty())
-                q.pop_back();
+                // while(!q.empty())
+                // q.pop_back();
+                while(!q.empty()){
+                    q.pop();
+                }
                 balance=0;
             }
         }
