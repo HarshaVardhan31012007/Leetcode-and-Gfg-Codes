@@ -44,7 +44,7 @@ public:
         //process first window
         //store indices
         for(int i=0;i<k;i++){
-            while(!q.empty()&&arr[q.back()]<=arr[i]){
+            while(!q.empty()&&arr[q.back()]<=arr[i]){// less than or less than or eual both arwe correct
                 cout<<q.back()<<endl;
             q.pop_back();
             }
@@ -60,7 +60,7 @@ public:
                 q.pop_front();
             }
             //add
-           while(!q.empty()&&arr[q.back()]<=arr[i]){
+           while(!q.empty()&&arr[q.back()]<=arr[i]){// less than or less than or eual both arwe correct
             q.pop_back();
            }
            q.push_back(i);
