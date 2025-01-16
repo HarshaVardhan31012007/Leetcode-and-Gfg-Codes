@@ -253,6 +253,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0225-implement-stack-using-queues](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0234-palindrome-linked-list) |
+| [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
 | [0943-sum-of-subarray-minimums](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0943-sum-of-subarray-minimums) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
@@ -362,6 +363,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0200-number-of-islands) |
+| [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
 | [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 ## Breadth-First Search
@@ -390,14 +392,24 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0155-min-stack) |
 | [0225-implement-stack-using-queues](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0232-implement-queue-using-stacks) |
+| [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
 ## Queue
 |  |
 | ------- |
 | [0225-implement-stack-using-queues](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0232-implement-queue-using-stacks) |
 | [0239-sliding-window-maximum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0239-sliding-window-maximum) |
+| [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
 ## Monotonic Queue
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0239-sliding-window-maximum) |
+## Tree
+|  |
+| ------- |
+| [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
+## Iterator
+|  |
+| ------- |
+| [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
 <!---LeetCode Topics End-->
