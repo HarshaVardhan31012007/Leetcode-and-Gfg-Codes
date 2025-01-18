@@ -20,7 +20,7 @@ public:
             dq.pop_front();
            }
            //momotomic queue
-           while(!dq.empty()&&P[j]<P[dq.back()]){
+           while(!dq.empty()&&P[j]<=P[dq.back()]){
             dq.pop_back();
            }
            dq.push_back(j);
