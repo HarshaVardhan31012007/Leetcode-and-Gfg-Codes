@@ -372,6 +372,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0200-number-of-islands](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0200-number-of-islands) |
 | [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
+| [0543-diameter-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0543-diameter-of-binary-tree) |
 | [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 ## Breadth-First Search
@@ -421,6 +422,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
+| [0543-diameter-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0543-diameter-of-binary-tree) |
 ## Iterator
 |  |
 | ------- |
@@ -429,4 +431,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0543-diameter-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0543-diameter-of-binary-tree) |
 <!---LeetCode Topics End-->
