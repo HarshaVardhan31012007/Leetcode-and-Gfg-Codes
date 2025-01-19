@@ -11,18 +11,31 @@
  */
 class Solution {
 public:
-    void solve(TreeNode *root,int &len,int step){
+    // void solve(TreeNode *root,int &len,int step){
+    //     if(root==NULL){
+    //         len=max(len,step);
+    //         return;
+    //     }
+    //     solve(root->left,len,step+1);
+    //     solve(root->right,len,step+1);
+    // }
+
+     int solve(TreeNode *root){
         if(root==NULL){
-            len=max(len,step);
-            return;
+            return 0;
         }
-        solve(root->left,len,step+1);
-        solve(root->right,len,step+1);
+        int leftans=solve(root->left);
+        int rightans=solve(root->right);
+        int finalans=max(leftans,rightans)+1;
+        return finalans;
     }
+
     int maxDepth(TreeNode* root) {
-        int len=INT_MIN;
-        int step=0;
-        solve(root,len,step);
-        return len;
+        // int len=INT_MIN;
+        // int step=0;
+        // solve(root,len,step);
+        // return len;
+
+        return solve(root);
     }
 };
