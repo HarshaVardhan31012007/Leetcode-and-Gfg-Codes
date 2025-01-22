@@ -27,19 +27,29 @@ public:
     //     root->right=bulidTree(in,mid+1,j);
     //     return root;
     // }
+    // TreeNode *bulidTree(vector<int>&in,int i,int j){
+    //      if(i>j)
+    //      return NULL;
+    //     //int mid=ceil((i+j)/2);
+    //     int mid=(i+j+1)/2;
+    //     TreeNode *root=new TreeNode(in[mid]);
+    //     root->left=bulidTree(in,i,mid-1);
+    //     root->right=bulidTree(in,mid+1,j);
+    //     return root;
+    // }
     TreeNode *bulidTree(vector<int>&in,int i,int j){
-         if(i>j)
+         if(i>=j)
          return NULL;
-        //int mid=ceil((i+j)/2);
-        int mid=(i+j+1)/2;
+        int mid=(i+j)/2;
         TreeNode *root=new TreeNode(in[mid]);
-        root->left=bulidTree(in,i,mid-1);
+        root->left=bulidTree(in,i,mid);
         root->right=bulidTree(in,mid+1,j);
         return root;
     }
     TreeNode* balanceBST(TreeNode* root) {
         vector<int>in;
         inorder(root,in);
-        return bulidTree(in,0,in.size()-1);
+        // return bulidTree(in,0,in.size()-1);
+        return bulidTree(in,0,in.size());
     }
 };
