@@ -30,9 +30,16 @@ public:
     TreeNode* convertBST(TreeNode* root) {
         vector<int>inorder;
         buildinorder(root,inorder);
-        int sum=0;
+        //int sum=0;
         for(int i=inorder.size()-1;i>=0;i--){
-            sum=sum+inorder[i];
+            // sum=sum+inorder[i];
+            // inorder[i]=sum;
+            int curr=inorder[i];
+            int next=0;
+            if(i+1<inorder.size()){
+                next=inorder[i+1];
+            }
+            int sum=curr+next;
             inorder[i]=sum;
         } 
         int i=0;
