@@ -12,18 +12,24 @@
 class Solution {
 public:
     bool solve(TreeNode *root,long mini,long maxi){
+        // if(root==NULL){
+        //     return true;
+        // }
+        // bool currans=root->val>mini&&root->val<maxi;
+        // if(currans==false){
+        //     return false;
+        // }
+        // bool leftans=solve(root->left,mini,root->val);
+        // bool rightans=solve(root->right,root->val,maxi);
+        // //no need to check currans 
+        // //agar yahi tak reach then curr ans is true
+        // return leftans&&rightans;
+
+
         if(root==NULL){
             return true;
         }
-        bool currans=root->val>mini&&root->val<maxi;
-        if(currans==false){
-            return false;
-        }
-        bool leftans=solve(root->left,mini,root->val);
-        bool rightans=solve(root->right,root->val,maxi);
-        //no need to check currans 
-        //agar yahi tak reach then curr ans is true
-        return leftans&&rightans;
+        return root->val>mini&&root->val<maxi&&solve(root->left,mini,root->val)&&solve(root->right,root->val,maxi);
     }
     bool isValidBST(TreeNode* root) {
         long mini=LONG_MIN;
