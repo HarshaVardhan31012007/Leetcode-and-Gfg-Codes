@@ -20,7 +20,7 @@ class Solution{
     Node *build(Node *root,int &succ,int val){
         if(!root)
         return new Node(val);
-        if(val>=root->data){
+        if(val>=root->data){//equality important if it is equal it cant be successor 
             root->right=build(root->right,succ,val);
         }
         else{
