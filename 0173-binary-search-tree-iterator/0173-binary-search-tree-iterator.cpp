@@ -22,15 +22,23 @@ public:
     //     }
 
     stack<TreeNode*>st;
+    stack<TreeNode*>revst;
     void pushleft(TreeNode *root){
         while(root){
             st.push(root);
             root=root->left;
         }
     }
+    void pushright(TreeNode *root){
+        while(root){
+            revst.push(root);
+            root=root->right;
+        }
+    }
     BSTIterator(TreeNode* root) {
     //    create(root);
     pushleft(root);
+    pushright(root);
     }
     //int i=0;
     int next() {
@@ -42,10 +50,20 @@ public:
        }
        return top->val;
     }
-    
+    int before() {
+       TreeNode* top=revst.top();
+       st.pop();
+       if(top->left!=NULL){
+        pushleft(top->left); 
+       }
+       return top->val;
+    }
     bool hasNext() {
         //return i<v.size();
         return !st.empty();
+    }
+    bool hasBefore() {
+        return !revst.empty();
     }
 };
 
