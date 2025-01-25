@@ -41,10 +41,20 @@ public:
             return rightchild;
            }
            else if(root->left!=NULL&&root->right!=NULL){
-                int maxVal=getMax(root->left);
-                root->val=maxVal;
-                root->left=deleteNode(root->left,maxVal);
-                return root;
+                // int maxVal=getMax(root->left);
+                // root->val=maxVal;
+                // root->left=deleteNode(root->left,maxVal);
+                // return root;
+
+                //inplace
+                TreeNode *rightscan=root->right;
+                while(rightscan->left!=NULL){
+                    rightscan=rightscan->left;
+                }
+                 TreeNode *rc=root->right;
+                rightscan->left=root->left;
+                delete root;
+                return rc;
            }
         }
           else{
