@@ -47,14 +47,23 @@ public:
                 // return root;
 
                 //inplace
-                TreeNode *rightscan=root->right;
-                while(rightscan->left!=NULL){
-                    rightscan=rightscan->left;
+                // TreeNode *rightscan=root->right;
+                // while(rightscan->left!=NULL){
+                //     rightscan=rightscan->left;
+                // }
+                //  TreeNode *rc=root->right;
+                // rightscan->left=root->left;
+                // delete root;
+                // return rc;
+
+                 TreeNode *lscan=root->left;
+                while(lscan->right!=NULL){
+                    lscan=lscan->right;
                 }
-                 TreeNode *rc=root->right;
-                rightscan->left=root->left;
+                 TreeNode *lc=root->left;
+                lscan->right=root->right;
                 delete root;
-                return rc;
+                return lc;
            }
         }
           else{
