@@ -54,7 +54,7 @@ public:
        TreeNode* top=revst.top();
        st.pop();
        if(top->left!=NULL){
-        pushleft(top->left); 
+        pushright(top->left); 
        }
        return top->val;
     }
