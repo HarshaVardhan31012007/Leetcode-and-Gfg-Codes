@@ -11,24 +11,42 @@
  */
 class Solution {
 public:
-     void buildinorder(TreeNode *root,vector<int>&inorder){
+    //  void buildinorder(TreeNode *root,vector<int>&inorder){
+    //     if(root==NULL){
+    //         return;
+    //     }
+    //     buildinorder(root->left,inorder);
+    //     inorder.push_back(root->val);
+    //     buildinorder(root->right,inorder);
+    // }
+
+     void solve(TreeNode *root,int &diff,TreeNode *&prev){
         if(root==NULL){
             return;
         }
-        buildinorder(root->left,inorder);
-        inorder.push_back(root->val);
-        buildinorder(root->right,inorder);
+        solve(root->left,diff,prev);
+        if(prev){
+            diff=min(diff,root->val-prev->val);
+        }
+        //update prev with root if PBR
+        prev=root;
+        solve(root->right,diff,prev);
     }
     int minDiffInBST(TreeNode* root) {
-         vector<int>inorder;
-        buildinorder(root,inorder);
-        int prev=inorder[0];
+        //  vector<int>inorder;
+        // buildinorder(root,inorder);
+        // int prev=inorder[0];
+        // int diff=INT_MAX;
+        // for(int i=1;i<inorder.size();i++){
+        //    int currdiff=inorder[i]-prev;
+        //    diff=min(diff,currdiff);
+        //    prev=inorder[i];
+        // } 
+        // return diff;
+
         int diff=INT_MAX;
-        for(int i=1;i<inorder.size();i++){
-           int currdiff=inorder[i]-prev;
-           diff=min(diff,currdiff);
-           prev=inorder[i];
-        } 
+        TreeNode *prev=NULL;
+        solve(root,diff,prev);
         return diff;
     }
 };
