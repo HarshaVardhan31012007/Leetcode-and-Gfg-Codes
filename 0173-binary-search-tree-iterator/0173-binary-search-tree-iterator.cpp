@@ -11,25 +11,41 @@
  */
 class BSTIterator {
 public:
-    vector<int>v;
-     void create(TreeNode *root){
-        if(root==NULL){
-            return;
+    // vector<int>v;
+    //  void create(TreeNode *root){
+    //     if(root==NULL){
+    //         return;
+    //     }
+    //     create(root->left);
+    //     v.push_back(root->val);
+    //     create(root->right);
+    //     }
+
+    stack<TreeNode*>st;
+    void pushleft(TreeNode *root){
+        while(root){
+            st.push(root);
+            root=root->left;
         }
-        create(root->left);
-        v.push_back(root->val);
-        create(root->right);
-        }
-    BSTIterator(TreeNode* root) {
-       create(root);
     }
-    int i=0;
+    BSTIterator(TreeNode* root) {
+    //    create(root);
+    pushleft(root);
+    }
+    //int i=0;
     int next() {
-        return v[i++];
+       // return v[i++];
+       TreeNode* top=st.top();
+       st.pop();
+       if(top->right!=NULL){
+        pushleft(top->right); 
+       }
+       return top->val;
     }
     
     bool hasNext() {
-        return i<v.size();
+        //return i<v.size();
+        return !st.empty();
     }
 };
 
