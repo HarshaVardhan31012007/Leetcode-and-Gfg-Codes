@@ -35,6 +35,7 @@ public:
         }
         TreeNode *lstree=solve(head,n/2);
         TreeNode *root=new TreeNode(head->val);
+        //we can do inplace if pointer type same
         head=head->next;
         root->left=lstree;
         TreeNode *rstree=solve(head,n-n/2-1);
