@@ -20,7 +20,7 @@ public:
             return NULL;
         }
         TreeNode *root=new TreeNode(postorder[pi]);
-        // int index=find(inorder,is,ie,preorder[pi]);
+        //another method to find index that is to iterate and find index
         int index=mpp[postorder[pi]];
         pi--;
         root->right=build(postorder,inorder,pi,index+1,ie);
