@@ -19,9 +19,10 @@ public:
         return false;
     }
     bool isSymmetric(TreeNode* root) {
-        if(root==NULL){
-            return true;
-        }
+        //this is nedded if min no of nodes are zer0
+        // if(root==NULL){
+        //     return true;
+        // }
         return isMirror(root->left,root->right);
     }
 };
