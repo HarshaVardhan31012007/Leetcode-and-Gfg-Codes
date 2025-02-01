@@ -94,9 +94,10 @@ public:
       for(auto i:mpp){
         vector<int>temp;
         for(auto j:i.second){
-            for(auto k:j.second){
-                temp.push_back(k);
-            }
+        //    for(auto k:j.second){
+        //         temp.push_back(k);
+        //    }
+        temp.insert(temp.end(),j.second.begin(),j.second.end());
         }
         ans.push_back(temp);
       }
