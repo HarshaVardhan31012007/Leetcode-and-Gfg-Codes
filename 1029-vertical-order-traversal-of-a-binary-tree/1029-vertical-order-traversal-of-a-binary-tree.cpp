@@ -107,8 +107,40 @@ public:
 
 
     //method 3
-       vector<vector<int>>ans;
-      map<int,map<int,vector<int>>>mpp;
+    //    vector<vector<int>>ans;
+    //   map<int,map<int,vector<int>>>mpp;
+    //   queue<pair<TreeNode*,pair<int,int>>>q;
+    //   if(root==NULL){
+    //     return ans;
+    //   }
+    //   q.push({root,make_pair(0,0)});
+    //   while(!q.empty()){
+    //       auto front=q.front();
+    //       q.pop();
+    //       mpp[front.second.second][front.second.first].push_back(front.first->val);
+    //       if(front.first->left!=NULL){
+    //         q.push({front.first->left,{front.second.first+1,front.second.second-1}});
+    //       }
+    //       if(front.first->right!=NULL){
+    //         q.push({front.first->right,{front.second.first+1,front.second.second+1}});
+    //       }
+    //   }
+    //      for(auto i:mpp){
+    //     vector<int>temp;
+    //     for(auto j:i.second){
+    //     //    for(auto k:j.second){
+    //     //         temp.push_back(k);
+    //     //    }
+    //     sort(j.second.begin(),j.second.end());
+    //     temp.insert(temp.end(),j.second.begin(),j.second.end());
+    //     }
+    //     ans.push_back(temp);
+    //   }
+    //   return ans;
+
+    //method 4
+      vector<vector<int>>ans;
+      map<int,map<int,multiset<int>>>mpp;
       queue<pair<TreeNode*,pair<int,int>>>q;
       if(root==NULL){
         return ans;
@@ -117,7 +149,7 @@ public:
       while(!q.empty()){
           auto front=q.front();
           q.pop();
-          mpp[front.second.second][front.second.first].push_back(front.first->val);
+          mpp[front.second.second][front.second.first].insert(front.first->val);
           if(front.first->left!=NULL){
             q.push({front.first->left,{front.second.first+1,front.second.second-1}});
           }
@@ -128,10 +160,6 @@ public:
          for(auto i:mpp){
         vector<int>temp;
         for(auto j:i.second){
-        //    for(auto k:j.second){
-        //         temp.push_back(k);
-        //    }
-        sort(j.second.begin(),j.second.end());
         temp.insert(temp.end(),j.second.begin(),j.second.end());
         }
         ans.push_back(temp);
