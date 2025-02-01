@@ -118,7 +118,8 @@ class Solution {
         int r=sum(root->right);
         int temp=root->data;
         root->data=l+r;
-        return root->data+temp;
+       // return root->data+temp;
+       return root->data+temp;
     }
     void toSumTree(Node *root)
     {   sum(root);
