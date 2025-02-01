@@ -76,9 +76,9 @@ public:
             return;
         }
         mpp[c][r].push_back(root->val);
-        if(mpp[c][r].size()>1){
-            sort(mpp[c][r].begin(),mpp[c][r].end());
-        }
+        // if(mpp[c][r].size()>1){
+        //     sort(mpp[c][r].begin(),mpp[c][r].end());
+        // }
         solve(root->left,mpp,r+1,c-1);
         solve(root->right,mpp,r+1,c+1);
     }
@@ -97,6 +97,7 @@ public:
         //    for(auto k:j.second){
         //         temp.push_back(k);
         //    }
+        sort(j.second.begin(),j.second.end());
         temp.insert(temp.end(),j.second.begin(),j.second.end());
         }
         ans.push_back(temp);
