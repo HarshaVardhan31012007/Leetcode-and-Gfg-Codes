@@ -11,28 +11,24 @@
  */
 class Solution {
 public:
+    int ans=0;
     void check(TreeNode *root,int &ans,long long int k){
        if(root==NULL){
         return;
        }
-        if(k==root->val){
+       if(k==root->val){
         ans=ans+1;
        }
        k=k-root->val;
        check(root->left,ans,k);
        check(root->right,ans,k);
     }
-    void traverse(TreeNode *root,int &ans,long long int k){
-        if(root==NULL){
-            return;
-        }
-        check(root,ans,k);
-        traverse(root->left,ans,k);
-        traverse(root->right,ans,k);
-    }
     int pathSum(TreeNode* root, long long int targetSum) {
-        int ans=0;
-        traverse(root,ans,targetSum);
+        if(root){
+        check(root,ans,targetSum);
+        pathSum(root->left,targetSum);
+        pathSum(root->right,targetSum);
+        }
         return ans;
     }
 };
