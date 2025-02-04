@@ -36,29 +36,46 @@ public:
     // }
 
 
-     void build(vector<TreeNode*>&ans,TreeNode *root){
-        if(root==NULL){
-            return;
-        }
-        ans.push_back(root);
-        build(ans,root->left);
-        build(ans,root->right);
-    }
-     void flatten(TreeNode* root) {
-        //no need
-        // if(root==NULL||!root->left&&!root->right){
-        //     return;
-        // }
-        vector<TreeNode*>ans;
-        build(ans,root);
+    //  void build(vector<TreeNode*>&ans,TreeNode *root){
+    //     if(root==NULL){
+    //         return;
+    //     }
+    //     ans.push_back(root);
+    //     build(ans,root->left);
+    //     build(ans,root->right);
+    // }
+    //  void flatten(TreeNode* root) {
+    //     //no need
+    //     // if(root==NULL||!root->left&&!root->right){
+    //     //     return;
+    //     // }
+    //     vector<TreeNode*>ans;
+    //     build(ans,root);
+    //     TreeNode *curr=root;
+    //     for(int i=0;i<ans.size();i++){
+    //         curr=ans[i];
+    //         if(i+1<ans.size()){
+    //             curr->left=NULL;
+    //             curr->right=ans[i+1];
+    //         }
+    //     }
+    //     //for last in original both left and right are NUll
+    // }
+
+
+    void flatten(TreeNode *root){
         TreeNode *curr=root;
-        for(int i=0;i<ans.size();i++){
-            curr=ans[i];
-            if(i+1<ans.size()){
+        while(curr){
+            if(curr->left){
+                TreeNode *pred=curr->left;
+                while(pred->right){
+                    pred=pred->right;
+                }
+                pred->right=curr->right;
+                curr->right=curr->left;
                 curr->left=NULL;
-                curr->right=ans[i+1];
             }
+            curr=curr->right;
         }
-        //for last in original both left and right are NUll
     }
 };
