@@ -45,9 +45,10 @@ public:
         build(ans,root->right);
     }
      void flatten(TreeNode* root) {
-        if(root==NULL||!root->left&&!root->right){
-            return;
-        }
+        //no need
+        // if(root==NULL||!root->left&&!root->right){
+        //     return;
+        // }
         vector<TreeNode*>ans;
         build(ans,root);
         TreeNode *curr=root;
