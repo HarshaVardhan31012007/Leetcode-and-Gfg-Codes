@@ -29,7 +29,7 @@ public:
                     curr=curr->left;
                 }
                 else{
-                     pred->right=NULL;
+                    pred->right=NULL;
                     ans.push_back(curr->val);
                     curr=curr->right;
                 }
