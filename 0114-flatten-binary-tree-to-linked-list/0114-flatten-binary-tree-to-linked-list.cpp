@@ -58,5 +58,6 @@ public:
                 curr->right=ans[i+1];
             }
         }
+        //for last in original both left and right are NUll
     }
 };
