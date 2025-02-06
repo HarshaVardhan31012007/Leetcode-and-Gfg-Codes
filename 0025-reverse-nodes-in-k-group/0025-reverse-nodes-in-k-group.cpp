@@ -46,10 +46,10 @@ public:
             position++;
         }
         //recursive calls
-        if(curr!=NULL){
+       // if(curr!=NULL){
             ListNode *recursivehead=reverseKGroup(curr,k);
             head->next=recursivehead;
-        }
+        //}
         return prev;
     }
 };
