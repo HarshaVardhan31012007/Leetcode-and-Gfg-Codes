@@ -46,7 +46,7 @@ public:
             position++;
         }
         //recursive calls
-       // if(curr!=NULL){
+       // if(curr!=NULL){//no need
             ListNode *recursivehead=reverseKGroup(curr,k);
             head->next=recursivehead;
         //}
