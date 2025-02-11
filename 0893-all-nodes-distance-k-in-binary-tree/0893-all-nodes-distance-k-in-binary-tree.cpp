@@ -29,8 +29,9 @@ public:
         queue<TreeNode*>q;
         q.push(target);
         int l=0;
-        while(l!=k){
+        while(l!=k){//!q.empty()
             int size=q.size();
+            //if(i==k) break;
             l++;
             for(int i=0;i<size;i++){
                 auto front=q.front();
