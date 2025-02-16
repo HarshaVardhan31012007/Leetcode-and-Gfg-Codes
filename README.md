@@ -447,6 +447,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0662-maximum-width-of-binary-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [0998-check-completeness-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
@@ -521,6 +522,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0662-maximum-width-of-binary-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [0998-check-completeness-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [1008-binary-tree-cameras](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1008-binary-tree-cameras) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
@@ -565,6 +567,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0662-maximum-width-of-binary-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [0998-check-completeness-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [1008-binary-tree-cameras](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1008-binary-tree-cameras) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
