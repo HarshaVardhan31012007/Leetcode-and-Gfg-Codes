@@ -64,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0473-matchsticks-to-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0473-matchsticks-to-square) |
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0643-maximum-average-subarray-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0643-maximum-average-subarray-i) |
 | [0724-find-pivot-index](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0724-find-pivot-index) |
 | [0792-binary-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0792-binary-search) |
@@ -135,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0807-custom-sort-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0807-custom-sort-string) |
 | [0948-sort-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0948-sort-an-array) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -155,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0567-permutation-in-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0567-permutation-in-string) |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0807-custom-sort-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0807-custom-sort-string) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -235,6 +238,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0239-sliding-window-maximum) |
 | [0567-permutation-in-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0567-permutation-in-string) |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0643-maximum-average-subarray-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0643-maximum-average-subarray-i) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 ## Simulation
@@ -300,6 +304,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0011-container-with-most-water) |
 | [0134-gas-station](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0134-gas-station) |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0649-dota2-senate](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0649-dota2-senate) |
 | [0680-valid-palindrome-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0680-valid-palindrome-ii) |
 | [1285-balance-a-binary-search-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1285-balance-a-binary-search-tree) |
@@ -363,6 +368,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0023-merge-k-sorted-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0239-sliding-window-maximum) |
+| [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0948-sort-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0948-sort-an-array) |
 ## Merge Sort
