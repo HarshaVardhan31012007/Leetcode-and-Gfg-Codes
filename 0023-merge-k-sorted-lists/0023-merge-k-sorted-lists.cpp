@@ -18,25 +18,39 @@ public:
     };
     ListNode* mergeKLists(vector<ListNode*>& lists) {
         priority_queue<ListNode*,vector<ListNode*>,comapre>pq;
-        ListNode *head=NULL;
-        ListNode *tail=NULL;
-        for(int i=0;i<lists.size();i++){
-            if(lists[i]!=NULL)
-            pq.push(lists[i]);
+        // ListNode *head=NULL;
+        // ListNode *tail=NULL;
+        // for(int i=0;i<lists.size();i++){
+        //     if(lists[i]!=NULL)
+        //     pq.push(lists[i]);
+        // }
+        // while(!pq.empty()){
+        //  ListNode *top=pq.top();
+        //  pq.pop();
+        //  if(head==NULL&&tail==NULL){
+        //    head=top;
+        //    tail=top;
+        //  }
+        //  else{
+        //     tail->next=top;
+        //     tail=top;
+        //  }
+        //  if(tail->next!=NULL) pq.push(tail->next);
+        // }
+        // return head;
+
+        ListNode *ans=new ListNode(-1);
+        for(auto head:lists){
+            if(head) pq.push(head);
         }
+        ListNode *it=ans;
         while(!pq.empty()){
-         ListNode *top=pq.top();
-         pq.pop();
-         if(head==NULL&&tail==NULL){
-           head=top;
-           tail=top;
-         }
-         else{
-            tail->next=top;
-            tail=top;
-         }
-         if(tail->next!=NULL) pq.push(tail->next);
+            ListNode *top=pq.top();
+            pq.pop();
+            it->next=top;
+            it=it->next;
+            if(top->next) pq.push(top->next);
         }
-        return head;
+        return ans->next;
     }
 };
