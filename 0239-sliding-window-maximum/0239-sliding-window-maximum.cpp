@@ -26,9 +26,10 @@ public:
         }
         ans.push_back(pq.top().first);
         for(int i=k;i<nums.size();i++){
-            pq.push({nums[i],i});
-            while(i-pq.top().second>=k)
+            // pq.push({nums[i],i});
+            while(!pq.empty()&&i-pq.top().second>=k)
             pq.pop();
+             pq.push({nums[i],i});
             ans.push_back(pq.top().first);
         }
         return ans;
