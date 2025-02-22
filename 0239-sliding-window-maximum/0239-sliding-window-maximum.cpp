@@ -1,71 +1,27 @@
 class Solution {
 public:
- //method 1
-//   int findmax(queue<int>q){
-//      int maxAns=INT_MIN;
-//      while(!q.empty()){
-//         if(q.front()>maxAns){
-//             maxAns=q.front();
-//         }
-//         q.pop();
-//      }
-//      return maxAns;
-//   }
-    
-    vector<int> maxSlidingWindow(vector<int>& arr, int k) {
-           //method 1
-        // vector<int>ans;
-        // queue<int>q;
-        // //step1
-        // //process first window
-        // for(int i=0;i<k;i++){
-        //     q.push(arr[i]);
-        // }
-        // //process for rem windows
-        // for(int i=k;i<arr.size();i++){
-        //     //ans ko process
-        //     int Ans=findmax(q);
-        //     ans.push_back(Ans);
-        //     //removal
-        //     q.pop();
-        //     //add
-        //     q.push(arr[i]);
-        // }
-        //  int Ans=findmax(q);
-        // ans.push_back(Ans);
-        // return ans;
-
-
-        //method 2
+    class compare{
+       public:
+       bool operator()(pair<int,int> a,pair<int,int> b){
+          if(a.first!=b.first)
+          return a.first<b.first;
+          else
+          return a.second<b.second;
+       }
+    };
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
         vector<int>ans;
-        deque<int>q;
-        int n=arr.size();
-        //step1
-        //process first window
-        //store indices
+        priority_queue<pair<int,int>,vector<pair<int,int>>,compare>pq;
         for(int i=0;i<k;i++){
-            while(!q.empty()&&arr[q.back()]<=arr[i]){// less than or less than or eual both arwe correct
-                cout<<q.back()<<endl;
-            q.pop_back();
-            }
-            q.push_back(i);
+            pq.push({nums[i],i});
         }
-        
-        //process for rem windows
-        for(int i=k;i<n;i++){
-             //ans store previous ka
-           ans.push_back(arr[q.front()]);
-            //removal
-            if(i-q.front()>=k){
-                q.pop_front();
-            }
-            //add
-           while(!q.empty()&&arr[q.back()]<=arr[i]){// less than or less than or eual both arwe correct
-            q.pop_back();
-           }
-           q.push_back(i);
+        ans.push_back(pq.top().first);
+        for(int i=k;i<nums.size();i++){
+            pq.push({nums[i],i});
+            while(i-pq.top().second>=k)
+            pq.pop();
+            ans.push_back(pq.top().first);
         }
-        ans.push_back(arr[q.front()]);
         return ans;
     }
 };
