@@ -27,6 +27,8 @@ public:
         ans.push_back(pq.top().first);
         for(int i=k;i<nums.size();i++){
             // pq.push({nums[i],i});
+            // whilei-pq.top().second>=k)
+            // pq.pop();
             while(!pq.empty()&&i-pq.top().second>=k)
             pq.pop();
              pq.push({nums[i],i});
