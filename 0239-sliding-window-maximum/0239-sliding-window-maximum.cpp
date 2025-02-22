@@ -1,12 +1,20 @@
 class Solution {
 public:
-    class compare{
+    // class compare{
+    //    public:
+    //    bool operator()(pair<int,int> a,pair<int,int> b){
+    //       if(a.first!=b.first)
+    //       return a.first<b.first;
+    //       else
+    //       return a.second<b.second;
+    //    }
+    // };
+
+
+     class compare{
        public:
        bool operator()(pair<int,int> a,pair<int,int> b){
-          if(a.first!=b.first)
           return a.first<b.first;
-          else
-          return a.second<b.second;
        }
     };
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
