@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0268-missing-number) |
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
 | [1013-fibonacci-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1013-fibonacci-number) |
+| [1879-maximum-score-from-removing-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1879-maximum-score-from-removing-stones) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2106-find-greatest-common-divisor-of-array) |
 ## Array
 |  |
@@ -314,6 +315,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0649-dota2-senate](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0649-dota2-senate) |
 | [0680-valid-palindrome-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0680-valid-palindrome-ii) |
 | [1285-balance-a-binary-search-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1285-balance-a-binary-search-tree) |
+| [1879-maximum-score-from-removing-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1879-maximum-score-from-removing-stones) |
 ## Enumeration
 |  |
 | ------- |
@@ -380,6 +382,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0948-sort-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0948-sort-an-array) |
+| [1879-maximum-score-from-removing-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1879-maximum-score-from-removing-stones) |
 ## Merge Sort
 |  |
 | ------- |
