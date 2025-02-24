@@ -39,7 +39,9 @@ public:
              }
         }
         while(!pq.empty()){
-            ans.push_back(pq.top().second);
+            // ans.push_back(pq.top().second);
+            auto [frq,num]=pq.top();
+            ans.push_back(num);
             pq.pop();
         }
         return ans;
