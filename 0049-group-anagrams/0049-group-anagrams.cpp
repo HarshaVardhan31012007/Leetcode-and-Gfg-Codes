@@ -30,11 +30,12 @@ public:
      vector<vector<string>> groupAnagrams(vector<string>& strs) {
 
         vector<vector<string>>v;
-        map<std::array<int,256>,vector<string>>mpp;
+        map<std::array<int,256>,vector<string>>mpp;//here comparison function will be there
+        //but for unordered_map we have to need hash function 
 
         for(int i=0;i<strs.size();i++){
             mpp[hash(strs[i])].push_back(strs[i]);
-        }
+            }
 
         for(auto each:mpp){
             v.push_back(each.second);
