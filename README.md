@@ -270,6 +270,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0014-longest-common-prefix) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0020-valid-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0022-generate-parentheses) |
@@ -655,5 +656,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Trie
 |  |
 | ------- |
+| [0014-longest-common-prefix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0014-longest-common-prefix) |
 | [0208-implement-trie-prefix-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0208-implement-trie-prefix-tree) |
 <!---LeetCode Topics End-->
