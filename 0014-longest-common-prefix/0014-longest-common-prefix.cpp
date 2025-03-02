@@ -47,14 +47,21 @@ class TrieNode{
 
 class Solution {
 public:
-    void func(TrieNode *root,string &k){
-        if(root->children.size()>1||root->isterminal){
-            return;
-        }
-        if(root->children.empty()) return;
-        k=k+root->children.begin()->first;
-        func(root->children.begin()->second,k);
+    // void func(TrieNode *root,string &k){
+    //     if(root->children.size()>1||root->isterminal||root->children.empty()) return;
+    //     k=k+root->children.begin()->first;
+    //     func(root->children.begin()->second,k);
+    // }
+
+      void func(TrieNode *root,string &k){
+        if(root->children.size()>1||root->isterminal||root->children.empty()) return;
+        pair<char,TrieNode*>p;
+        for(auto each:root->children)
+        p=each;
+        k=k+p.first;
+        func(p.second,k);
     }
+
     string longestCommonPrefix(vector<string>& strs) {
         // string output="";int mini=INT_MAX;
         // for(int i=0;i<strs.size();i++){
