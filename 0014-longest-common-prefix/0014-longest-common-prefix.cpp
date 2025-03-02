@@ -11,8 +11,10 @@ public:
             bool issame=true;
             char ch=strs[0][i];
             for(int j=1;j<strs.size();j++){
-                if(strs[j][i]!=ch)
+                if(strs[j][i]!=ch){
                 issame=false;
+                break;
+                }
             }
             if(issame)
             output+=ch;
