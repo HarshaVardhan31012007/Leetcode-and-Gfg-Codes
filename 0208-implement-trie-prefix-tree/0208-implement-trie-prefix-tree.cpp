@@ -8,12 +8,28 @@ class TrieNode{
             isterminal=false;
         }
     };
-    void insertHelp(TrieNode *root,string k){
-        if(k.length()==0){
+    // void insertHelp(TrieNode *root,string k){
+    //     if(k.length()==0){
+    //         root->isterminal=true;
+    //         return;
+    //     }
+    //     char ch=k[0];
+    //     TrieNode *child;
+    //     if(root->children.count(ch)==0){
+    //         child=new TrieNode(ch);
+    //         root->children[ch]=child;
+    //     }
+    //     else{
+    //         child=root->children[ch];
+    //     }
+    //     insertHelp(child,k.substr(1));
+    // }
+    void insertHelp(TrieNode *root,string k,int i=0){
+        if(i>=k.length()){
             root->isterminal=true;
             return;
         }
-        char ch=k[0];
+        char ch=k[i];
         TrieNode *child;
         if(root->children.count(ch)==0){
             child=new TrieNode(ch);
@@ -22,7 +38,7 @@ class TrieNode{
         else{
             child=root->children[ch];
         }
-        insertHelp(child,k.substr(1));
+        insertHelp(child,k,i+1);
     }
     bool searchWord(TrieNode *root,string k){
         if(k.length()==0){
