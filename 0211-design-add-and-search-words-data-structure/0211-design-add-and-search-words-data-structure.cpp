@@ -54,22 +54,20 @@ class TrieNode{
         if(root->children.count(ch)==0&&ch!='.'){
             return false;
         }
-        else {
-            if(root->children.count(ch)==1){
+        if(root->children.count(ch)==1){
                 child=root->children[ch];
-            }
-            else{
+        }
+        else{
                 bool fans=0;
                 for(auto each:root->children){
-                    child=each.second;
-                    bool ans=searchW(child,k,i+1);
-                    if(ans==1){
-                        fans=1;
-                        break;
-                    }
+                child=each.second;
+                bool ans=searchW(child,k,i+1);
+                if(ans==1){
+                fans=1;
+                 break;
                 }
-                return fans;
-            }
+                }
+             return fans;
         }
         return searchW(child,k,i+1);
     }
