@@ -51,17 +51,28 @@ class TrieNode{
     //       return mismatched;
     // }
 
-        bool searchW(TrieNode *root,string k,int i=0,int change=0){
+    //     bool searchW(TrieNode *root,string k,int i=0,int change=0){
+    //       if(i>=k.length()){
+    //         return root->isterminal&&change==1;
+    //       }
+    //       if(change>1) return false;
+    //       for(auto &[val,node]:root->children){
+    //       if(val!=k[i]&&searchW(node,k,i+1,change+1)) return true;
+    //       else if(val==k[i]&&searchW(node,k,i+1,change)) return true;
+    //       }
+    //       return false;
+    //    }
+
+    bool searchW(TrieNode *root,string k,int i=0,bool change=false){
           if(i>=k.length()){
-            return root->isterminal&&change==1;
+            return root->isterminal&&change;
           }
-          if(change>1) return false;
           for(auto &[val,node]:root->children){
-          if(val!=k[i]&&searchW(node,k,i+1,change+1)) return true;
+          if(val!=k[i]&&!change&&searchW(node,k,i+1,true)) return true;
           else if(val==k[i]&&searchW(node,k,i+1,change)) return true;
           }
           return false;
-    }
+       }
 class MagicDictionary {
 public:
     TrieNode *root;
