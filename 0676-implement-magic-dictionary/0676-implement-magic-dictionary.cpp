@@ -23,18 +23,33 @@ class TrieNode{
           if(i>=k.length()){
             return root->isterminal&&change==1;
           }
-          //if(change>1) return false;
           bool mismatched=false;
           for(auto &[val,node]:root->children){
           if(val!=k[i]&&change==0)
           mismatched=mismatched||searchW(node,k,i+1,change+1);
           else if(val==k[i])
           mismatched=mismatched||searchW(node,k,i+1,change);
-        //   if(mismatched==true)
-        //   return true;
           }
           return mismatched;
     }
+
+
+    //  bool searchW(TrieNode *root,string k,int i=0,int change=0){
+    //       if(i>=k.length()){
+    //         return root->isterminal&&change==1;
+    //       }
+    //       if(change>1) return false;
+    //       bool mismatched=false;
+    //       for(auto &[val,node]:root->children){
+    //       if(val!=k[i])
+    //       mismatched=mismatched||searchW(node,k,i+1,change+1);
+    //       else
+    //       mismatched=mismatched||searchW(node,k,i+1,change);
+    //           if(mismatched==true)
+    //           return true;
+    //       }
+    //       return mismatched;
+    // }
 class MagicDictionary {
 public:
     TrieNode *root;
