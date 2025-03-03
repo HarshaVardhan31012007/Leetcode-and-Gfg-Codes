@@ -63,13 +63,28 @@ class TrieNode{
     //       return false;
     //    }
 
+    // bool searchW(TrieNode *root,string k,int i=0,bool change=false){
+    //       if(i>=k.length()){
+    //         return root->isterminal&&change;
+    //       }
+    //       for(auto &[val,node]:root->children){
+    //       if(val!=k[i]&&!change&&searchW(node,k,i+1,true)) return true;
+    //       else if(val==k[i]&&searchW(node,k,i+1,change)) return true;
+    //       }
+    //       return false;
+    //    }
+
     bool searchW(TrieNode *root,string k,int i=0,bool change=false){
           if(i>=k.length()){
             return root->isterminal&&change;
           }
+          if(root->children.count(k[i])==1){
+            if(searchW(root->children[k[i]],k,i+1,change)) return true;
+          }
+          if(!change){
           for(auto &[val,node]:root->children){
-          if(val!=k[i]&&!change&&searchW(node,k,i+1,true)) return true;
-          else if(val==k[i]&&searchW(node,k,i+1,change)) return true;
+          if(val!=k[i]&&searchW(node,k,i+1,true)) return true;
+          }
           }
           return false;
        }
