@@ -90,19 +90,22 @@ class Solution {
 public:
     void store(TrieNode *root,vector<string>&tem){
         if(root->isterminal){
+            //maximum 1 or 2 or 3 or 4 size only in vector
+            //space optimized
             tem.push_back(root->word);
             sort(tem.begin(),tem.end());
             if(tem.size()>3)
             tem.resize(3);
         }
         for(auto &each:root->children){
-            //k.push_back(each.first);
             store(each.second,tem);
-            //k.pop_back();
         }
     }
     void findSuggestions(TrieNode *root,vector<string>&tem,string &k,int i=0){
         if(i>=k.size()){
+            //for storing words dont use string for each time pushing poping
+            //then space complexity is (each recursive space*string space)
+            //it is not optimized hence maintain in structure only.
             store(root,tem);
             return;
         }
@@ -120,6 +123,7 @@ public:
             vector<string>tem;
             temp.push_back(each);
             findSuggestions(root,tem,temp);
+            // it is inefficient hence at time of insertion only process it
             // sort(tem.begin(),tem.end());
             // if(tem.size()>3)
             // tem.resize(3);
