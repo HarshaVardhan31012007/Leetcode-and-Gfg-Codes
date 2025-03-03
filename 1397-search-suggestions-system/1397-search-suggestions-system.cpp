@@ -94,8 +94,10 @@ public:
             //space optimized
             tem.push_back(root->word);
             sort(tem.begin(),tem.end());
-            if(tem.size()>3)
-            tem.resize(3);
+            // if(tem.size()>3)
+            // tem.resize(3);
+             if(tem.size()>3)
+            tem.erase(tem.end()-1,tem.end());
         }
         for(auto &each:root->children){
             store(each.second,tem);
