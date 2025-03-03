@@ -29,6 +29,7 @@ class TrieNode{
           mismatched=mismatched||searchW(node,k,i+1,change+1);
           else if(val==k[i])
           mismatched=mismatched||searchW(node,k,i+1,change);
+          if(mismatched==true) return true;
           }
           return mismatched;
     }
@@ -45,6 +46,7 @@ class TrieNode{
     //       mismatched=mismatched||searchW(node,k,i+1,change+1);
     //       else
     //       mismatched=mismatched||searchW(node,k,i+1,change);
+    //       if(mismatched==true) return true;
     //       }
     //       return mismatched;
     // }
