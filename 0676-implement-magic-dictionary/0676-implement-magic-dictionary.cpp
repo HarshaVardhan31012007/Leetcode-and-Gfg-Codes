@@ -24,16 +24,16 @@ class TrieNode{
             return root->isterminal&&change==1;
           }
           if(change>1) return false;
-          bool matched=false;
+          bool mismatched=false;
           for(auto &[val,node]:root->children){
           if(val!=k[i])
-          matched=matched||searchW(node,k,i+1,change+1);
+          mismatched=mismatched||searchW(node,k,i+1,change+1);
           else
-          matched=matched||searchW(node,k,i+1,change);
-          if(matched==true)
+          mismatched=mismatched||searchW(node,k,i+1,change);
+          if(mismatched==true)
           return true;
           }
-          return matched;
+          return mismatched;
     }
 class MagicDictionary {
 public:
