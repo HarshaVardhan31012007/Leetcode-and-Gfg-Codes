@@ -23,15 +23,15 @@ class TrieNode{
           if(i>=k.length()){
             return root->isterminal&&change==1;
           }
-          if(change>1) return false;
+          //if(change>1) return false;
           bool mismatched=false;
           for(auto &[val,node]:root->children){
-          if(val!=k[i])
+          if(val!=k[i]&&change==0)
           mismatched=mismatched||searchW(node,k,i+1,change+1);
-          else
+          else if(val==k[i])
           mismatched=mismatched||searchW(node,k,i+1,change);
-          if(mismatched==true)
-          return true;
+        //   if(mismatched==true)
+        //   return true;
           }
           return mismatched;
     }
