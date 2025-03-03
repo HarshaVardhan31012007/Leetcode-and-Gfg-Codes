@@ -50,10 +50,10 @@ class TrieNode{
             return root->isterminal==true;
         }
         char ch=k[i];
-        TrieNode *child;
         if(root->children.count(ch)==0&&ch!='.'){
             return false;
         }
+        TrieNode *child;
         if(root->children.count(ch)==1){
                 child=root->children[ch];
         }
