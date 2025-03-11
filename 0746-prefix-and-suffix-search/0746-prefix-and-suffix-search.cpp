@@ -84,20 +84,20 @@ public:
     }
     
     int f(string pref, string suff) {
-       // return search(root,suff+'{'+pref,0);
+       return search(root,suff+'{'+pref,0);
 
-       string s=suff+"{"+pref;
-        int ans=-1;
-        TrieNode*curr=root;
-        for(char &ch:s){
-            if(curr->children.count(ch)==0){
-                return -1;
-            }else{
-                ans=curr->children[ch]->index;
-                curr=curr->children[ch];
-            }
-        }
-        return ans;
+    //    string s=suff+"{"+pref;
+    //     int ans=-1;
+    //     TrieNode*curr=root;
+    //     for(char &ch:s){
+    //         if(curr->children.count(ch)==0){
+    //             return -1;
+    //         }else{
+    //             ans=curr->children[ch]->index;
+    //             curr=curr->children[ch];
+    //         }
+    //     }
+    //     return ans;
     }
 };
 
