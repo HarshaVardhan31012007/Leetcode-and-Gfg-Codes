@@ -28,17 +28,17 @@ class TrieNode{
     public:
     char data;
     unordered_map<char,TrieNode*>children;
-   // bool isterminal;
+    bool isterminal;
     int index;
     TrieNode(char val){
         this->data=val;
-       // this->isterminal=false;
+        this->isterminal=false;
         this->index=-1;
     }
 };
 void insert(TrieNode *root,string k,int i,int index){
   if(i>=k.length()){
-   // root->isterminal=true;
+    root->isterminal=true;
     return;
   }
   if(root->children.find(k[i])==root->children.end()){
@@ -61,7 +61,7 @@ public:
     WordFilter(vector<string>& words) {
         root=new TrieNode('-');
 
-        //MLE
+        //method 1
         for(int i=0;i<words.size();i++){
             string word=words[i];
             string pre="";
@@ -75,7 +75,7 @@ public:
             }
         }
 
-
+        //method 2
         // for(int i=0;i<words.size();i++){
         //     string word=words[i];
         //     string suf="";
