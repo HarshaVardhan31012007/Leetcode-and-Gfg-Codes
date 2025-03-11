@@ -62,30 +62,32 @@ public:
         root=new TrieNode('-');
 
         //MLE
-        // for(int i=0;i<words.size();i++){
-        //     string word=words[i];
-        //     for(int j=1;j<=word.size();j++){
-        //         string pre=word.substr(0,j);
-        //         for(int k=0;k<word.size();k++){
-        //             string suf=word.substr(k);
-        //             insert(root,pre+'{'+suf,0,i);
-        //         }
-        //     }
-        // }
-
-
         for(int i=0;i<words.size();i++){
             string word=words[i];
-            string suf="";
+            string pre="";
+            for(int j=0;j<word.size();j++){
+                pre=pre+word[j];
+                string suf="";
                 for(int k=word.size()-1;k>=0;k--){
                     suf=word[k]+suf;
-                    insert(root,suf+'{'+word,0,i);
+                    insert(root,suf+'{'+pre,0,i);
                 }
+            }
         }
+
+
+        // for(int i=0;i<words.size();i++){
+        //     string word=words[i];
+        //     string suf="";
+        //         for(int k=word.size()-1;k>=0;k--){
+        //             suf=word[k]+suf;
+        //             insert(root,suf+'{'+word,0,i);
+        //         }
+        // }
     }
     
     int f(string pref, string suff) {
-       return search(root,suff+'{'+pref,0);
+         return search(root,suff+'{'+pref,0);
     }
 };
 
