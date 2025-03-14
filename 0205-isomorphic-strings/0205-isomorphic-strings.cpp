@@ -6,12 +6,10 @@ public:
             if(arr[s[i]]==0&&brr[t[i]]==0){
                      arr[s[i]]=t[i];
                      brr[t[i]]=s[i];
-                     s[i]=t[i];
             }
-            else{
-                s[i]=arr[s[i]];
-            }
+            else if(t[i]!=arr[s[i]])
+            return false;
         }
-        return s==t;
+        return true;
     }
 };
