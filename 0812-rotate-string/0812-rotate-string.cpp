@@ -22,7 +22,6 @@ public:
             else{
                 i=i-j;
                 j=0;
-                cout<<i<<" "<<j<<endl;
             }
             if(j>=goal.length()) break;
             i++;
