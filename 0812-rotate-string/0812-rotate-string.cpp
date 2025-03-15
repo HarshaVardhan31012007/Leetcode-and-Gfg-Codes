@@ -17,14 +17,14 @@ public:
         int i=0;int j=0;
         while(i<temp.length()){
             if(temp[i]==goal[j]){
+                i++;
                 j++;
             }
             else{
-                i=i-j;
+                i=i-j+1;
                 j=0;
             }
             if(j>=goal.length()) break;
-            i++;
         }
         return j==goal.length();
     }
