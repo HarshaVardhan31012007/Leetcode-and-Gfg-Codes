@@ -16,13 +16,13 @@ public:
         string temp=s+s;
         int i=0;int j=0;
         while(i<temp.length()){
-            cout<<temp[i]<<" "<<goal[j]<<endl;
             if(temp[i]==goal[j]){
                 j++;
             }
             else{
                 i=i-j;
                 j=0;
+                cout<<i<<" "<<j<<endl;
             }
             if(j>=goal.length()) break;
             i++;
