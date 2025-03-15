@@ -24,7 +24,7 @@ public:
                 i=i-j+1;
                 j=0;
             }
-            if(j>=goal.length()) break;
+           if(j>=goal.length()) break;
         }
         return j==goal.length();
     }
