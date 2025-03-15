@@ -307,6 +307,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0746-prefix-and-suffix-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0746-prefix-and-suffix-search) |
 | [0800-letter-case-permutation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0800-letter-case-permutation) |
 | [0807-custom-sort-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0807-custom-sort-string) |
+| [0812-rotate-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0812-rotate-string) |
 | [0926-find-and-replace-pattern](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0926-find-and-replace-pattern) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1160-letter-tile-possibilities](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1160-letter-tile-possibilities) |
@@ -692,4 +693,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0187-repeated-dna-sequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0187-repeated-dna-sequences) |
+## String Matching
+|  |
+| ------- |
+| [0812-rotate-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0812-rotate-string) |
 <!---LeetCode Topics End-->
