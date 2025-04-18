@@ -1,29 +1,28 @@
 class Solution {
 public:
-void markSameIsland(vector<vector<char>>&grid,int r,int c){
-    if(r<0||r>=grid.size()||c<0||c>=grid[0].size()||grid[r][c]=='0'){
-        return;
-    }
-    grid[r][c]='0';
-    
-    markSameIsland(grid,r,c-1);
-    markSameIsland(grid,r-1,c);
-    markSameIsland(grid,r+1,c);
-    markSameIsland(grid,r,c+1);
-}
- int solve(vector<vector<char>>&grid){
-    int n=0;
-    for(int i=0;i<grid.size();i++){
-        for(int j=0;j<grid[0].size();j++){
-            if(grid[i][j]=='1'){
-                markSameIsland(grid,i,j);
-                n++;
+    void dfs(vector<vector<char>>& grid,int i,int j,int m,int n){
+        grid[i][j]='0';
+        vector<pair<int,int>>dir={{0,1},{0,-1},{1,0},{-1,0}};
+        for(auto &each:dir){
+            int newX=i+each.first;
+            int newY=j+each.second;
+            if(newX>=0 && newX<m &&newY>=0 && newY<n && grid[newX][newY]=='1'){
+                dfs(grid,newX,newY,m,n);
             }
         }
     }
-    return n;
- }
     int numIslands(vector<vector<char>>& grid) {
-       return solve(grid);
+        int m=grid.size();
+        int n=grid[0].size();
+        int islands=0;
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                if(grid[i][j]=='1'){
+                  dfs(grid,i,j,m,n);
+                  islands++;
+                }
+            }
+        }
+        return islands;
     }
 };
