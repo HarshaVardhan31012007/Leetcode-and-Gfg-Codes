@@ -1,15 +1,5 @@
 class Solution {
 public:
-    bool same(vector<int>&v,unordered_map<int,bool>&visited){
-        bool flag=1;
-        for(int j=0;j<v.size();j++){
-            if(visited[v[j]]==0){
-                flag=0;
-                break;
-            }
-        }
-        return flag;
-    }
     int orangesRotting(vector<vector<int>>& grid) {
         vector<int>rotten;
         vector<int>v;
