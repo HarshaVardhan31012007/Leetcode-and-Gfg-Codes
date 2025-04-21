@@ -12,7 +12,7 @@ public:
             }
         }
         else if(visited[nbr]&&nbr!=parent){
-            low[s]=min(low[s],num[nbr]);
+            low[s]=min(low[s],low[nbr]);
         }
       }
     }
