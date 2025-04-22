@@ -28,12 +28,15 @@ public:
     }
     int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
         unordered_map<string,list<string>>adjList;
-        bool flag=0;
+        bool flag=0;bool flag1=0;
         for(int i=0;i<wordList.size();i++){
             if(wordList[i]==endWord)
             flag=1;
+            if(wordList[i]==beginWord)
+            flag1=1;
         }
         if(!flag) return 0;
+        if(!flag1)
         wordList.push_back(beginWord);
         for(int i=0;i<wordList.size();i++){
             string word=wordList[i];
