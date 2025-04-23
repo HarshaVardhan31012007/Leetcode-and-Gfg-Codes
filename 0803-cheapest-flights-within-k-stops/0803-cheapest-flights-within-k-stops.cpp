@@ -14,8 +14,7 @@ public:
             pq.pop();
             if(curr[1]==dst) return curr[0];
             if(curr[2]>k) continue;
-            if(visited[curr[1]]<curr[2])
-            continue;
+            if(visited[curr[1]]<curr[2]) continue;
             visited[curr[1]]=min(visited[curr[1]],curr[2]);
             for(auto &nbr:adjList[curr[1]]){
                 pq.push({curr[0]+nbr.second,nbr.first,curr[2]+1});
