@@ -77,6 +77,7 @@ public:
             }
         }
        }
+       if(!freshOranges) return 0;
        int time=0;
        while(!q.empty()){
         int size=q.size();
