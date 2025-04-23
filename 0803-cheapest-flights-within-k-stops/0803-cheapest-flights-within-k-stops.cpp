@@ -31,13 +31,22 @@ public:
     while(!q.empty()){
         auto front=q.front();
         q.pop();
-        if(front[0]>k) continue;
+        // if(front[0]>k) continue;
+        // for(auto &nbr:adjList[front[1]]){
+        //     if(front[2]+nbr.second<distance[nbr.first]&&front[0]<=k){
+        //             distance[nbr.first]=front[2]+nbr.second;
+        //             q.push({front[0]+1,nbr.first,distance[nbr.first]});
+        //     }
+        // }
+
+         if(front[0]<=k){
         for(auto &nbr:adjList[front[1]]){
-            if(front[2]+nbr.second<distance[nbr.first]&&front[0]<=k){
+            if(front[2]+nbr.second<distance[nbr.first]){
                     distance[nbr.first]=front[2]+nbr.second;
                     q.push({front[0]+1,nbr.first,distance[nbr.first]});
             }
-        }
+         }
+         }
     }
        return (distance[dst]==1e9)?-1:distance[dst];
     }
