@@ -508,6 +508,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0803-cheapest-flights-within-k-stops) |
+| [0820-find-eventual-safe-states](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0820-find-eventual-safe-states) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1008-binary-tree-cameras](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1008-binary-tree-cameras) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -537,6 +538,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0662-maximum-width-of-binary-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0803-cheapest-flights-within-k-stops) |
+| [0820-find-eventual-safe-states](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0820-find-eventual-safe-states) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -734,6 +736,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0210-course-schedule-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0210-course-schedule-ii) |
 | [0547-number-of-provinces](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0547-number-of-provinces) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0803-cheapest-flights-within-k-stops) |
+| [0820-find-eventual-safe-states](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0820-find-eventual-safe-states) |
 | [1300-critical-connections-in-a-network](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1300-critical-connections-in-a-network) |
 | [1706-min-cost-to-connect-all-points](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1706-min-cost-to-connect-all-points) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2090-number-of-ways-to-arrive-at-destination) |
@@ -747,6 +750,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0207-course-schedule](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0210-course-schedule-ii) |
+| [0820-find-eventual-safe-states](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0820-find-eventual-safe-states) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2439-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2439-longest-cycle-in-a-graph) |
 ## Shortest Path
