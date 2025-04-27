@@ -38,7 +38,6 @@ public:
            ans=min(ans,count);
            if(ans==count)
            city=i;
-           cout<<count<<endl;
         }
         return city;
     }
