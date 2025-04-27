@@ -31,6 +31,23 @@ public:
                 else unionSet(i,it->second,parent,rank);
             }
         }
+            // unordered_map<int,set<string>>preAns;
+            // for(auto it:mpp){
+            //     int accountNo=it.second;
+            //     string mail=it.first;
+            //     accountNo=findParent(accountNo,parent);
+            //     preAns[accountNo].insert(mail);
+            // }
+            // vector<vector<string>>ans;
+            // for(auto it:preAns){
+            //    vector<string>v;
+            //    v.push_back(accounts[it.first][0]);
+            //    for(auto each:it.second) v.push_back(each);
+            //    ans.push_back(v);
+            // }
+            //  return ans;
+
+
             unordered_map<int,set<string>>preAns;
             for(auto it:mpp){
                 int accountNo=it.second;
