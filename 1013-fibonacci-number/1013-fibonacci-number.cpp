@@ -12,17 +12,34 @@ public:
     //     return solveusingMem(n,dp);
     // }
 
-    int solveusingTab(int n){
-        vector<int>dp(n+1,-1);
-         if(n==0||n==1) return n;
-        dp[0]=0;
-        dp[1]=1;
+    // int solveusingTab(int n){
+    //     vector<int>dp(n+1,-1);
+    //      if(n==0||n==1) return n;
+    //     dp[0]=0;
+    //     dp[1]=1;
+    //     for(int i=2;i<=n;i++){
+    //         dp[i]=dp[i-1]+dp[i-2];
+    //     }
+    //     return dp[n];
+    // }
+    // int fib(int n){
+    //     return solveusingTab(n);
+    // }
+
+
+    int solveusingTabOptimized(int n){
+        if(n==0||n==1) return n;
+        int prev=0;
+        int curr=1;
+        int ans;
         for(int i=2;i<=n;i++){
-            dp[i]=dp[i-1]+dp[i-2];
+            ans=prev+curr;
+            prev=curr;
+            curr=ans;
         }
-        return dp[n];
+        return ans;
     }
     int fib(int n){
-        return solveusingTab(n);
+        return solveusingTabOptimized(n);
     }
 };
