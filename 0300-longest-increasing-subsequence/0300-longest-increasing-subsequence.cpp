@@ -40,23 +40,45 @@ public:
     // }
 
 
-    int findSubsequences(vector<int>& nums,int i,int prev,vector<vector<int>>&dp){
-        if(i>=nums.size()){
-        return 0;
-        }
-        if(dp[prev+1][i]!=-1)
-        return dp[prev+1][i];
+    // int findSubsequences(vector<int>& nums,int i,int prev,vector<vector<int>>&dp){
+    //     if(i>=nums.size()){
+    //     return 0;
+    //     }
+    //     if(dp[prev+1][i]!=-1)
+    //     return dp[prev+1][i];
+    //     int l=0;
+    //     if(prev==-1||nums[prev]<nums[i]){
+    //     l=1+findSubsequences(nums,i+1,i,dp);
+    //     }
+    //     int r=findSubsequences(nums,i+1,prev,dp);
+    //     return dp[prev+1][i]=max(l,r);
+    // }
+    // int lengthOfLIS(vector<int>& nums) {
+    //     int i=0;
+    //     int n=nums.size();
+    //     vector<vector<int>>dp(n+1,vector<int>(n+1,-1));
+    //     return findSubsequences(nums,i,-1,dp);
+    // }
+
+
+    int findSubsequences(int n,vector<int>&nums){
+       vector<vector<int>>dp(n+1,vector<int>(n+1,-1));
+       for(int i=0;i<n+1;i++)
+       dp[i][n]=0;
+       for(int i=n-1;i>=0;i--){
+        for(int j=n-1;j>=0;j--){
         int l=0;
-        if(prev==-1||nums[prev]<nums[i]){
-        l=1+findSubsequences(nums,i+1,i,dp);
+        if(i==0||nums[i-1]<nums[j]){
+        l=1+dp[j+1][j+1];
         }
-        int r=findSubsequences(nums,i+1,prev,dp);
-        return dp[prev+1][i]=max(l,r);
+        int r=dp[i][j+1];
+        dp[i][j]=max(l,r);
+        }
+       }
+       return dp[0][0];
     }
     int lengthOfLIS(vector<int>& nums) {
-        int i=0;
         int n=nums.size();
-        vector<vector<int>>dp(n+1,vector<int>(n+1,-1));
-        return findSubsequences(nums,i,-1,dp);
+        return findSubsequences(n,nums);
     }
 };
