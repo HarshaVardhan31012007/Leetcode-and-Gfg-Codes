@@ -26,9 +26,11 @@ public:
     //     return dp[amount];
     //     int mini=INT_MAX;
     //     for(auto &each:coins){
+    //           if(each<=amount){
     //         int curr=solve(coins,amount-each,dp);
     //         if(curr!=INT_MAX)
     //         mini=min(mini,1+curr);
+    //          }
     //     }
     //     return dp[amount]=mini;
     // }
@@ -45,7 +47,7 @@ public:
         dp[0]=0;
         for(int a=1;a<amount+1;a++){
             for(auto &each:coins){
-                if(a-each>=0&&dp[a-each]!=INT_MAX)
+                if(each<=a&&dp[a-each]!=INT_MAX)
                 dp[a]=min(dp[a],1+dp[a-each]);
             }
         }
