@@ -79,29 +79,108 @@ class Solution {
     
     
      
-     //  MAIN MAIN Solution indices can from start to end .but for convience we take end tos tart
      
-      int solve(int w,vector<int>&val,vector<int>&wt,vector<vector<int>>&dp,int i){
-          if(i==0){
-              if(wt[i]<=w)
-              return val[i];
-              else
-              return 0;
+    //   int solve(int w,vector<int>&val,vector<int>&wt,vector<vector<int>>&dp,int i){
+    //       //method 1
+    //       if(i==0){
+    //           if(wt[i]<=w)
+    //           return val[i];
+    //           else
+    //           return 0;
+    //       }
+        
+    //     //method 2
+    //      // if(i<0) return 0;
+         
+    //      //method 3
+    //     //  if(i<0||w==0)
+    //     //  return 0;
+         
+    //       if(dp[w][i]!=-1)
+    //       return dp[w][i];
+    //       int l=0;
+    //       if(wt[i]<=w)
+    //       l=val[i]+solve(w-wt[i],val,wt,dp,i-1);
+    //       int r=solve(w,val,wt,dp,i-1);
+    //       return dp[w][i]=max(l,r);
+    //   }
+    //   int knapsack(int W,vector<int>&val,vector<int>&wt){
+    //       int n=wt.size();
+    //       vector<vector<int>>dp(W+1,vector<int>(n,-1));
+    //       int i=n-1;
+    //       return solve(W,val,wt,dp,i);
+    //   }
+    
+    
+    
+    //   int solve(int w,vector<int>&val,vector<int>&wt){
+    //       int n=wt.size();
+        
+          
+    //      //Method 1
+    //     //   vector<vector<int>>dp(w+1,vector<int>(n,-1));
+    //     //   for(int weight=0;weight<=w;weight++){
+    //     //       if(wt[0]<=weight)
+    //     //       dp[weight][0]=val[0];
+    //     //       else
+    //     //       dp[weight][0]=0;
+    //     //   }
+        
+    //     //Method 2
+    //       vector<vector<int>>dp(w+1,vector<int>(n,0));
+    //     for(int weight=wt[0];weight<=w;weight++){
+    //         dp[weight][0]=val[0];
+    //     }
+        
+    //       for(int weight=0;weight<=w;weight++){
+    //           for(int idx=1;idx<n;idx++){
+    //              int l=0;
+    //              if(wt[idx]<=weight)
+    //              l=val[idx]+dp[weight-wt[idx]][idx-1];
+    //              int r=dp[weight][idx-1];
+    //              dp[weight][idx]=max(l,r);
+    //           }
+    //       }
+    //       return dp[w][n-1];
+    //   }
+    //   int knapsack(int W,vector<int>&val,vector<int>&wt){
+    //       return solve(W,val,wt);
+    //   }
+      
+      
+      
+      int solve(int w,vector<int>&val,vector<int>&wt){
+          int n=wt.size();
+          vector<int>curr(w+1,0);
+          //Method 1
+        //   vector<int>prev(w+1,-1);
+        //   for(int weight=0;weight<=w;weight++){
+        //       if(wt[0]<=weight)
+        //       prev[weight]=val[0];
+        //       else
+        //       prev[weight]=0;
+        //   }
+        //Method 2
+          vector<int>prev(w+1,0);
+          for(int weight=wt[0];weight<=w;weight++){
+              prev[weight]=val[0];
           }
-          if(dp[w][i]!=-1)
-          return dp[w][i];
-          int l=0;
-          if(wt[i]<=w)
-          l=val[i]+solve(w-wt[i],val,wt,dp,i-1);
-          int r=solve(w,val,wt,dp,i-1);
-          return dp[w][i]=max(l,r);
+              for(int idx=1;idx<n;idx++){
+                  for(int weight=0;weight<=w;weight++){
+                 int l=0;
+                 if(wt[idx]<=weight)
+                 l=val[idx]+prev[weight-wt[idx]];
+                 int r=prev[weight];
+                 curr[weight]=max(l,r);
+              }
+              prev=curr;
+          }
+          return prev[w];
       }
       int knapsack(int W,vector<int>&val,vector<int>&wt){
-          int n=wt.size();
-          vector<vector<int>>dp(W+1,vector<int>(n,-1));
-          int i=n-1;
-          return solve(W,val,wt,dp,i);
+          return solve(W,val,wt);
       }
+      
 };
 
 
