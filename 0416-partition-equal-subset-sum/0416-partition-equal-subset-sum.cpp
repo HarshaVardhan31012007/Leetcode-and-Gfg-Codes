@@ -32,14 +32,18 @@ public:
 
 
     bool divide(vector<int>&nums,int k,int target,vector<vector<int>>&dp){
-        if(k==nums.size()||target<0)
+        // if(k==nums.size()||target<0)
+        // return 0;
+         if(k==nums.size())
         return 0;
         if(target==0)
         return 1;
         if(dp[target][k]!=-1)
         return dp[target][k];
         int num=nums[k];
-        bool includeAns=divide(nums,k+1,target-num,dp);
+        bool includeAns=0;
+        if(num<=target)
+        includeAns=divide(nums,k+1,target-num,dp);
         bool excludeAns=divide(nums,k+1,target,dp);
         return dp[target][k]=includeAns||excludeAns;
     }
