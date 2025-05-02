@@ -101,17 +101,38 @@ public:
     //     int n=nums.size();
     //     return findSubsequences(n,nums);
     // }
+     
 
-    int lengthOfLIS(vector<int>&nums){
-        int n=nums.size();
-        vector<int>dp(n,1);
-        for(int curr=0;curr<n;curr++){
-            for(int prev=0;prev<curr;prev++){
-                if(nums[prev]<nums[curr]&&dp[curr]<dp[prev]+1){
-                    dp[curr]=dp[prev]+1;
-                }
-            }
+
+      int findSubsequences(int n,vector<int>&nums){
+         vector<int>c(n+1,0);
+        for(int curr=n-1;curr>=0;curr--){
+          for(int prev=curr-1;prev>=-1;prev--){
+            int l=0;
+            if(prev==-1||nums[prev]<nums[curr])
+            l=1+c[curr+1];
+            int r=c[prev+1];
+            c[prev+1]=max(l,r);
+          }
         }
-        return *max_element(dp.begin(),dp.end());
+        return c[0];
     }
+    int lengthOfLIS(vector<int>& nums) {
+        int n=nums.size();
+        return findSubsequences(n,nums);
+    }
+
+
+    // int lengthOfLIS(vector<int>&nums){
+    //     int n=nums.size();
+    //     vector<int>dp(n,1);
+    //     for(int curr=0;curr<n;curr++){
+    //         for(int prev=0;prev<curr;prev++){
+    //             if(nums[prev]<nums[curr]&&dp[curr]<dp[prev]+1){
+    //                 dp[curr]=dp[prev]+1;
+    //             }
+    //         }
+    //     }
+    //     return *max_element(dp.begin(),dp.end());
+    // }
 };
