@@ -21,18 +21,41 @@ public:
     // }
 
 
-    long long int solve(int n,int k,int target){
-     vector<vector<long long int>>dp(n+1,vector<long long int>(target+1,0));
-     dp[0][0]=1;
+    // long long int solve(int n,int k,int target){
+    //  vector<vector<long long int>>dp(n+1,vector<long long int>(target+1,0));
+    //  dp[0][0]=1;
+    //  for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=target;j++){
+    //         for(int p=1;p<=k;p++){
+    //             if(p<=j)
+    //             dp[i][j]=((dp[i][j]+dp[i-1][j-p])%mod)%mod;
+    //         }
+    //     }
+    //  }
+    //  return dp[n][target];
+    // }
+    // long long int numRollsToTarget(int n, int k, int target) {
+    //    return  solve(n,k,target);
+    // }
+
+
+
+     long long int solve(int n,int k,int target){
+     vector<long long int>curr(target+1,0);
+     vector<long long int>prev(target+1,0);
+      prev[0]=1;
      for(int i=1;i<=n;i++){
         for(int j=1;j<=target;j++){
+            long long ans=0;
             for(int p=1;p<=k;p++){
                 if(p<=j)
-                dp[i][j]=((dp[i][j]+dp[i-1][j-p])%mod)%mod;
+                ans=(ans+prev[j-p])%mod;
             }
+            curr[j]=ans%mod;
         }
+        prev=curr;
      }
-     return dp[n][target];
+     return prev[target]%mod;
     }
     long long int numRollsToTarget(int n, int k, int target) {
        return  solve(n,k,target);
