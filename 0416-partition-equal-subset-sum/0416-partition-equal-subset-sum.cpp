@@ -78,22 +78,39 @@ public:
     //    return dp[target][0];
     // }
 
-    bool divide(vector<int>&nums,int target){
+    // bool divide(vector<int>&nums,int target){
+    //    int n=nums.size();
+    //    vector<int>curr(target+1,-1);
+    //    vector<int>next(target+1,0);
+    //    next[0]=curr[0]=1;
+    //     for(int j=n-1;j>=0;j--){
+    //         for(int i=1;i<=target;i++){
+    //         int l=0;
+    //         if(nums[j]<=i)
+    //         l=next[i-nums[j]];
+    //         int r=next[i];
+    //         curr[i]=l||r;
+    //     }
+    //     next=curr;
+    //    }
+    //    return next[target];
+    // }
+
+
+     bool divide(vector<int>&nums,int target){
        int n=nums.size();
-       vector<int>curr(target+1,-1);
-       vector<int>next(target+1,0);
-       next[0]=curr[0]=1;
+       vector<int>curr(target+1,0);
+       curr[0]=1;
         for(int j=n-1;j>=0;j--){
-            for(int i=1;i<=target;i++){
+            for(int i=target;i>=1;i--){
             int l=0;
             if(nums[j]<=i)
-            l=next[i-nums[j]];
-            int r=next[i];
+            l=curr[i-nums[j]];
+            int r=curr[i];
             curr[i]=l||r;
-        }
-        next=curr;
+            }
        }
-       return next[target];
+       return curr[target];
     }
     bool canPartition(vector<int>& nums) {
         int total=accumulate(nums.begin(),nums.end(),0);
