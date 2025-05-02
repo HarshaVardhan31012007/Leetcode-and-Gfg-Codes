@@ -1,23 +1,30 @@
 class Solution {
 public:
    const int mod=1e9+7;
-    long long int solve(int n,int k,int target,int j,vector<vector<int>>&dp){
-      if(target==0&&j==n)
+    long long int solve(int n,int k,int target,vector<vector<int>>&dp){
+      if(target==0&&n==0)
       return 1;
-      if(j==n||target==0)
+      if(n==0||target==0)
       return 0;
-      if(dp[j][target]!=-1)
-      return dp[j][target]%mod;
+      if(dp[n][target]!=-1)
+      return dp[n][target]%mod;
         long long int ans=0;
         for(int i=1;i<=k;i++){
            if(i<=target)
-           ans=(ans+(solve(n,k,target-i,j+1,dp))%mod)%mod;
+           ans=(ans+(solve(n-1,k,target-i,dp))%mod)%mod;
         }
-       return dp[j][target]=ans%mod;
+       return dp[n][target]=ans%mod;
     }
     long long int numRollsToTarget(int n, int k, int target) {
-        int j=0;
         vector<vector<int>>dp(n+1,vector<int>(target+1,-1));
-       return  solve(n,k,target,j,dp);
+       return  solve(n,k,target,dp);
     }
+
+
+    // long long int solve(int n,int k,int target){
+    //  vector<vector<int>>dp(n+1,vector<int>(target+1,0));
+    // }
+    // long long int numRollsToTarget(int n, int k, int target) {
+    //    return  solve(n,k,target);
+    // }
 };
