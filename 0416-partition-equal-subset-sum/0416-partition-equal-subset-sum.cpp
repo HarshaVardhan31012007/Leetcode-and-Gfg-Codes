@@ -39,8 +39,7 @@ public:
         if(dp[target][k]!=-1)
         return dp[target][k];
         int num=nums[k];
-        bool includeAns=0;
-        includeAns=divide(nums,k+1,target-num,dp);
+        bool includeAns=divide(nums,k+1,target-num,dp);
         bool excludeAns=divide(nums,k+1,target,dp);
         return dp[target][k]=includeAns||excludeAns;
     }
