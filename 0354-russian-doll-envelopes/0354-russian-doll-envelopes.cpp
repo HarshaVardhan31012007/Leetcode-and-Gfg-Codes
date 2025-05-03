@@ -1,7 +1,7 @@
 class Solution {
 public:
     //DP 
-
+    //TLE
     // bool issafe(vector<int>&c1,vector<int>&c2){
     //     if(c1[0]<c2[0] && c1[1]<c2[1])
     //     return true;
@@ -26,29 +26,30 @@ public:
     //     sort(envelopes.begin(),envelopes.end());
     //     return solve(envelopes,n);
     // }
-
-
-     static bool comp(vector<int> &a,vector<int>&b){
-        if(a[0]==b[0]){
-            return a[1]>b[1];
-        }
-        else{
-            return a[0]<b[0];
-        }
+    
+    static bool comp(vector<int>&a,vector<int>&b){
+        if(a[0]==b[0])
+        return a[1]>b[1];
+        else
+        return a[0]<b[0];
     }
-    int maxEnvelopes(vector<vector<int>>& envelopes) {
-        sort(envelopes.begin(),envelopes.end(),comp);
-        vector<int> temp;
-        temp.push_back(envelopes[0][1]);
+    int solve(vector<vector<int>>&envelopes,int n){
+        vector<int>ans;
+        ans.push_back(envelopes[0][1]);
         for(int i=1;i<envelopes.size();i++){
-            if(temp.back()<envelopes[i][1]){
-                temp.push_back(envelopes[i][1]);
+            if(envelopes[i][1]>ans.back()){
+                ans.push_back(envelopes[i][1]);
             }
             else{
-                auto ind=lower_bound(temp.begin(),temp.end(),envelopes[i][1])-temp.begin();
-                temp[ind]=envelopes[i][1];
+                int index=lower_bound(ans.begin(),ans.end(),envelopes[i][1])-ans.begin();
+                ans[index]=envelopes[i][1];
             }
         }
-        return temp.size();
+        return ans.size();
+    }
+    int maxEnvelopes(vector<vector<int>>&envelopes){
+        int n=envelopes.size();
+        sort(envelopes.begin(),envelopes.end(),comp);
+        return solve(envelopes,n);
     }
 };
