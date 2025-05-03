@@ -1,6 +1,6 @@
 class Solution {
 public:
-   const int mod=1e9+7;
+   const int mod=1000000007;
     // long long int solve(int n,int k,int target,vector<vector<int>>&dp){
     //   if(target==0&&n==0)
     //   return 1;
@@ -21,24 +21,25 @@ public:
     // }
 
 
-    long long int solve(int n,int k,int target){
-     vector<vector<long long int>>dp(n+1,vector<long long int>(target+1,0));
-     dp[0][0]=1;
-     for(int i=1;i<=n;i++){
-        for(int j=target;j>=1;j--){
-            long long ans=0;
-            for(int p=1;p<=k;p++){
-                if(p<=j)
-                ans=((ans+dp[i-1][j-p])%mod)%mod;
-            }
-            dp[i][j]=ans%mod;
-        }
-     }
-     return dp[n][target];
-    }
-    long long int numRollsToTarget(int n, int k, int target) {
-       return  solve(n,k,target);
-    }
+    // long long int solve(int n,int k,int target){
+    //  vector<vector<long long int>>dp(n+1,vector<long long int>(target+1,0));
+    //  dp[0][0]=1;
+    //  for(int i=1;i<=n;i++){
+    //     // for(int j=target;j>=1;j--){
+    //         for(int j=1;j<=target;j++){
+    //         long long ans=0;
+    //         for(int p=1;p<=k;p++){
+    //             if(p<=j)
+    //             ans=((ans+dp[i-1][j-p])%mod)%mod;
+    //         }
+    //         dp[i][j]=ans%mod;
+    //     }
+    //  }
+    //  return dp[n][target];
+    // }
+    // long long int numRollsToTarget(int n, int k, int target) {
+    //    return  solve(n,k,target);
+    // }
 
 
 
@@ -61,5 +62,26 @@ public:
     // }
     // long long int numRollsToTarget(int n, int k, int target) {
     //    return  solve(n,k,target);
-    // }
+    // } 
+
+      long long int solve(int n,int k,int target){
+     vector<int>curr(target+1,0);
+     curr[0]=1;
+     for(int i=1;i<=n;i++){
+        for(int j=target;j>=0;j--){
+            long long int ans=0;
+            for(int p=1;p<=k;p++){
+                long long int temp=0;
+                if(p<=j)
+                temp=curr[j-p];
+                ans=ans%mod+temp%mod;
+            }
+            curr[j]=ans%mod;
+        }
+     }
+     return curr[target]%mod;
+    }
+    long long int numRollsToTarget(int n, int k, int target) {
+       return  solve(n,k,target);
+    } 
 };
