@@ -1,24 +1,30 @@
 class Solution {
 public:
    const int mod=1000000007;
-    // long long int solve(int n,int k,int target,vector<vector<int>>&dp){
+    long long int solve(int n,int k,int target,vector<vector<int>>&dp){
     //   if(target==0&&n==0)
     //   return 1;
     //   if(n==0||target==0)
     //   return 0;
-    //   if(dp[n][target]!=-1)
-    //   return dp[n][target]%mod;
-    //     long long int ans=0;
-    //     for(int i=1;i<=k;i++){
-    //        if(i<=target)
-    //        ans=(ans+(solve(n-1,k,target-i,dp))%mod)%mod;
-    //     }
-    //    return dp[n][target]=ans%mod;
-    // }
-    // long long int numRollsToTarget(int n, int k, int target) {
-    //     vector<vector<int>>dp(n+1,vector<int>(target+1,-1));
-    //    return  solve(n,k,target,dp);
-    // }
+    if(n==0){
+        if(target==0)
+        return 1;
+        else
+        return 0;
+    }
+      if(dp[n][target]!=-1)
+      return dp[n][target]%mod;
+        long long int ans=0;
+        for(int i=1;i<=k;i++){
+           if(i<=target)
+           ans=(ans+(solve(n-1,k,target-i,dp))%mod)%mod;
+        }
+       return dp[n][target]=ans%mod;
+    }
+    long long int numRollsToTarget(int n, int k, int target) {
+        vector<vector<int>>dp(n+1,vector<int>(target+1,-1));
+       return  solve(n,k,target,dp);
+    }
 
 
     // long long int solve(int n,int k,int target){
@@ -64,24 +70,24 @@ public:
     //    return  solve(n,k,target);
     // } 
 
-      long long int solve(int n,int k,int target){
-     vector<int>curr(target+1,0);
-     curr[0]=1;
-     for(int i=1;i<=n;i++){
-        for(int j=target;j>=0;j--){
-            long long int ans=0;
-            for(int p=1;p<=k;p++){
-                long long int temp=0;
-                if(p<=j)
-                temp=curr[j-p];
-                ans=ans%mod+temp%mod;
-            }
-            curr[j]=ans%mod;
-        }
-     }
-     return curr[target]%mod;
-    }
-    long long int numRollsToTarget(int n, int k, int target) {
-       return  solve(n,k,target);
-    } 
+    //   long long int solve(int n,int k,int target){
+    //  vector<int>curr(target+1,0);
+    //  curr[0]=1;
+    //  for(int i=1;i<=n;i++){
+    //     for(int j=target;j>=0;j--){
+    //         long long int ans=0;
+    //         for(int p=1;p<=k;p++){
+    //             long long int temp=0;
+    //             if(p<=j)
+    //             temp=curr[j-p];
+    //             ans=ans%mod+temp%mod;
+    //         }
+    //         curr[j]=ans%mod;
+    //     }
+    //  }
+    //  return curr[target]%mod;
+    // }
+    // long long int numRollsToTarget(int n, int k, int target) {
+    //    return  solve(n,k,target);
+    // } 
 };
