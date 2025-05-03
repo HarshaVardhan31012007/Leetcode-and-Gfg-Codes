@@ -107,7 +107,8 @@ public:
       int findSubsequences(int n,vector<int>&nums){
          vector<int>c(n+1,0);
         for(int curr=n-1;curr>=0;curr--){
-          for(int prev=curr-1;prev>=-1;prev--){
+        //   for(int prev=curr-1;prev>=-1;prev--){
+             for(int prev=-1;prev<=curr-1;prev++){
             int l=0;
             if(prev==-1||nums[prev]<nums[curr])
             l=1+c[curr+1];
