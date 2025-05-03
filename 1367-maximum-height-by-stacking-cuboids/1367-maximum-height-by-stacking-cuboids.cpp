@@ -34,18 +34,34 @@ public:
         else
         return false;
     }
+    // int solve(vector<vector<int>>& cuboids,int n){
+    //     vector<vector<int>>dp(n+1,vector<int>(n+1,0));
+    //     for(int curr=n-1;curr>=0;curr--){
+    //         for(int prev=curr-1;prev>=-1;prev--){
+    //             int l=0;
+    //             if(prev==-1||issafe(cuboids[prev],cuboids[curr]))
+    //             l=cuboids[curr][2]+dp[curr+1][curr+1];
+    //             int r=dp[curr+1][prev+1];
+    //             dp[curr][prev+1]=max(l,r);
+    //         }
+    //     }
+    //     return dp[0][0];
+    // }
+
     int solve(vector<vector<int>>& cuboids,int n){
-        vector<vector<int>>dp(n+1,vector<int>(n+1,0));
+        vector<int>next(n+1,0);
+        vector<int>cur(n+1,0);
         for(int curr=n-1;curr>=0;curr--){
             for(int prev=curr-1;prev>=-1;prev--){
                 int l=0;
                 if(prev==-1||issafe(cuboids[prev],cuboids[curr]))
-                l=cuboids[curr][2]+dp[curr+1][curr+1];
-                int r=dp[curr+1][prev+1];
-                dp[curr][prev+1]=max(l,r);
+                l=cuboids[curr][2]+next[curr+1];
+                int r=next[prev+1];
+                cur[prev+1]=max(l,r);
             }
+            next=cur;
         }
-        return dp[0][0];
+        return next[0];
     }
     int maxHeight(vector<vector<int>>& cuboids) {
         int n=cuboids.size();
