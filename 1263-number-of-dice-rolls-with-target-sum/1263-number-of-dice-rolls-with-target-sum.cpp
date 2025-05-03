@@ -25,7 +25,7 @@ public:
      vector<vector<long long int>>dp(n+1,vector<long long int>(target+1,0));
      dp[0][0]=1;
      for(int i=1;i<=n;i++){
-        for(int j=1;j<=target;j++){
+        for(int j=target;j>=1;j--){
             long long ans=0;
             for(int p=1;p<=k;p++){
                 if(p<=j)
