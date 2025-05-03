@@ -69,6 +69,7 @@ public:
         vector<int>cur(n+1,0);
         for(int curr=n-1;curr>=0;curr--){
             for(int prev=-1;prev<=curr-1;prev++){
+                //for(int prev=curr-1;prev>=-1;prev--){
                 int l=0;
                 if(prev==-1||issafe(cuboids[prev],cuboids[curr]))
                 l=cuboids[curr][2]+cur[curr+1];
