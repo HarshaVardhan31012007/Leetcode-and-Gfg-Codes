@@ -19,7 +19,7 @@ public:
 
 
     int solve(int n){
-     vector<vector<int>>dp(n+2,vector<int>(n+2,0));
+     vector<vector<int>>dp(n+2,vector<int>(n+1,0));
      for(int s=n;s>=1;s--){
         for(int e=1;e<=n;e++){
             if(s>=e)
