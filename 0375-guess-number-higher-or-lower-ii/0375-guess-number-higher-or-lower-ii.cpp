@@ -40,7 +40,7 @@ public:
     int solve(int n){
      vector<vector<int>>dp(n+2,vector<int>(n+1,0));
      for(int s=n;s>=1;s--){
-        for(int e=s+1;e<=n;e++){   
+        for(int e=s+1;e<=n;e++){  //s<e means e starts from s+1 
      int ans=INT_MAX;
      for(int i=s;i<=e;i++){
        ans=min(ans,i+max(dp[s][i-1],dp[i+1][e]));
