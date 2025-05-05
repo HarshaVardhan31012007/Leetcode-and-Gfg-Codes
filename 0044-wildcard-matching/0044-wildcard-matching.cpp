@@ -18,7 +18,7 @@ public:
         if(p[i]=='?'||p[i]==q[j])
         ans=ans||solve(p,q,i+1,j+1,dp);
         else if(p[i]=='*')
-        ans=ans||solve(p,q,i,j+1,dp)||solve(p,q,i+1,j,dp)||solve(p,q,i+1,j+1,dp);
+        ans=ans||solve(p,q,i,j+1,dp)||solve(p,q,i+1,j,dp);
         return dp[i][j]=ans;
     }
     bool isMatch(string s, string p) {
