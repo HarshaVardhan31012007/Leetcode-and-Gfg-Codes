@@ -88,6 +88,7 @@ public:
       curr[j]=false;
         }
         next=curr;
+        //for rem i<m and j==n
         curr[n]=0;
     }
     return curr[0];
