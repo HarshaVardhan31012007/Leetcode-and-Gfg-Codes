@@ -66,23 +66,23 @@ public:
 
 
     //method 2
-    static bool comp(vector<int>&a,vector<int>&b){
-        if(a[2]==b[2]){
-            if(a[0]==b[0])
-            return a[1]<b[1];
-            return a[0]<b[0];
-        }
-        return a[2]<b[2];
-    }
-
-    //  static bool comp(vector<int>&a,vector<int>&b){
+    // static bool comp(vector<int>&a,vector<int>&b){
     //     if(a[2]==b[2]){
-    //         if(a[1]==b[1])
-    //         return a[0]<b[0];
+    //         if(a[0]==b[0])
     //         return a[1]<b[1];
+    //         return a[0]<b[0];
     //     }
     //     return a[2]<b[2];
     // }
+
+     static bool comp(vector<int>&a,vector<int>&b){
+        if(a[1]==b[1]){
+            if(a[0]==b[0])
+            return a[2]<b[2];
+            return a[0]<b[0];
+        }
+        return a[1]<b[1];
+    }
     int solve(vector<vector<int>>& cuboids,int n){
         vector<int>cur(n+1,0);
         for(int curr=n-1;curr>=0;curr--){
