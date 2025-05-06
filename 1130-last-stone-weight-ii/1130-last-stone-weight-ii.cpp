@@ -97,7 +97,8 @@ public:
             dp[n][j]=abs(j-t+j);
         }
         for(int i=n-1;i>=0;i--){
-            for(int j=t-1;j>=0;j--){
+            // for(int j=t-1;j>=0;j--){// or
+                for(int j=t;j>=0;j--){
                      int l=INT_MAX;
                      if(j+nums[i]<=t)
                     l=dp[i+1][j+nums[i]];
