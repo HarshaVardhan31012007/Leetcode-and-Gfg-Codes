@@ -113,26 +113,50 @@ public:
     //   }
 
 
-      int solve(vector<int>&nums){
+    //   int solve(vector<int>&nums){
+    //    int n=nums.size();
+    //     int t=accumulate(nums.begin(),nums.end(),0);
+    //     vector<int>curr(t+1,0);
+    //     vector<int>next(t+1,0);
+    //     for(int j=0;j<=t;j++){
+    //         next[j]=abs(j-t+j);
+    //     }
+    //     for(int i=n-1;i>=0;i--){
+    //         // for(int j=t-1;j>=0;j--){// or
+    //             for(int j=t;j>=0;j--){
+    //                  int l=INT_MAX;
+    //                  if(j+nums[i]<=t)
+    //                 l=next[j+nums[i]];
+    //                 int r=next[j];
+    //                 curr[j]=min(l,r);
+    //         }
+    //         next=curr;
+    //     }
+    //     return next[0];
+    //   }
+    //   int lastStoneWeightII(vector<int>& stones) {
+    //     return solve(stones);
+    //   }
+
+
+       int solve(vector<int>&nums){
        int n=nums.size();
         int t=accumulate(nums.begin(),nums.end(),0);
         vector<int>curr(t+1,0);
-        vector<int>next(t+1,0);
         for(int j=0;j<=t;j++){
-            next[j]=abs(j-t+j);
+            curr[j]=abs(j-t+j);
         }
         for(int i=n-1;i>=0;i--){
             // for(int j=t-1;j>=0;j--){// or
-                for(int j=t;j>=0;j--){
+                for(int j=0;j<=t;j++){
                      int l=INT_MAX;
                      if(j+nums[i]<=t)
-                    l=next[j+nums[i]];
-                    int r=next[j];
+                    l=curr[j+nums[i]];
+                    int r=curr[j];
                     curr[j]=min(l,r);
             }
-            next=curr;
         }
-        return next[0];
+        return curr[0];
       }
       int lastStoneWeightII(vector<int>& stones) {
         return solve(stones);
