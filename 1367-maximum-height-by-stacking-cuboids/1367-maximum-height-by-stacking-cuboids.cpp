@@ -64,7 +64,14 @@ public:
     //     return next[0];
     // }
 
-
+    static bool comp(vector<int>&a,vector<int>&b){
+        if(a[2]==b[2]){
+            if(a[1]==b[1])
+            return a[0]<b[0];
+            return a[1]<b[1];
+        }
+        return a[2]<b[2];
+    }
     int solve(vector<vector<int>>& cuboids,int n){
         vector<int>cur(n+1,0);
         for(int curr=n-1;curr>=0;curr--){
@@ -84,7 +91,7 @@ public:
         for(auto &cuboid:cuboids){
             sort(cuboid.begin(),cuboid.end());
         }
-        sort(cuboids.begin(),cuboids.end());
+        sort(cuboids.begin(),cuboids.end(),comp);
         return solve(cuboids,n);
     }
 };
