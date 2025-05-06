@@ -40,28 +40,50 @@ public:
     // }
 
 
-     int solve(vector<int>& stones){
+    //  int solve(vector<int>& stones){
+    //     int n=stones.size();
+    //     int t=accumulate(stones.begin(),stones.end(),0);
+    //     vector<int>curr(2*t+1,0);
+    //     vector<int>next(2*t+1,0);
+    //     for(int i=-t;i<=t;i++)
+    //     next[i+t]=(i<0)?INT_MAX:i;
+        
+    //     for(int i=n-1;i>=0;i--){
+    //         for(int j=t;j>=-t;j--){
+    //             int pos=INT_MAX;int neg=INT_MAX;
+    //             if(j-stones[i]>=-t)
+    //             neg=next[j-stones[i]+t];
+    //             if(j+stones[i]<=t)
+    //             pos=next[j+stones[i]+t];
+    //             curr[j+t]=min(pos,neg);
+    //         }
+    //         next=curr;
+    //     }
+    //     return next[t];
+    // }
+    // int lastStoneWeightII(vector<int>& stones) {
+    //     return solve(stones);
+    // }
+
+
+
+      int solve(vector<int>&nums,int i,int sum,int t,vector<vector<int>>&dp){
+        if(i==nums.size()){
+           return abs(sum-t+sum);
+        }
+        if(dp[i][sum]!=-1)
+        return dp[i][sum];
+        int l=solve(nums,i+1,sum+nums[i],t,dp);
+        int r=solve(nums,i+1,sum,t,dp);
+        return dp[i][sum]=min(l,r);
+      }
+      int lastStoneWeightII(vector<int>& stones) {
         int n=stones.size();
         int t=accumulate(stones.begin(),stones.end(),0);
-        vector<int>curr(2*t+1,0);
-        vector<int>next(2*t+1,0);
-        for(int i=-t;i<=t;i++)
-        next[i+t]=(i<0)?INT_MAX:i;
-        
-        for(int i=n-1;i>=0;i--){
-            for(int j=t;j>=-t;j--){
-                int pos=INT_MAX;int neg=INT_MAX;
-                if(j-stones[i]>=-t)
-                neg=next[j-stones[i]+t];
-                if(j+stones[i]<=t)
-                pos=next[j+stones[i]+t];
-                curr[j+t]=min(pos,neg);
-            }
-            next=curr;
-        }
-        return next[t];
-    }
-    int lastStoneWeightII(vector<int>& stones) {
-        return solve(stones);
-    }
+        vector<vector<int>>dp(n+1,vector<int>(t+1,-1));
+        return solve(stones,0,0,t,dp);
+      }
+
+
+
 };
