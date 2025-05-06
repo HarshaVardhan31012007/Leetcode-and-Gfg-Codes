@@ -104,24 +104,24 @@ public:
      
 
 
-      int findSubsequences(int n,vector<int>&nums){
-         vector<int>c(n+1,0);
-        for(int curr=n-1;curr>=0;curr--){
-        //   for(int prev=curr-1;prev>=-1;prev--){
-             for(int prev=-1;prev<=curr-1;prev++){
-            int l=0;
-            if(prev==-1||nums[prev]<nums[curr])
-            l=1+c[curr+1];
-            int r=c[prev+1];
-            c[prev+1]=max(l,r);
-          }
-        }
-        return c[0];
-    }
-    int lengthOfLIS(vector<int>& nums) {
-        int n=nums.size();
-        return findSubsequences(n,nums);
-    }
+    //   int findSubsequences(int n,vector<int>&nums){
+    //      vector<int>c(n+1,0);
+    //     for(int curr=n-1;curr>=0;curr--){
+    //     //   for(int prev=curr-1;prev>=-1;prev--){
+    //          for(int prev=-1;prev<=curr-1;prev++){
+    //         int l=0;
+    //         if(prev==-1||nums[prev]<nums[curr])
+    //         l=1+c[curr+1];
+    //         int r=c[prev+1];
+    //         c[prev+1]=max(l,r);
+    //       }
+    //     }
+    //     return c[0];
+    // }
+    // int lengthOfLIS(vector<int>& nums) {
+    //     int n=nums.size();
+    //     return findSubsequences(n,nums);
+    // }
 
 
     // int lengthOfLIS(vector<int>&nums){
@@ -136,4 +136,21 @@ public:
     //     }
     //     return *max_element(dp.begin(),dp.end());
     // }
+
+
+
+    int lengthOfLIS(vector<int>&nums){
+        vector<int>ans;
+        ans.push_back(nums[0]);
+        for(int i=0;i<nums.size();i++){
+            if(ans.back()<nums[i])
+            ans.push_back(nums[i]);
+            else{
+                auto it=lower_bound(ans.begin(),ans.end(),nums[i]);
+                int idx=it-ans.begin();
+                ans[idx]=nums[i];
+            }
+        }
+        return ans.size();
+    }
 };
