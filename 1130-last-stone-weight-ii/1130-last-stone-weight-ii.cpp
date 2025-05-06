@@ -27,7 +27,8 @@ public:
         dp[n][i+t]=(i<0)?INT_MAX:i;
         
         for(int i=n-1;i>=0;i--){
-            for(int j=t-1;j>=-t;j--){
+            for(int j=t;j>=-t;j--){
+            // for(int j=t-1;j>=-t+1;j--){
                 int pos=INT_MAX;int neg=INT_MAX;
                 if(j-stones[i]>=-t)
                 neg=dp[i+1][j-stones[i]+t];
