@@ -14,15 +14,27 @@ public:
     //    return solve(n,dp,cost);
     // }
 
+    //  int solve(vector<int>&cost){
+    //    int n=cost.size();
+    //    vector<int>dp(n+1,0);
+    //    dp[0]=cost[0];dp[1]=cost[1];
+    //    for(int i=2;i<=n;i++){
+    //           int t=(i==n)?0:cost[i];
+    //           dp[i]=t+min(dp[i-1],dp[i-2]);
+    //    }
+    //    return dp[n];
+    // }
+
      int solve(vector<int>&cost){
        int n=cost.size();
-       vector<int>dp(n+1,0);
-       dp[0]=cost[0];dp[1]=cost[1];
+       int prev2=cost[0];int prev1=cost[1];
        for(int i=2;i<=n;i++){
               int t=(i==n)?0:cost[i];
-              dp[i]=t+min(dp[i-1],dp[i-2]);
+              int curr=t+min(prev1,prev2);
+              prev2=prev1;
+              prev1=curr;
        }
-       return dp[n];
+       return prev1;
     }
     int minCostClimbingStairs(vector<int>& cost) {
        return solve(cost);
