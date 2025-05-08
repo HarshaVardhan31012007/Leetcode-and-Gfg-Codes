@@ -34,27 +34,22 @@ public:
     //     return solve(cuts,n);
     // }
 
-
     int minCost(int n, vector<int>& cuts) {
-        // Step 1: Add 0 and n to the cuts and sort
-        cuts.push_back(0);
-        cuts.push_back(n);
-        sort(cuts.begin(), cuts.end());
-        
-        int c = cuts.size();
-        vector<vector<int>> dp(c, vector<int>(c, 0));
-        
-        // Step 2: Fill DP table in bottom-up manner
-        for (int len = 2; len < c; ++len) {
-            for (int i = 0; i + len < c; ++i) {
-                int j = i + len;
-                dp[i][j] = INT_MAX;
-                for (int k = i + 1; k < j; ++k) {
-                    dp[i][j] = min(dp[i][j], cuts[j] - cuts[i] + dp[i][k] + dp[k][j]);
-                }
-            }
-        }
-        
-        return dp[0][c - 1];
-    }
+		cuts.insert(cuts.begin(),0);
+		cuts.insert(cuts.end(),n);
+		sort(cuts.begin(),cuts.end());
+		int m=cuts.size();
+		vector<vector<int>> dp(m,vector<int>(m,0));
+		for(int i=m-1;i>=1;i--){
+			for(int j=i;j<=m-2;j++){
+				int mini=1e9;
+				for(int ind=i;ind<=j;ind++){
+					int cost= cuts[j+1]-cuts[i-1]+dp[i][ind-1]+dp[ind+1][j];
+					mini=min(mini,cost);
+				}
+				dp[i][j]=mini;
+			}
+		}
+		return dp[1][cuts.size()-2];
+	}
 };
