@@ -55,21 +55,40 @@ public:
     // }
 
 
-    int solve(int n,vector<int>&dp){
-        if(n==0) return 0;
-        if(dp[n]!=-1)
-        return dp[n];
-        int end=sqrt(n);
-        int i=1;
+    // int solve(int n,vector<int>&dp){
+    //     if(n==0) return 0;
+    //     if(dp[n]!=-1)
+    //     return dp[n];
+    //     int end=sqrt(n);
+    //     int i=1;
+    //     int ans=INT_MAX;
+    //     while(i<=end){
+    //         ans=min(ans,1+solve(n-(i*i),dp));
+    //         i++;
+    //     }
+    //     return dp[n]=ans;
+    // }
+    // int numSquares(int n){
+    //     vector<int>dp(n+1,-1);
+    //     return solve(n,dp);
+    // }
+
+    int solve(int n){
+       vector<int>dp(n+1,-1);
+       dp[0]=0;
+       for(int i=1;i<=n;i++){
+        int j=1;
+        int end=sqrt(i);
         int ans=INT_MAX;
-        while(i<=end){
-            ans=min(ans,1+solve(n-(i*i),dp));
-            i++;
+        while(j<=end){
+           ans=min(ans,1+dp[i-j*j]);
+           j++;
         }
-        return dp[n]=ans;
+        dp[i]=ans;
+       }
+       return dp[n];
     }
     int numSquares(int n){
-        vector<int>dp(n+1,-1);
-        return solve(n,dp);
+        return solve(n);
     }
 };
