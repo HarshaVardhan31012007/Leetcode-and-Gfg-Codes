@@ -96,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1397-search-suggestions-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1397-search-suggestions-system) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
+| [1669-minimum-cost-to-cut-a-stick](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1706-min-cost-to-connect-all-points](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1706-min-cost-to-connect-all-points) |
 | [1753-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-path-with-minimum-effort) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2106-find-greatest-common-divisor-of-array) |
@@ -172,6 +173,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1397-search-suggestions-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1397-search-suggestions-system) |
+| [1669-minimum-cost-to-cut-a-stick](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1669-minimum-cost-to-cut-a-stick) |
 ## Hash Table
 |  |
 | ------- |
@@ -289,6 +291,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1475-maximum-sum-bst-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1475-maximum-sum-bst-in-binary-tree) |
+| [1669-minimum-cost-to-cut-a-stick](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 ## Matrix
 |  |
