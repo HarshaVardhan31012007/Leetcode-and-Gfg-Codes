@@ -8,18 +8,9 @@ public:
         return dp[i][day];
         //One case
         if(day<=days[i]){
-        int a=INT_MAX;
-        int t=solve(days[i]+1,i+1,days,costs,dp);
-        if(t!=INT_MAX)
-        a=costs[0]+t;
-        int b=INT_MAX;
-        t=solve(days[i]+7,i+1,days,costs,dp);
-        if(t!=INT_MAX)
-        b=costs[1]+t;
-        int c=INT_MAX;
-        t=solve(days[i]+30,i+1,days,costs,dp);
-        if(t!=INT_MAX)
-        c=costs[2]+t;
+        int a=costs[0]+solve(days[i]+1,i+1,days,costs,dp);
+        int b=costs[1]+solve(days[i]+7,i+1,days,costs,dp);
+        int c=costs[2]+solve(days[i]+30,i+1,days,costs,dp);
         return min(a,min(b,c));
         }
         return dp[i][day]=solve(day,i+1,days,costs,dp);
