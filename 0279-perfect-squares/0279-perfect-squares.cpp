@@ -28,29 +28,48 @@ public:
     // }
 
 
-     int solve(int n,vector<int>&num){
-        vector<int>dp(n+1,INT_MAX);
-        dp[0]=0;
-        for(int i=1;i<=n;i++){
-            int ans=INT_MAX;
-            for(auto &each:num){
-            if(each<=i){
-            if(dp[i-each]!=INT_MAX)
-            ans=min(ans,1+dp[i-each]);
-            }
-        }
-        dp[i]=ans;
-        }
+    //  int solve(int n,vector<int>&num){
+    //     vector<int>dp(n+1,INT_MAX);
+    //     dp[0]=0;
+    //     for(int i=1;i<=n;i++){
+    //         int ans=INT_MAX;
+    //         for(auto &each:num){
+    //         if(each<=i){
+    //         if(dp[i-each]!=INT_MAX)
+    //         ans=min(ans,1+dp[i-each]);
+    //         }
+    //     }
+    //     dp[i]=ans;
+    //     }
+    //     return dp[n];
+    // }
+    // int numSquares(int n) {
+    //     double a=sqrt(n);
+    //     if(a==(int)a) return 1;
+    //     vector<int>num;
+    //     for(int i=1;i<n;i++){
+    //         if(sqrt(i)==(int)sqrt(i))
+    //         num.push_back(i);
+    //     }
+    //    return solve(n,num);
+    // }
+
+
+    int solve(int n,vector<int>&dp){
+        if(n==0) return 1;
+        if(dp[n]!=-1)
         return dp[n];
-    }
-    int numSquares(int n) {
-        double a=sqrt(n);
-        if(a==(int)a) return 1;
-        vector<int>num;
-        for(int i=1;i<n;i++){
-            if(sqrt(i)==(int)sqrt(i))
-            num.push_back(i);
+        int end=sqrt(n);
+        int i=1;
+        int ans=INT_MAX;
+        while(i<=end){
+            ans=min(ans,1+solve(n-(i*i),dp));
+            i++;
         }
-       return solve(n,num);
+        return dp[n]=ans;
+    }
+    int numSquares(int n){
+        vector<int>dp(n+1,-1);
+        return solve(n,dp)-1;
     }
 };
