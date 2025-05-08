@@ -1,0 +1,31 @@
+class Solution {
+public:
+    int solve(int day,int i,vector<int>& days, vector<int>& costs,vector<vector<int>>&dp){
+        //Base case
+        if(i==days.size()||day>=366)
+        return 0;
+        if(dp[i][day]!=-1)
+        return dp[i][day];
+        //One case
+        if(day<=days[i]){
+        int a=INT_MAX;
+        int t=solve(days[i]+1,i+1,days,costs,dp);
+        if(t!=INT_MAX)
+        a=costs[0]+t;
+        int b=INT_MAX;
+        t=solve(days[i]+7,i+1,days,costs,dp);
+        if(t!=INT_MAX)
+        b=costs[1]+t;
+        int c=INT_MAX;
+        t=solve(days[i]+30,i+1,days,costs,dp);
+        if(t!=INT_MAX)
+        c=costs[2]+t;
+        return min(a,min(b,c));
+        }
+        return dp[i][day]=solve(day,i+1,days,costs,dp);
+    }
+    int mincostTickets(vector<int>& days, vector<int>& costs) {
+        vector<vector<int>>dp(days.size()+1,vector<int>(366,-1));
+        return solve(days[0],0,days,costs,dp);
+    }
+};
