@@ -1,30 +1,44 @@
 class Solution {
 public:
-    bool checkPalindrome(string &k){
-        int i=0;
-        int j=k.length()-1;
+    bool checkPalindrome(string &k,int i,int j){
         while(i<j){
-            if(k[i]==k[j]){
-                i++;j--;
+            if(k[i]!=k[j]){
+                return false;
             }
-            else
-            return 0;
+            i++;j--;
         }
-        return 1;
+        return true;
     }
     string longestPalindrome(string s) {
-        int maxi=INT_MIN;
         string ans="";
         for(int i=0;i<s.length();i++){
             for(int j=i;j<s.length();j++){
-                string k=s.substr(i,j-i+1);
-                 if(checkPalindrome(k)){
-                 maxi=max(maxi,j-i+1);
-                 if(maxi==j-i+1)
-                 ans=k;
+                 if(j-i+1>ans.size()&&checkPalindrome(s,i,j)){
+                    ans=s.substr(i,j-i+1);
                  }
             }
         }
         return ans;
     }
+
+
+    // string solve(string &s,int i,int j){
+    //   if(i>j) return "";
+    //   if(i==j){
+    //     string k="";
+    //     k+=s[i];
+    //     return k;
+    //   } 
+    //   if(s[i]==s[j])
+    //   return s[i]+solve(s,i+1,j-1)+s[j];
+    //   else{
+    //     string a=solve(s,i+1,j);string b=solve(s,i,j-1);
+    //     if(a.length()<b.length()) return b;
+    //     else return a;
+    //   }
+    // }
+    // string longestPalindrome(string s) {
+    //    int n=s.length();
+    //    return solve(s,0,n-1);
+    // }
 };
