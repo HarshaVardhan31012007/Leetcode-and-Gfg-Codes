@@ -20,21 +20,39 @@ public:
     // }
 
 
-    int solve(string &s,string &t){
+    // int solve(string &s,string &t){
+    //    int m=s.size();int n=t.size();
+    //     vector<vector<int>>dp(m+1,vector<int>(n+1,0));
+    //     for(int i=0;i<=m;i++)
+    //     dp[i][n]=1;
+    //     for(int i=m-1;i>=0;i--){
+    //         for(int j=n-1;j>=0;j--){
+    //                 long long ans=0;
+    //                 if(s[i]==t[j])
+    //                 ans+=dp[i+1][j+1];
+    //                 ans+=dp[i+1][j];
+    //                  dp[i][j]=ans;
+    //         }
+    //     }
+    //     return dp[0][0];
+    // }
+
+     int solve(string &s,string &t){
        int m=s.size();int n=t.size();
-        vector<vector<int>>dp(m+1,vector<int>(n+1,0));
-        for(int i=0;i<=m;i++)
-        dp[i][n]=1;
+        vector<int>curr(n+1,0);
+        vector<int>next(n+1,0);
+        curr[n]=next[n]=1;
         for(int i=m-1;i>=0;i--){
             for(int j=n-1;j>=0;j--){
                     long long ans=0;
                     if(s[i]==t[j])
-                    ans+=dp[i+1][j+1];
-                    ans+=dp[i+1][j];
-                     dp[i][j]=ans;
+                    ans+=next[j+1];
+                    ans+=next[j];
+                    curr[j]=ans;
             }
+            next=curr;
         }
-        return dp[0][0];
+        return curr[0];
     }
     int numDistinct(string s, string t) {
         return solve(s,t);
