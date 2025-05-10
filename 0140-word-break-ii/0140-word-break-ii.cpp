@@ -30,8 +30,10 @@ public:
 
 
     unordered_map<string,bool>mpp;
+    unordered_map<int,vector<string>>dp;
     vector<string>solve(int i,string &s){
         if(i==s.size()) return {""};
+        if(dp.find(i)!=dp.end()) return dp[i];
         string temp="";
         vector<string>ans;
         for(int j=i;j<s.length();j++){
@@ -45,7 +47,7 @@ public:
              }
             }
         }
-        return ans;
+        return dp[i]=ans;
     }
     vector<string> wordBreak(string s, vector<string>& wordDict) {
         for(auto &i:wordDict)
