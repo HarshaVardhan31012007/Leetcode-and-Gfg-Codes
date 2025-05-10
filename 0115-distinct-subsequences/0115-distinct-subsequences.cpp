@@ -20,7 +20,7 @@ public:
     // }
 
 
-    long long int solve(string &s,string &t){
+    int solve(string &s,string &t){
        int m=s.size();int n=t.size();
         vector<vector<int>>dp(m+1,vector<int>(n+1,0));
         for(int i=0;i<=m;i++)
@@ -36,7 +36,7 @@ public:
         }
         return dp[0][0];
     }
-    long long int numDistinct(string s, string t) {
+    int numDistinct(string s, string t) {
         return solve(s,t);
     }
 };
