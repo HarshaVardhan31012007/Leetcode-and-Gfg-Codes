@@ -37,20 +37,37 @@ public:
     //     return dp[0][0];
     // }
 
+    //  int solve(string &s,string &t){
+    //    int m=s.size();int n=t.size();
+    //     vector<int>curr(n+1,0);
+    //     vector<int>next(n+1,0);
+    //     curr[n]=next[n]=1;
+    //     for(int i=m-1;i>=0;i--){
+    //         for(int j=n-1;j>=0;j--){
+    //                 long long ans=0;
+    //                 if(s[i]==t[j])
+    //                 ans+=next[j+1];
+    //                 ans+=next[j];
+    //                 curr[j]=ans;
+    //         }
+    //         next=curr;
+    //     }
+    //     return curr[0];
+    // }
+
+
      int solve(string &s,string &t){
        int m=s.size();int n=t.size();
         vector<int>curr(n+1,0);
-        vector<int>next(n+1,0);
-        curr[n]=next[n]=1;
+        curr[n]=1;
         for(int i=m-1;i>=0;i--){
-            for(int j=n-1;j>=0;j--){
+            for(int j=0;j<=n-1;j++){
                     long long ans=0;
                     if(s[i]==t[j])
-                    ans+=next[j+1];
-                    ans+=next[j];
+                    ans+=curr[j+1];
+                    ans+=curr[j];
                     curr[j]=ans;
             }
-            next=curr;
         }
         return curr[0];
     }
