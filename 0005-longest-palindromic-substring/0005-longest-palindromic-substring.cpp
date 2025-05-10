@@ -49,21 +49,49 @@ public:
     // }
 
      
-    string ans="";
-    void expand(string &s,int i,int j){
-     while(i>=0&&j<s.length()&&s[i]==s[j]){
-          i--;j++;
-     }
-     if(ans.length()<j-i-1)
-     ans=s.substr(i+1,j-i-1);
-    }
-    string longestPalindrome(string s) {
-      for(int i=0;i<s.length();i++){
-        //odd case
-        expand(s,i,i);
-        //even case
-        expand(s,i,i+1);
-      }
-      return ans;
+    // string ans="";
+    // void expand(string &s,int i,int j){
+    //  while(i>=0&&j<s.length()&&s[i]==s[j]){
+    //       i--;j++;
+    //  }
+    //  if(ans.length()<j-i-1)
+    //  ans=s.substr(i+1,j-i-1);
+    // }
+    // string longestPalindrome(string s) {
+    //   for(int i=0;i<s.length();i++){
+    //     //odd case
+    //     expand(s,i,i);
+    //     //even case
+    //     expand(s,i,i+1);
+    //   }
+    //   return ans;
+    // }
+
+
+
+    string longestPalindrome(string s){
+        int n=s.length();
+        vector<vector<int>>dp(n,vector<int>(n,0));
+        int idx=0;int idx1=0;
+        for(int i=0;i<s.length();i++)
+        dp[i][i]=1;
+        for(int i=0;i<s.length()-1;i++){
+        if(s[i]==s[i+1]){
+            dp[i][i+1]=1;
+            idx=i;idx1=i+1;
+        }
+        }
+
+        for(int diff=2;diff<n;diff++){  
+            for(int i=0,j=i+diff;j<n;i++,j++){
+                if(s[i]==s[j]&&dp[i+1][j-1]==1){
+                dp[i][j]=1;
+                if(idx1-idx+1<j-i+1){
+                idx=i;idx1=j;
+                }
+                }
+            }
+        }
+        return s.substr(idx,idx1-idx+1);
     }
 };
