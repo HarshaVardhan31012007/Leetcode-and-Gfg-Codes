@@ -30,25 +30,26 @@ public:
 
 
     unordered_map<string,bool>mpp;
-    void solve(int i,string &s,vector<string>& wordDict,vector<string>&ans,string t){
-        if(i==s.size()) {
-            t.pop_back();
-            ans.push_back(t);
-        }
+    vector<string>solve(int i,string &s){
+        if(i==s.size()) return {""};
         string temp="";
+        vector<string>ans;
         for(int j=i;j<s.length();j++){
             temp=temp+s[j];
             if(mpp[temp]==1){
-             solve(j+1,s,wordDict,ans,t+temp+" ");
+             auto right=solve(j+1,s);
+             for(auto &k:right){
+               string end="";
+               if(k.size()>0) end=" "+k;
+               ans.push_back(temp+end);
+             }
             }
         }
+        return ans;
     }
     vector<string> wordBreak(string s, vector<string>& wordDict) {
-        vector<string>ans;
-        string t="";
         for(auto &i:wordDict)
         mpp[i]=1;
-        solve(0,s,wordDict,ans,t);
-        return ans;
+        return solve(0,s);
     }
 };
