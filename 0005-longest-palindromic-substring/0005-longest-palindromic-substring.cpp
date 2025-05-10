@@ -72,7 +72,7 @@ public:
     string longestPalindrome(string s){
         int n=s.length();
         vector<vector<int>>dp(n,vector<int>(n,0));
-        int idx=0;int idx1=0;
+        int idx=0;int idx1=0;// or start ,maxlen
         for(int i=0;i<s.length();i++)
         dp[i][i]=1;
         for(int i=0;i<s.length()-1;i++){
