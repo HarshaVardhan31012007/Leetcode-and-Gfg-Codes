@@ -51,20 +51,11 @@ public:
      
     string ans="";
     void expand(string &s,int i,int j){
-     string temp="";
-     while(i>=0&&j<s.length()){
-        if(s[i]==s[j]){
-          if(i!=j)
-          temp=s[i]+temp+s[j];
-          else
-          temp=s[i];
+     while(i>=0&&j<s.length()&&s[i]==s[j]){
           i--;j++;
-        }
-        else
-        break;
      }
-     if(temp.length()>ans.length())
-     ans=temp;
+     if(ans.length()<j-i-1)
+     ans=s.substr(i+1,j-i-1);
     }
     string longestPalindrome(string s) {
       for(int i=0;i<s.length();i++){
