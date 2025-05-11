@@ -14,6 +14,7 @@ public:
     unordered_map<TreeNode*,int>dp;
     int rob(TreeNode* root) {
        if(!root) return 0;
+       if(!root->left&&!root->right) return root->val;
        if(dp.find(root)!=dp.end()) return dp[root];
        int inc=root->val;
        if(root->left!=NULL)
