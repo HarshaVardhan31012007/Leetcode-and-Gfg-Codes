@@ -1,14 +1,15 @@
 class Solution {
 public:
-    int solve(int s,int e){
+    int solve(int s,int e,vector<vector<int>>&dp){
         if(s>=e) return 1;
+        if(dp[s][e]!=-1) return dp[s][e];
         int count=0;
         for(int i=s;i<=e;i++){
-          int l=solve(s,i-1);
-          int r=solve(i+1,e);
+          int l=solve(s,i-1,dp);
+          int r=solve(i+1,e,dp);
           count+=l*r;
         }
-        return count;
+        return dp[s][e]=count;
     }
     int numTrees(int n) {
         //method 1
@@ -33,6 +34,7 @@ public:
 
 
         //method 3
-        return solve(1,n);
+        vector<vector<int>>dp(n+1,vector<int>(n+1,-1));
+        return solve(1,n,dp);
     }
 };
