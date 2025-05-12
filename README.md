@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
 | [0909-stone-game](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0909-stone-game) |
 | [1013-fibonacci-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1013-fibonacci-number) |
+| [1240-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1240-stone-game-ii) |
 | [1879-maximum-score-from-removing-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1879-maximum-score-from-removing-stones) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2106-find-greatest-common-divisor-of-array) |
 ## Array
@@ -100,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1130-last-stone-weight-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1130-last-stone-weight-ii) |
 | [1228-minimum-cost-tree-from-leaf-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1228-minimum-cost-tree-from-leaf-values) |
 | [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
+| [1240-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1240-stone-game-ii) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1397-search-suggestions-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1397-search-suggestions-system) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
@@ -254,6 +256,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0238-product-of-array-except-self) |
 | [0724-find-pivot-index](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0724-find-pivot-index) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
+| [1240-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1240-stone-game-ii) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 ## Divide and Conquer
 |  |
@@ -307,6 +310,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1025-minimum-cost-for-tickets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1025-minimum-cost-for-tickets) |
 | [1130-last-stone-weight-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1130-last-stone-weight-ii) |
 | [1228-minimum-cost-tree-from-leaf-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1228-minimum-cost-tree-from-leaf-values) |
+| [1240-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1240-stone-game-ii) |
 | [1250-longest-common-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1250-longest-common-subsequence) |
 | [1263-number-of-dice-rolls-with-target-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1263-number-of-dice-rolls-with-target-sum) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
@@ -875,4 +879,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0375-guess-number-higher-or-lower-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0375-guess-number-higher-or-lower-ii) |
 | [0909-stone-game](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0909-stone-game) |
+| [1240-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1240-stone-game-ii) |
 <!---LeetCode Topics End-->
