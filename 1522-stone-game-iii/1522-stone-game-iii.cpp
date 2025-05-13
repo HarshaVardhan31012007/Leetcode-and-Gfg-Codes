@@ -28,25 +28,51 @@ public:
     // }
 
 
+    // int solve(vector<int>& arr){
+    //    int n=arr.size();
+    //    vector<vector<int>>dp(n+1,vector<int>(2,0));
+    //    for(int i=n-1;i>=0;i--){
+    //     for(int flag=0;flag<=1;flag++){
+    //     int total=0;
+    //     int ans=flag==1?INT_MIN:INT_MAX;
+    //     for(int j=0;j<3;j++){
+    //      if(i+j>=arr.size()) break;
+    //      total+=arr[i+j];
+    //      if(flag)
+    //      ans=max(ans,total+dp[i+j+1][!flag]);
+    //      else
+    //      ans=min(ans,-total+dp[i+j+1][!flag]);
+    //     }
+    //     dp[i][flag]=ans;
+    //     }
+    //    }
+    //    return dp[0][1];
+    // }
+    // string stoneGameIII(vector<int>& stoneValue) {
+    //    int ans=solve(stoneValue);
+    //    if(ans>0)
+    //    return "Alice";
+    //    else if(ans<0)
+    //    return "Bob";
+    //    else
+    //    return "Tie";
+    // }
+
+
     int solve(vector<int>& arr){
        int n=arr.size();
-       vector<vector<int>>dp(n+1,vector<int>(2,0));
+       vector<int>dp(n+1,0);
        for(int i=n-1;i>=0;i--){
-        for(int flag=0;flag<=1;flag++){
         int total=0;
-        int ans=flag==1?INT_MIN:INT_MAX;
+        int ans=INT_MIN;
         for(int j=0;j<3;j++){
          if(i+j>=arr.size()) break;
          total+=arr[i+j];
-         if(flag)
-         ans=max(ans,total+dp[i+j+1][!flag]);
-         else
-         ans=min(ans,-total+dp[i+j+1][!flag]);
+         ans=max(ans,total-dp[i+j+1]);
         }
-        dp[i][flag]=ans;
+        dp[i]=ans;
         }
-       }
-       return dp[0][1];
+       return dp[0];
     }
     string stoneGameIII(vector<int>& stoneValue) {
        int ans=solve(stoneValue);
