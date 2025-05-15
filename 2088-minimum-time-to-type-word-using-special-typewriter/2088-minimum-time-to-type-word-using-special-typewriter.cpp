@@ -7,7 +7,6 @@ public:
              if(word[i]==ch)
              count++;
              else{
-                int clock=1;
                 int mini=min((word[i]-ch+26)%26,(ch-word[i]+26)%26);
                 count+=mini+1;
                 ch=word[i];
