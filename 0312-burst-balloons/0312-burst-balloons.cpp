@@ -33,7 +33,7 @@ public:
        nums.insert(nums.begin(),1);
        nums.insert(nums.end(),1);
        int n=nums.size();
-       vector<vector<int>>dp(n+1,vector<int>(n+1,-1));
+       vector<vector<int>>dp(n,vector<int>(n,-1));
        return solve(nums,1,n-2,dp); 
     }
 };
