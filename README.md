@@ -111,6 +111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1706-min-cost-to-connect-all-points](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1706-min-cost-to-connect-all-points) |
 | [1753-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-path-with-minimum-effort) |
+| [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2227-sum-of-subarray-ranges](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2227-sum-of-subarray-ranges) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
@@ -254,6 +255,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1397-search-suggestions-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1397-search-suggestions-system) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1753-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-path-with-minimum-effort) |
+| [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -326,6 +328,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1475-maximum-sum-bst-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1475-maximum-sum-bst-in-binary-tree) |
 | [1522-stone-game-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1522-stone-game-iii) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1669-minimum-cost-to-cut-a-stick) |
+| [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 ## Matrix
 |  |
@@ -449,6 +452,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0680-valid-palindrome-ii) |
 | [1228-minimum-cost-tree-from-leaf-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1228-minimum-cost-tree-from-leaf-values) |
 | [1285-balance-a-binary-search-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1285-balance-a-binary-search-tree) |
+| [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1879-maximum-score-from-removing-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1879-maximum-score-from-removing-stones) |
 | [2088-minimum-time-to-type-word-using-special-typewriter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2088-minimum-time-to-type-word-using-special-typewriter) |
 ## Enumeration
