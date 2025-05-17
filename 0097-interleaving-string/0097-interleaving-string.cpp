@@ -102,6 +102,8 @@ public:
                     curr[j]=ans;
             }
             next=curr;
+            // for(auto &d:curr)
+            // d=0;
         }
         return curr[0];
     }
