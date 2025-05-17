@@ -58,19 +58,38 @@ public:
 
        
 
-       int solve(string &s,string &p,int i,int j,vector<vector<int>>&dp){
-        if(i==s.size()||j==p.size()) return 0;
-        if(dp[i][j]!=-1) return dp[i][j];
-        if(s[i]==p[j])
-        return dp[i][j]=1+solve(s,p,i+1,j+1,dp);
-        else
-        return dp[i][j]=max(solve(s,p,i+1,j,dp),solve(s,p,i,j+1,dp));
-       }
-      int longestPalindromeSubseq(string s) {
+    //    int solve(string &s,string &p,int i,int j,vector<vector<int>>&dp){
+    //     if(i==s.size()||j==p.size()) return 0;
+    //     if(dp[i][j]!=-1) return dp[i][j];
+    //     if(s[i]==p[j])
+    //     return dp[i][j]=1+solve(s,p,i+1,j+1,dp);
+    //     else
+    //     return dp[i][j]=max(solve(s,p,i+1,j,dp),solve(s,p,i,j+1,dp));
+    //    }
+    //   int longestPalindromeSubseq(string s) {
+    //     string p=s;int n=s.size();
+    //     reverse(p.begin(),p.end());
+    //     vector<vector<int>>dp(n+1,vector<int>(n+1,-1));
+    //     return solve(s,p,0,0,dp);
+    // }
+
+
+
+    int solve(string &s){
         string p=s;int n=s.size();
         reverse(p.begin(),p.end());
-        vector<vector<int>>dp(n+1,vector<int>(n+1,-1));
-        return solve(s,p,0,0,dp);
+        vector<vector<int>>dp(n+1,vector<int>(n+1,0));
+        for(int i=n-1;i>=0;i--){
+            for(int j=n-1;j>=0;j--){
+               if(s[i]==p[j])
+               dp[i][j]=1+dp[i+1][j+1];
+               else
+               dp[i][j]=max(dp[i+1][j],dp[i][j+1]);
+            }
+        }
+        return dp[0][0];
+       }
+      int longestPalindromeSubseq(string s) {
+        return solve(s);
     }
-
 };
