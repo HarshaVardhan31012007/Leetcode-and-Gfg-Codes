@@ -35,21 +35,43 @@ public:
     // }
 
 
-    int solve(vector<int>&cuts,int s,int e,vector<vector<int>>&dp){
-       if(e-s==1) return 0;
-       if(dp[s][e]!=-1) return dp[s][e];
-        int ans=INT_MAX;
-        for(int i=s+1;i<e;i++){
-           ans=min(ans,cuts[e]-cuts[s]+solve(cuts,s,i,dp)+solve(cuts,i,e,dp));
-        }
-        return dp[s][e]=ans;
-    }
-    int minCost(int n, vector<int>& cuts) {
+    // int solve(vector<int>&cuts,int s,int e,vector<vector<int>>&dp){
+    //    if(e-s==1) return 0;
+    //    if(dp[s][e]!=-1) return dp[s][e];
+    //     int ans=INT_MAX;
+    //     for(int i=s+1;i<e;i++){
+    //        ans=min(ans,cuts[e]-cuts[s]+solve(cuts,s,i,dp)+solve(cuts,i,e,dp));
+    //     }
+    //     return dp[s][e]=ans;
+    // }
+    // int minCost(int n, vector<int>& cuts) {
+    //     sort(cuts.begin(),cuts.end());
+    //     cuts.insert(cuts.begin(),0);
+    //     cuts.insert(cuts.end(),n);
+    //     int m=cuts.size();
+    //     vector<vector<int>>dp(m,vector<int>(m,-1));
+    //     return solve(cuts,0,m-1,dp);
+    // }
+
+
+    int solve(vector<int>&cuts,int n){
         sort(cuts.begin(),cuts.end());
         cuts.insert(cuts.begin(),0);
         cuts.insert(cuts.end(),n);
         int m=cuts.size();
-        vector<vector<int>>dp(m,vector<int>(m,-1));
-        return solve(cuts,0,m-1,dp);
+        vector<vector<int>>dp(m,vector<int>(m,0));
+        for(int s=m-1;s>=0;s--){
+            for(int e=s+2;e<=m-1;e++){
+                int ans=INT_MAX;
+                for(int i=s+1;i<e;i++){
+                ans=min(ans,cuts[e]-cuts[s]+dp[s][i]+dp[i][e]);
+                }
+                dp[s][e]=ans; 
+            }
+        }
+        return dp[0][m-1];
+    }
+    int minCost(int n, vector<int>& cuts) {
+        return solve(cuts,n);
     }
 };
