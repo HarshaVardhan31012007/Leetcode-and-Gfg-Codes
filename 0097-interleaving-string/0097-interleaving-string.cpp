@@ -21,6 +21,7 @@ public:
      bool solve(string &s1,string &s2,string &s3){
          int m=s1.size();int n=s2.size();int p=s3.size();
         vector<vector<vector<int>>>dp(m+1,vector<vector<int>>(n+1,vector<int>(p+1,-1)));
+        if(m+n!=p) return false;
         dp[m][n][p]=1;
         for(int i=m;i>=0;i--){
             for(int j=n;j>=0;j--){
