@@ -40,7 +40,7 @@ public:
         int maxi=0;//if INT-MIN then if condition me equality hona chahihe//if 0 is there then equality no need
         int bestbuy=prices[0];
         for(int i=1;i<n;i++){
-            if(prices[i]>=bestbuy)
+            if(prices[i]>=bestbuy)//if you dont write also it works
             maxi=max(maxi,prices[i]-bestbuy);
             bestbuy=min(bestbuy,prices[i]);
         }
