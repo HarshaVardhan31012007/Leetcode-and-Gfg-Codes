@@ -24,16 +24,28 @@ public:
         // return maxi;
        
         //method 2
-        int n=prices.size();
-        int maxi=INT_MIN;//if INT-MIN then if condition me equality hona chahihe//if 0 is there then equality no need
+        // int n=prices.size();
+        // int maxi=INT_MIN;//if INT-MIN then if condition me equality hona chahihe//if 0 is there then equality no need
+        // int bestbuy=prices[0];
+        // for(int i=0;i<n;i++){
+        //     if(prices[i]>=bestbuy){
+        //         maxi=max(maxi,prices[i]-bestbuy);
+        //     }
+        //     bestbuy=min(bestbuy,prices[i]);
+        // }
+        // return maxi;
+
+        
+         int n=prices.size();
+        int maxi=0;//if INT-MIN then if condition me equality hona chahihe//if 0 is there then equality no need
         int bestbuy=prices[0];
-        for(int i=0;i<n;i++){
-            if(prices[i]>=bestbuy){
-                maxi=max(maxi,prices[i]-bestbuy);
-            }
+        for(int i=1;i<n;i++){
+            maxi=max(maxi,prices[i]-bestbuy);
             bestbuy=min(bestbuy,prices[i]);
         }
         return maxi;
+
+
 
         //method 3
         // int bestbuy=INT_MAX;
