@@ -104,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1228-minimum-cost-tree-from-leaf-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1228-minimum-cost-tree-from-leaf-values) |
 | [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
 | [1240-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1240-stone-game-ii) |
+| [1290-make-array-strictly-increasing](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1290-make-array-strictly-increasing) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1397-search-suggestions-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1397-search-suggestions-system) |
 | [1522-stone-game-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1522-stone-game-iii) |
@@ -185,6 +186,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0807-custom-sort-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0807-custom-sort-string) |
 | [0948-sort-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0948-sort-an-array) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1290-make-array-strictly-increasing](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1290-make-array-strictly-increasing) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1397-search-suggestions-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1397-search-suggestions-system) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1669-minimum-cost-to-cut-a-stick) |
@@ -252,6 +254,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0882-peak-index-in-a-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0882-peak-index-in-a-mountain-array) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0907-koko-eating-bananas](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0907-koko-eating-bananas) |
+| [1290-make-array-strictly-increasing](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1290-make-array-strictly-increasing) |
 | [1397-search-suggestions-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1397-search-suggestions-system) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1753-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-path-with-minimum-effort) |
@@ -322,6 +325,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1240-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1240-stone-game-ii) |
 | [1250-longest-common-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1250-longest-common-subsequence) |
 | [1263-number-of-dice-rolls-with-target-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1263-number-of-dice-rolls-with-target-sum) |
+| [1290-make-array-strictly-increasing](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1290-make-array-strictly-increasing) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
