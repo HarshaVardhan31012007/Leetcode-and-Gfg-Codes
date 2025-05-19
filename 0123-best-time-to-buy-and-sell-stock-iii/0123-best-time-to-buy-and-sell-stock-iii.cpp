@@ -39,27 +39,40 @@ public:
     //  }
 
 
-     int solve(vector<int>&prices){
-          vector<vector<int>>curr(2,vector<int>(3,0));
-          vector<vector<int>>next(2,vector<int>(3,0));
-        for(int i=prices.size()-1;i>=0;i--){
-            for(int flag=0;flag<=1;flag++){
-                for(int limit=1;limit<=2;limit++){
-        int profit=0;
-        if(flag)
-         profit=max(profit,-prices[i]+next[0][limit]);
-         else
-        profit=max(profit,prices[i]+next[1][limit-1]);
-        profit=max(profit,next[flag][limit]);
-        curr[flag][limit]=profit;
-                }
-            }
-            next=curr;
+    //  int solve(vector<int>&prices){
+    //       vector<vector<int>>curr(2,vector<int>(3,0));
+    //       vector<vector<int>>next(2,vector<int>(3,0));
+    //     for(int i=prices.size()-1;i>=0;i--){
+    //         for(int flag=0;flag<=1;flag++){
+    //             for(int limit=1;limit<=2;limit++){
+    //     int profit=0;
+    //     if(flag)
+    //      profit=max(profit,-prices[i]+next[0][limit]);
+    //      else
+    //     profit=max(profit,prices[i]+next[1][limit-1]);
+    //     profit=max(profit,next[flag][limit]);
+    //     curr[flag][limit]=profit;
+    //             }
+    //         }
+    //         next=curr;
+    //     }
+    //     return curr[1][2];
+    //  }
+    //  int maxProfit(vector<int>& prices) {
+    //     return solve(prices);
+    //  }
+
+
+    int maxProfit(vector<int>&prices){
+        int profit1=0;int profit2=0;
+        int buy1=INT_MAX;int buy2=INT_MAX;
+        for(int i=0;i<prices.size();i++){
+           buy1=min(buy1,prices[i]);
+           profit1=max(profit1,prices[i]-buy1);
+           buy2=min(buy2,prices[i]-profit1);
+           profit2=max(profit2,prices[i]-buy2);
         }
-        return curr[1][2];
-     }
-     int maxProfit(vector<int>& prices) {
-        return solve(prices);
-     }
+        return profit2;
+    }
    
 };
