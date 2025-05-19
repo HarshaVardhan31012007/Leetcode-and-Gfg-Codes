@@ -54,25 +54,38 @@ public:
     //  }
 
 
-    int solve(vector<int>&prices){
-         vector<int>curr(2,0);
-         vector<int>next(2,0);
-         for(int i=prices.size()-1;i>=0;i--){
-            for(int flag=0;flag<=1;flag++){
-                int profit=0;
-                if(flag)
-                profit=max(profit,-prices[i]+next[0]);
-                else
-                profit=max(profit,prices[i]+next[1]);
-                profit=max(profit,next[flag]);
-                curr[flag]=profit;
+    // int solve(vector<int>&prices){
+    //      vector<int>curr(2,0);
+    //      vector<int>next(2,0);
+    //      for(int i=prices.size()-1;i>=0;i--){
+    //         for(int flag=0;flag<=1;flag++){
+    //             int profit=0;
+    //             if(flag)
+    //             profit=max(profit,-prices[i]+next[0]);
+    //             else
+    //             profit=max(profit,prices[i]+next[1]);
+    //             profit=max(profit,next[flag]);
+    //             curr[flag]=profit;
+    //         }
+    //         next=curr;
+    //      }
+    //      return curr[1];
+    //  }
+    //  int maxProfit(vector<int>& prices) {
+    //     return solve(prices);
+    //  }
+
+    int maxProfit(vector<int>& prices) {
+        int profit =0;
+        int n=prices.size();
+        int i=0;
+        while(i<(n-1)){
+            if(prices[i+1]>prices[i]){
+                profit +=(prices[i+1] - prices[i]);
             }
-            next=curr;
-         }
-         return curr[1];
-     }
-     int maxProfit(vector<int>& prices) {
-        return solve(prices);
-     }
+            i++;
+        }
+        return profit;
+    }
 
 };
