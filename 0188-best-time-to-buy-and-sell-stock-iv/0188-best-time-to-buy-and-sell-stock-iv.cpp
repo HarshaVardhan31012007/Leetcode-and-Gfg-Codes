@@ -6,13 +6,13 @@ public:
         for(int i=prices.size()-1;i>=0;i--){
             for(int flag=0;flag<=1;flag++){
                 for(int limit=1;limit<=k;limit++){
-        int profit=0;
-        if(flag)
-         profit=max(profit,-prices[i]+next[0][limit]);
-         else
-        profit=max(profit,prices[i]+next[1][limit-1]);
-        profit=max(profit,next[flag][limit]);
-        curr[flag][limit]=profit;
+                    int profit=0;
+                    if(flag)
+                    profit=max(profit,-prices[i]+next[0][limit]);
+                    else
+                    profit=max(profit,prices[i]+next[1][limit-1]);
+                    profit=max(profit,next[flag][limit]);
+                    curr[flag][limit]=profit;
                 }
             }
             next=curr;
