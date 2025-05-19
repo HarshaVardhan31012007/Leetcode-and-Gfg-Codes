@@ -17,19 +17,20 @@ public:
     //     return solve(nums,target,0,0,t,dp);
     // }
 
-     int solve(vector<int>&nums,int target,int i,map<pair<int,int>,int>&dp){
-        if(i==nums.size()){
-            if(target==0)
-            return 1;
-            return 0;
+     int solve(vector<int>&nums,int target){
+       map<pair<int,int>,int>dp;
+       int t=accumulate(nums.begin(),nums.end(),0);
+       dp[{nums.size(),0}]=1;
+       for(int i=nums.size()-1;i>=0;i--){
+        for(int sum=-t;sum<=t;sum++){
+            int a=dp[{i+1,sum-nums[i]}];
+            int b=dp[{i+1,sum+nums[i]}];
+            dp[{i,sum}]=a+b;
         }
-        if(dp.find({i,target})!=dp.end()) return dp[{i,target}];
-        int a=solve(nums,target-nums[i],i+1,dp);
-        int b=solve(nums,target+nums[i],i+1,dp);
-        return dp[{i,target}]=a+b;
+       }
+       return dp[{0,target}];
     }
     int findTargetSumWays(vector<int>& nums, int target) {
-        map<pair<int,int>,int>dp;
-        return solve(nums,target,0,dp);
+        return solve(nums,target);
     }
 };
