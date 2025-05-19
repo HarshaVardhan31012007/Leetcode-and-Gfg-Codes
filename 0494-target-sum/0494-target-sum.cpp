@@ -17,25 +17,52 @@ public:
     //     return solve(nums,target,0,0,t,dp);
     // }
     
-     int solve(vector<int>&nums,int target){
+    //  int solve(vector<int>&nums,int target){
+    //     int t=accumulate(nums.begin(),nums.end(),0);
+    //     vector<vector<int>>dp(nums.size()+1,vector<int>(2*t+1,0));
+    //     for(int sum=-t;sum<=t;sum++){
+    //         if(sum==target)
+    //         dp[nums.size()][sum+t]=1;
+    //     }
+    //     for(int i=nums.size()-1;i>=0;i--){
+    //         for(int sum=-t;sum<=t;sum++){
+    //     int a=0;
+    //     if(sum-nums[i]>=-t)
+    //     a=dp[i+1][sum-nums[i]+t];
+    //     int b=0;
+    //     if(sum+nums[i]<=t)
+    //     b=dp[i+1][sum+nums[i]+t];
+    //     dp[i][sum+t]=a+b;
+    //         }
+    //     }
+    //     return dp[0][0+t];
+    // }
+    // int findTargetSumWays(vector<int>& nums, int target) {
+    //     return solve(nums,target);
+    // }
+
+
+      int solve(vector<int>&nums,int target){
         int t=accumulate(nums.begin(),nums.end(),0);
-        vector<vector<int>>dp(nums.size()+1,vector<int>(2*t+1,0));
+        vector<int>curr(2*t+1,0);
+        vector<int>next(2*t+1,0);
         for(int sum=-t;sum<=t;sum++){
             if(sum==target)
-            dp[nums.size()][sum+t]=1;
+            next[sum+t]=1;
         }
         for(int i=nums.size()-1;i>=0;i--){
             for(int sum=-t;sum<=t;sum++){
         int a=0;
         if(sum-nums[i]>=-t)
-        a=dp[i+1][sum-nums[i]+t];
+        a=next[sum-nums[i]+t];
         int b=0;
         if(sum+nums[i]<=t)
-        b=dp[i+1][sum+nums[i]+t];
-        dp[i][sum+t]=a+b;
+        b=next[sum+nums[i]+t];
+        curr[sum+t]=a+b;
             }
+            next=curr;
         }
-        return dp[0][0+t];
+        return curr[0+t];
     }
     int findTargetSumWays(vector<int>& nums, int target) {
         return solve(nums,target);
