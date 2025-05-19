@@ -47,22 +47,41 @@ public:
     // }
 
 
+    // int solve(vector<int>& days, vector<int>& costs){
+    //      vector<int>dp(days.size()+1,-1);
+    //      dp[days.size()]=0;
+    //      for(int i=days.size()-1;i>=0;i--){
+    //     int a=costs[0]+dp[i+1];
+    //     int passday=days[i]+7-1;
+    //     int j=i;
+    //     while(j<days.size()&&days[j]<=passday){
+    //         j++;
+    //     }
+    //     int b=costs[1]+dp[j];
+    //     passday=days[i]+30-1;
+    //     j=i;
+    //     while(j<days.size()&&days[j]<=passday){
+    //         j++;
+    //     }
+    //     int c=costs[2]+dp[j];
+    //     dp[i]=min(a,min(b,c));
+    //      }
+    //      return dp[0];
+    // }
+    // int mincostTickets(vector<int>& days, vector<int>& costs) {
+    //     return solve(days,costs);
+    // }
+
+
     int solve(vector<int>& days, vector<int>& costs){
          vector<int>dp(days.size()+1,-1);
          dp[days.size()]=0;
          for(int i=days.size()-1;i>=0;i--){
         int a=costs[0]+dp[i+1];
-        int passday=days[i]+7-1;
-        int j=i;
-        while(j<days.size()&&days[j]<=passday){
-            j++;
-        }
+        int j;
+        for(j=i;j<days.size()&&days[j]<days[i]+7;j++);
         int b=costs[1]+dp[j];
-        passday=days[i]+30-1;
-        j=i;
-        while(j<days.size()&&days[j]<=passday){
-            j++;
-        }
+        for(j=i;j<days.size()&&days[j]<days[i]+30;j++);
         int c=costs[2]+dp[j];
         dp[i]=min(a,min(b,c));
          }
