@@ -27,20 +27,54 @@ public:
     // }
 
 
-    int solve(vector<pair<int,int>>&arr,int m,int n){
-         vector<vector<vector<int>>>dp(arr.size()+1,vector<vector<int>>(m+1,vector<int>(n+1,0)));
+    // int solve(vector<pair<int,int>>&arr,int m,int n){
+    //      vector<vector<vector<int>>>dp(arr.size()+1,vector<vector<int>>(m+1,vector<int>(n+1,0)));
+    //      for(int i=arr.size()-1;i>=0;i--){
+    //         for(int j=0;j<=m;j++){
+    //             for(int k=0;k<=n;k++){
+    //             int l=0;
+    //             if(j-arr[i].first>=0&&k-arr[i].second>=0)
+    //             l=1+dp[i+1][j-arr[i].first][k-arr[i].second];
+    //             int r=dp[i+1][j][k];
+    //             dp[i][j][k]=max(l,r);
+    //             }
+    //         }
+    //      }
+    //      return dp[0][m][n];
+    // }
+    // int findMaxForm(vector<string>& strs, int m, int n) {
+    //     vector<pair<int,int>>arr;// 1st-no.of zeros and 2nd-no.of ones
+    //     for(auto &str:strs){
+    //         int one=0;
+    //         int zero=0;
+    //         for(auto &each:str){
+    //             if(each=='0')
+    //             zero++;
+    //             if(each=='1')
+    //             one++;
+    //         }
+    //         arr.push_back({zero,one});
+    //     }
+    //      return solve(arr,m,n);
+    // }
+
+
+     int solve(vector<pair<int,int>>&arr,int m,int n){
+         vector<vector<int>>curr(m+1,vector<int>(n+1,0));
+         vector<vector<int>>next(m+1,vector<int>(n+1,0));
          for(int i=arr.size()-1;i>=0;i--){
             for(int j=0;j<=m;j++){
                 for(int k=0;k<=n;k++){
                 int l=0;
                 if(j-arr[i].first>=0&&k-arr[i].second>=0)
-                l=1+dp[i+1][j-arr[i].first][k-arr[i].second];
-                int r=dp[i+1][j][k];
-                dp[i][j][k]=max(l,r);
+                l=1+next[j-arr[i].first][k-arr[i].second];
+                int r=next[j][k];
+                curr[j][k]=max(l,r);
                 }
             }
+             next=curr;
          }
-         return dp[0][m][n];
+         return curr[m][n];
     }
     int findMaxForm(vector<string>& strs, int m, int n) {
         vector<pair<int,int>>arr;// 1st-no.of zeros and 2nd-no.of ones
