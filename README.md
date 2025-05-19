@@ -83,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0354-russian-doll-envelopes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0354-russian-doll-envelopes) |
 | [0416-partition-equal-subset-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0416-partition-equal-subset-sum) |
 | [0473-matchsticks-to-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0473-matchsticks-to-square) |
+| [0494-target-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0494-target-sum) |
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
 | [0621-task-scheduler](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0621-task-scheduler) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
@@ -317,6 +318,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0375-guess-number-higher-or-lower-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0375-guess-number-higher-or-lower-ii) |
 | [0416-partition-equal-subset-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0416-partition-equal-subset-sum) |
 | [0473-matchsticks-to-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0473-matchsticks-to-square) |
+| [0494-target-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0494-target-sum) |
 | [0516-longest-palindromic-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0516-longest-palindromic-subsequence) |
 | [0647-palindromic-substrings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0647-palindromic-substrings) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
@@ -505,6 +507,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0131-palindrome-partitioning](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0131-palindrome-partitioning) |
 | [0140-word-break-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0140-word-break-ii) |
 | [0473-matchsticks-to-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0473-matchsticks-to-square) |
+| [0494-target-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0494-target-sum) |
 | [0800-letter-case-permutation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0800-letter-case-permutation) |
 | [1160-letter-tile-possibilities](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1160-letter-tile-possibilities) |
 ## Bitmask
