@@ -73,21 +73,37 @@ public:
     // }
 
 
-    int solve(vector<int>& days, vector<int>& costs){
-         vector<int>dp(days.size()+1,-1);
-         dp[days.size()]=0;
-         for(int i=days.size()-1;i>=0;i--){
-        int a=costs[0]+dp[i+1];
-        int j;
-        for(j=i;j<days.size()&&days[j]<days[i]+7;j++);
-        int b=costs[1]+dp[j];
-        for(j=i;j<days.size()&&days[j]<days[i]+30;j++);
-        int c=costs[2]+dp[j];
-        dp[i]=min(a,min(b,c));
-         }
-         return dp[0];
-    }
-    int mincostTickets(vector<int>& days, vector<int>& costs) {
-        return solve(days,costs);
-    }
+    // int solve(vector<int>& days, vector<int>& costs){
+    //      vector<int>dp(days.size()+1,-1);
+    //      dp[days.size()]=0;
+    //      for(int i=days.size()-1;i>=0;i--){
+    //     int a=costs[0]+dp[i+1];
+    //     int j;
+    //     for(j=i;j<days.size()&&days[j]<days[i]+7;j++);
+    //     int b=costs[1]+dp[j];
+    //     for(j=i;j<days.size()&&days[j]<days[i]+30;j++);
+    //     int c=costs[2]+dp[j];
+    //     dp[i]=min(a,min(b,c));
+    //      }
+    //      return dp[0];
+    // }
+    // int mincostTickets(vector<int>& days, vector<int>& costs) {
+    //     return solve(days,costs);
+    // }
+
+     int mincostTickets(vector<int>& days, vector<int>& costs) {
+        int ans=0;
+        queue<pair<int,int>>month;
+        queue<pair<int,int>>week;
+        for(int &day:days){
+            while(!month.empty()&&day>=month.front().first+30)
+            month.pop();
+            while(!week.empty()&&day>=week.front().first+7)
+            week.pop();
+            month.push(make_pair(day,ans+costs[2]));
+            week.push(make_pair(day,ans+costs[1]));
+            ans=min(ans+costs[0],min(week.front().second,month.front().second));
+        }
+        return ans;
+     }
 };
