@@ -63,20 +63,41 @@ public:
 
 
 
+    //   int solve(vector<int>&prices,int k){
+    //     vector<int>curr(2*k+1,0);
+    //     vector<int>next(2*k+1,0);
+    //     for(int i=prices.size()-1;i>=0;i--){
+    //         for(int op=2*k-1;op>=0;op--){
+    //     int profit=0;
+    //     if(op%2==0)
+    //     profit=max(profit,-prices[i]+next[op+1]);
+    //     else
+    //     profit=max(profit,prices[i]+next[op+1]);
+    //     profit=max(profit,next[op]);
+    //     curr[op]=profit;
+    //     }
+    //     next=curr;
+    //     }
+    //     return curr[0];
+    // }
+    // int maxProfit(int k, vector<int>& prices) {
+         
+    //      return solve(prices,k);
+    // }
+
+
       int solve(vector<int>&prices,int k){
         vector<int>curr(2*k+1,0);
-        vector<int>next(2*k+1,0);
         for(int i=prices.size()-1;i>=0;i--){
-            for(int op=2*k-1;op>=0;op--){
+            for(int op=0;op<=2*k-1;op++){
         int profit=0;
         if(op%2==0)
-        profit=max(profit,-prices[i]+next[op+1]);
+        profit=max(profit,-prices[i]+curr[op+1]);
         else
-        profit=max(profit,prices[i]+next[op+1]);
-        profit=max(profit,next[op]);
+        profit=max(profit,prices[i]+curr[op+1]);
+        profit=max(profit,curr[op]);
         curr[op]=profit;
         }
-        next=curr;
         }
         return curr[0];
     }
