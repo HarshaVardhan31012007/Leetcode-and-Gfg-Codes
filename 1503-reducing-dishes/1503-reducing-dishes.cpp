@@ -16,16 +16,35 @@ public:
     // }
 
 
-     int solve(vector<int>&satisfaction){
-         vector<vector<int>>dp(satisfaction.size()+1,vector<int>(satisfaction.size()+2,0));
+    //  int solve(vector<int>&satisfaction){
+    //      vector<vector<int>>dp(satisfaction.size()+1,vector<int>(satisfaction.size()+2,0));
+    //     for(int i=satisfaction.size()-1;i>=0;i--){
+    //       for(int time=satisfaction.size();time>=1;time--){
+    //      int l=satisfaction[i]*time+dp[i+1][time+1];
+    //      int r=dp[i+1][time];
+    //     dp[i][time]=max(l,r);
+    //       }
+    //     }
+    //     return dp[0][1];
+    // }
+    // int maxSatisfaction(vector<int>& satisfaction) {
+    //     sort(satisfaction.begin(),satisfaction.end());
+    //     return solve(satisfaction);
+    // }
+
+
+    int solve(vector<int>&satisfaction){
+        vector<int>curr(satisfaction.size()+2,0);
+        vector<int>next(satisfaction.size()+2,0);
         for(int i=satisfaction.size()-1;i>=0;i--){
           for(int time=satisfaction.size();time>=1;time--){
-         int l=satisfaction[i]*time+dp[i+1][time+1];
-         int r=dp[i+1][time];
-        dp[i][time]=max(l,r);
+         int l=satisfaction[i]*time+next[time+1];
+         int r=next[time];
+        curr[time]=max(l,r);
           }
+          next=curr;
         }
-        return dp[0][1];
+        return curr[1];
     }
     int maxSatisfaction(vector<int>& satisfaction) {
         sort(satisfaction.begin(),satisfaction.end());
