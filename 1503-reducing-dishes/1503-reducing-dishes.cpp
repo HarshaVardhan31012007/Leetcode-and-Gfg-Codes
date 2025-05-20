@@ -5,7 +5,7 @@ public:
         if(dp[i][time]!=-1) return dp[i][time];
          int l=satisfaction[i]*time+solve(satisfaction,i+1,time+1,dp);
          int r=0;
-         if(satisfaction[i]<0)
+        // if(satisfaction[i]<0)//optimization
         r=solve(satisfaction,i+1,time,dp);
         return dp[i][time]=max(l,r);
     }
