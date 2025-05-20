@@ -64,7 +64,7 @@ public:
         if(nums.size()<=2) return nums.size();
         unordered_map<int,int>dp[nums.size()+1];
         int ans=0;
-       for(int i=nums.size()-1;i>=0;i--){
+       for(int i=nums.size()-2;i>=0;i--){
         for(int j=nums.size()-1;j>i;j--){
             int cnt=1;
             if(dp[j].count(nums[j]-nums[i]))
