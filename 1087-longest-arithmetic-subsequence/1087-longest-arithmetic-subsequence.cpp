@@ -43,12 +43,29 @@ public:
 
      
    
+    // int longestArithSeqLength(vector<int>& nums) {
+    //     if(nums.size()<=2) return nums.size();
+    //     unordered_map<int,int>dp[nums.size()+1];
+    //     int ans=0;
+    //    for(int i=1;i<nums.size();i++){
+    //     for(int j=0;j<i;j++){
+    //         int cnt=1;
+    //         if(dp[j].count(nums[j]-nums[i]))
+    //         cnt=dp[j][nums[j]-nums[i]];
+    //         dp[i][nums[j]-nums[i]]=1+cnt;
+    //         ans=max(ans,dp[i][nums[j]-nums[i]]);
+    //     }
+    //    }
+    //    return ans;
+    // }
+
+
     int longestArithSeqLength(vector<int>& nums) {
         if(nums.size()<=2) return nums.size();
         unordered_map<int,int>dp[nums.size()+1];
         int ans=0;
-       for(int i=1;i<nums.size();i++){
-        for(int j=0;j<i;j++){
+       for(int i=nums.size()-1;i>=0;i--){
+        for(int j=nums.size()-1;j>i;j--){
             int cnt=1;
             if(dp[j].count(nums[j]-nums[i]))
             cnt=dp[j][nums[j]-nums[i]];
