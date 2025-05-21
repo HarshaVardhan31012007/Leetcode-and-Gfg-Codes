@@ -14,16 +14,36 @@ public:
     // }
 
 
-    int solve(vector<int>&slices,int s,int e){
-         vector<vector<int>>dp(slices.size()+2,vector<int>((slices.size()/3)+1,0));
+    // int solve(vector<int>&slices,int s,int e){
+    //      vector<vector<int>>dp(slices.size()+2,vector<int>((slices.size()/3)+1,0));
+    //      for(int i=e;i>=s;i--){
+    //         for(int n=1;n<=(slices.size()/3);n++){
+    //                 int l=slices[i]+dp[i+2][n-1];
+    //                 int r=dp[i+1][n];
+    //                 dp[i][n]=max(l,r);
+    //         }
+    //      }
+    //      return dp[s][slices.size()/3];
+    // }
+    // int maxSizeSlices(vector<int>& slices) {
+    //     return max(solve(slices,0,slices.size()-2),solve(slices,1,slices.size()-1));
+    // }
+
+
+      int solve(vector<int>&slices,int s,int e){
+         vector<int>prev(slices.size()/3+1,0);
+         vector<int>curr(slices.size()/3+1,0);
+         vector<int>next(slices.size()/3+1,0);
          for(int i=e;i>=s;i--){
             for(int n=1;n<=(slices.size()/3);n++){
-                    int l=slices[i]+dp[i+2][n-1];
-                    int r=dp[i+1][n];
-                    dp[i][n]=max(l,r);
+                    int l=slices[i]+next[n-1];
+                    int r=curr[n];
+                    prev[n]=max(l,r);
             }
+            next=curr;
+            curr=prev;
          }
-         return dp[s][slices.size()/3];
+         return prev[slices.size()/3];
     }
     int maxSizeSlices(vector<int>& slices) {
         return max(solve(slices,0,slices.size()-2),solve(slices,1,slices.size()-1));
