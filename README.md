@@ -115,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1231-replace-elements-with-greatest-element-on-right-side](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1231-replace-elements-with-greatest-element-on-right-side) |
 | [1240-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1240-stone-game-ii) |
 | [1290-make-array-strictly-increasing](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1290-make-array-strictly-increasing) |
+| [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1397-search-suggestions-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1397-search-suggestions-system) |
 | [1503-reducing-dishes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1503-reducing-dishes) |
@@ -242,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1087-longest-arithmetic-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1087-longest-arithmetic-subsequence) |
 | [1160-letter-tile-possibilities](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1160-letter-tile-possibilities) |
+| [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [2186-count-vowel-substrings-of-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2186-count-vowel-substrings-of-a-string) |
 | [2406-decode-the-message](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2406-decode-the-message) |
@@ -350,6 +352,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1250-longest-common-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1250-longest-common-subsequence) |
 | [1263-number-of-dice-rolls-with-target-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1263-number-of-dice-rolls-with-target-sum) |
 | [1290-make-array-strictly-increasing](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1290-make-array-strictly-increasing) |
+| [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
