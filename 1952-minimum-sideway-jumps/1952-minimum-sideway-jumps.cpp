@@ -73,27 +73,54 @@ public:
     // }
 
 
-    int solve(vector<int>&obstacles){
-       vector<vector<int>>dp(obstacles.size(),vector<int>(4,0));
-    //    for(int i=0;i<4;i++){
-    //     dp[obstacles.size()-1][i]=0;
+    // int solve(vector<int>&obstacles){
+    //    vector<vector<int>>dp(obstacles.size(),vector<int>(4,0));
+    // //no need initilize all with zeros
+    // //    for(int i=0;i<4;i++){
+    // //     dp[obstacles.size()-1][i]=0;
+    // //    }
+    //    for(int i=obstacles.size()-2;i>=0;i--){
+    //     for(int lane=1;lane<=3;lane++){
+    //         if(obstacles[i+1]!=lane){
+    //         dp[i][lane]=dp[i+1][lane];
+    //     }
+    //     else{
+    //           int ans=INT_MAX;
+    //           for(int j=1;j<=3;j++){
+    //              if(lane!=j&&obstacles[i]!=j)
+    //              ans=min(ans,1+dp[i+1][j]);
+    //           }
+    //           dp[i][lane]=ans;
+    //     }
+    //     }
     //    }
+    //    return dp[0][2];
+    // }
+    // int minSideJumps(vector<int>& obstacles) {
+    //    return solve(obstacles); 
+    // }
+
+
+    int solve(vector<int>&obstacles){
+        vector<int>curr(4,0);
+        vector<int>next(4,0);
        for(int i=obstacles.size()-2;i>=0;i--){
         for(int lane=1;lane<=3;lane++){
             if(obstacles[i+1]!=lane){
-            dp[i][lane]=dp[i+1][lane];
+            curr[lane]=next[lane];
         }
         else{
               int ans=INT_MAX;
               for(int j=1;j<=3;j++){
                  if(lane!=j&&obstacles[i]!=j)
-                 ans=min(ans,1+dp[i+1][j]);
+                 ans=min(ans,1+next[j]);
               }
-              dp[i][lane]=ans;
+              curr[lane]=ans;
         }
         }
+        next=curr;
        }
-       return dp[0][2];
+       return curr[2];
     }
     int minSideJumps(vector<int>& obstacles) {
        return solve(obstacles); 
