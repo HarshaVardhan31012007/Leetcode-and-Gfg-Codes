@@ -17,7 +17,7 @@ public:
 
     int solve(vector<int>&nums,int t,vector<int>&dp){
         for(int target=1;target<=t;target++){
-        long ans=0;
+         long ans=0;
         for(auto &num:nums){
           if(num<=target)
           ans=ans+dp[target-num];
