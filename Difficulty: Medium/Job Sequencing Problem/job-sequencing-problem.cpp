@@ -60,6 +60,7 @@ static bool comp(pair<int,int>&a,pair<int,int>&b){
             if(slots>0){
                 profi+=curprofit;
                 unionSet(parent,slots-1,slots);
+                schedule[slots]=dead;
                 count++;
             }
         }
