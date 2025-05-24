@@ -68,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0200-number-of-islands) |
 | [0204-count-primes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0204-count-primes) |
+| [0209-minimum-size-subarray-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0209-minimum-size-subarray-sum) |
 | [0215-kth-largest-element-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0215-kth-largest-element-in-an-array) |
 | [0221-maximal-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0221-maximal-square) |
 | [0238-product-of-array-except-self](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0238-product-of-array-except-self) |
@@ -264,6 +265,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0069-sqrtx](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0069-sqrtx) |
 | [0074-search-a-2d-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0074-search-a-2d-matrix) |
 | [0162-find-peak-element](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0162-find-peak-element) |
+| [0209-minimum-size-subarray-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0209-minimum-size-subarray-sum) |
 | [0222-count-complete-tree-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0222-count-complete-tree-nodes) |
 | [0240-search-a-2d-matrix-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0240-search-a-2d-matrix-ii) |
 | [0268-missing-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0268-missing-number) |
@@ -286,6 +288,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Prefix Sum
 |  |
 | ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0209-minimum-size-subarray-sum) |
 | [0238-product-of-array-except-self](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0238-product-of-array-except-self) |
 | [0724-find-pivot-index](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0724-find-pivot-index) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
@@ -395,6 +398,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0187-repeated-dna-sequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0187-repeated-dna-sequences) |
+| [0209-minimum-size-subarray-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0209-minimum-size-subarray-sum) |
 | [0239-sliding-window-maximum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0239-sliding-window-maximum) |
 | [0567-permutation-in-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0567-permutation-in-string) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
