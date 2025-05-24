@@ -14,8 +14,8 @@ public:
         freq1[s[end]]++;
         if(freq1[s[end]]<=freq2[s[end]])
         count++;
-        while(count==t.length()){
-            if(end-start+1<len){
+        while(count==t.length()){       
+                        if(end-start+1<len){
                 len=end-start+1;
                 ansIdx=start;
             }
