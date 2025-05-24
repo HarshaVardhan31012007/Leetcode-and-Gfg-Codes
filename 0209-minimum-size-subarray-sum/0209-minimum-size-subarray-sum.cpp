@@ -8,8 +8,8 @@ public:
         while(e<nums.size()){
             sum=sum+nums[e];
             while(sum>=target){
-                sum=sum-nums[s];
                 len=min(len,e-s+1);
+                sum=sum-nums[s];
                 s++;
             }
             e++;
