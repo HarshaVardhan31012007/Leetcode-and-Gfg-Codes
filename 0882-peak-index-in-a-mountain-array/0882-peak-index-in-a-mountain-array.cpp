@@ -35,19 +35,35 @@ public:
         // }
         // return ans;
 
-        int s=0;
+
+         int s=0;
         int e=nums.size()-1;
-        int ans=-1;
-        while(s<=e){
+        while(s<e){
             int mid=s+(e-s)/2;
-            if(mid==0||nums[mid-1]<nums[mid]){
-                ans=mid;
-                s=mid+1;
+            if(nums[mid]>nums[mid+1]){
+                e=mid;
             }
             else{
-                e=mid-1;
+                s=mid+1;
             }
         }
-        return ans;
+        return s;
+
+        
+       //mid==0 is imp like for 3 5 3 2 0
+        // int s=0;
+        // int e=nums.size()-1;
+        // int ans=-1;
+        // while(s<=e){
+        //     int mid=s+(e-s)/2;
+        //     if(mid==0||nums[mid-1]<nums[mid]){
+        //         ans=mid;
+        //         s=mid+1;
+        //     }
+        //     else{
+        //         e=mid-1;
+        //     }
+        // }
+        // return ans;
     }
 };
