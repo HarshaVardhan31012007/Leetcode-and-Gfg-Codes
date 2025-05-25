@@ -32,10 +32,10 @@ public:
             return s;
             if(nums[mid]>nums[mid+1])
             return mid;
-            else if(nums[mid]>nums[e])
+            else if(nums[mid]>nums[e]||nums[s]<nums[e])
             s=mid+1;
             else
-            e=mid;
+            e=mid-1;
             mid=s+(e-s)/2;
 
         }
