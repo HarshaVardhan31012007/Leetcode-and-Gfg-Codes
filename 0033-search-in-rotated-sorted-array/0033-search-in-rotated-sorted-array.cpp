@@ -1,5 +1,26 @@
 class Solution {
 public:
+    // int getpivotIndex(vector<int>&nums){
+    //     int s=0;
+    //     int n=nums.size();
+    //     int e=n-1;
+    //     int mid=s+(e-s)/2;
+    //     while(s<=e){
+            
+    //         if(s==e)
+    //         return s;
+    //         if(nums[mid]>nums[mid+1])
+    //         return mid;
+    //         else if(nums[s]>nums[mid])
+    //         e=mid-1;
+    //         else
+    //         s=mid+1;
+    //         mid=s+(e-s)/2;
+
+    //     }
+    //     return -1;
+    // }
+
     int getpivotIndex(vector<int>&nums){
         int s=0;
         int n=nums.size();
@@ -11,10 +32,10 @@ public:
             return s;
             if(nums[mid]>nums[mid+1])
             return mid;
-            else if(nums[s]>nums[mid])
-            e=mid-1;
-            else
+            else if(nums[mid]>nums[e])
             s=mid+1;
+            else
+            e=mid;
             mid=s+(e-s)/2;
 
         }
