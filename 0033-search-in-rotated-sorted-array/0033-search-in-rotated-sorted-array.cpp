@@ -56,8 +56,16 @@ public:
         return -1;
     }
     int search(vector<int>& nums, int target) {
-
         int n=nums.size();
+        //optimization
+        // if(n==1){
+        //     if(target==nums[0]) return 0;
+        //     return -1;
+        // }
+        // int pivotIndex=0;int s=0;int e=nums.size()-1;
+        // ///no pivotIndex
+        // if(nums[s]<nums[e]) pivotIndex=e;
+        // else pivotIndex=getpivotIndex(nums);
         int pivotIndex=getpivotIndex(nums);
         if(target>=nums[0]&&target<=nums[pivotIndex]){
             int ans=binarysearch(0,pivotIndex,target,nums);
