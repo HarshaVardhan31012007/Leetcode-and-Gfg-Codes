@@ -1,32 +1,29 @@
 class Solution {
 public:
-    bool canMakeBouquet(vector<int>&bloomDay,int m,int k,int D){
-        int n=bloomDay.size();
-        int counter=0;
-        for(int i=0;i<n;i++){
-
-        if(bloomDay[i]<=D)
-          counter++;
-        
-        if(counter==k){
-            m--;
-            counter=0;
-            if(m==0) break;
-        }
-        if(bloomDay[i]>D)
-        counter=0;
-
+    bool possible(int mid,vector<int>&bloomDay,int m,int k){
+        int i=0;int count=0;
+        while(i<bloomDay.size()){
+            if(bloomDay[i]<=mid)
+            count++;
+            else
+            count=0;
+            if(count==k) {
+                m--;
+                count=0;
+                if(m==0) break;
+            }
+            i++;
         }
         return m==0;
     }
     int minDays(vector<int>& bloomDay, int m, int k) {
+       // if(m*k>bloomDay.size()) return -1;
         int s=*min_element(bloomDay.begin(),bloomDay.end());
         int e=*max_element(bloomDay.begin(),bloomDay.end());
         int ans=-1;
         while(s<=e){
             int mid=s+(e-s)/2;
-            int day=mid;
-            if(canMakeBouquet(bloomDay,m,k,day)){
+            if(possible(mid,bloomDay,m,k)){
                 ans=mid;
                 e=mid-1;
             }
