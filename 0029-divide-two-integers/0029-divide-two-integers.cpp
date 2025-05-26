@@ -3,7 +3,7 @@ public:
     int divide(long dividend, long divisor) {
      if(divisor==dividend) return 1;//no need
      if(dividend==INT_MIN && divisor==-1) return INT_MAX;
-        if(dividend==INT_MIN && divisor==1) return INT_MIN;
+        //if(dividend==INT_MIN && divisor==1) return INT_MIN;
 
       long ans;
       long a=abs(dividend);
