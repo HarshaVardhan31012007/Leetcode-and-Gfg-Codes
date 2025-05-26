@@ -1,7 +1,7 @@
 class Solution {
 public:
-    int divide(int dividend, int divisor) {
-    if(divisor==dividend) return 1;//no need
+    int divide(long dividend, long divisor) {
+     if(divisor==dividend) return 1;//no need
      if(dividend==INT_MIN && divisor==-1) return INT_MAX;
         if(dividend==INT_MIN && divisor==1) return INT_MIN;
 
@@ -35,9 +35,7 @@ public:
 
    if(dividend>=0 && divisor<0) x=false;
    else if(dividend<=0 && divisor>0) x=false;
-
-    // if(ans==(1<<31) && x==1) return INT_MAX;
-    // else if(ans=(1<<31) && x==0) return INT_MIN;
+    
    
   return (x==0)?-ans:ans;
  
