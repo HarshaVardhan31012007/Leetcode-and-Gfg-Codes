@@ -92,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0486-predict-the-winner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0486-predict-the-winner) |
 | [0494-target-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0494-target-sum) |
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
+| [0540-single-element-in-a-sorted-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0540-single-element-in-a-sorted-array) |
 | [0621-task-scheduler](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0621-task-scheduler) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0643-maximum-average-subarray-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0643-maximum-average-subarray-i) |
@@ -276,6 +277,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0354-russian-doll-envelopes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0354-russian-doll-envelopes) |
 | [0374-guess-number-higher-or-lower](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0374-guess-number-higher-or-lower) |
+| [0540-single-element-in-a-sorted-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0540-single-element-in-a-sorted-array) |
 | [0792-binary-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0792-binary-search) |
 | [0882-peak-index-in-a-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0882-peak-index-in-a-mountain-array) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
