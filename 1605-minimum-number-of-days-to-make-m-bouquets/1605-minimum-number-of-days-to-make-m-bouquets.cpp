@@ -17,7 +17,7 @@ public:
         return m==0;
     }
     int minDays(vector<int>& bloomDay, int m, int k) {
-       // if(m*k>bloomDay.size()) return -1;
+       if((long)m*(long)k>bloomDay.size()) return -1;
         int s=*min_element(bloomDay.begin(),bloomDay.end());
         int e=*max_element(bloomDay.begin(),bloomDay.end());
         int ans=-1;
