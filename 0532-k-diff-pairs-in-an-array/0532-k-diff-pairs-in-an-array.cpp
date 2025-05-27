@@ -18,18 +18,38 @@ public:
     //    return ans;
 
 
+        // sort(nums.begin(),nums.end());
+        // int ans=0;
+        // for(int i=0;i<nums.size();i++){
+        //     for(int j=i+1;j<nums.size();j++){
+        //         if(abs(nums[j]-nums[i])==k){
+        //             if((i-1>=0&&nums[i-1]==nums[i])||(j-1>=0&&j!=i+1&&nums[j]==nums[j-1]))
+        //             continue;
+        //             else
+        //             ans++;
+        //         }
+        //     }
+        // }
+        // return ans;
+
+
+
         sort(nums.begin(),nums.end());
-        int ans=0;
-        for(int i=0;i<nums.size();i++){
-            for(int j=i+1;j<nums.size();j++){
-                if(abs(nums[j]-nums[i])==k){
-                    if((i-1>=0&&nums[i-1]==nums[i])||(j-1>=0&&j!=i+1&&nums[j]==nums[j-1]))
-                    continue;
-                    else
-                    ans++;
-                }
+        int i=0;
+        int j=1;
+        set<pair<int,int>>ans;
+        while(j<nums.size()){
+            int diff=nums[j]-nums[i];
+            if(diff==k){
+                ans.insert({nums[i++],nums[j++]});
             }
+            else if(diff>k){
+                i++;
+            }
+            else
+            j++;
+            if(i==j) j++;
         }
-        return ans;
+        return ans.size();
     }
 };
