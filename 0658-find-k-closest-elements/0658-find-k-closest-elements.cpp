@@ -51,7 +51,8 @@ public:
         int l=idx-1;int h=idx;
         vector<int>ans;
         // while(h-l-1<k){
-            while(k--){
+            while(h-l<=k){
+            // while(k--){
            if(l<0)
            h++;
            else if(h==arr.size())
