@@ -50,7 +50,8 @@ public:
         int idx=bs(arr,0,arr.size()-1,x);
         int l=idx-1;int h=idx;
         vector<int>ans;
-        while(h-l-1<k){
+        // while(h-l-1<k){
+            while(k--){
            if(l<0)
            h++;
            else if(h==arr.size())
@@ -60,9 +61,10 @@ public:
            else
            l--;
         }
-        for(int i=l+1;i<=h-1;i++){
-            ans.push_back(arr[i]);
-        }
-        return ans;
+        // for(int i=l+1;i<=h-1;i++){
+        //     ans.push_back(arr[i]);
+        // }
+        // return ans;
+        return vector<int>(arr.begin()+l+1,arr.begin()+h);
     }
 };
