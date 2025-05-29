@@ -46,9 +46,14 @@ public:
 
 
 
-
-        int idx=bs(arr,0,arr.size()-1,x);
-        int l=idx-1;int h=idx;
+        //M1
+        // int idx=bs(arr,0,arr.size()-1,x);
+        int h=arr.size();
+        auto it=lower_bound(arr.begin(),arr.end(),x);
+        if(it!=arr.end())
+        h=it-arr.begin();
+       // int l=idx-1;int h=idx;
+       int l=h-1;
         vector<int>ans;
         // while(h-l-1<k){
            // while(h-l<=k){
