@@ -48,8 +48,11 @@ public:
     // }
 
     bool find(char ch,string &vowel){
-        ch=tolower(ch);
-        return ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u';
+        // ch=tolower(ch);
+        // return ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u';
+
+        ch=toupper(ch);
+        return ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U';
     }
     string reverseVowels(string s) {
         int i=0;
