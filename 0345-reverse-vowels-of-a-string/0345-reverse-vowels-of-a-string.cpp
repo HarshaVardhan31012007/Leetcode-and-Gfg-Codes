@@ -47,28 +47,43 @@ public:
     //     return s;
     // }
 
-    bool find(char ch,string &vowel){
-        // ch=tolower(ch);
-        // return ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u';
+    // bool find(char ch,string &vowel){
+    //     // ch=tolower(ch);
+    //     // return ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u';
 
-        ch=toupper(ch);
-        return ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U';
-    }
-    string reverseVowels(string s) {
-        int i=0;
-        int j=s.length()-1;
-        string vowel="aeiouAEIOU";
-        while(i<j){
-            bool flag1=find(s[i],vowel);
-            bool flag2=find(s[j],vowel);
-            if(flag1==1&&flag2==1){
-                swap(s[i++],s[j--]);
-            }
-            else if(!flag1)
+    //     ch=toupper(ch);
+    //     return ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U';
+    // }
+    // string reverseVowels(string s) {
+    //     int i=0;
+    //     int j=s.length()-1;
+    //     string vowel="aeiouAEIOU";
+    //     while(i<j){
+    //         bool flag1=find(s[i],vowel);
+    //         bool flag2=find(s[j],vowel);
+    //         if(flag1==1&&flag2==1){
+    //             swap(s[i++],s[j--]);
+    //         }
+    //         else if(!flag1)
+    //         i++;
+    //         else
+    //         j--;
+    //     }
+    //     return s;
+
+     string reverseVowels(string s) {
+    int i=0;
+    int j=s.length()-1;
+    string vowel="aeiouAEIOU";
+    while(i<j){
+        while(i<j&&vowel.find(s[i])==string::npos){
             i++;
-            else
+        }
+        while(i<j&&vowel.find(s[j])==string::npos){
             j--;
         }
-        return s;
+        swap(s[i++],s[j--]);
+    }
+    return s;
     }
 };
