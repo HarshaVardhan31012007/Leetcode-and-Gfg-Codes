@@ -20,8 +20,8 @@ public:
     //     return v;
     // }
    
-     std::array<int,256>hash(string k){
-        std::array<int,256>hash={0};
+     array<int,256>hash(string k){
+        array<int,256>hash={0};
         for(int i=0;i<k.size();i++){
             hash[k[i]]++;
         }
@@ -30,7 +30,7 @@ public:
      vector<vector<string>> groupAnagrams(vector<string>& strs) {
 
         vector<vector<string>>v;
-        map<std::array<int,256>,vector<string>>mpp;//here comparison function will be there
+        map<array<int,256>,vector<string>>mpp;//here comparison function will be there
         //but for unordered_map we have to need hash function 
 
         for(int i=0;i<strs.size();i++){
