@@ -29,7 +29,7 @@ public:
      }
      vector<vector<string>> groupAnagrams(vector<string>& strs) {
 
-        vector<vector<string>>v;
+        vector<vector<string>>v;// or std::array<int,256>
         map<array<int,256>,vector<string>>mpp;//here comparison function will be there
         //but for unordered_map we have to need hash function 
 
