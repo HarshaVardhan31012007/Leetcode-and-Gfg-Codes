@@ -10,7 +10,7 @@ public:
 
       int num=0;int sign=1;
       int i=0;
-      while(s[i]==' ')
+      while(i<s.length()&&s[i]==' ')
       i++;
       if(i<s.length()&&(s[i]=='-'||s[i]=='+')){
         sign=s[i]=='+'?1:-1;
