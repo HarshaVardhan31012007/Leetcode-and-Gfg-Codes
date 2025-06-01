@@ -9,8 +9,8 @@ public:
            if(j==needle.length()) break;
            }
            else{
-           i=i-j;
-           j=0;
+             i=i-j;
+             j=0;
            }
         }
         if(j<needle.length()) return -1;
