@@ -82,7 +82,6 @@ public:
             }
         reverse(chars.begin()+start,chars.begin()+idx);
      }
-
        return idx;
     }
 };
