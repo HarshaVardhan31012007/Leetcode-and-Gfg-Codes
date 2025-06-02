@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0002-add-two-numbers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0002-add-two-numbers) |
 | [0007-reverse-integer](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0007-reverse-integer) |
+| [0012-integer-to-roman](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0012-integer-to-roman) |
 | [0029-divide-two-integers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0029-divide-two-integers) |
 | [0050-powx-n](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0050-powx-n) |
 | [0069-sqrtx](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0069-sqrtx) |
@@ -228,6 +229,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0001-two-sum) |
+| [0012-integer-to-roman](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0012-integer-to-roman) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0037-sudoku-solver](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0037-sudoku-solver) |
@@ -440,6 +442,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0005-longest-palindromic-substring) |
 | [0008-string-to-integer-atoi](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0008-string-to-integer-atoi) |
 | [0010-regular-expression-matching](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0010-regular-expression-matching) |
+| [0012-integer-to-roman](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0012-integer-to-roman) |
 | [0014-longest-common-prefix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0014-longest-common-prefix) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0020-valid-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0020-valid-parentheses) |
