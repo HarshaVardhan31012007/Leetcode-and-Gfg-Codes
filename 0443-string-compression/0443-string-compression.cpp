@@ -1,7 +1,7 @@
 class Solution {
 public:
     int compress(vector<char>& chars) {
-       int i=0;char ch=0;int count=0;
+       int i=0;char ch=0;int count=0;//here ch means prev
        for(int j=0;j<chars.size();j++){
          if(ch==0)
          ch=chars[j];
@@ -10,14 +10,18 @@ public:
          else{
             chars[i++]=ch;
             if(count>1){
-              string temp="";
-              while(count>0){
-                char p=count%10+'0';
-                temp=p+temp;
-                count/=10;
-              }
-              for(int j=0;j<temp.size();j++)
-              chars[i++]=temp[j];
+            //   string temp="";
+            //   while(count>0){
+            //     char p=count%10+'0';
+            //     temp=p+temp;
+            //     count/=10;
+            //   }
+            //   for(int j=0;j<temp.size();j++)
+            //   chars[i++]=temp[j];
+
+            string k=to_string(count);
+            for(auto &each:k)
+            chars[i++]=each;
             }
             ch=chars[j];
             count=1;
