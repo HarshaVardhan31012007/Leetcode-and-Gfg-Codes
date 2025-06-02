@@ -19,12 +19,22 @@ public:
             //   for(int j=0;j<temp.size();j++)
             //   chars[i++]=temp[j];
 
-            string k=to_string(count);
-            for(auto &each:k)
-            chars[i++]=each;
-            }
-            ch=chars[j];
-            count=1;
+            // string k=to_string(count);
+            // for(auto &each:k)
+            // chars[i++]=each;
+            // }
+            // ch=chars[j];
+            // count=1;
+              
+              int start=i;
+              while(count>0){
+                chars[i++]=count%10+'0';
+                count/=10;
+              }
+              reverse(chars.begin()+start,chars.begin()+i);
+         }
+          ch=chars[j];
+          count=1;
          }
        }
        if(ch!=0){
