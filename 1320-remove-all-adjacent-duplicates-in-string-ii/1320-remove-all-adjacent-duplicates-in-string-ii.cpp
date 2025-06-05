@@ -11,31 +11,6 @@ public:
     //}
     string removeDuplicates(string s, int k) {
         
-        //time limited exceeded
-        // string ans="";
-        // int n=s.length();
-        // int i,j;
-        // for(i=0;i<n;i++){
-        //     char c=s[i];
-        //     ans.push_back(c);
-        //     cout<<ans<<endl;
-        //     int  count=0;
-        //   for( j=ans.length()-k;j<ans.length()&&ans.length()>=k;j++){
-        //        if(ans[j]==ans[j+1])
-        //         count++;
-        //         cout<<count<<endl;
-        //   }
-        //   cout<<ans<<endl;
-        //   int i=k;
-        //   while(i--&&count==k-1){
-        //     cout<<count<<endl;
-        //      ans.pop_back();
-        //   }
-        //   cout<<ans<<endl;
-        // }
-        // return ans;
-       
-
        //m1
     //    string ans="";
     //    int n=s.size();
@@ -53,21 +28,36 @@ public:
     //     }
     //    }
     //     return ans;
+
+
     //m2
-    int i=0,j=0;
-    int n=s.size();
-    vector<int>count(n);
-    while(j<s.size()){
+    // int i=0,j=0;
+    // int n=s.size();
+    // vector<int>count(n);
+    // while(j<s.size()){
+    //     s[i]=s[j];
+    //     count[i]=1;
+    //     if(i>0&&s[i]==s[i-1])
+    //     count[i]+=count[i-1];
+    //     if(count[i]==k)
+    //     i=i-k;
+    //     i++;
+    //     j++;
+
+    // }
+    // return s.substr(0,i);
+
+    
+    vector<int>count(s.length(),0);
+    int i=0;
+    for(int j=0;j<s.length();i++,j++){
         s[i]=s[j];
         count[i]=1;
         if(i>0&&s[i]==s[i-1])
         count[i]+=count[i-1];
         if(count[i]==k)
         i=i-k;
-        i++;
-        j++;
-
     }
-    return s.substr(0,i);
+         return s.substr(0,i);
     }
 };
