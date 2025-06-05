@@ -1,6 +1,6 @@
 class Solution {
 public:
-    string removeDuplicates(string s) {
+    string removeDuplicates(string x) {
         // string ans="";
         // int n=s.length();
         // for(int i=0;i<n;i++){
@@ -12,10 +12,10 @@ public:
         //     ans.pop_back();
         // }
         // return ans;
-        int i=0;int n=s.length();
-        string x=s;
+
+        int i=0;int n=x.length();
         for(int j=0;j<n;j++,i++){
-            x[i]=s[j];
+            x[i]=x[j];
             if(i>0&&x[i]==x[i-1])
             i=i-2;
         }
