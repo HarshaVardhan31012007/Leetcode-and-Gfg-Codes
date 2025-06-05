@@ -15,16 +15,12 @@ public:
     string removeOccurrences(string s, string part) {
 
 
-     int findkaIndex=s.find(part);
-        while(1){
-            if(findkaIndex==string::npos)
-            return s;
-            else
-            s.erase(findkaIndex,part.length());
-            findkaIndex=s.find(part);
-        }
-        return s;
-
+    auto idx=s.find(part);
+    while(idx!=string::npos){
+        s.erase(idx,part.size());
+        idx=s.find(part);
+    }
+     return s;
      
     //  solve(s,part);
     //   return s;
