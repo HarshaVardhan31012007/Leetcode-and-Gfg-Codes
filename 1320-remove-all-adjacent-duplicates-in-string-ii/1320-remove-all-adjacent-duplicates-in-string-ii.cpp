@@ -31,6 +31,9 @@ public:
 
 
     //m2
+
+    //by while loop
+
     // int i=0,j=0;
     // int n=s.size();
     // vector<int>count(n);
@@ -47,7 +50,10 @@ public:
     // }
     // return s.substr(0,i);
 
-    
+     // m2
+
+    //BY FOR LOOP
+
     vector<int>count(s.length(),0);
     int i=0;
     for(int j=0;j<s.length();i++,j++){
