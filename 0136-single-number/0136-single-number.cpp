@@ -7,13 +7,27 @@ public:
         // }
         // return ans;
 
-        unordered_map<int,int>mpp;
-        for(auto &num:nums)
-        mpp[num]++;
-        for(auto &each:mpp){
-            if(each.second&1)
-            return each.first;
+
+        for(int i=0;i<nums.size();i++){
+            int count=0;
+            for(int j=0;j<nums.size();j++){
+                  if(nums[i]==nums[j])
+                  count++;
+            }
+            if(count&1)
+            return nums[i];
         }
         return -1;
+
+
+
+        // unordered_map<int,int>mpp;
+        // for(auto &num:nums)
+        // mpp[num]++;
+        // for(auto &each:mpp){
+        //     if(each.second&1)
+        //     return each.first;
+        // }
+        // return -1;
     }
 };
