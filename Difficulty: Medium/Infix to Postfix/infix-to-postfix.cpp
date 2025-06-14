@@ -1,10 +1,3 @@
-//{ Driver Code Starts
-// C++ implementation to convert infix expression to postfix
-#include <bits/stdc++.h>
-using namespace std;
-
-
-// } Driver Code Ends
 class Solution {
   public:
     // Function to convert an infix expression to a postfix expression.
@@ -52,25 +45,60 @@ class Solution {
         }
         return ans;
     }
+    
+    
+    //infix to prefix
+    // void reverse(string &s){
+    //     int i=0;
+    //     int j=s.length()-1;
+    //     while(i<=j){
+    //         int temp=s[i];
+    //         s[i]=s[j];
+    //         s[j]=temp;
+    //         i++;
+    //         j--;
+    //     }
+    // }
+    // string infixToPrefix(string& s) {
+    //     stack<char>st; 
+    //     reverse(s);
+    //     string ans="";
+    //     for(int i=0;i<s.length();i++){
+    //         char ch=s[i];
+    //         if(ch>='a'&&ch<='z'||ch>='A'&&ch<='Z'||ch>='0'&&ch<='9'){
+    //             ans=ans+ch;
+    //         }
+    //         else if(ch=='(')
+    //         st.push(ch);
+    //         else if(ch==')'){
+    //             while(st.top()!='('){
+    //               ans=ans+st.top();
+    //               st.pop();
+    //             }
+    //             st.pop();
+    //         }
+    //         else{
+    //             if(ch=='^'){
+    //             while(!st.empty()&&priority(ch)<priority(st.top())){
+    //                 ans=ans+st.top();
+    //                 st.pop();
+    //             }
+    //             }
+    //             else{
+    //                 while(!st.empty()&&priority(ch)<=priority(st.top())){
+    //                 ans=ans+st.top();
+    //                 st.pop();
+    //             }
+    //             }
+    //             st.push(ch);
+    //         }
+    //     }
+    //     while(!st.empty()){
+    //         ans=ans+st.top();
+    //         st.pop();
+    //     }
+    //     reverse(ans);
+    //     return ans;
+    //}
+    
 };
-
-
-//{ Driver Code Starts.
-//  Driver program to test above functions
-int main() {
-    int t;
-    cin >> t;
-    cin.ignore(INT_MAX, '\n');
-    while (t--) {
-        string exp;
-        cin >> exp;
-        Solution ob;
-        cout << ob.infixToPostfix(exp) << endl;
-
-        cout << "~"
-             << "\n";
-    }
-    return 0;
-}
-
-// } Driver Code Ends
