@@ -25,14 +25,14 @@ public:
     // return -1;
 
 
-    for(int i=0;i<nums.size();i++){
-        int idx=abs(nums[i]);
-        if(nums[idx-1]>0)
-        nums[idx-1]*=-1;
-        else
-        return idx;
-    }
-    return -1;
+    // for(int i=0;i<nums.size();i++){
+    //     int idx=abs(nums[i]);
+    //     if(nums[idx-1]>0)
+    //     nums[idx-1]*=-1;
+    //     else
+    //     return idx;
+    // }
+    // return -1;
 
     // int i=0;
     // while(i<nums.size()){
@@ -43,6 +43,18 @@ public:
     //     i++;
     // }
     //return nums.back();
+
+
+
+     int i=0;
+    while(i<nums.size()){
+        int idx=nums[i];
+        if(nums[idx]!=nums[i])
+        swap(nums[idx],nums[i]);
+        else
+        i++;
+    }
+    return nums[0];
 
     
     }
