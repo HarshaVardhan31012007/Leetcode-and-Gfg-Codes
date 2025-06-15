@@ -8,13 +8,24 @@ public:
     //     }
     //   }
     //   return -1;
-    
-    unordered_map<int,int>mpp;
-    for(auto &num:nums){
-        mpp[num]++;
-        if(mpp[num]>1)
-        return num;
+
+    // unordered_map<int,int>mpp;
+    // for(auto &num:nums){
+    //     mpp[num]++;
+    //     if(mpp[num]>1)
+    //     return num;
+    // }
+    // return -1;
+
+
+    int i=0;
+    while(i<nums.size()){
+        int idx=nums[i];
+        if(nums[idx-1]!=nums[i])
+        swap(nums[idx-1],nums[i]);
+        else
+        i++;
     }
-    return -1;
+        return nums.back();
     }
 };
