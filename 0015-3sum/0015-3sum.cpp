@@ -49,9 +49,7 @@ public:
         vector<vector<int>>ans;
         sort(arr.begin(),arr.end());
         for(int i=0;i<n;i++){
-            cout<<i<<"hjcdsjc"<<endl;
             if(i>0&&arr[i]==arr[i-1]) continue;
-            cout<<i<<endl;
            int j=i+1;
            int k=n-1;
            while(j<k){
@@ -68,7 +66,6 @@ public:
                // while(j<k&&arr[j]==arr[j-1])j++;//or 
                while(j<k&&arr[k]==arr[k+1])k--;
                //this any one ot these two should be there
-               
             }
            }
         }
