@@ -17,15 +17,21 @@ public:
     // }
     // return -1;
 
-
-    int i=0;
-    while(i<nums.size()){
-        int idx=nums[i];
-        if(nums[idx-1]!=nums[i])
-        swap(nums[idx-1],nums[i]);
-        else
-        i++;
+    sort(nums.begin(),nums.end());
+    for(int i=0;i<nums.size();i++){
+        if(i>0&&nums[i]==nums[i-1])
+        return nums[i];
     }
-        return nums.back();
+    return -1;
+
+    // int i=0;
+    // while(i<nums.size()){
+    //     int idx=nums[i];
+    //     if(nums[idx-1]!=nums[i])
+    //     swap(nums[idx-1],nums[i]);
+    //     else
+    //     i++;
+    // }
+    //return nums.back();
     }
 };
