@@ -30,13 +30,26 @@ public:
         // }
         // return nums.size();
 
+     for(int i=0;i<nums.size();i++)
+     nums[i]+=1;
+     for(int i=0;i<nums.size();i++){
+        int idx=abs(nums[i]);
+        if(idx<=nums.size()&&nums[idx-1]>0)
+        nums[idx-1]*=-1;
+     }
+     for(int i=0;i<nums.size();i++){
+        if(nums[i]>0)
+        return i;
+     }
+     return nums.size();
 
-       int n=0;
-       if(nums.size()%4==0) n=nums.size();
-       else if(nums.size()%4==1) n=1;
-       else if(nums.size()%4==2) n=nums.size()+1;
-       for(int i=0;i<nums.size();i++)
-       n=n^nums[i];
-       return n;
+    //    int n=0;
+    //    if(nums.size()%4==0) n=nums.size();
+    //    else if(nums.size()%4==1) n=1;
+    //    else if(nums.size()%4==2) n=nums.size()+1;
+    //    for(int i=0;i<nums.size();i++)
+    //    n=n^nums[i];
+    //    return n;
+    // }
     }
 };
