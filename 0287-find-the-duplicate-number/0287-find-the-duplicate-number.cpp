@@ -17,10 +17,20 @@ public:
     // }
     // return -1;
 
-    sort(nums.begin(),nums.end());
+    // sort(nums.begin(),nums.end());
+    // for(int i=0;i<nums.size();i++){
+    //     if(i>0&&nums[i]==nums[i-1])
+    //     return nums[i];
+    // }
+    // return -1;
+
+
     for(int i=0;i<nums.size();i++){
-        if(i>0&&nums[i]==nums[i-1])
-        return nums[i];
+        int idx=abs(nums[i]);
+        if(nums[idx-1]>0)
+        nums[idx-1]*=-1;
+        else
+        return idx;
     }
     return -1;
 
