@@ -17,17 +17,26 @@ public:
         // return ans;
 
         
-        int i=0;
-        while(i<nums.size()){
-            if(nums[i]!=nums.size()&&nums[i]!=i)
-            swap(nums[i],nums[nums[i]]);
-            else
-            i++;
-        }
-        for(int i=0;i<nums.size();i++){
-            if(nums[i]!=i)
-            return i;
-        }
-        return nums.size();
+        // int i=0;
+        // while(i<nums.size()){
+        //     if(nums[i]!=nums.size()&&nums[i]!=i)
+        //     swap(nums[i],nums[nums[i]]);
+        //     else
+        //     i++;
+        // }
+        // for(int i=0;i<nums.size();i++){
+        //     if(nums[i]!=i)
+        //     return i;
+        // }
+        // return nums.size();
+
+
+       int n=0;
+       if(nums.size()%4==0) n=nums.size();
+       else if(nums.size()%4==1) n=1;
+       else if(nums.size()%4==2) n=nums.size()+1;
+       for(int i=0;i<nums.size();i++)
+       n=n^nums[i];
+       return n;
     }
 };
