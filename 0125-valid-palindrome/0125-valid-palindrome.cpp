@@ -6,8 +6,10 @@ public:
             bool flag=isalpha(s[j])||isdigit(s[j]);
             if(flag){
                 s[i]=s[j];
-                if(s[i]>='A'&&s[i]<='Z')
-                s[i]=s[i]-'A'+'a';
+                // if(s[i]>='A'&&s[i]<='Z')
+                // s[i]=s[i]-'A'+'a';
+                if(isupper(s[i]))
+                s[i]=tolower(s[i]);
                 i++;
             }
         }
