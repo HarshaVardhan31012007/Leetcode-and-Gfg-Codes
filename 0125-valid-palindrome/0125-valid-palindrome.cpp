@@ -1,27 +1,23 @@
 class Solution {
 public:
     bool isPalindrome(string s) {
-        //int n=s.size();
-        for(int i=0;i<s.size();i++){
-            if(s[i]>='A'&&s[i]<='Z')
-            s[i]=s[i]-'A'+'a';
-        }
-        for(int i=0;i<s.size();i++){
-           
-           bool a=(s[i]>='a'&&s[i]<='z')||(s[i]>='0'&&s[i]<='9');
-           if(a==0){
-            s.erase(i,1);
-            i--;
-           }
-        }
-        int i=0,j=s.size()-1;
-        while(i<=j){
-            if(s[i]==s[j]){
+        int i=0;
+        for(int j=0;j<s.size();j++){
+            bool flag=isalpha(s[j])||isdigit(s[j]);
+            if(flag){
+                s[i]=s[j];
+                if(s[i]>='A'&&s[i]<='Z')
+                s[i]=s[i]-'A'+'a';
                 i++;
-                j--;
             }
-            else
-              return false;
+        }
+        int j=i-1;
+        i=0;
+        while(i<j){
+            if(s[i]!=s[j])
+            return false;
+            i++;
+            j--;
         }
         return true;
     }
