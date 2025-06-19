@@ -115,12 +115,17 @@ public:
             }
             ans+=garbage[i].size();
         }
-        for(int i=0;i<lastP;i++)
-        ans+=travel[i];
-        for(int i=0;i<lastM;i++)
-        ans+=travel[i];
-        for(int i=0;i<lastG;i++)
-        ans+=travel[i];
+        // for(int i=0;i<lastP;i++)
+        // ans+=travel[i];
+        // for(int i=0;i<lastM;i++)
+        // ans+=travel[i];
+        // for(int i=0;i<lastG;i++)
+        // ans+=travel[i];
+        vector<int>prefix(travel.size()+1,0);
+        for(int i=1;i<travel.size()+1;i++){
+            prefix[i]=travel[i-1]+prefix[i-1];
+        }
+        ans+=prefix[lastP]+prefix[lastG]+prefix[lastM];
         return ans;
     }
 };
