@@ -12,18 +12,12 @@
 // };
 
 
+
 class Solution {
 public:
-    string str;
-
-    bool comp(char first, char second) {
-        return str.find(first) < str.find(second);
-    }
-
     string customSortString(string order, string s) {
-        str = order;
-        sort(s.begin(), s.end(), [this](char a, char b) {
-            return comp(a, b);
+        sort(s.begin(),s.end(),[order](char &a,char &b){
+            return order.find(a)<order.find(b);
         });
         return s;
     }
