@@ -70,60 +70,26 @@ public:
 
 
 
-        int ans=0;
-        int lastP=0;
-        int lastG=0;
-        int lastM=0;
-        for(int i=0;i<garbage.size();i++){
-            if(i>0&&i<travel.size()) travel[i]+=travel[i-1];
-            for(auto &each:garbage[i]){
-                if(each=='P') lastP=i;
-                else if(each=='G') lastG=i;
-                else lastM=i;
-                ans++;
-            }
-        }
-        // vector<int>prefix(travel.size()+1,0);
-        // for(int i=1;i<travel.size()+1;i++){
-        //     prefix[i]=travel[i-1]+prefix[i-1];
-        // }
-        // ans+=prefix[lastP]+prefix[lastG]+prefix[lastM];
-
-
-        // for(int i=0;i<lastP;i++)
-        // ans+=travel[i];
-        // for(int i=0;i<lastM;i++)
-        // ans+=travel[i];
-        // for(int i=0;i<lastG;i++)
-        // ans+=travel[i];
-
-        if(lastP)
-        ans+=travel[lastP-1];
-        if(lastM)
-        ans+=travel[lastM-1];
-        if(lastG)
-        ans+=travel[lastG-1];
-
-        return ans;
-
-
         // int ans=0;
         // int lastP=0;
         // int lastG=0;
         // int lastM=0;
-        // for(int i=garbage.size()-1;i>=0;i--){
-        //     if(lastP==0||lastG==0||lastM==0){
-        //         for(auto &each:garbage[i]){
-        //             if(each=='P'&&lastP==0)
-        //             lastP=i;
-        //             if(each=='M'&&lastM==0)
-        //             lastM=i;
-        //             if(each=='G'&&lastG==0)
-        //             lastG=i;
-        //         }
+        // for(int i=0;i<garbage.size();i++){
+        //     if(i>0&&i<travel.size()) travel[i]+=travel[i-1];
+        //     for(auto &each:garbage[i]){
+        //         if(each=='P') lastP=i;
+        //         else if(each=='G') lastG=i;
+        //         else lastM=i;
+        //         ans++;
         //     }
-        //     ans+=garbage[i].size();
         // }
+        // // vector<int>prefix(travel.size()+1,0);
+        // // for(int i=1;i<travel.size()+1;i++){
+        // //     prefix[i]=travel[i-1]+prefix[i-1];
+        // // }
+        // // ans+=prefix[lastP]+prefix[lastG]+prefix[lastM];
+
+
         // // for(int i=0;i<lastP;i++)
         // // ans+=travel[i];
         // // for(int i=0;i<lastM;i++)
@@ -131,13 +97,56 @@ public:
         // // for(int i=0;i<lastG;i++)
         // // ans+=travel[i];
 
+        // if(lastP)
+        // ans+=travel[lastP-1];
+        // if(lastM)
+        // ans+=travel[lastM-1];
+        // if(lastG)
+        // ans+=travel[lastG-1];
+
+        // return ans;
+
+
+        int ans=0;
+        int lastP=0;
+        int lastG=0;
+        int lastM=0;
+        for(int i=1;i<travel.size();i++)
+        travel[i]+=travel[i-1];
+        for(int i=garbage.size()-1;i>=0;i--){
+            if(lastP==0||lastG==0||lastM==0){
+                for(auto &each:garbage[i]){
+                    if(each=='P'&&lastP==0)
+                    lastP=i;
+                    if(each=='M'&&lastM==0)
+                    lastM=i;
+                    if(each=='G'&&lastG==0)
+                    lastG=i;
+                }
+            }
+            ans+=garbage[i].size();
+        }
+        // for(int i=0;i<lastP;i++)
+        // ans+=travel[i];
+        // for(int i=0;i<lastM;i++)
+        // ans+=travel[i];
+        // for(int i=0;i<lastG;i++)
+        // ans+=travel[i];
+
 
         // vector<int>prefix(travel.size()+1,0);
         // for(int i=1;i<travel.size()+1;i++){
         //     prefix[i]=travel[i-1]+prefix[i-1];
         // }
         // ans+=prefix[lastP]+prefix[lastG]+prefix[lastM];
+         
+        if(lastP)
+        ans+=travel[lastP-1];
+        if(lastM)
+        ans+=travel[lastM-1];
+        if(lastG)
+        ans+=travel[lastG-1];
         
-        // return ans;
+        return ans;
     }
 };
