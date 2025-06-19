@@ -1,12 +1,12 @@
-string orderCopy;
+string str;
 class Solution {
 public:
-    static bool cmp(char a,char b){
-        return orderCopy.find(a)<orderCopy.find(b);
+    static bool comp(char &first,char &second){
+      return str.find(first)<str.find(second);
     }
     string customSortString(string order, string s) {
-        orderCopy=order;
-        sort(s.begin(),s.end(),cmp);
+        str=order;
+        sort(s.begin(),s.end(),comp);
         return s;
     }
 };
