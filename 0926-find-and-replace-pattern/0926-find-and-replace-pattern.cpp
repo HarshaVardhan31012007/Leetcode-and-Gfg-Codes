@@ -14,8 +14,10 @@ public:
                 brr[t[i]-'a']=s[i];
             }
             else{
-                if(arr[s[i]-'a']!=t[i])
+                if(arr[s[i]-'a']!=t[i]){
                 flag=0;
+                break;
+                }
             }
         }
         if(flag)
