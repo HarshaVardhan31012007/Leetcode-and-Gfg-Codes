@@ -36,16 +36,37 @@
 // };
 
 
+// class Solution {
+// public:
+//     string customSortString(string order, string s) {
+//         unordered_map<char,int>mpp;
+//         for(int i=0;i<order.size();i++){
+//             mpp[order[i]]=i+1;
+//         }
+//         sort(s.begin(),s.end(),[&mpp](char &a,char &b){
+//             return mpp[a] < mpp[b];
+//         });
+//         return s;
+//     }
+// };
+
+
+
+
 class Solution {
 public:
     string customSortString(string order, string s) {
-        unordered_map<char,int>mpp;
+        int arr[26]={0};
         for(int i=0;i<order.size();i++){
-            mpp[order[i]]=i+1;
+            arr[order[i]-'a']=i+1;
         }
-        sort(s.begin(),s.end(),[&mpp](char &a,char &b){
-            return mpp[a] < mpp[b];
+        sort(s.begin(),s.end(),[arr](char &a,char &b){
+            return arr[a-'a'] < arr[b-'a'];
         });
         return s;
     }
 };
+
+
+
+
