@@ -53,17 +53,34 @@
 
 
 
+// class Solution {
+// public:
+//     string customSortString(string order, string s) {
+//         int arr[26]={0};
+//         for(int i=0;i<order.size();i++){
+//             arr[order[i]-'a']=i+1;
+//         }
+//         sort(s.begin(),s.end(),[arr](char &a,char &b){
+//             return arr[a-'a'] < arr[b-'a'];
+//         });
+//         return s;
+//     }
+// };
+
+
 class Solution {
 public:
     string customSortString(string order, string s) {
-        int arr[26]={0};
-        for(int i=0;i<order.size();i++){
-            arr[order[i]-'a']=i+1;
+        int arr[26]={0};string ans="";
+        for(int i=0;i<s.length();i++)
+        arr[s[i]-'a']++;
+        for(int i=0;i<order.length();i++){
+            while(arr[order[i]-'a']--) ans+=order[i];
         }
-        sort(s.begin(),s.end(),[arr](char &a,char &b){
-            return arr[a-'a'] < arr[b-'a'];
-        });
-        return s;
+        for(int i=0;i<26;i++){
+            while(arr[i]-->0) ans+=(i+'a');
+        }
+        return ans;
     }
 };
 
