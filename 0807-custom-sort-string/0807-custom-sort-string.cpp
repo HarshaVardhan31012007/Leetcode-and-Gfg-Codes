@@ -15,7 +15,6 @@ class Solution {
 public:
     string customSortString(string order, string s) {
         sort(s.begin(),s.end(),[order](char &a,char &b){
-            cout<<a<<" "<<b<<endl;
             return order.find(a)<order.find(b);
         });
         return s;
