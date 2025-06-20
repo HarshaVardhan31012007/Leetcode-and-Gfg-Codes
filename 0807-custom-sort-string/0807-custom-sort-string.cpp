@@ -11,13 +11,26 @@
 //     }
 // };
 
+// class Solution {
+// public:
+//     string customSortString(string order, string s) {
+//         sort(s.begin(),s.end(),[order](char &a,char &b){
+//             return order.find(a)<order.find(b);
+//         });
+//         return s;
+//     }
+// };
+
 class Solution {
 public:
     string customSortString(string order, string s) {
-        sort(s.begin(),s.end(),[order](char &a,char &b){
-            return order.find(a)<order.find(b);
+        int arr[26]={0};
+        for(int i=0;i<order.size();i++){
+            arr[order[i]-'a']=i+1;
+        }
+        sort(s.begin(),s.end(),[arr](char &a,char &b){
+            return arr[a-'a'] < arr[b-'a'];
         });
         return s;
     }
 };
-
