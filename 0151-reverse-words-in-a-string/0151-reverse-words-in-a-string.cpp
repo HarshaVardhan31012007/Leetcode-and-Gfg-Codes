@@ -10,10 +10,12 @@ public:
                 s[j++]=s[k++];
             }
             reverse(s.begin()+i,s.begin()+j);
+            if(j==s.length()) return s;
             s[j++]=' ';
             i=j;
         }
-        s.resize(j-1);
-        return s;
+        // s.resize(j-1);
+        // return s;
+        return s.substr(0,j-1);
     }
 };
