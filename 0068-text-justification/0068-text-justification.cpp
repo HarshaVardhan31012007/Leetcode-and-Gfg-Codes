@@ -84,9 +84,8 @@ public:
             int spacesbetweenWords=currentLine.size();
             if(charTotalLine+spacesbetweenWords+curWord.size()>maxWidth){
                int extraSpaces=maxWidth-charTotalLine;
-               int a=currentLine.size()-1;
-               int spacesbetweenw=extraSpaces / max(1,a);
-               int remainder=extraSpaces % max(1,a);
+               int spacesbetweenw=extraSpaces / max(1,(int)(currentLine.size()-1));
+               int remainder=extraSpaces % max(1,(int)(currentLine.size()-1));
                for(int j=0;j<currentLine.size()-1;j++){
                  for(int k=0;k<spacesbetweenw;k++){
                     currentLine[j]+=" ";
