@@ -53,19 +53,18 @@ public:
                 temp1+=temp[temp.size()-1];
                 ans.push_back(temp1);
                 size=words[i].length()+1;
-                temp.erase(temp.begin(),temp.end());
+                temp.clear();
                 temp1="";
                 temp.push_back(words[i]); 
              }
         }
         if(temp.size()==1)
         temp1+=temp[0];
-        else{
-         for(int i=0;temp.size()!=0&&i<temp.size()-1;i++){
-         temp1+=temp[i]+" ";
-         }
-         if(temp.size()>1)
-         temp1+=temp[temp.size()-1];
+        else if(!temp.empty()){
+             for(int i=0;i<temp.size()-1;i++)
+             temp1+=temp[i]+" ";
+             if(temp.size()>1)
+             temp1+=temp[temp.size()-1];
         }
         if(temp1.length()>0){
         for(int i=temp1.length();i<maxWidth;i++)
