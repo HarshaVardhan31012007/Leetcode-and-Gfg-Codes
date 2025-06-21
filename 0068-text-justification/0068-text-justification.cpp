@@ -53,7 +53,7 @@ public:
                 temp1+=temp[temp.size()-1];
                 ans.push_back(temp1);
                 size=words[i].length()+1;
-                temp.clear();
+                temp.erase(temp.begin(),temp.end());
                 temp1="";
                 temp.push_back(words[i]); 
              }
@@ -61,8 +61,11 @@ public:
         if(temp.size()==1)
         temp1+=temp[0];
         else{
-         for(int i=0;i<temp.size();i++)
+         for(int i=0;temp.size()!=0&&i<temp.size()-1;i++){
          temp1+=temp[i]+" ";
+         }
+         if(temp.size()>1)
+         temp1+=temp[temp.size()-1];
         }
         if(temp1.length()>0){
         for(int i=temp1.length();i<maxWidth;i++)
