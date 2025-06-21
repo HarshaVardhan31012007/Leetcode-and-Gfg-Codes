@@ -61,9 +61,8 @@ public:
         if(temp.size()==1)
         temp1+=temp[0];
         else{
-        for(int i=0;i<temp.size();i++)
-        temp1+=temp[i]+" ";
-       // temp1+=temp[temp.size()-1];
+         for(int i=0;i<temp.size();i++)
+         temp1+=temp[i]+" ";
         }
         if(temp1.length()>0){
         for(int i=temp1.length();i<maxWidth;i++)
