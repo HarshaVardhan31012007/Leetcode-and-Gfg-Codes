@@ -78,14 +78,18 @@ public:
         }
      }
      chars[idx++]=prev;
-     if(count>1){
-       int start=idx;
-        while(count>0){
-            chars[idx++]=count%10+'0';
-            count/=10;
+      if(count>1){
+            if(count>=10){
+             int start=idx;
+            while(count>0){
+                chars[idx++]=count%10+'0';
+                count/=10;
             }
-        reverse(chars.begin()+start,chars.begin()+idx);
-     }
+            reverse(chars.begin()+start,chars.begin()+idx);
+            }
+            else
+            chars[idx++]=count+'0';
+            }
        return idx;
     }
 };
