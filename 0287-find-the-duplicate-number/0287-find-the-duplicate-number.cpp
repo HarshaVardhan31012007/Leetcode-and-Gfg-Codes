@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int findDuplicate(vector<int>& nums) {
+    int findDuplicate(vector<int>& arr) {
     //   for(int i=0;i<nums.size();i++){
     //     for(int j=i+1;j<nums.size();j++){
     //         if(nums[i]==nums[j])
@@ -46,16 +46,23 @@ public:
 
 
 
-     int i=0;
-    while(i<nums.size()){
-        int idx=nums[i];
-        if(nums[idx]!=nums[i])
-        swap(nums[idx],nums[i]);
-        else
-        i++;
-    }
-    return nums[0];
+    //  int i=0;
+    // while(i<nums.size()){
+    //     int idx=nums[i];
+    //     if(nums[idx]!=nums[i])
+    //     swap(nums[idx],nums[i]);
+    //     else
+    //     i++;
+    // }
+    // return nums[0];
 
-    
+
+     //positioning method
+     while(arr[0]!=arr[arr[0]]){
+        swap(arr[0],arr[arr[0]]);
+     }
+     return arr[0];
+
+     
     }
 };
