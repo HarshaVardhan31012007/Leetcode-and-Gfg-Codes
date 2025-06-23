@@ -9,7 +9,7 @@ public:
             
     //         if(s==e)
     //         return s;
-    //         if(nums[mid]>nums[mid+1])
+    //         if(mid+1<nums.size()&&nums[mid]>nums[mid+1])
     //         return mid;
     //         else if(nums[s]>nums[mid])
     //         e=mid-1;
