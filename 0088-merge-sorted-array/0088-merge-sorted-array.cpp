@@ -1,35 +1,15 @@
 class Solution {
 public:
-    void merge(vector<int>& a, int m, vector<int>& b, int n) {
-    vector<int>unionarr;//or we can set datastructure
-    int i=0;
-    int j=0;
-    while(i<m&&j<n){
-        if(a[i]<=b[j]){
-            unionarr.push_back(a[i]);
-            i++;
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+        int i=m-1;int j=n-1;int k=nums1.size()-1;
+        while(i>=0&&j>=0){
+            if(nums1[i]>nums2[j])
+            nums1[k--]=nums1[i--];
+            else
+            nums1[k--]=nums2[j--];
         }
-        else{
-            unionarr.push_back(b[j]);
-            j++;
+        while(j>=0){
+            nums1[k--]=nums2[j--];
         }
-    }
-    while(i<m){
-                unionarr.push_back(a[i]);
-            i++;
-    }
-    while(j<n){
-
-            
-                unionarr.push_back(b[j]);
-            
-            j++;
-        
-    }
-    // int size=unionarr.size();
-    // for(int i=0;i<size;i++){
-    //     a[i]=unionarr[i];
-    // }
-  a.assign(unionarr.begin(),unionarr.end());
     }
 };
