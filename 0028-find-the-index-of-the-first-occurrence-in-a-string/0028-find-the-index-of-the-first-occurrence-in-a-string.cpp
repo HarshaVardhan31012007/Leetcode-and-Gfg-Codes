@@ -18,15 +18,34 @@ public:
 
 
 
+        // int n=haystack.size();
+        // int m=needle.size();
+        // for(int i=0;i<=n-m;i++){
+        //     for(int j=0;j<m;j++){
+        //         if(haystack[i+j]!=needle[j])
+        //         break;
+        //         if(j==m-1)
+        //         return i;
+        //     }
+        // }
+        // return -1;
+
+   
         int n=haystack.size();
         int m=needle.size();
-        for(int i=0;i<=n-m;i++){
-            for(int j=0;j<m;j++){
-                if(haystack[i+j]!=needle[j])
-                break;
-                if(j==m-1)
-                return i;
-            }
+        string temp="";
+        int i=0;int j=m-1;
+        for(int p=i;p<=j;p++)
+        temp.push_back(haystack[p]);
+        if(temp==needle)
+        return i;
+        j++;
+        while(j<n){
+            temp.erase(0,1);
+            i++;
+            temp.push_back(haystack[j++]);
+            if(temp==needle)
+            return i;
         }
         return -1;
     }
