@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2106-find-greatest-common-divisor-of-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2556-convert-the-temperature](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2556-convert-the-temperature) |
+| [3227-find-missing-and-repeated-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3227-find-missing-and-repeated-values) |
 ## Array
 |  |
 | ------- |
@@ -156,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 | [2737-row-with-maximum-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2737-row-with-maximum-ones) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3206-find-common-elements-between-two-arrays) |
+| [3227-find-missing-and-repeated-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3227-find-missing-and-repeated-values) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -299,6 +301,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2406-decode-the-message](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2406-decode-the-message) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3206-find-common-elements-between-two-arrays) |
+| [3227-find-missing-and-repeated-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3227-find-missing-and-repeated-values) |
 ## Binary Search
 |  |
 | ------- |
@@ -447,6 +450,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 | [2737-row-with-maximum-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2737-row-with-maximum-ones) |
+| [3227-find-missing-and-repeated-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3227-find-missing-and-repeated-values) |
 ## Sliding Window
 |  |
 | ------- |
