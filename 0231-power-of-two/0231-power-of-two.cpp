@@ -19,8 +19,8 @@ public:
         // return false;
 
 
-        //if(n==INT_MIN) return false;
-    return (n!=0)&&(n!=INT_MIN&&(n&n-1)==0);
+    if(n==INT_MIN) return false;
+    return (n!=0)&&(!(n&n-1));
        
 
     //    int count=1;
