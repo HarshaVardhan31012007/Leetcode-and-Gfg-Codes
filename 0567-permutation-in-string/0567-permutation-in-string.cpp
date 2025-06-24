@@ -1,31 +1,27 @@
 class Solution {
 public:
-bool isSame(unordered_map<char,int>mpp,unordered_map<char,int>wfreq,string s1){
-    for(int i=0;i<s1.length();i++){
-        if(mpp[s1[i]]!=wfreq[s1[i]])//we can do with array of 26 charcters use s[i]-'a'initilize int frq[26]={0};
-        return false;
+    bool check(int arr[]){
+        for(int i=0;i<26;i++){
+            if(arr[i]!=0)
+            return false;
+        }
+        return true;
     }
-    return true;
-}
     bool checkInclusion(string s1, string s2) {
-        unordered_map<char,int>mpp;
-        unordered_map<char,int>wfreq;
-        for(int i=0;i<s1.length();i++){
-            mpp[s1[i]]++;
-        }
-        int wlen=s1.length();
-        for(int i=0;i<s2.length();i++){
-            int widx=0;int idx=i;
-            while(widx<wlen&&idx<s2.length()){
-                wfreq[s2[idx]]++;
-                widx++;
-                idx++;
-            }
-            if(isSame(mpp,wfreq,s1)){
-                return true;
-            }
-            wfreq.clear();
-        }
-        return false;
+        if(s1.length()>s2.length()) return false;
+       int arr[26]={0};
+       for(int i=0;i<s1.length();i++)
+       arr[s1[i]-'a']++;
+       int i=0;int j=s1.length()-1;
+       for(int p=i;p<=j;p++)
+       arr[s2[p]-'a']--;
+       if(check(arr)) return true;
+       j++;
+       while(j<s2.length()){
+         arr[s2[i++]-'a']++;
+         arr[s2[j++]-'a']--;
+         if(check(arr)) return true;
+       }
+       return false;
     }
 };
