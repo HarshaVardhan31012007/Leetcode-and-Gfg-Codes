@@ -45,21 +45,41 @@ public:
 
 
 
+    //    vector<int>ans(2);
+    //    unordered_map<int,int>mpp;
+    //    int n=grid.size();
+    //    int sum=((n*n)*((n*n)+1))/2;
+    //    int asum=0;
+    //    for(int i=0;i<n;i++){
+    //     for(int j=0;j<n;j++){
+    //       asum+=grid[i][j];
+    //       if(mpp.find(grid[i][j])!=mpp.end()){
+    //         ans[0]=grid[i][j];
+    //       }
+    //       mpp[grid[i][j]]=1;
+    //     }
+    //    }
+    //    ans[1]=sum-asum+ans[0];
+    //    return ans;
+
+
        vector<int>ans(2);
-       unordered_map<int,int>mpp;
-       int n=grid.size();
+       long long int n=grid.size();
        int sum=((n*n)*((n*n)+1))/2;
+       long long int prod=((n*n)*((n*n)+1)*(2*(n*n)+1))/6;
        int asum=0;
+       long long int aprod=0;
        for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
           asum+=grid[i][j];
-          if(mpp.find(grid[i][j])!=mpp.end()){
-            ans[0]=grid[i][j];
-          }
-          mpp[grid[i][j]]=1;
+          aprod+=grid[i][j]*grid[i][j];
         }
        }
-       ans[1]=sum-asum+ans[0];
+       int a=sum-asum;
+       int b=prod-aprod;
+       b=b/a;
+       ans[0]=(b-a)/2;
+       ans[1]=(a+b)/2;
        return ans;
     }
 };
