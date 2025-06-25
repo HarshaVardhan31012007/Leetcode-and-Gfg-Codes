@@ -543,6 +543,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2406-decode-the-message](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2406-decode-the-message) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
+| [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 ## Stack
 |  |
 | ------- |
@@ -591,6 +592,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1879-maximum-score-from-removing-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1879-maximum-score-from-removing-stones) |
 | [1952-minimum-sideway-jumps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1952-minimum-sideway-jumps) |
 | [2088-minimum-time-to-type-word-using-special-typewriter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2088-minimum-time-to-type-word-using-special-typewriter) |
+| [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 ## Enumeration
 |  |
 | ------- |
@@ -610,6 +612,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-reorganize-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0778-reorganize-string) |
 | [1160-letter-tile-possibilities](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1160-letter-tile-possibilities) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1890-sum-of-beauty-of-all-substrings) |
+| [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 ## Backtracking
 |  |
 | ------- |
