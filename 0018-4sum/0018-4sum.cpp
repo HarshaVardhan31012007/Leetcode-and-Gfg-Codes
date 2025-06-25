@@ -18,6 +18,8 @@ public:
                 p++;
                 else
                 q--;
+                while(p<q&&q+1<nums.size()&&nums[q]==nums[q+1]) q--;
+                while(p<q&&p>j+1&&nums[p]==nums[p-1]) p++;
                 }
             }
         }
