@@ -10,13 +10,14 @@ public:
                 int p=j+1;int q=nums.size()-1;
                 while(p<q){
                 long long sum=(long long)nums[i]+(long long)nums[j]+(long long)nums[p]+(long long)nums[q];
-                if(sum==target)
+                if(sum==target){
                 ans.push_back({nums[i],nums[j],nums[p++],nums[q--]});
+                while(p<q&&nums[q]==nums[q+1]) q--;
+                }
                 else if(sum<target)
                 p++;
                 else
                 q--;
-                while(q+1<nums.size()&&q>=0&&nums[q]==nums[q+1]) q--;
                 }
             }
         }
