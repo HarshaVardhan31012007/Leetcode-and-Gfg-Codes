@@ -58,11 +58,9 @@ public:
 
 
      //positioning method
-     while(arr[0]!=arr[arr[0]]){
-        swap(arr[0],arr[arr[0]]);
+     while(arr[arr[0]]!=arr[0]){
+        swap(arr[arr[0]],arr[0]);
      }
      return arr[0];
-
-     
     }
 };
