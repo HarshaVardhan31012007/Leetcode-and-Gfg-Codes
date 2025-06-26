@@ -1,17 +1,17 @@
 class Solution {
 public:
-    int bs(vector<int>&nums,int s,int e,int t){
-        while(s<=e){
-            int mid=s+(e-s)/2;
-            if(nums[mid]==t)
-            return mid;
-            else if(nums[mid]<t)
-            s=mid+1;
-            else
-            e=mid-1;
-        }
-        return -1;
-    }
+    // int bs(vector<int>&nums,int s,int e,int t){
+    //     while(s<=e){
+    //         int mid=s+(e-s)/2;
+    //         if(nums[mid]==t)
+    //         return mid;
+    //         else if(nums[mid]<t)
+    //         s=mid+1;
+    //         else
+    //         e=mid-1;
+    //     }
+    //     return -1;
+    // }
     int findPairs(vector<int>& nums, int k) {
     //    sort(nums.begin(),nums.end());
     //    unordered_map<int,int>mpp;int ans=0;
@@ -66,10 +66,20 @@ public:
 
 
 
+        // sort(nums.begin(),nums.end());
+        // set<pair<int,int>>ans;
+        // for(int i=0;i<nums.size();i++){
+        //     if(bs(nums,i+1,nums.size()-1,nums[i]+k)!=-1)
+        //     ans.insert({nums[i],nums[i]+k});
+        // }
+        // return ans.size();
+
+
+        
         sort(nums.begin(),nums.end());
         set<pair<int,int>>ans;
         for(int i=0;i<nums.size();i++){
-            if(bs(nums,i+1,nums.size()-1,nums[i]+k)!=-1)
+            if(binary_search(nums.begin()+i+1,nums.end(),nums[i]+k))
             ans.insert({nums[i],nums[i]+k});
         }
         return ans.size();
