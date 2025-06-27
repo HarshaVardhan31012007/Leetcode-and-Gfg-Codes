@@ -19,6 +19,10 @@ public:
         //     }
         // }
 
+     //less optimal // two sets for track row indices and col indices visited O(M+N)
+
+    //optimal//O(1)
+
        int col0=1;
        for(int i=0;i<m;i++){
         if(matrix[i][0]==0) col0=0;
@@ -29,7 +33,8 @@ public:
             }
         }
        }
-       for(int i=m-1;i>=0;i--){
+       for(int i=m-1;i>=0;i--){   // i=0 should be last  because i=0  row change
+    //affect remaining rows by matrix[0][j]==0
         for(int j=1;j<n;j++){
            if(matrix[i][0]==0||matrix[0][j]==0)
            matrix[i][j]=0;
