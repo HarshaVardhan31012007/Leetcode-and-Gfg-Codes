@@ -1,7 +1,7 @@
 class Solution {
 public:
-    bool isUgly(int n) {
-      if(n<=0) return false;
+    bool isUgly(int x) {
+      if(x<=0) return false;
     //   vector<int>ans(n+1,1);
     //   ans[0]=ans[1]=0;
     //   for(int i=2;i<=sqrt(n);i++){
@@ -17,7 +17,6 @@ public:
     //   }
     //   return true;
 
-    int x=n;
     while(x%2==0)
     x=x/2;
     while(x%3==0)
