@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0224-basic-calculator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0224-basic-calculator) |
 | [0231-power-of-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0231-power-of-two) |
 | [0263-ugly-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0263-ugly-number) |
+| [0264-ugly-number-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0268-missing-number) |
 | [0279-perfect-squares](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0279-perfect-squares) |
 | [0375-guess-number-higher-or-lower-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0375-guess-number-higher-or-lower-ii) |
@@ -283,6 +284,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0208-implement-trie-prefix-tree) |
 | [0229-majority-element-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0229-majority-element-ii) |
 | [0242-valid-anagram](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0242-valid-anagram) |
+| [0264-ugly-number-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0349-intersection-of-two-arrays) |
@@ -396,6 +398,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0198-house-robber](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0198-house-robber) |
 | [0221-maximal-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0221-maximal-square) |
+| [0264-ugly-number-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0264-ugly-number-ii) |
 | [0279-perfect-squares](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0279-perfect-squares) |
 | [0300-longest-increasing-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0300-longest-increasing-subsequence) |
 | [0312-burst-balloons](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0312-burst-balloons) |
@@ -681,6 +684,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0023-merge-k-sorted-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0239-sliding-window-maximum) |
+| [0264-ugly-number-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0264-ugly-number-ii) |
 | [0295-find-median-from-data-stream](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0347-top-k-frequent-elements) |
 | [0355-design-twitter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0355-design-twitter) |
