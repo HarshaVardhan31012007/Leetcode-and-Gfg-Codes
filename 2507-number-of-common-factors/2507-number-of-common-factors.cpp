@@ -9,11 +9,11 @@ public:
         // }
         // return count;
 
-        if(a>b){
-            a=a^b;
-            b=a^b;
-            a=a^b;
-        }
+        // if(a>b){
+        //     a=a^b;
+        //     b=a^b;
+        //     a=a^b;
+        // }
         int count=0;
         for(int i=1;i<=sqrt(a);i++){
             if(a%i==0){
