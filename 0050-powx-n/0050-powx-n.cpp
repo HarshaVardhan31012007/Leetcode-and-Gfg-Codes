@@ -29,25 +29,47 @@ public:
 
         //method 2
         //cases for decreasing time
+        // if(n==0) return 1.0;
+        // if(n==1) return x;
+        // if(x==0) return 0.0;
+        // if(x==1.0) return 1.0;
+        // if(x==-1.0&&n%2==0) return 1.0;
+        // if(x==-1.0&&n%2!=0) return -1.0;
+        
+        // long newN=n;
+        // if(newN<0){
+        //     x=1/x;
+        //     newN=-newN;
+        // }
+        // double ans=1;
+        // while(newN>0){
+        //     if(newN%2==1){
+        //         ans=ans*x;
+        //     }
+        //     x*=x;
+        //     newN=newN/2;
+        // }
+        // return ans;
+
+
         if(n==0) return 1.0;
         if(n==1) return x;
         if(x==0) return 0.0;
         if(x==1.0) return 1.0;
-        if(x==-1.0&&n%2==0) return 1.0;
-        if(x==-1.0&&n%2!=0) return -1.0;
-        
+        if(x==-1.0&&(n&1)) return -1.0;
+        if(x==-1.0&&!(n&1)) return 1.0;
+        double ans=1;
         long newN=n;
         if(newN<0){
             x=1/x;
             newN=-newN;
         }
-        double ans=1;
         while(newN>0){
-            if(newN%2==1){
+            if(newN&1){
                 ans=ans*x;
             }
-            x*=x;
-            newN=newN/2;
+            x=x*x;
+            newN=newN>>1;
         }
         return ans;
     }
