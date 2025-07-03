@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2507-number-of-common-factors](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2507-number-of-common-factors) |
 | [2556-convert-the-temperature](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2556-convert-the-temperature) |
 | [3227-find-missing-and-repeated-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3227-find-missing-and-repeated-values) |
+| [3600-find-the-k-th-character-in-string-game-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 ## Array
 |  |
 | ------- |
@@ -191,6 +192,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0476-number-complement](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0476-number-complement) |
 | [0800-letter-case-permutation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0800-letter-case-permutation) |
 | [1054-complement-of-base-10-integer](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1054-complement-of-base-10-integer) |
+| [3600-find-the-k-th-character-in-string-game-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 ## Two Pointers
 |  |
 | ------- |
@@ -499,6 +501,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0898-transpose-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0898-transpose-matrix) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
+| [3600-find-the-k-th-character-in-string-game-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 ## String
 |  |
 | ------- |
@@ -685,6 +688,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0342-power-of-four](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0342-power-of-four) |
 | [0486-predict-the-winner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0486-predict-the-winner) |
 | [1013-fibonacci-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1013-fibonacci-number) |
+| [3600-find-the-k-th-character-in-string-game-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 ## Memoization
 |  |
 | ------- |
