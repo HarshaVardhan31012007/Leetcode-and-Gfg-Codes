@@ -41,15 +41,29 @@ public:
     // }
 
     
-    int findLHS(vector<int>& nums) {
-     sort(nums.begin(),nums.end());
-       int i=0;int ans=0;
-       for(int j=0;j<nums.size();j++){
-        while(nums[j]-nums[i]>1)
-        i++;
-        if(nums[j]-nums[i]==1)
-        ans=max(ans,j-i+1);
-       }
-       return ans;
+    // int findLHS(vector<int>& nums) {
+    //  sort(nums.begin(),nums.end());
+    //    int i=0;int ans=0;
+    //    for(int j=0;j<nums.size();j++){
+    //     while(nums[j]-nums[i]>1)
+    //     i++;
+    //     if(nums[j]-nums[i]==1)
+    //     ans=max(ans,j-i+1);
+    //    }
+    //    return ans;
+    //  }
+
+
+     int findLHS(vector<int>& nums) {
+        unordered_map<int,int>mpp;int ans=0;
+        for(int i=0;i<nums.size();i++)
+        mpp[nums[i]]++;
+        for(auto it:mpp){
+            int num=it.first;
+            auto it1=mpp.find(num+1);
+            if(it1==mpp.end()) continue;
+            ans=max(ans,it.second+it1->second);
+        }
+        return ans;
      }
 };
