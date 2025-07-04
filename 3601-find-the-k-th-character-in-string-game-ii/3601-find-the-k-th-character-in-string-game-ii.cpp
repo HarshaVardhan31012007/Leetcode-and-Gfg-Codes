@@ -25,14 +25,29 @@ public:
 
 
     char kthCharacter(long long k, vector<int>& operations) {
-       int count=0;
-       while(k!=1){
-        long long int val=ceil(log2(k));
-        if(operations[val-1]==1) count++;
-        k=k-(long long)pow(2,val-1);
-       }
-       return 'a'+(count%26);
+    //    int count=0;
+    //    while(k!=1){//k>1
+    //     long long int val=ceil(log2(k));
+    //     if(operations[val-1]==1) count++;
+    //     k=k-(long long)pow(2,val-1);// if k=8 then val=3 
+    //     //then pow(2,val-1)=4 8%4==0 so dont use modulo use subtraction
+    //    }
+    //    return 'a'+(count%26);
+
 
        
+       int count=0;
+       while(k>1){
+        long long int val=floor(log2(k));
+        if((int)log2(k)==log2(k)){
+            if(operations[val-1]==1) count++;
+            k=k-(long long)pow(2,val-1);
+        } 
+        else {
+        if(operations[val]==1) count++;
+        k=k-(long long)pow(2,val);
+        }
+       }
+       return 'a'+(count%26);
     }
 };
