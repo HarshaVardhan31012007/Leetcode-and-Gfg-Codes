@@ -36,19 +36,34 @@ public:
 
 
        
-       int count=0;
-       while(k!=1){
-        long long int val=floor(log2(k));
-        if((int)log2(k)==log2(k)){
-            if(operations[val-1]==1) count++;// for k=16 val=4 here pow(2,val-1) not p
-            //not pow(2,val)
-            k=k-(long long)pow(2,val-1);
-        } 
-        else {
-        if(operations[val]==1) count++;
-        k=k-(long long)pow(2,val);
+    //    int count=0;
+    //    while(k!=1){
+    //     long long int val=floor(log2(k));
+    //     if((int)log2(k)==log2(k)){
+    //         if(operations[val-1]==1) count++;// for k=16 val=4 here pow(2,val-1) not p
+    //         //not pow(2,val)
+    //         k=k-(long long)pow(2,val-1);
+    //     } 
+    //     else {
+    //     if(operations[val]==1) count++;
+    //     k=k-(long long)pow(2,val);
+    //     }
+    //    }
+    //    return 'a'+(count%26);
+
+    long long int count=0;
+    int n=operations.size();
+    while(k>1){
+        long long int len=1;
+      for(int i=0;i<n;i++){
+        len*=2;
+        if(len>=k){
+            count+=operations[i];
+            k=k-len/2;
+            break;
         }
-       }
-       return 'a'+(count%26);
+      }
+    }
+    return 'a'+(count%26);
     }
 };
