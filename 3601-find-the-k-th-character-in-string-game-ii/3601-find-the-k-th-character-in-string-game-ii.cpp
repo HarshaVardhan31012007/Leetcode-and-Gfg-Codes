@@ -37,10 +37,11 @@ public:
 
        
        int count=0;
-       while(k>1){
+       while(k!=1){
         long long int val=floor(log2(k));
         if((int)log2(k)==log2(k)){
-            if(operations[val-1]==1) count++;
+            if(operations[val-1]==1) count++;// for k=16 val=4 here pow(2,val-1) not p
+            //not pow(2,val)
             k=k-(long long)pow(2,val-1);
         } 
         else {
