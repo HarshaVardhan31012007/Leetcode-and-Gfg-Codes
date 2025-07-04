@@ -26,11 +26,13 @@ public:
 
     char kthCharacter(long long k, vector<int>& operations) {
        int count=0;
-       while(k>1){
+       while(k!=1){
         long long int val=ceil(log2(k));
         if(operations[val-1]==1) count++;
         k=k-(long long)pow(2,val-1);
        }
        return 'a'+(count%26);
+
+       
     }
 };
