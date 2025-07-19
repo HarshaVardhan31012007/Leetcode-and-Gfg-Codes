@@ -24,7 +24,7 @@ bool solve(vector<int>&matchsticks,vector<int>&sides,int i){
         if(sum%4!=0)
         return false;
         vector<int>sides(4,sum/4);
-      sort(matchsticks.rbegin(),matchsticks.rend());
+        sort(matchsticks.rbegin(),matchsticks.rend());
         bool ans=solve(matchsticks,sides,0);
         return ans;
     }
