@@ -24,6 +24,7 @@ bool solve(vector<int>&nums){
   for(int i=nums.size()-2;i>=0;i--){
   bool ans=false;
   for(int jump=1;jump<=nums[i];jump++){
+    if(i+jump<nums.size())
    ans=ans||dp[i+jump];
   }
   dp[i]=ans;
