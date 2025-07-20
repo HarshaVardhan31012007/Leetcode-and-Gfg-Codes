@@ -11,7 +11,8 @@ public:
         return dp[i][sum]=ans;
     }
     int minimizeTheDifference(vector<vector<int>>& mat, int target) {
-       vector<vector<int>>dp(mat.size()+1,vector<int>(5000,-1));
+
+       vector<vector<int>>dp(mat.size()+1,vector<int>((70*mat.size())+1,-1));
        return solve(mat,0,0,target,dp);
     }
 };
