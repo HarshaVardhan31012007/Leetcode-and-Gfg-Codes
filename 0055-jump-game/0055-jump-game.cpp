@@ -3,6 +3,7 @@ public:
 // bool solve(vector<int>&nums,int i,vector<int>&dp){
 //   if(i==nums.size()-1) return true;
 //   if(i>=nums.size()) return false;
+//   if(nums[i]==0) return false;//no need
 //   if(dp[i]!=-1) return dp[i];//noneed of nums[i]==0 return false//loop takes 
 //   //care of it
 //   bool ans=false;
@@ -34,6 +35,4 @@ bool solve(vector<int>&nums){
 bool canJump(vector<int>& nums) {
     return solve(nums);
 }
-
-
 };
