@@ -59,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0051-n-queens](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0054-spiral-matrix) |
+| [0055-jump-game](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0055-jump-game) |
 | [0068-text-justification](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0068-text-justification) |
 | [0073-set-matrix-zeroes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0074-search-a-2d-matrix) |
@@ -399,6 +400,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0022-generate-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0022-generate-parentheses) |
 | [0044-wildcard-matching](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0044-wildcard-matching) |
 | [0053-maximum-subarray](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0055-jump-game) |
 | [0072-edit-distance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0072-edit-distance) |
 | [0085-maximal-rectangle](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0085-maximal-rectangle) |
 | [0095-unique-binary-search-trees-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0095-unique-binary-search-trees-ii) |
@@ -609,6 +611,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0011-container-with-most-water) |
 | [0044-wildcard-matching](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0044-wildcard-matching) |
+| [0055-jump-game](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0134-gas-station](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0134-gas-station) |
 | [0179-largest-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0179-largest-number) |
