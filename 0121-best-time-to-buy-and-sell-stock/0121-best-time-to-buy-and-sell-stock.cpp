@@ -1,14 +1,10 @@
 class Solution {
 public:
-    void solve(vector<int>& prices,int &bestbuy,int &maxProfit,int i){
-        if(i==prices.size()){
-           return;
-        }
-       if(prices[i]<bestbuy) bestbuy=prices[i];
-       int todayProfit=prices[i]-bestbuy;
-       maxProfit=max(maxProfit,todayProfit);
-
-       solve(prices,bestbuy,maxProfit,i+1);
+    void solve(vector<int>&prices,int i,int &bestbuy,int &maxprofit){
+        if(i==prices.size()) return;
+        if(prices[i]<bestbuy) bestbuy=prices[i];
+        maxprofit=max(maxprofit,prices[i]-bestbuy);
+        solve(prices,i+1,bestbuy,maxprofit);
     }
     int maxProfit(vector<int>& prices) {
         //method 1
@@ -50,9 +46,8 @@ public:
 
         //method 3
         int bestbuy=INT_MAX;
-        int maxProfit=INT_MIN;
-        int i=0;
-        solve(prices,bestbuy,maxProfit,i);
-        return maxProfit;
+        int maxprofit=INT_MIN;
+        solve(prices,0,bestbuy,maxprofit);
+        return maxprofit;
     }
 };
