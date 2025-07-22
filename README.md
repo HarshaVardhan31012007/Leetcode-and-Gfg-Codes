@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0263-ugly-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0263-ugly-number) |
 | [0264-ugly-number-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0268-missing-number) |
+| [0273-integer-to-english-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0273-integer-to-english-words) |
 | [0279-perfect-squares](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0279-perfect-squares) |
 | [0326-power-of-three](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0342-power-of-four) |
@@ -550,6 +551,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0211-design-add-and-search-words-data-structure](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0224-basic-calculator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0224-basic-calculator) |
 | [0242-valid-anagram](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0242-valid-anagram) |
+| [0273-integer-to-english-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0273-integer-to-english-words) |
 | [0345-reverse-vowels-of-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0345-reverse-vowels-of-a-string) |
 | [0415-add-strings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0415-add-strings) |
 | [0443-string-compression](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0443-string-compression) |
@@ -700,6 +702,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0224-basic-calculator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0224-basic-calculator) |
 | [0231-power-of-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0231-power-of-two) |
 | [0234-palindrome-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0234-palindrome-linked-list) |
+| [0273-integer-to-english-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0273-integer-to-english-words) |
 | [0326-power-of-three](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0342-power-of-four) |
 | [0486-predict-the-winner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0486-predict-the-winner) |
