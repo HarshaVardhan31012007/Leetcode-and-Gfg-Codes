@@ -1,5 +1,12 @@
 class Solution {
 public:
+    double solve(double x,int n){
+        if(n==0) return 1;
+        if(n&1)
+        return x*solve(x*x,n/2);
+        else
+        return solve(x*x,n/2);
+    }
     double myPow(double x, int n) {
         // double product=1;
         // //cases for decreasing time
@@ -52,25 +59,39 @@ public:
         // return ans;
 
 
+        // if(n==0) return 1.0;
+        // if(n==1) return x;
+        // if(x==0) return 0.0;
+        // if(x==1.0) return 1.0;
+        // if(x==-1.0&&(n&1)) return -1.0;
+        // if(x==-1.0&&!(n&1)) return 1.0;
+        // double ans=1;
+        // long newN=n;
+        // if(newN<0){
+        //     x=1/x;
+        //     newN=-newN;
+        // }
+        // while(newN>0){
+        //     if(newN&1){
+        //         ans=ans*x;
+        //     }
+        //     x=x*x;
+        //     newN=newN>>1;
+        // }
+        // return ans;
+
+
+
+        //recursion
+        long int newn=n;
         if(n==0) return 1.0;
         if(n==1) return x;
-        if(x==0) return 0.0;
+        if(x==0.0) return 0.0;
         if(x==1.0) return 1.0;
-        if(x==-1.0&&(n&1)) return -1.0;
-        if(x==-1.0&&!(n&1)) return 1.0;
-        double ans=1;
-        long newN=n;
-        if(newN<0){
-            x=1/x;
-            newN=-newN;
-        }
-        while(newN>0){
-            if(newN&1){
-                ans=ans*x;
-            }
-            x=x*x;
-            newN=newN>>1;
-        }
-        return ans;
+        if(x==-1.0&&n%2==0) return 1.0;
+        if(x==-1.0&&n%2!=0) return -1.0;
+         if(newn<0)
+         x=1/x;
+         return solve(x,newn);
     }
 };
