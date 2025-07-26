@@ -10,6 +10,8 @@ public:
                 }
                 i++;j++;
             }
+            //if(gap==1) break;
+            //gap=gap/2+gap%2;
             gap=gap<=1?0:gap/2+gap%2;
         }
     }
