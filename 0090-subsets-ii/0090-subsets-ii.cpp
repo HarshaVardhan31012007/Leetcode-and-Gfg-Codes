@@ -28,10 +28,14 @@ public:
         temp.push_back(nums[i]);
         solve(nums,ans,temp,i+1);
         temp.pop_back();
-        int idx=i+1;
-        while(idx<nums.size()&&nums[idx]==nums[idx-1]) 
-        idx=idx+1;
-        solve(nums,ans,temp,idx);
+        // int idx=i+1;
+        // while(idx<nums.size()&&nums[idx]==nums[idx-1]) 
+        // idx=idx+1;
+        // solve(nums,ans,temp,idx);
+
+        while(i+1<nums.size()&&nums[i]==nums[i+1]) 
+        i++;
+        solve(nums,ans,temp,i+1);
     }
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
         sort(nums.begin(),nums.end());
