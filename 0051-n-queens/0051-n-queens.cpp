@@ -212,6 +212,4 @@ public:
     //     solve(ans,board,col,n);
     //     return ans;
     // }
-    
-
 };
