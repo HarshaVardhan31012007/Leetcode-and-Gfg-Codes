@@ -9,11 +9,18 @@ public:
             if(board[row][j]==digit)
             return false;
         }
-        for(int k=0;k<n;k++){
-            int p=3*(row/3)+k/3;
-            int q=3*(col/3)+k%3;
-            if(board[p][q]==digit)
-            return false;
+        // for(int k=0;k<n;k++){
+        //     int p=3*(row/3)+k/3;
+        //     int q=3*(col/3)+k%3;
+        //     if(board[p][q]==digit)
+        //     return false;
+        // }
+        int p=3*(row/3);int q=3*(col/3);
+        for(int i=p;i<=p+2;i++){
+            for(int j=q;j<=q+2;j++){
+                if(board[i][j]==digit)
+                return false;
+            }
         }
         return true;
     }
