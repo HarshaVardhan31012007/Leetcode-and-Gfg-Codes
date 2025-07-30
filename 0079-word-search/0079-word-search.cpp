@@ -49,43 +49,71 @@
 //In the same 2d array do replace with one value and store actual value in temp variable
 // so that when youa re backtracking you can repalce it
 
+// class Solution {
+// public:
+//     bool isSafe(vector<vector<char>>&board,string &word,int i,int row,int col){
+//         if(row<0||col<0||row>=board.size()||col>=board[0].size())
+//         return false;
+//         if(board[row][col]=='%')
+//         return false;
+//         if(word[i]!=board[row][col])
+//         return false;
+//         return true;
+//     }
+//     bool solve(vector<vector<char>>&board,string &word,int i,int row,int col){
+//         if(i==word.size()) return true;
+//         int dx[]={0,0,-1,1};
+//         int dy[]={-1,1,0,0};
+//         for(int k=0;k<4;k++){
+//             int newRow=row+dx[k];
+//             int newCol=col+dy[k];
+//             if(isSafe(board,word,i,newRow,newCol)){
+//                  char temp=board[row][col];
+//                  board[row][col]='%';
+//                  bool ans=solve(board,word,i+1,newRow,newCol);
+//                  if(ans) return true;
+//                  board[row][col]=temp;
+//             }
+//         }
+//         return false;
+//     }
+//     bool exist(vector<vector<char>>& board, string word) {
+//          for(int row=0;row<board.size();row++){
+//             for(int col=0;col<board[0].size();col++){
+//                    if(board[row][col]==word[0]){
+//                       char temp=board[row][col];
+//                       board[row][col]='%';
+//                       bool ans=solve(board,word,1,row,col);
+//                       if(ans) return true;
+//                       board[row][col]=temp;
+//                    }
+//             }
+//         }
+//         return false;
+//     }
+// };
+
+
+
+
+
+
 class Solution {
 public:
-    bool isSafe(vector<vector<char>>&board,string &word,int i,int row,int col){
-        if(row<0||col<0||row>=board.size()||col>=board[0].size())
-        return false;
-        if(board[row][col]=='%')
-        return false;
-        if(word[i]!=board[row][col])
-        return false;
-        return true;
-    }
     bool solve(vector<vector<char>>&board,string &word,int i,int row,int col){
         if(i==word.size()) return true;
-        int dx[]={0,0,-1,1};
-        int dy[]={-1,1,0,0};
-        for(int k=0;k<4;k++){
-            int newRow=row+dx[k];
-            int newCol=col+dy[k];
-            if(isSafe(board,word,i,newRow,newCol)){
-                 char temp=board[row][col];
-                 board[row][col]='%';
-                 bool ans=solve(board,word,i+1,newRow,newCol);
-                 if(ans) return true;
-                 board[row][col]=temp;
-            }
-        }
-        return false;
+         if(row<0||col<0||row>=board.size()||col>=board[0].size()||word[i]!=board[row][col]||board[row][col]=='%') return false;
+        char temp=board[row][col];
+        board[row][col]='%';
+        bool ans=solve(board,word,i+1,row+1,col)||solve(board,word,i+1,row-1,col)||solve(board,word,i+1,row,col+1)||solve(board,word,i+1,row,col-1);
+        board[row][col]=temp;
+        return ans;
     }
     bool exist(vector<vector<char>>& board, string word) {
          for(int row=0;row<board.size();row++){
             for(int col=0;col<board[0].size();col++){
-                   if(board[row][col]==word[0]){
-                      char temp=board[row][col];
-                      board[row][col]='%';
-                      bool ans=solve(board,word,1,row,col);
-                      if(ans) return true;
-                      board[row][col]=temp;
+                   if(solve(board,word,0,row,col)){
+                      return true;
                    }
             }
         }
