@@ -1,49 +1,30 @@
 class Solution {
 public:
-      bool isSafe(vector<string>&board,int row,int col,int n){
-
-       for(int j=0;j<n;j++){
-        if(board[row][j]=='Q')
-        return false;
-       }
-
-       for(int i=row,j=col;i>=0&&j>=0;i--,j--){
-        if(board[i][j]=='Q')
-        return false;
-       }
-
-       for(int i=row,j=col;i<n&&j>=0;i++,j--){
-        if(board[i][j]=='Q')
-        return false;
-       }
-
-        return true;
-    }
-    
-    void solve(vector<string>&board,int col,int n,int &count){
-        //base case
-        if(col>=n){
-          count++;
-          return;
+    unordered_map<int,bool>colCheck;
+    unordered_map<int,bool>udCheck;
+    unordered_map<int,bool>ldCheck;
+    int solve(int n,vector<string>&temp,int row){
+        if(row==n){
+            return 1;
         }
-        //1 case 
-        for(int row=0;row<n;row++){
-            //hr roe quuen place karke dekhunga
-          if(isSafe(board,row,col,n)){
-            board[row][col]='Q';
-            solve(board,col+1,n,count);
-            //backtracking
-            board[row][col]='.';
-          }
-
+        int ans=0;
+        for(int col=0;col<n;col++){
+            if(!colCheck[col]&&!udCheck[row+col]&&!ldCheck[row-col]){
+                temp[row][col]='Q';
+                colCheck[col]=true;
+                udCheck[row+col]=true;
+                ldCheck[row-col]=true;
+                ans+=solve(n,temp,row+1);
+                colCheck[col]=false;
+                udCheck[row+col]=false;
+                ldCheck[row-col]=false;
+                temp[row][col]='.';
+            }
         }
+        return ans;
     }
-     
     int totalNQueens(int n) {
-        vector<string>board(n,string(n,'.'));
-        int count=0;
-        int col=0;
-        solve(board,col,n,count);
-        return count;
+        vector<string>temp(n,string(n,'.'));
+        return solve(n,temp,0);
     }
 };
