@@ -2,6 +2,7 @@ class Solution {
 public:
     void solve(string &digits,unordered_map<char,string>&mpp,int i,vector<string>&ans,string &temp){
     if(i==digits.size()){
+        if(temp.length()>0)
         ans.push_back(temp);
         return;
     }
@@ -16,7 +17,7 @@ public:
         mpp['2']="abc";mpp['3']="def";mpp['4']="ghi";mpp['5']="jkl";
         mpp['6']="mno";mpp['7']="pqrs";mpp['8']="tuv";mpp['9']="wxyz";
         vector<string>ans;
-        if(!digits.size()) return ans;
+        // if(!digits.size()) return ans;
         string temp="";
         solve(digits,mpp,0,ans,temp);
         return ans;
