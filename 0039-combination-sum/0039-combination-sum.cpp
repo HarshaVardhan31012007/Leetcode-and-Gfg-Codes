@@ -2,6 +2,8 @@ class Solution {
 public:
     void solve(vector<int>& candidates, int target,set<vector<int>>&ans,vector<int>&temp){
         if(target==0){
+            // you shouldnot sort temp array as it is passed buy reference 
+            //whatever element included may change duting backtracking // dont sort
             vector<int>a(temp.begin(),temp.end());
             sort(a.begin(),a.end());
             ans.insert(a);
