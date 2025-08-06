@@ -20,8 +20,8 @@ public:
         int mid=s+(e-s)/2;
         int l=solve(nums,s,mid);
         int r=solve(nums,mid+1,e);
-        int curr=func(nums,s,mid,e);
-        return max(curr,max(l,r));
+        int crossBorderSum=func(nums,s,mid,e);
+        return max(crossBorderSum,max(l,r));
     }
     int maxSubArray(vector<int>& nums) {
         return solve(nums,0,nums.size()-1);
