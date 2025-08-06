@@ -1,21 +1,29 @@
 class Solution {
 public:
-    int maxSubArray(vector<int>& nums) {
-        return maxSubArray(nums, 0, nums.size()-1);
+    int func(vector<int>&nums,int s,int mid,int e){
+        int sum=0;int maxi1=INT_MIN;
+        for(int i=mid;i>=s;i--){
+            sum+=nums[i];
+            maxi1=max(maxi1,sum);
+        }
+        sum=0;int maxi2=INT_MIN;
+        for(int j=mid+1;j<=e;j++){
+           sum+=nums[j];
+           maxi2=max(maxi2,sum);
+        }
+        return maxi1+maxi2;
     }
-    int maxSubArray(vector<int>& A, int L, int R){
-        if(L > R) return INT_MIN;
-        int mid = (L + R) / 2, leftSum = 0, rightSum = 0;int sum1=0;
-        for(int i=mid-1;i>=L;i--){
-            sum1 += A[i];
-            leftSum=max(leftSum, sum1);
-            }
-            int sum2=0;
-        for(int i = mid+1; i <= R; i++){
-            sum2 += A[i];
-            rightSum = max(rightSum, sum2); 
-            }
-       return max({maxSubArray(A, L, mid-1), maxSubArray(A, mid+1, R), leftSum + A[mid] + rightSum} );
-    }	
-    	
+    int solve(vector<int>&nums,int s,int e){
+        if(s==e){
+            return nums[s];
+        }
+        int mid=s+(e-s)/2;
+        int l=solve(nums,s,mid);
+        int r=solve(nums,mid+1,e);
+        int curr=func(nums,s,mid,e);
+        return max(curr,max(l,r));
+    }
+    int maxSubArray(vector<int>& nums) {
+        return solve(nums,0,nums.size()-1);
+    }
 };
