@@ -10,8 +10,7 @@ public:
         else{
             char ch=toupper(s[i]);
             solve(s,i+1,ans,temp+ch);
-            ch=tolower(s[i]);
-            solve(s,i+1,ans,temp+ch);
+            solve(s,i+1,ans,temp+(char)tolower(s[i]));
         }
     }
     vector<string> letterCasePermutation(string s) {
