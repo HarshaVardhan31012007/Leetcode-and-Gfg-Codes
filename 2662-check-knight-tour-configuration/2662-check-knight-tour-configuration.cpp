@@ -1,24 +1,17 @@
 class Solution {
 public:
-    bool solve(vector<vector<int>>& grid,int r,int c,int n,int expVal){
-        if(r<0||r>=n||c<0||c>=n||grid[r][c]!=expVal){
-            return false;
-        }
-        if(expVal==n*n-1){
-            return true;
-        }
-        int ans1=solve(grid,r-2,c+1,n,expVal+1);
-        int ans2=solve(grid,r-1,c+2,n,expVal+1);
-        int ans3=solve(grid,r+1,c+2,n,expVal+1);
-        int ans4=solve(grid,r+2,c+1,n,expVal+1);
-        int ans5=solve(grid,r+2,c-1,n,expVal+1);
-        int ans6=solve(grid,r+1,c-2,n,expVal+1);
-        int ans7=solve(grid,r-1,c-2,n,expVal+1);
-        int ans8=solve(grid,r-2,c-1,n,expVal+1);
-        return ans1||ans2||ans3||ans4||ans5||ans6||ans7||ans8;
+    bool solve(vector<vector<int>>& grid,int row,int col,int count){
+        if(count==(grid.size()*grid.size())) return true;
+        if(row<0||col<0||row>=grid.size()||col>=grid[0].size()||grid[row][col]==-1||grid[row][col]!=count) return false;
+        int temp=grid[row][col];
+        grid[row][col]=-1;
+        bool ans=solve(grid,row+1,col+2,count+1)||solve(grid,row-1,col+2,count+1)||solve(grid,row+2,col+1,count+1)||solve(grid,row-2,col+1,count+1)||solve(grid,row+2,col-1,count+1)||solve(grid,row-2,col-1,count+1)||solve(grid,row+1,col-2,count+1)||solve(grid,row-1,col-2,count+1);
+        grid[row][col]=temp;
+        return ans;
     }
     bool checkValidGrid(vector<vector<int>>& grid) {
-        int ans=solve(grid,0,0,grid.size(),0);
+        int row=0;int col=0;int count=0;
+        bool ans=solve(grid,row,col,count);
         return ans;
     }
 };
