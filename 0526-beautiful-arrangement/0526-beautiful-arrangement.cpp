@@ -23,25 +23,24 @@
 //     }
 // };
 
-
 class Solution {
 public:
-    int solve(vector<int>&nums,int n,int k){
-        if(k==n+1) {
+    int solve(vector<int>& nums, int n, int k) {
+        if (k == n + 1) {
             return 1;
         }
-        int ans=0;
-        for(int j=1;j<=n;j++){
-                if(nums[j]==0&&(j%k==0||k%j==0)){
-                nums[j]=k;
-                ans+=solve(nums,n,k+1);
-                nums[j]=0;
-                }
+        int ans = 0;
+        for (int j = 1; j <= n; j++) {
+            if (nums[j] == 0 && (j % k == 0 || k % j == 0)) {
+                nums[j] = k;
+                ans += solve(nums, n, k + 1);
+                nums[j] = 0;
+            }
         }
         return ans;
     }
     int countArrangement(int n) {
-       vector<int>nums(n+1);
-       return solve(nums,n,1);
+        vector<int> nums(n + 1);
+        return solve(nums, n, 1);
     }
 };
