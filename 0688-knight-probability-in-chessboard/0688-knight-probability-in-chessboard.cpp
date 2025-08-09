@@ -6,7 +6,7 @@ public:
         if(k==0) {
             return 1;
         }
-        if(mpp[k].count(n*row+col)) return mpp[k][n*row+col];
+        if(mpp[k][n*row+col]) return mpp[k][n*row+col];
         return mpp[k][n*row+col]=(solve(n,k-1,row+1,col-2)+solve(n,k-1,row-1,col-2)+solve(n,k-1,row-2,col-1)+solve(n,k-1,row+2,col-1)+solve(n,k-1,row-2,col+1)+solve(n,k-1,row+2,col+1)+solve(n,k-1,row+1,col+2)+solve(n,k-1,row-1,col+2))/8.0;
     }
     double knightProbability(int n, int k, int row, int col) {
