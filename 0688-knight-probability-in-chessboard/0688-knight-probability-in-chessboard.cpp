@@ -1,5 +1,7 @@
 class Solution {
 public:
+     // here there is no visited matrix we can go back also thagt is also one of the posssible way to stay on board//imp
+   
     // unordered_map<int,unordered_map<int,double>>mpp;
     // double solve(int n,int k,int row,int col){
     //     if(row<0||col<0||row>=n||col>=n) return 0;
