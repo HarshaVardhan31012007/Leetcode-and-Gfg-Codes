@@ -15,7 +15,7 @@ public:
     }
     bool canDistribute(vector<int>& nums, vector<int>& quantity) {
         sort(quantity.rbegin(),quantity.rend());
-        unordered_map<int,int>mpp;
+        map<int,int>mpp;
         for(auto &num:nums){
             mpp[num]++;
         }
