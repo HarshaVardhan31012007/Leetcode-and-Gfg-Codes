@@ -15,10 +15,11 @@ class Solution {
            h=max(h,mat[i][m-1]);
        }
        int ans=-1;
-       int left=(n*m)/2;
+       int left=(n*m+1)/2;
        while(l<=h){
            int mid=(l+h)/2;
-           if(find(mat,mid)>left){
+          // if(find(mat,mid)>left){
+          if(find(mat,mid)>=left){
                ans=mid;
                h=mid-1;
            }
