@@ -11,6 +11,7 @@
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
+        //M1 //1234 // 3 is ans // odd same ans
         //   ListNode* slow=head;
         //   ListNode* fast=head;
         //   while(fast!=NULL){
@@ -22,13 +23,16 @@ public:
         //   }
         //   return slow;
 
-
+        //M2//1234 // 2 is ans//odd same ans
          ListNode* slow=head;
-          ListNode* fast=head;
+         ListNode* fast=head;
           while(fast&&fast->next){
             fast=fast->next->next;
             slow=slow->next;
           }
           return slow;
+
+        // ListNode *slow
+        // return solve()
     }
 };
