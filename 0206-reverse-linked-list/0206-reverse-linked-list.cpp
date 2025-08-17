@@ -1,42 +1,28 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 class Solution {
 public:
-    // ListNode* solve(ListNode* &prev,ListNode* &curr){
-    //     if(curr==NULL){
-    //     // one way if use void
-    //     //   head=prev;
-    //     //    second way if use ListNode*
-    //         return prev;
-    //     }
-    //     ListNode* forward=curr->next;
-    //     curr->next=prev;
-    //     prev=curr;
-    //     curr=forward;
-    //     return solve(prev,curr);
-    // //or return solve(curr,forward);
-    // }
-    ListNode* reverseList(ListNode* head) {
-        // ListNode* prev=NULL;
-        // ListNode* curr=head;
-        // ListNode* reverseLinkedlist=solve(prev,curr);
-        // return reverseLinkedlist;
-        // ListNode *prev=NULL;
-        // ListNode *curr=head;
-        // while(curr!=NULL){
-        //     ListNode* forward=curr->next;
-        //     curr->next=prev;
-        //     prev=curr;
-        //     curr=forward;
-        // }
-        // return prev;
-        //method 3
-        if(head==NULL||head->next==NULL){
-            return head;
+    void solve(ListNode *&prev,ListNode *&curr){
+        if(curr==NULL){
+            return;
         }
-        ListNode *chotahead=reverseList(head->next);
-
-        head->next->next=head;
-        head->next=NULL;
-
-        return chotahead;
+        ListNode* forward=curr->next;
+        curr->next=prev;
+        prev=curr;
+        curr=forward;
+        solve(prev,curr);
+    }
+    ListNode* reverseList(ListNode* head) {
+        ListNode *prev=NULL;ListNode *curr=head;
+        solve(prev,curr);
+        return prev;
     }
 };
