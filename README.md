@@ -165,6 +165,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1397-search-suggestions-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1397-search-suggestions-system) |
+| [1402-count-square-submatrices-with-all-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1489-pizza-with-3n-slices](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1489-pizza-with-3n-slices) |
 | [1503-reducing-dishes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1503-reducing-dishes) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1510-find-lucky-integer-in-an-array) |
@@ -480,6 +481,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1290-make-array-strictly-increasing](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1290-make-array-strictly-increasing) |
 | [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
+| [1402-count-square-submatrices-with-all-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1475-maximum-sum-bst-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1475-maximum-sum-bst-in-binary-tree) |
@@ -507,6 +509,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0240-search-a-2d-matrix-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0240-search-a-2d-matrix-ii) |
 | [0898-transpose-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0898-transpose-matrix) |
 | [1036-rotting-oranges](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1036-rotting-oranges) |
+| [1402-count-square-submatrices-with-all-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1753-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-path-with-minimum-effort) |
 | [2108-minimize-the-difference-between-target-and-chosen-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2108-minimize-the-difference-between-target-and-chosen-elements) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2244-number-of-laser-beams-in-a-bank) |
