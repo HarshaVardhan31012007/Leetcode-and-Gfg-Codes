@@ -10,46 +10,48 @@
  */
 class Solution {
 public:
-    int getLength(ListNode *head){
-        ListNode *temp=head;
-        int len=0;
-        while(temp!=NULL){
-            len++;
-            temp=temp->next;
-        }
-        return len;
+    int getLength(ListNode* head){
+       ListNode* temp=head;
+       int len=0;
+       while(temp!=NULL){
+           len++;
+           temp=temp->next;
+       }
+       return len;
     }
     ListNode* reverseKGroup(ListNode* head, int k) {
-        //base cases
-        //empty case
-        if(head==NULL){
+            int length=getLength(head);
+            if(length<k) return head;
+            ListNode* prev=NULL;
+            ListNode* curr=head;
+            for(int i=0;i<k;i++){
+                 ListNode* forward=curr->next;
+                 curr->next=prev;
+                 prev=curr;
+                 curr=forward;
+            }
+            head->next=curr;
+            ListNode *t=head;
+            head=prev;
+            prev=t;
+            length-=k;
+            if(length<k) return head;
+            while(length>=k){
+                 ListNode* temp=curr;
+                 ListNode* temp1=prev;
+                 for(int i=0;i<k;i++){
+                 ListNode* forward=curr->next;
+                 curr->next=prev;
+                 prev=curr;
+                 curr=forward;
+                }
+                temp->next=curr;
+                temp1->next=prev;
+                ListNode *t=temp;
+                temp=prev;
+                prev=t;
+                length-=k;
+            }
             return head;
-        }
-        //single node case
-        if(head->next==NULL){
-            return head;
-        }
-        //length less than k
-        int len=getLength(head);
-        if(len<k){
-            return head;
-        }
-        // 1 case
-        ListNode *prev=NULL;
-        ListNode *curr=head;
-        int position=0;
-        while(position<k){
-            ListNode *forward=curr->next;
-            curr->next=prev;
-            prev=curr;
-            curr=forward;
-            position++;
-        }
-        //recursive calls
-       // if(curr!=NULL){//no need
-            ListNode *recursivehead=reverseKGroup(curr,k);
-            head->next=recursivehead;
-        //}
-        return prev;
     }
 };
