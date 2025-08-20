@@ -29,21 +29,37 @@ public:
         // }
         // return head;
 
-
-         if(head==NULL||head->next==NULL) return head;
+        if(head==NULL||head->next==NULL) return head;
         ListNode* prev=head;
         ListNode* curr=head->next;
         while(curr!=NULL){
             if(prev->val!=curr->val){
-               prev->next=curr;
-               prev=curr;
-               curr=curr->next;
+                 prev=prev->next;
             }
             else{
-            curr=curr->next;
+            prev->next=curr->next;
+            curr->next=NULL;
+            delete curr;
             }
+            curr=prev->next;
         }
-        prev->next=NULL;
         return head;
+
+
+        //  if(head==NULL||head->next==NULL) return head;
+        // ListNode* prev=head;
+        // ListNode* curr=head->next;
+        // while(curr!=NULL){
+        //     if(prev->val!=curr->val){
+        //        prev->next=curr;
+        //        prev=curr;
+        //        curr=curr->next;
+        //     }
+        //     else{
+        //     curr=curr->next;
+        //     }
+        // }
+        // prev->next=NULL;
+        // return head;
     }
 };
