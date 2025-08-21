@@ -46,15 +46,38 @@ public:
     // }
 
 
-     int getLength(ListNode* head){
-        int len=0;
-        while(head!=NULL){
-            len++;
-            head=head->next;
-        }
-        return len;
-    }
-    vector<ListNode*> splitListToParts(ListNode* head, int k) {
+    
+    // vector<ListNode*> splitListToParts(ListNode* head, int k) {
+    //     int length=0;
+    //     ListNode* temp=head;
+    //     while(temp!=NULL){
+    //     length++;
+    //     temp=temp->next;
+    //     }
+    //     int each=length/k;
+    //     int rem=length%k;
+    //     vector<ListNode*>ans;
+    //     temp=head;
+    //     while(k--){
+    //         int l=each;
+    //         ans.push_back(temp);
+    //         ListNode* prev=NULL;
+    //         while(temp!=NULL&&l--){
+    //             prev=temp;
+    //             temp=temp->next;
+    //         }
+    //         if(rem>0) {
+    //             prev=temp;
+    //             temp=temp->next;
+    //             rem--;
+    //         }
+    //         if(prev) prev->next=NULL;
+    //     }
+    //     return ans;
+    // }
+
+
+     vector<ListNode*> splitListToParts(ListNode* head, int k) {
         int length=0;
         ListNode* temp=head;
         while(temp!=NULL){
@@ -63,22 +86,17 @@ public:
         }
         int each=length/k;
         int rem=length%k;
-        vector<ListNode*>ans;
+        vector<ListNode*>ans(k,nullptr);
         temp=head;
-        while(k--){
-            int l=each;
-            ans.push_back(temp);
-            ListNode* prev=NULL;
-            while(temp!=NULL&&l--){
-                prev=temp;
+        for(int i=0;i<k&&temp;i++){
+            int l=each+(rem-->0?1:0);
+            ans[i]=temp;
+            for(int j=0;j<l-1;j++){
                 temp=temp->next;
             }
-            if(rem>0) {
-                prev=temp;
-                temp=temp->next;
-                rem--;
-            }
-            if(prev) prev->next=NULL;
+            auto nextsp=temp->next;
+            temp->next=NULL;
+            temp=nextsp;
         }
         return ans;
     }
