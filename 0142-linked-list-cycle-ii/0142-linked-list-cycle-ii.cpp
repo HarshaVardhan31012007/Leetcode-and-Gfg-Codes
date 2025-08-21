@@ -23,20 +23,19 @@ public:
         }
         return nullptr;
     }
-    ListNode* getsp(ListNode* slow,ListNode* fast,ListNode* &prev){
-         while(slow!=fast){
-             prev=slow;
-             slow=slow->next;
-             fast=fast->next;
-         }
-         return slow;
-    }
     ListNode *detectCycle(ListNode *head) {
         ListNode *prev=NULL;
         ListNode *hasCycle=detect(head,prev);
         if(!hasCycle)
         return nullptr;
-        ListNode* sp=getsp(hasCycle,head,prev);
-        return sp;
+        ListNode* slow=hasCycle;
+        ListNode* fast=head;
+        while(slow!=fast){
+             prev=slow;
+             slow=slow->next;
+             fast=fast->next;
+         }
+         prev->next=NULL;
+         return slow;
     }
 };
