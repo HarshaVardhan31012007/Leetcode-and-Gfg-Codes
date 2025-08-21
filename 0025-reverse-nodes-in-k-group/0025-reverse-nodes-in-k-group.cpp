@@ -76,7 +76,7 @@ public:
                  prev=curr;
                  curr=forward;
             }
-            if(curr){
+            if(curr){// no need because if curr is NULL then length < k  return NULL
                 ListNode* recHead=reverseKGroup(curr,k);
                 head->next=recHead;
             }
