@@ -8,41 +8,35 @@
  */
 class Solution {
 public:
-ListNode *hasCycle(ListNode *head){
-     ListNode *slow=head;
-        ListNode *fast=head;
-        while(fast!=NULL){
-           fast=fast->next;
-           if(fast!=NULL){
-            fast=fast->next;
-            slow=slow->next;
-            if(fast==slow){
-                return slow;
+    ListNode *detect(ListNode* &head,ListNode* &prev){
+        ListNode* s=head;
+        ListNode* f=head;
+        while(f!=NULL){
+            f=f->next;
+            if(f!=NULL){
+                prev=s;
+                f=f->next;
+                s=s->next;
+                if(s==f)
+                return s;
             }
-           }
         }
         return nullptr;
-}
+    }
+    ListNode* getsp(ListNode* slow,ListNode* fast,ListNode* &prev){
+         while(slow!=fast){
+             prev=slow;
+             slow=slow->next;
+             fast=fast->next;
+         }
+         return slow;
+    }
     ListNode *detectCycle(ListNode *head) {
-        //  unordered_map<ListNode*,bool>mpp;
-        //  ListNode *temp=head;
-        // while(temp!=NULL){
-        //     if(mpp[temp]==true){
-        //         return temp;
-        //     }
-        //     mpp[temp]=true;
-        //     temp=temp->next;
-        // }
-        // return nullptr; 
-
-        ListNode *fast=hasCycle(head);
-        if(!fast)
-        return NULL;
-        ListNode *slow=head;
-        while(slow!=fast){
-            fast=fast->next;
-            slow=slow->next;
-        }
-        return slow;
+        ListNode *prev=NULL;
+        ListNode *hasCycle=detect(head,prev);
+        if(!hasCycle)
+        return nullptr;
+        ListNode* sp=getsp(hasCycle,head,prev);
+        return sp;
     }
 };
