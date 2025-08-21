@@ -36,6 +36,13 @@ public:
              fast=fast->next;
          }
          prev->next=NULL;
+         //or
+        //  ListNode* temp=hasCycle;// it will not work if slow==fast eqaul point and 
+        // loop starting point is same // or complete loop(no node is outside loop)
+        //  while(temp->next!=slow){
+        //     temp=temp->next;
+        //  }
+        //  temp->next=NULL
          return slow;
     }
 };
