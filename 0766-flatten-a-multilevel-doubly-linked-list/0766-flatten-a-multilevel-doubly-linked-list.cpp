@@ -11,36 +11,22 @@ public:
 
 class Solution {
 public:
-    Node* solve(Node *head){
-        //no need
-        //  if(!head)
-        // return NULL;
-        auto it=head;
-        auto tail=it;//for tracking tail node//due to this empty case also runs
-        while(it){
-            if(it->child){
-                Node *childTail=solve(it->child);
-                Node *temp=it->next;
-                it->next=it->child;
-                it->child=NULL;
-                it->next->prev=it;
-                childTail->next=temp;
-                if(temp!=NULL){
-                    temp->prev=childTail;
-                }
-            }
-            tail=it;
-            it=it->next;
-        }
-        return tail;
-    }
     Node* flatten(Node* head) {
-        //no need
-        // if(!head)
-        // return NULL;
-
-       solve(head);
-
-       return head;
+        if(head==NULL) return NULL;
+        if(head->child){
+          Node* temp=head->next;
+          head->child->prev=head;
+          head->next=flatten(head->child);
+          head->child=NULL;
+          Node* p=head;
+          while(p->next!=NULL)
+          p=p->next;
+          p->next=temp;
+          if(temp)
+          temp->prev=p;
+        }
+        else
+        head->next=flatten(head->next);
+        return head;
     }
 };
