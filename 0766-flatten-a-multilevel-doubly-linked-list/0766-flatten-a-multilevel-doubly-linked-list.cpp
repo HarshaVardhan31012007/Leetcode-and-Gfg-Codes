@@ -54,8 +54,6 @@ public:
             it=it->next;
             }
         }
-        if(tail)
-        cout<<tail->val<<endl;
         return tail;
     }
     Node* flatten(Node* head) {
