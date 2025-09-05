@@ -9,7 +9,7 @@
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        // this is wrong because when it is becoming null at in that iteration you should move to head
+        // this is wrong because when it is becoming null at in that iteration you should move to head// here null as one case not treaten because if it isnull we are moving to head && as well as one forward two times we are moving // so incorrect
         // ListNode* a=headA;
         // ListNode* b=headB;
         // while(a!=b){
@@ -33,7 +33,7 @@ public:
         // return a;
 
         ListNode* a=headA;
-        ListNode* b=headB;
+        ListNode* b=headB;// here when you see correctly whenever we get one null,in same step we are going to head so that it is treated as equal move// edge case when there is no intersection // when both null at a time that means no intersection return null
         while(a!=b){
             a=a->next;
             b=b->next;
@@ -43,7 +43,13 @@ public:
         }
         return a;
 
-
+        // in this case we are treating null as one node in our moves
+        //one move only in each step
+        // move to null treated as one step
+        //moving from null to head is also one step
+        // for each two lists,always null is an intersection 
+        //we will get ans which is first intersection
+        //if first intersection is null that means no intersection of lists
         // ListNode *d1=headA;
         // ListNode *d2=headB;
         // while(d1!=d2){
