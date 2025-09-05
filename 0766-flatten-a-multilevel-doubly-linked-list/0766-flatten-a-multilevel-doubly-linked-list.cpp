@@ -33,6 +33,11 @@ public:
 
 
     Node* solve(Node* head){
+        //If you observe carefully,for reach sub problem we need tail of chid
+         //so use while to traverse and find tail for each subproblem
+         //it&&it->next consition in while is not correct because 1 null 2 null 3 null int his case 
+         //it didn't even go to loop// use it for traversing and tail for tracking tail node
+         //like prev and curr
         Node* it=head;
         Node* tail=NULL;
         while(it){
