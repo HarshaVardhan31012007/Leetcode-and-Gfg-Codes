@@ -38,8 +38,6 @@ public:
         while(it){
             if(it->child){
                 Node* childTail=solve(it->child);
-                cout<<it->val<<endl;
-                cout<<childTail->val<<endl;
                 childTail->next=it->next;
                 if(it->next)
                 it->next->prev=childTail;
