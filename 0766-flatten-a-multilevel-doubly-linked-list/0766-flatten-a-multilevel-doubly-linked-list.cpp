@@ -44,7 +44,7 @@ public:
             if(it->child){
                 Node* childTail=solve(it->child);
                 childTail->next=it->next;
-                if(it->next)
+                if(it->next)// because 1 null 2 3 null case check
                 it->next->prev=childTail;
                 it->next=it->child;
                 it->child->prev=it;
