@@ -1,11 +1,9 @@
-//{ Driver Code Starts
-#include <bits/stdc++.h>
-using namespace std;
-
-struct Node {
+/*
+class Node {
+public:
     int data;
-    struct Node *next;
-    struct Node *bottom;
+    Node* next;
+    Node* bottom;
 
     Node(int x) {
         data = x;
@@ -13,109 +11,40 @@ struct Node {
         bottom = NULL;
     }
 };
-
-void printList(Node *Node) {
-    while (Node != NULL) {
-        printf("%d ", Node->data);
-        Node = Node->bottom;
-    }
-    printf("\n");
-}
-
-
-// } Driver Code Ends
-/* Node structure  used in the program
-
-struct Node{
-    int data;
-    struct Node * next;
-    struct Node * bottom;
-
-    Node(int x){
-        data = x;
-        next = NULL;
-        bottom = NULL;
-    }
-
-};
 */
 
 class Solution {
   public:
-    Node *merge(Node *a,Node *b){
-        if(!a)return b;
-        if(!b)return a;
-        Node *ans=NULL;
-        if(a->data<b->data){
-            ans=a;
-            ans->bottom=merge(a->bottom,b);
+    Node *flatten(Node *root) {
+        if(!root) return root;
+        flatten(root->next);
+        if(root->bottom&&root->next){
+                Node* it1=root->next;
+                Node* it2=root->bottom;
+                Node* it=root;
+                while(it1&&it2){
+                    if(it1->data<=it2->data){
+                        it->bottom=it1;
+                        it=it->bottom;
+                        it1=it1->bottom;
+                    } else{
+                        it->bottom=it2;
+                        it=it->bottom;
+                        it2=it2->bottom;
+                    }
+                }
+                if(it1){
+                    it->bottom=it1;
+                }
+                if(it2){
+                    it->bottom=it2;
+                }
         }
-        else{
-            ans=b;
-            ans->bottom=merge(a,b->bottom);
+        else if(root->next){
+            root->bottom=root->next;
+            root->next=NULL;
         }
-        return ans;
-    }
-    // Function which returns the  root of the flattened linked list.
-    Node *flatten(Node *head) {
-        if(head==NULL){
-            return 0;
-        }
-        Node *mergeLL=merge(head,flatten(head->next));
-        return mergeLL;
+        //cout<<root->data<<endl;
+        return root;
     }
 };
-
-
-//{ Driver Code Starts.
-
-int main() {
-    int t;
-    cin >> t;
-    while (t--) {
-        int n;
-        vector<int> work;
-        string input;
-        getline(cin, input); // Read the entire line for the array elements
-        getline(cin, input); // Read the entire line for the array elements
-        stringstream ss(input);
-        int number;
-        while (ss >> number) {
-            work.push_back(number);
-        }
-        n = work.size();
-
-        Node *head = NULL;
-        Node *pre = NULL;
-
-        for (int i = 0; i < n; i++) {
-            int m = work[i] - 1;
-            int data;
-            cin >> data;
-            Node *temp = new Node(data);
-            if (head == NULL) {
-                head = temp;
-                pre = temp;
-            } else {
-                pre->next = temp;
-                pre = temp;
-            }
-
-            Node *preB = temp;
-            for (int j = 0; j < m; j++) {
-                int temp_data;
-                cin >> temp_data;
-                Node *tempB = new Node(temp_data);
-                preB->bottom = tempB;
-                preB = tempB;
-            }
-        }
-
-        Solution ob;
-        Node *root = ob.flatten(head);
-        printList(root);
-    }
-    return 0;
-}
-
-// } Driver Code Ends
