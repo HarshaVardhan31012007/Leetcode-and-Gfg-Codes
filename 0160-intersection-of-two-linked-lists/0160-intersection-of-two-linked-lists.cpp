@@ -9,12 +9,25 @@
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        ListNode *d1=headA;
-        ListNode *d2=headB;
-        while(d1!=d2){
-            d1=d1==NULL?headB:d1->next;
-            d2=d2==NULL?headA:d2->next;
+        // this is wrong because when it is becoming null at in that iteration you should move to head
+        ListNode* a=headA;
+        ListNode* b=headB;
+        while(a!=b){
+            if(!a) a=headB;
+            if(!b) b=headA;
+            if(a==b) return a;
+            a=a->next;
+            b=b->next;
         }
-        return d1;
+        return a;
+
+
+        // ListNode *d1=headA;
+        // ListNode *d2=headB;
+        // while(d1!=d2){
+        //     d1=d1==NULL?headB:d1->next;
+        //     d2=d2==NULL?headA:d2->next;
+        // }
+        // return d1;
     }
 };
