@@ -42,6 +42,42 @@ public:
 
 
 
+    //  vector<int> nodesBetweenCriticalPoints(ListNode* head) {
+    //     if(!head||!head->next||!head->next->next||!head->next->next->next) return {-1,-1};
+    //     ListNode* temp=head->next;
+    //     ListNode* prev=head;
+    //     int pos=1;
+    //     int mini=INT_MAX;
+    //     int maxi=INT_MIN;
+    //     int firstpos=0;
+    //     int lastpos=0;
+    //     while(temp->next!=NULL){
+    //         if(prev->val<temp->val&&temp->val>temp->next->val){
+    //             if(!firstpos) 
+    //             firstpos=pos;
+    //             else
+    //             mini=min(mini,pos-lastpos);
+    //             lastpos=pos;
+    //         }
+    //         else if(prev->val>temp->val&&temp->val<temp->next->val){
+    //             if(!firstpos) 
+    //             firstpos=pos;
+    //             else
+    //             mini=min(mini,pos-lastpos);
+    //             lastpos=pos;
+    //         }
+    //         pos++;
+    //         prev=temp;
+    //         temp=temp->next;
+    //     }
+    //     if(firstpos!=lastpos)
+    //     maxi=max(maxi,lastpos-firstpos);
+    //     if(mini==INT_MAX) mini=-1;
+    //     if(maxi==INT_MIN) maxi=-1;
+    //     return {mini,maxi};
+    // }
+
+
      vector<int> nodesBetweenCriticalPoints(ListNode* head) {
         if(!head||!head->next||!head->next->next||!head->next->next->next) return {-1,-1};
         ListNode* temp=head->next;
@@ -49,29 +85,25 @@ public:
         int pos=1;
         int mini=INT_MAX;
         int maxi=INT_MIN;
-        int firstpos=0;
-        int lastpos=0;
+        int firstCP=0;
+        int lastCP=0;
         while(temp->next!=NULL){
-            if(prev->val<temp->val&&temp->val>temp->next->val){
-                if(!firstpos) 
-                firstpos=pos;
-                else
-                mini=min(mini,pos-lastpos);
-                lastpos=pos;
+            bool isCP=(prev->val<temp->val&&temp->val>temp->next->val||
+prev->val>temp->val&&temp->val<temp->next->val);
+            if(isCP&&!firstCP){
+                firstCP=pos;
+                lastCP=pos;
             }
-            else if(prev->val>temp->val&&temp->val<temp->next->val){
-                if(!firstpos) 
-                firstpos=pos;
-                else
-                mini=min(mini,pos-lastpos);
-                lastpos=pos;
+            else if(isCP){
+                mini=min(mini,pos-lastCP);
+                lastCP=pos;
             }
             pos++;
             prev=temp;
             temp=temp->next;
         }
-        if(firstpos!=lastpos)
-        maxi=max(maxi,lastpos-firstpos);
+        if(firstCP!=lastCP)
+        maxi=max(maxi,lastCP-firstCP);
         if(mini==INT_MAX) mini=-1;
         if(maxi==INT_MIN) maxi=-1;
         return {mini,maxi};
