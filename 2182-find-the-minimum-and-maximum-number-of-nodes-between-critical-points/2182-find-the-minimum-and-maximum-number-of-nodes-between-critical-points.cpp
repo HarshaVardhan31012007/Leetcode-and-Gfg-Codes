@@ -10,31 +10,68 @@
  */
 class Solution {
 public:
-    vector<int> nodesBetweenCriticalPoints(ListNode* head) {
+    // vector<int> nodesBetweenCriticalPoints(ListNode* head) {
+    //     if(!head||!head->next) return {-1,-1};
+    //     vector<int>criticalPoints;
+    //     ListNode* temp=head->next;
+    //     ListNode* prev=head;
+    //     int pos=1;
+    //     while(temp->next!=NULL){
+    //         if(prev->val<temp->val&&temp->val>temp->next->val){
+    //             criticalPoints.push_back(pos);
+    //         }
+    //         else if(prev->val>temp->val&&temp->val<temp->next->val){
+    //            criticalPoints.push_back(pos);
+    //         }
+    //         pos++;
+    //         prev=temp;
+    //         temp=temp->next;
+    //     }
+    //     int mini=INT_MAX;
+    //     int maxi=INT_MIN;
+    //     if(criticalPoints.size()>=2)
+    //     maxi=max(maxi,criticalPoints[criticalPoints.size()-1]-criticalPoints[0]);
+    //     for(int i=1;i<criticalPoints.size();i++){
+    //          int diff=criticalPoints[i]-criticalPoints[i-1];
+    //          mini=min(mini,diff);
+    //     }
+    //     if(mini==INT_MAX) mini=-1;
+    //     if(maxi==INT_MIN) maxi=-1;
+    //     return {mini,maxi};
+    // }
+
+
+
+     vector<int> nodesBetweenCriticalPoints(ListNode* head) {
         if(!head||!head->next) return {-1,-1};
-        vector<int>criticalPoints;
         ListNode* temp=head->next;
         ListNode* prev=head;
         int pos=1;
+        int mini=INT_MAX;
+        int maxi=INT_MIN;
+        int firstpos=0;
+        int lastpos=0;
         while(temp->next!=NULL){
             if(prev->val<temp->val&&temp->val>temp->next->val){
-                criticalPoints.push_back(pos);
+                if(!firstpos) 
+                firstpos=pos;
+                else
+                mini=min(mini,pos-lastpos);
+                lastpos=pos;
             }
             else if(prev->val>temp->val&&temp->val<temp->next->val){
-               criticalPoints.push_back(pos);
+                if(!firstpos) 
+                firstpos=pos;
+                else
+                mini=min(mini,pos-lastpos);
+                lastpos=pos;
             }
             pos++;
             prev=temp;
             temp=temp->next;
         }
-        int mini=INT_MAX;
-        int maxi=INT_MIN;
-        if(criticalPoints.size()>=2)
-        maxi=max(maxi,criticalPoints[criticalPoints.size()-1]-criticalPoints[0]);
-        for(int i=1;i<criticalPoints.size();i++){
-             int diff=criticalPoints[i]-criticalPoints[i-1];
-             mini=min(mini,diff);
-        }
+        if(firstpos!=lastpos)
+        maxi=max(maxi,lastpos-firstpos);
         if(mini==INT_MAX) mini=-1;
         if(maxi==INT_MIN) maxi=-1;
         return {mini,maxi};
