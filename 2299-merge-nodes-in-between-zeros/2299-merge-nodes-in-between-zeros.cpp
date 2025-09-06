@@ -49,12 +49,13 @@ public:
             else{
             sum+=temp->val;
             prev->next=temp->next;
-            // temp->next=NULL;
-            // delete temp;
+            temp->next=NULL;
+            delete temp;
             }
             temp=prev->next;
         }
         ListNode* finalans=ans->next;
+        //this is correct but online judge of leetcode after submitting it may use it
         // ans->next=NULL;
         // delete ans;
         return finalans;
