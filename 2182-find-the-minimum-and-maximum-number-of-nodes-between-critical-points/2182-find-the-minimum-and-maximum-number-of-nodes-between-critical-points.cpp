@@ -43,7 +43,7 @@ public:
 
 
      vector<int> nodesBetweenCriticalPoints(ListNode* head) {
-        if(!head||!head->next) return {-1,-1};
+        if(!head||!head->next||!head->next->next) return {-1,-1};
         ListNode* temp=head->next;
         ListNode* prev=head;
         int pos=1;
