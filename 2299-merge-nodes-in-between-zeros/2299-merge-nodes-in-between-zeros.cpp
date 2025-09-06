@@ -10,27 +10,53 @@
  */
 class Solution {
 public:
+    // ListNode* mergeNodes(ListNode* head) {
+    //     ListNode* temp=head;
+    //     ListNode* ans=new ListNode(-1);
+    //     ListNode* it=ans;
+    //     int sum=0;
+    //     while(temp!=NULL){
+    //         if(temp->val==0){
+    //             if(sum!=0){
+    //             it->next=new ListNode(sum);
+    //             it=it->next;
+    //             sum=0;
+    //             }
+    //         }
+    //         else
+    //         sum+=temp->val;
+    //         temp=temp->next;
+    //     }
+    //     it->next=NULL;
+    //     ListNode* finalans=ans->next;
+    //     ans->next=NULL;
+    //     delete ans;
+    //     return finalans;
+    // }
+
+
     ListNode* mergeNodes(ListNode* head) {
-        ListNode* temp=head;
-        ListNode* ans=new ListNode(-1);
-        ListNode* it=ans;
+        ListNode* ans=head;
+        ListNode* prev=head;
+        ListNode* temp=head->next;
         int sum=0;
         while(temp!=NULL){
             if(temp->val==0){
-                if(sum!=0){
-                it->next=new ListNode(sum);
-                it=it->next;
+                temp->val=sum;
+                prev=prev->next;
                 sum=0;
-                }
             }
-            else
+            else{
             sum+=temp->val;
-            temp=temp->next;
+            prev->next=temp->next;
+            temp->next=NULL;
+            delete temp;
+            }
+            temp=prev->next;
         }
-        it->next=NULL;
-        ListNode* finalans=ans->next;
-        ans->next=NULL;
-        delete ans;
-        return finalans;
+        // ListNode* finalans=ans->next;
+        // ans->next=NULL;
+        // delete ans;
+        return ans->next;
     }
 };
