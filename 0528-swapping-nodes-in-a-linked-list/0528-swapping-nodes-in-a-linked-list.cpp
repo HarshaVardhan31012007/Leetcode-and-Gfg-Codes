@@ -10,22 +10,20 @@
  */
 class Solution {
 public:
-    void solve(ListNode* head,int& k,int& k1,ListNode* &a,ListNode* &b){
+    void solve(ListNode* head,int& k,int& k1,ListNode* &a){
         if(!head) return;
         k--;
         if(k==0)
         a=head;
-        solve(head->next,k,k1,a,b);
+        solve(head->next,k,k1,a);
         k1--;
         if(k1==0)
-        b=head;
+        swap(head->val,a->val);
     }
     ListNode* swapNodes(ListNode* head, int k) {
         ListNode* a=NULL;
-        ListNode* b=NULL;
         int k1=k;
-        solve(head,k,k1,a,b);
-        swap(a->val,b->val);
+        solve(head,k,k1,a);
         return head;
     }
 };
