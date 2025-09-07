@@ -343,6 +343,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1087-longest-arithmetic-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1087-longest-arithmetic-subsequence) |
 | [1160-letter-tile-possibilities](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1160-letter-tile-possibilities) |
+| [1267-remove-zero-sum-consecutive-nodes-from-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1267-remove-zero-sum-consecutive-nodes-from-linked-list) |
 | [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1890-sum-of-beauty-of-all-substrings) |
@@ -815,6 +816,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
 | [0838-design-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0838-design-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0908-middle-of-the-linked-list) |
+| [1267-remove-zero-sum-consecutive-nodes-from-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1267-remove-zero-sum-consecutive-nodes-from-linked-list) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2299-merge-nodes-in-between-zeros) |
