@@ -10,20 +10,41 @@
  */
 class Solution {
 public:
-    void solve(ListNode* head,int& k,int& k1,ListNode* &a){
-        if(!head) return;
-        k--;
-        if(k==0)
-        a=head;
-        solve(head->next,k,k1,a);
-        k1--;
-        if(k1==0)
-        swap(head->val,a->val);
+    // void solve(ListNode* head,int& k,int& k1,ListNode* &a){
+    //     if(!head) return;
+    //     k--;
+    //     if(k==0)
+    //     a=head;
+    //     solve(head->next,k,k1,a);
+    //     k1--;
+    //     if(k1==0)
+    //     swap(head->val,a->val);
+    // }
+    // ListNode* swapNodes(ListNode* head, int k) {
+    //     ListNode* a=NULL;
+    //     int k1=k;
+    //     solve(head,k,k1,a);
+    //     return head;
+    // }
+
+
+    int getLength(ListNode* head){
+        if(!head) return 0;
+        return 1+getLength(head->next);
     }
     ListNode* swapNodes(ListNode* head, int k) {
+        int len=getLength(head);
         ListNode* a=NULL;
-        int k1=k;
-        solve(head,k,k1,a);
+        ListNode* temp=head;
+        for(int i=0;i<k-1;i++){
+           temp=temp->next;
+        }
+        a=temp;
+        temp=head;
+        for(int i=0;i<len-k;i++)
+        temp=temp->next;
+        //here temp is at kth node from end
+        swap(temp->val,a->val);
         return head;
     }
 };
