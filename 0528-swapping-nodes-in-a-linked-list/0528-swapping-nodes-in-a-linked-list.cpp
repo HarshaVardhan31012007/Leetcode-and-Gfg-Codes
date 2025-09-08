@@ -34,6 +34,7 @@ public:
     }
     ListNode* swapNodes(ListNode* head, int k) {
         int len=getLength(head);
+        if(len==0||((len&1)&&k==(len+1)/2)) return head;
         ListNode* a=NULL;
         ListNode* temp=head;
         for(int i=0;i<k-1;i++){
