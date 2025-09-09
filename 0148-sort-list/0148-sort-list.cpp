@@ -32,9 +32,17 @@ public:
 
 
     ListNode* findmid(ListNode* head){
-        ListNode* slow=head;
-        ListNode* fast=head;
-        while(fast&&fast->next&&fast->next->next){
+        // ListNode* slow=head;
+        // ListNode* fast=head;
+        // while(fast&&fast->next&&fast->next->next){
+        //     slow=slow->next;
+        //     fast=fast->next->next;
+        // }
+        // return slow;
+
+         ListNode* slow=head;
+        ListNode* fast=head->next;
+        while(fast&&fast->next){
             slow=slow->next;
             fast=fast->next->next;
         }
