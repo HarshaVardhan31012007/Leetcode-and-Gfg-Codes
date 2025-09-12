@@ -34,8 +34,6 @@ public:
         int leftl=i-prevs[i];
         int rightl=nexts[i]-i;
         long long int p=(leftl*rightl)%mod;
-        p=p%mod;
-        arr[i]=arr[i]%mod;
         p=(arr[i]*p)%mod;
         sum=(sum+p)%mod;
        }
