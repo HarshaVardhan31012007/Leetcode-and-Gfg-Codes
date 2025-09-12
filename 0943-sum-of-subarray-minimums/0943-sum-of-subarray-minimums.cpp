@@ -1,49 +1,44 @@
 class Solution {
 public:
-    auto findprevsmaller(vector<int>&arr){
-        vector<int>prev;
-        stack<int>st;
-        st.push(-1);
-        for(int i=0;i<arr.size();i++){
-            int element=arr[i];
-            while(st.top()!=-1&&arr[st.top()]>element){//equality hona if next no equality
-               st.pop();
-            }
-            prev.push_back(st.top());
-            st.push(i);
-        }
-        return prev;
-    }
-    auto findnextsmaller(vector<int>&arr){
-        //vector<int>next(arr.size(),-1);
-        vector<int>next;
-        stack<int>st;
-        st.push(-1);
+    void nextSmaller(vector<int>&arr,vector<int>&nexts){
+        stack<int>s;
+        s.push(arr.size());
         for(int i=arr.size()-1;i>=0;i--){
-            int element=arr[i];
-            while(st.top()!=-1&&arr[st.top()]>=element){//no equality if prev has eqaulity
-               st.pop();
+            while(s.top()!=arr.size()&&arr[s.top()]>arr[i]){
+                s.pop();
             }
-            next.push_back(st.top());
-            st.push(i);
+            nexts.push_back(s.top());
+            s.push(i);
+        } 
+    }
+    void prevSmaller(vector<int>&arr,vector<int>&prevs){
+        stack<int>s;
+        s.push(-1);
+        for(int i=0;i<arr.size();i++){
+        while(s.top()!=-1&&arr[s.top()]>=arr[i]){
+            s.pop();
         }
-        return next;
+        prevs.push_back(s.top());
+        s.push(i);
+        }
     }
     int sumSubarrayMins(vector<int>& arr) {
-        auto prev=findprevsmaller(arr);
-        auto next=findnextsmaller(arr);
-        //another way
-        reverse(next.begin(),next.end());
-        long long sum=0;
-        const int mod=1e9+7;
-        for(int i=0;i<arr.size();i++){
-            next[i]=next[i]==-1?arr.size():next[i];
-            int plen=i-prev[i];
-            int nlen=next[i]-i;
-           long long t=((plen%mod)*(nlen%mod))%mod;
-           long long ans=(t*arr[i])%mod;
-           sum=(sum+ans)%mod;
-        }
-        return sum;
+       vector<int>nexts;
+       int mod=1e9+7;
+       nextSmaller(arr,nexts);
+       reverse(nexts.begin(),nexts.end());
+       vector<int>prevs;
+       prevSmaller(arr,prevs);
+       long long int sum=0;
+       for(int i=0;i<arr.size();i++){
+        int leftl=i-prevs[i];
+        int rightl=nexts[i]-i;
+        long long int p=(leftl*rightl)%mod;
+        p=p%mod;
+        arr[i]=arr[i]%mod;
+        p=(arr[i]*p)%mod;
+        sum=(sum+p)%mod;
+       }
+       return sum%mod;
     }
 };
