@@ -1,94 +1,66 @@
 class Solution {
 public:
-    auto findprevsmaller(vector<int>&arr){
-        vector<int>prev;
-        stack<int>st;
-        st.push(-1);
-        for(int i=0;i<arr.size();i++){
-            int element=arr[i];
-            while(st.top()!=-1&&arr[st.top()]>element){//equality hona if next no equality
-               st.pop();
+    void nextSmaller(vector<int>&nums,vector<long long int>&nexts){
+        stack<long long int>s;
+        s.push(nums.size());
+        for(long long int i=nums.size()-1;i>=0;i--){
+            while(s.top()!=nums.size()&&nums[s.top()]>nums[i]){
+                s.pop();
             }
-            prev.push_back(st.top());
-            st.push(i);
-        }
-        return prev;
+            nexts.push_back(s.top());
+            s.push(i);
+         }
     }
-    auto findnextsmaller(vector<int>&arr){
-        //vector<int>next(arr.size(),-1);
-        vector<int>next;
-        stack<int>st;
-        st.push(-1);
-        for(int i=arr.size()-1;i>=0;i--){
-            int element=arr[i];
-            while(st.top()!=-1&&arr[st.top()]>=element){//no equality if prev has eqaulity
-               st.pop();
+    void prevSmaller(vector<int>&nums,vector<long long int>&prevs){
+           stack<int>s;
+           s.push(-1);
+           for(int i=0;i<nums.size();i++){
+            while(s.top()!=-1&&nums[s.top()]>=nums[i]){
+                s.pop();
             }
-            next.push_back(st.top());
-            st.push(i);
-        }
-        return next;
+            prevs.push_back(s.top());
+            s.push(i);
+           }
     }
-    long long int sumSubarrayMins(vector<int>& arr) {
-        auto prev=findprevsmaller(arr);
-        auto next=findnextsmaller(arr);
-        //another way
-        reverse(next.begin(),next.end());
-        long long sum=0;
-        for(int i=0;i<arr.size();i++){
-            next[i]=next[i]==-1?arr.size():next[i];
-            long int plen=i-prev[i];
-            long int nlen=next[i]-i;
-           sum=sum+(plen*nlen)*arr[i];
-        }
-        return sum;
-    }
-     auto findprevgreater(vector<int>&arr){
-        vector<int>prev;
-        stack<int>st;
-        st.push(-1);
-        for(int i=0;i<arr.size();i++){
-            int element=arr[i];
-            while(st.top()!=-1&&arr[st.top()]<element){//equality hona if next no equality
-               st.pop();
+    void nextGreater(vector<int>&nums,vector<long long int>&nextg){
+        stack<int>s;
+        s.push(nums.size());
+        for(int i=nums.size()-1;i>=0;i--){
+            while(s.top()!=nums.size()&&nums[s.top()]<nums[i]){
+                s.pop();
             }
-            prev.push_back(st.top());
-            st.push(i);
+            nextg.push_back(s.top());
+            s.push(i);
         }
-        return prev;
     }
-    auto findnextgreater(vector<int>&arr){
-        //vector<int>next(arr.size(),-1);
-        vector<int>next;
-        stack<int>st;
-        st.push(-1);
-        for(int i=arr.size()-1;i>=0;i--){
-            int element=arr[i];
-            while(st.top()!=-1&&arr[st.top()]<=element){//no equality if prev has eqaulity
-               st.pop();
+    void prevGreater(vector<int>&nums,vector<long long int>&prevg){
+        stack<int>s;
+        s.push(-1);
+        for(int i=0;i<nums.size();i++){
+            while(s.top()!=-1&&nums[s.top()]<=nums[i]){
+                s.pop();
             }
-            next.push_back(st.top());
-            st.push(i);
+            prevg.push_back(s.top());
+            s.push(i);
         }
-        return next;
-    }
-    long long int sumSubarrayMaxs(vector<int>& arr) {
-        auto prev=findprevgreater(arr);
-        auto next=findnextgreater(arr);
-        //another way
-        reverse(next.begin(),next.end());
-        long long sum=0;
-        for(int i=0;i<arr.size();i++){
-            next[i]=next[i]==-1?arr.size():next[i];
-            long long int plen=i-prev[i];
-            long long int nlen=next[i]-i;
-           sum=sum+(plen*nlen)*arr[i];
-        }
-        return sum;
     }
     long long subArrayRanges(vector<int>& nums) {
-        long long int sum1=sumSubarrayMins(nums);
-        long long int sum2=sumSubarrayMaxs(nums);
-        return sum2-sum1;
+        vector<long long int>nexts;
+        vector<long long int>prevs;
+        vector<long long int>nextg;
+        vector<long long int>prevg;
+        nextSmaller(nums,nexts);
+        reverse(nexts.begin(),nexts.end());
+        prevSmaller(nums,prevs);
+        nextGreater(nums,nextg);
+        reverse(nextg.begin(),nextg.end());
+        prevGreater(nums,prevg);
+        long long int large=0;
+        long long int small=0;
+        for(long long int i=0;i<nums.size();i++){
+            small+=((long long)nums[i])*(i-prevs[i])*(nexts[i]-i);
+            large+=(long long)nums[i]*(i-prevg[i])*(nextg[i]-i);
+        }
+        return large-small;
     }
 };
