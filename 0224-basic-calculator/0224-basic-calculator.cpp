@@ -1,46 +1,81 @@
 class Solution {
 public:
+     int power(char op){
+        if(op==')') return 3;
+        if(op=='+'||op=='-') return 1;
+        if(op=='*'||op=='/') return 2;
+        return -1;
+    }
     int calculate(string s) {
         stack<int>st;
-        int result=0;
-        int num=0;
-        int sign=1;
+        stack<char>s1;
+        bool flag=0;int ops=0;
         for(int i=0;i<s.length();i++){
-            //if(s[i]>='0'&&s[i]<='9')
-            if(isdigit(s[i])){
-               num=num*10+(s[i]-'0');
-            }
-            else if(s[i]=='+'){
-                result=result+num*sign;
-                sign=1;
-                num=0;
-            }
-            else if(s[i]=='-'){
-                cout<<sign<<endl;
-                result=result+num*sign;
-                cout<<result<<endl;
-                sign=-1;
-                num=0;
-            }
-            else if(s[i]=='('){
-                st.push(result);
-                st.push(sign);
-                result=0;
-                sign=1;
-              //  num=0;//no need
-            }
-            else if(s[i]==')'){
-                result+=sign*num;
-                num=0;
-                result*=st.top();
-                st.pop();
-                result+=st.top();
-                st.pop();
-                //sign=1;//no need
-            }
+              if(s[i]==' ') continue;
+              else if(s[i]=='('){
+                s1.push('(');
+              }
+              else if(isdigit(s[i])){
+                int num=0;
+                while(isdigit(s[i])){
+                    num=num*10+(s[i]-'0');
+                    i++;
+                }
+                st.push(num);
+                i--;
+              }
+              else{
+                if(s[i]!=')') ops++;
+                if(ops>st.size()&&s[i]=='-'){
+                   st.push(0);
+                   s1.push('-');
+                   continue;
+                }
+                while((s[i]==')'&&s1.top()!='(')||(!s1.empty()&&power(s[i])<=power(s1.top()))){
+                    int a=st.top();
+                    st.pop();
+                    int b=st.top();
+                    st.pop();
+                    char op=s1.top();
+                    s1.pop();
+                    ops--;
+                     switch(op){
+                    case '+':st.push(b+a);
+                    break;
+                    case '-':st.push(b-a);
+                    break;
+                    case '*':st.push(b*a);
+                    break;
+                    case '/':st.push(b/a);
+                    break;
+                    }
+                }
+                if(s[i]==')')
+                s1.pop();
+                else
+                s1.push(s[i]);
+              }
         }
-        result+=sign*num;
-
-        return result;
+                while(st.size()>1&&!s1.empty()){
+                    int a=st.top();
+                    st.pop();
+                    int b=st.top();
+                    st.pop();
+                    char op=s1.top();
+                    s1.pop();
+                    switch(op){
+                    case '+':st.push(b+a);
+                    break;
+                    case '-':st.push(b-a);
+                    break;
+                    case '*':st.push(b*a);
+                    break;
+                    case '/':st.push(b/a);
+                    break;
+                    }
+                }
+                if(s1.empty()) return st.top();
+                if(s1.top()=='-') return -st.top();
+                return -1;
     }
 };
