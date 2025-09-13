@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0189-rotate-array) |
 | [0204-count-primes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0204-count-primes) |
 | [0224-basic-calculator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0224-basic-calculator) |
+| [0227-basic-calculator-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0227-basic-calculator-ii) |
 | [0231-power-of-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0231-power-of-two) |
 | [0263-ugly-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0263-ugly-number) |
 | [0264-ugly-number-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0264-ugly-number-ii) |
@@ -579,6 +580,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0224-basic-calculator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0224-basic-calculator) |
+| [0227-basic-calculator-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0242-valid-anagram) |
 | [0273-integer-to-english-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0273-integer-to-english-words) |
 | [0345-reverse-vowels-of-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0345-reverse-vowels-of-a-string) |
@@ -629,6 +631,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0173-binary-search-tree-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0173-binary-search-tree-iterator) |
 | [0224-basic-calculator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0224-basic-calculator) |
 | [0225-implement-stack-using-queues](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0225-implement-stack-using-queues) |
+| [0227-basic-calculator-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0227-basic-calculator-ii) |
 | [0232-implement-queue-using-stacks](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0234-palindrome-linked-list) |
 | [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
