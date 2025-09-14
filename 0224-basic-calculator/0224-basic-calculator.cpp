@@ -109,12 +109,12 @@ public:
               }
               else if(s[i]==')'){
                  result+=sign*num;
-                 num=0;
                  int sign1=st.top();
                  st.pop();
                  result=st.top()+sign1*result;
                  st.pop();
                  sign=1;
+                 num=0;
               }
           }
           result+=sign*num;
