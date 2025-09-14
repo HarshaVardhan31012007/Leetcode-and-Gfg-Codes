@@ -68,11 +68,10 @@ public:
           int op='+';
           stack<int>st;
           for(int i=0;i<s.length();i++){
-              if(s[i]==' ') continue;
               if(isdigit(s[i])){
                 num=num*10+(s[i]-'0');
               }
-              else{
+              if(i==s.length()-1||(!isdigit(s[i])&&s[i]!=' ')){
                  if(op=='+'){
                      st.push(num);
                      num=0;
@@ -95,28 +94,6 @@ public:
                  }
                  op=s[i];
               }
-          }
-          if(op){
-            if(op=='+'){
-                     st.push(num);
-                     num=0;
-                 }
-                 else if(op=='-'){
-                    st.push(-num);
-                    num=0;
-                 }
-                 else if(op=='*'){
-                    int prevnum=st.top();
-                    st.pop();
-                    st.push(prevnum*num);
-                    num=0;
-                 }
-                 else if(op=='/'){
-                    int prevnum=st.top();
-                    st.pop();
-                    st.push(prevnum/num);
-                    num=0;
-                 }
           }
               int result=0;
               while(!st.empty()){
