@@ -605,6 +605,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0812-rotate-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0812-rotate-string) |
 | [0926-find-and-replace-pattern](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0926-find-and-replace-pattern) |
 | [0953-reverse-only-letters](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0953-reverse-only-letters) |
+| [0957-minimum-add-to-make-parentheses-valid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1160-letter-tile-possibilities](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1160-letter-tile-possibilities) |
 | [1250-longest-common-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1250-longest-common-subsequence) |
@@ -639,6 +640,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
 | [0937-online-stock-span](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0937-online-stock-span) |
 | [0943-sum-of-subarray-minimums](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0943-sum-of-subarray-minimums) |
+| [0957-minimum-add-to-make-parentheses-valid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1228-minimum-cost-tree-from-leaf-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1228-minimum-cost-tree-from-leaf-values) |
@@ -666,6 +668,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0680-valid-palindrome-ii) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0778-reorganize-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0778-reorganize-string) |
+| [0957-minimum-add-to-make-parentheses-valid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1228-minimum-cost-tree-from-leaf-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1228-minimum-cost-tree-from-leaf-values) |
 | [1285-balance-a-binary-search-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1285-balance-a-binary-search-tree) |
 | [1489-pizza-with-3n-slices](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1489-pizza-with-3n-slices) |
