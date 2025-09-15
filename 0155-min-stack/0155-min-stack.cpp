@@ -1,5 +1,6 @@
 class MinStack {
 public:
+
     // vector<pair<int,int>>v;
     // MinStack() {
         
@@ -27,34 +28,81 @@ public:
 
 
 
-    stack<int>s;
-    stack<int>s1;
+    // stack<int>s;
+    // stack<int>s1;
+    // MinStack() {
+        
+    // }
+    
+    // void push(int val) {
+    //     if(s.empty()){
+    //     s.push(val);
+    //     s1.push(val);
+    //     }
+    //     else{
+    //         s.push(val);
+    //         s1.push(min(s1.top(),val));
+    //     }
+    // }
+    
+    // void pop() {
+    //     s.pop();
+    //     s1.pop();
+    // }
+    
+    // int top() {
+    //     return s.top();
+    // }
+    // int getMin() {
+    //      return s1.top();
+    // }
+
+
+    long int mini;
+    stack<long int>s;
     MinStack() {
         
     }
     
-    void push(int val) {
+    void push(long int val) {
         if(s.empty()){
-        s.push(val);
-        s1.push(val);
-        }
-        else{
+            mini=val;
             s.push(val);
-            s1.push(min(s1.top(),val));
         }
+        else if(val<mini){
+            s.push(2*val-mini);
+            mini=val;
+        }
+        else
+        s.push(val);
     }
     
     void pop() {
+       if(s.top()>=mini){
         s.pop();
-        s1.pop();
+       }
+       else{
+        int beforepopmini=mini;
+        int afterpopmini=2*mini-s.top();
+        mini=afterpopmini;
+        //return beforepopmini
+        s.pop();
+       }
     }
     
     int top() {
-        return s.top();
+       if(s.top()>=mini)
+       return s.top();
+       else{
+          return mini;
+       }
     }
+    
     int getMin() {
-         return s1.top();
+        return mini;
     }
+
+
 };
 
 /**
