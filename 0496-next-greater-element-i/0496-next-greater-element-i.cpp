@@ -75,6 +75,7 @@ public:
          }
     }
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
+        //given all array values are unique// map keys should be unique
         unordered_map<int,int>mpp;
         nextGreater(nums2,mpp);
         vector<int>ans(nums1.size());
