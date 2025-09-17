@@ -43,8 +43,9 @@ public:
             greater.resize(len);
             greater[len-1]=0;
             }
-            else
+            else{
             greater[len-1]=st.top();
+            }
             len--;
         st.push(head->val);
     }
