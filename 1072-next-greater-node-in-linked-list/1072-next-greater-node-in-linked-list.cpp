@@ -29,25 +29,23 @@ public:
     //     nextGreater(head,ans,st);
     //     return vector(ans.rbegin(),ans.rend());
     // }
+
+
     void solve(ListNode* head,int &len,stack<int>&st,vector<int>&greater){
         if(!head) return;
         len++;
         solve(head->next,len,st,greater);
-        if(!head->next){
-        greater.resize(len);
-        greater[len-1]=0;
-        len--;
-        }
-        else{
             while(!st.empty()&&st.top()<=head->val){
                 st.pop();
             }
-            if(st.empty())
+            if(st.empty()){
+            if(greater.size()==0)
+            greater.resize(len);
             greater[len-1]=0;
+            }
             else
             greater[len-1]=st.top();
             len--;
-        }
         st.push(head->val);
     }
     vector<int> nextLargerNodes(ListNode* head) {
@@ -58,4 +56,7 @@ public:
         solve(head,len,st,greater);
         return greater;
     }
+
+
+    
 };
