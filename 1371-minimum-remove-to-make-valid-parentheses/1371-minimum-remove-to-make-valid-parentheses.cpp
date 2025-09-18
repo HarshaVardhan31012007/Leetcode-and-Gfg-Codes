@@ -29,9 +29,7 @@ public:
     //     return temp;
     // }
 
-
-
-     string minRemoveToMakeValid(string s) {
+    string minRemoveToMakeValid(string s) {
         stack<int>st;
         for(int i=0;i<s.length();i++){
             if(isalpha(s[i])) continue;
@@ -42,13 +40,12 @@ public:
                     st.pop();
                 }
                 else
-                s[i]='#';
+                st.push(i);
             }
         }
         while(!st.empty()){
-            int idx=st.top();
+            s[st.top()]='#';
             st.pop();
-            s[idx]='#';
         }
         string temp="";
         for(int i=0;i<s.length();i++){
@@ -58,4 +55,33 @@ public:
         }
         return temp;
     }
+
+
+    //  string minRemoveToMakeValid(string s) {
+    //     stack<int>st;
+    //     for(int i=0;i<s.length();i++){
+    //         if(isalpha(s[i])) continue;
+    //         if(s[i]=='(')
+    //         st.push(i);
+    //         else{
+    //             if(!st.empty()&&s[st.top()]=='('){
+    //                 st.pop();
+    //             }
+    //             else
+    //             s[i]='#';
+    //         }
+    //     }
+    //     while(!st.empty()){
+    //         int idx=st.top();
+    //         st.pop();
+    //         s[idx]='#';
+    //     }
+    //     string temp="";
+    //     for(int i=0;i<s.length();i++){
+    //         if(s[i]!='#'){
+    //             temp+=s[i];
+    //         }
+    //     }
+    //     return temp;
+    // }
 };
