@@ -59,6 +59,27 @@ public:
     // }
 
 
+    // vector<int> nextLargerNodes(ListNode* head) {
+    //     vector<int>arr;
+    //     ListNode* temp=head;
+    //     while(temp){
+    //        arr.push_back(temp->val);
+    //        temp=temp->next;
+    //     }
+    //     stack<int>st;
+    //     vector<int>ans(arr.size());
+    //     for(int i=arr.size()-1;i>=0;i--){
+    //         while(!st.empty()&&st.top()<=arr[i]) 
+    //         st.pop();
+    //         if(st.empty())
+    //         ans[i]=0;
+    //         else
+    //         ans[i]=st.top();
+    //         st.push(arr[i]);
+    //     }
+    //     return ans;
+
+
     vector<int> nextLargerNodes(ListNode* head) {
         vector<int>arr;
         ListNode* temp=head;
@@ -68,14 +89,13 @@ public:
         }
         stack<int>st;
         vector<int>ans(arr.size());
-        for(int i=arr.size()-1;i>=0;i--){
-            while(!st.empty()&&st.top()<=arr[i]) 
+        for(int i=0;i<arr.size();i++){
+           while(!st.empty()&&arr[i]>arr[st.top()]){
+            int idx=st.top();
+            ans[idx]=arr[i];
             st.pop();
-            if(st.empty())
-            ans[i]=0;
-            else
-            ans[i]=st.top();
-            st.push(arr[i]);
+           }
+           st.push(i);
         }
         return ans;
     }
