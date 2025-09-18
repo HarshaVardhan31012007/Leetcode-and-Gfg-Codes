@@ -15,23 +15,40 @@ public:
         // }
         // return st.size();
 
+        //  int ans=0;
+        //  for(int i=0;i<s.length();i++){
+        //     if(s[i]=='('){
+        //         st.push(s[i]);
+        //         ans++;
+        //     }
+        //     else{
+        //         if(!st.empty()&&st.top()=='('){
+        //         st.pop();
+        //         ans--;
+        //         }
+        //         else{
+        //         st.push(s[i]);
+        //         ans++;
+        //         }
+        //     }
+        // }
+        // return ans;
+
+
          int ans=0;
          for(int i=0;i<s.length();i++){
             if(s[i]=='('){
                 st.push(s[i]);
-                ans++;
             }
             else{
-                if(!st.empty()&&st.top()=='('){
+                if(!st.empty()){
                 st.pop();
-                ans--;
                 }
                 else{
-                st.push(s[i]);
                 ans++;
                 }
             }
         }
-        return ans;
+        return ans+st.size();
     }
 };
