@@ -1,19 +1,35 @@
 class StockSpanner {
 public:
-    int idx;
+    // int idx;
+    // stack<pair<int,int>>st;
+    // StockSpanner() {
+    //     idx=-1;
+    // }
+    
+    // int next(int price) {
+    //     while(!st.empty()&&st.top().second<=price){
+    //         st.pop();
+    //     }
+    //     int curr=st.empty()?-1:st.top().first;
+    //     idx++;
+    //     st.push({idx,price});
+    //     return idx-curr;
+    // }
+
+
     stack<pair<int,int>>st;
     StockSpanner() {
-        idx=-1;
+
     }
     
     int next(int price) {
+        int count=1;
         while(!st.empty()&&st.top().second<=price){
+            count+=st.top().first;
             st.pop();
         }
-        int curr=st.empty()?-1:st.top().first;
-        idx++;
-        st.push({idx,price});
-        return idx-curr;
+        st.push({count,price});
+        return count;
     }
 };
 
