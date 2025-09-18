@@ -13,10 +13,10 @@ public:
                 st.push(s[i]);
             }
         }
-        if(st.size()==0)
-        return 0;
-        if(st.size()==2)
-        return 1;
+        // if(st.size()==0)
+        // return 0;
+        // if(st.size()==2)
+        // return 1;
         return ceil(st.size()/4.0);
     }
 };
