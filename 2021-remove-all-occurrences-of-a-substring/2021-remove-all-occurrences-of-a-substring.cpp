@@ -26,10 +26,20 @@ public:
     //   return s;
 
 
+    // int i=0;int m=part.length();
+    // for(int j=0;j<s.length();j++){
+    //     s[i]=s[j];
+    //     if(i>=m-1&&s.substr(i-m+1,m)==part)
+    //     i=i-m;
+    //     i++;
+    // }
+    //    return s.substr(0,i);
+
+    
     int i=0;int m=part.length();
     for(int j=0;j<s.length();j++){
         s[i]=s[j];
-        if(i>=m-1&&s.substr(i-m+1,m)==part)
+        if(i>=m-1&&s.compare(i-m+1,m,part)==0)
         i=i-m;
         i++;
     }
