@@ -36,13 +36,22 @@ public:
     //    return s.substr(0,i);
 
     
-    int i=0;int m=part.length();
+    // int i=0;int m=part.length();
+    // for(int j=0;j<s.length();j++){
+    //     s[i]=s[j];
+    //     if(i>=m-1&&s.compare(i-m+1,m,part)==0)
+    //     i=i-m;
+    //     i++;
+    // }
+    //    return s.substr(0,i);
+
+
+    string temp="";
     for(int j=0;j<s.length();j++){
-        s[i]=s[j];
-        if(i>=m-1&&s.compare(i-m+1,m,part)==0)
-        i=i-m;
-        i++;
+        temp+=s[j];
+        if(temp.size()>=part.size()&&temp.compare(temp.size()-part.size(),part.size(),part)==0)
+        temp.erase(temp.end()-part.size(),temp.end());
     }
-       return s.substr(0,i);
+       return temp;
     }
 };
