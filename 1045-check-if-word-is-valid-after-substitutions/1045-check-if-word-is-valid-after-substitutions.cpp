@@ -51,18 +51,46 @@ public:
 
 
         
-       // if(s.size()==0) return true;
-        if(s=="") return true;
-       int idx=s.find("abc");
-        if(idx!=string::npos){
-            string l=s.substr(0,idx);
-            string r=s.substr(idx+3);
-            //don't do s=l+r and pass s
-            //because l+r creates one copy
-            //and s pass by value and again one copy
-            return isValid(l+r);
-            //only one copy
-        }
-        return false;
+    //    // if(s.size()==0) return true;
+    //     if(s=="") return true;
+    //    int idx=s.find("abc");
+    //     if(idx!=string::npos){
+    //         string l=s.substr(0,idx);
+    //         string r=s.substr(idx+3);
+    //         //don't do s=l+r and pass s
+    //         //because l+r creates one copy
+    //         //and s pass by value and again one copy
+    //         return isValid(l+r);
+    //         //only one copy
+    //     }
+    //     return false;
+
+
+
+       stack<char>st;
+       if(s[0]!='a') return false;
+       for(int i=0;i<s.length();i++){
+           if(s[i]=='a') st.push(s[i]);
+           else if(s[i]=='b'){
+                if(!st.empty()&&st.top()=='a')
+                st.push(s[i]);
+                else
+                return false;
+           }
+           else if(s[i]=='c'){
+                if(!st.empty()&&st.top()=='b'){
+                    st.pop();
+                    if(!st.empty()&&st.top()=='a'){
+                        st.pop();
+                    }
+                    else
+                    return false;
+                }
+                else
+                return false;
+           }
+       }
+       //return true// not correct aaaaa or aaabc it should be false not true
+       return st.empty();
     }
 };
