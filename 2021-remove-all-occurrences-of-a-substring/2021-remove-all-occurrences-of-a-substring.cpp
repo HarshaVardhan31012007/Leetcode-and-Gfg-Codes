@@ -35,7 +35,7 @@ public:
     // }
     //    return s.substr(0,i);
 
-    
+    //optimal
     // int i=0;int m=part.length();
     // for(int j=0;j<s.length();j++){
     //     s[i]=s[j];
