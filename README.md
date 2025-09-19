@@ -593,6 +593,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0242-valid-anagram) |
 | [0273-integer-to-english-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0273-integer-to-english-words) |
 | [0345-reverse-vowels-of-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0345-reverse-vowels-of-a-string) |
+| [0394-decode-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0394-decode-string) |
 | [0415-add-strings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0415-add-strings) |
 | [0443-string-compression](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0443-string-compression) |
 | [0474-ones-and-zeroes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0474-ones-and-zeroes) |
@@ -649,6 +650,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0232-implement-queue-using-stacks](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0234-palindrome-linked-list) |
 | [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
+| [0394-decode-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0394-decode-string) |
 | [0496-next-greater-element-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0503-next-greater-element-ii) |
 | [0937-online-stock-span](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0937-online-stock-span) |
@@ -767,6 +769,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0273-integer-to-english-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0273-integer-to-english-words) |
 | [0326-power-of-three](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0342-power-of-four) |
+| [0394-decode-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0394-decode-string) |
 | [0486-predict-the-winner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0486-predict-the-winner) |
 | [1013-fibonacci-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1013-fibonacci-number) |
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3600-find-the-k-th-character-in-string-game-i) |
