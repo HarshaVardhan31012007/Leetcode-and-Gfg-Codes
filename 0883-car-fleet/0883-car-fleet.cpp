@@ -32,12 +32,11 @@ public:
             double b=st.top();
             st.pop();
             double a=st.top();
-            st.pop();
             if(a<=b){
+                st.pop();
                 st.push(b);
             }else{
                count++;
-               st.push(a);
             }
          }
          return count+1;
