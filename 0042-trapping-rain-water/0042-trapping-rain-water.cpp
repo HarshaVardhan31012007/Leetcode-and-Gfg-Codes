@@ -26,10 +26,8 @@ public:
 
         vector<int>prevg(height.size(),-1);
         prevGreater(height,prevg);
-        cout<<"jkjnfi"<<endl;
         vector<int>nextg(height.size(),height.size());
         nextGreater(height,nextg);
-        cout<<"jkjnfi"<<endl;
         int ans=0;
         for(int i=0;i<height.size();i++){
             int h1=-1;
