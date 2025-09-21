@@ -65,20 +65,42 @@ public:
     // }
 
 
+    // int trap(vector<int>&height){
+    //     vector<int>prefix(height.size(),0);
+    //     prefix[0]=height[0];
+    //     for(int i=1;i<height.size();i++){
+    //        prefix[i]=max(height[i],prefix[i-1]);
+    //     }
+    //     vector<int>suffix(height.size(),0);
+    //     suffix[height.size()-1]=height[height.size()-1];
+    //     for(int i=height.size()-2;i>=0;i--){
+    //          suffix[i]=max(height[i],suffix[i+1]);
+    //     }
+    //     int watertrapped=0;
+    //     for(int i=0;i<height.size();i++){
+    //         watertrapped+=min(prefix[i],suffix[i])-height[i];
+    //     }
+    //     return watertrapped;
+
+
+
     int trap(vector<int>&height){
-        vector<int>prefix(height.size(),0);
-        prefix[0]=height[0];
-        for(int i=1;i<height.size();i++){
-           prefix[i]=max(height[i],prefix[i-1]);
-        }
-        vector<int>suffix(height.size(),0);
-        suffix[height.size()-1]=height[height.size()-1];
-        for(int i=height.size()-2;i>=0;i--){
-             suffix[i]=max(height[i],suffix[i+1]);
-        }
+        int l=0;
+        int r=height.size()-1;
+        int lmax=0;
+        int rmax=0;
         int watertrapped=0;
-        for(int i=0;i<height.size();i++){
-            watertrapped+=min(prefix[i],suffix[i])-height[i];
+        while(l<=r){
+            lmax=max(lmax,height[l]);
+            rmax=max(rmax,height[r]);
+            if(lmax<=rmax){
+                watertrapped+=lmax-height[l];
+                l++;
+            }
+            else{
+                 watertrapped+=rmax-height[r];
+                 r--;
+            }
         }
         return watertrapped;
     }
