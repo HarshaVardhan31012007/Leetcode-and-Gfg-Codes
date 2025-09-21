@@ -62,6 +62,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0037-sudoku-solver](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0040-combination-sum-ii) |
+| [0042-trapping-rain-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0045-jump-game-ii) |
 | [0046-permutations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0047-permutations-ii) |
@@ -237,6 +238,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0026-remove-duplicates-from-sorted-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0031-next-permutation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0031-next-permutation) |
+| [0042-trapping-rain-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0042-trapping-rain-water) |
 | [0061-rotate-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0088-merge-sorted-array) |
@@ -438,6 +440,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0010-regular-expression-matching](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0010-regular-expression-matching) |
 | [0022-generate-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0032-longest-valid-parentheses) |
+| [0042-trapping-rain-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0042-trapping-rain-water) |
 | [0044-wildcard-matching](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0044-wildcard-matching) |
 | [0045-jump-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0053-maximum-subarray) |
@@ -648,6 +651,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0020-valid-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0020-valid-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0032-longest-valid-parentheses) |
+| [0042-trapping-rain-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0042-trapping-rain-water) |
 | [0071-simplify-path](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0071-simplify-path) |
 | [0084-largest-rectangle-in-histogram](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0085-maximal-rectangle) |
@@ -971,6 +975,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Monotonic Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0085-maximal-rectangle) |
 | [0402-remove-k-digits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0402-remove-k-digits) |
