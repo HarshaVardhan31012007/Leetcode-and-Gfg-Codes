@@ -63,14 +63,12 @@ public:
         auto it=mpp.find(key);
         if(it==mpp.end())
         return -1;
-        int value=it->second->val;
-        deleteNode(it->second);
-        Node* newNode=new Node(key,value);
-        insertafterHead(head,newNode);
-        mpp[key]=newNode;
-        return value;
+        Node* ansNode=it->second;
+        deleteNode(ansNode);
+        addNode(ansNode);
+        return ansNode->val;
     }
-    void insertafterHead(Node* &head,Node* &newNode){
+    void addNode(Node* newNode){
          newNode->next=head->next;
          head->next=newNode;
          newNode->prev=head;
@@ -81,27 +79,28 @@ public:
         temp->next->prev=temp->prev;
         temp->next=NULL;
         temp->prev=NULL;
-        delete temp;
     }
     void put(int key, int value) {
         auto it=mpp.find(key);
         if(it!=mpp.end()){
-              deleteNode(it->second);
-              Node* newNode=new Node(key,value);
-              insertafterHead(head,newNode);
-              mpp[key]=newNode;
+              Node* curr=it->second;
+              curr->val=value;
+              deleteNode(curr);
+              addNode(curr);
         }
         else{
             if(mpp.size()<size){
             Node* newNode=new Node(key,value);
-            insertafterHead(head,newNode);
+            addNode(newNode);
             mpp[key]=newNode;
             }
             else{
                 mpp.erase(tail->prev->key);
-                deleteNode(tail->prev);
+                Node* temp=tail->prev;
+                deleteNode(temp);
+                delete temp;
                 Node* newNode=new Node(key,value);
-                insertafterHead(head,newNode);
+                addNode(newNode);
                 mpp[key]=newNode;
             }
         }
