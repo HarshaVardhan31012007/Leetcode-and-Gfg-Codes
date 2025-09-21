@@ -58,38 +58,76 @@ public:
 
 
 
+        // stack<int>st;
+        // for(int i=0;i<asteroids.size();i++){
+        //     bool destroy=false;
+        //     if(asteroids[i]>0)
+        //     st.push(asteroids[i]);
+        //     else{
+        //     if(st.empty()||st.top()<0)
+        //     st.push(asteroids[i]);
+        //     else{
+        //     while(!st.empty()&&asteroids[i]<0&&st.top()>0){
+        //         if(abs(asteroids[i])<st.top()){
+        //         destroy=true;
+        //         break;
+        //         }
+        //         else if(abs(asteroids[i])==st.top()){
+        //             destroy=true;
+        //             st.pop();
+        //             break;
+        //         }
+        //         else{
+        //             st.pop();
+        //         }
+        //     }
+        //     if(!destroy)
+        //     st.push(asteroids[i]);
+        //     }
+        //     }
+        // }
+        // vector<int>ans(st.size());
+        // int idx=st.size()-1;
+        // while(!st.empty()){
+        //     ans[idx--]=st.top();
+        //     st.pop();
+        // }
+        // return ans;
+
+
+
+
         stack<int>st;
-        for(int i=0;i<asteroids.size();i++){
-            bool destroy=false;
-            if(asteroids[i]>0)
+        for(int i=asteroids.size()-1;i>=0;i--){
+            if(asteroids[i]<0)
             st.push(asteroids[i]);
             else{
-            if(st.empty()||st.top()<0)
-            st.push(asteroids[i]);
-            else{
-            while(!st.empty()&&asteroids[i]<0&&st.top()>0){
-                if(abs(asteroids[i])<st.top()){
-                destroy=true;
-                break;
-                }
-                else if(abs(asteroids[i])==st.top()){
-                    destroy=true;
-                    st.pop();
-                    break;
-                }
+                if(st.empty()||st.top()>0)
+                st.push(asteroids[i]);
                 else{
-                    st.pop();
+                    bool destroy=false;
+                    while(!st.empty()&&st.top()<0&&asteroids[i]>0){
+                        if(abs(st.top())==asteroids[i]){
+                            st.pop();
+                            destroy=true;
+                            break;
+                        }
+                        else if(abs(st.top())>asteroids[i]){
+                            destroy=true;
+                            break;
+                        }
+                        else{
+                            st.pop();
+                        }
+                    }
+                    if(!destroy)
+                    st.push(asteroids[i]);
                 }
-            }
-            if(!destroy)
-            st.push(asteroids[i]);
-            }
             }
         }
-        vector<int>ans(st.size());
-        int idx=st.size()-1;
+        vector<int>ans;
         while(!st.empty()){
-            ans[idx--]=st.top();
+            ans.push_back(st.top());
             st.pop();
         }
         return ans;
