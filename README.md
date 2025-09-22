@@ -344,6 +344,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0355-design-twitter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0355-design-twitter) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
+| [0460-lfu-cache](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0460-lfu-cache) |
 | [0496-next-greater-element-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0496-next-greater-element-i) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0560-subarray-sum-equals-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0560-subarray-sum-equals-k) |
@@ -868,6 +869,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0234-palindrome-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0328-odd-even-linked-list) |
 | [0355-design-twitter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0355-design-twitter) |
+| [0460-lfu-cache](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0460-lfu-cache) |
 | [0528-swapping-nodes-in-a-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0528-swapping-nodes-in-a-linked-list) |
 | [0725-split-linked-list-in-parts](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0725-split-linked-list-in-parts) |
 | [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
@@ -973,6 +975,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0146-lru-cache) |
+| [0460-lfu-cache](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0460-lfu-cache) |
 | [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
 | [1582-design-browser-history](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1582-design-browser-history) |
 ## Monotonic Stack
@@ -1006,6 +1009,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0295-find-median-from-data-stream) |
 | [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
 | [0355-design-twitter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0355-design-twitter) |
+| [0460-lfu-cache](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0460-lfu-cache) |
 | [0676-implement-magic-dictionary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0676-implement-magic-dictionary) |
 | [0746-prefix-and-suffix-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0746-prefix-and-suffix-search) |
 | [0838-design-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0838-design-linked-list) |
