@@ -114,7 +114,7 @@ public:
             if(obj->isInteger())
             return true;
                  st.pop();
-                vector<NestedInteger>&v=obj->getList();
+                vector<NestedInteger>&v=obj->getList();// ampersand 
                 for(int i=v.size()-1;i>=0;i--){
                     st.push(&v[i]);
                 }
