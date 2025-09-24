@@ -66,28 +66,57 @@ public:
 
 
 
-    stack<NestedInteger>st;
+    // stack<NestedInteger>st;
+    // NestedIterator(vector<NestedInteger> &nestedList) {
+    //     for(int i=nestedList.size()-1;i>=0;i--){
+    //         st.push(nestedList[i]);
+    //     }
+    // }
+    
+    // int next() {
+    //      int ans=st.top().getInteger();
+    //      st.pop();
+    //      return ans;
+    // }
+
+    // bool hasNext() {
+    //     while(!st.empty()){
+    //         NestedInteger obj=st.top();
+    //         if(obj.isInteger())
+    //         return true;
+    //              st.pop();
+    //             vector<NestedInteger>v=obj.getList();
+    //             for(int i=v.size()-1;i>=0;i--){
+    //                 st.push(v[i]);
+    //             }
+    //     }
+    //     return false;
+    // }
+
+
+
+    stack<NestedInteger*>st;
     NestedIterator(vector<NestedInteger> &nestedList) {
         for(int i=nestedList.size()-1;i>=0;i--){
-            st.push(nestedList[i]);
+            st.push(&nestedList[i]);
         }
     }
     
     int next() {
-         int ans=st.top().getInteger();
+         int ans=st.top()->getInteger();
          st.pop();
          return ans;
     }
 
     bool hasNext() {
         while(!st.empty()){
-            NestedInteger obj=st.top();
-            if(obj.isInteger())
+            NestedInteger* obj=st.top();
+            if(obj->isInteger())
             return true;
                  st.pop();
-                vector<NestedInteger>v=obj.getList();
+                vector<NestedInteger>&v=obj->getList();
                 for(int i=v.size()-1;i>=0;i--){
-                    st.push(v[i]);
+                    st.push(&v[i]);
                 }
         }
         return false;
