@@ -126,7 +126,7 @@ public:
 
 
 
-    stack<NestedInteger*>st;
+   
     queue<int>q;
     void flatten(vector<NestedInteger> &nestedList){
            for(int i=0;i<nestedList.size();i++){
