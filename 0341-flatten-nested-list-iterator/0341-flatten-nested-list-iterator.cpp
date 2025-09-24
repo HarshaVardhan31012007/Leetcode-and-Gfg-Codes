@@ -18,47 +18,77 @@
 
 class NestedIterator {
 public:
-    vector<NestedInteger>v;
-    NestedIterator* it=NULL;
-    int i=0;
+    // vector<NestedInteger>v;
+    // NestedIterator* it=NULL;
+    // int i=0;
+    // NestedIterator(vector<NestedInteger> &nestedList) {
+    //     v=nestedList;
+    // }
+    
+    // int next() {
+    //    if(v[i].isInteger()){
+    //       return v[i++].getInteger();
+    //    }
+    //    else{
+    //         int ans=it->next();
+    //         return ans;
+    //    }
+    // }
+    // bool checkempty(vector<NestedInteger>&temp){
+    //     for(auto &x:temp){
+    //     if(x.isInteger()) return false;
+    //     if(!checkempty(x.getList())) return false;
+    //     }
+    //     return true;
+    // }
+    // bool hasNext() {
+    //     while(i<v.size()){
+    //        if(v[i].isInteger()) return true;
+
+    //        if(checkempty(v[i].getList())){
+    //         i++;
+    //         continue;
+    //        }
+
+    //        if(it==NULL)  
+    //        it=new NestedIterator(v[i].getList());
+
+    //        if(it->hasNext())
+    //         return true;
+
+    //         delete it;
+    //         it=NULL;
+    //         i++;
+    //     }
+    //     return false;
+    // }
+
+
+
+
+    stack<NestedInteger>st;
     NestedIterator(vector<NestedInteger> &nestedList) {
-        v=nestedList;
+        for(int i=nestedList.size()-1;i>=0;i--){
+            st.push(nestedList[i]);
+        }
     }
     
     int next() {
-       if(v[i].isInteger()){
-          return v[i++].getInteger();
-       }
-       else{
-            int ans=it->next();
-            return ans;
-       }
+         int ans=st.top().getInteger();
+         st.pop();
+         return ans;
     }
-    bool checkempty(vector<NestedInteger>&temp){
-        for(auto &x:temp){
-        if(x.isInteger()) return false;
-        if(!checkempty(x.getList())) return false;
-        }
-        return true;
-    }
+
     bool hasNext() {
-        while(i<v.size()){
-           if(v[i].isInteger()) return true;
-
-           if(checkempty(v[i].getList())){
-            i++;
-            continue;
-           }
-
-           if(it==NULL)
-           it=new NestedIterator(v[i].getList());
-
-           if(it->hasNext())
+        while(!st.empty()){
+            NestedInteger obj=st.top();
+            if(obj.isInteger())
             return true;
-
-            delete it;
-            it=NULL;
-            i++;
+                 st.pop();
+                vector<NestedInteger>v=obj.getList();
+                for(int i=v.size()-1;i>=0;i--){
+                    st.push(v[i]);
+                }
         }
         return false;
     }
