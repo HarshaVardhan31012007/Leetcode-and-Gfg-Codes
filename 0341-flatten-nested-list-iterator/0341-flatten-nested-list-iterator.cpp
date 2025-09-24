@@ -95,31 +95,60 @@ public:
 
 
 
+    // stack<NestedInteger*>st;
+    // NestedIterator(vector<NestedInteger> &nestedList) {
+    //     for(int i=nestedList.size()-1;i>=0;i--){
+    //         st.push(&nestedList[i]);
+    //     }
+    // }
+    
+    // int next() {
+    //      int ans=st.top()->getInteger();
+    //      st.pop();
+    //      return ans;
+    // }
+
+    // bool hasNext() {
+    //     while(!st.empty()){
+    //         NestedInteger* obj=st.top();
+    //         if(obj->isInteger())
+    //         return true;
+    //              st.pop();
+    //             vector<NestedInteger>&v=obj->getList();// ampersand //becuase
+    //             // we are maintain actual list otherwise copy bante hai fir before va nd after v they dont use know because that ias coipied
+    //             for(int i=v.size()-1;i>=0;i--){
+    //                 st.push(&v[i]);
+    //             }
+    //     }
+    //     return false;
+    // }
+
+
+
+
     stack<NestedInteger*>st;
+    queue<int>q;
+    void flatten(vector<NestedInteger> &nestedList){
+           for(int i=0;i<nestedList.size();i++){
+              if(nestedList[i].isInteger())
+              q.push(nestedList[i].getInteger());
+              else{
+                flatten(nestedList[i].getList());
+              }
+           }
+    }
     NestedIterator(vector<NestedInteger> &nestedList) {
-        for(int i=nestedList.size()-1;i>=0;i--){
-            st.push(&nestedList[i]);
-        }
+        flatten(nestedList);
     }
     
     int next() {
-         int ans=st.top()->getInteger();
-         st.pop();
+         int ans=q.front();
+         q.pop();
          return ans;
     }
 
     bool hasNext() {
-        while(!st.empty()){
-            NestedInteger* obj=st.top();
-            if(obj->isInteger())
-            return true;
-                 st.pop();
-                vector<NestedInteger>&v=obj->getList();// ampersand 
-                for(int i=v.size()-1;i>=0;i--){
-                    st.push(&v[i]);
-                }
-        }
-        return false;
+       return !q.empty();
     }
 };
 
