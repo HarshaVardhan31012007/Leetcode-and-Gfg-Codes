@@ -1,33 +1,26 @@
 class Solution {
 public:
     string predictPartyVictory(string senate) {
-        int position=0;
-        queue<int>q1;
-        queue<int>q2;
-        for(;position<senate.length();position++){
-            if(senate[position]=='R'){
-                q1.push(position);
-            }
-             if(senate[position]=='D'){
-                q2.push(position);
-            }
+        queue<int>radiantQ;
+        queue<int>direQ;
+        int position;
+        for(position=0;position<senate.size();position++){
+             if(senate[position]=='R') radiantQ.push(position);
+             else direQ.push(position);
         }
-        while(!q1.empty()&&!q2.empty()){
-            int a=q1.front();
-            q1.pop();
-            int b=q2.front();
-            q2.pop();
-            //equality case not there practically
-            if(a<b){
-                q1.push(position++);
-            }
-            else{
-                q2.push(position++);
-            }
+        while(!radiantQ.empty()&&!direQ.empty()){
+              int front1=radiantQ.front();
+              radiantQ.pop();
+              int front2=direQ.front();
+              direQ.pop();
+              if(front1<front2){
+                    radiantQ.push(position++);
+              }
+              else{
+                   direQ.push(position++);
+              }
         }
-        if(!q1.empty())
-        return "Radiant";
-
+        if(!radiantQ.empty()) return "Radiant";
         return "Dire";
     }
 };
