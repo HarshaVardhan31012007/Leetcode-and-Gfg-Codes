@@ -7,6 +7,9 @@ public:
           prefix[0]=nums[0];
           for(int i=1;i<nums.size();i++){
               prefix[i]=nums[i]+prefix[i-1];
+
+
+              
           }
           int minLength=INT_MAX;
           for(int j=0;j<nums.size();j++){
