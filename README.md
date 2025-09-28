@@ -520,6 +520,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1952-minimum-sideway-jumps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1952-minimum-sideway-jumps) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2108-minimize-the-difference-between-target-and-chosen-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2108-minimize-the-difference-between-target-and-chosen-elements) |
+| [2408-number-of-people-aware-of-a-secret](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2408-number-of-people-aware-of-a-secret) |
 ## Matrix
 |  |
 | ------- |
@@ -566,6 +567,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0898-transpose-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0898-transpose-matrix) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2299-merge-nodes-in-between-zeros) |
+| [2408-number-of-people-aware-of-a-secret](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 ## String
@@ -1030,6 +1032,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0649-dota2-senate](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0649-dota2-senate) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0969-number-of-recent-calls](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0969-number-of-recent-calls) |
+| [2408-number-of-people-aware-of-a-secret](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2408-number-of-people-aware-of-a-secret) |
 ## Monotonic Queue
 |  |
 | ------- |
