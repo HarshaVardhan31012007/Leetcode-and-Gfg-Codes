@@ -68,30 +68,47 @@ public:
 
 
     int peopleAwareOfSecret(int n, int delay, int forget) {
-            int day=1;
-            int mod=1e9+7;
-            deque<pair<int,int>>dq;
-            deque<pair<int,int>>dq1;
-            dq.push_back({1,1});
-            int count=0;
-            int count1=1;
-            while(day<=n){
-                if(!dq1.empty()&&day-dq1.front().first==forget){
-                    count=(count-dq1.front().second+mod)%mod;
-                    dq1.pop_front();
-                }
-                if(!dq.empty()&&day-dq.front().first==delay){
-                   dq1.push_back(dq.front());
-                   count=(count+dq.front().second)%mod;
-                   count1=(count1-dq.front().second+mod)%mod;
-                   dq.pop_front();
-                }
-                if(!dq1.empty()){
-                    dq.push_back({day,count});
-                    count1=(count1+count)%mod;
-                }
-                day++;
+            // int day=1;
+            // int mod=1e9+7;
+            // deque<pair<int,int>>dq;
+            // deque<pair<int,int>>dq1;
+            // dq.push_back({1,1});
+            // int count=0;
+            // int count1=1;
+            // while(day<=n){
+            //     if(!dq1.empty()&&day-dq1.front().first==forget){
+            //         count=(count-dq1.front().second+mod)%mod;
+            //         dq1.pop_front();
+            //     }
+            //     if(!dq.empty()&&day-dq.front().first==delay){
+            //        dq1.push_back(dq.front());
+            //        count=(count+dq.front().second)%mod;
+            //        count1=(count1-dq.front().second+mod)%mod;
+            //        dq.pop_front();
+            //     }
+            //     if(!dq1.empty()){
+            //         dq.push_back({day,count});
+            //         count1=(count1+count)%mod;
+            //     }
+            //     day++;
+            // }
+            // return (count+count1)%mod;
+
+
+            vector<int>dp(n+1,0);
+            dp[1]=1;int mod=1e9+7;
+            int share=0;
+            for(int i=2;i<=n;i++){
+                  if(i-delay>0)
+                  share=(share+dp[i-delay])%mod;
+                  if(i-forget>0)
+                  share=(share-dp[i-forget]+mod)%mod;
+                  dp[i]=share;
             }
-            return (count+count1)%mod;
+            int ans=0;
+            for(int i=n-forget+1;i<=n;i++){
+                ans=(ans+dp[i])%mod;
+            }
+            return ans;
         }
 };
