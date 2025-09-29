@@ -9,9 +9,15 @@ public:
     //         this->next=NULL;
     //     }
     // };
+
+
+    // int solve(int n,int k){
+    //     if(n==1) return 1;
+    //     return (solve(n-1,k)+k-1)%n+1;
+    // }
     int solve(int n,int k){
-        if(n==1) return 1;
-        return (solve(n-1,k)+k-1)%n+1;
+        if(n==1) return 0;
+        return (solve(n-1,k)+k)%n;
     }
     int findTheWinner(int n, int k) {
         // queue<int>q;
@@ -54,6 +60,6 @@ public:
 
 
         //Recursion
-        return solve(n,k);
+        return solve(n,k)+1;
     }
 };
