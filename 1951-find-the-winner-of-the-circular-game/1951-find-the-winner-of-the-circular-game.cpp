@@ -70,10 +70,17 @@ public:
 
        //iterative
        //optimizing recursive logic
-       int ans=0;//i=1 answer we follow 0-indexed order later we convert to 1-indexed
+    //    int ans=0;//i=1 answer we follow 0-indexed order later we convert to 1-indexed
+    //    for(int i=2;i<=n;i++){
+    //         ans=(ans+k)%i;//calculating curr ans using prev ans
+    //    }
+    //    return ans+1;
+
+
+       int ans=1;
        for(int i=2;i<=n;i++){
-            ans=(ans+k)%i;//calculating curr ans using prev ans
+            ans=(ans+k-1)%i+1;
        }
-       return ans+1;
+       return ans;
     }
 };
