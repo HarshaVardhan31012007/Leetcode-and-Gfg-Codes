@@ -10,15 +10,17 @@ public:
     //     }
     // };
 
-
+    //1-indexed based
     // int solve(int n,int k){
     //     if(n==1) return 1;
     //     return (solve(n-1,k)+k-1)%n+1;
     // }
-    int solve(int n,int k){
-        if(n==1) return 0;
-        return (solve(n-1,k)+k)%n;
-    }
+
+    //0-indexed based
+    // int solve(int n,int k){
+    //     if(n==1) return 0;
+    //     return (solve(n-1,k)+k)%n;
+    // }
     int findTheWinner(int n, int k) {
         // queue<int>q;
         // for(int i=1;i<=n;i++){
@@ -60,6 +62,18 @@ public:
 
 
         //Recursion
-        return solve(n,k)+1;
+        //1-indexed
+        //return solve(n,k);
+        //0-indexed
+       // return solve(n,k)+1;//+1 is to convert 0 to 1 indexed
+
+
+       //iterative
+       //optimizing recursive logic
+       int ans=0;//i=1 answer we follow 0-indexed order later we convert to 1-indexed
+       for(int i=2;i<=n;i++){
+            ans=(ans+k)%i;//calculating curr ans using prev ans
+       }
+       return ans+1;
     }
 };
