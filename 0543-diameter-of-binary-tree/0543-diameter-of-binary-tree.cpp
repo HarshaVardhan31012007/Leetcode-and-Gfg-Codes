@@ -11,59 +11,46 @@
  */
 class Solution {
 public:
-//     int getHeight(TreeNode *root){
-//         if(root==NULL){
-//             return NULL;
-//         }
-//         int lans=getHeight(root->left);
-//         int rans=getHeight(root->right);
-//         return max(lans,rans)+1;
-//   }
+    // int solve(TreeNode* root,int &maxi){
+    //      if(!root) return -1;
+    //      int l=solve(root->left,maxi);
+    //      int r=solve(root->right,maxi);
+    //      maxi=max(maxi,l+r+2);
+    //      return max(l,r)+1;
+    // }
+    // int diameterOfBinaryTree(TreeNode* root) {
+    //     int maxi=INT_MIN;
+    //     solve(root,maxi);
+    //     return maxi;
+    // }
 
 
-//method 2
-// int D=0;
-// int height(TreeNode *root){
-//     if(!root)return 0;
-//     int lh=height(root->left);
-//     int rh=height(root->right);
-//     D=max(D,lh+rh);
-//     return max(lh,rh)+1;
-// }
-    
-     //method 3
-     pair<int,int>solve(TreeNode *root){
-        if(root==NULL){
-            pair<int,int>p=make_pair(0,0);
-            return p;
-        }
-        pair<int,int>left=solve(root->left);
-        pair<int,int>right=solve(root->right);
-        int op1=left.first;
-        int op2=right.first;
-        int op3=left.second+right.second;
-        pair<int,int>ans;
-        ans.first=max(op1,max(op2,op3));
-        ans.second=max(left.second,right.second)+1;
-        return ans;
+    // int solve(TreeNode* root,int &maxi){
+    //      if(!root) return 0;
+    //      int l=solve(root->left,maxi);
+    //      int r=solve(root->right,maxi);
+    //      maxi=max(maxi,l+r);
+    //      return max(l,r)+1;
+    // }
+    // int diameterOfBinaryTree(TreeNode* root) {
+    //     int maxi=INT_MIN;
+    //     solve(root,maxi);
+    //     return maxi;
+    // }
+
+
+
+    int solve(TreeNode* root){
+         if(!root) return 0;
+         int l=solve(root->left);
+         int r=solve(root->right);
+         return max(l,r)+1;
     }
     int diameterOfBinaryTree(TreeNode* root) {
-        // if(root==NULL){
-        //     return 0;
-        // }
-        // int option1=diameterOfBinaryTree(root->left);
-        // int option2=diameterOfBinaryTree(root->right);
-        // int option3=getHeight(root->left)+getHeight(root->right);
-        // int ans=max(option1,max(option2,option3));
-        // return ans;
-
-
-        //method 2
-        //height(root);
-        //return D;
-
-        //method 3
-        pair<int,int>p=solve(root);
-        return p.first;
+        if(!root) return 0;
+        int l=diameterOfBinaryTree(root->left);
+        int r=diameterOfBinaryTree(root->right);
+        int option=solve(root->left)+solve(root->right);
+        return max({l,r,option});
     }
 };
