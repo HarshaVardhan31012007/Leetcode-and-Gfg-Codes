@@ -1,5 +1,5 @@
 /**
- * Definition for a binary tree node.
+ * Definition for a binary tree Node.
  * struct TreeNode {
  *     int val;
  *     TreeNode *left;
@@ -10,24 +10,18 @@
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        if(root==NULL){
-            return NULL;
-        }
-        if(root==p||root==q){
-            return root;
-        }
-        TreeNode *lef=lowestCommonAncestor(root->left,p,q);
-        TreeNode *righ=lowestCommonAncestor(root->right,p,q);
-        if(lef==NULL&&righ==NULL){
-            return NULL;
-        }
-         else if(lef!=NULL&&righ==NULL){
-            return lef;
-        }
-         else if(lef==NULL&&righ!=NULL){
-            return righ;
-        }
-        // agar up to this reach menas p and q are eual to left and right
+        if(root==NULL) return NULL;
+        if(root==p||root==q) return root;
+        TreeNode* l=lowestCommonAncestor(root->left,p,q);
+        TreeNode* r=lowestCommonAncestor(root->right,p,q);
+        if(l!=NULL&&r!=NULL)
         return root;
+        else if(l!=NULL){
+            return l;
+        }
+        else if(r!=NULL){
+            return r;
+        }
+        return NULL;
     }
 };
