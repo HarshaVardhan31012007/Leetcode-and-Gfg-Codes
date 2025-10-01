@@ -11,60 +11,52 @@
  */
 class Solution {
 public:
-    int getMax(TreeNode *root){
-        if(root==NULL){
-            return -1;
-        }
-        while(root->right!=NULL)
-        root=root->right;
+    int getMin(TreeNode* root){
+        while(root->left!=NULL)
+        root=root->left;
         return root->val;
     }
     TreeNode* deleteNode(TreeNode* root, int key) {
-        if(root==NULL){
-            return NULL;
-        }
+        if(root==NULL) return NULL;
         if(root->val==key){
-           if(root->left==NULL&&root->right==NULL){
-            delete root;
-            return NULL;
-           }
-           else if(root->left!=NULL&&root->right==NULL){
-            TreeNode *leftchild=root->left;
-            root->left=NULL;
-            delete root;
-            return leftchild;
-           }
-           else if(root->left==NULL&&root->right!=NULL){
-             TreeNode *rightchild=root->right;
-            root->right=NULL;
-            delete root;
-            return rightchild;
-           }
-           else if(root->left!=NULL&&root->right!=NULL){
-                // int maxVal=getMax(root->left);
-                // root->val=maxVal;
-                // root->left=deleteNode(root->left,maxVal);
-                // return root;
-
-                //inplace
-                TreeNode *rightscan=root->right;
-                while(rightscan->left!=NULL){
-                    rightscan=rightscan->left;
-                }
-                 TreeNode *rc=root->right;
-                rightscan->left=root->left;
+            if(!root->left&&!root->right){
                 delete root;
-                return rc;
-           }
-        }
-          else{
-            if(root->val<key){
-                root->right=deleteNode(root->right,key);
+                return NULL;
+            }
+            else if(root->left&&!root->right){
+                TreeNode* leftChild=root->left;
+                root->left=NULL;
+                delete root;
+                return leftChild;
+            }
+            else if(!root->left&&root->right){
+                TreeNode* rightChild=root->right;
+                root->right=NULL;
+                delete root;
+                return rightChild;
             }
             else{
-                root->left=deleteNode(root->left,key);
+                // int minVal=getMin(root->right);
+                // root->val=minVal;
+                // root->right=deleteNode(root->right,minVal);
+                // return root;
+
+
+                TreeNode* rscan=root->right;
+                while(rscan->left!=NULL){
+                    rscan=rscan->left;
+                }
+                TreeNode* rc=root->right;
+                rscan->left=root->left;
+                delete root;
+                return rc;
             }
-          }
-            return root;
+        }
+        else if(root->val<key){
+            root->right=deleteNode(root->right,key);
+        }
+        else
+        root->left=deleteNode(root->left,key);
+        return root;
     }
 };
