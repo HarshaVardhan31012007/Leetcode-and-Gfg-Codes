@@ -1,0 +1,35 @@
+class Solution {
+public:
+    int triangleNumber(vector<int>& nums) {
+//         int a,b,c;
+//         int count=0;
+//         for(int i=0;i<nums.size();i++){
+//             a=nums[i];
+//             for(int j=i+1;j<nums.size();j++){
+//                   b=nums[j];
+//                  for(int k=j+1;k<nums.size();k++){
+//                   c=nums[k];
+//                      if(a+b>c&&b+c>a&&c+a>b)
+// count++;
+//                  }
+//                 }
+//         }
+//         return count;
+
+         sort(nums.begin(),nums.end());
+         int i=0;
+         int count=0;
+         while(i<nums.size()){
+            int j=nums.size()-1;
+            while(j>i+1){
+            for(int k=i+1;k<j;k++){
+                if(nums[i]+nums[k]>nums[j])
+                count++;
+            }
+            j--;
+            }
+            i++;
+         }
+         return count;
+    }
+};
