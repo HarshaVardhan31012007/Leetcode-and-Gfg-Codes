@@ -63,17 +63,32 @@ public:
     //    return solve(triangle);
     // }
 
+
      int solve(vector<vector<int>>& triangle){
-        for(int i=1;i<triangle.size();i++){
+        for(int i=triangle.size()-2;i>=0;i--){
             for(int j=0;j<=i;j++){
-                int l=triangle[i][j]+triangle[i-1][min(j,i-1)];
-                int r=triangle[i][j]+triangle[i-1][max(j-1,0)];
+                int l=triangle[i][j]+triangle[i+1][j];
+                int r=triangle[i][j]+triangle[i+1][j+1];
                 triangle[i][j]=min(l,r);
             }
         }
-        return *min_element(triangle[triangle.size()-1].begin(),triangle[triangle.size()-1].end());
+        return triangle[0][0];
     }
     int minimumTotal(vector<vector<int>>& triangle) {
        return solve(triangle);
     }
+
+    //  int solve(vector<vector<int>>& triangle){
+    //     for(int i=1;i<triangle.size();i++){
+    //         for(int j=0;j<=i;j++){
+    //             int l=triangle[i][j]+triangle[i-1][min(j,i-1)];
+    //             int r=triangle[i][j]+triangle[i-1][max(j-1,0)];
+    //             triangle[i][j]=min(l,r);
+    //         }
+    //     }
+    //     return *min_element(triangle[triangle.size()-1].begin(),triangle[triangle.size()-1].end());
+    // }
+    // int minimumTotal(vector<vector<int>>& triangle) {
+    //    return solve(triangle);
+    // }
 };
