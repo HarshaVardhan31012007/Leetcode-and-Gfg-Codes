@@ -30,16 +30,32 @@ public:
     // }
 
 
-     int solve(vector<vector<int>>& triangle){
+    //  int solve(vector<vector<int>>& triangle){
+    //     vector<int>curr(triangle.size()+1,0);
+    //     vector<int>next(triangle.size()+1,0);
+    //     for(int i=triangle.size()-1;i>=0;i--){
+    //         for(int j=i;j>=0;j--){
+    //             int l=triangle[i][j]+next[j];
+    //             int r=triangle[i][j]+next[j+1];
+    //             curr[j]=min(l,r);
+    //         }
+    //         next=curr;
+    //     }
+    //     return curr[0];
+    // }
+    // int minimumTotal(vector<vector<int>>& triangle) {
+    //    return solve(triangle);
+    // }
+
+
+    int solve(vector<vector<int>>& triangle){
         vector<int>curr(triangle.size()+1,0);
-        vector<int>next(triangle.size()+1,0);
         for(int i=triangle.size()-1;i>=0;i--){
-            for(int j=i;j>=0;j--){
-                int l=triangle[i][j]+next[j];
-                int r=triangle[i][j]+next[j+1];
+            for(int j=0;j<=i;j++){
+                int l=triangle[i][j]+curr[j];
+                int r=triangle[i][j]+curr[j+1];
                 curr[j]=min(l,r);
             }
-            next=curr;
         }
         return curr[0];
     }
