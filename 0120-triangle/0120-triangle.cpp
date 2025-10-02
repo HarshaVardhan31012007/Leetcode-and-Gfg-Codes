@@ -4,29 +4,46 @@ public:
     //     if(i==triangle.size()) return 0;
     //     if(dp[i][j]!=-1) return dp[i][j];
     //     int l=triangle[i][j]+solve(triangle,i+1,j,dp);
-    //     int r=triangle[i][j+1]+solve(triangle,i+1,j+1,dp);
+    //     int r=triangle[i][j]+solve(triangle,i+1,j+1,dp);
     //     return dp[i][j]=min(l,r);
     // }
     // int minimumTotal(vector<vector<int>>& triangle) {
-    //     int i=1;
-    //     int j=0;
     //     vector<vector<int>>dp(triangle.size()+1,vector<int>(triangle.size()+1,-1));
-    //    return triangle[0][0]+solve(triangle,i,j,dp);
+    //    return solve(triangle,0,0,dp);
+    //}
+     
+
+
+    //  int solve(vector<vector<int>>&dp,vector<vector<int>>& triangle){
+    //     for(int i=triangle.size()-1;i>=0;i--){
+    //         for(int j=i;j>=0;j--){
+    //             int l=triangle[i][j]+dp[i+1][j];
+    //             int r=triangle[i][j]+dp[i+1][j+1];
+    //             dp[i][j]=min(l,r);
+    //         }
+    //     }
+    //     return dp[0][0];
+    // }
+    // int minimumTotal(vector<vector<int>>& triangle) {
+    //     vector<vector<int>>dp(triangle.size()+1,vector<int>(triangle.size()+1,0));
+    //    return solve(dp,triangle);
     // }
 
 
-     int solve(vector<vector<int>>&dp,vector<vector<int>>& triangle){
+     int solve(vector<vector<int>>& triangle){
+        vector<int>curr(triangle.size()+1,0);
+        vector<int>next(triangle.size()+1,0);
         for(int i=triangle.size()-1;i>=0;i--){
             for(int j=i;j>=0;j--){
-                int l=triangle[i][j]+dp[i+1][j];
-                int r=triangle[i][j]+dp[i+1][j+1];
-                dp[i][j]=min(l,r);
+                int l=triangle[i][j]+next[j];
+                int r=triangle[i][j]+next[j+1];
+                curr[j]=min(l,r);
             }
+            next=curr;
         }
-        return dp[0][0];
+        return curr[0];
     }
     int minimumTotal(vector<vector<int>>& triangle) {
-        vector<vector<int>>dp(triangle.size()+1,vector<int>(triangle.size()+1,0));
-       return solve(dp,triangle);
+       return solve(triangle);
     }
 };
