@@ -18,25 +18,37 @@ public:
 
 
 
+        //  sort(nums.begin(),nums.end());
+        //  int i=0;
+        //  int count=0;
+        //  while(i<nums.size()){
+        //     int j=nums.size()-1;
+        //     while(j>i+1){
+        //     for(int k=i+1;k<j;k++){
+        //         if(nums[i]+nums[k]>nums[j]){
+        //               count+=j-k;
+        //               break;
+        //         }
+        //     }
+        //     j--;
+        //     }
+        //     i++;
+        //  }
+        //  return count;
+
+         
+         if(nums.size()<3) return 0;
          sort(nums.begin(),nums.end());
-         int i=0;
          int count=0;
-         while(i<nums.size()){
-            int j=nums.size()-1;
-            while(j>i+1){
-            for(int k=i+1;k<j;k++){
-                if(nums[i]+nums[k]>nums[j]){
-                      count+=j-k;
-                      break;
+         for(int i=0;i<=nums.size()-3;i++){//int unsigned int if -ve it goes to +ve value (circle ) // so handle base case
+            for(int j=nums.size()-1;j>=i+2;j--){
+                if(nums[i]==0) continue;
+                auto it=upper_bound(nums.begin()+i+1,nums.begin()+j,nums[j]-nums[i]);
+                if(it!=nums.begin()+j){
+                    count+=nums.begin()+j-it;
                 }
             }
-            j--;
-            }
-            i++;
          }
          return count;
-
-        
-      
     }
 };
