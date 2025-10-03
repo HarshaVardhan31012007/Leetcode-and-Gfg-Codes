@@ -18,13 +18,33 @@ public:
         // return ans;
 
 
-        int ans=0;
-        while(numBottles>=numExchange){
-            ans+=numExchange;
-            //numBottles-=numExchange-1;
-            numBottles=numBottles-numExchange+1;
+        // int ans=0;
+        // while(numBottles>=numExchange){
+        //     ans+=numExchange;
+        //     //numBottles-=numExchange-1;
+        //     numBottles=numBottles-numExchange+1;
+        //     numExchange+=1;
+        // }
+        // return ans+numBottles;
+
+
+        // int ans=0;
+        // while(numBottles>=numExchange){
+        //     ans+=numExchange;
+        //     //numBottles-=numExchange-1;
+        //     numBottles=numBottles-numExchange+1;
+        //     numExchange+=1;
+        // }
+        // return ans+numBottles;
+
+
+        int ans=numBottles;
+        int empty=numBottles;
+        while(empty>=numExchange){
+            ans++;
+            empty-=numExchange-1;
             numExchange+=1;
         }
-        return ans+numBottles;
+        return ans;
     }
 };
