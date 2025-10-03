@@ -12,12 +12,15 @@ public:
         // return ans;
 
 
-        int ans=0;
-        while(numBottles>=numExchange){
-             ans+=numExchange;
-             numBottles-=numExchange;
-             numBottles+=1;
-        }
-        return ans+numBottles;
+        // int ans=0;
+        // while(numBottles>=numExchange){
+        //      ans+=numExchange;
+        //      numBottles-=numExchange;
+        //      numBottles+=1;
+        // }
+        // return ans+numBottles;
+
+
+        return numBottles+(numBottles-1)/(numExchange-1);
     }
 };
