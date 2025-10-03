@@ -27,7 +27,7 @@ public:
         // }
         // return ans+numBottles;
 
-
+        //simulatiosn in terms of full bottles(in numBottles variable )
         // int ans=0;
         // while(numBottles>=numExchange){
         //     ans+=numExchange;
@@ -37,14 +37,23 @@ public:
         // }
         // return ans+numBottles;
 
+        //simulation interms of empty bottles
 
-        int ans=numBottles;
-        int empty=numBottles;
-        while(empty>=numExchange){
-            ans++;
-            empty-=numExchange-1;
-            numExchange+=1;
-        }
-        return ans;
+        // int ans=numBottles;
+        // int empty=numBottles;
+        // while(empty>=numExchange){
+        //     ans++;
+        //     empty-=numExchange-1;
+        //     numExchange+=1;
+        // }
+        // return ans;
+
+
+        // return numBottles+((-2*numExchange+3)+sqrt(4*numExchange*numExchange-12*numExchange+8*numBottles+1))/2.0;
+
+         int a=1;
+         int b=2*numExchange-3;
+         double delta=4*numExchange*numExchange-12*numExchange+8*numBottles+1.0;
+         return numBottles+(-b+sqrt(delta))/2.0;
     }
 };
