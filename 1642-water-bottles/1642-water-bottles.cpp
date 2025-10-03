@@ -21,6 +21,8 @@ public:
         // return ans+numBottles;
 
 
-        return numBottles+(numBottles-1)/(numExchange-1);
+        // return numBottles+(numBottles-1)/(numExchange-1);
+
+        return numExchange*((numBottles-1)/(numExchange-1))+(numBottles-1)%(numExchange-1)+1;
     }
 };
