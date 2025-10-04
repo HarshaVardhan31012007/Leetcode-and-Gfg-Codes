@@ -17,15 +17,15 @@ public:
         // }
         // return q.front();
           
-        vector<int>temp;
-        while(nums.size()>1){
-            for(int i=0;i<nums.size()-1;i++){
-                temp.push_back((nums[i]+nums[i+1])%10);
-            }
-            nums=move(temp);
-        }
-        return nums[0];
-        
+        // vector<int>temp;
+        // while(nums.size()>1){
+        //     for(int i=0;i<nums.size()-1;i++){
+        //         temp.push_back((nums[i]+nums[i+1])%10);
+        //     }
+        //     nums=move(temp);
+        // }
+        // return nums[0];
+
          // while(nums.size()>1){
         //     for(int i=0;i<nums.size()-1;i++){
         //         nums[i]=(nums[i]+nums[i+1])%10;
@@ -33,6 +33,15 @@ public:
         //     nums.pop_back();
         // }
         // return nums[0];
+   
+          int size=nums.size();
+          while(size>1){
+            for(int i=0;i<size-1;i++){
+                nums[i]=(nums[i]+nums[i+1])%10;
+            }
+            size--;
+        }
+        return nums[0];
 
             // int n=nums.size();
             // int ans=nums[0];
