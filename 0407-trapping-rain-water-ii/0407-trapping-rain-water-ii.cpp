@@ -1,7 +1,8 @@
 class Solution {
 public:
-     typedef pair<int,pair<int,int>>PP;
+   //  typedef pair<int,pair<int,int>>PP;
      int trapRainWater(vector<vector<int>>& heightMap) {
+         typedef pair<int,pair<int,int>>PP;
     //     vector<vector<int>>left(heightMap);
     //     vector<vector<int>>right(heightMap);
     //     vector<vector<int>>down(heightMap);
