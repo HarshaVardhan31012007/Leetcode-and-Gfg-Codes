@@ -50,7 +50,7 @@ public:
         int m=heightMap.size();
         int n=heightMap[0].size();
         vector<vector<int>>visited(m,vector<int>(n,0));
-        for(int row=0;row<heightMap.size();row++){
+        for(int row=0;row<m;row++){
             // for(int col:{0,(int)(heightMap[0].size()-1)}){
                 for(int col:{0,n-1}){
                 pq.push({heightMap[row][col],{row,col}});
@@ -58,7 +58,7 @@ public:
             }
         }
 
-        for(int col=1;col<heightMap[0].size()-1;col++){
+        for(int col=1;col<n-1;col++){
             for(int row:{0,m-1}){
                pq.push({heightMap[row][col],{row,col}});
                visited[row][col]=true;
@@ -75,7 +75,7 @@ public:
             for(int i=0;i<4;i++){
                 int newx=x+dx[i];
                 int newy=y+dy[i];
-                if(newx>=0&&newx<heightMap.size()&&newy>=0&&newy<=heightMap[0].size()-1&&!visited[newx][newy]){
+                if(newx>=0&&newx<m&&newy>=0&&newy<n&&!visited[newx][newy]){
                     watertrapped+=max(height-heightMap[newx][newy],0);
                     pq.push({max(height,heightMap[newx][newy]),{newx,newy}});
                     visited[newx][newy]=true;
