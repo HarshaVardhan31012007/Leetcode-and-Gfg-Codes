@@ -1,5 +1,6 @@
 class Solution {
 public:
+     typedef pair<int,pair<int,int>>PP;
      int trapRainWater(vector<vector<int>>& heightMap) {
     //     vector<vector<int>>left(heightMap);
     //     vector<vector<int>>right(heightMap);
@@ -41,7 +42,8 @@ public:
 
 
 
-        priority_queue<pair<int,pair<int,int>>,vector<pair<int,pair<int,int>>>,greater<>>pq;
+        // priority_queue<pair<int,pair<int,int>>,vector<pair<int,pair<int,int>>>,greater<>>pq;//no need to define again in greater<>
+        priority_queue<PP,vector<PP>,greater<>>pq;//no need to define again in greater<>
         vector<vector<int>>visited(heightMap.size(),vector<int>(heightMap[0].size(),0));
         for(int row=0;row<heightMap.size();row++){
             for(int col:{0,(int)(heightMap[0].size()-1)}){
