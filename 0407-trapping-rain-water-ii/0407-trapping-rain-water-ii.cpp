@@ -41,7 +41,7 @@ public:
 
 
 
-        priority_queue<pair<int,pair<int,int>>,vector<pair<int,pair<int,int>>>,greater<pair<int,pair<int,int>>>>pq;
+        priority_queue<pair<int,pair<int,int>>,vector<pair<int,pair<int,int>>>,greater<>>pq;
         vector<vector<int>>visited(heightMap.size(),vector<int>(heightMap[0].size(),0));
         for(int row=0;row<heightMap.size();row++){
             for(int col:{0,(int)(heightMap[0].size()-1)}){
