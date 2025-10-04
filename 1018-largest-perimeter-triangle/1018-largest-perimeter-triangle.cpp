@@ -4,19 +4,19 @@ public:
         int maxi=INT_MIN;
         sort(nums.begin(),nums.end());
         int n=nums.size();
-        for(int k=2;k<=n-1;k++){
-            int j=k-1;
-            int i=0;
-            while(i<j){
+            int k=n-1;
+            int j=n-2;
+            int i=n-3;
+            while(i>=0){
                 if(nums[i]+nums[j]>nums[k]){
-                    maxi=max(maxi,nums[j-1]+nums[j]+nums[k]);
-                    j--;
+                   return nums[i]+nums[j]+nums[k];
                 }
                 else{
-                    i++;
+                  k--;
+                  j--;
+                  i--;
                 }
             }
-        }
-        return maxi==INT_MIN?0:maxi;
+        return 0;
     }
 };
