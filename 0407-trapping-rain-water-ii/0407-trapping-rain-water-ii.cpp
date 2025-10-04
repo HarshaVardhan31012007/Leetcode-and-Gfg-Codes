@@ -1,8 +1,10 @@
 class Solution {
 public:
-   //  typedef pair<int,pair<int,int>>PP;
+    typedef pair<int,pair<int,int>>PP;// can be inside or outside//creates an shorcut for pair<int,pair<int,int>>
      int trapRainWater(vector<vector<int>>& heightMap) {
-         typedef pair<int,pair<int,int>>PP;
+        // typedef pair<int,pair<int,int>>PP;
+
+
     //     vector<vector<int>>left(heightMap);
     //     vector<vector<int>>right(heightMap);
     //     vector<vector<int>>down(heightMap);
@@ -45,16 +47,19 @@ public:
 
         // priority_queue<pair<int,pair<int,int>>,vector<pair<int,pair<int,int>>>,greater<>>pq;//no need to define again in greater<>
         priority_queue<PP,vector<PP>,greater<>>pq;//no need to define again in greater<>
-        vector<vector<int>>visited(heightMap.size(),vector<int>(heightMap[0].size(),0));
+        int m=heightMap.size();
+        int n=heightMap[0].size();
+        vector<vector<int>>visited(m,vector<int>(n,0));
         for(int row=0;row<heightMap.size();row++){
-            for(int col:{0,(int)(heightMap[0].size()-1)}){
+            // for(int col:{0,(int)(heightMap[0].size()-1)}){
+                for(int col:{0,n-1}){
                 pq.push({heightMap[row][col],{row,col}});
                 visited[row][col]=true;
             }
         }
 
         for(int col=1;col<heightMap[0].size()-1;col++){
-            for(int row:{0,(int)(heightMap.size()-1)}){
+            for(int row:{0,m-1}){
                pq.push({heightMap[row][col],{row,col}});
                visited[row][col]=true;
             }
