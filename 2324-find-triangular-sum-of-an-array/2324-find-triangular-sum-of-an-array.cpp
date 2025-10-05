@@ -34,23 +34,21 @@ public:
         // }
         // return nums[0];
    
-        int size=nums.size();
-        while(size>1){
-            for(int i=0;i<size-1;i++){
-                nums[i]=(nums[i]+nums[i+1])%10;
-            }
-            size--;
+        // int size=nums.size();
+        // while(size>1){
+        //     for(int i=0;i<size-1;i++){
+        //         nums[i]=(nums[i]+nums[i+1])%10;
+        //     }
+        //     size--;
+        // }
+        // return nums[0];
+
+
+        for(int i=0;i<nums.size()-1;i++){
+           for(int j=0;j<nums.size()-i-1;j++){
+            nums[j]=(nums[j]+nums[j+1])%10;
+           }
         }
         return nums[0];
-
-            // int n=nums.size();
-            // int ans=nums[0];
-            // int i=n-1;
-            // long long int c=1;
-            // for(int j=1;j<=i;j++){
-            //     c=c*(i-j+1)/j;
-            //     ans+=c*nums[j];
-            // }
-            // return ans%10;
     }
 };
