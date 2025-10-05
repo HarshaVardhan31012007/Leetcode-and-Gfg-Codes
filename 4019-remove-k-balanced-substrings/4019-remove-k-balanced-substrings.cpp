@@ -38,7 +38,7 @@ public:
         // return str;
 
 
-          string temp="";
+         string temp="";
          for(int i=0;i<k;i++){
              temp+='(';
          }
