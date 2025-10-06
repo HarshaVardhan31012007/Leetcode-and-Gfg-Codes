@@ -72,7 +72,14 @@ public:
     }
     int swimInWater(vector<vector<int>>& grid) {
         int i=grid[0][0];
-        int j=50*50-1;//actually j is max element of grid
+       // int j=50*50-1;//actually j is max element of grid
+       int maxi=INT_MIN;
+       for(auto &row:grid){
+        for(auto &ele:row){
+          maxi=max(maxi,ele);
+        }
+       }
+       int j=maxi;
         int ans=-1;
         int n=grid.size();
         while(i<=j){
