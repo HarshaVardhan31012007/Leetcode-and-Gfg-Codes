@@ -85,7 +85,7 @@ public:
         while(i<=j){
             int mid=i+(j-i)/2;
             vector<vector<int>>visited(n,vector<int>(n,0));
-            dfs(grid,visited,0,0,n,mid);
+            dfs(grid,visited,0,0,n,mid);// to make visited you can also use bfs
             if(visited[n-1][n-1]){
                 ans=mid;
                 j=mid-1;
