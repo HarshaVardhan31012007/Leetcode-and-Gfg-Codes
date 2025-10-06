@@ -171,6 +171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0898-transpose-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0898-transpose-matrix) |
 | [0907-koko-eating-bananas](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0907-koko-eating-bananas) |
 | [0909-stone-game](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0909-stone-game) |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0926-find-and-replace-pattern](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0926-find-and-replace-pattern) |
 | [0943-sum-of-subarray-minimums](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0943-sum-of-subarray-minimums) |
 | [0948-sort-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0948-sort-an-array) |
@@ -383,6 +384,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-reorganize-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0778-reorganize-string) |
 | [0807-custom-sort-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0807-custom-sort-string) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0926-find-and-replace-pattern](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0926-find-and-replace-pattern) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1087-longest-arithmetic-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1087-longest-arithmetic-subsequence) |
@@ -460,6 +462,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0215-kth-largest-element-in-an-array) |
 | [0240-search-a-2d-matrix-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0240-search-a-2d-matrix-ii) |
 | [0347-top-k-frequent-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0347-top-k-frequent-elements) |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0948-sort-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0948-sort-an-array) |
 | [1285-balance-a-binary-search-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1285-balance-a-binary-search-tree) |
 ## Dynamic Programming
@@ -1125,6 +1128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0662-maximum-width-of-binary-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [1008-binary-tree-cameras](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1008-binary-tree-cameras) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -1174,6 +1178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0662-maximum-width-of-binary-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [1008-binary-tree-cameras](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1008-binary-tree-cameras) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
