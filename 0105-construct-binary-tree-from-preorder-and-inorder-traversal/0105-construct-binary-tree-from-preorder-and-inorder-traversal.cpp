@@ -11,34 +11,22 @@
  */
 class Solution {
 public:
-    int find(vector<int>&inorder,int is,int ie,int k){
-       for(int i=is;i<=ie;i++){
-        if(inorder[i]==k){
+    int find(vector<int>&v,int s,int e,int d){
+        for(int i=s;i<=e;i++){
+            if(v[i]==d)
             return i;
         }
-       }
-       return -1;
+        return -1;
     }
-    //unordered_map<int,int>mpp;
-    TreeNode* build(vector<int>&preorder,vector<int>&inorder,int &pi,int is,int ie){
-        if(pi>=preorder.size()){
-            return NULL;
-        }
-        if(is>ie){
-            return NULL;
-        }
-        TreeNode *root=new TreeNode(preorder[pi]);
-        int index=find(inorder,is,ie,preorder[pi]);
-        //int index=mpp[preorder[pi]];
-        pi++;
-        root->left=build(preorder,inorder,pi,is,index-1);
-        root->right=build(preorder,inorder,pi,index+1,ie);
+    TreeNode* build(vector<int>&preorder,vector<int>&inorder,int &i,int s,int e){
+        if(s>e) return NULL;
+        TreeNode* root=new TreeNode(preorder[i++]);
+        int idx=find(inorder,s,e,root->val);
+        root->left=build(preorder,inorder,i,s,idx-1);
+        root->right=build(preorder,inorder,i,idx+1,e);
         return root;
     }
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
-        // for(int i=0;i<inorder.size();i++){
-        //     mpp[inorder[i]]=i;
-        // }
         int i=0;
         return build(preorder,inorder,i,0,inorder.size()-1);
     }
