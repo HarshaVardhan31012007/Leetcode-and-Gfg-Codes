@@ -18,16 +18,21 @@ public:
         }
         return -1;
     }
-    TreeNode* build(vector<int>&preorder,vector<int>&inorder,int &i,int s,int e){
+    TreeNode* build(vector<int>&preorder,vector<int>&inorder,int &i,int s,int e,unordered_map<int,int>&mpp){
         if(s>e) return NULL;
         TreeNode* root=new TreeNode(preorder[i++]);
-        int idx=find(inorder,s,e,root->val);
-        root->left=build(preorder,inorder,i,s,idx-1);
-        root->right=build(preorder,inorder,i,idx+1,e);
+        //int idx=find(inorder,s,e,root->val);
+        int idx=mpp[root->val];
+        root->left=build(preorder,inorder,i,s,idx-1,mpp);
+        root->right=build(preorder,inorder,i,idx+1,e,mpp);
         return root;
     }
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
-        int i=0;
-        return build(preorder,inorder,i,0,inorder.size()-1);
+        int j=0;
+        unordered_map<int,int>mpp;
+        for(int i=0;i<inorder.size();i++){
+            mpp[inorder[i]]=i;
+        }
+        return build(preorder,inorder,j,0,inorder.size()-1,mpp);
     }
 };
