@@ -204,51 +204,91 @@ public:
 
 
 
-     void bfs(queue<pair<int,pair<int,int>>>&q,vector<vector<int>>& heights,vector<vector<bool>>&visited,int m,int n){
-            while(!q.empty()){
-                auto front=q.front();
-                q.pop();
-                int height=front.first;
-                int x=front.second.first;
-                int y=front.second.second;
+    //  void bfs(queue<pair<int,pair<int,int>>>&q,vector<vector<int>>& heights,vector<vector<bool>>&visited,int m,int n){
+    //         while(!q.empty()){
+    //             auto front=q.front();
+    //             q.pop();
+    //             int height=front.first;
+    //             int x=front.second.first;
+    //             int y=front.second.second;
+    //             int dx[]={-1,1,0,0};
+    //             int dy[]={0,0,-1,1};
+    //             for(int i=0;i<4;i++){
+    //                 int newx=x+dx[i];
+    //                 int newy=y+dy[i];
+    //                 if(newx>=0&&newx<m&&newy>=0&&newy<n&&!visited[newx][newy]&&heights[newx][newy]>=height){
+    //                     visited[newx][newy]=true;
+    //                     q.push({heights[newx][newy],{newx,newy}});
+    //                 }
+    //             }
+    //        }
+    //  }
+    //  vector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {
+    //        int m=heights.size();
+    //        int n=heights[0].size();
+    //        vector<vector<bool>>pacific(m,vector<bool>(n,0));
+    //        vector<vector<bool>>atlantic(m,vector<bool>(n,0));
+    //        queue<pair<int,pair<int,int>>>q;
+
+    //        for(int i=0;i<m;i++){
+    //             q.push({heights[i][0],{i,0}});
+    //             pacific[i][0]=true;
+    //        }
+    //        for(int j=0;j<n;j++){
+    //             q.push({heights[0][j],{0,j}});
+    //             pacific[0][j]=true;
+    //        }
+    //        bfs(q,heights,pacific,m,n);
+
+    //        for(int i=0;i<m;i++){
+    //             q.push({heights[i][n-1],{i,n-1}});
+    //             atlantic[i][n-1]=true;
+    //        }
+    //        for(int j=0;j<n;j++){
+    //             q.push({heights[m-1][j],{m-1,j}});
+    //             atlantic[m-1][j]=true;
+    //        }
+    //        bfs(q,heights,atlantic,m,n);
+
+    //        vector<vector<int>>ans;
+    //        for(int i=0;i<m;i++){
+    //             for(int j=0;j<n;j++){
+    //                 if(pacific[i][j]&&atlantic[i][j])
+    //                 ans.push_back({i,j});
+    //             }
+    //        }
+    //        return ans;
+    // }
+
+
+
+
+     void dfs(vector<vector<int>>& heights,vector<vector<bool>>&visited,int i,int j)  {
+             visited[i][j]=true;
                 int dx[]={-1,1,0,0};
                 int dy[]={0,0,-1,1};
-                for(int i=0;i<4;i++){
-                    int newx=x+dx[i];
-                    int newy=y+dy[i];
-                    if(newx>=0&&newx<m&&newy>=0&&newy<n&&!visited[newx][newy]&&heights[newx][newy]>=height){
-                        visited[newx][newy]=true;
-                        q.push({heights[newx][newy],{newx,newy}});
+                for(int k=0;k<4;k++){
+                    int newx=i+dx[k];
+                    int newy=j+dy[k];
+                    if(newx>=0&&newx<heights.size()&&newy>=0&&newy<heights[0].size()&&!visited[newx][newy]&&heights[newx][newy]>=heights[i][j]){
+                        dfs(heights,visited,newx,newy);
                     }
                 }
-           }
      }
      vector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {
            int m=heights.size();
            int n=heights[0].size();
            vector<vector<bool>>pacific(m,vector<bool>(n,0));
            vector<vector<bool>>atlantic(m,vector<bool>(n,0));
-           queue<pair<int,pair<int,int>>>q;
 
            for(int i=0;i<m;i++){
-                q.push({heights[i][0],{i,0}});
-                pacific[i][0]=true;
+               dfs(heights,pacific,i,0);
+               dfs(heights,atlantic,i,n-1);
            }
            for(int j=0;j<n;j++){
-                q.push({heights[0][j],{0,j}});
-                pacific[0][j]=true;
+               dfs(heights,pacific,0,j);
+               dfs(heights,atlantic,m-1,j);
            }
-           bfs(q,heights,pacific,m,n);
-
-           for(int i=0;i<m;i++){
-                q.push({heights[i][n-1],{i,n-1}});
-                atlantic[i][n-1]=true;
-           }
-           for(int j=0;j<n;j++){
-                q.push({heights[m-1][j],{m-1,j}});
-                atlantic[m-1][j]=true;
-           }
-           bfs(q,heights,atlantic,m,n);
 
            vector<vector<int>>ans;
            for(int i=0;i<m;i++){
