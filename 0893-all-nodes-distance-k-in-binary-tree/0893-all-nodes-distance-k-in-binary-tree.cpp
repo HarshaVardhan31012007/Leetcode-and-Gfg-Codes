@@ -56,50 +56,50 @@ public:
     // }
 
 
-     void createPmap(TreeNode* root,map<TreeNode*,TreeNode*>&parent){
-        if(root->left){
-            parent[root->left]=root;
-            createPmap(root->left,parent);
-        }
-        if(root->right){
-            parent[root->right]=root;
-            createPmap(root->right,parent);
-        }
-    }
-    vector<int> distanceK(TreeNode* root, TreeNode* target, int k) {
-        map<TreeNode*,TreeNode*>parent;
-        createPmap(root,parent);
-        queue<TreeNode*>q;
-        unordered_map<TreeNode*,bool>visited;
-        q.push(target);
-        visited[target]=1;
-        vector<int>ans;
-        while(!q.empty()&&k>0){
-            int size=q.size();
-            for(int i=0;i<size;i++){
-            auto front=q.front();
-            q.pop();
-            if(front->left&&!visited[front->left]){
-                visited[front->left]=true;
-                q.push(front->left);
-            }
-            if(front->right&&!visited[front->right]){
-                visited[front->right]=true;
-                q.push(front->right);
-            }
-            if(parent[front]&&!visited[parent[front]]){
-                visited[parent[front]]=true;
-                q.push(parent[front]);
-            }
-            }
-            k--;
-        }
-           while(!q.empty()){
-                ans.push_back(q.front()->val);
-                q.pop();
-           }
-           return ans;
-    }
+    //  void createPmap(TreeNode* root,map<TreeNode*,TreeNode*>&parent){
+    //     if(root->left){
+    //         parent[root->left]=root;
+    //         createPmap(root->left,parent);
+    //     }
+    //     if(root->right){
+    //         parent[root->right]=root;
+    //         createPmap(root->right,parent);
+    //     }
+    // }
+    // vector<int> distanceK(TreeNode* root, TreeNode* target, int k) {
+    //     map<TreeNode*,TreeNode*>parent;
+    //     createPmap(root,parent);
+    //     queue<TreeNode*>q;
+    //     unordered_map<TreeNode*,bool>visited;
+    //     q.push(target);
+    //     visited[target]=1;
+    //     vector<int>ans;
+    //     while(!q.empty()&&k>0){
+    //         int size=q.size();
+    //         for(int i=0;i<size;i++){
+    //         auto front=q.front();
+    //         q.pop();
+    //         if(front->left&&!visited[front->left]){
+    //             visited[front->left]=true;
+    //             q.push(front->left);
+    //         }
+    //         if(front->right&&!visited[front->right]){
+    //             visited[front->right]=true;
+    //             q.push(front->right);
+    //         }
+    //         if(parent[front]&&!visited[parent[front]]){
+    //             visited[parent[front]]=true;
+    //             q.push(parent[front]);
+    //         }
+    //         }
+    //         k--;
+    //     }
+    //        while(!q.empty()){
+    //             ans.push_back(q.front()->val);
+    //             q.pop();
+    //        }
+    //        return ans;
+    // }
 
 
 
@@ -147,4 +147,42 @@ public:
     //    }
     //    return ans;
     // }
+
+
+
+
+
+     void preorder(TreeNode* root,unordered_map<int,list<int>>&adjList){
+        if(!root) return;
+        preorder(root->left,adjList);
+        preorder(root->right,adjList);
+        if(root->left){
+            adjList[root->val].push_back(root->left->val);
+            adjList[root->left->val].push_back(root->val);
+        }
+        if(root->right){
+            adjList[root->val].push_back(root->right->val);
+            adjList[root->right->val].push_back(root->val);
+        }
+    }
+    void dfs(int s,unordered_map<int,list<int>>&adjList,unordered_map<int,bool>&visited,int k,vector<int>&ans){
+        if(k==0){
+            ans.push_back(s);
+            return;
+        }
+        visited[s]=1;
+        for(auto &adj:adjList[s]){
+            if(!visited[adj]){
+                dfs(adj,adjList,visited,k-1,ans);
+            }
+        }
+    }
+    vector<int> distanceK(TreeNode* root, TreeNode* target, int k) {
+       unordered_map<int,list<int>>adjList;
+       preorder(root,adjList);
+       vector<int>ans;
+       unordered_map<int,bool>visited;
+       dfs(target->val,adjList,visited,k,ans);
+       return ans;
+    }
 };
