@@ -1,5 +1,8 @@
 class Solution {
 public:
+    //in both approaches 
+    //set is better than vector 
+    //becuse erase O(logn) in set and O(n) in vector
     // vector<int> avoidFlood(vector<int>& rains) {
     //     unordered_map<int,int>mpp;
     //     set<int>zeros;
