@@ -43,8 +43,7 @@ public:
 
      int binarysearch(vector<int>&potions,long long success,int spell){
         int i=0;
-        int j=potions.size();
-        int idx=potions.size();
+        int j=potions.size();//imp here n-1
         while(i<j){
             int mid=i+(j-i)/2;
             long long p=spell*((long long)potions[mid]);
