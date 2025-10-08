@@ -43,19 +43,18 @@ public:
 
      int binarysearch(vector<int>&potions,long long success,int spell){
         int i=0;
-        int j=potions.size()-1;
+        int j=potions.size();
         int idx=potions.size();
-        while(i<=j){
+        while(i<j){
             int mid=i+(j-i)/2;
             long long p=spell*((long long)potions[mid]);
             if(p>=success){
-                idx=mid;
-                j=mid-1;
+                j=mid;
             }
             else
             i=mid+1;
         }
-        return idx;
+        return j;
      }
      vector<int> successfulPairs(vector<int>& spells, vector<int>& potions, long long success) {
          sort(potions.begin(),potions.end());
