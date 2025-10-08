@@ -104,7 +104,7 @@ public:
 
 
 
-
+//IT is a graph question which includes dfs and bfs
      void createPmap(TreeNode* root,unordered_map<TreeNode*,TreeNode*>&parent){
         if(root->left){
             parent[root->left]=root;
