@@ -25,13 +25,37 @@ public:
     // }
 
 
-     int solve(TreeNode* root){
-        if(!root) return 0;
-        if(!root->left&&!root->right) return 1;
-        return 1+solve(root->left)+solve(root->right);
+    //  int solve(TreeNode* root){
+    //     if(!root) return 0;
+    //     if(!root->left&&!root->right) return 1;
+    //     return 1+solve(root->left)+solve(root->right);
+    // }
+    // int countNodes(TreeNode* root) {
+    //     int idx=1;
+    //     return solve(root);
+    // }
+
+
+    int lefth(TreeNode* root){
+        int count=0;
+        while(root){
+            count++;
+            root=root->left;
+        }
+        return count;
+    }
+    int righth(TreeNode* root){
+        int count=0;
+        while(root){
+            count++;
+            root=root->right;
+        }
+        return count;
     }
     int countNodes(TreeNode* root) {
-        int idx=1;
-        return solve(root);
+        int lh=lefth(root);
+        int rh=righth(root);
+        if(lh==rh) return (1<<lh)-1;
+        return 1+countNodes(root->left)+countNodes(root->right);
     }
 };
