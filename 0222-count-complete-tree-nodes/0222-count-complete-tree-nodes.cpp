@@ -11,16 +11,27 @@
  */
 class Solution {
 public:
-    int solve(TreeNode* root,int idx){
-        if(!root) return INT_MIN;
-        if(!root->left&&!root->right) return idx;
-        int l=solve(root->left,2*idx);
-        int r=solve(root->right,2*idx+1);
-        return max(l,r);
+    // int solve(TreeNode* root,int idx){
+    //     if(!root) return INT_MIN;
+    //     if(!root->left&&!root->right) return idx;
+    //     int l=solve(root->left,2*idx);
+    //     int r=solve(root->right,2*idx+1);
+    //     return max(l,r);
+    // }
+    // int countNodes(TreeNode* root) {
+    //     int idx=1;
+    //     int ans=solve(root,idx);
+    //     return ans==INT_MIN?0:ans;
+    // }
+
+
+     int solve(TreeNode* root){
+        if(!root) return 0;
+        if(!root->left&&!root->right) return 1;
+        return 1+solve(root->left)+solve(root->right);
     }
     int countNodes(TreeNode* root) {
         int idx=1;
-        int ans=solve(root,idx);
-        return ans==INT_MIN?0:ans;
+        return solve(root);
     }
 };
