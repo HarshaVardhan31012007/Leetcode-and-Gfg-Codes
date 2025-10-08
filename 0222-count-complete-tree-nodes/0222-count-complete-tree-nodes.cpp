@@ -11,29 +11,16 @@
  */
 class Solution {
 public:
-    int findlh(TreeNode *root){
-        int c=0;
-        while(root){
-            c++;
-            root=root->left;
-        }
-        return c;
-    }
-    int findrh(TreeNode *root){
-        int c=0;
-        while(root){
-            c++;
-            root=root->right;
-        }
-        return c;
+    int solve(TreeNode* root,int idx){
+        if(!root) return INT_MIN;
+        if(!root->left&&!root->right) return idx;
+        int l=solve(root->left,2*idx);
+        int r=solve(root->right,2*idx+1);
+        return max(l,r);
     }
     int countNodes(TreeNode* root) {
-       if(!root) return 0;
-       int lh=findlh(root);
-       int rh=findrh(root);
-       if(lh==rh) return (1<<lh)-1;
-       int l=countNodes(root->left);
-       int r=countNodes(root->right);
-       return 1+l+r;
+        int idx=1;
+        int ans=solve(root,idx);
+        return ans==INT_MIN?0:ans;
     }
 };
