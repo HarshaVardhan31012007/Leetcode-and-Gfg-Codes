@@ -34,7 +34,6 @@ public:
                 long long int time=currstart+(prefix[i]*(long long)mana[j]);
                 start=max(start,time-((i>0?prefix[i-1]:0)*(long long)mana[j+1]));
             }
-            cout<<start<<endl;
         }
         return (long long)start+(prefix[n-1]*(long long)mana[m-1]);
     }
