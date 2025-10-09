@@ -36,22 +36,37 @@ public:
         // }
         // return (long long)start+(prefix[n-1]*(long long)mana[m-1]);
 
+        // int n=skill.size();
+        // int m=mana.size();
+        // vector<long long int>prefix(n,0);
+        // prefix[0]=skill[0];
+        // for(int i=1;i<n;i++){
+        //     prefix[i]=(long long)skill[i]+prefix[i-1];
+        // }
+        // long long int start=0;
+        // for(int j=0;j<m-1;j++){
+        //     long long int currstart=start;
+        //     start=currstart+prefix[0]*mana[j];
+        //     for(int i=1;i<n;i++){
+        //         long long int time=currstart+(prefix[i]*(long long)mana[j]);
+        //         start=max(start,time-(prefix[i-1]*(long long)mana[j+1]));
+        //     }
+        // }
+        // return (long long)start+(prefix[n-1]*(long long)mana[m-1]);
+
+
         int n=skill.size();
         int m=mana.size();
-        vector<long long int>prefix(n,0);
-        prefix[0]=skill[0];
-        for(int i=1;i<n;i++){
-            prefix[i]=(long long)skill[i]+prefix[i-1];
-        }
-        long long int start=0;
-        for(int j=0;j<m-1;j++){
-            long long int currstart=start;
-            start=currstart+prefix[0]*mana[j];
+        vector<long long>ftime(n,0);
+        for(int j=0;j<m;j++){
+            ftime[0]+=skill[0]*mana[j];
             for(int i=1;i<n;i++){
-                long long int time=currstart+(prefix[i]*(long long)mana[j]);
-                start=max(start,time-(prefix[i-1]*(long long)mana[j+1]));
+                ftime[i]=max(ftime[i],ftime[i-1])+1LL*skill[i]*mana[j];
+            }
+            for(int i=n-1;i>0;i--){
+                ftime[i-1]=ftime[i]-1LL*skill[i]*mana[j];
             }
         }
-        return (long long)start+(prefix[n-1]*(long long)mana[m-1]);
+        return ftime[n-1];
     }
 };
