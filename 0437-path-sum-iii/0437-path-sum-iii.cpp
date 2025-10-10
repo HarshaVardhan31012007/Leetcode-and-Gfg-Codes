@@ -33,46 +33,46 @@ public:
     // }
 
 
-    // int solve(TreeNode* root,int t,vector<int>&v){
-    //     if(!root) return 0;
-    //     v.push_back(root->val);
-    //     int l=solve(root->left,t,v);
-    //     int r=solve(root->right,t,v);
-    //     int curr=0;
-    //     long long int sum=0;
-    //     for(int i=v.size()-1;i>=0;i--){
-    //          sum+=v[i];
-    //          if(sum==t)
-    //          curr++;
-    //     }
-    //     v.pop_back();
-    //     return curr+l+r;
-    // }
-    // int pathSum(TreeNode* root, long long int targetSum) {
-    //    vector<int>v;
-    //    return solve(root,targetSum,v);
-    // }
-
-
-    int solve(TreeNode* root,int t,unordered_map<long long,int>&visited,long long int &sum){
+    int solve(TreeNode* root,int t,vector<int>&v){
         if(!root) return 0;
-        sum+=root->val;
-        visited[sum]++;
-        int l=solve(root->left,t,visited,sum);
-        int r=solve(root->right,t,visited,sum);
+        v.push_back(root->val);
+        int l=solve(root->left,t,v);
+        int r=solve(root->right,t,v);
         int curr=0;
-        visited[sum]--;//this is imp for 1 single nodes and target=0
-        if(visited[sum-t]>0){// sum is total and t is targetsum and sum-t is removedsum from totalsum
-            curr=visited[sum-t];
+        long long int sum=0;
+        for(int i=v.size()-1;i>=0;i--){
+             sum+=v[i];
+             if(sum==t)
+             curr++;
         }
-        if(sum==t)//this is for totalsum
-        curr++;
-        sum-=root->val;
+        v.pop_back();
         return curr+l+r;
     }
-    int pathSum(TreeNode* root, int targetSum) {
-        unordered_map<long long,int>visited;
-        long long int sum=0;
-        return solve(root,targetSum,visited,sum);
-    } 
+    int pathSum(TreeNode* root, long long int targetSum) {
+       vector<int>v;
+       return solve(root,targetSum,v);
+    }
+
+
+    // int solve(TreeNode* root,int t,unordered_map<long long,int>&visited,long long int &sum){
+    //     if(!root) return 0;
+    //     sum+=root->val;
+    //     visited[sum]++;
+    //     int l=solve(root->left,t,visited,sum);
+    //     int r=solve(root->right,t,visited,sum);
+    //     int curr=0;
+    //     visited[sum]--;//this is imp for 1 single nodes and target=0
+    //     if(visited[sum-t]>0){// sum is total and t is targetsum and sum-t is removedsum from totalsum
+    //         curr=visited[sum-t];
+    //     }
+    //     if(sum==t)//this is for totalsum
+    //     curr++;
+    //     sum-=root->val;
+    //     return curr+l+r;
+    // }
+    // int pathSum(TreeNode* root, int targetSum) {
+    //     unordered_map<long long,int>visited;
+    //     long long int sum=0;
+    //     return solve(root,targetSum,visited,sum);
+    // } 
 };
