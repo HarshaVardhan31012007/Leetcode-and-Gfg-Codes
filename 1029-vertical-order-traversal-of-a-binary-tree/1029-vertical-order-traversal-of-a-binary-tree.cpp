@@ -71,38 +71,38 @@ public:
     // }
 
     //method 2
-    // void solve(TreeNode *root,map<int,map<int,vector<int>>>&mpp,int r,int c){
-    //     if(root==NULL){
-    //         return;
-    //     }
-    //     mpp[c][r].push_back(root->val);
-    //     // if(mpp[c][r].size()>1){
-    //     //     sort(mpp[c][r].begin(),mpp[c][r].end());
-    //     // }
-    //     solve(root->left,mpp,r+1,c-1);
-    //     solve(root->right,mpp,r+1,c+1);
-    // }
+    void solve(TreeNode *root,map<int,map<int,vector<int>>>&mpp,int r,int c){
+        if(root==NULL){
+            return;
+        }
+        mpp[c][r].push_back(root->val);
+        // if(mpp[c][r].size()>1){
+        //     sort(mpp[c][r].begin(),mpp[c][r].end());
+        // }
+        solve(root->left,mpp,r+1,c-1);
+        solve(root->right,mpp,r+1,c+1);
+    }
     vector<vector<int>> verticalTraversal(TreeNode* root) {
-    //   vector<vector<int>>ans;
-    //   map<int,map<int,vector<int>>>mpp;
-    //   if(root==NULL){
-    //     return ans;
-    //   }
-    //   int r=0;
-    //   int c=0;
-    //   solve(root,mpp,r,c);
-    //   for(auto i:mpp){
-    //     vector<int>temp;
-    //     for(auto j:i.second){
-    //     //    for(auto k:j.second){
-    //     //         temp.push_back(k);
-    //     //    }
-    //     sort(j.second.begin(),j.second.end());
-    //     temp.insert(temp.end(),j.second.begin(),j.second.end());
-    //     }
-    //     ans.push_back(temp);
-    //   }
-    //   return ans;
+      vector<vector<int>>ans;
+      map<int,map<int,vector<int>>>mpp;
+      if(root==NULL){
+        return ans;
+      }
+      int r=0;
+      int c=0;
+      solve(root,mpp,r,c);
+      for(auto i:mpp){
+        vector<int>temp;
+        for(auto j:i.second){
+        //    for(auto k:j.second){
+        //         temp.push_back(k);
+        //    }
+        sort(j.second.begin(),j.second.end());
+        temp.insert(temp.end(),j.second.begin(),j.second.end());
+        }
+        ans.push_back(temp);
+      }
+      return ans;
 
 
 
@@ -139,31 +139,31 @@ public:
     //   return ans;
 
     //method 4
-      vector<vector<int>>ans;
-      map<int,map<int,multiset<int>>>mpp;
-      queue<pair<TreeNode*,pair<int,int>>>q;
-      if(root==NULL){
-        return ans;
-      }
-      q.push({root,make_pair(0,0)});
-      while(!q.empty()){
-          auto front=q.front();
-          q.pop();
-          mpp[front.second.second][front.second.first].insert(front.first->val);
-          if(front.first->left!=NULL){
-            q.push({front.first->left,{front.second.first+1,front.second.second-1}});
-          }
-          if(front.first->right!=NULL){
-            q.push({front.first->right,{front.second.first+1,front.second.second+1}});
-          }
-      }
-         for(auto i:mpp){
-        vector<int>temp;
-        for(auto j:i.second){
-        temp.insert(temp.end(),j.second.begin(),j.second.end());
-        }
-        ans.push_back(temp);
-      }
-      return ans;
+    //   vector<vector<int>>ans;
+    //   map<int,map<int,multiset<int>>>mpp;
+    //   queue<pair<TreeNode*,pair<int,int>>>q;
+    //   if(root==NULL){
+    //     return ans;
+    //   }
+    //   q.push({root,make_pair(0,0)});
+    //   while(!q.empty()){
+    //       auto front=q.front();
+    //       q.pop();
+    //       mpp[front.second.second][front.second.first].insert(front.first->val);
+    //       if(front.first->left!=NULL){
+    //         q.push({front.first->left,{front.second.first+1,front.second.second-1}});
+    //       }
+    //       if(front.first->right!=NULL){
+    //         q.push({front.first->right,{front.second.first+1,front.second.second+1}});
+    //       }
+    //   }
+    //      for(auto i:mpp){
+    //     vector<int>temp;
+    //     for(auto j:i.second){
+    //     temp.insert(temp.end(),j.second.begin(),j.second.end());
+    //     }
+    //     ans.push_back(temp);
+    //   }
+    //   return ans;
     }
 };
