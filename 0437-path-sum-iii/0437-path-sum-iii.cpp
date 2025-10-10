@@ -11,49 +11,25 @@
  */
 class Solution {
 public:
-    //method 1
-    // int ans=0;
-    // void check(TreeNode *root,int &ans,long long int k){
-    //    if(root==NULL){
-    //     return;
-    //    }
-    //    if(k==root->val){
-    //     ans=ans+1;
-    //    }
-    //    k=k-root->val;
-    //    check(root->left,ans,k);
-    //    check(root->right,ans,k);
-    // }
-    // int pathSum(TreeNode* root, long long int targetSum) {
-    //     if(root){
-    //     check(root,ans,targetSum);
-    //     pathSum(root->left,targetSum);
-    //     pathSum(root->right,targetSum);
-    //     }
-    //     return ans;
-    // }
-
-    //method 2
-    void check(TreeNode *root,long long int k,int &ans,vector<int>v){
-       if(root==NULL){
-        return;
-       }
-       v.push_back(root->val);
-       check(root->left,k,ans,v);
-       check(root->right,k,ans,v);
-       int size=v.size();
-       long long int sum=0;
-       for(int i=size-1;i>=0;i--){
-        sum=sum+v[i];
-          if(sum==k){
-            ans++;
-          }
-       }
+    int solve(TreeNode* root,int t,unordered_map<long long,int>&visited,long long int &sum){
+        if(!root) return 0;
+        sum+=root->val;
+        visited[sum]++;
+        int l=solve(root->left,t,visited,sum);
+        int r=solve(root->right,t,visited,sum);
+        int curr=0;
+        visited[sum]--;
+        if(visited[sum-t]>0){
+            curr=visited[sum-t];
+        }
+        if(sum==t)
+        curr++;
+        sum-=root->val;
+        return curr+l+r;
     }
-    int pathSum(TreeNode* root, long long int targetSum) {
-         int ans=0;
-         vector<int>v;
-         check(root,targetSum,ans,v);
-        return ans;
-    }
+    int pathSum(TreeNode* root, int targetSum) {
+        unordered_map<long long,int>visited;
+        long long int sum=0;
+        return solve(root,targetSum,visited,sum);
+    } 
 };
