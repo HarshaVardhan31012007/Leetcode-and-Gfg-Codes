@@ -12,23 +12,8 @@
 class Solution {
 public:
     bool isSameTree(TreeNode* p, TreeNode* q) {
-        // if(!p&&!q) return true;
-        // // if(!p&&q) return false;
-        // // if(p&&!q) return false; 
-        // if(!p^!q) return false;// it works because we are using it for integers 0 and 1 not for pointers 
-        // //p^q will come error
-        // bool curr=p->val==q->val;
-        // if(curr==false){
-        //     return false;
-        // }
-        // bool l=isSameTree(p->left,q->left);
-        // bool r=isSameTree(p->right,q->right);
-        // return l&&r;
-
         if(!p&&!q) return true;
-        if(p&&q){
-             return p->val==q->val&&isSameTree(p->left,q->left)&&isSameTree(p->right,q->right);
-        }
-        return false;
+        if(!p||!q) return false;
+        return p->val==q->val&&isSameTree(p->left,q->left)&&isSameTree(p->right,q->right);
     }
 };
