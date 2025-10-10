@@ -11,18 +11,12 @@
  */
 class Solution {
 public:
-    bool isMirror(TreeNode* p, TreeNode* q) {
+    bool solve(TreeNode* p, TreeNode* q) {
         if(!p&&!q) return true;
-        if(p&&q){
-             return p->val==q->val&&isMirror(p->left,q->right)&&isMirror(p->right,q->left);
-        }
-        return false;
+        if(!p||!q) return false;
+        return p->val==q->val&&solve(p->left,q->right)&&solve(p->right,q->left);
     }
     bool isSymmetric(TreeNode* root) {
-        //this is nedded if min no of nodes are zer0
-        // if(root==NULL){
-        //     return true;
-        // }
-        return isMirror(root->left,root->right);
+        return solve(root->left,root->right);
     }
 };
