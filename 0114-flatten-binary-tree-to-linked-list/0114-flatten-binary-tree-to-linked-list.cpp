@@ -73,23 +73,41 @@ public:
     //     node[node.size()-1]=NULL;
     // }
 
-    TreeNode* solve1(TreeNode* node){
-       while(node->right)
-       node=node->right;
-       return node;
-    }
-    void solve(TreeNode* root){
-         if(!root) return;
-         solve(root->left);
-         solve(root->right);
-         if(root->left){
-            TreeNode* eleft=solve1(root->left);
-            eleft->right=root->right;
-            root->right=root->left;
-            root->left=NULL;
-         }
-    }
+    // TreeNode* solve1(TreeNode* node){
+    //    while(node->right)
+    //    node=node->right;
+    //    return node;
+    // }
+    // void solve(TreeNode* root){
+    //      if(!root) return;
+    //      solve(root->left);
+    //      solve(root->right);
+    //      if(root->left){
+    //         TreeNode* eleft=solve1(root->left);
+    //         eleft->right=root->right;
+    //         root->right=root->left;
+    //         root->left=NULL;
+    //      }
+    // }
+    // void flatten(TreeNode* root) {
+    //     solve(root);
+    // }
+
+
+
+   
     void flatten(TreeNode* root) {
-        solve(root);
+        TreeNode* curr=root;
+        while(curr){
+            if(curr->left){
+                TreeNode* pred=curr->left;
+                while(pred->right)
+                pred=pred->right;
+                pred->right=curr->right;
+                curr->right=curr->left;
+                curr->left=NULL;
+            }
+            curr=curr->right;
+        }
     }
 };
