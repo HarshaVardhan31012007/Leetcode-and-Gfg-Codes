@@ -55,21 +55,41 @@ public:
     // }
 
 
-     void solve(TreeNode* root,vector<TreeNode*>&node){
+    //  void solve(TreeNode* root,vector<TreeNode*>&node){
+    //      if(!root) return;
+    //      node.push_back(root);
+    //      solve(root->left,node);
+    //      solve(root->right,node);
+    // }
+    // void flatten(TreeNode* root) {
+    //     vector<TreeNode*>node;
+    //     solve(root,node);
+    //     if(node.empty())
+    //     return;
+    //     for(int i=0;i<node.size()-1;i++){
+    //          node[i]->left=NULL;
+    //          node[i]->right=node[i+1];
+    //     }
+    //     node[node.size()-1]=NULL;
+    // }
+
+    TreeNode* solve1(TreeNode* node){
+       while(node->right)
+       node=node->right;
+       return node;
+    }
+    void solve(TreeNode* root,TreeNode* p){
          if(!root) return;
-         node.push_back(root);
-         solve(root->left,node);
-         solve(root->right,node);
+         solve(root->left,root);
+         solve(root->right,root);
+         if(root->left){
+            TreeNode* eleft=solve1(root->left);
+            eleft->right=root->right;
+            root->right=root->left;
+            root->left=NULL;
+         }
     }
     void flatten(TreeNode* root) {
-        vector<TreeNode*>node;
-        solve(root,node);
-        if(node.empty())
-        return;
-        for(int i=0;i<node.size()-1;i++){
-             node[i]->left=NULL;
-             node[i]->right=node[i+1];
-        }
-        node[node.size()-1]=NULL;
+        solve(root,NULL);
     }
 };
