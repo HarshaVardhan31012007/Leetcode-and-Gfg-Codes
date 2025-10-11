@@ -11,71 +11,46 @@
  */
 class Solution {
 public:
-    // void build(vector<int>&ans,TreeNode *root){
-    //     if(root==NULL){
-    //         return;
-    //     }
-    //     ans.push_back(root->val);
-    //     build(ans,root->left);
-    //     build(ans,root->right);
-    // }
-    // void create(TreeNode *&r,vector<int>&ans,int i,int n){
-    //     if(i<n){
-    //         r=new TreeNode(ans[i]);
-    //         create(r->right,ans,i+1,n);
-    //     }
+    // void solve(TreeNode* root,vector<int>&node){
+    //      if(!root) return;
+    //      node.push_back(root->val);
+    //      solve(root->left,node);
+    //      solve(root->right,node);
     // }
     // void flatten(TreeNode* root) {
-    //     vector<int>ans;
-    //     build(ans,root);
-    //     TreeNode *r=NULL;
-    //     int i=0;
-    //     int n=ans.size();
-    //     create(r,ans,i,n);
-    //     return r;
-    // }
-
-
-    //  void build(vector<TreeNode*>&ans,TreeNode *root){
-    //     if(root==NULL){
-    //         return;
+    //     vector<int>node;
+    //     solve(root,node);
+    //     if(node.empty())
+    //     return;
+    //     root->val=node[0];// ans checking wiill be done by root address only not local address
+    //     root->left=NULL;
+    //     TreeNode* it=root;
+    //     for(int i=1;i<node.size();i++){
+    //         it->right=new TreeNode(node[i]);
+    //         it=it->right;
     //     }
-    //     ans.push_back(root);
-    //     build(ans,root->left);
-    //     build(ans,root->right);
-    // }
-    //  void flatten(TreeNode* root) {
-    //     //no need
-    //     // if(root==NULL||!root->left&&!root->right){
-    //     //     return;
-    //     // }
-    //     vector<TreeNode*>ans;
-    //     build(ans,root);
-    //     TreeNode *curr=root;
-    //     for(int i=0;i<ans.size();i++){
-    //         curr=ans[i];
-    //         if(i+1<ans.size()){
-    //             curr->left=NULL;
-    //             curr->right=ans[i+1];
-    //         }
-    //     }
-    //     //for last in original both left and right are NUll
     // }
 
 
-    void flatten(TreeNode *root){
-        TreeNode *curr=root;
-        while(curr){
-            if(curr->left){
-                TreeNode *pred=curr->left;
-                while(pred->right){
-                    pred=pred->right;
-                }
-                pred->right=curr->right;
-                curr->right=curr->left;
-                curr->left=NULL;
-            }
-            curr=curr->right;
-        }
+    void solve(TreeNode* root,vector<int>&node){
+         if(!root) return;
+         node.push_back(root->val);
+         solve(root->left,node);
+         solve(root->right,node);
+    }
+    void build(TreeNode *&root,vector<int>&node,int &i){
+        if(i>=node.size()) return;
+        root=new TreeNode(node[i++]);
+        build(root->right,node,i);
+    }
+    void flatten(TreeNode* root) {
+        vector<int>node;
+        solve(root,node);
+        if(node.empty())
+        return;
+        root->val=node[0];
+        root->left=NULL;
+        int i=1;
+        build(root->right,node,i);
     }
 };
