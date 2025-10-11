@@ -11,15 +11,44 @@
  */
 class Solution {
 public:
-     void preorder(TreeNode* root,vector<int>&ans){
-        if(!root) return;
-        ans.push_back(root->val);
-        preorder(root->left,ans);
-        preorder(root->right,ans);
-    }
+    //  void preorder(TreeNode* root,vector<int>&ans){
+    //     if(!root) return;
+    //     ans.push_back(root->val);
+    //     preorder(root->left,ans);
+    //     preorder(root->right,ans);
+    // }
+    // vector<int> preorderTraversal(TreeNode* root) {
+    //     vector<int>ans;
+    //     preorder(root,ans);
+    //     return ans;
+    // }
+
+
+    
     vector<int> preorderTraversal(TreeNode* root) {
-        vector<int>ans;
-        preorder(root,ans);
-        return ans;
+       TreeNode* curr=root;
+          vector<int>ans;
+          while(curr){
+                if(curr->left==NULL){
+                    ans.push_back(curr->val);// no predecessor
+                    curr=curr->right;
+                }
+                else{//predecessor exist
+                     TreeNode* pred=curr->left;
+                     while(pred->right!=curr&&pred->right)
+                     pred=pred->right;
+                     //if link is not created
+                     if(pred->right==NULL){
+                        ans.push_back(curr->val);
+                         pred->right=curr;
+                         curr=curr->left;
+                     }
+                     else{// link already there
+                         pred->right=NULL;
+                         curr=curr->right;
+                     }
+                }
+          }
+          return ans;
     }
 };
