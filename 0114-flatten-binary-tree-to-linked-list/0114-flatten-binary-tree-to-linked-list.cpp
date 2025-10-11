@@ -113,16 +113,36 @@ public:
 
 
 
-    void solve(TreeNode* root,TreeNode* &prev){
-        if(!root) return;
-        solve(root->right,prev);
-        solve(root->left,prev);
-        root->right=prev;
-        root->left=NULL;
-        prev=root;
-    }
+    // void solve(TreeNode* root,TreeNode* &prev){
+    //     if(!root) return;
+    //     solve(root->right,prev);
+    //     solve(root->left,prev);
+    //     root->right=prev;
+    //     root->left=NULL;
+    //     prev=root;
+    // }
+    // void flatten(TreeNode* root) {
+    //    TreeNode* prev=NULL;
+    //    solve(root,prev);
+    // }
+
+
+
+  
     void flatten(TreeNode* root) {
-       TreeNode* prev=NULL;
-       solve(root,prev);
+        stack<TreeNode*>st;
+        if(!root) return;
+        st.push(root);
+        while(!st.empty()){
+           auto top=st.top();
+           st.pop();
+           if(top->right)
+           st.push(top->right);
+           if(top->left)
+           st.push(top->left);
+           if(!st.empty())
+           top->right=st.top();
+           top->left=NULL;
+        }
     }
 };
