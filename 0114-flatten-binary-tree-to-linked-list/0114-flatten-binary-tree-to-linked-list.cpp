@@ -96,18 +96,33 @@ public:
 
 
    
+    // void flatten(TreeNode* root) {
+    //     TreeNode* curr=root;
+    //     while(curr){
+    //         if(curr->left){
+    //             TreeNode* pred=curr->left;
+    //             while(pred->right)
+    //             pred=pred->right;// if any lefts are present in pred that also will be solving later
+    //             pred->right=curr->right;
+    //             curr->right=curr->left;
+    //             curr->left=NULL;
+    //         }
+    //         curr=curr->right;
+    //     }
+    // }
+
+
+
+    void solve(TreeNode* root,TreeNode* &prev){
+        if(!root) return;
+        solve(root->right,prev);
+        solve(root->left,prev);
+        root->right=prev;
+        root->left=NULL;
+        prev=root;
+    }
     void flatten(TreeNode* root) {
-        TreeNode* curr=root;
-        while(curr){
-            if(curr->left){
-                TreeNode* pred=curr->left;
-                while(pred->right)
-                pred=pred->right;
-                pred->right=curr->right;
-                curr->right=curr->left;
-                curr->left=NULL;
-            }
-            curr=curr->right;
-        }
+       TreeNode* prev=NULL;
+       solve(root,prev);
     }
 };
