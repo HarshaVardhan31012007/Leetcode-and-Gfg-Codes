@@ -33,16 +33,16 @@ public:
     // }
 
      
-     int maximumEnergy(vector<int>& energy, int k) {
-        vector<int>dp(energy.size(),0);
-        int ans=INT_MIN;
-        for(int i=0;i<energy.size();i++){
-             dp[i]=max((i-k>=0?dp[i-k]:0)+energy[i],energy[i]);
-             if(i+k>=energy.size())
-             ans=max(ans,dp[i]);
-        }
-        return ans;
-    }
+    //  int maximumEnergy(vector<int>& energy, int k) {
+    //     vector<int>dp(energy.size(),0);
+    //     int ans=INT_MIN;
+    //     for(int i=0;i<energy.size();i++){
+    //          dp[i]=max((i-k>=0?dp[i-k]:0)+energy[i],energy[i]);
+    //          if(i+k>=energy.size())
+    //          ans=max(ans,dp[i]);
+    //     }
+    //     return ans;
+    // }
 
 
     //  int maximumEnergy(vector<int>& energy, int k) {
@@ -70,4 +70,17 @@ public:
     //    return ans;
     //}
     
+
+    int solve(vector<int>&energy,vector<int>&t,int k,int i){
+        if(i>=energy.size()) return 0;
+        if(t[i]!=-1) return t[i];
+        return t[i]=energy[i]+solve(energy,t,k,i+k);
+    }
+    int maximumEnergy(vector<int>& energy, int k) {
+        vector<int>t(energy.size(),-1);
+        for(int i=0;i<energy.size();i++){
+            solve(energy,t,k,i);
+        }
+        return *max_element(t.begin(),t.end());
+    }
 };
