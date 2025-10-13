@@ -51,20 +51,45 @@ public:
 
 
     
+    // vector<string> removeAnagrams(vector<string>& words) {
+    //     vector<string>ans;
+    //     unordered_map<char,int>prev;
+    //     for(auto &ch:words[0])
+    //     prev[ch]++;
+    //     ans.push_back(words[0]);
+    //     for(int i=1;i<words.size();i++){
+    //        unordered_map<char,int>curr;
+    //        for(auto &ch:words[i])
+    //        curr[ch]++;
+    //        if(curr!=prev){
+    //           prev=curr;
+    //           ans.push_back(words[i]);
+    //        }
+    //     }
+    //     return ans;
+    //}
+
+    bool checkAnagram(string &s1,string &s2){
+        int arr[26]={0};
+        for(int i=0;i<s1.length();i++){
+            arr[s1[i]-'a']++;
+        }
+        for(int i=0;i<s2.length();i++){
+            arr[s2[i]-'a']--;
+        }
+        for(int i=0;i<26;i++){
+            if(arr[i]!=0)
+            return false;
+        }
+        return true;
+    }    
     vector<string> removeAnagrams(vector<string>& words) {
         vector<string>ans;
-        unordered_map<char,int>prev;
-        for(auto &ch:words[0])
-        prev[ch]++;
         ans.push_back(words[0]);
         for(int i=1;i<words.size();i++){
-           unordered_map<char,int>curr;
-           for(auto &ch:words[i])
-           curr[ch]++;
-           if(curr!=prev){
-              prev=curr;
-              ans.push_back(words[i]);
-           }
+          if(!checkAnagram(words[i],ans.back())){
+            ans.push_back(words[i]);
+          }
         }
         return ans;
     }
