@@ -671,6 +671,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0224-basic-calculator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0242-valid-anagram) |
+| [0257-binary-tree-paths](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0257-binary-tree-paths) |
 | [0273-integer-to-english-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0273-integer-to-english-words) |
 | [0345-reverse-vowels-of-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0345-reverse-vowels-of-a-string) |
 | [0387-first-unique-character-in-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0387-first-unique-character-in-a-string) |
@@ -840,6 +841,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0113-path-sum-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0113-path-sum-ii) |
 | [0131-palindrome-partitioning](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0131-palindrome-partitioning) |
 | [0140-word-break-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0140-word-break-ii) |
+| [0257-binary-tree-paths](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0257-binary-tree-paths) |
 | [0473-matchsticks-to-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0473-matchsticks-to-square) |
 | [0494-target-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0494-target-sum) |
 | [0526-beautiful-arrangement](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0526-beautiful-arrangement) |
@@ -986,6 +988,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0230-kth-smallest-element-in-a-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0257-binary-tree-paths](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0257-binary-tree-paths) |
 | [0337-house-robber-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0337-house-robber-iii) |
 | [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
 | [0417-pacific-atlantic-water-flow](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0417-pacific-atlantic-water-flow) |
@@ -1155,6 +1158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0230-kth-smallest-element-in-a-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0257-binary-tree-paths](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0257-binary-tree-paths) |
 | [0337-house-robber-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0337-house-robber-iii) |
 | [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
 | [0437-path-sum-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0437-path-sum-iii) |
@@ -1211,6 +1215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0230-kth-smallest-element-in-a-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0257-binary-tree-paths](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0257-binary-tree-paths) |
 | [0337-house-robber-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0337-house-robber-iii) |
 | [0437-path-sum-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0437-path-sum-iii) |
 | [0450-delete-node-in-a-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0450-delete-node-in-a-bst) |
