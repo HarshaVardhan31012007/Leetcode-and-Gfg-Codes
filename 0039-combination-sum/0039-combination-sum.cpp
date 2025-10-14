@@ -27,24 +27,46 @@
 
 
 
+// class Solution {
+// public:
+//     void solve(vector<int>& candidates, int target,set<vector<int>>&ans,vector<int>&temp,int i){
+//         if(target==0){
+//               ans.insert(temp);
+//               return;
+//         } 
+//         if(i==candidates.size()||target<0) return;
+//         temp.push_back(candidates[i]);
+//         solve(candidates,target-candidates[i],ans,temp,i+1);
+//         solve(candidates,target-candidates[i],ans,temp,i);
+//         temp.pop_back();
+//         solve(candidates,target,ans,temp,i+1);
+//     }
+//     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+//         set<vector<int>>ans;
+//         vector<int>temp;
+//         solve(candidates,target,ans,temp,0);
+//         return vector<vector<int>>(ans.begin(),ans.end());
+//     }
+// };
+
+
 class Solution {
 public:
-    void solve(vector<int>& candidates, int target,set<vector<int>>&ans,vector<int>&temp,int i){
+    void solve(vector<int>& candidates, int target,vector<vector<int>>&ans,vector<int>&temp,int i){
         if(target==0){
-              ans.insert(temp);
+              ans.push_back(temp);
               return;
         } 
         if(i==candidates.size()||target<0) return;
         temp.push_back(candidates[i]);
-        solve(candidates,target-candidates[i],ans,temp,i+1);
         solve(candidates,target-candidates[i],ans,temp,i);
         temp.pop_back();
         solve(candidates,target,ans,temp,i+1);
     }
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        set<vector<int>>ans;
+        vector<vector<int>>ans;
         vector<int>temp;
         solve(candidates,target,ans,temp,0);
-        return vector<vector<int>>(ans.begin(),ans.end());
+        return ans;
     }
 };
