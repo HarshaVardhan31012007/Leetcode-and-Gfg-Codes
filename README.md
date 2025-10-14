@@ -227,6 +227,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3383-taking-maximum-energy-from-the-mystic-dungeon](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3383-taking-maximum-energy-from-the-mystic-dungeon) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3437-maximum-total-damage-with-spell-casting) |
+| [3612-adjacent-increasing-subarrays-detection-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
 | [3794-find-the-minimum-amount-of-time-to-brew-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3794-find-the-minimum-amount-of-time-to-brew-potions) |
 ## Bit Manipulation
 |  |
