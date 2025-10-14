@@ -39,9 +39,9 @@ public:
                 prevCount=currCount;
                 currCount=1;
             }
-            if(currCount>=2*k)
+            if(currCount>=2*k)// 2*k in same subarray
             return true;
-            if(min(prevCount,currCount)>=k)
+            if(min(prevCount,currCount)>=k)//k in previous array kin current array
             return true;
         }
         return false;
