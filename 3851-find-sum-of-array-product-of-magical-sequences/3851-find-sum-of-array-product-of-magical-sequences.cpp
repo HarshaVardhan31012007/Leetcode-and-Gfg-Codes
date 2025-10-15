@@ -97,7 +97,7 @@ public:
         int mod=1e9+7;
         vector<ll>fact;
         vector<ll>inverseFact;
-        map<tuple<int,int,int,int>,int>dp;
+        map<tuple<int,int,int,int>,ll>dp;
         ll findPower(ll a,ll b){
             // if(b==0) return 1;
             // ll ans=1;
