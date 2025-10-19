@@ -165,6 +165,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0739-daily-temperatures) |
 | [0746-prefix-and-suffix-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0746-prefix-and-suffix-search) |
 | [0747-min-cost-climbing-stairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0747-min-cost-climbing-stairs) |
+| [0753-open-the-lock](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0753-open-the-lock) |
 | [0792-binary-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0792-binary-search) |
 | [0794-swim-in-rising-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0794-swim-in-rising-water) |
 | [0819-minimum-swaps-to-make-sequences-increasing](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0819-minimum-swaps-to-make-sequences-increasing) |
@@ -405,6 +406,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0676-implement-magic-dictionary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0676-implement-magic-dictionary) |
 | [0721-accounts-merge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0721-accounts-merge) |
 | [0746-prefix-and-suffix-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0746-prefix-and-suffix-search) |
+| [0753-open-the-lock](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0753-open-the-lock) |
 | [0778-reorganize-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0778-reorganize-string) |
 | [0807-custom-sort-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0807-custom-sort-string) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -706,6 +708,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [0721-accounts-merge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0721-accounts-merge) |
 | [0746-prefix-and-suffix-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0746-prefix-and-suffix-search) |
+| [0753-open-the-lock](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0753-open-the-lock) |
 | [0778-reorganize-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0778-reorganize-string) |
 | [0800-letter-case-permutation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0800-letter-case-permutation) |
 | [0807-custom-sort-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0807-custom-sort-string) |
@@ -1063,6 +1066,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0662-maximum-width-of-binary-tree) |
 | [0721-accounts-merge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0721-accounts-merge) |
+| [0753-open-the-lock](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0753-open-the-lock) |
 | [0794-swim-in-rising-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0794-swim-in-rising-water) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0803-cheapest-flights-within-k-stops) |
