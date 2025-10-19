@@ -38,12 +38,18 @@ public:
        int prev=INT_MIN;
        int count=0;
        for(int i=0;i<nums.size();i++){
-            if(prev<nums[i]-k){
-                prev=nums[i]-k;
-                count++;
-            }
-            else if(prev<nums[i]+k){
-                prev=prev+1;
+            // if(prev<nums[i]-k){
+            //     prev=nums[i]-k;
+            //     count++;
+            // }
+            // else if(prev<nums[i]+k){
+            //     prev=prev+1;
+            //     count++;
+            // }
+
+            int temp=max(prev+1,nums[i]-k);
+            if(temp<=nums[i]+k){
+                prev=temp;
                 count++;
             }
        }
