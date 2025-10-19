@@ -722,6 +722,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1397-search-suggestions-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1397-search-suggestions-system) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
+| [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2088-minimum-time-to-type-word-using-special-typewriter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2088-minimum-time-to-type-word-using-special-typewriter) |
@@ -815,6 +816,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0204-count-primes) |
+| [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [2507-number-of-common-factors](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2507-number-of-common-factors) |
 ## Number Theory
 |  |
@@ -1033,6 +1035,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1300-critical-connections-in-a-network](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1300-critical-connections-in-a-network) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1442-number-of-operations-to-make-network-connected) |
 | [1475-maximum-sum-bst-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1475-maximum-sum-bst-in-binary-tree) |
+| [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [1753-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-path-with-minimum-effort) |
 | [2439-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2439-longest-cycle-in-a-graph) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
@@ -1069,6 +1072,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1036-rotting-oranges](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1036-rotting-oranges) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1442-number-of-operations-to-make-network-connected) |
+| [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [1753-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-path-with-minimum-effort) |
 | [2439-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2439-longest-cycle-in-a-graph) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
