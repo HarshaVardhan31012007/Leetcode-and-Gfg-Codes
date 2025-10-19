@@ -34,15 +34,19 @@ public:
     //     int r=solve()
     // }
     int maxDistinctElements(vector<int>& nums, int k) {
-        sort(nums.begin(),nums.end());
-        int ans = 0, prev = -1e9;
-
-        for (int i = 0; i < nums.size(); i++) {
-            int l = max(nums[i] - k, prev + 1);
-            if (l <= nums[i] + k) {
-                prev = l, ans++;
+       sort(nums.begin(),nums.end());
+       int prev=INT_MIN;
+       int count=0;
+       for(int i=0;i<nums.size();i++){
+            if(prev<nums[i]-k){
+                prev=nums[i]-k;
+                count++;
             }
-        }
-        return ans;
+            else if(prev<nums[i]+k){
+                prev=prev+1;
+                count++;
+            }
+       }
+       return count;
     }
 };
