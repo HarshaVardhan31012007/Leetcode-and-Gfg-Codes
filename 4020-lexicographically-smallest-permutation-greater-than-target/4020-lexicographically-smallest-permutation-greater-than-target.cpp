@@ -20,18 +20,14 @@ public:
     string ans;
     void solve(string &target,int freq[26],int i,string temp){
         if(i>=target.size()) {
-            if(temp>target){
-                if(ans=="")
-                ans=temp;
-                else
-                ans=min(ans,temp);
-            }
             return;
         }
         if(freq[target[i]-'a']>0){
              freq[target[i]-'a']--;
              solve(target,freq,i+1,temp+target[i]);
              freq[target[i]-'a']++;
+             if(ans!="")
+             return;
         }
         for(int j=target[i]-'a'+1;j<26;j++){
             if(freq[j]>0){
@@ -46,11 +42,7 @@ public:
                         temp1+=ch;
                     }
                 }
-                if(ans=="")
                 ans=temp1;
-                else
-                ans=min(ans,temp1);
-                freq[j]++;
                 return;
             }
         }
