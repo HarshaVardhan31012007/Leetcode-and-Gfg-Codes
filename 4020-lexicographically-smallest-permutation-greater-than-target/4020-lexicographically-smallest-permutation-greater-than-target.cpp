@@ -57,6 +57,8 @@ public:
     }
     string lexGreaterPermutation(string s, string target) {
         int freq[26]={0};
+        sort(s.rbegin(),s.rend());
+        if(s<=target) return "";
         for(auto &ch:s)
         freq[ch-'a']++;
         string temp="";
