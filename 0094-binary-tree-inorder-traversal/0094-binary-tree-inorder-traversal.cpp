@@ -12,29 +12,49 @@
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-          TreeNode* curr=root;
-          vector<int>ans;
-          while(curr){
-                if(curr->left==NULL){// no predecessor
-                    ans.push_back(curr->val);
-                    curr=curr->right;
+        //   TreeNode* curr=root;
+        //   vector<int>ans;
+        //   while(curr){
+        //         if(curr->left==NULL){// no predecessor
+        //             ans.push_back(curr->val);
+        //             curr=curr->right;
+        //         }
+        //         else{//predecessor exist
+        //              TreeNode* pred=curr->left;
+        //              while(pred->right!=curr&&pred->right)
+        //              pred=pred->right;
+        //              //if link is not created
+        //              if(pred->right==NULL){
+        //                  pred->right=curr;
+        //                  curr=curr->left;
+        //              }
+        //              else{// link already there
+        //                  pred->right=NULL;
+        //                  ans.push_back(curr->val);
+        //                  curr=curr->right;
+        //              }
+        //         }
+        //   }
+        //   return ans;
+
+       
+        stack<TreeNode*>st;
+        vector<int>ans;
+        if(!root) return ans;
+        while(root){
+            st.push(root);
+            root=root->left;
+        }
+        while(!st.empty()){
+            auto top=st.top();
+            st.pop();
+            ans.push_back(top->val);
+            TreeNode* rc=top->right;
+                while(rc){
+                    st.push(rc);
+                    rc=rc->left;
                 }
-                else{//predecessor exist
-                     TreeNode* pred=curr->left;
-                     while(pred->right!=curr&&pred->right)
-                     pred=pred->right;
-                     //if link is not created
-                     if(pred->right==NULL){
-                         pred->right=curr;
-                         curr=curr->left;
-                     }
-                     else{// link already there
-                         pred->right=NULL;
-                         ans.push_back(curr->val);
-                         curr=curr->right;
-                     }
-                }
-          }
-          return ans;
+        }
+        return ans;
     }
 };
