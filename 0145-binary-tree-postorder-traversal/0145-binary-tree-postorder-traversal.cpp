@@ -26,31 +26,60 @@ public:
 
     
     vector<int> postorderTraversal(TreeNode* root) {
+        // stack<TreeNode*>st;
+        // TreeNode* curr=root;
+        // vector<int>ans;
+        // while(curr||!st.empty()){
+        //     if(curr){
+        //         st.push(curr);
+        //         curr=curr->left;
+        //     }
+        //     else{
+        //         TreeNode* temp=st.top()->right;
+        //         if(temp){
+        //            curr=temp;
+        //         }
+        //         else{
+        //            temp=st.top();
+        //            st.pop();
+        //            ans.push_back(temp->val);
+        //            while(!st.empty()&&st.top()->right==temp){
+        //               temp=st.top();
+        //               st.pop();
+        //               ans.push_back(temp->val);
+        //            }
+        //         }
+        //     }
+        // }
+        //  return ans;
+
+
+
+
         stack<TreeNode*>st;
-        TreeNode* curr=root;
         vector<int>ans;
-        while(curr||!st.empty()){
-            if(curr){
-                st.push(curr);
-                curr=curr->left;
+        if(!root) return ans;
+        while(root){
+            st.push(root);
+            root=root->left;
+        }
+        while(!st.empty()){
+            auto node=st.top()->right;
+            if(!node){
+                TreeNode* temp=st.top();
+                st.pop();
+                ans.push_back(temp->val);
+                while(!st.empty()&&st.top()->right==temp){
+                    temp=st.top();
+                    st.pop();
+                    ans.push_back(temp->val);
+                }
             }
-            else{
-                TreeNode* temp=st.top()->right;
-                if(temp){
-                   curr=temp;
-                }
-                else{
-                   temp=st.top();
-                   st.pop();
-                   ans.push_back(temp->val);
-                   while(!st.empty()&&st.top()->right==temp){
-                      temp=st.top();
-                      st.pop();
-                      ans.push_back(temp->val);
-                   }
-                }
+            while(node){
+                st.push(node);
+                node=node->left;
             }
         }
-         return ans;
+        return ans;
     }
 };
