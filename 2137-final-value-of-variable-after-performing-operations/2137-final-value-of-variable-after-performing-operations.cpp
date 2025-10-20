@@ -13,7 +13,7 @@ public:
             // --ans;
 
 
-            if(operation[1]=='+'){
+            if(operation[1]=='+'){//after x increased in case of x++ and ++x
                    ans++; 
             }
             else{
