@@ -21,11 +21,13 @@ public:
         int l=solve(root->left);
         int r=solve(root->right);
         maxi=max(maxi,l+root->val+r);
-        if(root->left)
-        maxi=max(maxi,l);
-        if(root->right)
-        maxi=max(maxi,r);
-        return root->val+max({l,r,0});
+        // if(root->left)
+        // maxi=max(maxi,l);
+        // if(root->right)
+        // maxi=max(maxi,r);
+        int nextr=root->val+max({l,r,0});
+        maxi=max(maxi,nextr);
+        return nextr;
     }
     int maxPathSum(TreeNode* root) {
         maxi=INT_MIN;
