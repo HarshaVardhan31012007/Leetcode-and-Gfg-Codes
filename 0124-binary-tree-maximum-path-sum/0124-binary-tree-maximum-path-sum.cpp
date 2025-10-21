@@ -31,7 +31,8 @@ public:
     }
     int maxPathSum(TreeNode* root) {
         maxi=INT_MIN;
-        maxi=max(maxi,solve(root));
+        //maxi=max(maxi,solve(root));
+        solve(root);
         return maxi;
     }
 };
