@@ -9,6 +9,37 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// class Solution {
+// public:
+//     int maxi;
+//     int solve(TreeNode* root){
+//         if(!root) return 0;
+//         if(!root->left&&!root->right) {
+//             maxi=max(maxi,root->val);
+//             return root->val;
+//         }
+//         int l=solve(root->left);
+//         int r=solve(root->right);
+//         maxi=max(maxi,l+root->val+r);
+//         // if(root->left)
+//         // maxi=max(maxi,l);
+//         // if(root->right)
+//         // maxi=max(maxi,r);
+//         int nextr=root->val+max({l,r,0});
+//         maxi=max(maxi,nextr);
+//         return nextr;
+//     }
+//     int maxPathSum(TreeNode* root) {
+//         maxi=INT_MIN;
+//         //maxi=max(maxi,solve(root));
+//         solve(root);
+//         return maxi;
+//     }
+// };
+
+
+
+
 class Solution {
 public:
     int maxi;
@@ -18,20 +49,14 @@ public:
             maxi=max(maxi,root->val);
             return root->val;
         }
-        int l=solve(root->left);
-        int r=solve(root->right);
+        int l=max(0,solve(root->left));
+        int r=max(0,solve(root->right));
         maxi=max(maxi,l+root->val+r);
-        // if(root->left)
-        // maxi=max(maxi,l);
-        // if(root->right)
-        // maxi=max(maxi,r);
-        int nextr=root->val+max({l,r,0});
-        maxi=max(maxi,nextr);
-        return nextr;
+        maxi=max(maxi,root->val+max(l,r));
+        return root->val+max(l,r);
     }
     int maxPathSum(TreeNode* root) {
         maxi=INT_MIN;
-        //maxi=max(maxi,solve(root));
         solve(root);
         return maxi;
     }
