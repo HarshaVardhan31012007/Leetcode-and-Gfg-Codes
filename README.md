@@ -236,6 +236,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
+| [3622-maximum-frequency-of-an-element-after-performing-operations-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3622-maximum-frequency-of-an-element-after-performing-operations-i) |
 | [3794-find-the-minimum-amount-of-time-to-brew-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3794-find-the-minimum-amount-of-time-to-brew-potions) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
 ## Bit Manipulation
@@ -359,6 +360,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
+| [3622-maximum-frequency-of-an-element-after-performing-operations-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3622-maximum-frequency-of-an-element-after-performing-operations-i) |
 ## Hash Table
 |  |
 | ------- |
@@ -471,6 +473,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
+| [3622-maximum-frequency-of-an-element-after-performing-operations-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3622-maximum-frequency-of-an-element-after-performing-operations-i) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -484,6 +487,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3383-taking-maximum-energy-from-the-mystic-dungeon](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3383-taking-maximum-energy-from-the-mystic-dungeon) |
+| [3622-maximum-frequency-of-an-element-after-performing-operations-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3622-maximum-frequency-of-an-element-after-performing-operations-i) |
 | [3794-find-the-minimum-amount-of-time-to-brew-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3794-find-the-minimum-amount-of-time-to-brew-potions) |
 ## Divide and Conquer
 |  |
@@ -634,6 +638,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0643-maximum-average-subarray-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0643-maximum-average-subarray-i) |
 | [0658-find-k-closest-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0658-find-k-closest-elements) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
+| [3622-maximum-frequency-of-an-element-after-performing-operations-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3622-maximum-frequency-of-an-element-after-performing-operations-i) |
 ## Simulation
 |  |
 | ------- |
