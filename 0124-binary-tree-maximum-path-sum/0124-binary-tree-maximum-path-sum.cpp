@@ -21,9 +21,9 @@ public:
         int l=solve(root->left);
         int r=solve(root->right);
         maxi=max(maxi,l+root->val+r);
-        if(l!=0)
+        if(root->left)
         maxi=max(maxi,l);
-        if(r!=0)
+        if(root->right)
         maxi=max(maxi,r);
         return root->val+max({l,r,0});
     }
