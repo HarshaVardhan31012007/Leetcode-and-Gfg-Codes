@@ -28,7 +28,7 @@ public:
 
 
     int maxFrequency(vector<int>& nums, int k, int numOperations) {
-        map<int,int>mpp;
+        //map<int,int>mpp;
         int mini=1e9;
         int maxi=1;
         unordered_map<int,int>freq;
@@ -37,10 +37,12 @@ public:
             mini=min(mini,each);
             freq[each]++;
         }
+        vector<int>mpp(maxi+1,0);
         for(int i=0;i<nums.size();i++){
             int l=max(nums[i]-k,mini);
             int r=min(nums[i]+k,maxi);
             mpp[l]+=1;
+            if(r+1<=maxi)
             mpp[r+1]-=1;
         }
         int ans=1;
