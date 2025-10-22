@@ -4,7 +4,7 @@ public:
     //     int n=s.length();
     //     vector<long long int>v(n,0);
     //     for(auto &shift:shifts){
-    //         int &s=shift[0];int e=shift[1]+1;
+    //         int &s=shift[0];int e=shift[1]+1;// s is local variable
     //         if(shift[2]==1){
     //              v[s]=v[s]+1;
     //              if(e<n)
