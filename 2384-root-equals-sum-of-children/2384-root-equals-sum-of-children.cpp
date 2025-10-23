@@ -34,7 +34,7 @@ public:
         if(!root->left&&!root->right) return {true,root->val};
         pair<bool,int>l=solve(root->left);
         pair<bool,int>r=solve(root->right);
-        return {l.first&&r.first&&l.second+r.second==root->val,l.second=r.second+root->val};
+        return {l.first&&r.first&&l.second+r.second==root->val,l.second+r.second+root->val};
     }
     bool checkTree(TreeNode *root){
         pair<bool,int>ans=solve(root);
