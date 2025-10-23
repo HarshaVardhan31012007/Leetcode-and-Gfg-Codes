@@ -39,7 +39,7 @@ public:
         if(root==NULL) return "NULL";
         string left=solve(root->left,subtree,ans);
         string right=solve(root->right,subtree,ans);
-        string curr=to_string(root->val)+" "+left+" "+right;
+        string curr=to_string(root->val)+" "+left+" "+right;//space imp if 1 in one node and 11 in node if no space then 1,11 and 11,1 would be same
         if(subtree.find(curr)!=subtree.end()){
             if(subtree[curr]==1){
             ans.push_back(root);
