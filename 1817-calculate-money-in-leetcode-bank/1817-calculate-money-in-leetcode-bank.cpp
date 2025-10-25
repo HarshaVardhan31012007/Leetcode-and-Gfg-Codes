@@ -31,7 +31,7 @@ public:
 
         int rem=n%7;
         n=n/7;
-        long long int num=28*n+(n*(n-1)*7)/2;
+        int num=28*n+(n*(n-1)*7)/2;
         int day=n+1;
         num+=(rem*(rem+1))/2+(day-1)*rem;
         return num;
