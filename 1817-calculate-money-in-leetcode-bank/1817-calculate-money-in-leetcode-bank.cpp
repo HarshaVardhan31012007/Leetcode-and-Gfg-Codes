@@ -1,6 +1,20 @@
 class Solution {
 public:
     int totalMoney(int n) {
+        int start=1;
+        int ans=0;
+        while(n>0){
+            int money=start;
+            for(int i=1;i<=min(n,7);i++){
+                  ans+=money;
+                  money++;
+            }
+            n=n-7;
+            start++;
+        }
+        return ans;
+
+    
         // int num=n/7;
         // int rem=n%7;
         // long long sum=28;
@@ -29,11 +43,11 @@ public:
 
 
 
-        int rem=n%7;
-        n=n/7;
-        int num=28*n+(n*(n-1)*7)/2;
-        int day=n+1;
-        num+=(rem*(rem+1))/2+(day-1)*rem;
-        return num;
+        // int rem=n%7;
+        // n=n/7;
+        // int num=28*n+(n*(n-1)*7)/2;
+        // int day=n+1;
+        // num+=(rem*(rem+1))/2+(day-1)*rem;
+        // return num;
     }
 };
