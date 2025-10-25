@@ -1,24 +1,22 @@
 class Solution {
 public:
-    bool isBalance(int x) {
-        vector<int> count(10);
-        while (x > 0) {
-            count[x % 10]++;
-            x /= 10;
+    bool isBalanced(int n){
+        vector<int>digits(10,0);
+        int k=n;
+        while(k){
+            digits[k%10]++;
+            k=k/10;
         }
-        for (int d = 0; d < 10; ++d) {
-            if (count[d] > 0 && count[d] != d) {
-                return false;
-            }
+        for(int i=0;i<10;i++){
+            if(digits[i]!=0&&digits[i]!=i)
+            return 0;
         }
-        return true;
+        return 1;
     }
-
     int nextBeautifulNumber(int n) {
-        for (int i = n + 1; i <= 1224444; ++i) {
-            if (isBalance(i)) {
-                return i;
-            }
+        for(int i=n+1;i<=1224444;i++){
+             if(isBalanced(i))
+             return i;
         }
         return -1;
     }
