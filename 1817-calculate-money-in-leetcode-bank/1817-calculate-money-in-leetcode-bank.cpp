@@ -44,17 +44,17 @@ public:
         // return num;
 
 
-        int rem=n%7;
-        n=n/7;
-        int first=28;
-        int last=(28+(n-1)*7);
-        int num=(n*(first+last))/2;
-        int day=n+1;
-        while(rem--){
-            num+=day;
-            day++;
-        }
-        return num;
+        // int rem=n%7;
+        // n=n/7;
+        // int first=28;
+        // int last=(28+(n-1)*7);
+        // int num=(n*(first+last))/2;
+        // int day=n+1;
+        // while(rem--){
+        //     num+=day;
+        //     day++;
+        // }
+        // return num;
 
 
 
@@ -65,5 +65,17 @@ public:
         // int day=n+1;
         // num+=(rem*(rem+1))/2+(day-1)*rem;
         // return num;
+
+
+
+        int rem=n%7;
+        n=n/7;
+        int first=28;
+        int last=(28+(n-1)*7);
+        int num=(n*(first+last))/2;
+        first=n+1;
+        last=first+rem-1;
+        num+=rem*(first+last)/2;
+        return num;
     }
 };
