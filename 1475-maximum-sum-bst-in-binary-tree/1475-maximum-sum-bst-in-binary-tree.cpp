@@ -11,168 +11,37 @@
  */
 class Solution {
 public:
-    //   class info{
-    //     public:
-    //     int minval;
-    //     int maxval;
-    //     bool isbst;
-    //     int sum;
-    //   };
-
-class info{
-        public:
-        bool isbst;
-        int sum;
-        int minval;
-        int maxval;
-      };
-
-//     int sum(TreeNode *root){
-//         if(root==NULL){
-//             return 0;
-//         }
-//         int lans=sum(root->left);
-//         int rans=sum(root->right);
-//         return lans+rans+root->val;
-//     }
-//     //method 3
-//     int getMin(TreeNode *root){
-//       if(root==NULL){
-//         return INT_MAX;
-//     }
-//     while(root->left!=NULL){
-//         root=root->left;
-//     }
-//     return root->val;
-// }
-// int getMax(TreeNode *root){
-//     if(root==NULL){
-//         return INT_MIN;
-//     }
-//     while(root->right!=NULL){
-//         root=root->right;
-//     }
-//     return root->val;
-// }
-    //method 1 and method 2
-    // bool check(TreeNode *root,int mini=INT_MIN,int maxi=INT_MAX){
-    //     if(root==NULL){
-    //         return true;
-    //     }
-    //     bool currans=root->val>mini&&root->val<maxi;
-    //     if(currans==false){
-    //         return false;
-    //     }
-    //     bool leftans=check(root->left,mini,root->val);
-    //     bool rightans=check(root->right,root->val,maxi);
-    //     return currans&&rightans&&leftans;
-    // }
-    //method 1
-    // void traverse(TreeNode *root,vector<TreeNode*>&v){
-    //    if(root==NULL){
-    //     return;
-    //    }
-    //    bool ans=check(root);
-    //    if(ans==1){
-    //     v.push_back(root);
-    //    }
-    //    traverse(root->left,v);
-    //    traverse(root->right,v);
-    // }
-    //method 2
-    //  void traverse(TreeNode *root,int &s){
-    //    if(root==NULL){
-    //     return;
-    //    }
-    //    bool ans=check(root);
-    //    if(ans==1){
-    //     s=max(s,sum(root));
-    //    }
-    //    traverse(root->left,s);
-    //    traverse(root->right,s);
-    // }
-    //method 3
-    //   void traverse(TreeNode *root,int &s){
-    //    if(root==NULL){
-    //     return;
-    //    }
-    //    bool ans=root->val>getMax(root->left)&&root->val<getMin(root->right);
-    //    if(ans==1){
-    //     s=max(s,sum(root));
-    //    }
-    //    traverse(root->left,s);
-    //    traverse(root->right,s);
-    // }
-
-
-    // info solve(TreeNode *root,int &s){
-    //     if(root==NULL){
-    //         info temp;
-    //         temp.minval=INT_MAX;
-    //         temp.maxval=INT_MIN;
-    //         temp.sum=0;
-    //         temp.isbst=true;
-    //         s=max(s,temp.sum);
-    //         return temp;
-    //     }
-    //     //LRN
-    //     info lans=solve(root->left,s);
-    //     info rans=solve(root->right,s);
-    //     info curr;
-    //     curr.minval=min(root->val,min(lans.minval,rans.minval));
-    //     curr.maxval=max(root->val,max(lans.maxval,rans.maxval));
-    //     curr.sum=root->val+lans.sum+rans.sum;
-    //     curr.isbst=root->val>lans.maxval&&root->val<rans.minval&&lans.isbst&&rans.isbst;
-    //     if(curr.isbst){
-    //         s=max(s,curr.sum);
-    //     }
-    //     return curr;
-    // }
-
-    //global variable
-    int s=0;
-    info solve(TreeNode *root){
-        if(root==NULL){
-            return {true,0,INT_MAX,INT_MIN};
+    class Info{
+       public:
+       int mini;
+       int maxi;
+       bool isBST;
+       int sum;
+    };
+    int ans;
+    Info solve(TreeNode* root){
+        if(!root) return {INT_MAX,INT_MIN,true,0};
+        //no need
+        // if(!root->left&&!root->right) {
+        //     ans=max(ans,root->val);
+        //     return {root->val,root->val,true,root->val};
+        // }
+        auto l=solve(root->left);
+        auto r=solve(root->right);
+        if(root->val>l.maxi&&root->val<r.mini&&l.isBST&&r.isBST){
+            Info curr;
+            curr.mini=min(root->val,l.mini);
+            curr.maxi=max(root->val,r.maxi);
+            curr.sum=root->val+l.sum+r.sum;
+            ans=max(ans,curr.sum);
+            curr.isBST=true;
+            return curr;
         }
-        //LRN
-        info lans=solve(root->left);
-        info rans=solve(root->right);
-        if(root->val>lans.maxval&&root->val<rans.minval&&lans.isbst&&rans.isbst){
-        info curr;
-        curr.minval=root->left?lans.minval:root->val;
-        curr.maxval=root->right?rans.maxval:root->val;
-        curr.sum=root->val+lans.sum+rans.sum;
-        s=max(s,curr.sum);
-        curr.isbst=true;
-        return curr;
-    }
-        return {false,0,0,0};
+        return {0,0,false,0};
     }
     int maxSumBST(TreeNode* root) {
-    //method 1
-    //    vector<TreeNode*>v;
-    //    v.push_back(NULL);
-    //    traverse(root,v);
-    //    int maxAns=INT_MIN;
-    //    for(int i=0;i<v.size();i++){
-    //      int curr=sum(v[i]);
-    //      maxAns=max(curr,maxAns);
-    //    }
-    //    return maxAns;
-    // }
-    //method 2
-    // int s=0;
-    // traverse(root,s);
-    // return s;
-
-
-
-    //  int s=0;
-    //  solve(root,s);
-    //  return s;
-
-    solve(root);
-    return s;
+       ans=0;//empty bst
+       solve(root);
+       return ans;
     }
 };
