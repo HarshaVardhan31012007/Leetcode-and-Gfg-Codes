@@ -17,8 +17,10 @@ public:
         solve(root->left,k);
         if(k>0){
             k--;
-            if(k==0)
+            if(k==0){
             ans=root->val;
+            return;
+            }
         }
         solve(root->right,k);
     }
