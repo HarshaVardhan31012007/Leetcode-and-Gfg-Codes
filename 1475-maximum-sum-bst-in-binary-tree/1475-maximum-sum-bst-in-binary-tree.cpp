@@ -37,7 +37,7 @@ public:
             curr.isBST=true;
             return curr;
         }
-        return {0,437,false,0};
+        return {0,0,false,0};
     }
     int maxSumBST(TreeNode* root) {
        ans=0;//empty bst
