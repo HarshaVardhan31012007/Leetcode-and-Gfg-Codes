@@ -21,29 +21,27 @@
  */
 class Solution {
 public:
-    int getLength(ListNode *head){
-        int len=0;
-        while(head!=NULL){
-            len++;
+    int getLength(ListNode* head){
+        int count=0;
+        while(head){
+            count++;
             head=head->next;
         }
-        return len;
+        return count;
     }
-    TreeNode* solve(ListNode *&head,int n){
-        if(head==NULL||n<=0){
-            return NULL;
-        }
-        TreeNode *lstree=solve(head,n/2);
-        TreeNode *root=new TreeNode(head->val);
-        //we can do inplace if pointer type same
+    TreeNode* solve(int n,ListNode* &head){
+        if(n==0) return NULL;
+        //L
+        TreeNode* l=solve(n/2,head);
+        TreeNode* root=new TreeNode(head->val);
+        root->left=l;
         head=head->next;
-        root->left=lstree;
-        TreeNode *rstree=solve(head,n-n/2-1);
-        root->right=rstree;
+        TreeNode* r=solve(n-n/2-1,head);
+        root->right=r;
         return root;
     }
     TreeNode* sortedListToBST(ListNode* head) {
         int n=getLength(head);
-        return solve(head,n);
+        return solve(n,head);
     }
 };
