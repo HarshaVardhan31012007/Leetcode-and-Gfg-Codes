@@ -21,14 +21,30 @@ public:
 
 
 
+        // int ans=0;
+        // int c=0;
+        // int i=0;
+        // while(i<(int)s.length()-1){
+        //     if(s[i]=='1') c++;
+        //     if(s[i]=='1'&&s[i+1]=='0')
+        //     ans+=c;
+        //     i++;
+        // }
+        // return ans;
+
+
         int ans=0;
-        int c=0;
-        int i=0;
-        while(i<(int)s.length()-1){
-            if(s[i]=='1') c++;
-            if(s[i]=='1'&&s[i+1]=='0')
-            ans+=c;
-            i++;
+        int onecount=0;
+        for(int i=0;i<s.length();i++){
+            if(s[i]=='0'){
+                ans+=onecount;
+                while(i<s.length()&&s[i]=='0')
+                i++;
+                i--;
+            }
+            else{
+                onecount++;
+            }
         }
         return ans;
     }
