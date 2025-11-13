@@ -69,24 +69,48 @@ public:
 
 
 
-     int minOperations(vector<int>& nums) {
+    //  int minOperations(vector<int>& nums) {
+    //     int c=0;
+    //     for(auto &num:nums){
+    //         if(num==1)
+    //         c++;
+    //     }
+    //     if(c>0) return nums.size()-c;
+    //     int n=nums.size();
+    //     while(n>1){
+    //         for(int i=0;i<n-1;i++){
+    //             int ans=__gcd(nums[i],nums[i+1]);
+    //             if(ans==1){
+    //                  return n+((int)nums.size()-n)*2;
+    //             }
+    //             nums[i]=ans;
+    //         }
+    //         n--;
+    //     }
+    //     return -1;
+    // }
+
+
+
+    int minOperations(vector<int>& nums) {
         int c=0;
         for(auto &num:nums){
             if(num==1)
             c++;
         }
         if(c>0) return nums.size()-c;
-        int n=nums.size();
-        while(n>1){
-            for(int i=0;i<n-1;i++){
-                int ans=__gcd(nums[i],nums[i+1]);
-                if(ans==1){
-                     return n+((int)nums.size()-n)*2;
+        int minsteps=INT_MAX;
+        for(int i=0;i<nums.size();i++){
+            int gcd=nums[i];
+            for(int j=i+1;j<nums.size();j++){
+                gcd=__gcd(gcd,nums[j]);
+                if(gcd==1){
+                    minsteps=min(minsteps,j-i);
+                    break;
                 }
-                nums[i]=ans;
             }
-            n--;
         }
-        return -1;
+        if(minsteps==INT_MAX) return -1;
+        return minsteps+(nums.size()-1);
     }
 };
