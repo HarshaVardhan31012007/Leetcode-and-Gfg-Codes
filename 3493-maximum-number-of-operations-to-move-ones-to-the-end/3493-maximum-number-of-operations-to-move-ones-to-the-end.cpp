@@ -15,9 +15,7 @@ public:
                     prev=prev+c;
                 }
             }
-            else{
-                i++;
-            }
+            i++;
         }
         return ans;
     }
