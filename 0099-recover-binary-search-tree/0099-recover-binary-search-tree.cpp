@@ -11,25 +11,19 @@
  */
 class Solution {
 public:
-    void solve(TreeNode *root,TreeNode *&prev,TreeNode *&f,TreeNode *&l){
-    if(root==NULL){
-        return;
-    }
-    solve(root->left,prev,f,l);
-    if(prev&&prev->val>root->val){
-        if(!f){
-            f=prev;
+    void solve(TreeNode* root,TreeNode* &f,TreeNode* &s,TreeNode* &prev){
+        if(!root) return;
+        solve(root->left,f,s,prev);
+        if(prev&&prev->val>root->val){
+             if(!f) f=prev;
+             s=root;
         }
-        l=root;
-    }
-    prev=root;
-    solve(root->right,prev,f,l);
+        prev=root;
+        solve(root->right,f,s,prev);
     }
     void recoverTree(TreeNode* root) {
-       TreeNode *f=NULL;
-       TreeNode *l=NULL;
-       TreeNode *prev=NULL;
-       solve(root,prev,f,l);
-       swap(f->val,l->val);
+        TreeNode* f=0,*s=0,*prev=0;
+        solve(root,f,s,prev);
+        swap(f->val,s->val);
     }
 };
