@@ -11,59 +11,25 @@
  */
 class BSTIterator {
 public:
-    // vector<int>v;
-    //  void create(TreeNode *root){
-    //     if(root==NULL){
-    //         return;
-    //     }
-    //     create(root->left);
-    //     v.push_back(root->val);
-    //     create(root->right);
-    //     }
-
-    stack<TreeNode*>st;
-    stack<TreeNode*>revst;
-    void pushleft(TreeNode *root){
-        while(root){
-            st.push(root);
-            root=root->left;
-        }
-    }
-    void pushright(TreeNode *root){
-        while(root){
-            revst.push(root);
-            root=root->right;
-        }
+    vector<int>inorder;
+    int i;
+    void solve(TreeNode* root){
+        if(!root) return;
+        solve(root->left);
+        inorder.push_back(root->val);
+        solve(root->right);
     }
     BSTIterator(TreeNode* root) {
-    //    create(root);
-    pushleft(root);
-    pushright(root);
+        solve(root);
+        i=-1;
     }
-    //int i=0;
+    
     int next() {
-       // return v[i++];
-       TreeNode* top=st.top();
-       st.pop();
-       if(top->right!=NULL){
-        pushleft(top->right); 
-       }
-       return top->val;
+        return inorder[++i];
     }
-    int before() {
-       TreeNode* top=revst.top();
-       st.pop();
-       if(top->left!=NULL){
-        pushright(top->left); 
-       }
-       return top->val;
-    }
+    
     bool hasNext() {
-        //return i<v.size();
-        return !st.empty();
-    }
-    bool hasBefore() {
-        return !revst.empty();
+        return i<(int)inorder.size()-1;
     }
 };
 
