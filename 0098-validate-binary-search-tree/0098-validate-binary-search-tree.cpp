@@ -40,17 +40,26 @@ public:
 
 
     //checking from top
+    // bool isValidBST(TreeNode* root,long int mini=LONG_MIN,long int maxi=LONG_MAX) {
+    //      if(!root) return true;
+    //      if(root->val>mini&&root->val<maxi){
+    //           bool l=isValidBST(root->left,mini,root->val);
+    //           if(!l)
+    //           return false;
+    //           bool r=isValidBST(root->right,root->val,maxi);
+    //           if(!r)
+    //           return false;
+    //           return true;
+    //      }
+    //      return false;
+    // }
+
     bool isValidBST(TreeNode* root,long int mini=LONG_MIN,long int maxi=LONG_MAX) {
-         if(!root) return true;
-         if(root->val>mini&&root->val<maxi){
-              bool l=isValidBST(root->left,mini,root->val);
-              if(!l)
-              return false;
-              bool r=isValidBST(root->right,root->val,maxi);
-              if(!r)
-              return false;
-              return true;
+            if(!root) return true;
+            bool flag=root->val>mini&&root->val<maxi;
+            if(!flag) return false;
+            bool l=isValidBST(root->left,mini,root->val);
+            bool r=isValidBST(root->right,root->val,maxi);
+            return l&&r;
          }
-         return false;
-    }
 };
