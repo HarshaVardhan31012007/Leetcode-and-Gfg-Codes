@@ -30,8 +30,8 @@ public:
         auto r=solve(root->right);
         if(root->val>l.maxi&&root->val<r.mini&&l.isBST&&r.isBST){
             Info curr;
-            curr.mini=min(root->val,l.mini);
-            curr.maxi=max(root->val,r.maxi);
+            curr.mini=min(root->val,l.mini);//because left may be null then root should be taken 
+            curr.maxi=max(root->val,r.maxi);//because right may be null then root shiuld be answer
             curr.sum=root->val+l.sum+r.sum;
             ans=max(ans,curr.sum);
             curr.isBST=true;
