@@ -30,25 +30,90 @@ public:
 
 
    
-    void build(TreeNode* root,vector<int>&inorder){
-        if(!root) return;
-        build(root->left,inorder);
-        inorder.push_back(root->val);
-        build(root->right,inorder);
-    }
-    bool findTarget(TreeNode* root, int k) {
-        vector<int>inorder;
-        build(root,inorder);
-        int i=0;
-        int j=inorder.size()-1;
-        while(i<j){
-            if(inorder[i]+inorder[j]==k) return true;
-            else if(inorder[i]+inorder[j]<k){
-                i++;
+    // void build(TreeNode* root,vector<int>&inorder){
+    //     if(!root) return;
+    //     build(root->left,inorder);
+    //     inorder.push_back(root->val);
+    //     build(root->right,inorder);
+    // }
+    // bool findTarget(TreeNode* root, int k) {
+    //     vector<int>inorder;
+    //     build(root,inorder);
+    //     int i=0;
+    //     int j=inorder.size()-1;
+    //     while(i<j){
+    //         if(inorder[i]+inorder[j]==k) return true;
+    //         else if(inorder[i]+inorder[j]<k){
+    //             i++;
+    //         }
+    //         else
+    //         j--;
+    //     }
+    //     return false;
+    // }
+
+
+
+    class BSTIterator {
+    public:
+        stack<TreeNode*>st;
+        stack<TreeNode*>revst;
+        void pushLeftNodes(TreeNode* root){
+            while(root){
+                st.push(root);
+                root=root->left;
             }
-            else
-            j--;
         }
-        return false;
+        void pushRightNodes(TreeNode* root){
+            while(root){
+                revst.push(root);
+                root=root->right;
+            }
+        }
+        BSTIterator(TreeNode* root) {
+            pushLeftNodes(root);
+            pushRightNodes(root);
+        }
+        
+        int next() {
+            TreeNode* top=st.top();
+            st.pop();
+            if(top->right)
+            pushLeftNodes(top->right);
+            return top->val;
+        }
+        
+        bool hasNext() {
+            return !st.empty();
+        }
+
+        int before(){
+            TreeNode* top=revst.top();
+            revst.pop();
+            if(top->left)
+            pushRightNodes(top->left);
+            return top->val;
+        }
+
+        bool hasBefore() {
+            return !revst.empty();
+        }
+   };
+
+    bool findTarget(TreeNode* root, int k) {
+       BSTIterator* it=new BSTIterator(root);
+       int a=it->next();
+       int b=it->before();
+       while(a<b){
+           if(a+b==k)
+           return true;
+           else if(a+b<k){
+              a=it->next();
+           }
+           else{
+              b=it->before();
+           }
+       }
+       return false;
     }
 };
