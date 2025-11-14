@@ -11,51 +11,26 @@
  */
 class Solution {
 public:
-    void buildinorder(TreeNode *root,vector<int>&inorder){
-        if(root==NULL){
-            return;
+    class Info{
+        public:
+        long int mini;
+        long int maxi;
+        bool isBST;
+    };
+    Info solve(TreeNode* root){
+        if(!root) return {LONG_MAX,LONG_MIN,true};
+        Info l=solve(root->left);
+        Info r=solve(root->right);
+        if(root->val>l.maxi&&root->val<r.mini&&l.isBST&&r.isBST){
+            Info curr;
+            curr.mini=min((long)root->val,l.mini);
+            curr.maxi=max((long)root->val,r.maxi);
+            curr.isBST=true;
+            return curr;
         }
-        buildinorder(root->left,inorder);
-        inorder.push_back(root->val);
-        buildinorder(root->right,inorder);
+        return {LONG_MAX,LONG_MIN,false};
     }
-
-    // bool solve(TreeNode *root,long mini,long maxi){
-    //     // if(root==NULL){
-    //     //     return true;
-    //     // }
-    //     // bool currans=root->val>mini&&root->val<maxi;
-    //     // if(currans==false){
-    //     //     return false;
-    //     // }
-    //     // bool leftans=solve(root->left,mini,root->val);
-    //     // bool rightans=solve(root->right,root->val,maxi);
-    //     // //no need to check currans 
-    //     // //agar yahi tak reach then curr ans is true
-    //     // return leftans&&rightans;
-
-
-    //     if(root==NULL){
-    //         return true;
-    //     }
-    //     return root->val>mini&&root->val<maxi&&solve(root->left,mini,root->val)&&solve(root->right,root->val,maxi);
-    // }
     bool isValidBST(TreeNode* root) {
-        // long mini=LONG_MIN;
-        // long maxi=LONG_MAX;
-        // return solve(root,mini,maxi);
-
-
-         vector<int>inorder;
-        buildinorder(root,inorder);
-        int prev=inorder[0];
-        for(int i=1;i<inorder.size();i++){
-            int curr=inorder[i];
-            if(prev>=curr){
-                return false;
-            }
-            prev=curr;
-        } 
-        return true;
+        return solve(root).isBST;
     }
 };
