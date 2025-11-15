@@ -54,66 +54,107 @@ public:
 
 
 
-    class BSTIterator {
-    public:
-        stack<TreeNode*>st;
-        stack<TreeNode*>revst;
-        void pushLeftNodes(TreeNode* root){
-            while(root){
-                st.push(root);
-                root=root->left;
-            }
-        }
-        void pushRightNodes(TreeNode* root){
-            while(root){
-                revst.push(root);
-                root=root->right;
-            }
-        }
-        BSTIterator(TreeNode* root) {
-            pushLeftNodes(root);
-            pushRightNodes(root);
-        }
+//     class BSTIterator {
+//     public:
+//         stack<TreeNode*>st;
+//         stack<TreeNode*>revst;
+//         void pushLeftNodes(TreeNode* root){
+//             while(root){
+//                 st.push(root);
+//                 root=root->left;
+//             }
+//         }
+//         void pushRightNodes(TreeNode* root){
+//             while(root){
+//                 revst.push(root);
+//                 root=root->right;
+//             }
+//         }
+//         BSTIterator(TreeNode* root) {
+//             pushLeftNodes(root);
+//             pushRightNodes(root);
+//         }
         
-        int next() {
-            TreeNode* top=st.top();
-            st.pop();
-            if(top->right)
-            pushLeftNodes(top->right);
-            return top->val;
-        }
+//         int next() {
+//             TreeNode* top=st.top();
+//             st.pop();
+//             if(top->right)
+//             pushLeftNodes(top->right);
+//             return top->val;
+//         }
         
-        bool hasNext() {
-            return !st.empty();
-        }
+//         bool hasNext() {
+//             return !st.empty();
+//         }
 
-        int before(){
-            TreeNode* top=revst.top();
-            revst.pop();
-            if(top->left)
-            pushRightNodes(top->left);
-            return top->val;
-        }
+//         int before(){
+//             TreeNode* top=revst.top();
+//             revst.pop();
+//             if(top->left)
+//             pushRightNodes(top->left);
+//             return top->val;
+//         }
 
-        bool hasBefore() {
-            return !revst.empty();
-        }
-   };
+//         bool hasBefore() {
+//             return !revst.empty();
+//         }
+//    };
 
+//     bool findTarget(TreeNode* root, int k) {
+//        BSTIterator* it=new BSTIterator(root);
+//        int a=it->next();
+//        int b=it->before();
+//        while(a<b){
+//            if(a+b==k)
+//            return true;
+//            else if(a+b<k){
+//               a=it->next();
+//            }
+//            else{
+//               b=it->before();
+//            }
+//        }
+//        return false;
+//     }
+
+
+
+void pushLeftTreeNodes(TreeNode* root,stack<TreeNode*>&s){
+        while(root){
+            s.push(root);
+            root=root->left;
+        }
+    }
+    void pushRightTreeNodes(TreeNode* root,stack<TreeNode*>&s){
+        while(root){
+            s.push(root);
+            root=root->right;
+        }
+    }
     bool findTarget(TreeNode* root, int k) {
-       BSTIterator* it=new BSTIterator(root);
-       int a=it->next();
-       int b=it->before();
-       while(a<b){
-           if(a+b==k)
-           return true;
-           else if(a+b<k){
-              a=it->next();
-           }
-           else{
-              b=it->before();
-           }
-       }
-       return false;
+         stack<TreeNode*>st;
+         stack<TreeNode*>revst;
+         pushLeftTreeNodes(root,st);
+         pushRightTreeNodes(root,revst);
+         while(!st.empty()&&!revst.empty()&&st.top()->val<revst.top()->val){
+             TreeNode* a=st.top();
+             TreeNode* b=revst.top();
+             if(a->val+b->val==k){
+                 st.pop();
+                 revst.pop();
+                 return true;
+                 pushLeftTreeNodes(a->right,st);
+                 pushRightTreeNodes(b->left,revst);
+             }
+             else if(a->val+b->val<k){
+                 st.pop();
+                 pushLeftTreeNodes(a->right,st);
+             }
+             else{
+                 revst.pop();
+                 pushRightTreeNodes(b->left,revst);
+             }
+         }
+        return false;
     }
 };
