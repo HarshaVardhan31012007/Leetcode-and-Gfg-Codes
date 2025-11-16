@@ -24,28 +24,41 @@ public:
 
 
 
-        int n=s.length();
-        vector<int>v;
-        int i=0;
-        while(i<n){
-            int c=0;
-            while(i<n&&s[i]=='0'){
-                c++;i++;
-            }
-            if(c>0) v.push_back(c);
-            c=0;
-            while(i<n&&s[i]=='1'){
-                c++;i++;
-            }
-            if(c>0) v.push_back(c);
-        }
+        // int n=s.length();
+        // vector<int>v;
+        // int i=0;
+        // while(i<n){
+        //     int c=0;
+        //     while(i<n&&s[i]=='0'){
+        //         c++;i++;
+        //     }
+        //     if(c>0) v.push_back(c);
+        //     c=0;
+        //     while(i<n&&s[i]=='1'){
+        //         c++;i++;
+        //     }
+        //     if(c>0) v.push_back(c);
+        // }
+        // int ans=0;
+        // int prev=v[0];
+        // for(int i=1;i<v.size();i++){
+        //      int curr=v[i];
+        //      ans+=min(prev,curr);
+        //      prev=curr;
+        // }
+        // return ans;
+
+
+
+       
         int ans=0;
-        int prev=v[0];
-        for(int i=1;i<v.size();i++){
-             int curr=v[i];
-             ans+=min(prev,curr);
-             prev=curr;
+        int curr=1;int prev=0;
+        for(int i=1;i<s.length();i++){
+             if(s[i]==s[i-1]) curr++;
+             else
+             ans+=min(prev,curr),prev=curr,curr=1;
         }
+        ans+=min(prev,curr);
         return ans;
     }
 };
