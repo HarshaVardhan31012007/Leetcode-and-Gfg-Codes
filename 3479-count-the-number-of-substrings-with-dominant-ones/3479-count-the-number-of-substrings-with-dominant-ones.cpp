@@ -16,36 +16,60 @@ public:
 
 
 
-        int ans=0;
+        // int ans=0;
+        // int n=s.length();
+        // vector<int>prefix(n,0);
+        // prefix[0]=(s[0]=='1')?1:0;
+        // for(int i=1;i<n;i++){
+        //     prefix[i]=prefix[i-1]+((s[i]=='1')?1:0);
+        // }
+        // for(int i=0;i<n;i++){
+        //     int onec=0;int zeroc=0;
+        //     for(int j=i;j<n;j++){
+        //          onec=prefix[j]-((i>0)?prefix[i-1]:0);
+        //          zeroc=(j-i+1)-onec;
+        //          if(onec<zeroc*zeroc){
+        //             j+=(zeroc*zeroc-onec-1);
+        //          }
+        //          else if(onec==zeroc*zeroc){
+        //             ans++;
+        //          }
+        //          else if(onec>zeroc*zeroc){
+        //             ans++;
+        //             int diff=(int)sqrt(onec)-zeroc;
+        //             int nextj=j+diff;
+        //             if(nextj>=n){
+        //                 ans+=(n-j-1);
+        //             }
+        //             else{
+        //                 ans+=diff;
+        //             }
+        //             j=nextj;
+        //          }
+        //     }
+        // }
+        // return ans;
+
+
         int n=s.length();
-        vector<int>prefix(n,0);
-        prefix[0]=(s[0]=='1')?1:0;
-        for(int i=1;i<n;i++){
-            prefix[i]=prefix[i-1]+((s[i]=='1')?1:0);
+        vector<int>left(n,-1);
+        left[0]=-1;
+        for(int i=0;i<n-1;i++){
+          if(s[i]=='0')
+          left[i+1]=i;
+          else
+          left[i+1]=left[i];
         }
+        int ans=0;
         for(int i=0;i<n;i++){
-            int onec=0;int zeroc=0;
-            for(int j=i;j<n;j++){
-                 onec=prefix[j]-((i>0)?prefix[i-1]:0);
-                 zeroc=(j-i+1)-onec;
-                 if(onec<zeroc*zeroc){
-                    j+=(zeroc*zeroc-onec-1);
-                 }
-                 else if(onec==zeroc*zeroc){
-                    ans++;
-                 }
-                 else if(onec>zeroc*zeroc){
-                    ans++;
-                    int diff=(int)sqrt(onec)-zeroc;
-                    int nextj=j+diff;
-                    if(nextj>=n){
-                        ans+=(n-j-1);
-                    }
-                    else{
-                        ans+=diff;
-                    }
-                    j=nextj;
-                 }
+            int zeros=(s[i]=='0'?1:0);
+            int j=i;
+            while(j>=0&&zeros*zeros<=n){
+                int ones=i-left[j]-zeros;
+                if(ones>=zeros*zeros)
+                ans+=min(j-left[j],ones-zeros*zeros+1);
+                zeros++;
+                j=left[j];
             }
         }
         return ans;
