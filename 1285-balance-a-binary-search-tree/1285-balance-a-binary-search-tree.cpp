@@ -11,45 +11,23 @@
  */
 class Solution {
 public:
-    void inorder(TreeNode *root,vector<int>&in){
-        if(!root)
-        return;
-        inorder(root->left,in);
-        in.push_back(root->val);
-        inorder(root->right,in);
+    void build(vector<TreeNode*>&v,TreeNode* root){
+        if(!root) return;
+        build(v,root->left);
+        v.push_back(root);
+        build(v,root->right);
     }
-    // TreeNode *bulidTree(vector<int>&in,int i,int j){
-    //      if(i>j)
-    //      return NULL;
-    //     int mid=(i+j)/2;
-    //     TreeNode *root=new TreeNode(in[mid]);
-    //     root->left=bulidTree(in,i,mid-1);
-    //     root->right=bulidTree(in,mid+1,j);
-    //     return root;
-    // }
-    // TreeNode *bulidTree(vector<int>&in,int i,int j){
-    //      if(i>j)
-    //      return NULL;
-    //     //int mid=ceil((i+j)/2);
-    //     int mid=(i+j+1)/2;
-    //     TreeNode *root=new TreeNode(in[mid]);
-    //     root->left=bulidTree(in,i,mid-1);
-    //     root->right=bulidTree(in,mid+1,j);
-    //     return root;
-    // }
-    TreeNode *bulidTree(vector<int>&in,int i,int j){
-         if(i>=j)
-         return NULL;
-        int mid=(i+j)/2;
-        TreeNode *root=new TreeNode(in[mid]);
-        root->left=bulidTree(in,i,mid);
-        root->right=bulidTree(in,mid+1,j);
+    TreeNode* solve(vector<TreeNode*>&v,int s,int e){
+        if(s>e) return NULL;
+        int mid=(s+e)/2;
+        TreeNode* root=v[mid];
+        root->left=solve(v,s,mid-1);
+        root->right=solve(v,mid+1,e);
         return root;
     }
     TreeNode* balanceBST(TreeNode* root) {
-        vector<int>in;
-        inorder(root,in);
-        // return bulidTree(in,0,in.size()-1);
-        return bulidTree(in,0,in.size());
+        vector<TreeNode*>v;
+        build(v,root);
+        return solve(v,0,v.size()-1);
     }
 };
