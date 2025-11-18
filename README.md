@@ -235,6 +235,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2465-shifting-letters-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2465-shifting-letters-ii) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
+| [2597-cycle-length-queries-in-a-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2597-cycle-length-queries-in-a-tree) |
 | [2625-increment-submatrices-by-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2625-increment-submatrices-by-one) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
@@ -1280,6 +1281,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1475-maximum-sum-bst-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1475-maximum-sum-bst-in-binary-tree) |
 | [2384-root-equals-sum-of-children](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2384-root-equals-sum-of-children) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
+| [2597-cycle-length-queries-in-a-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2597-cycle-length-queries-in-a-tree) |
 ## Iterator
 |  |
 | ------- |
@@ -1342,6 +1344,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1475-maximum-sum-bst-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1475-maximum-sum-bst-in-binary-tree) |
 | [2384-root-equals-sum-of-children](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2384-root-equals-sum-of-children) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
+| [2597-cycle-length-queries-in-a-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2597-cycle-length-queries-in-a-tree) |
 ## Binary Search Tree
 |  |
 | ------- |
