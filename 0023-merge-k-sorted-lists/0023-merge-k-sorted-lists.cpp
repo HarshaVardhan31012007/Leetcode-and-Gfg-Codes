@@ -10,47 +10,44 @@
  */
 class Solution {
 public:
-    class comapre{
-       public:
-       bool operator()(ListNode *a,ListNode*b){
-        return a->val>b->val;
-       }
+    class comp{
+        public:
+        bool operator()(ListNode* &a,ListNode* &b){
+             return a->val>b->val;
+        }
     };
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        priority_queue<ListNode*,vector<ListNode*>,comapre>pq;
-        // ListNode *head=NULL;
-        // ListNode *tail=NULL;
-        // for(int i=0;i<lists.size();i++){
-        //     if(lists[i]!=NULL)
-        //     pq.push(lists[i]);
-        // }
-        // while(!pq.empty()){
-        //  ListNode *top=pq.top();
-        //  pq.pop();
-        //  if(head==NULL&&tail==NULL){
-        //    head=top;
-        //    tail=top;
-        //  }
-        //  else{
-        //     tail->next=top;
-        //     tail=top;
-        //  }
-        //  if(tail->next!=NULL) pq.push(tail->next);
-        // }
-        // return head;
-
-        ListNode *ans=new ListNode(-1);
-        for(auto head:lists){
-            if(head) pq.push(head);
+        priority_queue<ListNode*,vector<ListNode*>,comp>pq;
+        for(auto &list:lists){
+            if(list)
+            pq.push(list);
         }
-        ListNode *it=ans;
-        while(!pq.empty()){
-            ListNode *top=pq.top();
+        ListNode* ans=NULL;
+        ListNode* it=ans;
+        if(pq.size()==0) return ans;
+        while(pq.size()>1){
+            ListNode* top=pq.top();
             pq.pop();
-            it->next=top;
-            it=it->next;
-            if(top->next) pq.push(top->next);
+            if(!ans){
+                ans=top;
+                it=ans;
+            }
+            else{
+                it->next=top;
+                it=it->next;
+            }
+            if(top->next){
+                pq.push(top->next);
+            }
         }
-        return ans->next;
+            if(!ans){
+                ans=pq.top();
+                it=ans;
+            }
+            else{
+                it->next=pq.top();
+                it=it->next;
+            }
+        return ans;
     }
 };
