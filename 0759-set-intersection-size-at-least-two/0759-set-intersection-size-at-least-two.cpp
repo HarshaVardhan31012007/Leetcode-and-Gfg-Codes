@@ -2,6 +2,7 @@ class Solution {
 public:
     typedef vector<int>vec;
     int intersectionSizeTwo(vector<vector<int>>& intervals) {
+        // typedef vector<int>vec;
        auto lambda=[](vec &a,vec &b){
           if(a[1]!=b[1])
             return a[1]<b[1];
