@@ -282,6 +282,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0800-letter-case-permutation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0800-letter-case-permutation) |
 | [1054-complement-of-base-10-integer](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1054-complement-of-base-10-integer) |
 | [1758-distribute-repeating-integers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1758-distribute-repeating-integers) |
+| [1930-unique-length-3-palindromic-subsequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [3233-maximize-the-number-of-partitions-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3233-maximize-the-number-of-partitions-after-operations) |
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 | [3601-find-the-k-th-character-in-string-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3601-find-the-k-th-character-in-string-game-ii) |
@@ -450,6 +451,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1510-find-lucky-integer-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1612-avoid-flood-in-the-city](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1612-avoid-flood-in-the-city) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1890-sum-of-beauty-of-all-substrings) |
+| [1930-unique-length-3-palindromic-subsequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [2169-simple-bank-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2169-simple-bank-system) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2174-next-greater-numerically-balanced-number) |
 | [2186-count-vowel-substrings-of-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2186-count-vowel-substrings-of-a-string) |
@@ -514,6 +516,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0878-shifting-letters](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0878-shifting-letters) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1240-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1240-stone-game-ii) |
+| [1930-unique-length-3-palindromic-subsequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [2465-shifting-letters-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2465-shifting-letters-ii) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2625-increment-submatrices-by-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2625-increment-submatrices-by-one) |
@@ -782,6 +785,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1636-number-of-substrings-with-only-1s](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1890-sum-of-beauty-of-all-substrings) |
+| [1930-unique-length-3-palindromic-subsequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2088-minimum-time-to-type-word-using-special-typewriter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2088-minimum-time-to-type-word-using-special-typewriter) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
