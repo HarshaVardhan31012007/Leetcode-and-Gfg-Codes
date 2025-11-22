@@ -1,56 +1,55 @@
 class Twitter {
 public:
-    class tweet{
-        public:
-        int tweetId;
-        int time;
-        tweet(int id,int t):tweetId(id),time(t){}
-    };
-    class comp{
-        public:
-        bool operator()(tweet a,tweet b){
-            return a.time>b.time;
-        }
-    };
-    int time;
+    unordered_map<int,vector<pair<int,int>>>tweets;
+    unordered_map<int,set<int>>followers;
     Twitter() {
-        time=0;
+        
     }
-    unordered_map<int,vector<tweet>>mpp;
-    unordered_map<int,unordered_set<int>>mp;
+    int time=1;
     void postTweet(int userId, int tweetId) {
-        mpp[userId].push_back(tweet(tweetId,time++));
+       tweets[userId].push_back({time++,tweetId});
     }
     
     vector<int> getNewsFeed(int userId) {
-        vector<int>ans;
-        priority_queue<tweet,vector<tweet>,comp>pq;
-        for(auto each:mpp[userId]){
+         priority_queue<pair<int,int>,vector<pair<int,int>>,greater<>>pq;
+         vector<pair<int,int>>v=tweets[userId];
+         for(auto &each:v){
             pq.push(each);
             if(pq.size()>10)
             pq.pop();
-        }
-        for(auto each:mp[userId]){
-            for(auto e:mpp[each]){
-            pq.push(e);
-            if(pq.size()>10)
+         }
+         set<int>&st=followers[userId];
+         for(auto &each:st){
+                vector<pair<int,int>>v1=tweets[each];
+                for(auto &each:v1){
+                    pq.push(each);
+                    if(pq.size()>10)
+                    pq.pop();
+                }
+         }
+         vector<int>ans;
+         int count=10;
+         while(!pq.empty()&&count>0){
+            auto &[time,id]=pq.top();
+            ans.push_back(id);
             pq.pop();
-            }
-        }
-        while(!pq.empty()){
-           ans.push_back(pq.top().tweetId);
-           pq.pop();
-        }
-        reverse(ans.begin(),ans.end());
-        return ans;
+            count--;
+         }
+         reverse(ans.begin(),ans.end());
+         return ans;
     }
     
     void follow(int followerId, int followeeId) {
-        mp[followerId].insert(followeeId);
+        if(followerId!=followeeId){
+            followers[followerId].insert(followeeId);
+        }
     }
     
     void unfollow(int followerId, int followeeId) {
-        mp[followerId].erase(followeeId);
+        set<int>&st=followers[followerId];
+        if(st.find(followeeId)!=st.end()){
+            st.erase(followeeId);
+        }
     }
 };
 
