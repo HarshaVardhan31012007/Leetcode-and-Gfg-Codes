@@ -14,10 +14,15 @@ public:
         //   return ans;
 
 
-          int ans=0;
-          for(int i=0;i<nums.size();i++){
-                ans+=(nums[i]%3?1:0);
-          }
-          return ans;
+        //   int ans=0;
+        //   for(int i=0;i<nums.size();i++){
+        //         ans+=(nums[i]%3?1:0);
+        //   }
+        //   return ans;
+
+
+        return count_if(nums.begin(),nums.end(),[](int num){
+            return num%3!=0;
+        });
     }
 };
