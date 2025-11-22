@@ -46,21 +46,48 @@ public:
     // }
 
 
+    // int countPalindromicSubsequence(string s) {
+    //     int n=s.length();
+    //     unordered_map<char,vector<int>>mpp;
+    //     for(int i=0;i<n;i++){
+    //         if(mpp.find(s[i])==mpp.end()||mpp[s[i]].size()==1)
+    //         mpp[s[i]].push_back(i);
+    //         else
+    //         mpp[s[i]][1]=i;
+    //     }
+    //     int ans=0;
+    //     for(auto it=mpp.begin();it!=mpp.end();it++){
+    //         vector<int>&vec=it->second;
+    //         if(vec.size()<2) continue;
+    //         int a=vec[0];
+    //         int b=vec[1];
+    //         int freq[26]={0};
+    //         for(int j=a+1;j<b;j++){
+    //             if(freq[s[j]-'a']==0){
+    //                 ans++;
+    //             }
+    //             freq[s[j]-'a']++;
+    //         }
+    //     }
+    //     return ans;
+    // }
+
+
+    
     int countPalindromicSubsequence(string s) {
         int n=s.length();
-        unordered_map<char,vector<int>>mpp;
+        vector<pair<int,int>>v(26,{-1,-1});
         for(int i=0;i<n;i++){
-            if(mpp.find(s[i])==mpp.end()||mpp[s[i]].size()==1)
-            mpp[s[i]].push_back(i);
-            else
-            mpp[s[i]][1]=i;
+           if(v[s[i]-'a'].first==-1){
+               v[s[i]-'a'].first=i;
+           }
+           v[s[i]-'a'].second=i;
         }
         int ans=0;
-        for(auto it=mpp.begin();it!=mpp.end();it++){
-            vector<int>&vec=it->second;
-            if(vec.size()<2) continue;
-            int a=vec[0];
-            int b=vec[1];
+        for(int i=0;i<26;i++){
+            if(v[i].first==-1) continue;
+            int a=v[i].first;
+            int b=v[i].second;
             int freq[26]={0};
             for(int j=a+1;j<b;j++){
                 if(freq[s[j]-'a']==0){
@@ -71,4 +98,6 @@ public:
         }
         return ans;
     }
+
+
 };
