@@ -1,7 +1,7 @@
 class Twitter {
 public:
     unordered_map<int,vector<pair<int,int>>>tweets;
-    unordered_map<int,set<int>>followers;
+    unordered_map<int,unordered_set<int>>followers;
     Twitter() {
         
     }
@@ -18,7 +18,7 @@ public:
             if(pq.size()>10)
             pq.pop();
          }
-         set<int>&st=followers[userId];
+         unordered_set<int>&st=followers[userId];
          for(auto &each:st){
                 vector<pair<int,int>>v1=tweets[each];
                 for(auto &each:v1){
@@ -46,7 +46,7 @@ public:
     }
     
     void unfollow(int followerId, int followeeId) {
-        set<int>&st=followers[followerId];
+        unordered_set<int>&st=followers[followerId];
         if(st.find(followeeId)!=st.end()){
             st.erase(followeeId);
         }
