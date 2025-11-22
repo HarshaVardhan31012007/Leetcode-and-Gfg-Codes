@@ -31,8 +31,15 @@ public:
             freq[num]++;
         }
         priority_queue<pair<int,int>,vector<pair<int,int>>,greater<>>pq;
-        for(auto it=freq.begin();it!=freq.end();it++){
-            pq.push({it->second,it->first});
+        // for(auto it=freq.begin();it!=freq.end();it++){
+        //     pq.push({it->second,it->first});
+        //     if(pq.size()>k){
+        //         pq.pop();
+        //     }
+        // }
+
+         for(auto &each:freq){
+            pq.push({each.second,each.first});
             if(pq.size()>k){
                 pq.pop();
             }
