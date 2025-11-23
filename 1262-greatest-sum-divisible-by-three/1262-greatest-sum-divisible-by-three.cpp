@@ -89,39 +89,57 @@ public:
 
 
 
-    void update(int &x,int &y,int &num){
-            if(num<x){
-                 y=x;
-                 x=num;
-            }
-            else if(num<y){
-                y=num;
-            }   
+    // void update(int &x,int &y,int &num){
+    //         if(num<x){
+    //              y=x;
+    //              x=num;
+    //         }
+    //         else if(num<y){
+    //             y=num;
+    //         }   
+    // }
+    // int maxSumDivThree(vector<int>& nums) {
+    //     int sum=0;
+    //     int a=INT_MAX;int b=INT_MAX;int c=INT_MAX;int d=INT_MAX;
+    //     for(int i=0;i<nums.size();i++){
+    //          sum+=nums[i];
+    //          int rem=nums[i]%3;
+    //          if(rem==1){
+    //             update(a,b,nums[i]);
+    //          }
+    //          else if(rem==2){
+    //             update(c,d,nums[i]);
+    //          }
+    //     }
+    //     if(sum%3==0) return sum;
+    //     if(sum%3==1){
+    //         int mini=min(a,c<INT_MAX&&d<INT_MAX?c+d:INT_MAX);
+    //         if(mini!=INT_MAX)
+    //         return sum-mini;
+    //     }
+    //     if(sum%3==2){
+    //         int mini=min(c,a<INT_MAX&&b<INT_MAX?a+b:INT_MAX);
+    //         if(mini!=INT_MAX)
+    //         return sum-mini;
+    //     }
+    //     return 0;
+    // }
+
+
+
+    int solve(vector<int>&nums,int i,int rem,vector<vector<int>>&dp){
+        if(i>=nums.size()){
+            if(rem==0) return 0;
+            return INT_MIN;
+        }
+        if(dp[i][rem]!=-1)
+        return dp[i][rem];
+        int inc=nums[i]+solve(nums,i+1,(rem%3+nums[i]%3)%3,dp);
+        int exc=solve(nums,i+1,rem,dp);
+        return dp[i][rem]=max(inc,exc);
     }
     int maxSumDivThree(vector<int>& nums) {
-        int sum=0;
-        int a=INT_MAX;int b=INT_MAX;int c=INT_MAX;int d=INT_MAX;
-        for(int i=0;i<nums.size();i++){
-             sum+=nums[i];
-             int rem=nums[i]%3;
-             if(rem==1){
-                update(a,b,nums[i]);
-             }
-             else if(rem==2){
-                update(c,d,nums[i]);
-             }
-        }
-        if(sum%3==0) return sum;
-        if(sum%3==1){
-            int mini=min(a,c<INT_MAX&&d<INT_MAX?c+d:INT_MAX);
-            if(mini!=INT_MAX)
-            return sum-mini;
-        }
-        if(sum%3==2){
-            int mini=min(c,a<INT_MAX&&b<INT_MAX?a+b:INT_MAX);
-            if(mini!=INT_MAX)
-            return sum-mini;
-        }
-        return 0;
+        vector<vector<int>>dp(nums.size()+1,vector<int>(3,-1));
+        return solve(nums,0,0,dp);
     }
 };
