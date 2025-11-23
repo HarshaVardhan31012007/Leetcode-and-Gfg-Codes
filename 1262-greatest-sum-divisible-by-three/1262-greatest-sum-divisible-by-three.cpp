@@ -31,9 +31,9 @@ public:
         int rem=sum%3;
         if(rem==0) return sum;
         while(rem<=sum){
-            if(check(nums,cumsum,rem))
-              return sum-rem;
-            else if(check(nums,0,rem))
+            // if(check(nums,cumsum,rem))
+            //   return sum-rem;
+            if(check(nums,0,rem))
               return sum-rem;
             rem+=3;
         }
