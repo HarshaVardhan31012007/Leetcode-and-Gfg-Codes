@@ -41,11 +41,11 @@ public:
     vector<int> lexSmallestNegatedPerm(int n, long long target) {
         long long S=1LL*n*(n+1)/2;
         if(target>S||target<-S||((S-target)&1)) return {};
-        long long diff=(S-target)/2;
+        long long diff=(S-target)/2;//diff should be long long as target 10 power 10
         vector<int>ans;
         int last=INT_MAX;
         for(int i=n;i>=1;i--){
-            if(diff>=i*1LL){
+            if(diff>=i){// i also should be long long so that comparable
                 ans.push_back(-i);
                 diff-=i;
                 if(diff==0){
