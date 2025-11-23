@@ -45,7 +45,7 @@ public:
         vector<int>ans;
         int last=INT_MAX;
         for(int i=n;i>=1;i--){
-            if(diff>=i){// i also should be long long so that comparable
+            if(diff>=i*1LL){// i also should be long long so that comparable
                 ans.push_back(-i);
                 diff-=i;
                 if(diff==0){
