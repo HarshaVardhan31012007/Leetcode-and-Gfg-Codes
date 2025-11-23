@@ -77,14 +77,14 @@ public:
     //       vector<long long int>psum(n,0);
     //       psum[0]=(s[0]-'0');
     //       for(long long int i=1;i<n;i++){
-    //         psum[i]+=psum[i-1]+(s[i]-'0');
+    //         psum[i]=(psum[i-1]+(s[i]-'0'))%mod;
     //       }
     //       vector<long long int>pnum(n,0);
     //       pnum[0]=(s[0]-'0');
     //       for(long long int i=1;i<n;i++){
     //         pnum[i]=pnum[i-1];
     //         if(s[i]!='0'){
-    //             pnum[i]=pnum[i]*10+(s[i]-'0');
+    //             pnum[i]=(pnum[i]*10+(s[i]-'0'))%mod;
     //         }
     //       }
     //       vector<int>ans(queries.size(),0);
@@ -98,9 +98,9 @@ public:
     //           }
     //           long long int num=0;
     //           long long int c=1;
-    //           while(m>n){
-    //              num=(num%10+c%10*(m%10));
-    //              c=(c*10)%mod;
+    //           while(m!=n){
+    //              num=(num+c*(m%10));
+    //              c=(c*10);
     //              m=m/10;
     //           }
     //           long long int sum=0;
