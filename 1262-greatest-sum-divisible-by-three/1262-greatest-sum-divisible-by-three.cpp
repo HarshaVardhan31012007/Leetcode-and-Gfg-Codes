@@ -25,6 +25,9 @@ public:
     // }
 
 
+
+
+
     //  bool check(vector<int>&nums,vector<vector<int>>&dp,int t){
     //     for(int i=nums.size()-1;i>=0;i--){
     //         for(int j=0;j<=t;j++){
@@ -53,28 +56,71 @@ public:
 
 
 
-    bool check(vector<int>&nums,vector<int>&curr,int &t){
-        for(int i=nums.size()-1;i>=0;i--){
-            for(int j=t;j>=0;j--){
-                bool l=false;
-                if(j>=nums[i])
-                l=curr[j-nums[i]];
-                bool e=curr[j];
-                curr[j]=l||e;
+
+
+
+    // bool check(vector<int>&nums,vector<int>&curr,int &t){
+    //     for(int i=nums.size()-1;i>=0;i--){
+    //         for(int j=t;j>=0;j--){
+    //             bool l=false;
+    //             if(j>=nums[i])
+    //             l=curr[j-nums[i]];
+    //             bool e=curr[j];
+    //             curr[j]=l||e;
+    //         }
+    //     }
+    //     return curr[t];
+    // }
+    // int maxSumDivThree(vector<int>& nums) {
+    //     int sum=accumulate(nums.begin(),nums.end(),0);
+    //     int rem=sum%3;
+    //     if(rem==0) return sum;
+    //     while(rem<=sum){
+    //         vector<int>curr(rem+1,0);
+    //         curr[0]=1;
+    //         if(check(nums,curr,rem))
+    //           return sum-rem;
+    //         rem+=3;
+    //     }
+    //     return 0;
+    // }
+
+
+
+
+
+    void update(int &x,int &y,int &num){
+            if(num<x){
+                 y=x;
+                 x=num;
             }
-        }
-        return curr[t];
+            else if(num<y){
+                y=num;
+            }   
     }
     int maxSumDivThree(vector<int>& nums) {
-        int sum=accumulate(nums.begin(),nums.end(),0);
-        int rem=sum%3;
-        if(rem==0) return sum;
-        while(rem<=sum){
-            vector<int>curr(rem+1,0);
-            curr[0]=1;
-            if(check(nums,curr,rem))
-              return sum-rem;
-            rem+=3;
+        int sum=0;
+        int a=INT_MAX;int b=INT_MAX;int c=INT_MAX;int d=INT_MAX;
+        for(int i=0;i<nums.size();i++){
+             sum+=nums[i];
+             int rem=nums[i]%3;
+             if(rem==1){
+                update(a,b,nums[i]);
+             }
+             else if(rem==2){
+                update(c,d,nums[i]);
+             }
+        }
+        if(sum%3==0) return sum;
+        if(sum%3==1){
+            int mini=min(a,c<INT_MAX&&d<INT_MAX?c+d:INT_MAX);
+            if(mini!=INT_MAX)
+            return sum-mini;
+        }
+        if(sum%3==2){
+            int mini=min(c,a<INT_MAX&&b<INT_MAX?a+b:INT_MAX);
+            if(mini!=INT_MAX)
+            return sum-mini;
         }
         return 0;
     }
