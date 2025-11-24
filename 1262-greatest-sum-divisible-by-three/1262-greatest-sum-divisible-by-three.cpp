@@ -127,19 +127,36 @@ public:
 
 
 
-    int solve(vector<int>&nums,int i,int rem,vector<vector<int>>&dp){
-        if(i>=nums.size()){
-            if(rem==0) return 0;
-            return INT_MIN;
+    // int solve(vector<int>&nums,int i,int rem,vector<vector<int>>&dp){
+    //     if(i>=nums.size()){
+    //         if(rem==0) return 0;
+    //         return INT_MIN;
+    //     }
+    //     if(dp[i][rem]!=-1)
+    //     return dp[i][rem];
+    //     int inc=nums[i]+solve(nums,i+1,(rem%3+nums[i]%3)%3,dp);
+    //     int exc=solve(nums,i+1,rem,dp);
+    //     return dp[i][rem]=max(inc,exc);
+    // }
+    // int maxSumDivThree(vector<int>& nums) {
+    //     vector<vector<int>>dp(nums.size()+1,vector<int>(3,-1));
+    //     return solve(nums,0,0,dp);
+    // }
+
+
+     int solve(vector<int>&nums,vector<vector<int>>&dp){
+        for(int i=nums.size()-1;i>=0;i--){
+            for(int r=2;r>=0;r--){
+                int inc=nums[i]+dp[i+1][(r+nums[i]%3)%3];
+                int exc=dp[i+1][r];
+                dp[i][r]=max(inc,exc);
+            }
         }
-        if(dp[i][rem]!=-1)
-        return dp[i][rem];
-        int inc=nums[i]+solve(nums,i+1,(rem%3+nums[i]%3)%3,dp);
-        int exc=solve(nums,i+1,rem,dp);
-        return dp[i][rem]=max(inc,exc);
+        return dp[0][0];
     }
     int maxSumDivThree(vector<int>& nums) {
-        vector<vector<int>>dp(nums.size()+1,vector<int>(3,-1));
-        return solve(nums,0,0,dp);
+        vector<vector<int>>dp(nums.size()+1,vector<int>(3,INT_MIN));
+        dp[nums.size()][0]=0;
+        return solve(nums,dp);
     }
 };
