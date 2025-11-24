@@ -144,19 +144,39 @@ public:
     // }
 
 
-     int solve(vector<int>&nums,vector<vector<int>>&dp){
+    //  int solve(vector<int>&nums,vector<vector<int>>&dp){
+    //     for(int i=nums.size()-1;i>=0;i--){
+    //         for(int r=2;r>=0;r--){
+    //             int inc=nums[i]+dp[i+1][(r+nums[i]%3)%3];
+    //             int exc=dp[i+1][r];
+    //             dp[i][r]=max(inc,exc);
+    //         }
+    //     }
+    //     return dp[0][0];
+    // }
+    // int maxSumDivThree(vector<int>& nums) {
+    //     vector<vector<int>>dp(nums.size()+1,vector<int>(3,INT_MIN));
+    //     dp[nums.size()][0]=0;
+    //     return solve(nums,dp);
+    // }
+
+
+
+     int solve(vector<int>&nums){
+        vector<int>next(3,INT_MIN);
+        next[0]=0;
+        vector<int>curr(3,INT_MIN);
         for(int i=nums.size()-1;i>=0;i--){
             for(int r=2;r>=0;r--){
-                int inc=nums[i]+dp[i+1][(r+nums[i]%3)%3];
-                int exc=dp[i+1][r];
-                dp[i][r]=max(inc,exc);
+                int inc=nums[i]+next[(r+nums[i]%3)%3];
+                int exc=next[r];
+                curr[r]=max(inc,exc);
             }
+            next=curr;
         }
-        return dp[0][0];
+        return curr[0];
     }
     int maxSumDivThree(vector<int>& nums) {
-        vector<vector<int>>dp(nums.size()+1,vector<int>(3,INT_MIN));
-        dp[nums.size()][0]=0;
-        return solve(nums,dp);
+        return solve(nums);
     }
 };
