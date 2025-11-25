@@ -27,12 +27,21 @@ public:
         // dq.push_back(i);
 
 
-        if(!dq.empty()&&i-dq.front()>=k){
-            dq.pop_front();
-        }
+        // if(!dq.empty()&&i-dq.front()>=k){
+        //     dq.pop_front();
+        // }
+        // while(!dq.empty()&&nums[dq.back()]<nums[i])
+        // dq.pop_back();
+        // dq.push_back(i);
+
+
+    
         while(!dq.empty()&&nums[dq.back()]<nums[i])
         dq.pop_back();
         dq.push_back(i);
+        if(!dq.empty()&&i-dq.front()>=k){
+            dq.pop_front();
+        }
 
         ans.push_back(nums[dq.front()]);
      }
