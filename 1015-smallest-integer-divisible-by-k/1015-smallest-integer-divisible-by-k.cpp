@@ -13,19 +13,29 @@ public:
         //  }
         //  return -1;
 
-         int n=0;
-         int ans=0;
-         unordered_set<int>st;
-         while(1){
+        //  int n=0;
+        //  int ans=0;
+        //  unordered_set<int>st;
+        //  while(1){
+        //     n=(n*10+1)%k;
+        //     ans++;
+        //     if(n==0) return ans;
+        //     if(st.find(n)!=st.end()){
+        //         break;
+        //     }
+        //     else
+        //     st.insert(n);
+        //  }
+        //  return -1;
+
+
+
+        int ans=0;int n=0;
+        for(int length=1;length<=k;length++){
             n=(n*10+1)%k;
             ans++;
             if(n==0) return ans;
-            if(st.find(n)!=st.end()){
-                break;
-            }
-            else
-            st.insert(n);
-         }
-         return -1;
+        }
+        return -1;
     }
 };
