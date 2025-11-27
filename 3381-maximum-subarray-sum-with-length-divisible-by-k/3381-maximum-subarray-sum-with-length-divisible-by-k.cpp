@@ -4,7 +4,7 @@ public:
         unordered_map<int,pair<int,long long>>mpp;
         int rem=0;
         long long sum=0;
-        long long ans=LLONG_MIN;
+        long long ans=LLONG_MIN;//not intmin see constraints sum can go out of int range
         for(int i=0;i<nums.size();i++){
            rem=(rem+1)%k;
            sum=sum+nums[i];
