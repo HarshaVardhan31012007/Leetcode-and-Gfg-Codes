@@ -1158,6 +1158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2439-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2439-longest-cycle-in-a-graph) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
+| [2872-maximum-number-of-k-divisible-components](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2872-maximum-number-of-k-divisible-components) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -1335,6 +1336,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2384-root-equals-sum-of-children](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2384-root-equals-sum-of-children) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2597-cycle-length-queries-in-a-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2597-cycle-length-queries-in-a-tree) |
+| [2872-maximum-number-of-k-divisible-components](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2872-maximum-number-of-k-divisible-components) |
 ## Iterator
 |  |
 | ------- |
