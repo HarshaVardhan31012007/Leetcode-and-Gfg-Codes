@@ -15,15 +15,8 @@ public:
         unordered_map<int,int>mpp;
         int ans=INT_MAX;
         for(int i=0;i<nums.size();i++){
-            if(i==nums.size()-1){
-                if(mpp.count(0)){
-                    int idx=mpp[0];
-                    ans=min(ans,i-idx);
-                }
-            }
-            else{
-                int a=suffix[i+1];
-                if(a==0)
+                int a=(i==nums.size()-1?0:suffix[i+1]);
+                if(i!=nums.size()-1&&a==0)
                 ans=min(ans,i+1);
                 int b=(p-a)%p;
                 if(mpp.count(b)){
@@ -31,7 +24,6 @@ public:
                    ans=min(ans,i-idx);
                 }
                 mpp[prefix[i]]=i;
-            }
         }
         return ans==INT_MAX?-1:ans;
     }
