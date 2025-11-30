@@ -8,7 +8,7 @@ public:
         }
         if(suffix[0]==0) return 0;
         unordered_map<int,int>mpp;
-        int ans=INT_MAX;int rem=0;//prefix remainder
+        int ans=INT_MAX;int rem=0;//prefix remainder// as we are going from left to right prefix[i] can be calculated on moving each step forward so prefix reamiander array is not required 
         for(int i=0;i<nums.size();i++){
                 rem=(rem+nums[i]%p)%p;
                 int a=(i==nums.size()-1?0:suffix[i+1]);
