@@ -225,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1522-stone-game-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1522-stone-game-iii) |
 | [1548-check-if-all-1s-are-at-least-length-k-places-away](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1548-check-if-all-1s-are-at-least-length-k-places-away) |
 | [1582-design-browser-history](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1582-design-browser-history) |
+| [1590-make-sum-divisible-by-p](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1590-make-sum-divisible-by-p) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1612-avoid-flood-in-the-city](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1612-avoid-flood-in-the-city) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1669-minimum-cost-to-cut-a-stick) |
@@ -471,6 +472,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1510-find-lucky-integer-in-an-array) |
+| [1590-make-sum-divisible-by-p](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1590-make-sum-divisible-by-p) |
 | [1612-avoid-flood-in-the-city](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1612-avoid-flood-in-the-city) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1930-unique-length-3-palindromic-subsequences) |
@@ -539,6 +541,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0878-shifting-letters](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0878-shifting-letters) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1240-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1240-stone-game-ii) |
+| [1590-make-sum-divisible-by-p](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1590-make-sum-divisible-by-p) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [2465-shifting-letters-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2465-shifting-letters-ii) |
