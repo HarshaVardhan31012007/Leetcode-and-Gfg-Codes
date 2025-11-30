@@ -3,7 +3,7 @@ public:
     static bool comp(vector<int>&a,vector<int>&b){
         if(a[0]!=b[0])
         return a[0]<b[0];
-        return a[1]<b[1];
+        return a[1]<b[1];// or a[1]>b[1]
     }
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
         vector<vector<int>>ans;
