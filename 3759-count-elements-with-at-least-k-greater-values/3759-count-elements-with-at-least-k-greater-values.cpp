@@ -28,19 +28,26 @@ public:
 
 
 
+        // if(k==0) return nums.size();
+        // priority_queue<int>pq;
+        // for(int i=0;i<nums.size();i++){
+        //     pq.push(nums[i]);
+        // }
+        // k--;
+        // while(!pq.empty()&&(k-->0)){
+        //     pq.pop();
+        // }
+        // int num=pq.top();
+        // while(!pq.empty()&&num==pq.top()){
+        //     pq.pop();
+        // }
+        // return pq.size();
+
         if(k==0) return nums.size();
-        priority_queue<int>pq;
-        for(int i=0;i<nums.size();i++){
-            pq.push(nums[i]);
-        }
-        k--;
-        while(!pq.empty()&&(k-->0)){
-            pq.pop();
-        }
-        int num=pq.top();
-        while(!pq.empty()&&num==pq.top()){
-            pq.pop();
-        }
-        return pq.size();
+        sort(nums.begin(),nums.end());
+        int idx=nums.size()-k;
+        int num=nums[idx];
+        while(idx>=0&&num==nums[idx]) idx--;
+        return idx+1;
     }
 };
