@@ -20,8 +20,9 @@ public:
         for(int i=0;i<nums.size();i++){
             int idx=upper_bound(nums.begin()+i,nums.end(),nums[i])-nums.begin();
             if(nums.size()-idx>=k){
-                ans++;
+                ans+=idx-i;
             }
+            i=idx-1;
         }
         return ans;
     }
