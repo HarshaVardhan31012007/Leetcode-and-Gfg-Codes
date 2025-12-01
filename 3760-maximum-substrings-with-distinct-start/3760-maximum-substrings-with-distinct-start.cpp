@@ -12,12 +12,15 @@ public:
         // return ans;
 
 
-        set<char>st;
+        unordered_set<char>st;
         for(auto &each:s){
             if(st.find(each)==st.end()){
                 st.insert(each);
             }
         }
         return st.size();
+
+
+        
     }
 };
