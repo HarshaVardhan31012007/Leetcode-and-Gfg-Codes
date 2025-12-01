@@ -12,15 +12,21 @@ public:
         // return ans;
 
 
-        unordered_set<char>st;
-        for(auto &each:s){
-            if(st.find(each)==st.end()){
-                st.insert(each);
-            }
+        // unordered_set<char>st;
+        // for(auto &each:s){
+        //     if(st.find(each)==st.end()){
+        //         st.insert(each);
+        //     }
+        // }
+        // return st.size();
+
+
+        int ans=1;
+        sort(s.begin(),s.end());
+        for(int i=1;i<s.length();i++){
+            if(s[i]==s[i-1]) continue;
+            ans++;
         }
-        return st.size();
-
-
-        
+        return ans;
     }
 };
