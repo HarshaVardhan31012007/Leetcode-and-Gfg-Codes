@@ -30,12 +30,23 @@ public:
         // return ans;
 
 
-        int freq[26]={0};
+        // int freq[26]={0};
+        // int ans=0;
+        // for(auto &each:s){
+        //     if(freq[each-'a']==0)
+        //     ans++;
+        //     freq[each-'a']++;
+        // }
+        // return ans;
+
+
+        int bit=0;
         int ans=0;
         for(auto &each:s){
-            if(freq[each-'a']==0)
+            int prev=bit;
+            bit=bit|(1<<(each-'a'));
+            if(bit!=prev)
             ans++;
-            freq[each-'a']++;
         }
         return ans;
     }
