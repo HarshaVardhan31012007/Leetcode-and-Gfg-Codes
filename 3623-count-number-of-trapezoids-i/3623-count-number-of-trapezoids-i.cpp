@@ -28,13 +28,13 @@ public:
             mpp[point[1]]++;
         }
         long long sum=0;
-        int ans=0;
+        long long ans=0;
         for(auto it=mpp.begin();it!=mpp.end();it++){
            if(it->second>=2){
                ans=(ans+(sum%mod*(((it->second)*(it->second-1))/2)%mod)%mod)%mod;
                sum=(sum%mod+(((it->second)*(it->second-1))/2)%mod)%mod;
            }
         }
-        return ans;
+        return (int)ans;
     }
 };
