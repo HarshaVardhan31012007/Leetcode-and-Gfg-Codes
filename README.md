@@ -238,6 +238,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1902-car-fleet-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1902-car-fleet-ii) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [1952-minimum-sideway-jumps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1952-minimum-sideway-jumps) |
+| [2040-kth-smallest-product-of-two-sorted-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2040-kth-smallest-product-of-two-sorted-arrays) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2108-minimize-the-difference-between-target-and-chosen-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2108-minimize-the-difference-between-target-and-chosen-elements) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2137-final-value-of-variable-after-performing-operations) |
@@ -523,6 +524,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1612-avoid-flood-in-the-city](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1612-avoid-flood-in-the-city) |
 | [1753-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-path-with-minimum-effort) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
+| [2040-kth-smallest-product-of-two-sorted-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2040-kth-smallest-product-of-two-sorted-arrays) |
 | [2150-kth-smallest-product-of-two-sorted-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2150-kth-smallest-product-of-two-sorted-arrays) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3437-maximum-total-damage-with-spell-casting) |
