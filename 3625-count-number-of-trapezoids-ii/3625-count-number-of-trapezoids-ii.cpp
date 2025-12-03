@@ -29,7 +29,7 @@ public:
         }
         long long ans=0;
         for(auto it=mpp.begin();it!=mpp.end();it++){
-            auto it1=it->second;
+            auto &it1=it->second;//ampersand important it copies all map it increases time complexity
             long long sum=0;
             for(auto it2=it1.begin();it2!=it1.end();it2++){
                 long long count=1LL*(it2->second);
@@ -38,7 +38,7 @@ public:
             }
         }
          for(auto it=mpp1.begin();it!=mpp1.end();it++){
-            auto it1=it->second;
+            auto &it1=it->second;//ampersand important it copies all map it increases time complexity
             long long sum=0;
             for(auto it2=it1.begin();it2!=it1.end();it2++){
                 long long count=1LL*(it2->second);
