@@ -40,19 +40,30 @@ public:
 
 
 
-        int n=nums.size();
+        // int n=nums.size();
+        // int tsum=0;
+        // for(int i=0;i<n;i++){
+        //     tsum+=nums[i];
+        // }
+        // int ans=0;
+        // int sum=0;
+        // for(int i=0;i<n-1;i++){
+        //     sum+=nums[i];
+        //     int diff=tsum-2*sum;
+        //     if(diff%2==0)
+        //     ans++;
+        // }
+        // return ans;
+
+
+
+         int n=nums.size();
         int tsum=0;
         for(int i=0;i<n;i++){
             tsum+=nums[i];
         }
-        int ans=0;
-        int sum=0;
-        for(int i=0;i<n-1;i++){
-            sum+=nums[i];
-            int diff=tsum-2*sum;
-            if(diff%2==0)
-            ans++;
-        }
-        return ans;
+        //int diff=totalsum-2*prefixsum;//imp
+         if(tsum%2==0) return nums.size()-1;
+         return 0;
     }
 };
