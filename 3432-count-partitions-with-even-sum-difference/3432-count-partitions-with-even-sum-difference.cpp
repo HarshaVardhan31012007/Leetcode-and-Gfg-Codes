@@ -23,17 +23,34 @@ public:
 
 
 
+        // int n=nums.size();
+        // vector<ll>prefix(n,0);
+        // prefix[0]=nums[0];
+        // for(int i=1;i<n;i++){
+        //     prefix[i]=prefix[i-1]+nums[i];
+        // }
+        // ll sum=prefix[n-1];
+        // int ans=0;
+        // for(int i=0;i<n-1;i++){
+        //     ll curr=sum-2*prefix[i];//sum-prefix[i]-prefix[i]
+        //     if(curr%2==0)
+        //     ans++;
+        // }
+        // return ans;
+
+
+
         int n=nums.size();
-        vector<ll>prefix(n,0);
-        prefix[0]=nums[0];
-        for(int i=1;i<n;i++){
-            prefix[i]=prefix[i-1]+nums[i];
+        int tsum=0;
+        for(int i=0;i<n;i++){
+            tsum+=nums[i];
         }
-        ll sum=prefix[n-1];
         int ans=0;
+        int sum=0;
         for(int i=0;i<n-1;i++){
-            ll curr=sum-2*prefix[i];//sum-prefix[i]-prefix[i]
-            if(curr%2==0)
+            sum+=nums[i];
+            int diff=tsum-2*sum;
+            if(diff%2==0)
             ans++;
         }
         return ans;
