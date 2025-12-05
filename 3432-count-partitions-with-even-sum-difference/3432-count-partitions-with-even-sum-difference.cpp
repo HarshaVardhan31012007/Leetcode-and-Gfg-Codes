@@ -57,13 +57,19 @@ public:
 
 
 
-         int n=nums.size();
-        int tsum=0;
-        for(int i=0;i<n;i++){
-            tsum+=nums[i];
-        }
-        //int diff=totalsum-2*prefixsum;//imp
-         if(tsum%2==0) return nums.size()-1;
-         return 0;
+        //  int n=nums.size();
+        // int tsum=0;
+        // for(int i=0;i<n;i++){
+        //     tsum+=nums[i];
+        // }
+        // //int diff=totalsum-2*prefixsum;//imp
+        //  if(tsum%2==0) return nums.size()-1;
+        //  return 0;
+
+
+        int sum=accumulate(nums.begin(),nums.end(),0);
+        if(sum&1)
+        return 0;
+        return nums.size()-1;
     }
 };
