@@ -55,18 +55,33 @@ public:
         //     mpp[sum]=1;
         //     if(mpp.count(i))  ans=i;
         // }
-        vector<long long>v;
+        // vector<long long>v;
+        // long long ans=0;
+        // for(int i=2;i<=n;i++){
+        //     if(primes[i])
+        //     v.push_back(i);
+        // }
+        // long long sum=0;
+        // for(auto &each:v){
+        //     sum+=each;
+        //     if(sum>n) break;
+        //     if(primes[sum])
+        //     ans=sum;
+        // }
+        // return ans;
+
+
+
+        
         long long ans=0;
-        for(int i=2;i<=n;i++){
-            if(primes[i])
-            v.push_back(i);
-        }
         long long sum=0;
-        for(auto &each:v){
-            sum+=each;
-            if(sum>n) break;
-            if(primes[sum])
-            ans=sum;
+        for(int i=2;i<=n;i++){
+            if(primes[i]){
+                sum+=i;
+                if(sum>n) break;
+                if(primes[sum])
+                ans=sum;
+            }
         }
         return ans;
     }
