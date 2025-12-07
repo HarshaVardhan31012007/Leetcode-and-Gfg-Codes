@@ -23,7 +23,40 @@ public:
     // }
 
     
-    int Reflect(int x){
+    // int Reflect(int x){
+    //     int num=0;
+    //     while(x){
+    //         num=num*2+(x%2);
+    //         x=x/2;
+    //     }
+    //     return num;
+    // }
+    // vector<int> sortByReflection(vector<int>& nums) {
+    //      sort(nums.begin(),nums.end(),[&](int x,int y){
+    //           return make_pair(Reflect(x),x)<make_pair(Reflect(y),y);
+    //      });
+    //      return nums;
+    // }
+
+
+    // int Reflect(int x){
+    //     int num=0;
+    //     while(x){
+    //         num=num*2+(x%2);
+    //         x=x/2;
+    //     }
+    //     return num;
+    // }
+    // vector<int> sortByReflection(vector<int>& nums) {
+    //      sort(nums.begin(),nums.end(),[&](int x,int y){
+    //           return make_pair(Reflect(x),x)<make_pair(Reflect(y),y);
+    //      });
+    //      return nums;
+    // }
+
+
+
+     static int Reflect(int x){
         int num=0;
         while(x){
             num=num*2+(x%2);
@@ -31,10 +64,11 @@ public:
         }
         return num;
     }
+    static bool comp(int x,int y){
+         return make_pair(Reflect(x),x)<make_pair(Reflect(y),y);
+    }
     vector<int> sortByReflection(vector<int>& nums) {
-         sort(nums.begin(),nums.end(),[&](int x,int y){
-              return make_pair(Reflect(x),x)<make_pair(Reflect(y),y);
-         });
+         sort(nums.begin(),nums.end(),comp);
          return nums;
     }
 };
