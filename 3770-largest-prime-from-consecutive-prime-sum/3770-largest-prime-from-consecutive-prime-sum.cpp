@@ -33,11 +33,17 @@ public:
             if(primes[i]==0) continue;
             // int j=i;
             // int p=2;
-            int j=i;
-            int p=i;//2*3 and 3*3 to avoid repetitive things
-            while(j*p<=n){
-                primes[j*p]=0;
-                p++;
+            // int j=i;
+            // int p=i;//2*3 and 3*3 to avoid repetitive things
+            // while(j*p<=n){
+            //     primes[j*p]=0;
+            //     p+=
+            // }
+
+            int j=i*i;//2*3 and 3*3 to avoid repetitive things
+            while(j<=n){
+                primes[j]=0;
+                j+=i;
             }
         }
         // long long sum=0;
@@ -64,4 +70,5 @@ public:
         }
         return ans;
     }
+
 };
