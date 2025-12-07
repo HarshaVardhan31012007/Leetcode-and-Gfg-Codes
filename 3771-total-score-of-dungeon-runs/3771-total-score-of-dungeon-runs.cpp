@@ -16,7 +16,35 @@ public:
         // }
         // return ans;
 
-        int n=damage.size();
+
+        //sliding window
+        // int n=damage.size();
+        // vector<long long>prefix(n,0);
+        // prefix[0]=damage[0];
+        // for(int i=1;i<n;i++){
+        //     prefix[i]=prefix[i-1]+damage[i];
+        // }
+        // long long ans=0;
+        // for(long long j=0;j<n;j++){
+        //      int s=0;
+        //      int e=j;
+        //      while(s<=e){
+        //         int damage=prefix[e]-(s>0?prefix[s-1]:0);
+        //         if(hp-damage>=requirement[e]){
+        //             ans+=e-s+1;
+        //             break;
+        //         }
+        //         else{
+        //             s++;
+        //         }
+        //      }
+        // }
+        // return ans;
+
+
+
+
+         int n=damage.size();
         vector<long long>prefix(n,0);
         prefix[0]=damage[0];
         for(int i=1;i<n;i++){
