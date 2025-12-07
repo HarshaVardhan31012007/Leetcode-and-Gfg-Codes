@@ -5,7 +5,7 @@ public:
         for(int i=2;i<=sqrt(n);i==2?i=i+1:i=i+2){
             if(primes[i]==0) continue;
             int j=i;
-            int p=i;
+            int p=2;
             while(j*p<=n){
                 primes[j*p]=0;
                 p++;
