@@ -52,8 +52,12 @@ public:
         low++;
         if(!(high&1))
         high--;
+
        // return (high-low+1)/2+1;//high-low+1 is odd as both low and high is odd
         //so high-low/2 is same as high-low+1/2
-        return (high-low)/2+1;
+
+        //return (high-low)/2+1;
+
+        return (high-low+2)/2;
     }
 };
