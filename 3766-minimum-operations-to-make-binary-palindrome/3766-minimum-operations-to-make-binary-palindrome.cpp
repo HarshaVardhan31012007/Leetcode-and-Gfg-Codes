@@ -145,6 +145,7 @@ public:
             return;
         }
         if(s==e){
+            //odd number of digits//for one digit 1 to 0 and 0 to 1
             long long curr=(1LL<<s)*(str[s]-'0');
             long long bzero=curr;
             long long bone=(1LL<<s)-curr; 
@@ -152,6 +153,7 @@ public:
             mini=min(mini,abs(cans+bone));
             return;
         }
+        //this is not correct because sometimes 00 to 11 and 11 to 00
         // if(str[s]=='0'&&str[e]=='0'||str[s]=='1'&&str[e]=='1'){
         //     solve(str,s+1,e-1,cans,mini);
         //     return;
