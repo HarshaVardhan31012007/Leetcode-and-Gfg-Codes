@@ -88,7 +88,9 @@ public:
         for(int i=0;i<n;i++){
             diff.push_back({t1[i]-t2[i],i});
         }
-        sort(diff.rbegin(),diff.rend());
+        sort(diff.begin(),diff.end(),[&](pair<int,int>p,pair<int,int>q){
+            return p.first>q.first;
+        });
         for(int i=0;i<k;i++){
             ans+=t1[diff[i].second];
         }
