@@ -48,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1879-maximum-score-from-removing-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1879-maximum-score-from-removing-stones) |
 | [1902-car-fleet-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1902-car-fleet-ii) |
+| [1925-count-square-sum-triples](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1925-count-square-sum-triples) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2174-next-greater-numerically-balanced-number) |
@@ -953,6 +954,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0204-count-primes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0204-count-primes) |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
+| [1925-count-square-sum-triples](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1925-count-square-sum-triples) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2174-next-greater-numerically-balanced-number) |
 | [2507-number-of-common-factors](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2507-number-of-common-factors) |
 | [3479-count-the-number-of-substrings-with-dominant-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3479-count-the-number-of-substrings-with-dominant-ones) |
