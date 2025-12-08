@@ -32,6 +32,14 @@ public:
         // return (high-low+1)/2;
 
 
+        // bool olow=(low&1);
+        // bool ohigh=(high&1);
+
+        // if(olow&&ohigh) return (high-low+1)/2+1;
+        
+        // return (high-low+1)/2;
+
+
         bool olow=(low&1);
         bool ohigh=(high&1);
         
