@@ -37,12 +37,25 @@ public:
         // return ans;
 
 
+        // int ans=0;
+        // for(int i=1;i<=n;i++){
+        //     for(int j=1;j<=n;j++){
+        //         int k=(int)sqrt(i*i+j*j*1.0);//k is always greater than or equal to 1
+        //         if(k<=n&&(k*k)==(i*i+j*j)){
+        //             ans++;
+        //         }
+        //     }
+        // }
+        // return ans;
+
+
+
         int ans=0;
         for(int i=1;i<=n;i++){
-            for(int j=1;j<=n;j++){
+            for(int j=i+1;j<=n;j++){
                 int k=(int)sqrt(i*i+j*j*1.0);//k is always greater than or equal to 1
                 if(k<=n&&(k*k)==(i*i+j*j)){
-                    ans++;
+                    ans+=2;//a2+b2 is same as b2+a2
                 }
             }
         }
