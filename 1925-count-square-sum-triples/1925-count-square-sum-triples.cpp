@@ -12,10 +12,23 @@ public:
         // }
         // return ans;
 
+        // int ans=0;
+        // for(double i=1;i<=n;i++){
+        //     for(double j=1;j<=n;j++){
+        //         double k=hypot(i,j);
+        //         if((int)k==k&&k>=1&&k<=n){
+        //             ans++;
+        //         }
+        //     }
+        // }
+        // return ans;
+
+
+
         int ans=0;
         for(double i=1;i<=n;i++){
             for(double j=1;j<=n;j++){
-                double k=hypot(i,j);
+                double k=sqrt(i*i+j*j*1.0);
                 if((int)k==k&&k>=1&&k<=n){
                     ans++;
                 }
