@@ -48,16 +48,23 @@ public:
         // return (high-low+1)/2;
 
 
-        if(!(low&1))
-        low++;
-        if(!(high&1))
-        high--;
+    //     if(!(low&1))
+    //     low++;
+    //     if(!(high&1))
+    //     high--;
 
-       // return (high-low+1)/2+1;//high-low+1 is odd as both low and high is odd
-        //so high-low/2 is same as high-low+1/2
+    //    // return (high-low+1)/2+1;//high-low+1 is odd as both low and high is odd
+    //     //so high-low/2 is same as high-low+1/2
 
-        //return (high-low)/2+1;
+    //     //return (high-low)/2+1;
 
-        return (high-low+2)/2;
+    //     return (high-low+2)/2;
+
+
+
+
+
+           //0 to low and 0 to high
+           return (high+1)/2-low/2;
     }
 };
