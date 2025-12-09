@@ -115,8 +115,8 @@ public:
             mini.push_back(j);
             while(i<=j&&nums[maxi.front()]-nums[mini.front()]>k){
                 i++;
-                if(maxi.front()<i) maxi.pop_front();
-                if(!mini.empty()&&mini.front()<i) mini.pop_front();
+                if(maxi.front()<i) maxi.pop_front();//not empty() chekc no need as we need pushing j alqyas
+                if(mini.front()<i) mini.pop_front();
             }
             dp[j+1]=(prefix[j]-(i>0?prefix[i-1]:0)+mod)%mod;//treat like 1-indexed 
             prefix[j+1]=(prefix[j]+dp[j+1])%mod;
