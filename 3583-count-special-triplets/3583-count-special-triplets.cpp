@@ -86,4 +86,25 @@ public:
         }
         return ans%mod;
     }
+
+
+
+
+
+    // const int mod=1e9+7;
+    // int specialTriplets(vector<int>& nums) {
+    //     long long n=nums.size();
+    //     vector<long long>prefix(n,0);
+    //     unordered_map<long long,long long>mpp;
+    //     long long ans=0;
+    //     mpp[nums[0]]=1;
+    //     for(long long i=1;i<n;i++){
+    //         auto it=mpp.find(nums[i]*2);
+    //         if(it!=mpp.end())
+    //         prefix[i]=(it->second)%mod;
+    //          ans=(ans+(prefix[i]%mod*suffix%mod)%mod)%mod;
+    //         mpp[nums[i]]++;
+    //     }
+    //     return ans%mod;
+    //}
 };
