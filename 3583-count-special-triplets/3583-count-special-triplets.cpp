@@ -134,22 +134,40 @@ public:
 
 
 
+    // const int mod=1e9+7;
+    // int specialTriplets(vector<int>& nums) {
+    //     long long n=nums.size();
+    //     unordered_map<long long,long long>total;
+    //     for(long long i=0;i<n;i++){
+    //         total[nums[i]]++;
+    //     }
+    //     unordered_map<long long,long long>left;
+    //     long long ans=0;
+    //     for(long long i=0;i<n;i++){
+    //         long long l=left[nums[i]*2];
+    //         long long r=total[nums[i]*2]-l;
+    //         if(nums[i]==0)//r-l includes current also //nums[i]==0 is only case where nums[i],nums[i]*2 equals
+    //         r--;
+    //         ans=(ans+(l*r)%mod)%mod;
+    //         left[nums[i]]++;
+    //     }
+    //     return ans%mod;
+    // }
+
+
+
     const int mod=1e9+7;
     int specialTriplets(vector<int>& nums) {
-        long long n=nums.size();
-        unordered_map<long long,long long>total;
-        for(long long i=0;i<n;i++){
-            total[nums[i]]++;
-        }
-        unordered_map<long long,long long>left;
+        int n=nums.size();
+        unordered_map<int,int>valid_i;
+        unordered_map<int,int>valid_j;
         long long ans=0;
-        for(long long i=0;i<n;i++){
-            long long l=left[nums[i]*2];
-            long long r=total[nums[i]*2]-l;
-            if(nums[i]==0)//r-l includes current also //nums[i]==0 is only case where nums[i],nums[i]*2 equals
-            r--;
-            ans=(ans+(l*r)%mod)%mod;
-            left[nums[i]]++;
+        for(int i=0;i<n;i++){
+            if(nums[i]%2==0){
+                ans=(ans+valid_j[nums[i]/2])%mod;
+            }
+            valid_j[nums[i]]=(valid_j[nums[i]]+valid_i[nums[i]*2])%mod;
+            valid_i[nums[i]]++;
         }
         return ans%mod;
     }
