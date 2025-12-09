@@ -91,19 +91,63 @@ public:
 
 
 
+    // const int mod=1e9+7;
+    // int specialTriplets(vector<int>& nums) {
+    //     long long n=nums.size();
+    //     unordered_map<long long,long long>right;
+    //     for(long long i=0;i<n;i++){
+    //         right[nums[i]]++;
+    //     }
+    //     unordered_map<long long,long long>left;
+    //     long long ans=0;
+    //     for(long long i=0;i<n;i++){
+    //         right[nums[i]]--;
+    //         long long l=left[nums[i]*2];
+    //         long long r=right[nums[i]*2];
+    //         ans=(ans+(l*r)%mod)%mod;
+    //         left[nums[i]]++;
+    //     }
+    //     return ans%mod;
+    // }
+
+
+
+    // const int mod=1e9+7;
+    // int specialTriplets(vector<int>& nums) {
+    //     long long n=nums.size();
+    //     unordered_map<long long,long long>right;
+    //     for(long long i=0;i<n;i++){
+    //         right[nums[i]]++;
+    //     }
+    //     unordered_map<long long,long long>left;
+    //     long long ans=0;
+    //     for(long long i=0;i<n;i++){
+    //         right[nums[i]]--;
+    //         long long l=left[nums[i]*2];
+    //         long long r=right[nums[i]*2];
+    //         ans=(ans+(l*r)%mod)%mod;
+    //         left[nums[i]]++;
+    //     }
+    //     return ans%mod;
+    // }
+
+
+
+
     const int mod=1e9+7;
     int specialTriplets(vector<int>& nums) {
         long long n=nums.size();
-        unordered_map<long long,long long>right;
+        unordered_map<long long,long long>total;
         for(long long i=0;i<n;i++){
-            right[nums[i]]++;
+            total[nums[i]]++;
         }
         unordered_map<long long,long long>left;
         long long ans=0;
         for(long long i=0;i<n;i++){
-            right[nums[i]]--;
             long long l=left[nums[i]*2];
-            long long r=right[nums[i]*2];
+            long long r=total[nums[i]*2]-l;
+            if(nums[i]==0)//r-l includes current also //nums[i]==0 is only case where nums[i],nums[i]*2 equals
+            r--;
             ans=(ans+(l*r)%mod)%mod;
             left[nums[i]]++;
         }
