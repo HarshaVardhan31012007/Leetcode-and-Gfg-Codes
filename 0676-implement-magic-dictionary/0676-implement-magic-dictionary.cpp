@@ -1,107 +1,53 @@
-class TrieNode{
-        public:
-        char data;
-        unordered_map<char,TrieNode*>children;
-        bool isterminal;
-        TrieNode(char val){
-            this->data=val;
-            isterminal=false;
-        }
+class MagicDictionary {
+public:
+     class TrieNode{
+       public:
+       char data;
+       unordered_map<char,TrieNode*>children;
+       bool isterminal;
+       TrieNode(char val){
+          this->data=val;
+          this->isterminal=false;
+       }
     };
-
-    void insertHelp(TrieNode *root,string k,int i=0){
-        if(i>=k.length()){
+    void insertHelp(TrieNode* root,string word,int i){
+        if(i>=word.length()){
             root->isterminal=true;
             return;
         }
-        if(root->children.count(k[i])==0)
-        root->children[k[i]]=new TrieNode(k[i]);
-        insertHelp(root->children[k[i]],k,i+1);
+        if(root->children.find(word[i])==root->children.end())
+        root->children[word[i]]=new TrieNode(word[i]);
+        insertHelp(root->children[word[i]],word,i+1);
     }
-
-    // bool searchW(TrieNode *root,string k,int i=0,int change=0){
-    //       if(i>=k.length()){
-    //         return root->isterminal&&change==1;
-    //       }
-    //       bool mismatched=false;
-    //       for(auto &[val,node]:root->children){
-    //       if(val!=k[i]&&change==0)
-    //       mismatched=mismatched||searchW(node,k,i+1,change+1);
-    //       else if(val==k[i])
-    //       mismatched=mismatched||searchW(node,k,i+1,change);
-    //       if(mismatched==true) return true;
-    //       }
-    //       return mismatched;
-    // }
-
-
-    //  bool searchW(TrieNode *root,string k,int i=0,int change=0){
-    //       if(i>=k.length()){
-    //         return root->isterminal&&change==1;
-    //       }
-    //       if(change>1) return false;
-    //       bool mismatched=false;
-    //       for(auto &[val,node]:root->children){
-    //       if(val!=k[i])
-    //       mismatched=mismatched||searchW(node,k,i+1,change+1);
-    //       else
-    //       mismatched=mismatched||searchW(node,k,i+1,change);
-    //       if(mismatched==true) return true;
-    //       }
-    //       return mismatched;
-    // }
-
-        bool searchW(TrieNode *root,string k,int i=0,int change=0){
-          if(i>=k.length()){
-            return root->isterminal&&change==1;
-          }
-          //if(change>1) return false;
-          for(auto &[val,node]:root->children){
-          if(val!=k[i]&&change==0&&searchW(node,k,i+1,change+1)) return true;
-          else if(val==k[i]&&searchW(node,k,i+1,change)) return true;
-          }
-          return false;
-       }
-
-    // bool searchW(TrieNode *root,string k,int i=0,bool change=false){
-    //       if(i>=k.length()){
-    //         return root->isterminal&&change;
-    //       }
-    //       for(auto &[val,node]:root->children){
-    //       if(val!=k[i]&&!change&&searchW(node,k,i+1,true)) return true;
-    //       else if(val==k[i]&&searchW(node,k,i+1,change)) return true;
-    //       }
-    //       return false;
-    //    }
-
-    // bool searchW(TrieNode *root,string k,int i=0,bool change=false){
-    //       if(i>=k.length()){
-    //         return root->isterminal&&change;
-    //       }
-    //       if(root->children.count(k[i])==1){
-    //         if(searchW(root->children[k[i]],k,i+1,change)) return true;
-    //       }
-    //       if(!change){
-    //       for(auto &[val,node]:root->children){
-    //       if(val!=k[i]&&searchW(node,k,i+1,true)) return true;
-    //       }
-    //       }
-    //       return false;
-    //    }
-class MagicDictionary {
-public:
-    TrieNode *root;
+    bool searchHelp(TrieNode* root,string &word,int i,bool change){
+        if(i>=word.length()) return change&&root->isterminal;
+        if(change){
+           if(root->children.find(word[i])==root->children.end())
+           return false;
+           return searchHelp(root->children[word[i]],word,i+1,change);
+        }
+        bool ans=false;
+        for(auto &each:root->children){
+            if(each.first==word[i])
+            ans=ans||searchHelp(each.second,word,i+1,change);//important remenber you have to go each.second for further checking and dont stay on root
+            else
+            ans=ans||searchHelp(each.second,word,i+1,true);
+        }
+        return ans;
+    }
+    TrieNode* root;
     MagicDictionary() {
-        root=new TrieNode('-');
+         root=new TrieNode('-');
     }
     
     void buildDict(vector<string> dictionary) {
-        for(auto each:dictionary)
-        insertHelp(root,each);
+         for(auto &str:dictionary){
+            insertHelp(root,str,0);
+         }
     }
     
     bool search(string searchWord) {
-        return searchW(root,searchWord);
+         return searchHelp(root,searchWord,0,false);
     }
 };
 
