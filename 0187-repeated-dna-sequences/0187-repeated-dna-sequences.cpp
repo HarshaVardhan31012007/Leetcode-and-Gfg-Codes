@@ -26,18 +26,32 @@ public:
 
 
 
+        // unordered_map<string,int>mpp;
+        // vector<string>ans;
+        // string temp=s.substr(0,10);
+        // mpp[temp]++;
+        // int j=10;
+        // while(j<s.length()){
+        //     temp+=s[j];
+        //     temp.erase(temp.begin(),temp.begin()+1);
+        //     mpp[temp]++;
+        //     if(mpp[temp]==2)
+        //     ans.push_back(temp);
+        //     j++;
+        // }
+        // return ans;
+
+
+
         unordered_map<string,int>mpp;
         vector<string>ans;
-        string temp=s.substr(0,10);
-        mpp[temp]++;
-        int j=10;
-        while(j<s.length()){
-            temp+=s[j];
-            temp.erase(temp.begin(),temp.begin()+1);
-            mpp[temp]++;
-            if(mpp[temp]==2)
-            ans.push_back(temp);
-            j++;
+        for(int i=0;i<10;i++){
+            for(int j=i;j<s.length();j=j+10){
+                string curr=s.substr(j,10);
+                mpp[curr]++;
+                if(mpp[curr]==2)
+                ans.push_back(curr);
+            }
         }
         return ans;
     }
