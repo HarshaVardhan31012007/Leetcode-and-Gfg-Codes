@@ -72,6 +72,7 @@ public:
                  string &s=(*(it+j));
                  if(s.size()<prefix.size()) break;
                  if(s.compare(0,prefix.size(),prefix)==0) temp.push_back(s);
+                 else break;
              }
              ans.push_back(temp);
          }
