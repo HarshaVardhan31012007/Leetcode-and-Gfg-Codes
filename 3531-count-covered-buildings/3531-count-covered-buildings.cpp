@@ -105,9 +105,7 @@ public:
         for(auto &building:buildings){
             int x=building[0];int y=building[1];
             x--;y--;
-            vector<int>h=horizontal[x];
-            vector<int>v=vertical[y];
-            if(h[0]!=y&&h[1]!=y&&v[0]!=x&&v[1]!=x)
+            if(horizontal[x][0]!=y&&horizontal[x][1]!=y&&vertical[y][0]!=x&&vertical[y][1]!=x)
             ans++;
         }
         return ans;
