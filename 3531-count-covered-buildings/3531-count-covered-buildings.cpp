@@ -90,22 +90,50 @@ public:
 
 
 
-     int countCoveredBuildings(int n, vector<vector<int>>& buildings) {
-        vector<vector<int>>horizontal(n,{INT_MAX,INT_MIN});
-        vector<vector<int>>vertical(n,{INT_MAX,INT_MIN});
+    //  int countCoveredBuildings(int n, vector<vector<int>>& buildings) {
+    //     vector<vector<int>>horizontal(n,{INT_MAX,INT_MIN});
+    //     vector<vector<int>>vertical(n,{INT_MAX,INT_MIN});
+    //     for(auto &building:buildings){
+    //         int x=building[0];int y=building[1];
+    //         x--;y--;
+    //         horizontal[x][0]=min(horizontal[x][0],y);
+    //         vertical[y][0]=min(vertical[y][0],x);
+    //         horizontal[x][1]=max(horizontal[x][1],y);
+    //         vertical[y][1]=max(vertical[y][1],x);
+    //     }
+    //     int ans=0;
+    //     for(auto &building:buildings){
+    //         int x=building[0];int y=building[1];
+    //         x--;y--;
+    //         if(horizontal[x][0]!=y&&horizontal[x][1]!=y&&vertical[y][0]!=x&&vertical[y][1]!=x)
+    //         ans++;
+    //     }
+    //     return ans;
+    // }
+
+
+
+    int countCoveredBuildings(int n, vector<vector<int>>& buildings) {
+        unordered_map<int,vector<int>>horizontal;
+        unordered_map<int,vector<int>>vertical;
         for(auto &building:buildings){
             int x=building[0];int y=building[1];
             x--;y--;
+            if(!horizontal.count(x))
+            horizontal[x]={INT_MAX,INT_MIN};
+            if(!vertical.count(y))
+            vertical[y]={INT_MAX,INT_MIN};
             horizontal[x][0]=min(horizontal[x][0],y);
-            vertical[y][0]=min(vertical[y][0],x);
             horizontal[x][1]=max(horizontal[x][1],y);
+
+            vertical[y][0]=min(vertical[y][0],x);
             vertical[y][1]=max(vertical[y][1],x);
         }
         int ans=0;
         for(auto &building:buildings){
             int x=building[0];int y=building[1];
             x--;y--;
-            if(horizontal[x][0]!=y&&horizontal[x][1]!=y&&vertical[y][0]!=x&&vertical[y][1]!=x)
+            if(horizontal[x][0]<y&&horizontal[x][1]>y&&vertical[y][0]<x&&vertical[y][1]>x)
             ans++;
         }
         return ans;
