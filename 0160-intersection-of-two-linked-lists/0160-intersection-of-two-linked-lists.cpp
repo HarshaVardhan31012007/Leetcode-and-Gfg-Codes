@@ -32,16 +32,16 @@ public:
         // }
         // return a;
 
-        ListNode* a=headA;
-        ListNode* b=headB;// here when you see correctly whenever we get one null,in same step we are going to head so that it is treated as equal move// edge case when there is no intersection // when both null at a time that means no intersection return null
-        while(a!=b){
-            a=a->next;
-            b=b->next;
-            if(a==NULL&&b==NULL) return NULL; 
-            if(!a) a=headB;
-            if(!b) b=headA;
-        }
-        return a;
+        // ListNode* a=headA;
+        // ListNode* b=headB;// here when you see correctly whenever we get one null,in same step we are going to head so that it is treated as equal move// edge case when there is no intersection // when both null at a time that means no intersection return null
+        // while(a!=b){
+        //     a=a->next;
+        //     b=b->next;
+        //     if(a==NULL&&b==NULL) return NULL; 
+        //     if(!a) a=headB;
+        //     if(!b) b=headA;
+        // }
+        // return a;
 
         // in this case we are treating null as one node in our moves
         //one move only in each step
@@ -57,5 +57,21 @@ public:
         //     d2=d2==NULL?headA:d2->next;
         // }
         // return d1;
+
+
+
+
+       ListNode* a=headA;
+       ListNode* b=headB;
+       while(a!=b){
+          a=a->next;
+          b=b->next;
+          if(a==NULL&&b==NULL) return 0;
+          if(a==NULL)
+          a=headA;
+          if(b==NULL)
+          b=headB;
+       }
+       return a;
     }
 };
