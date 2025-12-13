@@ -8,6 +8,14 @@
  */
 class Solution {
 public:
+    int getLength(ListNode* a){
+        int len=0;
+        while(a){
+            len++;
+            a=a->next;
+        }
+        return len;
+    }
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         // this is wrong because when it is becoming null at in that iteration you should move to head// here null as one case not treaten because if it isnull we are moving to head && as well as one forward two times we are moving // so incorrect
         // ListNode* a=headA;
@@ -102,43 +110,64 @@ public:
         //    return NULL;
   
         
-        ListNode* a=headA;
-        ListNode* b=headB;
-        while(a!=NULL&&b!=NULL){
-            if(a==b)
-            return a;
-            a=a->next;
-            b=b->next;
+        // ListNode* a=headA;
+        // ListNode* b=headB;
+        // while(a!=NULL&&b!=NULL){
+        //     if(a==b)
+        //     return a;
+        //     a=a->next;
+        //     b=b->next;
+        // }
+        // if(a==NULL&&b==NULL) return NULL;
+        // if(b==NULL){
+        //      int count=0;
+        //      while(a!=NULL){
+        //         count++;
+        //         a=a->next;
+        //      }
+        //      while(count--)
+        //      headA=headA->next;
+        //      while(headA!=headB){
+        //         headA=headA->next;
+        //         headB=headB->next;
+        //      }
+        //      return headA;
+        // }
+        // else{
+        //     int count=0;
+        //      while(b!=NULL){
+        //         count++;
+        //         b=b->next;
+        //      }
+        //      while(count--)
+        //      headB=headB->next;
+        //      while(headA!=headB){
+        //         headA=headA->next;
+        //         headB=headB->next;
+        //      }
+        //      return headA;
+        // }
+        // return NULL;
+
+
+
+        int len1=getLength(headA);
+        int len2=getLength(headB);
+        if(len1>len2){
+            int diff=len1-len2;
+            while(diff--)
+            headA=headA->next;
         }
-        if(a==NULL&&b==NULL) return NULL;
-        if(b==NULL){
-             int count=0;
-             while(a!=NULL){
-                count++;
-                a=a->next;
-             }
-             while(count--)
-             headA=headA->next;
-             while(headA!=headB){
-                headA=headA->next;
-                headB=headB->next;
-             }
-             return headA;
+        else if(len1<len2){
+            int diff=len2-len1;
+            while(diff--)
+            headB=headB->next;
         }
-        else{
-            int count=0;
-             while(b!=NULL){
-                count++;
-                b=b->next;
-             }
-             while(count--)
-             headB=headB->next;
-             while(headA!=headB){
-                headA=headA->next;
-                headB=headB->next;
-             }
-             return headA;
+        while(headA!=headB){
+            cout<<headA->val<<" "<<headB->val<<endl;
+            headA=headA->next;
+            headB=headB->next;
         }
-        return NULL;
+        return headA;
     }
 };
