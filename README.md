@@ -287,6 +287,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
 | [3578-count-partitions-with-max-min-difference-at-most-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3578-count-partitions-with-max-min-difference-at-most-k) |
 | [3583-count-special-triplets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3583-count-special-triplets) |
+| [3606-coupon-code-validator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3606-coupon-code-validator) |
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
@@ -433,6 +434,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3478-choose-k-elements-with-maximum-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3478-choose-k-elements-with-maximum-sum) |
 | [3531-count-covered-buildings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3531-count-covered-buildings) |
+| [3606-coupon-code-validator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3606-coupon-code-validator) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
 | [3622-maximum-frequency-of-an-element-after-performing-operations-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3622-maximum-frequency-of-an-element-after-performing-operations-i) |
 | [3640-maximum-frequency-of-an-element-after-performing-operations-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3640-maximum-frequency-of-an-element-after-performing-operations-ii) |
@@ -517,6 +519,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3531-count-covered-buildings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3531-count-covered-buildings) |
 | [3583-count-special-triplets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3583-count-special-triplets) |
+| [3606-coupon-code-validator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3606-coupon-code-validator) |
 | [3623-count-number-of-trapezoids-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3623-count-number-of-trapezoids-i) |
 | [3625-count-number-of-trapezoids-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3625-count-number-of-trapezoids-ii) |
 ## Binary Search
@@ -880,6 +883,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3233-maximize-the-number-of-partitions-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3233-maximize-the-number-of-partitions-after-operations) |
 | [3479-count-the-number-of-substrings-with-dominant-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3479-count-the-number-of-substrings-with-dominant-ones) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
+| [3606-coupon-code-validator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3606-coupon-code-validator) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
 ## Stack
 |  |
