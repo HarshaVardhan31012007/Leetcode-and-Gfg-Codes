@@ -38,7 +38,7 @@ public:
 
 
         int freq[256]={0};// as ascii is from 0 to 255
-        if(s.length()!=t.length()) return false;
+        if(s.length()!=t.length()) return false;//for uniocde use char32_t means UTF-32,char64_t means UTF-64
         for(int i=0;i<s.size();i++){
             freq[s[i]]++;
         }
