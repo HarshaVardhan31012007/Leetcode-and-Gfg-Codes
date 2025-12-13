@@ -60,18 +60,33 @@ public:
 
 
 
+        //equal steps
 
-       ListNode* a=headA;
-       ListNode* b=headB;
-       while(a!=b){
-          a=a->next;
-          b=b->next;
-          if(a==NULL&&b==NULL) return 0;
-          if(a==NULL)
-          a=headA;
-          if(b==NULL)
-          b=headB;
-       }
-       return a;
+        //    ListNode* a=headA;
+        //    ListNode* b=headB;
+        //    while(a!=b){
+        //       a=a->next;
+        //       b=b->next;
+        //       if(a==NULL&&b==NULL) return 0;
+        //       if(a==NULL)
+        //       a=headA;
+        //       if(b==NULL)
+        //       b=headB;
+        //    }
+        //    return a;
+
+
+           ListNode* a=headA;
+           ListNode* b=headB;
+           while(a!=b){
+              if(a==NULL) a=headA;
+              else a=a->next;
+              if(b==NULL) b=headB;
+              else b=b->next;
+           }
+           return a;
+
+
+
     }
 };
