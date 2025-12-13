@@ -76,17 +76,29 @@ public:
         //    return a;
 
 
-           ListNode* a=headA;
-           ListNode* b=headB;
-           while(a!=b){
-              if(a==NULL) a=headA;
-              else a=a->next;
-              if(b==NULL) b=headB;
-              else b=b->next;
-           }
-           return a;
+        //    ListNode* a=headA;
+        //    ListNode* b=headB;
+        //    while(a!=b){
+        //       if(a==NULL) a=headA;
+        //       else a=a->next;
+        //       if(b==NULL) b=headB;
+        //       else b=b->next;
+        //    }
+        //    return a;
 
 
-
+       ListNode* temp=headA;
+       unordered_map<ListNode*,bool>mpp;
+       while(temp!=NULL){
+          mpp[temp]=1;
+          temp=temp->next;
+       }
+       temp=headB;
+       while(temp!=NULL){
+         if(mpp.count(temp))
+         return temp;
+         temp=temp->next;
+       }
+       return NULL;
     }
 };
