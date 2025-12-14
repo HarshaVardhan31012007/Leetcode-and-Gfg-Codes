@@ -29,31 +29,57 @@ public:
 
 
 
+    // const int mod=1e9+7;
+    // int solve(string &corridor,int i,int c,vector<vector<int>>&dp){
+    //     if(i>=corridor.length()){
+    //         if(c==2) return 1;
+    //         return 0;
+    //     }
+    //     if(c>2) return 0;
+    //     if(dp[i][c]!=-1) return dp[i][c];
+    //     int ans=0;
+    //     if(corridor[i]=='S'){
+    //         if(c+1==2){
+    //             ans=(ans+solve(corridor,i+1,0,dp))%mod;//partition
+    //         }
+    //         ans=(ans+solve(corridor,i+1,c+1,dp))%mod;//skip
+    //     }
+    //     else{
+    //        if(c==2){
+    //           ans=(ans+solve(corridor,i+1,0,dp))%mod;//partiton
+    //        }
+    //        ans=(ans+solve(corridor,i+1,c,dp))%mod;//skip
+    //     }
+    //     return dp[i][c]=ans%mod;
+    // }
+    // int numberOfWays(string corridor) {
+    //     vector<vector<int>>dp(corridor.length()+1,vector<int>(3,-1));
+    //     return solve(corridor,0,0,dp);
+    // }
+
+
+
+
     const int mod=1e9+7;
-    int solve(string &corridor,int i,int c,vector<vector<int>>&dp){
-        if(i>=corridor.length()){
-            if(c==2) return 1;
-            return 0;
-        }
-        if(c>2) return 0;
-        if(dp[i][c]!=-1) return dp[i][c];
-        int ans=0;
-        if(corridor[i]=='S'){
-            if(c+1==2){
-                ans=(ans+solve(corridor,i+1,0,dp))%mod;//partition
-            }
-            ans=(ans+solve(corridor,i+1,c+1,dp))%mod;//skip
-        }
-        else{
-           if(c==2){
-              ans=(ans+solve(corridor,i+1,0,dp))%mod;//partiton
-           }
-           ans=(ans+solve(corridor,i+1,c,dp))%mod;//skip
-        }
-        return dp[i][c]=ans%mod;
-    }
     int numberOfWays(string corridor) {
-        vector<vector<int>>dp(corridor.length()+1,vector<int>(3,-1));
-        return solve(corridor,0,0,dp);
+       long long count=0;
+       long long ans=1;
+       long long prefix=0;
+       for(auto &each:corridor){
+            if(each=='S'){
+                prefix++;
+            }
+            if(prefix==2){
+                count++;
+            }
+            if(prefix==3){
+                ans=(1LL*ans*count)%mod;
+                prefix=1;
+                count=0;
+            }
+       }
+       if(prefix!=2)
+       return 0;
+       return ans;
     }
 };
