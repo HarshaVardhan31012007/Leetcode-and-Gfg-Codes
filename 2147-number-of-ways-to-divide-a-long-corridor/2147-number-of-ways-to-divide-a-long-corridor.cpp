@@ -40,15 +40,15 @@ public:
         int ans=0;
         if(corridor[i]=='S'){
             if(c+1==2){
-                ans=(ans+solve(corridor,i+1,0,dp))%mod;
+                ans=(ans+solve(corridor,i+1,0,dp))%mod;//partition
             }
-            ans=(ans+solve(corridor,i+1,c+1,dp))%mod;
+            ans=(ans+solve(corridor,i+1,c+1,dp))%mod;//skip
         }
         else{
            if(c==2){
-              ans=(ans+solve(corridor,i+1,0,dp))%mod;
+              ans=(ans+solve(corridor,i+1,0,dp))%mod;//partiton
            }
-           ans=(ans+solve(corridor,i+1,c,dp))%mod;
+           ans=(ans+solve(corridor,i+1,c,dp))%mod;//skip
         }
         return dp[i][c]=ans%mod;
     }
