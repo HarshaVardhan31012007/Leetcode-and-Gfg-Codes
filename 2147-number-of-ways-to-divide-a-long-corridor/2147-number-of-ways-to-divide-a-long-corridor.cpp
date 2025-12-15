@@ -9,11 +9,16 @@ public:
         if(idx==corridor.length()-1) return 1;
         int ans=0;
         for(int k=idx+1;k<=corridor.length();k++){
+            //   if(corridor[k]=='S'){
+            //      ans=(ans+solve(corridor,k,dp,prefix))%mod;
+            //      break;
+            //   }
+            //   ans=(ans+solve(corridor,k,dp,prefix))%mod;
+            
+              ans=(ans+solve(corridor,k,dp,prefix))%mod;
               if(corridor[k]=='S'){
-                 ans=(ans+solve(corridor,k,dp,prefix))%mod;
                  break;
               }
-              ans=(ans+solve(corridor,k,dp,prefix))%mod;
         }
         return dp[i]=ans;
     }
