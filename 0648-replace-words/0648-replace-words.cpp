@@ -51,12 +51,21 @@ public:
             insertHelp(root->children[word[i]],word,i+1);
         }
         
-        int searchHelp(Trie* root,string word,int i){
+        // int searchHelp(Trie* root,string word,int i){
+        //     if(root->isterminal) return i;
+        //     if(i>=word.length()) return (root->isterminal?i:-1);
+        //     if(root->children.find(word[i])==root->children.end())
+        //     return -1;
+        //     return searchHelp(root->children[word[i]],word,i+1);
+        // } 
+
+
+         int searchHelp(Trie* root,string word,int &i){
             if(root->isterminal) return i;
             if(i>=word.length()) return (root->isterminal?i:-1);
-            if(root->children.find(word[i])==root->children.end())
+            if(root->children.find(word[i++])==root->children.end())
             return -1;
-            return searchHelp(root->children[word[i]],word,i+1);
+            return searchHelp(root->children[word[i-1]],word,i);
         } 
     };
 
@@ -73,7 +82,8 @@ public:
             while(i<sentence.length()&&sentence[i]!=' '){
                 temp+=sentence[i++];
             }
-            int idx=root->searchHelp(root,temp,0);
+            int idx=0;
+            idx=root->searchHelp(root,temp,idx);
             if(ans.empty())
             ans+=temp.substr(0,idx);
             else
