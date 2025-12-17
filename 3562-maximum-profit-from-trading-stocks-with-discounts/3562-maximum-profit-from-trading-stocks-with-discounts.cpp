@@ -1,101 +1,142 @@
-// class Solution {
-// public:
-//     int solve(int i,vector<int>&present,vector<int>&future,int n,int budget,bool flag,unordered_map<int,list<int>>&adjList){
-//         if(flag){
-//             int one=0;
-//             if((budget-(present[i]/2))>=0){
-//                 one=(future[i]-(present[i]/2));
-//                 for(auto &adj:adjList[i])
-//                 one+=solve(adj,present,future,n,budget-(present[i]/2),true,adjList);
-//             }
-//             int two=0;
-//             for(auto &adj:adjList[i])
-//             two+=solve(adj,present,future,n,budget,false,adjList);
-//             return max(one,two);
-//         }
-//         else{
-//             int one=0;
-//             if((budget-present[i])>=0){
-//                 one=(future[i]-present[i]);
-//                 for(auto &adj:adjList[i])
-//                 one+=solve(adj,present,future,n,budget-present[i],true,adjList);
-//             }
-//             int two=0;
-//             for(auto &adj:adjList[i])
-//             two+=solve(adj,present,future,n,budget,false,adjList);
-//             return max(one,two);
-//         }
-//     }
-//     int maxProfit(int n, vector<int>& present, vector<int>& future, vector<vector<int>>& hierarchy, int budget) {
-//         unordered_map<int,list<int>>adjList;
-//         for(auto &each:hierarchy){
-//             adjList[each[0]-1].push_back(each[1]-1);
-//         }
-//         return solve(0,present,future,n,budget,false,adjList);
-//     }
-// };
-
-
-
-
 class Solution {
 public:
-    int maxProfit(int n, vector<int>& present, vector<int>& future,
-                  vector<vector<int>>& hierarchy, int budget) {
-        vector<vector<int>> g(n);
+    //incorrect as adjacent nodes depends on each other for budget//more cases 2 powern take not take
+   
+    // int solve(int i,vector<int>&present,vector<int>&future,int n,int budget,bool flag,unordered_map<int,list<int>>&adjList){
+    //     if(flag){
+    //         int one=0;
+    //         if((budget-(present[i]/2))>=0){
+    //             one=(future[i]-(present[i]/2));
+    //             for(auto &adj:adjList[i])
+    //             one+=solve(adj,present,future,n,budget-(present[i]/2),true,adjList);
+    //         }
+    //         int two=0;
+    //         for(auto &adj:adjList[i])
+    //         two+=solve(adj,present,future,n,budget,false,adjList);
+    //         return max(one,two);
+    //     }
+    //     else{
+    //         int one=0;
+    //         if((budget-present[i])>=0){
+    //             one=(future[i]-present[i]);
+    //             for(auto &adj:adjList[i])
+    //             one+=solve(adj,present,future,n,budget-present[i],true,adjList);
+    //         }
+    //         int two=0;
+    //         for(auto &adj:adjList[i])
+    //         two+=solve(adj,present,future,n,budget,false,adjList);
+    //         return max(one,two);
+    //     }
+    // }
+    // int maxProfit(int n, vector<int>& present, vector<int>& future, vector<vector<int>>& hierarchy, int budget) {
+    //     unordered_map<int,list<int>>adjList;
+    //     for(auto &each:hierarchy){
+    //         adjList[each[0]-1].push_back(each[1]-1);
+    //     }
+    //     return solve(0,present,future,n,budget,false,adjList);
+    // }
 
-        for (auto& e : hierarchy) {
-            g[e[0] - 1].push_back(e[1] - 1);
+
+    // int solve(int i,vector<int>&parent,vector<bool>&purchase,vector<int>&topo,int budget,vector<int>&present,vector<int>&future){
+    //      if(budget<0) return -1e9;//to avoid overflows if some neg+INT_MIN out of integer
+    //      if(i==topo.size()) return 0;
+    //      int price=present[topo[i]];
+    //      int boss=parent[topo[i]];
+    //      if(boss!=-1&&purchase[boss]){
+    //          price=price/2;
+    //      }
+    //      purchase[topo[i]]=1;
+    //      int inc=future[topo[i]]-price+solve(i+1,parent,purchase,topo,budget-price,present,future);
+    //      purchase[topo[i]]=0;
+    //      int exc=solve(i+1,parent,purchase,topo,budget,present,future);
+    //      return max(inc,exc);
+    // }
+    // int maxProfit(int n, vector<int>& present, vector<int>& future, vector<vector<int>>& hierarchy, int budget) {
+    //     unordered_map<int,list<int>>adjList;
+    //     vector<int>parent(n,-1);
+    //     vector<int>indegree(n);
+    //     for(auto &each:hierarchy){
+    //         adjList[each[0]-1].push_back(each[1]-1);
+    //         parent[each[1]-1]=each[0]-1;
+    //         indegree[each[1]-1]++;
+    //     }
+    //     vector<int>topo;
+    //     queue<int>q;
+    //     q.push(0);
+    //     while(!q.empty()){
+    //          auto front=q.front();
+    //          q.pop();
+    //          topo.push_back(front);
+    //          for(auto &adj:adjList[front]){
+    //              indegree[adj]--;
+    //              if(indegree[adj]==0){
+    //                 q.push(adj);
+    //              }
+    //          }
+    //     }
+    //     vector<bool>purchase(n,0);
+    //     return solve(0,parent,purchase,topo,budget,present,future);
+    // }
+
+
+
+     void dfs(int i,int n,unordered_map<int,list<int>>&adjList,vector<int>&present,vector<int>&future,int budget,vector<vector<vector<int>>>&dp){
+        vector<pair<vector<int>,vector<int>>>childDPs;
+
+        for(auto &c:adjList[i]){
+            dfs(c,n,adjList,present,future,budget,dp);
+            childDPs.push_back({dp[c][0],dp[c][1]});
         }
 
-        auto dfs = [&](auto&& self,
-                       int u) -> tuple<vector<int>, vector<int>, int> {
-            int cost = present[u];
-            int dCost = present[u] / 2;  // discounted cost
-
-            // dp[u][state][budget]
-            // state = 0: Do not purchase parent node, state = 1: Must purchase
-            // parent node
-            auto dp0 = vector(budget + 1, 0);
-            auto dp1 = vector(budget + 1, 0);
-
-            // subProfit[state][budget]
-            // state = 0: discount not available, state = 1: discount available
-            auto subProfit0 = vector(budget + 1, 0);
-            auto subProfit1 = vector(budget + 1, 0);
-
-            int uSize = cost;
-
-            for (auto v : g[u]) {
-                auto [subDp0, subDp1, vSize] = self(self, v);
-                uSize += vSize;
-                for (int i = budget; i >= 0; i--) {
-                    for (int sub = 0; sub <= min(vSize, i); sub++) {
-                        subProfit0[i] = max(subProfit0[i],
-                                            subProfit0[i - sub] + subDp0[sub]);
-                        subProfit1[i] = max(subProfit1[i],
-                                            subProfit1[i - sub] + subDp1[sub]);
+        for(int parent=0;parent<=1;parent++){
+           int price=(parent==1)?present[i]/2:present[i];
+           int profit=future[i]-price;
+           vector<int>best(budget+1,0);
+           vector<int>one(budget+1,0);
+           //case 1//current node not buy
+           for(auto &child:childDPs){
+               vector<int>temp(budget+1,0);
+               for(int used=0;used<=budget;used++){
+                   for(int take=0;used+take<=budget;take++){
+                        temp[used+take]=max(temp[used+take],one[used]+child.first[take]);
+                   }
+               }
+               one=move(temp);
+           }
+           for(int i=0;i<=budget;i++){
+              best[i]=max(best[i],one[i]);
+           }
+           //case 2//currnode buy
+           if(price<=budget){
+                vector<int>two(budget+1,0);
+                for(auto &child:childDPs){
+                    vector<int>temp(budget+1,0);
+                    for(int used=0;used<=budget;used++){
+                        for(int take=0;used+take<=budget;take++){
+                                temp[used+take]=max(temp[used+take],two[used]+child.second[take]);
+                        }
                     }
+                    two=move(temp);
                 }
-            }
-
-            for (int i = 0; i <= budget; i++) {
-                dp0[i] = dp1[i] = subProfit0[i];
-
-                if (i >= dCost) {
-                    dp1[i] = max(subProfit0[i],
-                                 subProfit1[i - dCost] + future[u] - dCost);
+                for(int i=price;i<=budget;i++){
+                    best[i]=max(best[i],profit+two[i-price]);
                 }
-
-                if (i >= cost) {
-                    dp0[i] = max(subProfit0[i],
-                                 subProfit1[i - cost] + future[u] - cost);
-                }
-            }
-
-            return {dp0, dp1, uSize};
-        };
-
-        return std::get<0>(dfs(dfs, 0))[budget];
+           }
+           dp[i][parent]=best;
+        }
+     }
+     int maxProfit(int n, vector<int>& present, vector<int>& future, vector<vector<int>>& hierarchy, int budget) {
+       unordered_map<int,list<int>>adjList;
+       for(auto &each:hierarchy){
+            adjList[each[0]-1].push_back(each[1]-1);
+       }
+       vector<vector<vector<int>>>dp(n,vector<vector<int>>(2,vector<int>(budget+1,0)));
+       dfs(0,n,adjList,present,future,budget,dp);
+       int ans=0;
+       for(int i=0;i<=budget;i++){
+           ans=max(ans,dp[0][0][i]);
+       }
+       return ans;
     }
+
 };
