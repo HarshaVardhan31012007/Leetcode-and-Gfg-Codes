@@ -67,7 +67,7 @@ public:
 
 
 
-    bool solve(string &s,string &p,int i,int j){
+    bool solve(string &s,string &p,int i,int j){//O(max(s,p))
         if(j>=p.size()){
             bool islower=true;
             for(int k=i;k<s.size();k++){
@@ -92,7 +92,7 @@ public:
     }
     vector<bool> camelMatch(vector<string>& queries, string pattern) {
        vector<bool>ans(queries.size(),0);
-       for(int p=0;p<queries.size();p++){
+       for(int p=0;p<queries.size();p++){//O(n*n)
           int i=0;
           int j=0;
           ans[p]=solve(queries[p],pattern,i,j);
