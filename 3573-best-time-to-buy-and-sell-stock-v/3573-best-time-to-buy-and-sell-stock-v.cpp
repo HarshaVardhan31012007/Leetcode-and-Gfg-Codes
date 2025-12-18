@@ -1,37 +1,30 @@
 class Solution {
 public:
+    long long solve(vector<int>&prices,int k,int i,int prev,vector<vector<vector<long long>>>&dp){    
+        if(k<0) return -1e12;
+        if(i>=prices.size()){
+           if(prev!=0){
+              return -1e12;
+           }
+           return 0;
+        }
+        if(dp[i][prev][k]!=-1) return dp[i][prev][k];
+
+        long long buy=-1e12;
+        if(prev==0)
+        buy=-prices[i]+solve(prices,k,i+1,1,dp);
+        if(prev==2)
+        buy=-prices[i]+solve(prices,k-1,i+1,0,dp);
+        long long sell=-1e12;
+        if(prev==0)
+        sell=prices[i]+solve(prices,k,i+1,2,dp);
+        if(prev==1)
+        sell=prices[i]+solve(prices,k-1,i+1,0,dp);
+        long long skip=solve(prices,k,i+1,prev,dp);
+        return dp[i][prev][k]=max({buy,sell,skip});
+    }
     long long maximumProfit(vector<int>& prices, int k) {
-        int n = prices.size();
-        vector<vector<vector<long long>>> memo(
-            n, vector<vector<long long>>(k + 1, vector<long long>(3, -1)));
-
-        function<long long(int, int, int)> dfs = [&](int i, int j,
-                                                     int state) -> long long {
-            if (j == 0) {
-                return 0;
-            }
-            if (i == 0) {
-                return state == 0 ? 0 : (state == 1 ? -prices[0] : prices[0]);
-            }
-            if (memo[i][j][state] != -1) {
-                return memo[i][j][state];
-            }
-
-            int p = prices[i];
-            long long res;
-            if (state == 0) {
-                res = max(dfs(i - 1, j, 0),
-                          max(dfs(i - 1, j, 1) + p, dfs(i - 1, j, 2) - p));
-            } else if (state == 1) {
-                res = max(dfs(i - 1, j, 1), dfs(i - 1, j - 1, 0) - p);
-            } else {
-                res = max(dfs(i - 1, j, 2), dfs(i - 1, j - 1, 0) + p);
-            }
-            memo[i][j][state] = res;
-
-            return res;
-        };
-
-        return dfs(n - 1, k, 0);
+        vector<vector<vector<long long >>>dp(prices.size()+1,vector<vector<long long>>(3,vector<long long>(k+1,-1)));
+        return solve(prices,k,0,0,dp);
     }
 };
