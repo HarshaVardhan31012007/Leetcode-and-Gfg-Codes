@@ -67,28 +67,54 @@ public:
 
 
 
-    bool solve(string &s,string &p,int i,int j){//O(max(s,p))
-        if(j>=p.size()){
-            bool islower=true;
-            for(int k=i;k<s.size();k++){
-                if(s[k]>='A'&&s[k]<='Z'){
-                    islower=false;
-                    break;
-                }
-            }
-            return islower;
-        }
-        if(i>=s.size()) return false;
+    // bool solve(string &s,string &p,int i,int j){//O(max(s,p))
+    //     if(j>=p.size()){
+    //         bool islower=true;
+    //         for(int k=i;k<s.size();k++){
+    //             if(s[k]>='A'&&s[k]<='Z'){
+    //                 islower=false;
+    //                 break;
+    //             }
+    //         }
+    //         return islower;
+    //     }
+    //     if(i>=s.size()) return false;
 
-          if(s[i]==p[j]){
-            return solve(s,p,i+1,j+1);
-          }
-          else{
-            if(islower(s[i]))
-            return solve(s,p,i+1,j);
-            else
-            return false;
-          }
+    //       if(s[i]==p[j]){
+    //         return solve(s,p,i+1,j+1);
+    //       }
+    //       else{
+    //         if(islower(s[i]))
+    //         return solve(s,p,i+1,j);
+    //         else
+    //         return false;
+    //       }
+    // }
+    // vector<bool> camelMatch(vector<string>& queries, string pattern) {
+    //    vector<bool>ans(queries.size(),0);
+    //    for(int p=0;p<queries.size();p++){//O(n*n)
+    //       int i=0;
+    //       int j=0;
+    //       ans[p]=solve(queries[p],pattern,i,j);
+    //    }
+    //    return ans;
+    // } 
+
+
+
+    bool solve(string &s,string &p,int i,int j){//O(max(s,p))
+        while(i<s.size()){
+            if(j<p.size()&&s[i]==p[j]){
+                i++;j++;
+            }
+            else{
+                if(islower(s[i]))
+                i++;
+                else
+                break;
+            }
+        }
+        return i==s.size()&&j==p.size();
     }
     vector<bool> camelMatch(vector<string>& queries, string pattern) {
        vector<bool>ans(queries.size(),0);
