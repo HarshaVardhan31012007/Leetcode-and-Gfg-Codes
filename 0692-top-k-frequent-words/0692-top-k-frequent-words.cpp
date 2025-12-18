@@ -19,16 +19,24 @@ public:
             if(pq.size()>k)
             pq.pop();
         }
-        vector<string>ans;
+        // vector<string>ans;
+        // while(!pq.empty()){
+        //     ans.push_back(pq.top().second);
+        //     pq.pop();
+        // }
+        // sort(ans.begin(),ans.end(),[&](string &a,string &b){
+        //     if(freq[a]!=freq[b])
+        //     return freq[a]>freq[b];
+        //     return a<b;
+        // });
+
+
+        vector<string>ans(pq.size());
+        int i=pq.size()-1;
         while(!pq.empty()){
-            ans.push_back(pq.top().second);
+            ans[i--]=pq.top().second;
             pq.pop();
         }
-        sort(ans.begin(),ans.end(),[&](string &a,string &b){
-            if(freq[a]!=freq[b])
-            return freq[a]>freq[b];
-            return a<b;
-        });
         return ans;
     }
 };
