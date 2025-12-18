@@ -108,13 +108,13 @@ public:
                 i++;j++;
             }
             else{
-                if(islower(s[i]))
-                i++;
+                if(isupper(s[i]))
+                return false;
                 else
-                break;
+                i++;
             }
         }
-        return i==s.size()&&j==p.size();
+        return j==p.size();
     }
     vector<bool> camelMatch(vector<string>& queries, string pattern) {
        vector<bool>ans(queries.size(),0);
