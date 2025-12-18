@@ -9,7 +9,7 @@ public:
         }
     };
     vector<string> topKFrequent(vector<string>& words, int k) {
-        map<string,int>freq;
+        unordered_map<string,int>freq;
         for(auto &each:words){
             freq[each]++;
         }
