@@ -6,7 +6,6 @@ public:
         for(int i=0;i<n;i++){
             ans+=strategy[i]*prices[i];
         }
-        vector<int>temp(prices);
         long long curr=ans;
         for(int i=0;i<k;i++){
             curr-=strategy[i]*prices[i];
