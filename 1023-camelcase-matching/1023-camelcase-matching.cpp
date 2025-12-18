@@ -152,7 +152,7 @@ public:
         }
 
         bool search(Trie* root,string &s,int i){
-            if(i>=s.length()) return root->isterminal;
+            if(i>=s.length()) return root->isterminal;//if root is not terninal that means some aprt of pattern is still poresent but s is completed
             if(root->children.find(s[i])!=children.end())
             return search(root->children[s[i]],s,i+1);
             else if(islower(s[i]))
