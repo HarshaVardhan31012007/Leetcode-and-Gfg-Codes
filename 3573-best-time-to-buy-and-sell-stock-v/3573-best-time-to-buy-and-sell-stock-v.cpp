@@ -103,19 +103,37 @@ public:
 
 
    
-    long long maximumProfit(vector<int>& prices, int k) {
-        vector<vector<vector<long long >>>dp(prices.size()+1,vector<vector<long long>>(k+1,vector<long long>(3,0)));
+    // long long maximumProfit(vector<int>& prices, int k) {
+    //     vector<vector<vector<long long >>>dp(prices.size()+1,vector<vector<long long>>(k+1,vector<long long>(3,0)));
+    //     for(int i=1;i<=k;i++){
+    //             dp[prices.size()-1][i][1]=prices[prices.size()-1];
+    //             dp[prices.size()-1][i][2]=-prices[prices.size()-1];
+    //     }
+    //     for(int i=prices.size()-2;i>=0;i--){
+    //         for(int j=1;j<=k;j++){
+    //             dp[i][j][0]=max(dp[i+1][j][0],max(-prices[i]+dp[i+1][j][1],prices[i]+dp[i+1][j][2]));
+    //             dp[i][j][1]=max(prices[i]+dp[i+1][j-1][0],dp[i+1][j][1]);
+    //             dp[i][j][2]=max(dp[i+1][j][2],-prices[i]+dp[i+1][j-1][0]);
+    //         }
+    //     }
+    //     return dp[0][k][0];
+    // }
+
+
+
+     long long maximumProfit(vector<int>& prices, int k) {
+        vector<vector<long long>>dp(k+1,vector<long long>(3,0));
         for(int i=1;i<=k;i++){
-                dp[prices.size()-1][i][1]=prices[prices.size()-1];
-                dp[prices.size()-1][i][2]=-prices[prices.size()-1];
+                dp[i][1]=prices[prices.size()-1];
+                dp[i][2]=-prices[prices.size()-1];
         }
         for(int i=prices.size()-2;i>=0;i--){
-            for(int j=1;j<=k;j++){
-                dp[i][j][0]=max(dp[i+1][j][0],max(-prices[i]+dp[i+1][j][1],prices[i]+dp[i+1][j][2]));
-                dp[i][j][1]=max(prices[i]+dp[i+1][j-1][0],dp[i+1][j][1]);
-                dp[i][j][2]=max(dp[i+1][j][2],-prices[i]+dp[i+1][j-1][0]);
+            for(int j=k;j>=1;j--){
+                dp[j][0]=max(dp[j][0],max(-prices[i]+dp[j][1],prices[i]+dp[j][2]));
+                dp[j][1]=max(prices[i]+dp[j-1][0],dp[j][1]);
+                dp[j][2]=max(dp[j][2],-prices[i]+dp[j-1][0]);
             }
         }
-        return dp[0][k][0];
+        return dp[k][0];
     }
 };
