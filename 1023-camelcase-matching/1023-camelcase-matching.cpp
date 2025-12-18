@@ -102,27 +102,74 @@ public:
 
 
 
-    bool solve(string &s,string &p,int i,int j){//O(max(s,p))
-        while(i<s.size()){
-            if(j<p.size()&&s[i]==p[j]){
-                i++;j++;
+    // bool solve(string &s,string &p,int i,int j){//O(max(s,p))
+    //     while(i<s.size()){
+    //         if(j<p.size()&&s[i]==p[j]){
+    //             i++;j++;
+    //         }
+    //         else{
+    //             if(isupper(s[i]))
+    //             return false;
+    //             else
+    //             i++;
+    //         }
+    //     }
+    //     return j==p.size();
+    // }
+    // vector<bool> camelMatch(vector<string>& queries, string pattern) {
+    //    vector<bool>ans(queries.size(),0);
+    //    for(int p=0;p<queries.size();p++){//O(n*n)
+    //       int i=0;
+    //       int j=0;
+    //       ans[p]=solve(queries[p],pattern,i,j);
+    //    }
+    //    return ans;
+    // } 
+
+
+
+
+    class Trie{
+        public:
+
+        char data;
+        unordered_map<char,Trie*>children;
+        bool isterminal;
+        
+        Trie(char val){
+            this->data=val;
+            this->isterminal=false;
+        } 
+
+        void insertHelp(Trie* root,string word,int i){
+            if(i>=word.length()){
+                root->isterminal=true;
+                return;
             }
-            else{
-                if(isupper(s[i]))
-                return false;
-                else
-                i++;
-            }
+            if(root->children.find(word[i])==root->children.end())
+            root->children[word[i]]=new Trie(word[i]);
+            insertHelp(root->children[word[i]],word,i+1);
         }
-        return j==p.size();
-    }
+
+        bool search(Trie* root,string &s,int i){
+            if(i>=s.length()) return root->isterminal;
+            if(root->children.find(s[i])!=children.end())
+            return search(root->children[s[i]],s,i+1);
+            else if(islower(s[i]))
+            return search(root,s,i+1);
+            else
+            return false;
+        }
+    };
     vector<bool> camelMatch(vector<string>& queries, string pattern) {
-       vector<bool>ans(queries.size(),0);
-       for(int p=0;p<queries.size();p++){//O(n*n)
-          int i=0;
-          int j=0;
-          ans[p]=solve(queries[p],pattern,i,j);
-       }
-       return ans;
+        Trie* root=new Trie('-');
+        int n=queries.size();
+        root->insertHelp(root,pattern,0);
+        vector<bool>ans(n,0);
+        for(int i=0;i<n;i++){
+            ans[i]=root->search(root,queries[i],0);
+        }
+        return ans;
     } 
+
 };
