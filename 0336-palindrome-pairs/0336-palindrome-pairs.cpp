@@ -16,7 +16,7 @@
 //             }
 //         } 
 
-//         void insertHelp(Trie* root,string word,int i,int &stringNumber){
+//         void insertHelp(Trie* root,string &word,int i,int &stringNumber){
 //             if(i>=word.length()){
 //                 root->isterminal=true;
 //                 root->stringNumber=stringNumber;
