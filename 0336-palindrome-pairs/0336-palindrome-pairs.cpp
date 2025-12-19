@@ -258,81 +258,77 @@
 
 class Solution {
 public:
-    class Trie {
-    public:
+  class Trie{
+        public:
+
+        char data;
         Trie* children[26];
         int stringNumber;
-        vector<int> pindices;
-
-        Trie() {
-            stringNumber = -1;
-            for (int i = 0; i < 26; i++)
-                children[i] = NULL;
-        }
-
-        bool checkpalindrome(string &s, int i, int j) {
-            while (i < j) {
-                if (s[i] != s[j]) return false;
-                i++; j--;
+        vector<int>pindices;
+        
+        Trie(char val){
+            this->data=val;
+            this->stringNumber=-1;
+            for(int i=0;i<26;i++){
+                this->children[i]=NULL;
+            }
+        } 
+         bool checkpalindrome(string &s,int i,int j){
+            while(i<j){
+                if(s[i]!=s[j]){
+                    return false;
+                }
+                i++;j--;
             }
             return true;
         }
-
-        void insertHelp(Trie* root, string &word, int i, int idx) {
-            // if remaining suffix is palindrome (INCLUDING EMPTY)
-            if (checkpalindrome(word, i, word.size() - 1)) {
-                root->pindices.push_back(idx);
+        void insertHelp(Trie* root,string &word,int i,int &stringNumber){
+            if(checkpalindrome(word,i,word.length()-1)){
+                root->pindices.push_back(stringNumber);
             }
-
-            if (i == word.size()) {
-                root->stringNumber = idx;
+            if(i>=word.length()){
+                root->stringNumber=stringNumber;
                 return;
             }
-
-            int c = word[i] - 'a';
-            if (!root->children[c])
-                root->children[c] = new Trie();
-
-            insertHelp(root->children[c], word, i + 1, idx);
+            if(root->children[word[i]-'a']==NULL)
+            root->children[word[i]-'a']=new Trie(word[i]);
+            insertHelp(root->children[word[i]-'a'],word,i+1,stringNumber);
         }
-
-        void search(Trie* root, string &s, vector<int> &temp, int idx) {
-            Trie* curr = root;
-
-            for (int i = 0; i < s.size(); i++) {
-                if (curr->stringNumber != -1 &&
-                    curr->stringNumber != idx &&
-                    checkpalindrome(s, i, s.size() - 1)) {
-                    temp.push_back(curr->stringNumber);
-                }
-
-                int c = s[i] - 'a';
-                if (!curr->children[c]) return;
-                curr = curr->children[c];
+        void search(Trie* root,string &s,vector<int>&temp,int &idx){
+            Trie* curr=root;
+            for(int i=0;i<s.length();i++){
+                 if(curr->stringNumber!=-1){//check for isterminal
+                      if(curr->stringNumber!=idx&&checkpalindrome(s,i,s.length()-1)){
+                             temp.push_back(curr->stringNumber);
+                      }
+                 }
+                 if(curr->children[s[i]-'a']!=NULL){
+                    curr=curr->children[s[i]-'a'];
+                 }
+                 else
+                 return;
             }
-
-            for (int each : curr->pindices) {
-                if (each != idx)
-                    temp.push_back(each);
+            //if we reach here that means all s characters are matched//we are searching for more possible words in trie that make palindorme
+            for(auto &each:curr->pindices){
+                if(idx!=each)
+                temp.push_back(each);
             }
         }
-    };
-
+     };
     vector<vector<int>> palindromePairs(vector<string>& words) {
-        Trie* root = new Trie();
-
-        for (int i = 0; i < words.size(); i++) {
-            string w = words[i];
-            reverse(w.begin(), w.end());
-            root->insertHelp(root, w, 0, i);
+        Trie* root=new Trie('-');
+        for(int i=0;i<words.size();i++){
+            string word=words[i];
+            reverse(word.begin(),word.end());
+            root->insertHelp(root,word,0,i);
         }
-
-        vector<vector<int>> ans;
-        for (int i = 0; i < words.size(); i++) {
-            vector<int> temp;
-            root->search(root, words[i], temp, i);
-            for (int j : temp)
-                ans.push_back({i, j});
+        vector<vector<int>>ans;
+        for(int i=0;i<words.size();i++){
+            vector<int>temp;
+            root->search(root,words[i],temp,i);
+            for(auto &each:temp){
+                ans.push_back({i,each});
+            }
         }
         return ans;
     }
