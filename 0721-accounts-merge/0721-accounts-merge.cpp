@@ -48,18 +48,19 @@ public:
             //  return ans;
 
 
-            unordered_map<int,set<string>>preAns;
+            unordered_map<int,vector<string>>preAns;
             for(auto it:mpp){
                 int accountNo=it.second;
                 string mail=it.first;
                 accountNo=findParent(accountNo,parent);
-                preAns[accountNo].insert(mail);
+                preAns[accountNo].push_back(mail);
             }
             vector<vector<string>>ans;
             for(auto it:preAns){
                vector<string>v;
                v.push_back(accounts[it.first][0]);
                for(auto each:it.second) v.push_back(each);
+               sort(v.begin()+1,v.end());
                ans.push_back(v);
             }
              return ans;
