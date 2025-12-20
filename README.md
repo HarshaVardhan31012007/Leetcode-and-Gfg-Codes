@@ -298,6 +298,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3578-count-partitions-with-max-min-difference-at-most-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3578-count-partitions-with-max-min-difference-at-most-k) |
 | [3583-count-special-triplets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3583-count-special-triplets) |
 | [3606-coupon-code-validator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3606-coupon-code-validator) |
+| [3607-power-grid-maintenance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3607-power-grid-maintenance) |
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
@@ -538,6 +539,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3531-count-covered-buildings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3531-count-covered-buildings) |
 | [3583-count-special-triplets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3583-count-special-triplets) |
 | [3606-coupon-code-validator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3606-coupon-code-validator) |
+| [3607-power-grid-maintenance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3607-power-grid-maintenance) |
 | [3623-count-number-of-trapezoids-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3623-count-number-of-trapezoids-i) |
 | [3625-count-number-of-trapezoids-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3625-count-number-of-trapezoids-ii) |
 ## Binary Search
@@ -1137,6 +1139,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1902-car-fleet-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1902-car-fleet-ii) |
 | [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
 | [3478-choose-k-elements-with-maximum-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3478-choose-k-elements-with-maximum-sum) |
+| [3607-power-grid-maintenance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3607-power-grid-maintenance) |
 ## Merge Sort
 |  |
 | ------- |
@@ -1259,6 +1262,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 | [2872-maximum-number-of-k-divisible-components](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2872-maximum-number-of-k-divisible-components) |
 | [3562-maximum-profit-from-trading-stocks-with-discounts](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3562-maximum-profit-from-trading-stocks-with-discounts) |
+| [3607-power-grid-maintenance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3607-power-grid-maintenance) |
 | [3772-maximum-subgraph-score-in-a-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3772-maximum-subgraph-score-in-a-tree) |
 ## Breadth-First Search
 |  |
@@ -1302,6 +1306,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2439-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2439-longest-cycle-in-a-graph) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
+| [3607-power-grid-maintenance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3607-power-grid-maintenance) |
 ## Union Find
 |  |
 | ------- |
@@ -1313,6 +1318,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1706-min-cost-to-connect-all-points](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1706-min-cost-to-connect-all-points) |
 | [1753-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-path-with-minimum-effort) |
 | [2092-find-all-people-with-secret](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2092-find-all-people-with-secret) |
+| [3607-power-grid-maintenance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3607-power-grid-maintenance) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -1588,6 +1594,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2092-find-all-people-with-secret](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2092-find-all-people-with-secret) |
 | [2439-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2439-longest-cycle-in-a-graph) |
+| [3607-power-grid-maintenance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3607-power-grid-maintenance) |
 ## Minimum Spanning Tree
 |  |
 | ------- |
@@ -1640,4 +1647,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
+## Ordered Set
+|  |
+| ------- |
+| [3607-power-grid-maintenance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3607-power-grid-maintenance) |
 <!---LeetCode Topics End-->
