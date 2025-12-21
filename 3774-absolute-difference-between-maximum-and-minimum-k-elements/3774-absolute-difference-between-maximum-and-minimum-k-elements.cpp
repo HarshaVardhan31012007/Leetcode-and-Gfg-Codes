@@ -12,10 +12,20 @@ public:
         //     j--;
         // }
         // return two-one;
-        int one=0;int two=0;
-        for(int i=0,j=nums.size()-1;i<k;i++,j--){
+
+
+        // int one=0;int two=0;
+        // for(int i=0,j=nums.size()-1;i<k;i++,j--){
+        //    one+=nums[i];
+        //    two+=nums[j];
+        // }
+        // return two-one;
+
+
+         int one=0;int two=0;
+        for(int i=0;i<k;i++){
            one+=nums[i];
-           two+=nums[j];
+           two+=nums[nums.size()-i-1];
         }
         return two-one;
     }
