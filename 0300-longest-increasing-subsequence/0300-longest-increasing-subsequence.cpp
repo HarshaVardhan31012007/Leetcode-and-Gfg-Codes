@@ -47,7 +47,7 @@ public:
             if(ans.empty()||ans.back()<nums[i])
             ans.push_back(nums[i]);
             else{
-                auto it=lower_bound(ans.begin(),ans.end(),nums[i]);//it is lower bound not upperbound dry run this 4 10 2 3 8 9
+                auto it=lower_bound(ans.begin(),ans.end(),nums[i]);//it is lower bound not upperbound dry run this 4 10 4 3 8 9
                 if(it!=ans.end())
                 ans[it-ans.begin()]=nums[i];
             }
