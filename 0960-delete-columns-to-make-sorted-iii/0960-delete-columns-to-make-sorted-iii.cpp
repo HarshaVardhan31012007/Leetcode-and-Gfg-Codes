@@ -50,27 +50,55 @@ public:
     //     return n-dp[0][0];
     // }
 
-     bool check(vector<string>& strs,int c,int p,int m){
-        for(int i=0;i<m;i++){
-            if(strs[i][p]>strs[i][c])
-            return false;
-        }
-        return true;
-    }
+
+
+    //  bool check(vector<string>& strs,int c,int p,int m){
+    //     for(int i=0;i<m;i++){
+    //         if(strs[i][p]>strs[i][c])
+    //         return false;
+    //     }
+    //     return true;
+    // }
+    // int minDeletionSize(vector<string>& strs) {
+    //     int m=strs.size();
+    //     int n=strs[0].size();
+    //     vector<int>dp(n+1,0);
+    //     for(int i=n-1;i>=0;i--){
+    //         for(int j=-1;j<=i-1;j++){//j is prev
+    //             int inc=0;
+    //             if(j==-1||check(strs,i,j,m)){
+    //                 inc=1+dp[i+1];//as prev is starts from -1 so shifted it
+    //             } 
+    //             int exc=dp[j+1];//as prev is starts from -1 so shifted it
+    //             dp[j+1]=max(inc,exc);//as prev is starts from -1 so shifted it
+    //         }
+    //     }
+    //     return n-dp[0];
+    // }
+
+
+
+
+
     int minDeletionSize(vector<string>& strs) {
         int m=strs.size();
         int n=strs[0].size();
-        vector<int>dp(n+1,0);
-        for(int i=n-1;i>=0;i--){
-            for(int j=-1;j<=i-1;j++){//j is prev
-                int inc=0;
-                if(j==-1||check(strs,i,j,m)){
-                    inc=1+dp[i+1];//as prev is starts from -1 so shifted it
-                } 
-                int exc=dp[j+1];//as prev is starts from -1 so shifted it
-                dp[j+1]=max(inc,exc);//as prev is starts from -1 so shifted it
-            }
+        vector<int>dp(n,1);
+        int ans=1;
+        for(int i=0;i<n;i++){
+           for(int j=0;j<i;j++){
+               bool safe=true;
+               for(int k=0;k<m;k++){
+                  if(strs[k][j]>strs[k][i]){
+                    safe=false;
+                    break;
+                  }
+               }
+               if(safe)
+               dp[i]=max(dp[i],dp[j]+1);
+           }
+           ans=max(ans,dp[i]);
         }
-        return n-dp[0];
+        return n-ans;
     }
 };
