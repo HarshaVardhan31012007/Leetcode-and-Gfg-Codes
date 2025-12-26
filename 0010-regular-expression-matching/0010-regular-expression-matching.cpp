@@ -55,24 +55,54 @@ public:
 
 
 
-    bool isMatch(string s, string p) {
-        vector<vector<int>>dp(s.length()+1,vector<int>(p.length()+1,0));
-        dp[s.length()][p.length()]=1;
+    // bool isMatch(string s, string p) {
+    //     vector<vector<int>>dp(s.length()+1,vector<int>(p.length()+1,0));
+    //     dp[s.length()][p.length()]=1;
+    //     for(int i=s.length();i>=0;i--){
+    //         for(int j=p.length()-1;j>=0;j--){
+    //                 bool ans=false;
+    //                 bool curr=i<s.length()&&(p[j]=='.'||s[i]==p[j]);
+    //                 if(j+1<p.length()&&p[j+1]=='*'){
+    //                 if(curr)
+    //                 ans=dp[i+1][j];
+    //                 ans=ans||dp[i][j+2];
+    //                 }
+    //                 else if(curr){
+    //                     ans=dp[i+1][j+1];
+    //                 }
+    //                 dp[i][j]=ans;
+    //         }
+    //     }
+    //     return dp[0][0];
+    // }
+
+
+
+
+     bool isMatch(string s, string p) {
+        vector<int>next(p.length()+2,0);
+        vector<int>cur(p.length()+2,0);
+        next[p.length()]=1;
         for(int i=s.length();i>=0;i--){
+            if(i==s.length())
+            cur[p.length()]=1;
+            else
+            cur[p.length()]=0;
             for(int j=p.length()-1;j>=0;j--){
                     bool ans=false;
                     bool curr=i<s.length()&&(p[j]=='.'||s[i]==p[j]);
                     if(j+1<p.length()&&p[j+1]=='*'){
-                    if(curr)
-                    ans=dp[i+1][j];
-                    ans=ans||dp[i][j+2];
+                        if(curr)
+                        ans=next[j];
+                        ans=ans||cur[j+2];
                     }
                     else if(curr){
-                        ans=dp[i+1][j+1];
+                        ans=next[j+1];
                     }
-                    dp[i][j]=ans;
+                    cur[j]=ans;
             }
+            next=cur;
         }
-        return dp[0][0];
+        return next[0];
     }
 };
