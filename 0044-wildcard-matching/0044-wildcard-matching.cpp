@@ -29,25 +29,50 @@ public:
 
 
     
-    bool isMatch(string s, string p) {
-        vector<vector<bool>>dp(s.length()+1,vector<bool>(p.length()+1,0));
-        dp[s.length()][p.length()]=1;
+    // bool isMatch(string s, string p) {
+    //     vector<vector<bool>>dp(s.length()+1,vector<bool>(p.length()+1,0));
+    //     dp[s.length()][p.length()]=1;
+    //     for(int j=p.length()-1;j>=0;j--){
+    //         if(p[j]!='*') break;
+    //         dp[s.length()][j]=1;
+    //     }
+    //     for(int i=s.length()-1;i>=0;i--){
+    //         for(int j=p.length()-1;j>=0;j--){
+    //                 bool ans=false;
+    //                 if(p[j]=='?'||s[i]==p[j]){
+    //                     ans=dp[i+1][j+1];
+    //                 }
+    //                 else if(p[j]=='*'){
+    //                     ans=dp[i+1][j]||dp[i][j+1];
+    //                 }
+    //                 dp[i][j]=ans;
+    //         }
+    //     }
+    //     return dp[0][0];
+    // }
+
+
+     bool isMatch(string s, string p) {
+        vector<bool>next(p.length()+1,0);
+        next[p.length()]=1;
         for(int j=p.length()-1;j>=0;j--){
             if(p[j]!='*') break;
-            dp[s.length()][j]=1;
+            next[j]=1;
         }
+        vector<bool>curr(p.length()+1,0);
         for(int i=s.length()-1;i>=0;i--){
             for(int j=p.length()-1;j>=0;j--){
                     bool ans=false;
                     if(p[j]=='?'||s[i]==p[j]){
-                        ans=dp[i+1][j+1];
+                        ans=next[j+1];
                     }
                     else if(p[j]=='*'){
-                        ans=dp[i+1][j]||dp[i][j+1];
+                        ans=next[j]||curr[j+1];
                     }
-                    dp[i][j]=ans;
+                    curr[j]=ans;
             }
+            next=curr;
         }
-        return dp[0][0];
+        return next[0];
     }
 };
