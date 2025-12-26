@@ -39,13 +39,33 @@ public:
 
 
 
+        // int n=customers.size();
+        // int penality=0;
+        // for(auto &each:customers){//for 0 close
+        //     if(each=='Y')
+        //     penality++;
+        // }
+        // int mini=penality;int ans=0;
+        // for(int i=0;i<n;i++){ // for i+1 close each index
+        //    if(customers[i]=='Y'){
+        //       penality--;
+        //    }
+        //    else{
+        //      penality++;
+        //    }
+        //    if(penality<mini){
+        //     mini=penality;
+        //     ans=i+1;
+        //    }
+        // }
+        // return ans;
+
+
+
         int n=customers.size();
+        int ans=0;
         int penality=0;
-        for(auto &each:customers){//for 0 close
-            if(each=='Y')
-            penality++;
-        }
-        int mini=penality;int ans=0;
+        int mini=0;
         for(int i=0;i<n;i++){ // for i+1 close each index
            if(customers[i]=='Y'){
               penality--;
