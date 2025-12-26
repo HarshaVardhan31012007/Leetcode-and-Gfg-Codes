@@ -626,6 +626,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [2465-shifting-letters-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2465-shifting-letters-ii) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
+| [2483-minimum-penalty-for-a-shop](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2483-minimum-penalty-for-a-shop) |
 | [2625-increment-submatrices-by-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2625-increment-submatrices-by-one) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
@@ -942,6 +943,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2406-decode-the-message](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2406-decode-the-message) |
 | [2465-shifting-letters-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2465-shifting-letters-ii) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
+| [2483-minimum-penalty-for-a-shop](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2483-minimum-penalty-for-a-shop) |
 | [3233-maximize-the-number-of-partitions-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3233-maximize-the-number-of-partitions-after-operations) |
 | [3479-count-the-number-of-substrings-with-dominant-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3479-count-the-number-of-substrings-with-dominant-ones) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
