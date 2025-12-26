@@ -73,6 +73,6 @@ public:
             }
             next=curr;
         }
-        return next[0];
+        return next[0];//imp in case of empty string it dont go to loop so return next array always
     }
 };
