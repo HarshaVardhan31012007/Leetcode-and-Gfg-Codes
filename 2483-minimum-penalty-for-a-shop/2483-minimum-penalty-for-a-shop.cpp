@@ -23,17 +23,40 @@ public:
 
 
 
+        // int n=customers.size();
+        // int ans=-1;
+        // int mini=INT_MAX;
+        // int open=0;
+        // for(int i=0;i<=n;i++){
+        //    int curr=2*open+n-i;
+        //    if(curr<mini){
+        //       mini=curr;
+        //       ans=i;
+        //    }
+        //    open+=(customers[i]=='Y'?0:1);
+        // }
+        // return ans;
+
+
+
         int n=customers.size();
-        int ans=-1;
-        int mini=INT_MAX;
-        int open=0;
-        for(int i=0;i<=n;i++){
-           int curr=2*open+n-i;
-           if(curr<mini){
-              mini=curr;
-              ans=i;
+        int penality=0;
+        for(auto &each:customers){//for 0 close
+            if(each=='Y')
+            penality++;
+        }
+        int mini=penality;int ans=0;
+        for(int i=0;i<n;i++){ // for i+1 close each index
+           if(customers[i]=='Y'){
+              penality--;
            }
-           open+=(customers[i]=='Y'?0:1);
+           else{
+             penality++;
+           }
+           if(penality<mini){
+            mini=penality;
+            ans=i+1;
+           }
         }
         return ans;
     }
