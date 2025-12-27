@@ -222,6 +222,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1023-camelcase-matching](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1023-camelcase-matching) |
 | [1025-minimum-cost-for-tickets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1025-minimum-cost-for-tickets) |
 | [1036-rotting-oranges](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1036-rotting-oranges) |
+| [1049-last-stone-weight-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1049-last-stone-weight-ii) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1072-next-greater-node-in-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1072-next-greater-node-in-linked-list) |
 | [1087-longest-arithmetic-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1087-longest-arithmetic-subsequence) |
@@ -729,6 +730,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1008-binary-tree-cameras](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1008-binary-tree-cameras) |
 | [1013-fibonacci-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1013-fibonacci-number) |
 | [1025-minimum-cost-for-tickets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1025-minimum-cost-for-tickets) |
+| [1049-last-stone-weight-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1049-last-stone-weight-ii) |
 | [1087-longest-arithmetic-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1087-longest-arithmetic-subsequence) |
 | [1111-minimum-score-triangulation-of-polygon](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1111-minimum-score-triangulation-of-polygon) |
 | [1130-last-stone-weight-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1130-last-stone-weight-ii) |
