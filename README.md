@@ -280,6 +280,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2316-count-hills-and-valleys-in-an-array) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2392-successful-pairs-of-spells-and-potions) |
+| [2402-meeting-rooms-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2402-meeting-rooms-iii) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [2465-shifting-letters-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2465-shifting-letters-ii) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
@@ -461,6 +462,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2092-find-all-people-with-secret](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2092-find-all-people-with-secret) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2392-successful-pairs-of-spells-and-potions) |
+| [2402-meeting-rooms-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2402-meeting-rooms-iii) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3075-maximize-happiness-of-selected-children) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3433-count-mentions-per-user](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3433-count-mentions-per-user) |
@@ -548,6 +550,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2174-next-greater-numerically-balanced-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2174-next-greater-numerically-balanced-number) |
 | [2186-count-vowel-substrings-of-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2186-count-vowel-substrings-of-a-string) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2274-keep-multiplying-found-values-by-two) |
+| [2402-meeting-rooms-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2402-meeting-rooms-iii) |
 | [2406-decode-the-message](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2406-decode-the-message) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
@@ -834,6 +837,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2274-keep-multiplying-found-values-by-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2324-find-triangular-sum-of-an-array) |
+| [2402-meeting-rooms-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2402-meeting-rooms-iii) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 | [3336-water-bottles-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3336-water-bottles-ii) |
@@ -1179,6 +1183,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1902-car-fleet-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1902-car-fleet-ii) |
 | [2054-two-best-non-overlapping-events](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2054-two-best-non-overlapping-events) |
 | [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
+| [2402-meeting-rooms-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2402-meeting-rooms-iii) |
 | [3478-choose-k-elements-with-maximum-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3478-choose-k-elements-with-maximum-sum) |
 | [3607-power-grid-maintenance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3607-power-grid-maintenance) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3781-maximum-score-after-binary-swaps) |
