@@ -67,27 +67,51 @@ public:
 
 
     
-    int minimumDeleteSum(string s1, string s2) {
-        vector<int>next(s2.length()+1,INT_MAX);
-        vector<int>curr(s2.length()+1,INT_MAX);
-        next[s2.length()]=0;
-        for(int i=s2.length()-1;i>=0;i--){
-           next[i]=next[i+1]+s2[i];
-        }
-        for(int i=s1.length()-1;i>=0;i--){
-            for(int j=s2.length();j>=0;j--){
-                if(j==s2.length()){
-                    curr[j]=next[j]+s1[i];
-                    continue;
-                }
-                if(s1[i]==s2[j]){
-                   curr[j]=next[j+1];
-                   continue;
-                }
-                curr[j]=min(s1[i]+next[j],s2[j]+curr[j+1]);
+    // int minimumDeleteSum(string s1, string s2) {
+    //     vector<int>next(s2.length()+1,INT_MAX);
+    //     vector<int>curr(s2.length()+1,INT_MAX);
+    //     next[s2.length()]=0;
+    //     for(int i=s2.length()-1;i>=0;i--){
+    //        next[i]=next[i+1]+s2[i];
+    //     }
+    //     for(int i=s1.length()-1;i>=0;i--){
+    //         for(int j=s2.length();j>=0;j--){
+    //             if(j==s2.length()){
+    //                 curr[j]=next[j]+s1[i];
+    //                 continue;
+    //             }
+    //             if(s1[i]==s2[j]){
+    //                curr[j]=next[j+1];
+    //                continue;
+    //             }
+    //             curr[j]=min(s1[i]+next[j],s2[j]+curr[j+1]);
+    //         }
+    //         next=curr;
+    //     }
+    //     return next[0];
+    // }
+
+
+
+
+
+    int longestCommonSubsequence(string a, string b) {
+        vector<vector<int>>dp(a.size()+1,vector<int>(b.size()+1,0));
+        for(int i=a.size()-1;i>=0;i--){
+            for(int j=b.size()-1;j>=0;j--){
+                    if(a[i]==b[j]){
+                        dp[i][j]=a[i]+dp[i+1][j+1];
+                    }
+                    else{
+                        dp[i][j]=max(dp[i+1][j],dp[i][j+1]);
+                    }
             }
-            next=curr;
         }
-        return next[0];
+        return dp[0][0];
+    }
+    int minimumDeleteSum(string s1, string s2) {
+        int t=accumulate(s1.begin(),s1.end(),0);
+        t+=accumulate(s2.begin(),s2.end(),0);
+        return t-2*(longestCommonSubsequence(s1,s2));
     }
 };
