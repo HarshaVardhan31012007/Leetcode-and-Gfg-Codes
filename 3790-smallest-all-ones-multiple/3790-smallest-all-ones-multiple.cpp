@@ -29,6 +29,7 @@ public:
 
 
        long long num=1;
+       if(k%5==0||k%2==0) return -1;
        for(int i=0;i<k;i++){
            if(!num) return i+1;
            num=(num*10+1)%k;
