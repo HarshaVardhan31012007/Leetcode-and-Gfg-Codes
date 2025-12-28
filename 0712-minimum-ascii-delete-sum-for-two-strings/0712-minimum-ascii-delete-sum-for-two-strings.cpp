@@ -1,110 +1,57 @@
 class Solution {
 public:
     // int solve(string &s1,string &s2,int i,int j,vector<vector<int>>&dp){
-    //   if(i>=s1.size()||j>=s2.size()) return 0;
-    //   if(dp[i][j]!=-1)
-    //   return dp[i][j];
-    //   if(s1[i]==s2[j])
-    //   return dp[i][j]=s1[i]+solve(s1,s2,i+1,j+1,dp);
-    //   else
-    //   return dp[i][j]=max(solve(s1,s2,i+1,j,dp),solve(s1,s2,i,j+1,dp));
-    // }
-    // int minimumDeleteSum(string s1, string s2) {
-    //     int sum=0;
-    //     for(auto &i:s1)
-    //     sum=sum+i;
-    //     for(auto &j:s2)
-    //     sum=sum+j;
-    //     int m=s1.size();int n=s2.size();
-    //     vector<vector<int>>dp(m+1,vector<int>(n+1,-1));
-    //     return sum-2*solve(s1,s2,0,0,dp);
-    // }
-
-
-
-    // int solve(string &s1,string &s2){
-    //     int m=s1.size();int n=s2.size();
-    //     vector<vector<int>>dp(m+1,vector<int>(n+1,0));
-    //     for(int i=m-1;i>=0;i--){
-    //         for(int j=n-1;j>=0;j--){
-    //             if(s1[i]==s2[j])
-    //             dp[i][j]=s1[i]+dp[i+1][j+1];
-    //             else
-    //             dp[i][j]=max(dp[i+1][j],dp[i][j+1]);
-    //         }
-    //     }
-    //     return dp[0][0];
-    // }
-
-    // int solve(string &s1,string &s2){
-    //     int m=s1.size();int n=s2.size();
-    //     vector<int>curr(n+1,0);
-    //     vector<int>next(n+1,0);
-    //     for(int i=m-1;i>=0;i--){
-    //         for(int j=n-1;j>=0;j--){
-    //             if(s1[i]==s2[j])
-    //             curr[j]=s1[i]+next[j+1];
-    //             else
-    //             curr[j]=max(next[j],curr[j+1]);
-    //         }
-    //         next=curr;
-    //     }
-    //     return next[0];
-    // }
-    // int minimumDeleteSum(string s1, string s2) {
-    //     int sum=0;
-    //     for(auto &i:s1)
-    //     sum=sum+i;
-    //     for(auto &j:s2)
-    //     sum=sum+j;
-    //     return sum-2*solve(s1,s2);
-    // }
-
-
-    // int solve(string &s1,string &s2,int i,int j,vector<vector<int>>&dp){
-    //     if(i==s1.size()||j==s2.size()){
-    //         int cost=0;
-    //         for(int x=i;x<s1.size();x++) cost+=s1[x];
-    //         for(int x=j;x<s2.size();x++) cost+=s2[x];
-    //         return cost; 
-    //     }
-    //      if(dp[i][j]!=-1)
-    //     return dp[i][j];
-    //     if(s1[i]==s2[j])
+    //     if(i>=s1.length()&&j>=s2.length()) return 0;
+    //     if(dp[i][j]!=-1) return dp[i][j];
+    //     if(i<s1.length()&&j<s2.length()&&s1[i]==s2[j]) 
     //     return dp[i][j]=solve(s1,s2,i+1,j+1,dp);
-    //     else
-    //     return dp[i][j]=min(s1[i]+solve(s1,s2,i+1,j,dp),s2[j]+solve(s1,s2,i,j+1,dp));
+    //     int l=INT_MAX;
+    //     if(i<s1.length())
+    //         l=s1[i]+solve(s1,s2,i+1,j,dp);
+    //     int r=INT_MAX;
+    //     if(j<s2.length())
+    //        r=s2[j]+solve(s1,s2,i,j+1,dp);
+    //     return dp[i][j]=min(l,r);
     // }
     // int minimumDeleteSum(string s1, string s2) {
-    //    int m=s1.size();
-    //    int n=s2.size();
-    //    vector<vector<int>>dp(m+1,vector<int>(n+1,-1));
-    //    return solve(s1,s2,0,0,dp);
+    //     vector<vector<int>>dp(s1.length()+1,vector<int>(s2.length()+1,-1));
+    //     return solve(s1,s2,0,0,dp);
     // }
 
 
-    int solve(string &s1,string &s2){
-     int m=s1.size();
-       int n=s2.size();
-       vector<vector<int>>dp(m+1,vector<int>(n+1,0));
-       for(int i=m-1;i>=0;i--){
-        dp[i][n]=s1[i]+dp[i+1][n];
-       }
-       for(int j=n-1;j>=0;j--){
-        dp[m][j]=s2[j]+dp[m][j+1];
-       }
-       for(int i=m-1;i>=0;i--){
-        for(int j=n-1;j>=0;j--){
-        if(s1[i]==s2[j])
-        dp[i][j]=dp[i+1][j+1];
-        else
-        dp[i][j]=min(s1[i]+dp[i+1][j],s2[j]+dp[i][j+1]);
-        }
-       }
-       return dp[0][0];
+
+     int solve(string &s1,string &s2,int i,int j,vector<vector<int>>&dp){
+        if(i>=s1.length()&&j>=s2.length()) return 0;
+        if(dp[i][j]!=-1) return dp[i][j];
+        if(i<s1.length()&&j<s2.length()&&s1[i]==s2[j]) 
+        return dp[i][j]=solve(s1,s2,i+1,j+1,dp);
+        int l=INT_MAX;
+        if(i<s1.length())
+            l=s1[i]+solve(s1,s2,i+1,j,dp);
+        int r=INT_MAX;
+        if(j<s2.length())
+           r=s2[j]+solve(s1,s2,i,j+1,dp);
+        return dp[i][j]=min(l,r);
     }
     int minimumDeleteSum(string s1, string s2) {
-       return solve(s1,s2);
+        vector<vector<int>>dp(s1.length()+1,vector<int>(s2.length()+1,INT_MAX));
+        dp[s1.length()][s2.length()]=0;
+        for(int i=s1.length();i>=0;i--){
+            for(int j=s2.length();j>=0;j--){
+                if(i==s1.length()&&j==s2.length()) continue;
+                if(i<s1.length()&&j<s2.length()&&s1[i]==s2[j]){
+                   dp[i][j]=dp[i+1][j+1];
+                   continue;
+                }
+                int l=INT_MAX;
+                if(i<s1.length())
+                    l=s1[i]+dp[i+1][j];
+                int r=INT_MAX;
+                if(j<s2.length())
+                r=s2[j]+dp[i][j+1];
+                dp[i][j]=min(l,r);
+            }
+        }
+        return dp[0][0];
     }
-
 };
