@@ -25,13 +25,9 @@ public:
         vector<int>dp(days.size()+1,0);
         for(int i=days.size()-1;i>=0;i--){
             int one=costs[0]+dp[i+1];
-            int j=i;
-            while(j<days.size()&&days[j]<days[i]+7)
-            j++;
+            int j=lower_bound(days.begin()+i+1,days.end(),days[i]+7)-days.begin();
             int seven=costs[1]+dp[j];
-            j=i;
-            while(j<days.size()&&days[j]<days[i]+30)
-            j++;
+            j=lower_bound(days.begin()+i+1,days.end(),days[i]+30)-days.begin();
             int thirty=costs[2]+dp[j];
             dp[i]=min(one,min(seven,thirty));
         }
