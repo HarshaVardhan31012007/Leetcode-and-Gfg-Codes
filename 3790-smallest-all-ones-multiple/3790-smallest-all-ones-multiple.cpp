@@ -34,6 +34,6 @@ public:
            if(!num) return i+1;
            num=(num*10+1)%k;
        }
-       return 0;
+       return -1;
     }
 };
