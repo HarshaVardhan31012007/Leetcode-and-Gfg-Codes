@@ -53,7 +53,7 @@ public:
             int ndiff=diff;
             bool nlz=!lz&&j==0;
             if(!nlz){
-               if(i%2==1)
+               if(i%2==0)
                ndiff+=j;
                else
                ndiff-=j;
