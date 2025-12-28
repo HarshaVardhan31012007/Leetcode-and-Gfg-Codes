@@ -11,27 +11,27 @@
  */
 class Solution {
 public:
-    map<pair<int,int>,vector<TreeNode*>>dp;
-    vector<TreeNode*>solve(int s,int e){
-        if(s>e) return {0};
+    vector<TreeNode*>solve(int s,int e,vector<vector<vector<TreeNode*>>>&dp){
+        if(s>e) return {NULL};
         if(s==e) return {new TreeNode(s)};
-        if(dp.find({s,e})!=dp.end()) return dp[{s,e}];
+        if(!dp[s][e].empty()) return dp[s][e];
         vector<TreeNode*>ans;
         for(int i=s;i<=e;i++){
-            vector<TreeNode*>l=solve(s,i-1);
-            vector<TreeNode*>r=solve(i+1,e);
-            for(int k=0;k<l.size();k++){
-                for(int j=0;j<r.size();j++){
-                    TreeNode *root=new TreeNode(i);
-                    root->left=l[k];
-                    root->right=r[j];
+            vector<TreeNode*>l=solve(s,i-1,dp);
+            vector<TreeNode*>r=solve(i+1,e,dp);
+            for(auto &each:l){
+                for(auto &el:r){
+                    TreeNode* root=new TreeNode(i);
+                    root->left=each;
+                    root->right=el;
                     ans.push_back(root);
                 }
             }
         }
-        return dp[{s,e}]=ans;
+        return dp[s][e]=ans;
     }
     vector<TreeNode*> generateTrees(int n) {
-        return solve(1,n);
+        vector<vector<vector<TreeNode*>>>dp(n+1,vector<vector<TreeNode*>>(n+1));
+        return solve(1,n,dp);
     }
 };
