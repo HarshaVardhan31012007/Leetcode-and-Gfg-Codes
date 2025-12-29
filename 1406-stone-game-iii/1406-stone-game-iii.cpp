@@ -27,24 +27,46 @@ public:
 
 
 
-    int solve(vector<int>&stoneValue,int i,int flag,vector<vector<int>>&dp){
+    // int solve(vector<int>&stoneValue,int i,int flag,vector<vector<int>>&dp){
+    //     if(i>=stoneValue.size()) return 0;
+    //     if(dp[i][flag]!=-1) return dp[i][flag];
+    //     int sum=0;
+    //     int ans=(flag?INT_MAX:INT_MIN);
+    //     for(int j=1;j<=min(3,(int)stoneValue.size()-i);j++){
+    //        sum+=stoneValue[i+j-1];
+    //        if(!flag)
+    //        ans=max(ans,sum+solve(stoneValue,i+j,!flag,dp));
+    //        else
+    //        ans=min(ans,-sum+solve(stoneValue,i+j,!flag,dp));
+    //     }
+    //     return dp[i][flag]=ans;
+    // }
+    // string stoneGameIII(vector<int>& stoneValue) {
+    //     int n=stoneValue.size();
+    //     vector<vector<int>>dp(n+1,vector<int>(2,-1));
+    //     int ans=solve(stoneValue,0,0,dp);
+    //     if(ans>0) return "Alice";
+    //     else if(ans<0) return "Bob";
+    //     return "Tie";
+    // }
+
+
+
+    int solve(vector<int>&stoneValue,int i,vector<int>&dp){
         if(i>=stoneValue.size()) return 0;
-        if(dp[i][flag]!=-1) return dp[i][flag];
+        if(dp[i]!=-1) return dp[i];
         int sum=0;
-        int ans=(flag?INT_MAX:INT_MIN);
+        int ans=INT_MIN;
         for(int j=1;j<=min(3,(int)stoneValue.size()-i);j++){
            sum+=stoneValue[i+j-1];
-           if(!flag)
-           ans=max(ans,sum+solve(stoneValue,i+j,!flag,dp));
-           else
-           ans=min(ans,-sum+solve(stoneValue,i+j,!flag,dp));
+           ans=max(ans,sum-solve(stoneValue,i+j,dp));
         }
-        return dp[i][flag]=ans;
+        return dp[i]=ans;
     }
     string stoneGameIII(vector<int>& stoneValue) {
         int n=stoneValue.size();
-        vector<vector<int>>dp(n+1,vector<int>(2,-1));
-        int ans=solve(stoneValue,0,0,dp);
+        vector<int>dp(n+1,-1);
+        int ans=solve(stoneValue,0,dp);
         if(ans>0) return "Alice";
         else if(ans<0) return "Bob";
         return "Tie";
