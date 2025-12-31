@@ -34,7 +34,6 @@ public:
         int ans=0;
         while(s<=e){
             int mid=s+(e-s)/2;
-            cout<<mid<<endl;
             if(possible(v,mid)){
                 ans=mid;
                 s=mid+1;
