@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0029-divide-two-integers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0029-divide-two-integers) |
 | [0048-rotate-image](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0050-powx-n) |
+| [0066-plus-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0066-plus-one) |
 | [0069-sqrtx](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0096-unique-binary-search-trees) |
@@ -110,6 +111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0056-merge-intervals) |
+| [0066-plus-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0066-plus-one) |
 | [0068-text-justification](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0068-text-justification) |
 | [0073-set-matrix-zeroes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0074-search-a-2d-matrix) |
