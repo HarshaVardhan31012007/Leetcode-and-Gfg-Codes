@@ -85,7 +85,6 @@ public:
         if(s3.length()!=(s1.length()+s2.length())) return false;
         vector<int>curr(s2.length()+1,0);
         vector<int>next(s2.length()+1,0);
-        next[s2.length()]=1;
         curr[s2.length()]=1;
         for(int i=s1.length();i>=0;i--){
             for(int j=s2.length();j>=0;j--){
