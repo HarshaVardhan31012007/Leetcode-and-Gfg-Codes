@@ -60,21 +60,45 @@ public:
 
 
     
+    // bool isInterleave(string s1, string s2, string s3) {
+    //     if(s3.length()!=(s1.length()+s2.length())) return false;
+    //     vector<vector<int>>dp(s1.length()+1,vector<int>(s2.length()+1,0));
+    //     dp[s1.length()][s2.length()]=1;
+    //     for(int i=s1.length();i>=0;i--){
+    //         for(int j=s2.length();j>=0;j--){
+    //             if(i==s1.length()&&j==s2.length()) continue;
+    //             bool ans=false;
+    //             if(i<s1.length()&&s1[i]==s3[i+j])
+    //             ans=ans||dp[i+1][j];
+    //             if(j<s2.length()&&s2[j]==s3[i+j])
+    //             ans=ans||dp[i][j+1];
+    //             dp[i][j]=ans;
+    //         }
+    //     }
+    //     return dp[0][0];
+    // }
+
+
+
+
     bool isInterleave(string s1, string s2, string s3) {
         if(s3.length()!=(s1.length()+s2.length())) return false;
-        vector<vector<int>>dp(s1.length()+1,vector<int>(s2.length()+1,0));
-        dp[s1.length()][s2.length()]=1;
+        vector<int>curr(s2.length()+1,0);
+        vector<int>next(s2.length()+1,0);
+        next[s2.length()]=1;
+        curr[s2.length()]=1;
         for(int i=s1.length();i>=0;i--){
             for(int j=s2.length();j>=0;j--){
                 if(i==s1.length()&&j==s2.length()) continue;
                 bool ans=false;
                 if(i<s1.length()&&s1[i]==s3[i+j])
-                ans=ans||dp[i+1][j];
+                ans=ans||next[j];
                 if(j<s2.length()&&s2[j]==s3[i+j])
-                ans=ans||dp[i][j+1];
-                dp[i][j]=ans;
+                ans=ans||curr[j+1];
+                curr[j]=ans;
             }
+            next=curr;
         }
-        return dp[0][0];
+        return curr[0];
     }
 };
