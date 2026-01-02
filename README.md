@@ -227,6 +227,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0973-k-closest-points-to-origin](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0973-k-closest-points-to-origin) |
 | [0983-minimum-cost-for-tickets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0983-minimum-cost-for-tickets) |
 | [0987-reveal-cards-in-increasing-order](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0987-reveal-cards-in-increasing-order) |
+| [1000-minimum-cost-to-merge-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1000-minimum-cost-to-merge-stones) |
 | [1018-largest-perimeter-triangle](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1018-largest-perimeter-triangle) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1023-camelcase-matching](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1023-camelcase-matching) |
@@ -644,6 +645,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0724-find-pivot-index](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0724-find-pivot-index) |
 | [0878-shifting-letters](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0878-shifting-letters) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
+| [1000-minimum-cost-to-merge-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1000-minimum-cost-to-merge-stones) |
 | [1140-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1140-stone-game-ii) |
 | [1240-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1240-stone-game-ii) |
 | [1590-make-sum-divisible-by-p](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1590-make-sum-divisible-by-p) |
@@ -750,6 +752,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0943-sum-of-subarray-minimums](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0943-sum-of-subarray-minimums) |
 | [0960-delete-columns-to-make-sorted-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0960-delete-columns-to-make-sorted-iii) |
 | [0983-minimum-cost-for-tickets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0983-minimum-cost-for-tickets) |
+| [1000-minimum-cost-to-merge-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1000-minimum-cost-to-merge-stones) |
 | [1008-binary-tree-cameras](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1008-binary-tree-cameras) |
 | [1013-fibonacci-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1013-fibonacci-number) |
 | [1025-minimum-cost-for-tickets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1025-minimum-cost-for-tickets) |
