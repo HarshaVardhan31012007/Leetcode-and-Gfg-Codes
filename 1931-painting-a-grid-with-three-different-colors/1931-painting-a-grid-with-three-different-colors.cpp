@@ -37,7 +37,7 @@ public:
         return dp[m][prev]=ans;
     }
     int colorTheGrid(int m, int n) {
-        swap(m,n);
+        swap(m,n);//both are same answer as m constraint is less than n so like that
         vector<string>str;
         string temp="";
         build(str,temp,n);
