@@ -21,7 +21,7 @@ public:
             for(int j=0;j<m;j++){
                 pref[j+1]=(pref[j]+dp[i+1][j])%mod;
             }
-            int w=(int)(sqrt(1LL*d*d-1));
+            int w=sqrt(1LL*d*d-1);//stored in int so rounded off automatically
             for(int j=0;j<m;j++){
                 if(grid[i][j]=='#') continue;
                 int L=max(0,j-w);int R=min(m-1,j+w);
