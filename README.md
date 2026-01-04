@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1018-largest-perimeter-triangle](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1018-largest-perimeter-triangle) |
 | [1140-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1140-stone-game-ii) |
 | [1240-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1240-stone-game-ii) |
+| [1390-four-divisors](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1390-four-divisors) |
 | [1406-stone-game-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1406-stone-game-iii) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [1522-stone-game-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1522-stone-game-iii) |
@@ -252,6 +253,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
+| [1390-four-divisors](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1390-four-divisors) |
 | [1397-search-suggestions-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1397-search-suggestions-system) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1406-stone-game-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1406-stone-game-iii) |
