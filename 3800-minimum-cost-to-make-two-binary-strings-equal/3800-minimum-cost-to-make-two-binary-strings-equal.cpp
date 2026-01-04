@@ -90,6 +90,43 @@ public:
 
 
 
+    // long long minimumCost(string s, string t, int flipCost, int swapCost, int crossCost) {
+    //     long long a=0;long long b=0;
+    //     for(int i=0;i<s.length();i++){
+    //         if(s[i]=='0'&&t[i]=='1')
+    //             a++;
+    //         if(s[i]=='1'&&t[i]=='0')
+    //             b++;
+    //     }
+    //     int c=min(a,b);
+    //     a-=c;b-=c;long long ans=0;
+    //     if(2*flipCost<swapCost){
+    //         ans+=2LL*c*flipCost;
+    //     }
+    //     else
+    //     ans+=1LL*c*swapCost;
+    //     if(a){
+    //         if(swapCost+crossCost<2*flipCost)
+    //         ans+=1LL*(a/2)*(swapCost+crossCost);
+    //         else
+    //         ans+=1LL*(a/2)*2LL*(flipCost);
+    //     }
+    //     if(b){
+    //         if(swapCost+crossCost<2*flipCost)
+    //         ans+=1LL*(b/2)*(swapCost+crossCost);
+    //         else
+    //         ans+=1LL*(b/2)*2LL*(flipCost);
+    //     }
+    //     if(a&1)
+    //     ans+=flipCost;
+    //     if(b&1)
+    //     ans+=flipCost;
+    //     return ans;
+    // }
+
+
+
+
     long long minimumCost(string s, string t, int flipCost, int swapCost, int crossCost) {
         long long a=0;long long b=0;
         for(int i=0;i<s.length();i++){
@@ -98,29 +135,11 @@ public:
             if(s[i]=='1'&&t[i]=='0')
                 b++;
         }
-        int c=min(a,b);
-        a-=c;b-=c;long long ans=0;
-        if(2*flipCost<swapCost){
-            ans+=2LL*c*flipCost;
-        }
-        else
-        ans+=1LL*c*swapCost;
-        if(a){
-            if(swapCost+crossCost<2*flipCost)
-            ans+=1LL*(a/2)*(swapCost+crossCost);
-            else
-            ans+=1LL*(a/2)*2LL*(flipCost);
-        }
-        if(b){
-            if(swapCost+crossCost<2*flipCost)
-            ans+=1LL*(b/2)*(swapCost+crossCost);
-            else
-            ans+=1LL*(b/2)*2LL*(flipCost);
-        }
-        if(a&1)
-        ans+=flipCost;
-        if(b&1)
-        ans+=flipCost;
+        long long pairs=min(a,b);
+        long long rem=abs(a-b);
+        long long ans=pairs*min(2*flipCost,swapCost);
+        ans+=(rem/2)*(min(2*flipCost,swapCost+crossCost));
+        ans+=(rem%2)*flipCost;
         return ans;
     }
 };
