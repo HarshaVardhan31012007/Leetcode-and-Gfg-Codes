@@ -31,11 +31,11 @@ public:
 
     long long maxMatrixSum(vector<vector<int>>& matrix) {
         long long sum=0;int m=matrix.size();int n=matrix[0].size();
-        long long mini=LLONG_MAX;long long c=0;
+        int mini=INT_MAX;int c=0;
         for(int i=0;i<m;i++){
            for(int j=0;j<n;j++){
               sum+=abs(matrix[i][j]);
-              mini=min(mini,1LL*abs(matrix[i][j]));
+              mini=min(mini,abs(matrix[i][j]));
               if(matrix[i][j]<0){
                 c++;
               }
