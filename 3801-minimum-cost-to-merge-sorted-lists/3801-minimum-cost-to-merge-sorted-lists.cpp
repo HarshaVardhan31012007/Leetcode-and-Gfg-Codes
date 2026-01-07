@@ -13,7 +13,7 @@ public:
             if((mask&(mask-1))==0) continue;
             for(long long sub=mask;sub>0;sub=(sub-1)&mask){
                 long long diff=mask-sub;
-                if(diff==0||sub==mask) continue;
+                if(diff==0) continue;
                 auto &v1=mergeList[sub];
                 auto &v2=mergeList[diff];
                 long long median1=v1[(v1.size()-1)/2];
