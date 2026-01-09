@@ -29,20 +29,48 @@ public:
     // }
 
 
-    TreeNode* ans;
+    // TreeNode* ans;
+    // int maxi=INT_MIN;
+    // int solve(TreeNode* root,int d){
+    //     if(!root){
+    //         maxi=max(maxi,d);
+    //         return d;
+    //     }
+    //     auto l=solve(root->left,d+1);
+    //     auto r=solve(root->right,d+1);
+    //     if(l==maxi&&r==maxi) ans=root;
+    //     return max(l,r);
+    // }
+    // TreeNode* subtreeWithAllDeepest(TreeNode* root) {
+    //     solve(root,0);
+    //     return ans;
+    // }
+
+
+
+
+    unordered_map<TreeNode*,int>mpp;
     int maxi=INT_MIN;
-    int solve(TreeNode* root,int d){
+    void solve(TreeNode* root,int d){
         if(!root){
-            maxi=max(maxi,d);
-            return d;
+            return;
         }
-        auto l=solve(root->left,d+1);
-        auto r=solve(root->right,d+1);
-        if(l==maxi&&r==maxi) ans=root;
-        return max(l,r);
+        mpp[root]=d;
+        maxi=max(maxi,d);
+        solve(root->left,d+1);
+        solve(root->right,d+1);
+        
+    }
+    TreeNode* solve1(TreeNode* root){
+        if(!root) return NULL;
+        if(mpp[root]==maxi) return root;
+        TreeNode* l=solve1(root->left);
+        TreeNode* r=solve1(root->right);
+        if(l&&r) return root;
+        return (l?l:r);
     }
     TreeNode* subtreeWithAllDeepest(TreeNode* root) {
         solve(root,0);
-        return ans;
+        return solve1(root);
     }
 };
