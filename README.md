@@ -779,6 +779,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1262-greatest-sum-divisible-by-three](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1263-number-of-dice-rolls-with-target-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1263-number-of-dice-rolls-with-target-sum) |
 | [1290-make-array-strictly-increasing](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1290-make-array-strictly-increasing) |
+| [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1312-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1402-count-square-submatrices-with-all-ones) |
@@ -977,6 +978,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1160-letter-tile-possibilities](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1160-letter-tile-possibilities) |
 | [1250-longest-common-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1250-longest-common-subsequence) |
 | [1268-search-suggestions-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1268-search-suggestions-system) |
+| [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1312-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
