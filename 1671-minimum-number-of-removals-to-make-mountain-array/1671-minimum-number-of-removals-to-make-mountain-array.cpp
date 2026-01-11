@@ -19,6 +19,7 @@ public:
          }
          int maxi=INT_MIN;
          for(int i=0;i<n;i++){
+            if(dp1[i]>=2&&dp2[i]>=2)//[9,8,1,7,6,5,4,3,2,1] important to check arr length should be 3
             maxi=max(maxi,dp1[i]+dp2[i]-1);
          }
          return n-maxi;
