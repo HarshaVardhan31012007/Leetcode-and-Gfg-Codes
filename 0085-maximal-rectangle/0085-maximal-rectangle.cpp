@@ -43,7 +43,6 @@ public:
                 temp[j]=(matrix[i][j]=='0'?0:(1+temp[j]));
             }
             int curr=find(temp);
-            cout<<curr<<endl;
             ans=max(ans,curr);
         }
         return ans;
