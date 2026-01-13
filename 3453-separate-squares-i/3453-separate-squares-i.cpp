@@ -29,11 +29,7 @@ public:
         while(e-s>0.00001){
             double mid=(s+e)/2.0;
             double diff=find(squares,mid);
-            if(diff==0){
-               ans=mid;
-               e=mid;
-            }
-            else if(diff<0){
+            if(diff<=0){
                 e=mid-0.000001;
             }
             else{
