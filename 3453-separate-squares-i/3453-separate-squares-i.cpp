@@ -26,7 +26,7 @@ public:
             e=max(e,(double)(each[1]+each[2]));
         }
         double ans;
-        while(e-s>=0.00001){
+        while(e-s>0.00001){
             double mid=(s+e)/2.0;
             double diff=find(squares,mid);
             if(diff==0){
