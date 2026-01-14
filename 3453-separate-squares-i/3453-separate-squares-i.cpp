@@ -26,16 +26,17 @@ public:
             e=max(e,(double)(each[1]+each[2]));
         }
         double ans;
-        while(e-s>0.00001){
+        while(e-s>0.000001){
             double mid=(s+e)/2.0;
             double diff=find(squares,mid);
             if(diff<=0){
+                ans=mid;
                 e=mid-0.000001;
             }
             else{
                s=mid+0.000001;
             }
         }
-        return (s+e)/2.0;
+        return ans;
     }
 };
