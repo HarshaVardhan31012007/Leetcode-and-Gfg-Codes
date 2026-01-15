@@ -4,7 +4,9 @@ public:
         if(i>=n) return 0;
         if(dp[i][time]!=-1) return dp[i][time];
         int inc=arr[i]*time+solve(arr,i+1,time+1,n,dp);
-        int exc=solve(arr,i+1,time,n,dp);
+        int exc=0;
+        if(arr[i]<0)
+        exc=solve(arr,i+1,time,n,dp);
         return dp[i][time]=max(inc,exc);
     }
     int maxSatisfaction(vector<int>& satisfaction) {
