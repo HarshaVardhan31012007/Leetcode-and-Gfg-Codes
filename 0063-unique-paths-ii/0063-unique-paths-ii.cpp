@@ -11,6 +11,7 @@ public:
     int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
         int m=obstacleGrid.size();int n=obstacleGrid[0].size();
         vector<vector<int>>dp(m+1,vector<int>(n+1,-1));
+        if(obstacleGrid[m-1][n-1]==1) return 0;
         return solve(obstacleGrid,0,0,m,n,dp);
     }
 };
