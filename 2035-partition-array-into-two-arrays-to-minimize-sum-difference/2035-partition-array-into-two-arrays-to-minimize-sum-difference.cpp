@@ -63,63 +63,110 @@ public:
 
 
     int minimumDifference(vector<int>& nums) {
-        int n = nums.size();
-        int half = n / 2;
+        // int n = nums.size();
+        // int half = n / 2;
 
-        vector<int> A(nums.begin(), nums.begin() + half);
-        vector<int> B(nums.begin() + half, nums.end());
+        // vector<int> A(nums.begin(), nums.begin() + half);
+        // vector<int> B(nums.begin() + half, nums.end());
 
-        int sum = accumulate(nums.begin(), nums.end(), 0);
+        // int sum = accumulate(nums.begin(), nums.end(), 0);
 
-        vector<vector<int>> left(half + 1), right(half + 1);
+        // vector<vector<int>> left(half + 1), right(half + 1);
 
-        // Generate subset sums for A
-        for (int mask = 0; mask < (1 << half); mask++) {
-            int cnt = 0, s = 0;
-            for (int i = 0; i < half; i++) {
-                if (mask & (1 << i)) {
-                    cnt++;
-                    s += A[i];
+        // // Generate subset sums for A
+        // for (int mask = 0; mask < (1 << half); mask++) {
+        //     int cnt = 0, s = 0;
+        //     for (int i = 0; i < half; i++) {
+        //         if (mask & (1 << i)) {
+        //             cnt++;
+        //             s += A[i];
+        //         }
+        //     }
+        //     left[cnt].push_back(s);
+        // }
+
+        // // Generate subset sums for B
+        // int n2 = n - half;
+        // for (int mask = 0; mask < (1 << n2); mask++) {
+        //     int cnt = 0, s = 0;
+        //     for (int i = 0; i < n2; i++) {
+        //         if (mask & (1 << i)) {
+        //             cnt++;
+        //             s += B[i];
+        //         }
+        //     }
+        //     right[cnt].push_back(s);
+        // }
+
+        // // Sort right subsets
+        // for (int i = 0; i <= half; i++) {
+        //     sort(right[i].begin(), right[i].end());
+        // }
+
+        // int ans = INT_MAX;
+
+        // // Combine
+        // for (int k = 0; k <= half; k++) {
+        //     for (int s1 : left[k]) {
+        //         int need = half - k;
+        //         auto &vec = right[need];
+        //         int target = sum / 2 - s1;
+
+        //         auto it = lower_bound(vec.begin(), vec.end(), target);
+
+        //         if (it != vec.end()) {
+        //             ans = min(ans, abs(sum - 2 * (s1 + *it)));
+        //         }
+        //         if (it != vec.begin()) {
+        //             --it;
+        //             ans = min(ans, abs(sum - 2 * (s1 + *it)));
+        //         }
+        //     }
+        // }
+        // return ans;
+
+
+        int n=nums.size();
+        int mid=n/2;
+        vector<int>left(nums.begin(),nums.begin()+mid);
+        vector<int>right(nums.begin()+mid,nums.end());
+        int t=accumulate(nums.begin(),nums.end(),0);
+        vector<vector<int>>leftv(mid+1);vector<vector<int>>rightv(mid+1);
+        for(int mask=0;mask<(1<<mid);mask++){
+            int s=0;int c=0;
+            for(int i=0;i<mid;i++){
+                if(mask&(1<<i)){
+                    s+=left[i];
+                    c++;
                 }
             }
-            left[cnt].push_back(s);
+            leftv[c].push_back(s);
         }
-
-        // Generate subset sums for B
-        int n2 = n - half;
-        for (int mask = 0; mask < (1 << n2); mask++) {
-            int cnt = 0, s = 0;
-            for (int i = 0; i < n2; i++) {
-                if (mask & (1 << i)) {
-                    cnt++;
-                    s += B[i];
+        for(int mask=0;mask<(1<<mid);mask++){
+            int s=0;int c=0;
+            for(int i=0;i<mid;i++){
+                if(mask&(1<<i)){
+                    s+=right[i];
+                    c++;
                 }
             }
-            right[cnt].push_back(s);
+            rightv[c].push_back(s);
         }
-
-        // Sort right subsets
-        for (int i = 0; i <= half; i++) {
-            sort(right[i].begin(), right[i].end());
+        for(auto &each:rightv){
+            sort(each.begin(),each.end());
         }
-
-        int ans = INT_MAX;
-
-        // Combine
-        for (int k = 0; k <= half; k++) {
-            for (int s1 : left[k]) {
-                int need = half - k;
-                auto &vec = right[need];
-                int target = sum / 2 - s1;
-
-                auto it = lower_bound(vec.begin(), vec.end(), target);
-
-                if (it != vec.end()) {
-                    ans = min(ans, abs(sum - 2 * (s1 + *it)));
+        int ans=INT_MAX;
+        for(int i=0;i<mid;i++){
+            for(auto &each:leftv[i+1]){
+                int need=mid-i-1;
+                int value=t/2-each;
+                auto it=lower_bound(rightv[need].begin(),rightv[need].end(),value);
+                if(it!=rightv[need].end()){
+                    ans=min(ans,abs(t-2*(each+*it)));
                 }
-                if (it != vec.begin()) {
-                    --it;
-                    ans = min(ans, abs(sum - 2 * (s1 + *it)));
+                else if(it!=rightv[need].begin()){
+                   it--;
+                   ans=min(ans,abs(t-2*(each+*it)));
                 }
             }
         }
