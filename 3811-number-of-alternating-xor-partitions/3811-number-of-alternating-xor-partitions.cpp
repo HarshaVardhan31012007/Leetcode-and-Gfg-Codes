@@ -23,13 +23,13 @@ public:
         vector<int>dp2(nums.size(),0);
         unordered_map<int,int>cnt1,cnt2;
         int xo=0;
-        cnt1[0]=1;
+        cnt2[0]=1;
         for(int i=0;i<nums.size();i++){
             xo=xo^nums[i];
-            dp1[i]=cnt1[xo^target1];
-            dp2[i]=cnt2[xo^target2];
-            cnt1[xo]=(cnt1[xo]+dp2[i])%mod;
-            cnt2[xo]=(cnt2[xo]+dp1[i])%mod;
+            dp1[i]=cnt2[xo^target1];
+            dp2[i]=cnt1[xo^target2];
+            cnt1[xo]=(cnt1[xo]+dp1[i])%mod;
+            cnt2[xo]=(cnt2[xo]+dp2[i])%mod;
         }
         return (dp1[nums.size()-1]+dp2[nums.size()-1])%mod;
     }
