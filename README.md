@@ -339,6 +339,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3206-find-common-elements-between-two-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3206-find-common-elements-between-two-arrays) |
 | [3227-find-missing-and-repeated-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3227-find-missing-and-repeated-values) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3262-find-polygon-with-the-largest-perimeter) |
+| [3314-construct-the-minimum-bitwise-array-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3314-construct-the-minimum-bitwise-array-i) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3383-taking-maximum-energy-from-the-mystic-dungeon](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3383-taking-maximum-energy-from-the-mystic-dungeon) |
 | [3432-count-partitions-with-even-sum-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3432-count-partitions-with-even-sum-difference) |
@@ -402,6 +403,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2035-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [3233-maximize-the-number-of-partitions-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3233-maximize-the-number-of-partitions-after-operations) |
+| [3314-construct-the-minimum-bitwise-array-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3314-construct-the-minimum-bitwise-array-i) |
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 | [3601-find-the-k-th-character-in-string-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3601-find-the-k-th-character-in-string-game-ii) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3676-smallest-number-with-all-set-bits) |
