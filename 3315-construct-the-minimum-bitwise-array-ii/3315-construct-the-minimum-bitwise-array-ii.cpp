@@ -49,6 +49,28 @@ public:
     // }
 
 
+    //  vector<int> minBitwiseArray(vector<int>& nums) {
+    //     int n=nums.size();
+    //     vector<int>ans;
+    //     for(int i=0;i<n;i++){
+    //         int mask=nums[i];
+    //         if(!(mask&1)) {
+    //            ans.push_back(-1);
+    //            continue;
+    //         }
+    //         int mask1=1;
+    //         while(mask&1){
+    //            mask1=mask1<<1;
+    //            mask=mask>>1;
+    //         }
+    //         mask1=mask1>>1;
+    //         int val=(nums[i]&(~(mask1)));
+    //         ans.push_back(val);
+    //     }
+    //     return ans;
+    // }
+
+
      vector<int> minBitwiseArray(vector<int>& nums) {
         int n=nums.size();
         vector<int>ans;
@@ -58,13 +80,12 @@ public:
                ans.push_back(-1);
                continue;
             }
-            int mask1=1;
+            int d=0;
             while(mask&1){
-               mask1=mask1<<1;
+               d++;
                mask=mask>>1;
             }
-            mask1=mask1>>1;
-            int val=(nums[i]&(~(mask1)));
+            int val=nums[i]-(1<<(d-1));
             ans.push_back(val);
         }
         return ans;
