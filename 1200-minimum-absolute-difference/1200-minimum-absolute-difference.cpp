@@ -29,14 +29,34 @@ public:
             int diff=abs(arr[i+1]-arr[i]);
             if(diff<mini){
                 mini=diff;
+                ans.clear();
+                ans.push_back({arr[i],arr[i+1]});
             }
-        }
-        for(int i=0;i<(int)arr.size()-1;i++){
-            int diff=abs(arr[i+1]-arr[i]);
-            if(diff==mini){
+            else if(diff==mini){
                 ans.push_back({arr[i],arr[i+1]});
             }
         }
-        return ans;
+        return  ans;
     }
+
+
+
+    // vector<vector<int>> minimumAbsDifference(vector<int>& arr) {
+    //     int mini=INT_MAX;
+    //     vector<vector<int>>ans;
+    //     sort(arr.begin(),arr.end());
+    //     for(int i=0;i<(int)arr.size()-1;i++){
+    //         int diff=abs(arr[i+1]-arr[i]);
+    //         if(diff<mini){
+    //             mini=diff;
+    //         }
+    //     }
+    //     for(int i=0;i<(int)arr.size()-1;i++){
+    //         int diff=abs(arr[i+1]-arr[i]);
+    //         if(diff==mini){
+    //             ans.push_back({arr[i],arr[i+1]});
+    //         }
+    //     }
+    //     return ans;
+    // }
 };
