@@ -9,12 +9,15 @@ public:
         }
         priority_queue<pair<int,int>,vector<pair<int,int>>,greater<>>pq;
         vector<int>cost(n,INT_MAX);
+        vector<int>visited(n,0);
         cost[0]=0;
         pq.push({0,0});
         while(!pq.empty()){
             auto top=pq.top();
             pq.pop();
             if(top.second==(n-1)) return top.first;
+            if(visited[top.second]) continue;
+            visited[top.second]=1;
             for(auto &each:out[top.second]){
                 if(1LL*cost[top.second]+1LL*each.second<1LL*cost[each.first]){
                     cost[each.first]=cost[top.second]+each.second;
