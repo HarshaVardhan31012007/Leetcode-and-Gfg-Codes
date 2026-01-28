@@ -374,6 +374,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3639-zero-array-transformation-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3639-zero-array-transformation-i) |
 | [3640-maximum-frequency-of-an-element-after-performing-operations-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3640-maximum-frequency-of-an-element-after-performing-operations-ii) |
 | [3643-zero-array-transformation-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3643-zero-array-transformation-ii) |
+| [3651-minimum-cost-path-with-teleportations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3651-minimum-cost-path-with-teleportations) |
 | [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
 | [3772-maximum-subgraph-score-in-a-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3772-maximum-subgraph-score-in-a-tree) |
 | [3779-minimum-number-of-operations-to-have-distinct-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3779-minimum-number-of-operations-to-have-distinct-elements) |
@@ -893,6 +894,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3562-maximum-profit-from-trading-stocks-with-discounts](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3562-maximum-profit-from-trading-stocks-with-discounts) |
 | [3573-best-time-to-buy-and-sell-stock-v](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3573-best-time-to-buy-and-sell-stock-v) |
 | [3578-count-partitions-with-max-min-difference-at-most-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3578-count-partitions-with-max-min-difference-at-most-k) |
+| [3651-minimum-cost-path-with-teleportations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3651-minimum-cost-path-with-teleportations) |
 | [3772-maximum-subgraph-score-in-a-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3772-maximum-subgraph-score-in-a-tree) |
 | [3801-minimum-cost-to-merge-sorted-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3801-minimum-cost-to-merge-sorted-lists) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
@@ -934,6 +936,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 | [2737-row-with-maximum-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2737-row-with-maximum-ones) |
 | [3227-find-missing-and-repeated-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3227-find-missing-and-repeated-values) |
+| [3651-minimum-cost-path-with-teleportations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3651-minimum-cost-path-with-teleportations) |
 ## Sliding Window
 |  |
 | ------- |
