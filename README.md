@@ -208,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0724-find-pivot-index](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0724-find-pivot-index) |
 | [0735-asteroid-collision](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0739-daily-temperatures) |
+| [0744-find-smallest-letter-greater-than-target](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0746-prefix-and-suffix-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0746-prefix-and-suffix-search) |
 | [0747-min-cost-climbing-stairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0747-min-cost-climbing-stairs) |
 | [0753-open-the-lock](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0753-open-the-lock) |
@@ -673,6 +674,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0540-single-element-in-a-sorted-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0540-single-element-in-a-sorted-array) |
 | [0611-valid-triangle-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0611-valid-triangle-number) |
 | [0658-find-k-closest-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0658-find-k-closest-elements) |
+| [0744-find-smallest-letter-greater-than-target](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0792-binary-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0792-binary-search) |
 | [0794-swim-in-rising-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0794-swim-in-rising-water) |
 | [0882-peak-index-in-a-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0882-peak-index-in-a-mountain-array) |
