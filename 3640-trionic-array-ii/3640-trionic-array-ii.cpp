@@ -1,22 +1,53 @@
 class Solution {
 public:
-    long long maxSumTrionic(const vector<int>& nums) {
-        const long long INF = -1e17;
-        long long result = INF, a = INF, b = INF, c = INF;
-        long long prev = nums[0];
-        for (size_t i = 1; i < nums.size(); i++) {
-            long long curr = nums[i];
-            auto na = INF, nb = INF, nc = INF;
-            if (curr > prev) { // increasing, update first and third state
-                na = max(a, prev) + curr;
-                nc = max(b, c) + curr;
-            } else if (curr < prev) { // decreasing, update second state
-                nb = max(a, b) + curr;
+    long long maxSumTrionic(vector<int>& nums) {
+        int n=nums.size();
+        int j=0;long long int ans=LLONG_MIN;
+        long long int temp=0;
+        while(j<n){
+            bool flag1=false,flag2=false,flag3=false;
+            long long int sum=temp;
+            if(temp!=0){
+                flag1=true;
             }
-            a = na, b = nb, c = nc;
-            result = max(result, c);
-            prev = curr;
+            else{
+                sum=nums[j];
+            }
+            if(!flag1){
+                while(j+1<n&&nums[j]<nums[j+1]){
+                    flag1=true;
+                    sum+=nums[j+1];
+                    if(j>0&&nums[j-1]<nums[j]&&nums[j-1]<0){
+                        sum-=nums[j-1];
+                    }
+                    j++;
+                }
+            }
+            while(flag1&&j+1<n&&nums[j]>nums[j+1]){
+                flag2=true;
+                sum+=nums[j+1];
+                j++;
+            }
+            temp=nums[j];
+            while(flag1&&flag2&&j+1<n&&nums[j]<nums[j+1]){
+                flag3=true;
+                sum+=nums[j+1];
+                temp+=nums[j+1];
+                if(j>0&&nums[j-1]<nums[j]&&nums[j-1]<0){
+                    temp-=nums[j-1];
+                }
+                cout<<sum<<endl;
+                ans=max(ans,sum);
+                j++;
+            }
+            if(!flag1){
+               j++;
+            }
+            int cond=flag1&&flag2&&flag3;
+            if(!cond){
+                temp=0;
+            }
         }
-        return result;
+        return ans;
     }
 };
