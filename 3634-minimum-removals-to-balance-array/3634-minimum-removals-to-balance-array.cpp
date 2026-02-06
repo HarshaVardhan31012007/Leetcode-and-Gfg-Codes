@@ -28,16 +28,32 @@ public:
 
 
 
+        // sort(nums.begin(),nums.end());
+        // int n=nums.size();
+        // int ans=n-1;
+        // for(int i=0;i<n;i++){
+        //     auto it=upper_bound(nums.begin()+i+1,nums.end(),1LL*nums[i]*k);
+        //     if(it!=nums.begin()){
+        //         it--;
+        //         int size=(it-(nums.begin()+i))+1;
+        //         ans=min(ans,n-size);
+        //     }
+        // }
+        // return ans;
+
+
+
         sort(nums.begin(),nums.end());
         int n=nums.size();
-        int ans=n-1;
-        for(int i=0;i<n;i++){
-            auto it=upper_bound(nums.begin()+i+1,nums.end(),1LL*nums[i]*k);
-            if(it!=nums.begin()){
-                it--;
-                int size=(it-(nums.begin()+i))+1;
-                ans=min(ans,n-size);
+        int i=0;
+        int j=0;
+        int ans=INT_MAX;
+        while(j<n){
+            while(i<j&&nums[j]>1LL*nums[i]*k){
+                  i++;
             }
+            ans=min(ans,n-(j-i+1));
+            j++;
         }
         return ans;
     }
