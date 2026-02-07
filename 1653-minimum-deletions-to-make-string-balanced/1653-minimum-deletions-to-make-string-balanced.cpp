@@ -19,13 +19,13 @@ public:
         int n=s.length();
         vector<int>a_count(n+1,0);
         for(int i=n-1;i>=0;i--){
-            a_count[i]=a_count[i+1]+(s[i]=='a'?1:0);
+            a_count[i]=a_count[i+1]+(i+1<n?(s[i+1]=='a'?1:0):0);
         }
         int b_count=0;
         int del=INT_MAX;
         for(int i=0;i<n;i++){
+            del=min(del,a_count[i]+b_count);
             b_count+=(s[i]=='b'?1:0);
-            del=min(del,a_count[i]+b_count-1);
         }
         return del;
     }
