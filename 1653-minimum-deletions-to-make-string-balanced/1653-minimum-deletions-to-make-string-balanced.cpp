@@ -30,18 +30,35 @@ public:
         // return del;
 
 
+    //     int n=s.length();
+    //     vector<int>a_count(n+1,0);
+    //     int acount=0;
+    //     for(int i=n-1;i>=0;i--){
+    //         a_count[i]=acount;
+    //         if(s[i]=='a')
+    //         acount++;
+    //     }
+    //     int b_count=0;
+    //     int del=INT_MAX;
+    //     for(int i=0;i<n;i++){
+    //         del=min(del,a_count[i]+b_count);
+    //         b_count+=(s[i]=='b'?1:0);
+    //     }
+    //     return del;
+    // }
+
+
         int n=s.length();
-        vector<int>a_count(n+1,0);
         int acount=0;
-        for(int i=n-1;i>=0;i--){
-            a_count[i]=acount;
+        for(int i=0;i<n;i++){
             if(s[i]=='a')
             acount++;
         }
         int b_count=0;
         int del=INT_MAX;
         for(int i=0;i<n;i++){
-            del=min(del,a_count[i]+b_count);
+            int righta=acount-(i-b_count)-(s[i]=='a'?1:0);
+            del=min(del,righta+b_count);
             b_count+=(s[i]=='b'?1:0);
         }
         return del;
