@@ -61,7 +61,7 @@ public:
         long long int ans=LLONG_MAX;
         set<pair<long long int,int>>st;
         set<pair<long long int,int>>st1;
-        for(int p=i;p<=j&&p<n;p++){
+        for(int p=i;p<=j;p++){
             if(st.size()<k-1){
                 st.insert({nums[p],p});
                 sum+=nums[p];
