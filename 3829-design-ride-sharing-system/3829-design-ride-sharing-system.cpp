@@ -32,7 +32,6 @@ public:
     }
     
     void cancelRider(int riderId) {
-        cout<<mpp[riderId]<<endl;
         if(mpp.count(riderId)){
             rider.erase({mpp[riderId],riderId});
             mpp.erase(riderId);
