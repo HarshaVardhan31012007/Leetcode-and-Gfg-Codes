@@ -11,6 +11,7 @@ public:
         if(dpsp[curr].count(next)) return dpsp[curr][next];
         priority_queue<pair<ll,string>,vector<pair<ll,string>>,greater<>>pq;
         unordered_map<string,ll>dist;
+        dist[curr]=0;
         pq.push({0,curr});
         while(!pq.empty()){
             auto top=pq.top();
