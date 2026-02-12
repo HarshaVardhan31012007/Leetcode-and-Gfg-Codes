@@ -49,7 +49,6 @@ public:
             }
         }
         int ans=0;
-        cout<<maxi<<endl;
         for(int i=0;i<n;i++){
             if(dp[i]==maxi){
                 ans+=cnt[i];
