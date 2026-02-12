@@ -32,7 +32,7 @@ public:
     int findNumberOfLIS(vector<int>& nums) {
         int n=nums.size();
         vector<int>dp(n,1);
-        vector<int>cnt(n,0);
+        vector<int>cnt(n,1);
         int maxi=INT_MIN;
         for(int i=0;i<n;i++){
             for(int j=0;j<i;j++){
@@ -44,7 +44,7 @@ public:
                     cnt[i]+=cnt[j];
                 }
             }
-            if(cnt[i]==0) cnt[i]=1;
+            //if(cnt[i]==0) cnt[i]=1;
             if(maxi<dp[i]){
                 maxi=dp[i];
             }
