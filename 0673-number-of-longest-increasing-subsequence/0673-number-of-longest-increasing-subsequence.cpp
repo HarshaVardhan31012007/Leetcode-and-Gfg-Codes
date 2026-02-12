@@ -44,7 +44,6 @@ public:
                     cnt[i]+=cnt[j];
                 }
             }
-            //if(cnt[i]==0) cnt[i]=1;
             if(maxi<dp[i]){
                 maxi=dp[i];
             }
