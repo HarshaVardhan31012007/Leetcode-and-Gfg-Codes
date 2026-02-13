@@ -1,33 +1,34 @@
 class Solution {
 public:
-    bool isSafe(string &str,int s,int e){
-        if(s>=e) return true;
-        if(str[s]!=str[e]) return false;
-        return isSafe(str,s+1,e-1);
+    bool ispalindrome(string &s){
+        int i=0;int j=s.length()-1;
+        while(i<j){
+            if(s[i]!=s[j]) return false;
+            i++;
+            j--;
+        }
+        return true;
     }
-    void solve(string &str,int s,int e,vector<vector<string>>&ans,vector<string>&temp){
-        if(s>e){
+    void solve(string &s,int i,vector<string>&temp,vector<vector<string>>&ans){
+        if(i>=s.length()){
             ans.push_back(temp);
             return;
         }
-        for(int i=s;i<=e;i++){
-            // if(isSafe(str,s,i)&&isSafe(str,i+1,e)){
-            //      temp.push_back(str.substr(s,i+1));
-            //      temp.push_back(str.substr(i+1,e+1));
-            //      ans.push_back(temp);
-
-            // }
-            if(isSafe(str,s,i)){
-                temp.push_back(str.substr(s,i-s+1));
-                solve(str,i+1,e,ans,temp);
+        string temp1="";
+        for(int k=i;k<s.length();k++){
+            temp1+=s[k];
+            if(ispalindrome(temp1)){
+                temp.push_back(temp1);
+                solve(s,k+1,temp,ans);
                 temp.pop_back();
             }
         }
     }
     vector<vector<string>> partition(string s) {
+        int n=s.length();
         vector<vector<string>>ans;
         vector<string>temp;
-        solve(s,0,s.length()-1,ans,temp);
+        solve(s,0,temp,ans);
         return ans;
     }
 };
