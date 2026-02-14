@@ -307,6 +307,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1753-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-path-with-minimum-effort) |
 | [1758-distribute-repeating-integers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1758-distribute-repeating-integers) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
+| [1824-minimum-sideway-jumps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1824-minimum-sideway-jumps) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1878-check-if-array-is-sorted-and-rotated) |
@@ -926,6 +927,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1691-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1691-maximum-height-by-stacking-cuboids) |
 | [1758-distribute-repeating-integers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1758-distribute-repeating-integers) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
+| [1824-minimum-sideway-jumps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1824-minimum-sideway-jumps) |
 | [1931-painting-a-grid-with-three-different-colors](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1931-painting-a-grid-with-three-different-colors) |
 | [1952-minimum-sideway-jumps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1952-minimum-sideway-jumps) |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2035-partition-array-into-two-arrays-to-minimize-sum-difference) |
@@ -1249,6 +1251,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1671-minimum-number-of-removals-to-make-mountain-array) |
 | [1753-maximum-score-from-removing-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-maximum-score-from-removing-stones) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
+| [1824-minimum-sideway-jumps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1824-minimum-sideway-jumps) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1879-maximum-score-from-removing-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1879-maximum-score-from-removing-stones) |
