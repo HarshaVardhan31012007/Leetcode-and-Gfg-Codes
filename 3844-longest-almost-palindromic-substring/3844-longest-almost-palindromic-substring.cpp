@@ -61,10 +61,10 @@ public:
 
 
 
-
+    
     int almostPalindromic(string s) {
        int n=s.length();
-       int dp[2501][2501][3];
+       static int dp[2501][2501][3];
        for(int i=0;i<=n;i++){
            for(int flag=0;flag<=2;flag++){
                if(flag==0)
