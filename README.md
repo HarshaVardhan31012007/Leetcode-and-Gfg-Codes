@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0050-powx-n) |
 | [0062-unique-paths](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0066-plus-one) |
+| [0067-add-binary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0067-add-binary) |
 | [0069-sqrtx](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0096-unique-binary-search-trees) |
@@ -407,6 +408,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0029-divide-two-integers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0029-divide-two-integers) |
+| [0067-add-binary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0067-add-binary) |
 | [0078-subsets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0090-subsets-ii) |
 | [0136-single-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0136-single-number) |
@@ -1017,6 +1019,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0054-spiral-matrix) |
+| [0067-add-binary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0067-add-binary) |
 | [0068-text-justification](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0068-text-justification) |
 | [0415-add-strings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0415-add-strings) |
 | [0735-asteroid-collision](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0735-asteroid-collision) |
@@ -1061,6 +1064,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0032-longest-valid-parentheses) |
 | [0044-wildcard-matching](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0044-wildcard-matching) |
 | [0049-group-anagrams](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0049-group-anagrams) |
+| [0067-add-binary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0067-add-binary) |
 | [0068-text-justification](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0068-text-justification) |
 | [0071-simplify-path](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0071-simplify-path) |
 | [0072-edit-distance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0072-edit-distance) |
