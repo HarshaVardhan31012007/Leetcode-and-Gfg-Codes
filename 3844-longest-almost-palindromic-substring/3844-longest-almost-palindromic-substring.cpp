@@ -174,7 +174,7 @@ public:
     int almostPalindromic(string str) {
         int n=str.length();
         int ans=2;
-        int dp[n+1][2501];
+        static int dp[2501][2501];
         for(int i=0;i<=n;i++){
             for(int j=0;j<=n;j++){
                 dp[i][j]=-1;
