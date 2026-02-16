@@ -129,34 +129,63 @@ public:
 
 
 
-    void check(string &str,int i,int j,int &ans){
-        while(i>=0&&j<str.length()&&str[i]==str[j]){
-            i--;j++;
-        }
-        ans=max(ans,j-i-1);
+    // void check(string &str,int i,int j,int &ans){
+    //     while(i>=0&&j<str.length()&&str[i]==str[j]){
+    //         i--;j++;
+    //     }
+    //     ans=max(ans,j-i-1);
+    // }
+    // int almostPalindromic(string str) {
+    //     int n=str.length();
+    //     int ans=2;
+    //     for(int i=0;i<n;i++){
+    //         int s=i;int e=i;
+    //         while(s>=0&&e<n&&str[s]==str[e]){
+    //             s--;e++;
+    //         }
+    //         ans=max(ans,e-s-1);
+    //         if(s>=0)
+    //         check(str,s-1,e,ans);
+    //         if(e<n)
+    //         check(str,s,e+1,ans);
+    //         s=i;e=i+1;
+    //         while(s>=0&&e<n&&str[s]==str[e]){
+    //             s--;e++;
+    //         }
+    //         ans=max(ans,e-s-1);
+    //         if(s>=0)
+    //         check(str,s-1,e,ans);
+    //         if(e<n)
+    //         check(str,s,e+1,ans);
+    //     }
+    //     return ans;
+    // }
+
+
+
+
+    int solve(string &s,int i,int j,int dp[][2501]){
+        if(i>=j) return 0;
+        if(dp[i][j]!=-1) return dp[i][j]; 
+        if(s[i]==s[j]) return dp[i][j]=solve(s,i+1,j-1,dp);
+        else
+        return dp[i][j]=1+min(solve(s,i+1,j,dp),solve(s,i,j-1,dp));
     }
     int almostPalindromic(string str) {
         int n=str.length();
         int ans=2;
+        int dp[n+1][2501];
+        for(int i=0;i<=n;i++){
+            for(int j=0;j<=n;j++){
+                dp[i][j]=-1;
+            }
+        }
         for(int i=0;i<n;i++){
-            int s=i;int e=i;
-            while(s>=0&&e<n&&str[s]==str[e]){
-                s--;e++;
-            }
-            ans=max(ans,e-s-1);
-            if(s>=0)
-            check(str,s-1,e,ans);
-            if(e<n)
-            check(str,s,e+1,ans);
-            s=i;e=i+1;
-            while(s>=0&&e<n&&str[s]==str[e]){
-                s--;e++;
-            }
-            ans=max(ans,e-s-1);
-            if(s>=0)
-            check(str,s-1,e,ans);
-            if(e<n)
-            check(str,s,e+1,ans);
+           for(int j=i;j<n;j++){
+              if(solve(str,i,j,dp)<=1){
+                  ans=max(ans,j-i+1);
+              }
+           }
         }
         return ans;
     }
