@@ -414,6 +414,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0136-single-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0137-single-number-ii) |
 | [0187-repeated-dna-sequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0187-repeated-dna-sequences) |
+| [0190-reverse-bits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0191-number-of-1-bits) |
 | [0222-count-complete-tree-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0222-count-complete-tree-nodes) |
 | [0231-power-of-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0231-power-of-two) |
@@ -792,6 +793,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0109-convert-sorted-list-to-binary-search-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0109-convert-sorted-list-to-binary-search-tree) |
 | [0148-sort-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0169-majority-element) |
+| [0190-reverse-bits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0191-number-of-1-bits) |
 | [0215-kth-largest-element-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0215-kth-largest-element-in-an-array) |
 | [0240-search-a-2d-matrix-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0240-search-a-2d-matrix-ii) |
