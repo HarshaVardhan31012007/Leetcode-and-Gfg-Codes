@@ -33,7 +33,11 @@ public:
         vector<string>ans;
         int hour=0;int min=0;
         solve(turnedOn,0,ans,hour,min);
-        sort(ans.begin(),ans.end());
         return ans;
     }
+
+
+
+
+
 };
