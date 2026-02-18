@@ -16,15 +16,29 @@ public:
     // }
 
 
-    bool hasAlternatingBits(int n) {
-        if(n%2==1){
-            double k=log2(n*3LL+1)/2.0;
-            if(k==(int)k) return true;
-        }
-        else{
-           double k=log2((n*3LL+2)/2.0)/2.0;
-           if(k==(int)k) return true;
-        }
-        return false;
+    // bool hasAlternatingBits(int n) {
+    //     if(n%2==1){
+    //         double k=log2(n*3LL+1)/2.0;
+    //         if(k==(int)k) return true;
+    //     }
+    //     else{
+    //        double k=log2((n*3LL+2)/2.0)/2.0;
+    //        if(k==(int)k) return true;
+    //     }
+    //     return false;
+    // }
+
+
+
+     bool hasAlternatingBits(int n) {
+       bitset<32>x(n);
+       int len=log2(n);
+       int prev=-1;
+       for(int i=0;i<=len;i++){
+        cout<<x[i]<<" "<<prev<<" "<<1-prev<<endl;
+         if(prev!=-1&&x[i]!=(1-prev)) return false;
+         prev=x[i];
+       }
+       return true;
     }
 };
