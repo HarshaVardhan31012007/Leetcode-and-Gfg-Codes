@@ -31,14 +31,15 @@ public:
 
 
      bool hasAlternatingBits(int n) {
-       bitset<32>x(n);
-       int len=log2(n);
-       int prev=-1;
-       for(int i=0;i<=len;i++){
-        cout<<x[i]<<" "<<prev<<" "<<1-prev<<endl;
-         if(prev!=-1&&x[i]!=(1-prev)) return false;
-         prev=x[i];
-       }
-       return true;
+    //    bitset<32>x(n);
+    //    int len=log2(n);
+    //    int prev=-1;
+    //    for(int i=0;i<=len;i++){
+    //      if(prev!=-1&&x[i]!=(1-prev)) return false;
+    //      prev=x[i];
+    //    }
+    //    return true;
+        long long res=(n^(n>>1));
+        return (res&(res+1))==0;
     }
 };
