@@ -13,7 +13,7 @@ public:
                q.push({i,j});  
             }
         }
-        if(freshc==0) return 0;
+        if(freshc==0) return 0;//here see it is important because rotten oranges may not be there right and fresh oranges also not there then it is zero time
         int nlevels=0;
         while(!q.empty()){
             int size=q.size();
