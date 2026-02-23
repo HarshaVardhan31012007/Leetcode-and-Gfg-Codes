@@ -11,12 +11,24 @@ public:
     // }
 
 
-     bool hasAllCodes(string s, int k) {
+bool hasAllCodes(string s, int k) {
         unordered_set<string>st;
         int n=s.length();
         for(int i=0;i<=n-k;i++){
-            st.insert(s.substr(i,k));
+            string temp=s.substr(i,k);
+            if(!st.count(temp))
+            st.insert(temp);
         }
         return ((int)st.size())==(1<<k);
     }
+
+
+    //  bool hasAllCodes(string s, int k) {
+    //     unordered_set<string>st;
+    //     int n=s.length();
+    //     for(int i=0;i<=n-k;i++){
+    //         st.insert(s.substr(i,k));
+    //     }
+    //     return ((int)st.size())==(1<<k);
+    // }
 };
