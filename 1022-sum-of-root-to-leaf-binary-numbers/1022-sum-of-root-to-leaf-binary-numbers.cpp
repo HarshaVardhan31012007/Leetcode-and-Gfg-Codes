@@ -15,9 +15,9 @@ public:
         if(!root->left&&!root->right) return sum;
         int ans=0;
         if(root->left)
-        ans+=findSum(root->left,sum*2+root->left->val);
+        ans+=findSum(root->left,(sum<<1)+root->left->val);
         if(root->right)
-        ans+=findSum(root->right,sum*2+root->right->val);
+        ans+=findSum(root->right,(sum<<1)+root->right->val);
         return ans;
     }
     int sumRootToLeaf(TreeNode* root) {
