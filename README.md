@@ -199,6 +199,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0532-k-diff-pairs-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
 | [0540-single-element-in-a-sorted-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0540-single-element-in-a-sorted-array) |
+| [0542-01-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0560-subarray-sum-equals-k) |
 | [0594-longest-harmonious-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0594-longest-harmonious-subsequence) |
 | [0611-valid-triangle-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0611-valid-triangle-number) |
@@ -879,6 +880,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0516-longest-palindromic-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0516-longest-palindromic-subsequence) |
 | [0518-coin-change-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0518-coin-change-ii) |
 | [0526-beautiful-arrangement](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0526-beautiful-arrangement) |
+| [0542-01-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0542-01-matrix) |
 | [0583-delete-operation-for-two-strings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0583-delete-operation-for-two-strings) |
 | [0647-palindromic-substrings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0647-palindromic-substrings) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0673-number-of-longest-increasing-subsequence) |
@@ -985,6 +987,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0240-search-a-2d-matrix-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0240-search-a-2d-matrix-ii) |
 | [0407-trapping-rain-water-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0417-pacific-atlantic-water-flow) |
+| [0542-01-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0733-flood-fill) |
 | [0794-swim-in-rising-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0794-swim-in-rising-water) |
 | [0840-magic-squares-in-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0840-magic-squares-in-grid) |
@@ -1597,6 +1600,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0322-coin-change) |
 | [0407-trapping-rain-water-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0417-pacific-atlantic-water-flow) |
+| [0542-01-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0542-01-matrix) |
 | [0547-number-of-provinces](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0547-number-of-provinces) |
 | [0617-merge-two-binary-trees](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0617-merge-two-binary-trees) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0653-two-sum-iv-input-is-a-bst) |
