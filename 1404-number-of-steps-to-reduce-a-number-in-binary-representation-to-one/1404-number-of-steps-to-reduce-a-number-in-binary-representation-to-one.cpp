@@ -1,0 +1,59 @@
+class Solution {
+public:
+    int numSteps(string s) {
+        //very big binary may 500 len 2 power 500 also possible cant repreasent in int,longlong int etc.,
+        
+        // long long int num=0;
+        // int n=s.length();
+        // for(int i=0;i<n;i++){
+        //     num=(num<<1LL);
+        //     if(s[i]=='1')
+        //     num++;
+        // }
+        // int ans=0;
+        // while(num>1){
+        //     if(num&1){
+        //        num++;
+        //     }
+        //     else{
+        //         num=num/2;
+        //     }
+        //     ans++;
+        // }
+        // return ans;
+
+
+
+
+        
+        
+        int ans=0;
+        string temp=s;
+        while(temp!="1"){
+            cout<<temp<<endl;
+            int size=temp.size();
+            bool iseven=(temp[size-1]=='0');
+            if(iseven){
+               temp.pop_back();
+            }
+            else{
+                bool entered=false;
+                for(int i=size-1;i>=0;i--){
+                    if(temp[i]=='0'){
+                        temp[i]='1';
+                        entered=true;
+                        break;
+                    }
+                    else{
+                        temp[i]='0';
+                    }
+                }
+                if(!entered){
+                    temp="1"+temp;
+                }
+            }
+            ans++;
+        }
+        return ans;
+    }
+};
