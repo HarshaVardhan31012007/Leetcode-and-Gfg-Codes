@@ -30,7 +30,6 @@ public:
         int ans=0;
         string temp=s;
         while(temp!="1"){
-            cout<<temp<<endl;
             int size=temp.size();
             bool iseven=(temp[size-1]=='0');
             if(iseven){
