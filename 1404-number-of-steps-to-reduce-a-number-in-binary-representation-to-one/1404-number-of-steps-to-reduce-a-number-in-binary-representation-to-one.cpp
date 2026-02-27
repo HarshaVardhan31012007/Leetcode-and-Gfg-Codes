@@ -27,31 +27,52 @@ public:
 
         
         
+        // int ans=0;
+        // string temp=s;
+        // while(temp!="1"){
+        //     int size=temp.size();
+        //     bool iseven=(temp[size-1]=='0');
+        //     if(iseven){
+        //        temp.pop_back();
+        //     }
+        //     else{
+        //         bool entered=false;
+        //         for(int i=size-1;i>=0;i--){
+        //             if(temp[i]=='0'){
+        //                 temp[i]='1';
+        //                 entered=true;
+        //                 break;
+        //             }
+        //             else{
+        //                 temp[i]='0';
+        //             }
+        //         }
+        //         if(!entered){
+        //             temp="1"+temp;
+        //         }
+        //     }
+        //     ans++;
+        // }
+        // return ans;
+
+
+       
         int ans=0;
-        string temp=s;
-        while(temp!="1"){
-            int size=temp.size();
-            bool iseven=(temp[size-1]=='0');
-            if(iseven){
-               temp.pop_back();
+        int n=s.length();
+        int carry=0;
+        for(int i=n-1;i>=1;i--){
+            int curr=((s[i]-'0')+carry)%2;
+            carry=((s[i]-'0')+carry)/2;
+            if(curr==0){
+                ans++;
             }
             else{
-                bool entered=false;
-                for(int i=size-1;i>=0;i--){
-                    if(temp[i]=='0'){
-                        temp[i]='1';
-                        entered=true;
-                        break;
-                    }
-                    else{
-                        temp[i]='0';
-                    }
-                }
-                if(!entered){
-                    temp="1"+temp;
-                }
+                carry=1;
+                ans+=2;
             }
-            ans++;
+        }
+        if(carry){
+            ans+=1;
         }
         return ans;
     }
