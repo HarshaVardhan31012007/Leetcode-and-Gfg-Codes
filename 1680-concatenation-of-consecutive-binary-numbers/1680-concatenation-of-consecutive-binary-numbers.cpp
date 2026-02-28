@@ -2,25 +2,20 @@ class Solution {
 public:
     const int mod=1e9+7;
     int concatenatedBinary(int n) {
-        int ans=0;
-        for(int num=1;num<=n;num++){
+        long long int ans=0;
+        int c=1;
+        for(int num=n;num>=1;num--){
             int x=num;
-            string s="";
             while(x){
                 int digit=(x&1);
                 if(digit){
-                    s+="1";
+                    ans=(ans+(1LL*c*digit)%mod)%mod;
                 }
                 else{
-                    s+="0";
+                   ans=(ans+(1LL*c*digit)%mod)%mod;
                 }
                 x=x>>1;
-            }
-            reverse(s.begin(),s.end());
-            for(auto &each:s){
-                ans=(ans<<1)%mod;
-                if(each=='1')
-                ans++;
+                c=(2LL*c)%mod;
             }
         }
         return ans;
