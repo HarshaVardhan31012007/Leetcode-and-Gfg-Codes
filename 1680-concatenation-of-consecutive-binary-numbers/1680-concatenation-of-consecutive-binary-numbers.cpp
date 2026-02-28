@@ -24,7 +24,7 @@ public:
 
     const int mod=1e9+7;
     int concatenatedBinary(int n) {
-        long long int ans=0;
+        long long int ans=0;//overflow in leftshift due tot his use long
         for(int num=1;num<=n;num++){
             int digits=(log2(num)+1);
             ans=((ans<<digits)%mod+num%mod)%mod;
