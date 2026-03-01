@@ -9,12 +9,12 @@ public:
             }
             return 0;
         }
-        if(mpp.count({i,{val,val1}})) return mpp[{i,{val,val1}}];
+        if(mpp.count({i,{val/__gcd(val,val1),val1/__gcd(val,val1)}})) return mpp[{i,{val/__gcd(val,val1),val1/__gcd(val,val1)}}];
         int ans=0;
         ans+=countWays(nums,i+1,val*nums[i],val1,k);
         ans+=countWays(nums,i+1,val,val1*nums[i],k);
         ans+=countWays(nums,i+1,val,val1,k);
-        return mpp[{i,{val,val1}}]=ans;
+        return mpp[{i,{val/__gcd(val,val1),val1/__gcd(val,val1)}}]=ans;
     }
     int countSequences(vector<int>& nums, long long k) {
         return countWays(nums,0,1,1,k);
