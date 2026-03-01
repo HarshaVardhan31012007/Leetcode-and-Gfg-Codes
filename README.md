@@ -91,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
 | [3782-last-remaining-integer-after-alternating-deletion-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3782-last-remaining-integer-after-alternating-deletion-operations) |
 | [3828-final-element-after-subarray-deletions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3828-final-element-after-subarray-deletions) |
+| [3850-count-sequences-to-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3850-count-sequences-to-k) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
 ## Array
 |  |
@@ -412,6 +413,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3794-find-the-minimum-amount-of-time-to-brew-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3794-find-the-minimum-amount-of-time-to-brew-potions) |
 | [3801-minimum-cost-to-merge-sorted-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3801-minimum-cost-to-merge-sorted-lists) |
 | [3828-final-element-after-subarray-deletions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3828-final-element-after-subarray-deletions) |
+| [3850-count-sequences-to-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3850-count-sequences-to-k) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
 ## Bit Manipulation
 |  |
@@ -975,6 +977,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3651-minimum-cost-path-with-teleportations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3651-minimum-cost-path-with-teleportations) |
 | [3772-maximum-subgraph-score-in-a-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3772-maximum-subgraph-score-in-a-tree) |
 | [3801-minimum-cost-to-merge-sorted-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3801-minimum-cost-to-merge-sorted-lists) |
+| [3850-count-sequences-to-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3850-count-sequences-to-k) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
 ## Matrix
 |  |
@@ -1326,6 +1329,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2507-number-of-common-factors](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2507-number-of-common-factors) |
 | [2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
 | [3768-check-if-digits-are-equal-in-string-after-operations-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3768-check-if-digits-are-equal-in-string-after-operations-i) |
+| [3850-count-sequences-to-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3850-count-sequences-to-k) |
 ## Counting
 |  |
 | ------- |
@@ -1415,6 +1419,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0139-word-break](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0139-word-break) |
 | [0140-word-break-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0140-word-break-ii) |
 | [1013-fibonacci-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1013-fibonacci-number) |
+| [3850-count-sequences-to-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3850-count-sequences-to-k) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
