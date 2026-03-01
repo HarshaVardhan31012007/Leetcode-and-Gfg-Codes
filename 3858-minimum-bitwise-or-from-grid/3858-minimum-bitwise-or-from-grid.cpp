@@ -1,6 +1,6 @@
 class Solution {
 public:
-    unordered_map<int,set<int>>dp;
+    unordered_map<int,unordered_set<int>>dp;
     void solve(int i,vector<vector<int>>& grid,int m,int n,int val,int &mini){
         if(val>=mini) return;
         if(i>=m){
