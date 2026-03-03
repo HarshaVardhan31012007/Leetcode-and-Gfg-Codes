@@ -25,20 +25,20 @@ public:
     // }
 
 
-    bool bfs(int src,vector<vector<int>>& graph,vector<int>&visited,int mark){
+    bool bfs(int src,vector<vector<int>>& graph,vector<int>&visited,int color){
         queue<int>q;
         q.push(src);
-        visited[src]=mark;
+        visited[src]=color;
         while(!q.empty()){
             auto front=q.front();
             q.pop();
             for(auto &each:graph[front]){
                 if(visited[each]==-1){
-                    visited[each]=1-visited[front];
+                    visited[each]=!visited[front];
                     q.push(each);
                 }
                 else{
-                    if(visited[each]!=1-visited[front]) return false;
+                    if(visited[each]==visited[front]) return false;
                 }
             }
         }
