@@ -1577,6 +1577,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0733-flood-fill) |
 | [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
+| [0785-is-graph-bipartite](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0785-is-graph-bipartite) |
 | [0794-swim-in-rising-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0794-swim-in-rising-water) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0803-cheapest-flights-within-k-stops) |
@@ -1640,6 +1641,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0733-flood-fill) |
 | [0753-open-the-lock](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0753-open-the-lock) |
+| [0785-is-graph-bipartite](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0785-is-graph-bipartite) |
 | [0794-swim-in-rising-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0794-swim-in-rising-water) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0803-cheapest-flights-within-k-stops) |
@@ -2065,6 +2067,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0547-number-of-provinces](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0547-number-of-provinces) |
+| [0785-is-graph-bipartite](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0785-is-graph-bipartite) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2976-minimum-cost-to-convert-string-i) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2977-minimum-cost-to-convert-string-ii) |
 | [3650-minimum-cost-path-with-edge-reversals](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3650-minimum-cost-path-with-edge-reversals) |
@@ -2078,6 +2081,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0547-number-of-provinces) |
+| [0785-is-graph-bipartite](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0785-is-graph-bipartite) |
 | [1020-number-of-enclaves](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1020-number-of-enclaves) |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3666-minimum-operations-to-equalize-binary-string) |
 <!---LeetCode Topics End-->
