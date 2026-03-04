@@ -1,33 +1,30 @@
 class Solution {
 public:
-    void topoSort(unordered_map<int,list<int>>&adjList,vector<int>&ans,vector<int>&indegree){
-        queue<int>q;
-        for(int j=0;j<indegree.size();j++){
-            if(indegree[j]==0)
-            q.push(j);
-        }
-        while(!q.empty()){
-            auto front=q.front();
-            q.pop();
-            ans.push_back(front);
-            for(auto &nbr:adjList[front]){
-                indegree[nbr]--;
-                if(indegree[nbr]==0)
-                q.push(nbr);
-            }
-        }
-    }
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        int n=numCourses;
-        unordered_map<int,list<int>>adjList;
-        vector<int>indegree(n,0);
-        for(int i=0;i<prerequisites.size();i++){
-            adjList[prerequisites[i][1]].push_back(prerequisites[i][0]);
-            indegree[prerequisites[i][0]]++;
+         vector<int>dependents(numCourses,0);
+        vector<vector<int>>adjCourses(numCourses);
+        for(auto &each:prerequisites){
+            int u=each[0];int v=each[1];
+            adjCourses[v].push_back(u);
+            dependents[u]++;
+        }
+        queue<int>q;
+        for(int course=0;course<numCourses;course++){
+            if(dependents[course]==0)
+            q.push(course);
         }
         vector<int>ans;
-        topoSort(adjList,ans,indegree);
-        vector<int>temp;
-        return (ans.size()==n)?ans:temp;
+        while(!q.empty()){
+            auto current=q.front();
+            q.pop();
+            ans.push_back(current);
+            for(auto &adj:adjCourses[current]){
+                 dependents[adj]--;
+                 if(dependents[adj]==0)
+                 q.push(adj);
+            }
+        }
+        if(ans.size()!=numCourses) return {};
+        return ans;
     }
 };
