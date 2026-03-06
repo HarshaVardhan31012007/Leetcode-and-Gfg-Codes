@@ -6,6 +6,8 @@ public:
         vector<vector<int>>effort(m,vector<int>(n,INT_MAX));
         effort[0][0]=0;
         q.push({0,{0,0}});
+        int dx[]={-1,1,0,0};
+        int dy[]={0,0,-1,1};
         while(!q.empty()){
            auto top=q.top();
            int e=q.top().first;
@@ -14,8 +16,6 @@ public:
            q.pop();
            if(r==m-1&&c==n-1) return e;
            if(e>effort[r][c]) continue;
-           int dx[]={-1,1,0,0};
-           int dy[]={0,0,-1,1};
            for(int i=0;i<4;i++){
               int x=r+dx[i];
               int y=c+dy[i];
