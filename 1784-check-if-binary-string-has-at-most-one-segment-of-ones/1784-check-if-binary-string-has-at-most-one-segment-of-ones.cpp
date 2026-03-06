@@ -8,7 +8,23 @@ public:
     //     return i==n;
     // }
 
+    // bool checkOnesSegment(string s) {
+    //     return s.find("01")==string::npos;
+    // }
+
+
+
     bool checkOnesSegment(string s) {
-        return s.find("01")==string::npos;
+        int count=0;
+        int n=s.length();
+        for(int i=0;i<n;){
+           if(s[i]=='1'){
+            count++;
+            while(i<n&&s[i]=='1') i++;
+           }
+           else
+           i++;
+        }
+        return count<=1;
     }
 };
