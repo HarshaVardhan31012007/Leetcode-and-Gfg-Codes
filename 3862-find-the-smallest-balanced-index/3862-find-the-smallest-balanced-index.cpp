@@ -59,8 +59,6 @@ public:
             if(p==sum[i]){
                 ans=i;
             }
-            int digits1=find(p);
-            int digits2=find(nums[i]);
             if(p>maxi/nums[i]) break;
             p=p*(long long)nums[i];
         }
