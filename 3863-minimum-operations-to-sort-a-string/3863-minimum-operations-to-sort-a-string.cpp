@@ -33,16 +33,18 @@ public:
         // return 3;
 
         int n=s.length();
-        bool issorted=true;
-        char maxi='a';char mini='z';
-        for(int i=0;i<n;i++){
-           if(i+1<n&&s[i]>s[i+1]){
-             issorted=false;
-           }
-           if(s[i]>maxi) maxi=s[i];
-           if(s[i]<mini) mini=s[i];
-        }
-        if(issorted) return 0;
+        // bool issorted=true;
+        // char maxi='a';char mini='z';
+        // for(int i=0;i<n;i++){
+        //    if(i+1<n&&s[i]>s[i+1]){
+        //      issorted=false;
+        //    }
+        //    if(s[i]>maxi) maxi=s[i];
+        //    if(s[i]<mini) mini=s[i];
+        // }
+        char maxi=*max_element(s.begin(),s.end());
+        char mini=*min_element(s.begin(),s.end());
+        if(is_sorted(s.begin(),s.end())) return 0;
         else if(n==2) return -1;
         else if(s[0]==mini||s[n-1]==maxi) return 1; 
         bool miniOnlyAtEnd=true;
