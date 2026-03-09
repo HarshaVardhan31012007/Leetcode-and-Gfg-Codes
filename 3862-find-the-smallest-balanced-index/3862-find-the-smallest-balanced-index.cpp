@@ -36,14 +36,6 @@ public:
 
 
     typedef long long ll;
-    int find(int n){
-        int c=0;
-        while(n){
-            c++;
-            n=n/10;
-        }
-        return c;
-    }
     int smallestBalancedIndex(vector<int>& nums) {
         int n=nums.size();
         vector<ll>sum(n,0);
