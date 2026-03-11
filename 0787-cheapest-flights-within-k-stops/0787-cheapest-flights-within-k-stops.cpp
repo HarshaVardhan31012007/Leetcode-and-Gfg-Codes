@@ -44,7 +44,8 @@ public:
         }
         vector<int>price(n,INT_MAX);
         price[src]=0;
-        priority_queue<pair<int,pair<int,int>>,vector<pair<int,pair<int,int>>>,greater<>>pq;
+        priority_queue<pair\
+        <int,pair<int,int>>,vector<pair<int,pair<int,int>>>,greater<>>pq;
         pq.push({0,{src,0}});
         while(!pq.empty()){
             auto top=pq.top();
