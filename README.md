@@ -1472,6 +1472,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0658-find-k-closest-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0692-top-k-frequent-words) |
+| [0743-network-delay-time](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0743-network-delay-time) |
 | [0778-reorganize-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0778-reorganize-string) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0794-swim-in-rising-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0794-swim-in-rising-water) |
@@ -1606,6 +1607,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0676-implement-magic-dictionary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0676-implement-magic-dictionary) |
 | [0721-accounts-merge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0733-flood-fill) |
+| [0743-network-delay-time](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0743-network-delay-time) |
 | [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
 | [0785-is-graph-bipartite](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0785-is-graph-bipartite) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0787-cheapest-flights-within-k-stops) |
@@ -1673,6 +1675,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0662-maximum-width-of-binary-tree) |
 | [0721-accounts-merge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0733-flood-fill) |
+| [0743-network-delay-time](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0743-network-delay-time) |
 | [0753-open-the-lock](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0753-open-the-lock) |
 | [0785-is-graph-bipartite](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0785-is-graph-bipartite) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0787-cheapest-flights-within-k-stops) |
@@ -2031,6 +2034,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Shortest Path
 |  |
 | ------- |
+| [0743-network-delay-time](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0743-network-delay-time) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0803-cheapest-flights-within-k-stops) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
@@ -2110,6 +2114,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0210-course-schedule-ii) |
 | [0547-number-of-provinces](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0547-number-of-provinces) |
+| [0743-network-delay-time](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0743-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0785-is-graph-bipartite) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0802-find-eventual-safe-states](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0802-find-eventual-safe-states) |
