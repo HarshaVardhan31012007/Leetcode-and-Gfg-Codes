@@ -97,7 +97,7 @@ public:
             int must=edge[3];
             if(must){
                int node1=findParent(u,parent);int node2=findParent(v,parent);
-               if(node1==node2) return -1;
+               if(node1==node2) return -1;//cycle
                else unionHelp(node1,node2,parent,rank);
                if(s<mini){
                     mini=s;
