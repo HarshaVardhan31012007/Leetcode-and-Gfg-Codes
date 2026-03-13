@@ -81,7 +81,7 @@ public:
         for(int i=0;i<noOfWorkers;i++){
             int currWorkerTime=workerTimes[i];
             long long ans=(-0.5+sqrt(0.25+(2.0*mid)/currWorkerTime));
-           // if(ans<0) ans=0;
+            if(ans<0) ans=0;
             contributedHeight+=ans;
         }
         return contributedHeight>=mountainHeight;
