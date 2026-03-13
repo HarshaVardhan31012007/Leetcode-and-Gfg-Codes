@@ -5,7 +5,7 @@ public:
         long long contributedHeight=0;
         for(int i=0;i<noOfWorkers;i++){
             int currWorkerTime=workerTimes[i];
-            long long low=0;
+            long long low=1;
             long long high=mountainHeight;
             long long c=0;
             while(low<=high){
