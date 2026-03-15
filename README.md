@@ -54,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [1522-stone-game-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1522-stone-game-iii) |
 | [1523-count-odd-numbers-in-an-interval-range](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1523-count-odd-numbers-in-an-interval-range) |
+| [1622-fancy-sequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1622-fancy-sequence) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1642-water-bottles](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1642-water-bottles) |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1680-concatenation-of-consecutive-binary-numbers) |
@@ -1777,6 +1778,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0937-online-stock-span](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0937-online-stock-span) |
 | [0969-number-of-recent-calls](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0969-number-of-recent-calls) |
 | [1582-design-browser-history](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1582-design-browser-history) |
+| [1622-fancy-sequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1622-fancy-sequence) |
 | [2169-simple-bank-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2169-simple-bank-system) |
 | [3829-design-ride-sharing-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3829-design-ride-sharing-system) |
 ## Queue
@@ -2110,6 +2112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0673-number-of-longest-increasing-subsequence) |
+| [1622-fancy-sequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1622-fancy-sequence) |
 | [3454-separate-squares-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3454-separate-squares-ii) |
 | [3719-longest-balanced-subarray-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3719-longest-balanced-subarray-i) |
 | [3721-longest-balanced-subarray-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3721-longest-balanced-subarray-ii) |
