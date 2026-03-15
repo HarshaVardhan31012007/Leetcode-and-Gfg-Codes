@@ -12,7 +12,7 @@ public:
         int sum=0;
         for(int i=1000;i<=n;i++){
             int digits=find(i);
-            sum+=digits/4;
+            sum+=(digits-1)/3;
         }
         return sum;
     }
