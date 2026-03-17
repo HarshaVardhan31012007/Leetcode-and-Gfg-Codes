@@ -2152,6 +2152,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0547-number-of-provinces) |
+| [0721-accounts-merge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0721-accounts-merge) |
 | [0785-is-graph-bipartite](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0785-is-graph-bipartite) |
 | [1020-number-of-enclaves](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1020-number-of-enclaves) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1319-number-of-operations-to-make-network-connected) |
