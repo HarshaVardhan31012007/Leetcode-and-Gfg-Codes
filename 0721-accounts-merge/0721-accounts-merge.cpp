@@ -1,68 +1,77 @@
 class Solution {
 public:
-    int findParent(int u,vector<int>&parent){
-       if(u==parent[u]) return u;
-       return parent[u]=findParent(parent[u],parent);
-    }
-    void unionSet(int u,int v,vector<int>&parent,vector<int>&rank){
-        u=findParent(u,parent);
-        v=findParent(v,parent);
-        if(rank[u]<rank[v]){
-            parent[u]=v;
-            rank[v]++;
+    class DSU{
+        public:
+        vector<int>parent,rank;
+        
+        DSU(int n){
+            parent.resize(n);
+            rank.resize(n,0);
+            for(int i=0;i<n;i++)
+            parent[i]=i;
         }
-        else{
-            parent[v]=u;
-            rank[u]++;
+        
+        int find(int node){
+            if(parent[node]==node) return node;
+            return parent[node]=find(parent[node]);
         }
-    }
-    vector<vector<string>> accountsMerge(vector<vector<string>>& accounts) {
-        int n=accounts.size();
-        vector<int>parent(n);
-        vector<int>rank(n,0);
-        for(int i=0;i<n;i++)
-        parent[i]=i;
-        unordered_map<string,int>mpp;
-        for(int i=0;i<accounts.size();i++){
-            for(int j=1;j<accounts[i].size();j++){
-                string mail=accounts[i][j];
-                auto it=mpp.find(mail);
-                if(it==mpp.end()) mpp[mail]=i;
-                else unionSet(i,it->second,parent,rank);
+        
+        void Union(int node1,int node2){
+            int u=find(node1);
+            int v=find(node2);
+            if(u==v) return;
+            if(rank[u]<rank[v]){
+                parent[u]=v;
+            }
+            else if(rank[u]>rank[v]){
+                parent[v]=u;
+            }
+            else{
+                parent[v]=u;
+                rank[u]++;
             }
         }
-            // unordered_map<int,set<string>>preAns;
-            // for(auto it:mpp){
-            //     int accountNo=it.second;
-            //     string mail=it.first;
-            //     accountNo=findParent(accountNo,parent);
-            //     preAns[accountNo].insert(mail);
-            // }
-            // vector<vector<string>>ans;
-            // for(auto it:preAns){
-            //    vector<string>v;
-            //    v.push_back(accounts[it.first][0]);
-            //    for(auto each:it.second) v.push_back(each);
-            //    ans.push_back(v);
-            // }
-            //  return ans;
-
-
-            unordered_map<int,vector<string>>preAns;
-            for(auto it:mpp){
-                int accountNo=it.second;
-                string mail=it.first;
-                accountNo=findParent(accountNo,parent);
-                preAns[accountNo].push_back(mail);
+    };
+    vector<vector<string>> accountsMerge(vector<vector<string>>& accounts) {
+        int numberOfAccounts=accounts.size();
+        DSU dsu(numberOfAccounts);
+        for(int i=0;i<numberOfAccounts;i++){
+            for(int j=i+1;j<numberOfAccounts;j++){
+                if(dsu.find(i)==dsu.find(j)) continue;
+                vector<string>a=accounts[i];
+                vector<string>b=accounts[j];
+                if(a[0]==b[0]){
+                    bool issame=false;
+                    for(int p=1;p<a.size();p++){
+                        for(int q=1;q<b.size();q++){
+                            if(a[p]==b[q]){
+                                issame=true;
+                                break;
+                            }
+                        }
+                    }
+                    if(issame){
+                        dsu.Union(i,j);
+                    }
+                }
+            }
+        }
+            unordered_map<int,set<string>>mpp;
+            for(int i=0;i<numberOfAccounts;i++){
+                int par=dsu.find(i);
+                vector<string>a=accounts[i];
+                for(int j=1;j<a.size();j++){
+                    mpp[par].insert(accounts[i][j]);
+                }
             }
             vector<vector<string>>ans;
-            for(auto it:preAns){
-               vector<string>v;
-               v.push_back(accounts[it.first][0]);
-               for(auto each:it.second) v.push_back(each);
-               sort(v.begin()+1,v.end());
-               ans.push_back(v);
+            for(auto &each:mpp){
+                vector<string>temp;
+                temp.push_back(accounts[each.first][0]);
+                for(auto &each1:each.second)
+                temp.push_back(each1);
+                ans.push_back(temp);
             }
-             return ans;
+        return ans;
     }
 };
