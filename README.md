@@ -426,6 +426,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3828-final-element-after-subarray-deletions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3828-final-element-after-subarray-deletions) |
 | [3850-count-sequences-to-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3850-count-sequences-to-k) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
+| [3873-maximum-points-activated-with-one-addition](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3873-maximum-points-activated-with-one-addition) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -723,6 +724,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3721-longest-balanced-subarray-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3721-longest-balanced-subarray-ii) |
 | [3779-minimum-number-of-operations-to-have-distinct-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3779-minimum-number-of-operations-to-have-distinct-elements) |
 | [3829-design-ride-sharing-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3829-design-ride-sharing-system) |
+| [3873-maximum-points-activated-with-one-addition](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3873-maximum-points-activated-with-one-addition) |
 ## Binary Search
 |  |
 | ------- |
@@ -2159,4 +2161,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1631-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1631-path-with-minimum-effort) |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3600-maximize-spanning-tree-stability-with-upgrades) |
 | [3666-minimum-operations-to-equalize-binary-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3666-minimum-operations-to-equalize-binary-string) |
+| [3873-maximum-points-activated-with-one-addition](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3873-maximum-points-activated-with-one-addition) |
 <!---LeetCode Topics End-->
