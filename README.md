@@ -374,6 +374,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
 | [3013-divide-an-array-into-subarrays-with-minimum-cost-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3013-divide-an-array-into-subarrays-with-minimum-cost-ii) |
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
+| [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3070-count-submatrices-with-top-left-element-and-sum-less-than-k) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3075-maximize-happiness-of-selected-children) |
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3206-find-common-elements-between-two-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3206-find-common-elements-between-two-arrays) |
@@ -812,6 +813,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2483-minimum-penalty-for-a-shop](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2483-minimum-penalty-for-a-shop) |
 | [2625-increment-submatrices-by-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2625-increment-submatrices-by-one) |
+| [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3070-count-submatrices-with-top-left-element-and-sum-less-than-k) |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3129-find-all-possible-stable-binary-arrays-i) |
 | [3130-find-all-possible-stable-binary-arrays-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3130-find-all-possible-stable-binary-arrays-ii) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3262-find-polygon-with-the-largest-perimeter) |
@@ -1056,6 +1058,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2625-increment-submatrices-by-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2625-increment-submatrices-by-one) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 | [2737-row-with-maximum-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2737-row-with-maximum-ones) |
+| [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3070-count-submatrices-with-top-left-element-and-sum-less-than-k) |
 | [3227-find-missing-and-repeated-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3227-find-missing-and-repeated-values) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3651-minimum-cost-path-with-teleportations) |
 ## Sliding Window
