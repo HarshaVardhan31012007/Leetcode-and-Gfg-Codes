@@ -8,6 +8,7 @@ public:
             for(int j=0;j<n;j++){
                  prefix[i][j]=grid[i][j]+((i>0?prefix[i-1][j]:0)+(j>0?prefix[i][j-1]:0)-(i>0&&j>0?prefix[i-1][j-1]:0));
                  if(prefix[i][j]<=k) ans++;
+                 else break;
             }
         }
         return ans;
