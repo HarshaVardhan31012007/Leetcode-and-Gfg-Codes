@@ -74,42 +74,23 @@ public:
         }
     };
     int maxActivated(vector<vector<int>>& points) {
-        map<pair<int,int>,int>pMap;
-        int mark=0;
-        for(auto &each:points)
-        pMap[{each[0],each[1]}]=mark++;
-        DSU dsu(mark);
         unordered_map<int,int>xMap;
         unordered_map<int,int>yMap;
-        for(auto &each:points){
-            int x=each[0];
-            int y=each[1];
-            if(!xMap.count(x)){
-                xMap[x]=pMap[{x,y}];
-            }
-            else
-            dsu.Union(pMap[{x,y}],xMap[x]);
-            if(!yMap.count(y)){
-                yMap[y]=pMap[{x,y}];
-            }
-            else
-            dsu.Union(pMap[{x,y}],yMap[y]);
+        DSU dsu(points.size());
+        for(int i=0;i<points.size();i++){
+           if(!xMap.count(points[i][0])) xMap[points[i][0]]=i;
+           else dsu.Union(i,xMap[points[i][0]]);
+           if(!yMap.count(points[i][1])) yMap[points[i][1]]=i;
+           else dsu.Union(i,yMap[points[i][1]]);
         }
-
-        for(auto &each:points){
-            int x=each[0];
-            int y=each[1];
-            dsu.Union(xMap[x],yMap[y]);
+        unordered_map<int,int>compSize;
+        for(int i=0;i<points.size();i++){
+            int u=dsu.find(i);
+            compSize[u]++;
         }
-        
-        map<int,int>mpp;
-        for(auto &each:points){
-            int v=dsu.find(pMap[{each[0],each[1]}]);
-            mpp[v]++;
-        }
-        
-        int maxi=INT_MIN;int secondMaxi=INT_MIN;
-        for(auto &each:mpp){
+        int maxi=INT_MIN;
+        int secondMaxi=INT_MIN;
+        for(auto &each:compSize){
             if(each.second>=maxi){
                 secondMaxi=maxi;
                 maxi=each.second;
@@ -118,7 +99,6 @@ public:
                 secondMaxi=each.second;
             }
         }
-        if(maxi==INT_MIN) maxi=0;
         if(secondMaxi==INT_MIN) secondMaxi=0;
         return maxi+secondMaxi+1;
     }
