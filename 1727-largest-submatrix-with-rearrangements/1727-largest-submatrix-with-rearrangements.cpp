@@ -1,31 +1,21 @@
 class Solution {
 public:
     int largestSubmatrix(vector<vector<int>>& matrix) {
-        int row = matrix.size();
-        int col = matrix[0].size();
-
-        // Calculate heights for each column
-        for (int i = 1; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                if (matrix[i][j] == 1) {
-                    matrix[i][j] += matrix[i - 1][j];
-                }
+        int m=matrix.size();
+        int n=matrix[0].size();
+        vector<int>prevh(n,0);
+        vector<int>currh(n,0);
+        int ans=0;
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                currh[j]=(matrix[i][j]==1?1+prevh[j]:0);
             }
-        }
-
-        int res = 0;
-        for (int i = 0; i < row; i++) {
-            // Sort the heights in ascending order
-            sort(matrix[i].begin(), matrix[i].end());
-
-            // Iterate through the sorted heights
-            for (int j = 0; j < col; j++) {
-                int height = matrix[i][j];
-                int width = col - j;
-                res = max(res, height * width);
+            prevh=currh;
+            sort(currh.rbegin(),currh.rend());
+            for(int j=0;j<n;j++){
+                ans=max(ans,(j+1)*(currh[j]));
             }
-        }
-
-        return res;         
+        }   
+        return ans;
     }
 };
