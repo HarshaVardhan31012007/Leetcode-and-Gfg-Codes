@@ -8,8 +8,11 @@ public:
             for(int j=0;j<=n-k;j++){
                 long long int ans=1e11;
                 set<int>temp;
-                for(int p=0;p<k;p++)
-                temp.insert(grid[p+i].begin()+j,grid[p+i].begin()+j+k);
+                for(int p=i;p<=i+k-1;p++){
+                    for(int q=j;q<=j+k-1;q++){
+                        temp.insert(grid[p][q]);
+                    }
+                }
                 int prev=1e6;
                 for(auto &each:temp){
                     if(prev!=1e6){
