@@ -1668,6 +1668,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
+| [1192-critical-connections-in-a-network](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1192-critical-connections-in-a-network) |
 | [1285-balance-a-binary-search-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1285-balance-a-binary-search-tree) |
 | [1300-critical-connections-in-a-network](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1300-critical-connections-in-a-network) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1319-number-of-operations-to-make-network-connected) |
@@ -2097,6 +2098,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Biconnected Component
 |  |
 | ------- |
+| [1192-critical-connections-in-a-network](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1192-critical-connections-in-a-network) |
 | [1300-critical-connections-in-a-network](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1300-critical-connections-in-a-network) |
 ## Interactive
 |  |
@@ -2172,6 +2174,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0787-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0802-find-eventual-safe-states](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0802-find-eventual-safe-states) |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0947-most-stones-removed-with-same-row-or-column) |
+| [1192-critical-connections-in-a-network](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1192-critical-connections-in-a-network) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1976-number-of-ways-to-arrive-at-destination) |
 | [2360-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2360-longest-cycle-in-a-graph) |
