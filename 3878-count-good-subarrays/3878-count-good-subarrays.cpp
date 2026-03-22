@@ -56,30 +56,56 @@ public:
         // return count;
 
 
+        // long long n=nums.size();
+        // vector<int>suffix(n,n);
+        // vector<int>nextClosestBit(32,n);
+        // unordered_map<int,int>mpp;
+        // for(int i=n-1;i>=0;i--){
+        //     int mini=n;
+        //     for(int j=31;j>=0;j--){
+        //         if((nums[i]>>j)&1) nextClosestBit[j]=i;
+        //         else mini=min(mini,nextClosestBit[j]);
+        //     }
+        //     suffix[i]=mini;
+        //     if(mpp.count(nums[i])) suffix[i]=min(suffix[i],mpp[nums[i]]);
+        //     mpp[nums[i]]=i;
+        // }
+        // vector<int>prevClosestBit(32,-1);
+        // long long int ans=0;
+        // for(int i=0;i<n;i++){
+        //     int maxi=-1;
+        //     for(int j=31;j>=0;j--){
+        //         if((nums[i]>>j)&1) prevClosestBit[j]=i;
+        //         else maxi=max(maxi,prevClosestBit[j]);
+        //     }
+        //     ans+=(i-maxi)*(suffix[i]-i);
+        // }
+        // return ans;
+
+
+
         long long n=nums.size();
-        vector<int>suffix(n,n);
-        vector<int>nextClosestBit(32,n);
-        unordered_map<int,int>mpp;
+        vector<int>prefix(n,-1);
+        stack<int>st;
         for(int i=n-1;i>=0;i--){
-            int mini=n;
-            for(int j=31;j>=0;j--){
-                if((nums[i]>>j)&1) nextClosestBit[j]=i;
-                else mini=min(mini,nextClosestBit[j]);
-            }
-            suffix[i]=mini;
-            if(mpp.count(nums[i])) suffix[i]=min(suffix[i],mpp[nums[i]]);
-            mpp[nums[i]]=i;
+           while(!st.empty()&&((nums[st.top()]|nums[i])>nums[st.top()]||nums[i]==nums[st.top()])){
+              prefix[st.top()]=i;
+              st.pop();
+           }
+           st.push(i);
         }
-        vector<int>prevClosestBit(32,-1);
-        long long int ans=0;
+        vector<int>suffix(n,n);
+        stack<int>st1;
         for(int i=0;i<n;i++){
-            int maxi=-1;
-            for(int j=31;j>=0;j--){
-                if((nums[i]>>j)&1) prevClosestBit[j]=i;
-                else maxi=max(maxi,prevClosestBit[j]);
-            }
-            ans+=(i-maxi)*(suffix[i]-i);
+           while(!st1.empty()&&(nums[st1.top()]|nums[i])>nums[st1.top()]){
+              suffix[st1.top()]=i;
+              st1.pop();
+           }
+           st1.push(i);
         }
+        long long int ans=0;
+        for(int i=0;i<n;i++)
+        ans+=(i-prefix[i])*(suffix[i]-i);
         return ans;
     }
 };
