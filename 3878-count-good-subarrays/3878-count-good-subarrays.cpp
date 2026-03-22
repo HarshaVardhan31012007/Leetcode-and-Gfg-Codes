@@ -1,0 +1,85 @@
+class Solution {
+public:
+    long long countGoodSubarrays(vector<int>& nums) {
+        // long long count=0;
+        // long long n=nums.size();
+        // unordered_map<int,int>mpp;
+        // for(auto &each:nums)
+        // mpp[each]++;
+        // for(int i=0;i<n;i++){
+        //     int mask=nums[i];
+        //     int j=i;
+        //     while(j>=0&&((nums[j]&mask)==nums[j])){
+        //         j--;
+        //         if(j>=0&&nums[j]==nums[i]) break;
+        //     }
+        //     count+=(i-j);
+        //     int left=(i-j-1);
+        //     j=i+1;
+        //     while(j<n&&((nums[j]&mask)==nums[j])){
+        //         j++;
+        //     }
+        //     count+=(j-i-1);
+        //     int right=(j-i-1);
+        //     if(left>=1&&right>=1){
+        //         count+=left*right;
+        //     }
+        // }
+        // return count;
+
+
+
+        // long long count=0;
+        // long long n=nums.size();
+        // unordered_map<int,int>mpp;
+        // for(auto &each:nums)
+        // mpp[each]++;
+        // for(int i=0;i<n;i++){
+        //     int mask=nums[i];
+        //     int j=i;
+        //     while(j>=0&&((nums[j]&mask)==nums[j])){
+        //         j--;
+        //         if(j>=0&&nums[j]==nums[i]) break;
+        //     }
+        //     count+=(i-j);
+        //     int left=(i-j-1);
+        //     j=i+1;
+        //     while(j<n&&((nums[j]&mask)==nums[j])){
+        //         j++;
+        //     }
+        //     count+=(j-i-1);
+        //     int right=(j-i-1);
+        //     if(left>=1&&right>=1){
+        //         count+=left*right;
+        //     }
+        // }
+        // return count;
+
+
+        long long n=nums.size();
+        vector<int>suffix(n,n);
+        vector<int>nextClosestBit(32,n);
+        unordered_map<int,int>mpp;
+        for(int i=n-1;i>=0;i--){
+            int mini=n;
+            for(int j=31;j>=0;j--){
+                if((nums[i]>>j)&1) nextClosestBit[j]=i;
+                else mini=min(mini,nextClosestBit[j]);
+            }
+            suffix[i]=mini;
+            if(mpp.count(nums[i])) suffix[i]=min(suffix[i],mpp[nums[i]]);
+            mpp[nums[i]]=i;
+        }
+        vector<int>prevClosestBit(32,-1);
+        long long int ans=0;
+        for(int i=0;i<n;i++){
+            int maxi=-1;
+            for(int j=31;j>=0;j--){
+                if((nums[i]>>j)&1) prevClosestBit[j]=i;
+                else maxi=max(maxi,prevClosestBit[j]);
+            }
+            ans+=(i-maxi)*(suffix[i]-i);
+        }
+        return ans;
+    }
+};
