@@ -1,69 +1,106 @@
 class Solution {
   public:
-//   static bool comp(pair<int,int>&a,pair<int,int>&b){
-//       return a.first>b.first;
-//   }
-//     vector<int> jobSequencing(vector<int> &deadline, vector<int> &profit) {
-//         int maxdeadline=*max_element(deadline.begin(),deadline.end());
-//         vector<int>schedule(maxdeadline+1,-1);
-//         vector<pair<int,int>>v;
-//         for(int i=0;i<profit.size();i++){
-//             v.push_back({profit[i],deadline[i]});
-//         }
-//         sort(v.begin(),v.end(),comp);
-//         int profi=0;int count=0;
-//         for(int i=0;i<v.size();i++){
-//             int &curprofit=v[i].first;
-//             int &dead=v[i].second;
-//             for(int k=dead;k>0;k--){
-//                 if(schedule[k]==-1){
-//                     schedule[k]=dead;
-//                     profi+=curprofit;
-//                     count++;
-//                     break;
-//                 }
-//             }
-//         }
-//         return {count,profi};
-//     }
-
-
-    int find(vector<int>&parent,int i){
-        if(parent[i]==i) return i;
-        return parent[i]=find(parent,parent[i]);
-    }
-    void unionSet(vector<int>&parent,int i,int j){
-        i=find(parent,i);
-        j=find(parent,j);
-        parent[j]=i;
-    }
-static bool comp(pair<int,int>&a,pair<int,int>&b){
-      return a.first>b.first;
-  }
+    class DSU{
+       public:
+       vector<int>parent;
+       DSU(int n){
+           parent.resize(n);
+           for(int i=0;i<n;i++)
+           parent[i]=i;
+       }
+       int find(int a){
+           if(parent[a]==a) return a;
+           return parent[a]=find(parent[a]);
+       }
+       void Union(int a,int b){
+           int c=find(a);
+           int d=find(b);
+           parent[c]=d;
+       }
+    };
     vector<int> jobSequencing(vector<int> &deadline, vector<int> &profit) {
-        int maxdeadline=*max_element(deadline.begin(),deadline.end());
-        vector<int>schedule(maxdeadline+1,-1);
+        
+        // vector<pair<int,int>>v;
+        // int n=deadline.size();
+        // for(int i=0;i<n;i++){
+        //     v.push_back({deadline[i],profit[i]});
+        // }
+        
+        // sort(v.begin(),v.end(),[&](pair<int,int>&a,pair<int,int>&b){
+        //     if(a.second!=b.second) return a.second>b.second;
+        //     return a.first>b.first;
+        // });
+        // unordered_set<int>st;
+        // int ans1=0;int ans2=0;
+        // for(int i=0;i<n;i++){
+        //     int d=v[i].first-1;
+        //     while(d>=0){
+        //         if(!st.count(d)){
+        //             st.insert(d);
+        //             ans1++;
+        //             ans2+=v[i].second;
+        //             break;
+        //         }
+        //         d--;
+        //     }
+        // }
+        // return {ans1,ans2};
+        
+        
+        
+        
+        // vector<pair<int,int>>v;
+        // int maxDeadline=INT_MIN;
+        // int n=deadline.size();
+        // for(int i=0;i<n;i++){
+        //     v.push_back({deadline[i],profit[i]});
+        //     maxDeadline=max(maxDeadline,deadline[i]);
+        // }
+        // sort(v.begin(),v.end(),[&](pair<int,int>&a,pair<int,int>&b){
+        //     if(a.second!=b.second) return a.second>b.second;
+        //     return a.first>b.first;
+        // });
+        // vector<int>schedule(maxDeadline,-1);
+        // int ans1=0;int ans2=0;
+        // for(int i=0;i<n;i++){
+        //     int d=v[i].first-1;
+        //     while(d>=0){
+        //         if(schedule[d]==-1){
+        //             schedule[d]=d;
+        //             ans1++;
+        //             ans2+=v[i].second;
+        //             break;
+        //         }
+        //         d--;
+        //     }
+        // }
+        // return {ans1,ans2};
+        
+        
+        
+        
         vector<pair<int,int>>v;
-        for(int i=0;i<profit.size();i++){
-            v.push_back({profit[i],deadline[i]});
+        int maxDeadline=INT_MIN;
+        int n=deadline.size();
+        for(int i=0;i<n;i++){
+            v.push_back({deadline[i],profit[i]});
+            maxDeadline=max(maxDeadline,deadline[i]);
         }
-        sort(v.begin(),v.end(),comp);
-        int profi=0;int count=0;
-        vector<int>parent(maxdeadline+1,0);
-        for(int i=0;i<maxdeadline+1;i++){
-            parent[i]=i;
-        }
-        for(int i=0;i<v.size();i++){
-            int &curprofit=v[i].first;
-            int &dead=v[i].second;
-            int slots=find(parent,dead);
-            if(slots>0){
-                profi+=curprofit;
-                unionSet(parent,slots-1,slots);
-                schedule[slots]=dead;
-                count++;
+        sort(v.begin(),v.end(),[&](pair<int,int>&a,pair<int,int>&b){
+            if(a.second!=b.second) return a.second>b.second;
+            return a.first>b.first;
+        });
+        DSU dsu(maxDeadline+1);
+        int ans1=0;int ans2=0;
+        for(int i=0;i<n;i++){
+            int p=dsu.find(v[i].first);
+            if(p!=0){
+                ans1++;
+                ans2+=v[i].second;
+                dsu.Union(p,p-1);
             }
         }
-        return {count,profi};
+        return {ans1,ans2};
+        
     }
 };
