@@ -2,11 +2,11 @@ class Solution {
 public:
     vector<int> solveQueries(vector<int>& nums, vector<int>& queries) {
         unordered_map<int,int>mpp;
-        unordered_map<int,int>ans;
         int n=nums.size();
+        vector<int>ans(n,-1);
         for(int i=0;i<2*n;i++){
             if(i>=n&&mpp.count(nums[i%n])&&(i%n)!=((mpp[nums[i%n]])%n)){
-                if(!ans.count(i%n))
+                if(ans[i%n]==-1)
                 ans[i%n]=i-mpp[nums[i%n]];
                 else
                 ans[i%n]=min(ans[i%n],i-mpp[nums[i%n]]);
@@ -16,7 +16,7 @@ public:
         mpp.clear();
         for(int i=2*n-1;i>=0;i--){
             if(i<n&&mpp.count(nums[i%n])&&(i%n)!=(mpp[nums[i%n]]%n)){
-                if(!ans.count(i%n))
+                if(ans[i%n]==-1)
                 ans[i%n]=mpp[i%n]-i;
                 else
                 ans[i%n]=min(ans[i%n],mpp[nums[i%n]]-i);
