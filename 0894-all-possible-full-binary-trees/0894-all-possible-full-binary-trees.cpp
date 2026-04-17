@@ -11,9 +11,11 @@
  */
 class Solution {
 public:
+    map<pair<int,int>,vector<TreeNode*>>mpp;
     vector<TreeNode*>solve(int s,int e){
         if(s>e) return {NULL};
         if(s==e) return {new TreeNode(0)};
+        if(mpp.count({s,e})) return mpp[{s,e}];
         vector<TreeNode*>ans;
         for(int i=s+1;i<e;i++){
             vector<TreeNode*>left=solve(s,i-1);
@@ -27,7 +29,7 @@ public:
                 }
             }
         }
-        return ans;
+        return mpp[{s,e}]=ans;
     }
     vector<TreeNode*> allPossibleFBT(int n) {
         return solve(1,n);
