@@ -40,7 +40,6 @@ public:
 
 
     vector<string> twoEditWords(vector<string>& queries, vector<string>& dictionary) {
-        unordered_set<string>st(dictionary.begin(),dictionary.end());
         vector<string>ans;
         for(auto &each:queries){
             bool found=false;
