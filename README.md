@@ -1290,6 +1290,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2465-shifting-letters-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2465-shifting-letters-ii) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2483-minimum-penalty-for-a-shop](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2483-minimum-penalty-for-a-shop) |
+| [2833-furthest-point-from-origin](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2833-furthest-point-from-origin) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2976-minimum-cost-to-convert-string-i) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2977-minimum-cost-to-convert-string-ii) |
 | [3233-maximize-the-number-of-partitions-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3233-maximize-the-number-of-partitions-after-operations) |
@@ -1448,6 +1449,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1510-find-lucky-integer-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2174-next-greater-numerically-balanced-number) |
+| [2833-furthest-point-from-origin](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2833-furthest-point-from-origin) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 | [3583-count-special-triplets](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3583-count-special-triplets) |
