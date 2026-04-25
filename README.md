@@ -84,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3336-water-bottles-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3336-water-bottles-ii) |
 | [3432-count-partitions-with-even-sum-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3432-count-partitions-with-even-sum-difference) |
 | [3433-count-mentions-per-user](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3433-count-mentions-per-user) |
+| [3464-maximize-the-distance-between-points-on-a-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3600-find-the-k-th-character-in-string-game-i) |
@@ -405,6 +406,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3453-separate-squares-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3453-separate-squares-i) |
 | [3454-separate-squares-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3454-separate-squares-ii) |
+| [3464-maximize-the-distance-between-points-on-a-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 | [3478-choose-k-elements-with-maximum-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3478-choose-k-elements-with-maximum-sum) |
 | [3488-closest-equal-element-queries](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3488-closest-equal-element-queries) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
@@ -627,6 +629,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3262-find-polygon-with-the-largest-perimeter) |
 | [3433-count-mentions-per-user](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3433-count-mentions-per-user) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3437-maximum-total-damage-with-spell-casting) |
+| [3464-maximize-the-distance-between-points-on-a-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 | [3478-choose-k-elements-with-maximum-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3478-choose-k-elements-with-maximum-sum) |
 | [3531-count-covered-buildings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3531-count-covered-buildings) |
 | [3567-minimum-absolute-difference-in-sliding-submatrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3567-minimum-absolute-difference-in-sliding-submatrix) |
@@ -812,6 +815,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3453-separate-squares-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3453-separate-squares-i) |
 | [3454-separate-squares-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3454-separate-squares-ii) |
+| [3464-maximize-the-distance-between-points-on-a-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 | [3488-closest-equal-element-queries](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3488-closest-equal-element-queries) |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3600-maximize-spanning-tree-stability-with-upgrades) |
 | [3619-adjacent-increasing-subarrays-detection-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3619-adjacent-increasing-subarrays-detection-ii) |
@@ -2165,6 +2169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0973-k-closest-points-to-origin](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0973-k-closest-points-to-origin) |
 | [1266-minimum-time-visiting-all-points](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1266-minimum-time-visiting-all-points) |
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
+| [3464-maximize-the-distance-between-points-on-a-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 | [3623-count-number-of-trapezoids-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3623-count-number-of-trapezoids-i) |
 | [3625-count-number-of-trapezoids-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3625-count-number-of-trapezoids-ii) |
 ## Combinatorics
