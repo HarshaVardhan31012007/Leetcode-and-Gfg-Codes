@@ -25,17 +25,47 @@ public:
 
 
 
-    int candy(vector<int>& ratings) {
-       vector<int>candies(ratings.size(),1);
-       for(int i=1;i<ratings.size();i++){
-          if(ratings[i]>ratings[i-1])
-          candies[i]=max(candies[i],candies[i-1]+1);
-       }
-       for(int i=ratings.size()-2;i>=0;i--){
-          if(ratings[i]>ratings[i+1])
-          candies[i]=max(candies[i],candies[i+1]+1);
-       }
-       return accumulate(candies.begin(),candies.end(),0);
-    }       
+    // int candy(vector<int>& ratings) {
+    //    vector<int>candies(ratings.size(),1);
+    //    for(int i=1;i<ratings.size();i++){
+    //       if(ratings[i]>ratings[i-1])
+    //       candies[i]=max(candies[i],candies[i-1]+1);
+    //    }
+    //    for(int i=ratings.size()-2;i>=0;i--){
+    //       if(ratings[i]>ratings[i+1])
+    //       candies[i]=max(candies[i],candies[i+1]+1);
+    //    }
+    //    return accumulate(candies.begin(),candies.end(),0);
+    // }       
     
+
+    int candy(vector<int>& ratings) {
+         int candie=1;
+         int i=1;
+         int peak=1;int down=1;
+         while(i<ratings.size()){
+            if(ratings[i]==ratings[i-1]){
+                candie+=1;
+                i++;
+                continue;
+            }
+            peak=1;
+            while(i<ratings.size()&&ratings[i]>ratings[i-1]){
+                peak++;
+                candie+=peak;
+                i++;
+            }
+            down=1;
+            while(i<ratings.size()&&ratings[i]<ratings[i-1]){
+                candie+=down;
+                down++;
+                i++;
+            }
+            if(down>peak)
+            candie+=down-peak;
+         }
+         return candie;
+    } 
+
+
 };
