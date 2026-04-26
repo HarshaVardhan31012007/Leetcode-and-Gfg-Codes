@@ -1,111 +1,122 @@
 class LRUCache {
 public:
-    // unordered_map<int,int>mpp;
-    // vector<int>v;
-    // int size;
-    // int count=0;
-    // int time=0;
-    // LRUCache(int capacity) {
-    //      size=capacity;
-    // }
-    // int get(int key) {
-    //     if(mpp.find(key)==mpp.end())
-    //     return -1;
-    //     auto it=find(v.begin(),v.end(),key);
-    //     v.erase(it);
-    //     v.push_back(key);
-    //     return mpp[key];
-    // }
-    
-    // void put(int key, int value) {
-    //     if(mpp.find(key)!=mpp.end()){
-    //           auto it=find(v.begin(),v.end(),key);
-    //           v.erase(it);
-    //           mpp[key]=value;
-    //     }
-    //     else{
-    //         if(count<size){
-    //         mpp[key]=value;
-    //         count++;
-    //         }
-    //         else{
-    //             mpp.erase(v[0]);
-    //             v.erase(v.begin());
-    //             mpp[key]=value;
-    //         }
-    //     }
-    //     v.push_back(key);
-    // }
-
-
-
-    class Node{
+    class List{
         public:
-        int key,val;
-        Node* prev;
-        Node* next;
-        Node(int key,int val){
-            this->key=key;
-            this->val=val;
-            this->next=this->prev=NULL;
+        int data;
+        int key;
+        List* prev;
+        List* next;
+        List(int val,int k){
+            this->data=val;
+            this->key=k;
+            this->prev=NULL;
+            this->next=NULL;
         }
     };
-    unordered_map<int,Node*>mpp;
-    Node* head=new Node(-1,-1);
-    Node* tail=new Node(-1,-1);
+    unordered_map<int,List*>keyToNodeLink;
+    List* head,*tail;
     int size;
-    LRUCache(int capacity) {
-         size=capacity;
-         head->next=tail;
-         tail->prev=head;
-    }
-    int get(int key) {
-        auto it=mpp.find(key);
-        if(it==mpp.end())
-        return -1;
-        Node* ansNode=it->second;
-        deleteNode(ansNode);
-        addNode(ansNode);
-        return ansNode->val;
-    }
-    void addNode(Node* newNode){
-         newNode->next=head->next;
-         head->next=newNode;
-         newNode->prev=head;
-         newNode->next->prev=newNode;
-    }
-    void deleteNode(Node* temp){
-        temp->prev->next=temp->next;
-        temp->next->prev=temp->prev;
-        temp->next=NULL;
-        temp->prev=NULL;
-    }
-    void put(int key, int value) {
-        auto it=mpp.find(key);
-        if(it!=mpp.end()){
-              Node* curr=it->second;
-              curr->val=value;
-              deleteNode(curr);
-              addNode(curr);
+    int maxSize;
+    void insert(List* node){
+        if(!head){
+            head=node;
+            tail=node;
         }
         else{
-            if(mpp.size()<size){
-            Node* newNode=new Node(key,value);
-            addNode(newNode);
-            mpp[key]=newNode;
-            }
-            else{
-                mpp.erase(tail->prev->key);
-                Node* temp=tail->prev;
-                deleteNode(temp);
-                delete temp;
-                Node* newNode=new Node(key,value);
-                addNode(newNode);
-                mpp[key]=newNode;
-            }
+            tail->next=node;
+            node->prev=tail;
+            tail=node;
         }
     }
-
+    LRUCache(int capacity) {
+        head=NULL;
+        tail=NULL;
+        size=0;
+        maxSize=capacity;
+    }
+    
+    int get(int key) {
+        if(keyToNodeLink.count(key)){
+           int value=keyToNodeLink[key]->data;
+           List* node=keyToNodeLink[key];
+           if(size==1){
+              head=NULL;
+              tail=NULL;
+           }
+           else{
+            if(node->prev)
+            node->prev->next=node->next;
+            else
+            head=head->next;
+            if(node->next)
+            node->next->prev=node->prev;
+            else
+            tail=tail->prev;
+            node->prev=NULL;
+            node->next=NULL;
+           }
+           insert(node);
+           return value;
+        }
+        else
+        return -1;
+    }
+    
+    void put(int key, int value) {
+        if(!keyToNodeLink.count(key)){
+            List *newNode=new List(value,key);
+            if(size<maxSize){
+                keyToNodeLink[key]=newNode;
+                insert(newNode);
+                size++;
+            }
+            else{
+                List* node=head;
+                if(size==1){
+                    head=NULL;
+                    tail=NULL;
+                }
+                else{
+                    if(node->prev)
+                    node->prev->next=node->next;
+                    else
+                    head=head->next;
+                    if(node->next)
+                    node->next->prev=node->prev;
+                    else
+                    tail=tail->prev;
+                    node->prev=NULL;
+                    node->next=NULL;
+                    node->data=value;
+                }
+                keyToNodeLink.erase(node->key);
+                delete node;
+                keyToNodeLink[key]=newNode;
+                insert(newNode);
+            }
+        }
+        else{
+           List* node=keyToNodeLink[key];
+           node->data=value;
+           if(size==1){
+              head=NULL;
+              tail=NULL;
+           }
+           else{
+            if(node->prev)
+            node->prev->next=node->next;
+            else
+            head=head->next;
+            if(node->next)
+            node->next->prev=node->prev;
+            else
+            tail=tail->prev;
+            node->prev=NULL;
+            node->next=NULL;
+           }
+           insert(node);
+        }
+    }
 };
 
 /**
