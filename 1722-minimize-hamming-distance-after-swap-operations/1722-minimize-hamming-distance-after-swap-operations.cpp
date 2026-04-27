@@ -1,40 +1,92 @@
 class Solution {
 public:
-    vector<int> parent;
+    // int find(vector<int>&a,vector<int>&b){
+    //     int c=0;
+    //     for(int i=0;i<a.size();i++){
+    //         if(a[i]!=b[i]) c++;
+    //     }
+    //     return c;
+    // }
+    // int minimumHammingDistance(vector<int>& source, vector<int>& target, vector<vector<int>>& allowedSwaps) {
+    //    queue<vector<int>>q;
+    //    q.push(source);
+    //    map<vector<int>,int>visited;
+    //    visited[source]=1;
+    //    int ans=INT_MAX;
+    //    while(!q.empty()){
+    //       vector<int>v=q.front();
+    //       q.pop();
+    //       ans=min(ans,find(v,target));
+    //       for(auto &each:allowedSwaps){
+    //         int x=each[0];
+    //         int y=each[1];
+    //         swap(v[x],v[y]);
+    //         if(!visited[v]){
+    //             q.push(v);
+    //             visited[v]=1;
+    //         }
+    //       }
+    //    }
+    //    return ans;
+    // }
 
-    int find(int x) {
-        if (parent[x] != x)
-            parent[x] = find(parent[x]);
-        return parent[x];
-    }
 
-    void unite(int a, int b) {
-        parent[find(a)] = find(b);
-    }
 
-    int minimumHammingDistance(vector<int>& source, vector<int>& target, vector<vector<int>>& allowedSwaps) {
-        int n = source.size();
-        parent.resize(n);
-        iota(parent.begin(), parent.end(), 0);
 
-        for (auto& swap : allowedSwaps)
-            unite(swap[0], swap[1]);
-
-        // Group source values by their root
-        unordered_map<int, unordered_map<int, int>> groupFreq;
-        for (int i = 0; i < n; i++)
-            groupFreq[find(i)][source[i]]++;
-
-        int hammingDistance = 0;
-        for (int i = 0; i < n; i++) {
-            int root = find(i);
-            auto& freq = groupFreq[root];
-            if (freq.count(target[i]) && freq[target[i]] > 0)
-                freq[target[i]]--;
-            else
-                hammingDistance++;
+    class DSU{
+        public:
+        vector<int>rank;
+        vector<int>parent;
+        int size;
+        DSU(int n){
+            size=n;
+            parent.resize(n);
+            rank.resize(n,0);
+            for(int i=0;i<n;i++){
+                parent[i]=i;
+            }
         }
-
-        return hammingDistance;
+        int find(int p){
+            if(parent[p]==p) return p;
+            return parent[p]=find(parent[p]);
+        }
+        void Union(int a,int b){
+             a=find(a);
+             b=find(b);
+             if(a==b) return;
+             if(rank[a]<rank[b]){
+                parent[a]=b;
+             }
+             else if(rank[b]>rank[a]){
+                parent[a]=b;
+             }
+             else{
+                parent[b]=a;
+                rank[a]++;
+             }
+        }
+    };
+    int minimumHammingDistance(vector<int>& source, vector<int>& target, vector<vector<int>>& allowedSwaps) {
+       int n=source.size();
+       DSU dsu(n);
+       for(auto &each:allowedSwaps){
+           dsu.Union(each[0],each[1]);
+       }
+       unordered_map<int,multiset<int>>mpp;
+       for(int i=0;i<n;i++){
+          int p=dsu.find(i);
+          mpp[p].insert(source[i]);
+       }
+       int ans=0;
+       for(int i=0;i<n;i++){
+          int p=dsu.find(i);
+          if(mpp[p].count(target[i])){
+             auto it=mpp[p].find(target[i]);
+             mpp[p].erase(it);
+          }
+          else
+          ans++;
+       }
+       return ans;
     }
 };
