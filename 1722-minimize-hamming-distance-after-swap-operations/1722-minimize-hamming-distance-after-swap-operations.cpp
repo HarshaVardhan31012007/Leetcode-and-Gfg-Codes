@@ -66,23 +66,48 @@ public:
              }
         }
     };
+    // int minimumHammingDistance(vector<int>& source, vector<int>& target, vector<vector<int>>& allowedSwaps) {
+    //    int n=source.size();
+    //    DSU dsu(n);
+    //    for(auto &each:allowedSwaps){
+    //        dsu.Union(each[0],each[1]);
+    //    }
+    //    unordered_map<int,multiset<int>>mpp;
+    //    for(int i=0;i<n;i++){
+    //       int p=dsu.find(i);
+    //       mpp[p].insert(source[i]);
+    //    }
+    //    int ans=0;
+    //    for(int i=0;i<n;i++){
+    //       int p=dsu.find(i);
+    //       if(mpp[p].count(target[i])){
+    //          auto it=mpp[p].find(target[i]);
+    //          mpp[p].erase(it);
+    //       }
+    //       else
+    //       ans++;
+    //    }
+    //    return ans;
+    // }
+
+
+
     int minimumHammingDistance(vector<int>& source, vector<int>& target, vector<vector<int>>& allowedSwaps) {
        int n=source.size();
        DSU dsu(n);
        for(auto &each:allowedSwaps){
            dsu.Union(each[0],each[1]);
        }
-       unordered_map<int,multiset<int>>mpp;
+       unordered_map<int,unordered_map<int,int>>mpp;
        for(int i=0;i<n;i++){
           int p=dsu.find(i);
-          mpp[p].insert(source[i]);
+          mpp[p][source[i]]++;
        }
        int ans=0;
        for(int i=0;i<n;i++){
           int p=dsu.find(i);
-          if(mpp[p].count(target[i])){
-             auto it=mpp[p].find(target[i]);
-             mpp[p].erase(it);
+          if(mpp[p][target[i]]>0){
+             mpp[p][target[i]]--;
           }
           else
           ans++;
