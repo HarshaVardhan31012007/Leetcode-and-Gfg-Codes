@@ -14,14 +14,11 @@ public:
         }
         sort(arr.begin(),arr.end());
         n=arr.size();
-        int m1=arr[n/2-1];
-        int m2=arr[n/2];
+        m=arr[n/2];
         int ans1=0;
-        int ans2=0;
         for(int i=0;i<n;i++){
-           ans1+=abs(arr[i]-m1)/x;
-           ans2+=abs(arr[i]-m2)/x;
+           ans1+=abs(arr[i]-m)/x;
         }
-        return min(ans1,ans2);
+        return ans1;
     }
 };
