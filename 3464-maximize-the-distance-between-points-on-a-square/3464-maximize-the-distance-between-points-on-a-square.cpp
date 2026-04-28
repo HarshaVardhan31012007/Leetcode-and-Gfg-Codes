@@ -1,53 +1,60 @@
 class Solution {
 public:
+    typedef long long ll;
     int maxDistance(int side, vector<vector<int>>& points, int k) {
-        vector<long long> arr;
-
-        for (auto& p : points) {
-            int x = p[0], y = p[1];
-            if (x == 0) {
-                arr.push_back(y);
-            } else if (y == side) {
-                arr.push_back(side + x);
-            } else if (x == side) {
-                arr.push_back(side * 3LL - y);
-            } else {
-                arr.push_back(side * 4LL - x);
+        vector<ll>arr;
+        ll n=points.size();
+        ll perimeter=4LL*side;
+        for(auto &each:points){
+            if(each[1]==0){
+                arr.push_back(each[0]);
+            }
+            else if(each[0]==side){
+                arr.push_back(side+each[1]);
+            }
+            else if(each[1]==side){
+                arr.push_back(3LL*side-each[0]);
+            }
+            else{
+                arr.push_back(4LL*side-each[1]);
             }
         }
-        sort(arr.begin(), arr.end());
-
-        auto check = [&](long long limit) -> bool {
-            for (long long start : arr) {
-                long long end = start + side * 4LL - limit;
-                long long cur = start;
-                for (int i = 0; i < k - 1; i++) {
-                    auto it = ranges::lower_bound(arr, cur + limit);
-                    if (it == arr.end() || *it > end) {
-                        cur = -1;
+        sort(arr.begin(),arr.end());
+        vector<ll>doubled(2*n);
+        for(int i=0;i<n;i++){
+            doubled[i]=arr[i];
+            doubled[i+n]=arr[i]+perimeter;
+        }
+        auto possible=[&](ll mid){
+            for(int i=0;i<n;i++){
+                int count=1;
+                int lastPos=i;
+                for(int j=2;j<=k;j++){
+                    auto it=lower_bound(doubled.begin()+i+1,doubled.begin()+i+n,doubled[lastPos]+mid);
+                    if(it==doubled.begin()+i+n){
                         break;
                     }
-                    cur = *it;
+                    lastPos=it-doubled.begin();
+                    count++;
                 }
-                if (cur >= 0) {
+                if(count==k&&doubled[i]+perimeter-doubled[lastPos]>=mid){
                     return true;
                 }
             }
             return false;
         };
-
-        long long lo = 1, hi = side;
-        int ans = 0;
-        while (lo <= hi) {
-            long long mid = (lo + hi) / 2;
-            if (check(mid)) {
-                lo = mid + 1;
-                ans = mid;
-            } else {
-                hi = mid - 1;
+        ll low=0;ll high=side;
+        ll ans=0;
+        while(low<=high){
+            ll mid=low+(high-low)/2;
+            if(possible(mid)){
+               ans=mid;
+               low=mid+1;
+            }
+            else{
+                high=mid-1;
             }
         }
-
         return ans;
     }
 };
