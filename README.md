@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0368-largest-divisible-subset](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0368-largest-divisible-subset) |
 | [0371-sum-of-two-integers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0371-sum-of-two-integers) |
 | [0375-guess-number-higher-or-lower-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0375-guess-number-higher-or-lower-ii) |
+| [0396-rotate-function](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0396-rotate-function) |
 | [0415-add-strings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0415-add-strings) |
 | [0486-predict-the-winner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0486-predict-the-winner) |
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
@@ -192,6 +193,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0354-russian-doll-envelopes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0354-russian-doll-envelopes) |
 | [0368-largest-divisible-subset](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0368-largest-divisible-subset) |
 | [0377-combination-sum-iv](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0377-combination-sum-iv) |
+| [0396-rotate-function](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0396-rotate-function) |
 | [0403-frog-jump](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0403-frog-jump) |
 | [0407-trapping-rain-water-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0407-trapping-rain-water-ii) |
 | [0410-split-array-largest-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0410-split-array-largest-sum) |
@@ -964,6 +966,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0368-largest-divisible-subset](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0368-largest-divisible-subset) |
 | [0375-guess-number-higher-or-lower-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0375-guess-number-higher-or-lower-ii) |
 | [0377-combination-sum-iv](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0377-combination-sum-iv) |
+| [0396-rotate-function](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0396-rotate-function) |
 | [0403-frog-jump](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0403-frog-jump) |
 | [0410-split-array-largest-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0410-split-array-largest-sum) |
 | [0416-partition-equal-subset-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0416-partition-equal-subset-sum) |
