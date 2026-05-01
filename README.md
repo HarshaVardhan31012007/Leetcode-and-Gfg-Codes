@@ -271,6 +271,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0992-subarrays-with-k-different-integers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0992-subarrays-with-k-different-integers) |
 | [0994-rotting-oranges](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0994-rotting-oranges) |
 | [1000-minimum-cost-to-merge-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1000-minimum-cost-to-merge-stones) |
+| [1004-max-consecutive-ones-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1004-max-consecutive-ones-iii) |
 | [1018-largest-perimeter-triangle](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1018-largest-perimeter-triangle) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1020-number-of-enclaves](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1020-number-of-enclaves) |
@@ -803,6 +804,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0882-peak-index-in-a-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0882-peak-index-in-a-mountain-array) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0907-koko-eating-bananas](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0907-koko-eating-bananas) |
+| [1004-max-consecutive-ones-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1004-max-consecutive-ones-iii) |
 | [1027-longest-arithmetic-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1027-longest-arithmetic-subsequence) |
 | [1087-longest-arithmetic-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1087-longest-arithmetic-subsequence) |
 | [1187-make-array-strictly-increasing](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1187-make-array-strictly-increasing) |
@@ -849,6 +851,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0930-binary-subarrays-with-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0930-binary-subarrays-with-sum) |
 | [1000-minimum-cost-to-merge-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1000-minimum-cost-to-merge-stones) |
+| [1004-max-consecutive-ones-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1004-max-consecutive-ones-iii) |
 | [1140-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1140-stone-game-ii) |
 | [1240-stone-game-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1240-stone-game-ii) |
 | [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
@@ -1153,6 +1156,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0930-binary-subarrays-with-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0930-binary-subarrays-with-sum) |
 | [0992-subarrays-with-k-different-integers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0992-subarrays-with-k-different-integers) |
+| [1004-max-consecutive-ones-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1004-max-consecutive-ones-iii) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
