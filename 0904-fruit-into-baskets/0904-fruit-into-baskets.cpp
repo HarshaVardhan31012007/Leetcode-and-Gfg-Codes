@@ -90,21 +90,43 @@ public:
 
 
 
-       unordered_map<int,int>freq;
+    //    unordered_map<int,int>freq;
+    //    int i=0;
+    //    int j=0;
+    //    int n=fruits.size();
+    //    int ans=0;
+    //    while(j<n){
+    //       freq[fruits[j]]++;
+    //       while(freq.size()>2){
+    //          freq[fruits[i]]--;
+    //          if(freq[fruits[i]]==0) freq.erase(fruits[i]);
+    //          i++;
+    //       } 
+    //       int c=0;
+    //       for(auto &each:freq)
+    //       c+=each.second;
+    //       ans=max(ans,c);
+    //       j++;
+    //    }
+    //    return ans;
+
+
+
+    unordered_map<int,int>freq;
        int i=0;
        int j=0;
-       int n=fruits.size();
+       int n=fruits.size();int c=0;
        int ans=0;
        while(j<n){
           freq[fruits[j]]++;
-          while(freq.size()>2){
+          c++;
+          if(freq.size()>2){
              freq[fruits[i]]--;
+             c--;
              if(freq[fruits[i]]==0) freq.erase(fruits[i]);
              i++;
           } 
-          int c=0;
-          for(auto &each:freq)
-          c+=each.second;
+          if(freq.size()<=2)
           ans=max(ans,c);
           j++;
        }
