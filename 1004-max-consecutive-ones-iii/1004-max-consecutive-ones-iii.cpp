@@ -22,19 +22,40 @@ public:
 
 
 
+        // int n=nums.size();
+        // int i=0;
+        // int j=0;
+        // int ans=0;
+        // while(j<n){
+        //    if(nums[j]==0){
+        //       k--;
+        //    }
+        //    if(k<0){
+        //       if(nums[i]==0) k++;
+        //       i++; 
+        //    }
+        //    if(i<=j&&k>=0)
+        //    ans=max(ans,j-i+1);
+        //    j++;
+        // }
+        // return ans;
+
+
+
         int n=nums.size();
         int i=0;
         int j=0;
+        int zeros=0;
         int ans=0;
         while(j<n){
            if(nums[j]==0){
-              k--;
+              zeros++;
            }
-           if(k<0){
-              if(nums[i]==0) k++;
+           if(zeros>k){
+              if(nums[i]==0) zeros--;
               i++; 
            }
-           if(i<=j&&k>=0)
+           if(zeros<=k)
            ans=max(ans,j-i+1);
            j++;
         }
