@@ -1,23 +1,49 @@
+// class MyHashMap {
+// public:
+//     unordered_map<int,int>mpp;
+//     MyHashMap() {
+        
+//     }
+    
+//     void put(int key, int value) {
+//         mpp[key]=value;
+//     }
+    
+//     int get(int key) {
+//         if(mpp.count(key))
+//         return mpp[key];
+//         return -1;
+//     }
+    
+//     void remove(int key) {
+//         if(mpp.count(key))
+//         mpp.erase(key);
+//     }
+// };
+
+
+
 class MyHashMap {
 public:
-    unordered_map<int,int>mpp;
+    int arr[1000001];
     MyHashMap() {
-        
+        for(int i=0;i<1000001;i++)
+        arr[i]=-1;
     }
     
     void put(int key, int value) {
-        mpp[key]=value;
+        arr[key]=value;
     }
     
     int get(int key) {
-        if(mpp.count(key))
-        return mpp[key];
+        if(arr[key]!=-1)
+        return arr[key];
+        else
         return -1;
     }
     
     void remove(int key) {
-        if(mpp.count(key))
-        mpp.erase(key);
+       arr[key]=-1;
     }
 };
 
