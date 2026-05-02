@@ -227,6 +227,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0658-find-k-closest-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0658-find-k-closest-elements) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0692-top-k-frequent-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0692-top-k-frequent-words) |
+| [0706-design-hashmap](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0706-design-hashmap) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0717-1-bit-and-2-bit-characters](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0717-1-bit-and-2-bit-characters) |
 | [0721-accounts-merge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0721-accounts-merge) |
@@ -711,6 +712,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0676-implement-magic-dictionary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0676-implement-magic-dictionary) |
 | [0692-top-k-frequent-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0692-top-k-frequent-words) |
+| [0706-design-hashmap](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0706-design-hashmap) |
 | [0721-accounts-merge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0721-accounts-merge) |
 | [0746-prefix-and-suffix-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0746-prefix-and-suffix-search) |
 | [0753-open-the-lock](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0753-open-the-lock) |
@@ -1677,6 +1679,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0355-design-twitter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0355-design-twitter) |
 | [0460-lfu-cache](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0460-lfu-cache) |
 | [0528-swapping-nodes-in-a-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0528-swapping-nodes-in-a-linked-list) |
+| [0706-design-hashmap](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0706-design-hashmap) |
 | [0725-split-linked-list-in-parts](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0725-split-linked-list-in-parts) |
 | [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
 | [0838-design-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0838-design-linked-list) |
@@ -1902,6 +1905,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0355-design-twitter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0355-design-twitter) |
 | [0460-lfu-cache](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0460-lfu-cache) |
 | [0676-implement-magic-dictionary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0676-implement-magic-dictionary) |
+| [0706-design-hashmap](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0706-design-hashmap) |
 | [0746-prefix-and-suffix-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0746-prefix-and-suffix-search) |
 | [0838-design-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0838-design-linked-list) |
 | [0937-online-stock-span](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0937-online-stock-span) |
@@ -2140,6 +2144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0187-repeated-dna-sequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0187-repeated-dna-sequences) |
+| [0706-design-hashmap](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0706-design-hashmap) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 ## String Matching
 |  |
