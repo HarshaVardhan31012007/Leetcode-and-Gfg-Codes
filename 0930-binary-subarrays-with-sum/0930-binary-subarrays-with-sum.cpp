@@ -12,6 +12,7 @@ public:
                sum-=nums[i];
                i++;
             }
+            if(i==n) break;
             if(i<=j)
             ans+=(j-i+1);
             j++;
