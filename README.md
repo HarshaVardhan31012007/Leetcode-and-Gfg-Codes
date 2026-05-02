@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
 | [0556-next-greater-element-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0556-next-greater-element-iii) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
+| [0788-rotated-digits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0788-rotated-digits) |
 | [0830-largest-triangle-area](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0830-largest-triangle-area) |
 | [0840-magic-squares-in-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0840-magic-squares-in-grid) |
 | [0877-stone-game](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0877-stone-game) |
@@ -992,6 +993,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0747-min-cost-climbing-stairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0747-min-cost-climbing-stairs) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0787-cheapest-flights-within-k-stops) |
+| [0788-rotated-digits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0788-rotated-digits) |
 | [0799-champagne-tower](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0799-champagne-tower) |
 | [0801-minimum-swaps-to-make-sequences-increasing](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0801-minimum-swaps-to-make-sequences-increasing) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0803-cheapest-flights-within-k-stops) |
