@@ -7,7 +7,7 @@ public:
         return true;
     }
     string minWindow(string s, string t) {
-        //if(s.length()<t.length()) return "";
+        if(s.length()<t.length()) return "";
         unordered_map<char,int>mpp;
 
         for(auto &each:t){
