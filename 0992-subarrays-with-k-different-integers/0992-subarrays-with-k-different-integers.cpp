@@ -1,31 +1,24 @@
 class Solution {
 public:
-    int subarraysWithKDistinct(vector<int>& nums, int k) {
+    int solve(vector<int>&nums,int k){
         int n=nums.size();
-        unordered_map<int,int>freq;
-        unordered_map<int,int>freq1;
-        int distinct=0;int j=0;int i=0;int distinct1=0;int i1=0;
+        int i=0;
+        int j=0;
+        unordered_map<int,int>mpp;
         int ans=0;
-        while(j<n){
-            freq[nums[j]]++;
-            freq1[nums[j]]++;
-            if(freq[nums[j]]==1) distinct++;
-            if(freq1[nums[j]]==1) distinct1++;
-            while(distinct>k){
-                freq[nums[i]]--;
-                if(freq[nums[i]]==0)
-                distinct--;
-                i++;
+        while(j<n){ 
+            mpp[nums[j]]++;
+            while(mpp.size()>k){
+              mpp[nums[i]]--;
+              if(mpp[nums[i]]==0) mpp.erase(nums[i]);
+              i++;
             }
-            while(distinct1>=k){
-                freq1[nums[i1]]--;
-                if(freq1[nums[i1]]==0)
-                distinct1--;
-                i1++;
-            }
-            ans+=i1-i;
+            ans+=(j-i+1);
             j++;
         }
         return ans;
+    }
+    int subarraysWithKDistinct(vector<int>& nums, int k) {
+        return solve(nums,k)-solve(nums,k-1);
     }
 };
