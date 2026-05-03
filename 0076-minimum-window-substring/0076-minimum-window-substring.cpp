@@ -1,55 +1,37 @@
 class Solution {
 public:
-    string minWindow(string s, string t) {
-    // if(s.length()<t.length()) return "";
-    //    int start=0;
-    //    int end=0;
-    //    int len=INT_MAX;
-    //    int ansIdx=0;int count=0;
-    //    unordered_map<char,int>freq1;
-    //    unordered_map<char,int>freq2;
-    //    for(auto &each:t)
-    //    freq2[each]++;
-    //    while(end<s.length()){
-    //     freq1[s[end]]++;
-    //     if(freq1[s[end]]<=freq2[s[end]])
-    //     count++;
-    //     while(count==t.length()){       
-    //                     if(end-start+1<len){
-    //             len=end-start+1;
-    //             ansIdx=start;
-    //         }
-    //         if(freq1[s[start]]<=freq2[s[start]]) count--;
-    //          freq1[s[start]]--;
-    //          start++;
-    //     }
-    //     end++;
-    //    }
-    //    return len==INT_MAX?"":s.substr(ansIdx,len);
-
-
-    if(s.length()<t.length()) return "";
-       int start=0;
-       int end=0;
-       int len=INT_MAX;
-       int ansIdx=0;int count=t.length();
-       unordered_map<char,int>freq;
-       for(auto &each:t)
-       freq[each]++;
-       while(end<s.length()){
-        if(freq[s[end]]>0) count--;
-        freq[s[end]]--;
-        while(count==0){       
-            if(end-start+1<len){
-            len=end-start+1;
-            ansIdx=start;
-            }
-            freq[s[start]]++;
-            if(freq[s[start]]>0) count++;
-            start++;
+    bool check(unordered_map<char,int>&mpp){
+        for(auto &each:mpp){
+            if(each.second>0) return false;
         }
-        end++;
-       }
-       return len==INT_MAX?"":s.substr(ansIdx,len);
+        return true;
+    }
+    string minWindow(string s, string t) {
+        //if(s.length()<t.length()) return "";
+        unordered_map<char,int>mpp;
+
+        for(auto &each:t){
+            mpp[each]++;
+        }
+
+        int i=0;
+        int j=0;
+        int n=s.length();
+        int start=-1;int len=INT_MAX;
+        while(j<n){
+            if(mpp.count(s[j]))
+            mpp[s[j]]--;
+            while(check(mpp)){
+                if((j-i+1)<len){
+                    start=i;
+                    len=(j-i+1);
+                }
+                if(mpp.count(s[i])) mpp[s[i]]++;
+                i++;
+            }
+            j++;
+        }
+        if(start==-1) return "";
+        return s.substr(start,len);
     }
 };
