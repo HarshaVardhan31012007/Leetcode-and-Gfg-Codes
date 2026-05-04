@@ -1335,6 +1335,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
+| [1544-make-the-string-great](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1544-make-the-string-great) |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1545-find-kth-bit-in-nth-binary-string) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1653-minimum-deletions-to-make-string-balanced) |
@@ -1411,6 +1412,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1228-minimum-cost-tree-from-leaf-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1228-minimum-cost-tree-from-leaf-values) |
 | [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
+| [1544-make-the-string-great](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1544-make-the-string-great) |
 | [1582-design-browser-history](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1582-design-browser-history) |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [1902-car-fleet-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1902-car-fleet-ii) |
