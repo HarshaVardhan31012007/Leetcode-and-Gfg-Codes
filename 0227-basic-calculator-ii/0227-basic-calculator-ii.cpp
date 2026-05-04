@@ -1,105 +1,71 @@
 class Solution {
 public:
-    // int power(char op){
-    //     if(op=='+'||op=='-') return 1;
-    //     if(op=='*'||op=='/') return 2;
-    //     return -1;
-    // }
-    // int calculate(string s) {
-    //     stack<int>st;
-    //     stack<char>s1;
-    //     for(int i=0;i<s.length();i++){
-    //           if(s[i]==' ') continue;
-    //           if(isdigit(s[i])){
-    //             int num=0;
-    //             while(isdigit(s[i])){
-    //                 num=num*10+(s[i]-'0');
-    //                 i++;
-    //             }
-    //             st.push(num);
-    //             i--;
-    //           }
-    //           else{
-    //             while(!s1.empty()&&power(s[i])<=power(s1.top())){
-    //                 int a=st.top();
-    //                 st.pop();
-    //                 int b=st.top();
-    //                 st.pop();
-    //                 char op=s1.top();
-    //                 s1.pop();
-    //                  switch(op){
-    //                 case '+':st.push(b+a);
-    //                 break;
-    //                 case '-':st.push(b-a);
-    //                 break;
-    //                 case '*':st.push(b*a);
-    //                 break;
-    //                 case '/':st.push(b/a);
-    //                 break;
-    //                 }
-    //             }
-    //             s1.push(s[i]);
-    //           }
-    //     }
-    //             while(st.size()>1&&!s1.empty()){
-    //                 int a=st.top();
-    //                 st.pop();
-    //                 int b=st.top();
-    //                 st.pop();
-    //                 char op=s1.top();
-    //                 s1.pop();
-    //                 cout<<a<<" "<<b<<" "<<op<<endl;
-    //                 switch(op){
-    //                 case '+':st.push(b+a);
-    //                 break;
-    //                 case '-':st.push(b-a);
-    //                 break;
-    //                 case '*':st.push(b*a);
-    //                 break;
-    //                 case '/':st.push(b/a);
-    //                 break;
-    //                 }
-    //             }
-    //           return st.top();
-    // }
-
-     int calculate(string &s){
-          int num=0;
-          int op='+';
-          stack<int>st;
-          for(int i=0;i<s.length();i++){
-              if(isdigit(s[i])){
-                num=num*10+(s[i]-'0');
-              }
-              if(i==s.length()-1||(!isdigit(s[i])&&s[i]!=' ')){
-                 if(op=='+'){
-                     st.push(num);
-                     num=0;
-                 }
-                 else if(op=='-'){
-                    st.push(-num);
-                    num=0;
-                 }
-                 else if(op=='*'){
-                    int prevnum=st.top();
-                    st.pop();
-                    st.push(prevnum*num);
-                    num=0;
-                 }
-                 else if(op=='/'){
-                    int prevnum=st.top();
-                    st.pop();
-                    st.push(prevnum/num);
-                    num=0;
-                 }
-                 op=s[i];
-              }
-          }
-              int result=0;
-              while(!st.empty()){
-                result+=st.top();
-                st.pop();
-              }
-              return result;
-     }
+    int priority(char ch){
+        if(ch=='*'||ch=='/') return 2;
+        return 1;
+    }
+    int calculate(string s) {
+        stack<int>st1;
+        stack<char>st2;
+        int n=s.length();
+        int i=0;
+        while(i<n){
+            int num=0;
+            if(isdigit(s[i])){
+                while(i<n&&isdigit(s[i])){
+                    num=num*10+(s[i]-'0');
+                    i++;
+                }
+                st1.push(num);
+            }
+            else if(s[i]!=' '){
+                while(!st2.empty()&&priority(s[i])<=priority(st2.top())){
+                    int b=st1.top();
+                    st1.pop();
+                    int a=st1.top();
+                    st1.pop();
+                    char ch=st2.top();
+                    st2.pop();
+                    if(ch=='+'){
+                        st1.push(a+b);
+                    }
+                    else if(ch=='-'){
+                        st1.push(a-b);
+                    }
+                    else if(ch=='*'){
+                        st1.push(a*b);
+                    }
+                    else if(ch=='/'){
+                        st1.push(a/b);
+                    }
+                }
+                st2.push(s[i]);
+                i++;
+            }
+            else
+            i++;
+        }
+        int ans=0;
+        while(!st1.empty()&&!st2.empty()&&st1.size()>=2&&st2.size()>=1){
+            int b=st1.top();
+            st1.pop();
+            int a=st1.top();
+            st1.pop();
+            char ch=st2.top();
+            st2.pop();
+            if(ch=='+'){
+                st1.push(a+b);
+            }
+            else if(ch=='-'){
+                st1.push(a-b);
+            }
+            else if(ch=='*'){
+                st1.push(a*b);
+            }
+            else if(ch=='/'){
+                st1.push(a/b);
+            }
+        }
+        return st1.top();
+    }
 };
