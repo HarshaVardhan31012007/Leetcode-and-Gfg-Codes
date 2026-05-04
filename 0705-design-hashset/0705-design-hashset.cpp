@@ -1,21 +1,20 @@
 class MyHashSet {
 public:
-    int arr[1000001];
+    vector<bool>vec;
     MyHashSet() {
-        
+        vec.resize(1000001,0);
     }
     
     void add(int key) {
-        arr[key]=1;
+        vec[key]=1;
     }
     
     void remove(int key) {
-        arr[key]=0;
+        vec[key]=0;
     }
     
     bool contains(int key) {
-        if(arr[key]==1) return true;
-        return false;
+        return vec[key]==1;
     }
 };
 
