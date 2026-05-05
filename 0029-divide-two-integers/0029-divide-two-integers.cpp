@@ -1,42 +1,23 @@
 class Solution {
 public:
-    int divide(long dividend, long divisor) {
-     if(divisor==dividend) return 1;//no need
-     if(dividend==INT_MIN && divisor==-1) return INT_MAX;
-        //if(dividend==INT_MIN && divisor==1) return INT_MIN;//no need
-
-      long ans;
-      long a=abs(dividend);
-      long b=abs(divisor);
-      long s=0;
-      long e=a;
-      long mid=s+((e-s)>>1);
-    while(s<=e){
-
-      if(mid*b==a){
-      ans=mid;
-     break;
-      }
-      if(mid*b<a){
-        ans=mid;
-        s=mid+1;
-      }
-
-     if(mid*b>a){
-      e=mid-1;
-     }
-
-     mid=s+((e-s)>>1);
-
-    
-   }
-   
-   bool x=true;
-
-   if(dividend>=0 && divisor<0) x=false;
-   else if(dividend<=0 && divisor>0) x=false;
-    
-   
-  return (x==0)?-ans:ans;
+    int divide(long long int dividend,long long int divisor) {
+        long long int a=dividend;
+        long long int b=divisor;
+        divisor=abs(divisor);
+        dividend=abs(dividend);
+        long long int count=0;
+        while(dividend>=divisor){
+            long long int temp=1;
+            while(temp*divisor<=dividend){
+                temp=(temp<<1);
+            }
+            temp=temp>>1;
+            count+=temp;
+            dividend-=temp*divisor;
+        }
+        if((a^b)<0) count=-count;
+        if(count>INT_MAX) return INT_MAX;
+        if(count<INT_MIN) return INT_MIN;
+        return count;
     }
 };
