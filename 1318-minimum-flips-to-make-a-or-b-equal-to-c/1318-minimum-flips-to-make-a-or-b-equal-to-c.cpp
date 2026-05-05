@@ -13,11 +13,7 @@ public:
             else{
                 int a1=((a>>i)&1);
                 int b1=((b>>i)&1);
-                if(a1&&b1){
-                   ans+=2;
-                }
-                else if(a1&&!b1||!a1&&b1)
-                ans++;
+                ans+=(a1+b1);
             }
         }
         return ans;
