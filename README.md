@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0380-insert-delete-getrandom-o1](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0380-insert-delete-getrandom-o1) |
 | [0396-rotate-function](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0396-rotate-function) |
 | [0415-add-strings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0415-add-strings) |
+| [0477-total-hamming-distance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0477-total-hamming-distance) |
 | [0486-predict-the-winner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0486-predict-the-winner) |
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
 | [0556-next-greater-element-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0556-next-greater-element-iii) |
@@ -212,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0455-assign-cookies) |
 | [0473-matchsticks-to-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0473-matchsticks-to-square) |
 | [0474-ones-and-zeroes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0474-ones-and-zeroes) |
+| [0477-total-hamming-distance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0477-total-hamming-distance) |
 | [0486-predict-the-winner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0486-predict-the-winner) |
 | [0494-target-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0494-target-sum) |
 | [0496-next-greater-element-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0496-next-greater-element-i) |
@@ -496,6 +498,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0473-matchsticks-to-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0473-matchsticks-to-square) |
 | [0476-number-complement](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0476-number-complement) |
+| [0477-total-hamming-distance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0477-total-hamming-distance) |
 | [0526-beautiful-arrangement](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0526-beautiful-arrangement) |
 | [0693-binary-number-with-alternating-bits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0693-binary-number-with-alternating-bits) |
 | [0756-pyramid-transition-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0756-pyramid-transition-matrix) |
