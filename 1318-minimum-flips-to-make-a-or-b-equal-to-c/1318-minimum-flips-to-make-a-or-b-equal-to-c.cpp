@@ -19,8 +19,11 @@ public:
         // return ans;
 
 
-        int var1=((a|b)^c);
-        int var2=((a&b)&(~c));
-        return __builtin_popcount(var1)+__builtin_popcount(var2);
+        // int var1=((a|b)^c);
+        // int var2=((a&b)&(~c));
+        // return __builtin_popcount(var1)+__builtin_popcount(var2);
+
+
+        return __builtin_popcount((a|b)^c)+__builtin_popcount((a&b)&((a|b)^c));
     }
 };
