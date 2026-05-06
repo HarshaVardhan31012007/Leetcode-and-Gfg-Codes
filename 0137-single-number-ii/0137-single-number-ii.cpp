@@ -20,18 +20,13 @@ public:
         int ans=0;
         for(int i=0;i<32;i++){
             int c=0;
-            int c1=0;
             for(auto &each:nums){
                 if((each>>i)&1){
                     c++;
                 }
-                else{
-                    c1++;
-                }
             }
             c=c%3;
-            c1=c1%3;
-            if(c!=0){
+            if(c==1){
                ans=(ans|(1<<i));
             }
         }
