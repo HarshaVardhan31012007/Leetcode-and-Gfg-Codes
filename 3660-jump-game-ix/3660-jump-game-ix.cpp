@@ -43,9 +43,9 @@ public:
             while(it!=st.end()){
                 dsu.Union(i,it->second);
                 maxi=max(maxi,it->first);
-                it=st.erase(it);
+                it=st.erase(it);// it necomes invalid after erase so erase function return ierator pointing to next element
             }
-            st.insert({maxi,i});
+            st.insert({maxi,i});// to make sure that we can connect any other i suc that nums[i]<element erased now
         }
         // for(int i=0;i<n;i++){
         //     for(int j=0;j<i;j++){
