@@ -25,7 +25,6 @@ public:
         int ans=0;
         for(int i=1;i<nums.size();i++){
             if(nums[i]==nums[i-1]) continue;
-            ans=max(ans,c);
             if(nums[i]==(nums[i-1]+1)){
                 c++;
             }
