@@ -3,7 +3,6 @@ public:
     vector<bool>isprime;
     int sumOfPrimesInRange(int n) {
         if(isprime.empty()){
-            cout<<n<<endl;
             isprime.assign(1001,1);
             isprime[0]=0;isprime[1]=0;
             for(int i=2;i*i<=1000;i++){
