@@ -1,5 +1,11 @@
 class Solution {
 public:
+    double solve(double x,long n){
+        if(n==1) return x;
+        double half=solve(x,n/2);
+        double ans=((n&1)?x:1.0);
+        return ans*half*half;
+    }
     double myPow(double x, int n) {
         // if(n==0) return 1.0;
         // if(x==0.0) return 0.0;
@@ -14,6 +20,24 @@ public:
         // return isneg?1/(double)ans:ans;
 
 
+        // if(n==0) return 1.0;
+        // if(x==0.0) return 0.0;
+        // if(x==1.0) return 1.0;
+        // if(n==1) return x;
+        // double ans=1.0;
+        // bool isneg=(n<0);
+        // long n1=abs((long long)n);
+        // while(n1!=0){
+        //     if(n1&1){
+        //        ans=(ans*x);
+        //     }
+        //     x=(x*x);
+        //     n1=n1/2;
+        // }
+        // return isneg?1/(double)ans:ans;
+
+
+
         if(n==0) return 1.0;
         if(x==0.0) return 0.0;
         if(x==1.0) return 1.0;
@@ -21,13 +45,7 @@ public:
         double ans=1.0;
         bool isneg=(n<0);
         long n1=abs((long long)n);
-        while(n1!=0){
-            if(n1&1){
-               ans=(ans*x);
-            }
-            x=(x*x);
-            n1=n1/2;
-        }
+        ans=solve(x,n1);
         return isneg?1/(double)ans:ans;
     }
 };
