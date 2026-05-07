@@ -160,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
+| [0128-longest-consecutive-sequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0130-surrounded-regions) |
 | [0134-gas-station](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0134-gas-station) |
 | [0135-candy](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0135-candy) |
@@ -695,6 +696,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0126-word-ladder-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0126-word-ladder-ii) |
 | [0127-word-ladder](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0127-word-ladder) |
+| [0128-longest-consecutive-sequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0128-longest-consecutive-sequence) |
 | [0138-copy-list-with-random-pointer](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0138-copy-list-with-random-pointer) |
 | [0139-word-break](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0139-word-break) |
 | [0140-word-break-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0140-word-break-ii) |
@@ -2334,6 +2336,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Union-Find
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0547-number-of-provinces) |
