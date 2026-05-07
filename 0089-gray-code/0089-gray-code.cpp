@@ -19,6 +19,22 @@ public:
     //         }
     //     }
     // }
+
+
+    vector<string>helper(int n){
+        if(n==1){
+            return {"0","1"};
+        }
+        vector<string>temp=helper(n-1);
+        vector<string>ans;
+        for(int i=0;i<temp.size();i++){
+            ans.push_back(temp[i]+"0");
+        }
+        for(int i=temp.size()-1;i>=0;i--){
+            ans.push_back(temp[i]+"1");
+        }
+        return ans;
+    }
     vector<int> grayCode(int n) {
         // vector<int>ans;
         // vector<int>temp;
@@ -29,9 +45,18 @@ public:
         // return temp;
 
 
+        // vector<int>ans;
+        // for(int i=0;i<(1<<n);i++){
+        //     ans.push_back(i^(i>>1));
+        // }
+        // return ans;
+
+
+        vector<string>result=helper(n);
         vector<int>ans;
-        for(int i=0;i<(1<<n);i++){
-            ans.push_back(i^(i>>1));
+        for(auto &each:result){
+            bitset<32>bt(each);
+            ans.push_back(bt.to_ulong());
         }
         return ans;
     }
