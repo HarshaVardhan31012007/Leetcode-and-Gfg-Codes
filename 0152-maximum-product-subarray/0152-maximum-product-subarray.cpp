@@ -1,12 +1,8 @@
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
-       int maxi=INT_MIN;
-       int n=nums.size();
-       if(n==1) return nums[0];
        int p=1;
        int ans=INT_MIN;
-       int start=-1;
        int maxi1=INT_MIN;
        for(int i=0;i<nums.size();i++){
           p=p*nums[i];
@@ -24,7 +20,6 @@ public:
             maxi1=INT_MIN;
           }
        }
-       if(maxi==0) return 0;
        return ans;
     }
 };
