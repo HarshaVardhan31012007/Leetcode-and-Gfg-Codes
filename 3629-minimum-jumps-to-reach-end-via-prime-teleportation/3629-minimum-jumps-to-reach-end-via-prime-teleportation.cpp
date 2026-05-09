@@ -44,8 +44,8 @@ public:
                      jumps[idx]=jumps[i]+1;
                    }
                }
-               visited.insert(k);
            }
+           visited.insert(nums[i]);
         }
         return -1;
     }
