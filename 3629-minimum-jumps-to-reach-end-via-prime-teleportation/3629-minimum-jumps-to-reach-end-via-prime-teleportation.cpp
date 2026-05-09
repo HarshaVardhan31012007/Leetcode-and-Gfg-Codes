@@ -102,6 +102,7 @@ public:
                     }
                 }
                 mpp[nums[i]].clear();
+                mpp.erase(nums[i]);
             }
         }
         return -1;
