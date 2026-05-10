@@ -1,87 +1,67 @@
 class Solution {
 public:
     vector<vector<int>> rotateGrid(vector<vector<int>>& grid, int k) {
-
-        int rows = grid.size();
-        int cols = grid[0].size();
-
-        int totalLayers = min(rows, cols) / 2;
-
-        for(int layer = 0; layer < totalLayers; layer++) {
-
-            vector<int> elements;
-
-            int top = layer;
-            int left = layer;
-
-            int bottom = rows - layer - 1;
-            int right = cols - layer - 1;
-
-            // Top row
-            for(int col = left; col <= right; col++) {
-                elements.push_back(grid[top][col]);
+        int m=grid.size();
+        int n=grid[0].size();
+        int dx=0;int dy=0;
+        while(m>=2&&n>=2){
+            vector<int>elements;
+            int r=0;int c=0;
+            while(c<n){
+                elements.push_back(grid[r+dx][c+dy]);
+                c++;
             }
-
-            // Right column
-            for(int row = top + 1; row <= bottom - 1; row++) {
-                elements.push_back(grid[row][right]);
+            r=1;c=(n-1);
+            while(r<m){
+                elements.push_back(grid[r+dx][c+dy]);
+                r++;
             }
-
-            // Bottom row
-            for(int col = right; col >= left; col--) {
-                elements.push_back(grid[bottom][col]);
+            r=(m-1);c=(n-2);
+            while(c>=0){
+                elements.push_back(grid[r+dx][c+dy]);
+                c--;
             }
-
-            // Left column
-            for(int row = bottom - 1; row >= top + 1; row--) {
-                elements.push_back(grid[row][left]);
+            r=(m-2);c=0;
+            while(r>=1){
+                elements.push_back(grid[r+dx][c+dy]);
+                r--;
             }
-
-            int size = elements.size();
-            int rotateIndex = k % size;
-            int index = rotateIndex;
-
-            // Top row
-            for(int col = left; col <= right; col++) {
-                grid[top][col] = elements[index];
+            int index=k%elements.size();
+            r=0;c=0;
+            while(c<n){
+                grid[r+dx][c+dy]=elements[index];
                 index++;
-
-                if(index == size) {
-                    index = 0;
-                }
+                if(index==elements.size())
+                index=0;
+                c++;
             }
-
-            // Right column
-            for(int row = top + 1; row <= bottom - 1; row++) {
-                grid[row][right] = elements[index];
+            r=1;c=(n-1);
+            while(r<m){
+                grid[r+dx][c+dy]=elements[index];
                 index++;
-
-                if(index == size) {
-                    index = 0;
-                }
+                if(index==elements.size())
+                index=0;
+                r++;
             }
-
-            // Bottom row
-            for(int col = right; col >= left; col--) {
-                grid[bottom][col] = elements[index];
+            r=(m-1);c=(n-2);
+            while(c>=0){
+                grid[r+dx][c+dy]=elements[index];
                 index++;
-
-                if(index == size) {
-                    index = 0;
-                }
+                if(index==elements.size())
+                index=0;
+                c--;
             }
-
-            // Left column
-            for(int row = bottom - 1; row >= top + 1; row--) {
-                grid[row][left] = elements[index];
+            r=(m-2);c=0;
+            while(r>=1){
+                grid[r+dx][c+dy]=elements[index];
                 index++;
-
-                if(index == size) {
-                    index = 0;
-                }
+                if(index==elements.size())
+                index=0;
+                r--;
             }
+            dx++;dy++;
+            m-=2;n-=2;
         }
-
         return grid;
     }
 };
