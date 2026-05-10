@@ -372,6 +372,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [1895-largest-magic-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1895-largest-magic-square) |
 | [1902-car-fleet-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1902-car-fleet-ii) |
+| [1914-cyclically-rotating-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1914-cyclically-rotating-a-grid) |
 | [1929-concatenation-of-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1929-concatenation-of-array) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [1952-minimum-sideway-jumps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1952-minimum-sideway-jumps) |
@@ -1165,6 +1166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [1895-largest-magic-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1895-largest-magic-square) |
+| [1914-cyclically-rotating-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1914-cyclically-rotating-a-grid) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1970-last-day-where-you-can-still-cross) |
 | [1975-maximum-matrix-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1975-maximum-matrix-sum) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
@@ -1234,6 +1236,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1545-find-kth-bit-in-nth-binary-string) |
 | [1642-water-bottles](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1642-water-bottles) |
 | [1680-concatenation-of-consecutive-binary-numbers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1680-concatenation-of-consecutive-binary-numbers) |
+| [1914-cyclically-rotating-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1914-cyclically-rotating-a-grid) |
 | [1929-concatenation-of-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1929-concatenation-of-array) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2021-remove-all-occurrences-of-a-substring) |
