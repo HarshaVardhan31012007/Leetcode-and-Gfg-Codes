@@ -24,14 +24,37 @@ public:
         //     ans+=each;
         // return ans;
 
-        sort(nums.begin(),nums.end());
+        // sort(nums.begin(),nums.end());
+        // int maxi=*max_element(nums.begin(),nums.end());
+        // vector<int>best(maxi+1,-1);
+        // for(int i=0;i<nums.size();i++){
+        //     if(best[nums[i]]!=-1) continue; 
+        //     for(int j=nums[i];j<=maxi;j+=nums[i]){
+        //         if(best[j]==-1)
+        //         best[j]=nums[i];
+        //     }
+        // }
+        // for(int i=0;i<=maxi;i++){
+        //     if(best[i]==-1)
+        //     best[i]=i;
+        // }
+        // long long ans=0;
+        // for(auto &each:nums)
+        //     ans+=best[each];
+        // return ans;
+
+
+
+        
         int maxi=*max_element(nums.begin(),nums.end());
-        vector<int>best(maxi+1,-1);
-        for(int i=0;i<nums.size();i++){
-            if(best[nums[i]]!=-1) continue; 
-            for(int j=nums[i];j<=maxi;j+=nums[i]){
+        vector<int>best(maxi+1,-2);
+        for(auto &each:nums)
+        best[each]=-1;
+        for(int i=0;i<=maxi;i++){
+            if(best[i]!=-1) continue; 
+            for(int j=i;j<=maxi;j+=i){
                 if(best[j]==-1)
-                best[j]=nums[i];
+                best[j]=i;
             }
         }
         for(int i=0;i<=maxi;i++){
