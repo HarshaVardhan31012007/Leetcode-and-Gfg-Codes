@@ -7,10 +7,7 @@ public:
                 ans+=solve(adj,i,n,adjList,hasApple);
             }
         }
-        if(hasApple[i]&&p!=-1)
-        ans+=2;
-        else if(ans>0&&p!=-1)
-        ans+=2;
+        if(p!=-1&&(hasApple[i]||ans>0)) ans+=2;
         return ans;
     }
     int minTime(int n, vector<vector<int>>& edges, vector<bool>& hasApple) {
