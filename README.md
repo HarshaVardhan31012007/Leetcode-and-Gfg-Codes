@@ -403,6 +403,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2452-words-within-two-edits-of-dictionary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2452-words-within-two-edits-of-dictionary) |
 | [2465-shifting-letters-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2465-shifting-letters-ii) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
+| [2553-separate-the-digits-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2553-separate-the-digits-in-an-array) |
 | [2597-cycle-length-queries-in-a-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2597-cycle-length-queries-in-a-tree) |
 | [2615-sum-of-distances](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2615-sum-of-distances) |
 | [2625-increment-submatrices-by-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2625-increment-submatrices-by-one) |
@@ -1250,6 +1251,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2324-find-triangular-sum-of-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2402-meeting-rooms-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2402-meeting-rooms-iii) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2408-number-of-people-aware-of-a-secret) |
+| [2553-separate-the-digits-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2553-separate-the-digits-in-an-array) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 | [3336-water-bottles-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3336-water-bottles-ii) |
 | [3379-transformed-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3379-transformed-array) |
