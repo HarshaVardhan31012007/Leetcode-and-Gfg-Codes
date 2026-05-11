@@ -1,8 +1,8 @@
 class Solution {
 public:
     vector<int> minCost(long n, vector<int>& prices, vector<vector<int>>& roads) {
-        vector<vector<long>>empty(n,vector<long>(n,LONG_MAX));
-        vector<vector<long>>full(n,vector<long>(n,LONG_MAX));
+        vector<vector<long>>empty;
+        vector<vector<long>>full;
         unordered_map<long,list<vector<long>>>adjList;
         for(auto &each:roads){
             adjList[each[0]].push_back({each[1],each[2],each[3]});
@@ -25,9 +25,7 @@ public:
                     }
                 }
             }
-            for(long dst=0;dst<n;dst++){
-                empty[src][dst]=cost[dst];
-            }
+            empty.push_back(cost);
         }
 
         for(long src=0;src<n;src++){
@@ -47,9 +45,7 @@ public:
                     }
                 }
             }
-            for(long dst=0;dst<n;dst++){
-                full[src][dst]=cost[dst];
-            }
+            full.push_back(cost);
         }
 
         vector<int>ans;
