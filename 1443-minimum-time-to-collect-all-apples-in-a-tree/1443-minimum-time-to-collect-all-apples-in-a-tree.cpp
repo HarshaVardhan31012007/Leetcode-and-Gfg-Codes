@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int solve(int i,int p,int n,unordered_map<int,list<int>>&adjList,vector<bool>&hasApple){
+    int solve(int i,int p,int n,vector<int> adjList [],vector<bool>&hasApple){
         int ans=0;
         for(auto &adj:adjList[i]){
             if(adj!=p){
@@ -14,7 +14,7 @@ public:
         return ans;
     }
     int minTime(int n, vector<vector<int>>& edges, vector<bool>& hasApple) {
-        unordered_map<int,list<int>>adjList;
+        vector<int>adjList[n];
         for(auto &each:edges){
             adjList[each[0]].push_back(each[1]);
             adjList[each[1]].push_back(each[0]);
