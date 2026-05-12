@@ -2,12 +2,9 @@ class Solution {
 public:
     int minimumEffort(vector<vector<int>>& tasks) {
         int n=tasks.size();
-        for(int i=0;i<n;i++){
-            tasks[i].push_back(tasks[i][1]-tasks[i][0]);
-        }
         sort(tasks.begin(),tasks.end(),[](vector<int>&a,vector<int>&b){
-            if(a[2]!=b[2]){
-                return a[2]>b[2];
+            if((a[1]-a[0])!=(b[1]-b[0])){
+                return (a[1]-a[0])>(b[1]-b[0]);
             } 
             else if(a[1]!=b[1]){
                 return a[1]>b[1];
