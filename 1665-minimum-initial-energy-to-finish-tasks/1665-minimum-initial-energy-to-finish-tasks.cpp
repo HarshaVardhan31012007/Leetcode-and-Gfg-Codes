@@ -3,14 +3,14 @@ public:
     int minimumEffort(vector<vector<int>>& tasks) {
         int n=tasks.size();
         sort(tasks.begin(),tasks.end(),[](vector<int>&a,vector<int>&b){
-            if((a[1]-a[0])!=(b[1]-b[0])){
+            // if((a[1]-a[0])!=(b[1]-b[0])){
                 return (a[1]-a[0])>(b[1]-b[0]);
-            } 
-            else if(a[1]!=b[1]){
-                return a[1]>b[1];
-            }
-            else
-            return a[1]<b[1];
+            // } 
+            // else if(a[1]!=b[1]){
+            //     return a[1]>b[1];
+            // }
+            // else
+            // return a[1]<b[1];
         });
         int ans=tasks[0][1];
         int temp=ans;
