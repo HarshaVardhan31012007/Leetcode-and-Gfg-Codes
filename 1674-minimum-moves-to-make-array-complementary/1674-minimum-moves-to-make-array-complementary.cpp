@@ -1,42 +1,25 @@
 class Solution {
 public:
     int minMoves(vector<int>& nums, int limit) {
-        int n = nums.size();
-
-        // difference array
-        vector<int> diff(2 * limit + 2, 0);
-
-        int a,b,low,high,sum;
-        for(int i = 0; i < n / 2; i++) {
-            a = nums[i];
-            b = nums[n - 1 - i];
-
-            low = min(a, b) + 1;
-            high = max(a, b) + limit;
-
-            sum = a + b;
-
-            // initially all sums need 2 moves
-            diff[2] += 2;
-            diff[2 * limit + 1] -= 2;
-
-            // one move range
-            diff[low] -= 1;
-            diff[high + 1] += 1;
-
-            // exact sum needs 0 move
-            diff[sum] -= 1;
-            diff[sum + 1] += 1;
+        int n=nums.size();
+        vector<int>v(2*limit+2,0);
+        for(int i=0;i<n/2;i++){
+            int mini=min(nums[i],nums[n-i-1])+1;
+            int maxi=max(nums[i],nums[n-i-1])+limit;
+            int curr=nums[i]+nums[n-i-1];
+            v[2]+=2;
+            v[mini]+=-2;
+            v[mini]+=1;
+            v[curr]+=-1;
+            v[curr+1]+=1;
+            v[maxi+1]+=-1;
+            v[maxi+1]+=2;
         }
-
-        int ans = INT_MAX;
-        int moves = 0;
-
-        // calculate prefix sum
-        for(int target = 2; target <= 2 * limit; target++) {
-            moves += diff[target];
-            ans = min(ans, moves);
+        int mini=INT_MAX;
+        for(int i=2;i<=2*limit;i++){
+            v[i]+=v[i-1];
+            mini=min(mini,v[i]);
         }
-        return ans;
+        return mini;
     }
 };
