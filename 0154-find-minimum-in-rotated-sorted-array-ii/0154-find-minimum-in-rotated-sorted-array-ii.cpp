@@ -42,22 +42,41 @@ public:
         // return ans;
 
 
+        // int n = nums.size();
+        // int s=0;
+        // int e=n-1;
+        // int ans=INT_MAX;
+        // while(s<=e){
+        //     int mid=s+(e-s)/2;
+        //     if(nums[mid]<ans)
+        //     ans=nums[mid];
+        //     if(nums[mid]>nums[e]){
+        //         s=mid+1;
+        //     }
+        //     else if(nums[mid]<nums[e]){
+        //         e=mid-1;
+        //     }
+        //     else{
+        //         e--;
+        //     }
+        // }
+        // return ans;
+
+
         int n = nums.size();
         int s=0;
         int e=n-1;
         int ans=INT_MAX;
         while(s<=e){
+            while(s<e&&nums[e]==nums[e-1]) e--;
             int mid=s+(e-s)/2;
             if(nums[mid]<ans)
             ans=nums[mid];
-            if(nums[mid]>nums[e]){
+            if(nums[mid]>=nums[e]){
                 s=mid+1;
             }
-            else if(nums[mid]<nums[e]){
-                e=mid-1;
-            }
             else{
-                e--;
+                e=mid-1;
             }
         }
         return ans;
