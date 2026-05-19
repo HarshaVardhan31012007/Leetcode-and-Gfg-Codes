@@ -1,49 +1,41 @@
 class Solution {
 public:
-    vector<int> spiralOrder(vector<vector<int>>& arr) {
+    vector<int> spiralOrder(vector<vector<int>>& matrix) {
         vector<int>ans;
-        int m= arr.size();
-        int n= arr[0].size();
-        int p = m*n;
-
-        int i1 = 0;
-        int j2 = n-1;
-        int j1 = 0;
-        int i2 = m-1;
-
-        
-        int count=0;
-        while(count<p){
-    
-        for(int j=j1;j<=j2&&count<p;j++){
-        ans.push_back(arr[i1][j]);
-        count++;
+        int m=matrix.size();
+        int n=matrix[0].size();
+        int dx=0;int dy=0;
+        while(m>=1&&n>=1){
+            int i=0;
+            int j=0;
+            while(j<n){
+                ans.push_back(matrix[i+dx][j+dy]);
+                j++;
+            }
+            j=n-1;
+            i=1;
+            while(i<m){
+                ans.push_back(matrix[i+dx][j+dy]);
+                i++;
+            }
+            if(m==1) break;
+            i=m-1;
+            j=n-2;
+            while(j>=0){
+                ans.push_back(matrix[i+dx][j+dy]);
+                j--;
+            }
+            if(n==1) break;
+            i=m-2;
+            j=0;
+            while(i>=1){
+                ans.push_back(matrix[i+dx][j+dy]);
+                i--;
+            }
+            m-=2;
+            n-=2;
+            dx++;dy++;
         }
-
-        i1++;
-        
-        for(int i=i1;i<=i2&&count<p;i++){
-        ans.push_back(arr[i][j2]);
-        count++;
-        }
-        j2--;
-
-        for(int j=j2;j>=j1&&count<p;j--){
-        ans.push_back(arr[i2][j]);
-        count++;
-        }
-        i2--;
-
-        for(int i=i2;i>=i1&&count<p;i--){
-        ans.push_back(arr[i][j1]);
-        count++;
-        }
-        j1++;
-
-
-        }
-
-     return ans;
-
+        return ans;
     }
 };
