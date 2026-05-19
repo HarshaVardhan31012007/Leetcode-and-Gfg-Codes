@@ -1,46 +1,35 @@
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
-        int m=matrix.size();int n=matrix[0].size();
-        // queue<pair<int,int>>q;
-        // for(int i=0;i<m;i++){
-        //     for(int j=0;j<n;j++){
-        //         if(matrix[i][j]==0){
-        //          q.push({i,j});
-        //         }
-        //     }
-        // }
-        // while(!q.empty()){
-        //     auto p=q.front();
-        //     q.pop();
-        //     fill(matrix[p.first].begin(),matrix[p.first].end(),0);
-        //     for(int i=0;i<m;i++){
-        //         matrix[i][p.second]=0;
-        //     }
-        // }
-
-     //less optimal // two sets for track row indices and col indices visited O(M+N)
-
-    //optimal//O(1)
-
-       int col0=1;
-       for(int i=0;i<m;i++){
-        if(matrix[i][0]==0) col0=0;
+        int m=matrix.size();
+        int n=matrix[0].size();
+        bool r=false;
+        bool c=false;
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                if(i==0&&matrix[i][j]==0) r=true;
+                if(j==0&&matrix[i][j]==0) c=true;
+                if(matrix[i][j]==0){
+                    matrix[i][0]=0;
+                    matrix[0][j]=0;
+                }
+            }
+        }
+        for(int i=1;i<m;i++){
+            for(int j=1;j<n;j++){
+                if(matrix[i][0]==0||matrix[0][j]==0)
+                matrix[i][j]=0;
+            }
+        }
         for(int j=1;j<n;j++){
-            if(matrix[i][j]==0){
-                matrix[i][0]=0;
+            if(r){
                 matrix[0][j]=0;
             }
         }
-       }
-       for(int i=m-1;i>=0;i--){   // i=0 should be last  because i=0  row change
-    //affect remaining rows by matrix[0][j]==0
-        for(int j=1;j<n;j++){
-           if(matrix[i][0]==0||matrix[0][j]==0)
-           matrix[i][j]=0;
+        for(int i=1;i<m;i++){
+            if(c){
+                matrix[i][0]=0;
+            }
         }
-        if(col0==0) matrix[i][0]=0;
-       }
-
     }
 };
