@@ -15,9 +15,18 @@ public:
         // return -1;
 
 
-        unordered_set<int>st(nums2.begin(),nums2.end());
+        // unordered_set<int>st(nums2.begin(),nums2.end());
+        // for(auto &each:nums1){
+        //     if(st.count(each)){
+        //         return each;
+        //     }
+        // }
+        // return -1;
+
+
+        
         for(auto &each:nums1){
-            if(st.count(each)){
+            if(binary_search(nums2.begin(),nums2.end(),each)){
                 return each;
             }
         }
