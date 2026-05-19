@@ -96,13 +96,12 @@ public:
         for(auto &each:nums)
         st.insert(each);
         int ans=0;
-        for(auto &each:nums){
+        for(auto &each:st){
             if(st.find(each-1)==st.end()){
                 int temp=0;
                 int num=each;
                 while(st.count(num)){
                     temp++;
-                    st.erase(num);
                     num++;
                 }
                 ans=max(ans,temp);
