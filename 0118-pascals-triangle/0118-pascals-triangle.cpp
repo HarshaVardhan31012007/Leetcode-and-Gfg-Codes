@@ -2,13 +2,12 @@ class Solution {
 public:
     vector<vector<int>> generate(int numRows) {
         vector<vector<int>>ans;
-        int n=numRows;
-        for(int i=0;i<n;i++){
-            vector<int>temp(1,1);
+        for(int i=0;i<numRows;i++){
             int c=1;
-            for(int j=1;j<=i;j++){
-                c=c*(i-j+1)/j;
+            vector<int>temp;
+            for(int j=0;j<=i;j++){
                 temp.push_back(c);
+                c=c*(i-j)/(j+1);
             }
             ans.push_back(temp);
         }
