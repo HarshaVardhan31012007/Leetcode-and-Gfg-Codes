@@ -1,20 +1,39 @@
 class Solution {
 public:
     vector<int> findThePrefixCommonArray(vector<int>& A, vector<int>& B) {
+        // vector<int>ans;
+        // int c=0;
+        // unordered_set<int>st;
+        // unordered_set<int>st1;
+        // for(int i=0;i<A.size();i++){
+        //     if(A[i]==B[i]){
+        //         c++;
+        //     }
+        //     else{
+        //         if(st1.count(A[i])) c++;
+        //         if(st.count(B[i])) c++;
+        //     }
+        //     st.insert(A[i]);
+        //     st1.insert(B[i]);
+        //     ans.push_back(c);
+        // }
+        // return ans;
+
+
+        int n=A.size();
         vector<int>ans;
+        vector<pair<int,int>>visited(n,{0,0});
         int c=0;
-        unordered_set<int>st;
-        unordered_set<int>st1;
         for(int i=0;i<A.size();i++){
             if(A[i]==B[i]){
                 c++;
             }
             else{
-                if(st1.count(A[i])) c++;
-                if(st.count(B[i])) c++;
+                if(visited[A[i]-1].second==1) c++;
+                if(visited[B[i]-1].first==1) c++;
             }
-            st.insert(A[i]);
-            st1.insert(B[i]);
+            visited[A[i]-1].first=1;
+            visited[B[i]-1].second=1;
             ans.push_back(c);
         }
         return ans;
