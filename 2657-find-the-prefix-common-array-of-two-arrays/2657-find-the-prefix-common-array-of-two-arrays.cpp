@@ -74,13 +74,32 @@ public:
         // }
         // return ans;
 
+        // int n=A.size();
+        // vector<int>ans;
+        // vector<int>freq(n+1,0);
+        // int c=0;
+        // for(int i=0;i<A.size();i++){
+        //     if(++freq[A[i]]==2) c++;
+        //     if(++freq[B[i]]==2) c++;
+        //     ans.push_back(c);
+        // }
+        // return ans;
+
+
+
         int n=A.size();
         vector<int>ans;
-        vector<int>freq(n+1,0);
+        vector<int>seen(51,0);
+        int mask=0;
         int c=0;
         for(int i=0;i<A.size();i++){
-            if(++freq[A[i]]==2) c++;
-            if(++freq[B[i]]==2) c++;
+            if(A[i]==B[i]) c++;
+            else{
+                if(seen[A[i]]) c++;
+                if(seen[B[i]]) c++;
+            }
+            seen[A[i]]=1;
+            seen[B[i]]=1;
             ans.push_back(c);
         }
         return ans;
