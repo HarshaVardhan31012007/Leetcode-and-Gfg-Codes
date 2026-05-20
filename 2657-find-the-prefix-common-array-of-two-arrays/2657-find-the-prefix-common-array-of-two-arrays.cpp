@@ -57,22 +57,32 @@ public:
         //return ans;
 
 
+        // vector<int>ans;
+        // int c=0;
+        // unordered_set<int>st;
+        // for(int i=0;i<A.size();i++){
+        //     if(A[i]==B[i]){
+        //         c++;
+        //     }
+        //     else{
+        //         if(st.count(A[i])) c++;
+        //         if(st.count(B[i])) c++;
+        //     }
+        //     st.insert(A[i]);
+        //     st.insert(B[i]);
+        //     ans.push_back(c);
+        // }
+        // return ans;
+
+        int n=A.size();
         vector<int>ans;
+        vector<int>freq(n+1,0);
         int c=0;
-        unordered_set<int>st;
         for(int i=0;i<A.size();i++){
-            if(A[i]==B[i]){
-                c++;
-            }
-            else{
-                if(st.count(A[i])) c++;
-                if(st.count(B[i])) c++;
-            }
-            st.insert(A[i]);
-            st.insert(B[i]);
+            if(++freq[A[i]]==2) c++;
+            if(++freq[B[i]]==2) c++;
             ans.push_back(c);
         }
         return ans;
-
     }
 };
