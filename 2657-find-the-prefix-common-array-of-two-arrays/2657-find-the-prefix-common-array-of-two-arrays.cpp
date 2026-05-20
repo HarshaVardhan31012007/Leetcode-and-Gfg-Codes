@@ -39,21 +39,40 @@ public:
         // return ans;
 
 
-        int n=A.size();
+        // int n=A.size();
+        // vector<int>ans;
+        // vector<int>freq(n,0);
+        // int c=0;
+        // for(int i=0;i<A.size();i++){
+        //     freq[A[i]-1]++;
+        //     freq[B[i]-1]++;
+        //     if(freq[A[i]-1]==2){
+        //         c++;
+        //     }
+        //     if(A[i]!=B[i]&&freq[B[i]-1]==2){
+        //         c++;
+        //     }
+        //     ans.push_back(c);
+        // }
+        //return ans;
+
+
         vector<int>ans;
-        vector<int>freq(n,0);
         int c=0;
+        unordered_set<int>st;
         for(int i=0;i<A.size();i++){
-            freq[A[i]-1]++;
-            freq[B[i]-1]++;
-            if(freq[A[i]-1]==2){
+            if(A[i]==B[i]){
                 c++;
             }
-            if(A[i]!=B[i]&&freq[B[i]-1]==2){
-                c++;
+            else{
+                if(st.count(A[i])) c++;
+                if(st.count(B[i])) c++;
             }
+            st.insert(A[i]);
+            st.insert(B[i]);
             ans.push_back(c);
         }
         return ans;
+
     }
 };
