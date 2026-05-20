@@ -105,17 +105,35 @@ public:
         // return ans;
 
 
+        // int n=A.size();
+        // long long mask=0;int c=0;
+        // vector<int>ans;
+        // for(int i=0;i<n;i++){
+        //     if(A[i]==B[i]) c++;
+        //     else{
+        //         if((mask&(1LL<<A[i]))) c++;
+        //         if((mask&(1LL<<B[i]))) c++;
+        //     }
+        //     mask=(mask|(1LL<<A[i]));
+        //     mask=(mask|(1LL<<B[i]));
+        //     ans.push_back(c);
+        // }
+        // return ans;
+
+
+
         int n=A.size();
-        long long mask=0;int c=0;
         vector<int>ans;
-        for(int i=0;i<n;i++){
+        bitset<64>seen;
+        int c=0;
+        for(int i=0;i<A.size();i++){
             if(A[i]==B[i]) c++;
             else{
-                if((mask&(1LL<<A[i]))) c++;
-                if((mask&(1LL<<B[i]))) c++;
+                if(seen[A[i]]) c++;
+                if(seen[B[i]]) c++;
             }
-            mask=(mask|(1LL<<A[i]));
-            mask=(mask|(1LL<<B[i]));
+            seen[A[i]]=1;
+            seen[B[i]]=1;
             ans.push_back(c);
         }
         return ans;
