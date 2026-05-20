@@ -20,20 +20,38 @@ public:
         // return ans;
 
 
+        // int n=A.size();
+        // vector<int>ans;
+        // vector<pair<int,int>>visited(n,{0,0});
+        // int c=0;
+        // for(int i=0;i<A.size();i++){
+        //     if(A[i]==B[i]){
+        //         c++;
+        //     }
+        //     else{
+        //         if(visited[A[i]-1].second==1) c++;
+        //         if(visited[B[i]-1].first==1) c++;
+        //     }
+        //     visited[A[i]-1].first=1;
+        //     visited[B[i]-1].second=1;
+        //     ans.push_back(c);
+        // }
+        // return ans;
+
+
         int n=A.size();
         vector<int>ans;
-        vector<pair<int,int>>visited(n,{0,0});
+        vector<int>freq(n,0);
         int c=0;
         for(int i=0;i<A.size();i++){
-            if(A[i]==B[i]){
+            freq[A[i]-1]++;
+            freq[B[i]-1]++;
+            if(freq[A[i]-1]==2){
                 c++;
             }
-            else{
-                if(visited[A[i]-1].second==1) c++;
-                if(visited[B[i]-1].first==1) c++;
+            if(A[i]!=B[i]&&freq[B[i]-1]==2){
+                c++;
             }
-            visited[A[i]-1].first=1;
-            visited[B[i]-1].second=1;
             ans.push_back(c);
         }
         return ans;
