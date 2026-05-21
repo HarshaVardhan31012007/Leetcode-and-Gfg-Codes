@@ -2,6 +2,7 @@ class Solution {
 public:
     int longestCommonPrefix(vector<int>& arr1, vector<int>& arr2) {
         unordered_set<int>st;
+        if(arr1.size()>arr2.size()) arr1.swap(arr2);
         for(int i=0;i<arr1.size();i++){
             int temp=arr1[i];
             while(temp){
