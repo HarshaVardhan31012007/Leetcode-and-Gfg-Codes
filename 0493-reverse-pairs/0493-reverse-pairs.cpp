@@ -9,8 +9,6 @@ public:
                 temp[k++]=nums[i++];
             }
             else{
-                int idx=upper_bound(nums.begin()+s,nums.begin()+mid+1,1LL*nums[j]*2)-(nums.begin()+i);
-                c+=(mid-(idx+i)+1);
                 temp[k++]=nums[j++];
             }
         }
@@ -18,13 +16,23 @@ public:
             temp[k++]=nums[i++];
         }
         while(j<=e){
-            int idx=upper_bound(nums.begin()+s,nums.begin()+mid+1,1LL*nums[j]*2)-(nums.begin()+i);
-                c+=(mid-(idx+i)+1);
             temp[k++]=nums[j++];
         }
         for(int i=s;i<=e;i++){
             nums[i]=temp[i-s];
         }
+        return c;
+    }
+    int countPairs(vector<int>&nums,int s,int mid,int e){
+        int left=mid;
+        int c=0;
+        for(int right=e;right>mid;right--){
+             while(left>=s&&nums[left]>2LL*nums[right]){
+                left--;
+             }
+             c+=(mid-left);
+        }
+        cout<<s<<" "<<mid<<" "<<e<<" "<<c<<endl;
         return c;
     }
     int mergeSort(vector<int>&nums,int s,int e){
@@ -33,7 +41,8 @@ public:
         int c=0;
         c+=mergeSort(nums,s,mid);
         c+=mergeSort(nums,mid+1,e);
-        c+=merge(nums,s,mid,e);
+        c+=countPairs(nums,s,mid,e);
+        merge(nums,s,mid,e);
         return c;
     }
     int reversePairs(vector<int>& nums) {
