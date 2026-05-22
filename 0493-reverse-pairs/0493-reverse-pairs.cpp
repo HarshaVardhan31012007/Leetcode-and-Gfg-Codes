@@ -32,7 +32,6 @@ public:
              }
              c+=(mid-left);
         }
-        cout<<s<<" "<<mid<<" "<<e<<" "<<c<<endl;
         return c;
     }
     int mergeSort(vector<int>&nums,int s,int e){
