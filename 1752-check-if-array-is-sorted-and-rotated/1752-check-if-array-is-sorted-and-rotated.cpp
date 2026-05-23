@@ -26,15 +26,28 @@ public:
 
 
 
+        // int n=nums.size();
+        // int c=0;
+        // for(int i=1;i<n;i++){
+        //     if(nums[i]>=nums[i-1]){
+        //         c++;
+        //     }
+        // }
+        // if(c==(n-1)) return true;
+        // if(c==(n-2)) return nums[0]>=nums[n-1];
+        // return false;
+
+
+
         int n=nums.size();
         int c=0;
         for(int i=1;i<n;i++){
-            if(nums[i]>=nums[i-1]){
+            if(nums[i]<nums[i-1]){
                 c++;
             }
         }
-        if(c==(n-1)) return true;
-        if(c==(n-2)) return nums[0]>=nums[n-1];
+        if(c==0) return true;
+        if(c==1&&nums[n-1]<=nums[0]) return true;
         return false;
     }
 };
