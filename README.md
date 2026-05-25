@@ -935,6 +935,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1590-make-sum-divisible-by-p](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1590-make-sum-divisible-by-p) |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1674-minimum-moves-to-make-array-complementary) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1838-frequency-of-the-most-frequent-element) |
+| [1871-jump-game-vii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1871-jump-game-vii) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1895-largest-magic-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1895-largest-magic-square) |
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1930-unique-length-3-palindromic-subsequences) |
@@ -1127,6 +1128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1758-distribute-repeating-integers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1758-distribute-repeating-integers) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1824-minimum-sideway-jumps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1824-minimum-sideway-jumps) |
+| [1871-jump-game-vii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1871-jump-game-vii) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [1931-painting-a-grid-with-three-different-colors](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1931-painting-a-grid-with-three-different-colors) |
 | [1952-minimum-sideway-jumps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1952-minimum-sideway-jumps) |
@@ -1251,6 +1253,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1838-frequency-of-the-most-frequent-element) |
+| [1871-jump-game-vii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1871-jump-game-vii) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [3013-divide-an-array-into-subarrays-with-minimum-cost-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3013-divide-an-array-into-subarrays-with-minimum-cost-ii) |
@@ -1412,6 +1415,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1689-partitioning-into-minimum-number-of-deci-binary-numbers) |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1784-check-if-binary-string-has-at-most-one-segment-of-ones) |
+| [1871-jump-game-vii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1871-jump-game-vii) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | [1890-sum-of-beauty-of-all-substrings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1890-sum-of-beauty-of-all-substrings) |
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1930-unique-length-3-palindromic-subsequences) |
