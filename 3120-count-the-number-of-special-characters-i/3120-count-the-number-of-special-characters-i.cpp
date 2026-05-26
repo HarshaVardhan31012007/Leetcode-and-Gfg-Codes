@@ -1,29 +1,19 @@
 class Solution {
 public:
     int numberOfSpecialChars(string word) {
-        int arr[26]={0};
-        int c=0;
-        for(auto &each:word){
-            int idx;
-            if(isupper(each)){
-               idx=each-'A';
-               if(arr[idx]==-1||arr[idx]==0)
-               arr[idx]++;
-               if(arr[idx]==0){
-                  c++;
-                  arr[idx]=50;
-               }
-            }
-            else{
-               idx=each-'a';
-               if(arr[idx]==1||arr[idx]==0)
-               arr[idx]--;
-               if(arr[idx]==0){
-                  c++;
-                  arr[idx]=50;
-               }
+        unordered_map<char,int>mpp;
+        int count=0;
+        for(auto &each:word)
+        mpp[each]++;
+        for(auto &each:mpp){
+            if(islower(each.first)){
+                if(mpp[each.first]>=1&&mpp[(char)((each.first-'a')+'A')]>=1){
+                   count++;
+                   mpp[each.first]=0;
+                   mpp[(each.first-'a')+'A']=0;
+                }
             }
         }
-        return c;
+        return count;
     }
 };
