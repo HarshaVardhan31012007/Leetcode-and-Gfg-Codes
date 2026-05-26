@@ -19,7 +19,6 @@ public:
     bool canReach(string s, int minJump, int maxJump) {
         int n=s.length();
         if(s[n-1]=='1') return false;
-        cout<<n<<endl;
         vector<int>visited(n,0);
         return dfs(0,0,s,n,minJump,maxJump,visited);
     }
