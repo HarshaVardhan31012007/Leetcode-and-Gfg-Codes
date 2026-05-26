@@ -18,7 +18,7 @@ public:
             }
             if(arr[idx]+brr[idx]==2){
                c++;
-               brr[idx]++;
+               arr[idx]=brr[idx]=-1;
             }
         }
         return c;
