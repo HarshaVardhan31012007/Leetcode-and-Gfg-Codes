@@ -329,6 +329,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1292-maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold) |
 | [1306-jump-game-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1306-jump-game-iii) |
 | [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
+| [1340-jump-game-v](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1340-jump-game-v) |
 | [1345-jump-game-iv](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1345-jump-game-iv) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1353-find-resultant-array-after-removing-anagrams) |
@@ -665,6 +666,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1262-greatest-sum-divisible-by-three](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1268-search-suggestions-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1268-search-suggestions-system) |
 | [1290-make-array-strictly-increasing](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1290-make-array-strictly-increasing) |
+| [1340-jump-game-v](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1340-jump-game-v) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1353-find-resultant-array-after-removing-anagrams) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
@@ -1108,6 +1110,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1290-make-array-strictly-increasing](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1290-make-array-strictly-increasing) |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1312-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1330-longest-arithmetic-subsequence-of-given-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1330-longest-arithmetic-subsequence-of-given-difference) |
+| [1340-jump-game-v](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1340-jump-game-v) |
 | [1367-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1367-maximum-height-by-stacking-cuboids) |
 | [1388-pizza-with-3n-slices](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1388-pizza-with-3n-slices) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1402-count-square-submatrices-with-all-ones) |
