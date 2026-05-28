@@ -16,7 +16,7 @@ public:
         }
     }
     void insert(Trie* root,string &str,int index,int maxi,vector<string>& wordsContainer){
-        for(int i=(int)str.length()-1;i>=0&&maxi>=0;i--,maxi--){
+        for(int i=(int)str.length()-1;i>=0;i--){
             if(root->children[str[i]-'a']==NULL)
             root->children[str[i]-'a']=new Trie();
             root=root->children[str[i]-'a'];
