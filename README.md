@@ -269,6 +269,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0840-magic-squares-in-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0840-magic-squares-in-grid) |
 | [0860-lemonade-change](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0860-lemonade-change) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0871-minimum-number-of-refueling-stops) |
+| [0875-koko-eating-bananas](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0875-koko-eating-bananas) |
 | [0877-stone-game](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0877-stone-game) |
 | [0878-shifting-letters](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0878-shifting-letters) |
 | [0882-peak-index-in-a-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0882-peak-index-in-a-mountain-array) |
@@ -880,6 +881,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-swim-in-rising-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0778-swim-in-rising-water) |
 | [0792-binary-search](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0792-binary-search) |
 | [0794-swim-in-rising-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0794-swim-in-rising-water) |
+| [0875-koko-eating-bananas](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0875-koko-eating-bananas) |
 | [0882-peak-index-in-a-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0882-peak-index-in-a-mountain-array) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [0907-koko-eating-bananas](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0907-koko-eating-bananas) |
