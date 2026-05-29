@@ -1,31 +1,36 @@
 class Solution {
 public:
-    bool possible(vector<int>&nums,int mid,int k){
-        int c=1;int sum=0;
-        for(int i=0;i<nums.size();i++){
-           if(sum+nums[i]<=mid)
-           sum+=nums[i];
-           else{
-            c++;
-            if(c>k) return false;
-            sum=nums[i];
-           }
+    typedef long long ll;
+    bool possible(vector<int>&arr,int mid,int k){
+        int n=arr.size();
+        ll sum=0;int c=1;
+        for(int i=0;i<n;i++){
+            if(sum+arr[i]<=mid){
+                sum+=arr[i];
+            }
+            else{
+                c++;
+                sum=arr[i];
+                if(c>k) return false;
+            }
         }
         return true;
     }
-    int splitArray(vector<int>& nums, int k) {
-        if(k>nums.size()) return -1;
-        int s=*max_element(nums.begin(),nums.end());
-        int e=accumulate(nums.begin(),nums.end(),0);
-        int ans=-1;
+    int splitArray(vector<int> &arr, int k) {
+        int n=arr.size();
+        if(k>n) return -1;
+        ll s=*max_element(arr.begin(),arr.end());
+        ll e=accumulate(arr.begin(),arr.end(),0);
+        int ans;
         while(s<=e){
-            int mid=s+(e-s)/2;
-            if(possible(nums,mid,k)){
-               ans=mid;
-               e=mid-1;
+            ll mid=s+(e-s)/2;
+            if(possible(arr,mid,k)){
+                ans=mid;
+                e=mid-1;
             }
-            else
-            s=mid+1;
+            else{
+                s=mid+1;
+            }
         }
         return ans;
     }
