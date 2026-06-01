@@ -426,6 +426,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2553-separate-the-digits-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2553-separate-the-digits-in-an-array) |
 | [2597-cycle-length-queries-in-a-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2597-cycle-length-queries-in-a-tree) |
 | [2615-sum-of-distances](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2615-sum-of-distances) |
+| [2616-minimize-the-maximum-difference-of-pairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2616-minimize-the-maximum-difference-of-pairs) |
 | [2625-increment-submatrices-by-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2625-increment-submatrices-by-one) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
@@ -702,6 +703,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2274-keep-multiplying-found-values-by-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2402-meeting-rooms-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2402-meeting-rooms-iii) |
+| [2616-minimize-the-maximum-difference-of-pairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2616-minimize-the-maximum-difference-of-pairs) |
 | [2784-check-if-array-is-good](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2784-check-if-array-is-good) |
 | [2943-maximize-area-of-square-hole-in-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2943-maximize-area-of-square-hole-in-grid) |
 | [3010-divide-an-array-into-subarrays-with-minimum-cost-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3010-divide-an-array-into-subarrays-with-minimum-cost-i) |
@@ -924,6 +926,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2150-kth-smallest-product-of-two-sorted-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2150-kth-smallest-product-of-two-sorted-arrays) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2540-minimum-common-value](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2540-minimum-common-value) |
+| [2616-minimize-the-maximum-difference-of-pairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2616-minimize-the-maximum-difference-of-pairs) |
 | [3161-block-placement-queries](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3161-block-placement-queries) |
 | [3296-minimum-number-of-seconds-to-make-mountain-height-zero](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3296-minimum-number-of-seconds-to-make-mountain-height-zero) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3437-maximum-total-damage-with-spell-casting) |
@@ -1166,6 +1169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
+| [2616-minimize-the-maximum-difference-of-pairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2616-minimize-the-maximum-difference-of-pairs) |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2977-minimum-cost-to-convert-string-ii) |
 | [3122-minimum-number-of-operations-to-satisfy-conditions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3122-minimum-number-of-operations-to-satisfy-conditions) |
@@ -1580,6 +1584,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2126-destroying-asteroids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2126-destroying-asteroids) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
+| [2616-minimize-the-maximum-difference-of-pairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2616-minimize-the-maximum-difference-of-pairs) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3075-maximize-happiness-of-selected-children) |
 | [3262-find-polygon-with-the-largest-perimeter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3262-find-polygon-with-the-largest-perimeter) |
