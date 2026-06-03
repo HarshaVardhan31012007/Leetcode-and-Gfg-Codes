@@ -1,57 +1,55 @@
 class Solution {
 public:
-    // string longestCommonPrefix(vector<string>& strs) {
-    //     int i=0;
-    //     string ans="";
-    //     while(1){
-    //         char ch=0;
-    //         for(int j=0;j<strs.size();j++){
-    //             if(i>=strs[j].length()) return ans;
-    //             if(ch==0)
-    //             ch=strs[j][i];
-    //             else{
-    //                 if(ch!=strs[j][i]) return ans;
-    //             }
-    //         }
-    //         ans+=strs[0][i];
-    //         i++;
-    //     }
-    //     return "";
-    // }
-
-
-
-    class TrieNode{
-       public:
-       char data;
-       unordered_map<char,TrieNode*>children;
-       bool isterminal;
-       TrieNode(char val){
-          this->data=val;
-          this->isterminal=false;
-       }
-    };
-    void insertHelp(TrieNode* root,string word,int i){
-        if(i>=word.length()){
-            root->isterminal=true;
-            return;
+    class Trie{
+        public:
+        char data;
+        Trie* children[26];
+        bool isterminal;
+        Trie(char val){
+            this->data=val;
+            for(int i=0;i<26;i++)
+            this->children[i]=NULL;
+            this->isterminal=false;
         }
-        if(root->children.find(word[i])==root->children.end())
-        root->children[word[i]]=new TrieNode(word[i]);
-        insertHelp(root->children[word[i]],word,i+1);
+    };
+    void insert(Trie* root,string &each){
+        for(int i=0;i<each.length();i++){
+            if(root->children[each[i]-'a']==NULL){
+                root->children[each[i]-'a']=new Trie(each[i]);
+            }
+            root=root->children[each[i]-'a'];
+        }
+        root->isterminal=true;
     }
     string longestCommonPrefix(vector<string>& strs) {
-       TrieNode* root=new TrieNode('-');
-       for(auto &str:strs){
-          insertHelp(root,str,0);
-       }
-       string ans="";
-       while(root->children.size()==1){
-           if(root->isterminal) return ans;//like ["","b"] ans is "" and ["a","ab"]
-           auto it=root->children.begin();
-           ans+=it->first;
-           root=it->second;
-       }
-       return ans;
+        Trie* root=new Trie('-');
+        for(auto &each:strs){
+           insert(root,each);
+        }
+        bool flag=true;
+        Trie* root1=root;
+        string ans="";
+        if(root->isterminal) return ans;
+        while(1){
+            Trie* temp=NULL;
+            for(int i=0;i<26;i++){
+                 if(temp==NULL&&root1->children[i])
+                 temp=root1->children[i];
+                 else if(temp&&root1->children[i]){
+                    flag=false;
+                    break;
+                 }
+            }
+            if(temp==NULL) break;
+            if(flag){
+                ans+=temp->data;
+                root1=temp;
+                if(temp->isterminal) return ans;
+            }
+            else{
+                break;
+            }
+        }
+        return ans;
     }
 };
