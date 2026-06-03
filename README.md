@@ -1462,6 +1462,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1544-make-the-string-great](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1544-make-the-string-great) |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1545-find-kth-bit-in-nth-binary-string) |
+| [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1689-partitioning-into-minimum-number-of-deci-binary-numbers) |
@@ -1546,6 +1547,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1544-make-the-string-great](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1544-make-the-string-great) |
 | [1582-design-browser-history](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1582-design-browser-history) |
+| [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [1902-car-fleet-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1902-car-fleet-ii) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2021-remove-all-occurrences-of-a-substring) |
