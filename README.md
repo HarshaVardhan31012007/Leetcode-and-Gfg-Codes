@@ -208,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0354-russian-doll-envelopes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0354-russian-doll-envelopes) |
 | [0368-largest-divisible-subset](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0368-largest-divisible-subset) |
 | [0377-combination-sum-iv](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0377-combination-sum-iv) |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0380-insert-delete-getrandom-o1](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0380-insert-delete-getrandom-o1) |
 | [0396-rotate-function](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0396-rotate-function) |
 | [0403-frog-jump](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0403-frog-jump) |
@@ -658,6 +659,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0354-russian-doll-envelopes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0354-russian-doll-envelopes) |
 | [0368-largest-divisible-subset](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0368-largest-divisible-subset) |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0435-non-overlapping-intervals](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0455-assign-cookies) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0532-k-diff-pairs-in-an-array) |
@@ -893,6 +895,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0350-intersection-of-two-arrays-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0354-russian-doll-envelopes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0354-russian-doll-envelopes) |
 | [0374-guess-number-higher-or-lower](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0374-guess-number-higher-or-lower) |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0410-split-array-largest-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0410-split-array-largest-sum) |
 | [0493-reverse-pairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0493-reverse-pairs) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0532-k-diff-pairs-in-an-array) |
@@ -1218,6 +1221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0200-number-of-islands) |
 | [0221-maximal-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0221-maximal-square) |
 | [0240-search-a-2d-matrix-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0240-search-a-2d-matrix-ii) |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0407-trapping-rain-water-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0417-pacific-atlantic-water-flow) |
 | [0463-island-perimeter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0463-island-perimeter) |
@@ -1744,6 +1748,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0347-top-k-frequent-elements) |
 | [0355-design-twitter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0355-design-twitter) |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0407-trapping-rain-water-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0407-trapping-rain-water-ii) |
 | [0621-task-scheduler](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0621-task-scheduler) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
