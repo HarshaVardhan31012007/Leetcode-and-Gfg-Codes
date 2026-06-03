@@ -4,9 +4,8 @@ class Solution {
         reverse(s.begin(),s.end());
         int n=s.length();
         int i=0;int j=0;
+        while(j<n&&s[j]==' ') j++;
         while(j<n){
-            while(j<n&&s[j]==' ') j++;
-            if(j==n) break;
             int start=i;
             while(j<n&&s[j]!=' '){
                 s[i++]=s[j++];
