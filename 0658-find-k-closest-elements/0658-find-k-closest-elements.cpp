@@ -23,12 +23,6 @@ public:
         int n=arr.size();
         int idx=lower_bound(arr.begin(),arr.end(),x)-arr.begin();
         int i=idx-1;int j=idx;
-        if(idx==n){
-           i--;j--;
-        }
-        if(idx==0){
-            i++;j++;
-        }
         vector<int>ans;
         while((j-i-1)<k){
             if(i==-1){
