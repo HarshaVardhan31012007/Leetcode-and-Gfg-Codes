@@ -16,7 +16,6 @@ public:
             else{
                 ans+=mpp[string(1,s[i])];
             }
-            cout<<ans<<endl;
         }
         return ans;
     }
