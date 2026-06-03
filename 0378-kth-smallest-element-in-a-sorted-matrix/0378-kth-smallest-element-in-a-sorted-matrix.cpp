@@ -6,6 +6,7 @@ public:
         int count=0;
         for(int i=0;i<m;i++){
             auto it=upper_bound(matrix[i].begin(),matrix[i].end(),mid);
+            if(it==matrix[i].begin()) break;
             count+=it-matrix[i].begin();
         }
         return count;
