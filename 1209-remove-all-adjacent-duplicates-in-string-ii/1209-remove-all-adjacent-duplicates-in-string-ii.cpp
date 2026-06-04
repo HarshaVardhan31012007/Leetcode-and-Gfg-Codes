@@ -22,22 +22,22 @@ public:
 
 
 
-        int n=s.length();
-        int i=0;int j=0;
-        vector<int>dp(n,1);
-        while(j<n){
-            s[i++]=s[j];
-            int idx=i-1;
-            if(idx>0&&s[idx]==s[idx-1]){
-                dp[idx]=dp[idx-1]+1;
-            }
-            else
-            dp[idx]=1;
-            if(dp[idx]==k)
-            i-=k;
-            j++;
-        }
-        return s.substr(0,i);
+        // int n=s.length();
+        // int i=0;int j=0;
+        // vector<int>dp(n,1);
+        // while(j<n){
+        //     s[i++]=s[j];
+        //     int idx=i-1;
+        //     if(idx>0&&s[idx]==s[idx-1]){
+        //         dp[idx]=dp[idx-1]+1;
+        //     }
+        //     else
+        //     dp[idx]=1;
+        //     if(dp[idx]==k)
+        //     i-=k;
+        //     j++;
+        // }
+        // return s.substr(0,i);
 
 
 
@@ -68,5 +68,28 @@ public:
         //     }
         // }
         // return ans;
+
+
+
+
+        int n=s.length();
+        int i=n-1;int j=n-1;
+        vector<pair<int,int>>v;
+        for(int i=0;i<n;i++){
+            if(v.empty()){
+                v.push_back({s[i],1});
+            }
+            else if(v.back().first==s[i]){
+                v.back().second++;
+            }
+            else
+             v.push_back({s[i],1});
+             if(v.back().second==k) v.pop_back();
+        }
+        string ans="";
+        for(auto &each:v){
+            ans+=string(each.second,each.first);
+        }
+        return ans;
     }
 };
