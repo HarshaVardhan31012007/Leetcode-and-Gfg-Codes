@@ -1,46 +1,22 @@
 class Solution {
 public:
-    // string check(string &s,int i,int j){
-    //     while(i>=0&&j<s.length()){
-    //         if(s[i]==s[j]){
-    //             i--;j++;
-    //         }
-    //         else
-    //         break;
-    //     }
-    //     return s.substr(i+1,j-i-1);
-    // }
-    // string longestPalindrome(string s) {
-    //     string ans="";
-    //     for(int i=0;i<s.length();i++){
-    //         string temp=check(s,i,i);
-    //         if(temp.length()>ans.length()) ans=temp;
-    //         temp=check(s,i,i+1);
-    //         if(temp.length()>ans.length()) ans=temp;
-    //     }
-    //     return ans;
-    // }
-
-
-    
-    bool checkpalindrome(string &s,int i,int j,vector<vector<int>>&dp){
-       if(i>=j) return true; 
-       if(s[i]==s[j])
-       return dp[i][j]=checkpalindrome(s,i+1,j-1,dp);
-       else{
-          return false;
-       }
+    void find(string &s,int i,int j,int &st,int &e,int &l){
+        while(i>=0&&j<s.length()&&s[i]==s[j]){
+            i--;j++;
+        }
+        if((j-i-1)>l){
+            l=(j-i-1);
+            st=i+1;
+            e=j-1;
+        }
     }
     string longestPalindrome(string s) {
-        vector<vector<int>>dp(s.length()+1,vector<int>(s.length()+1,-1));
-        string ans="";
-        for(int i=0;i<s.length();i++){
-           for(int j=i;j<s.length();j++){
-               if(j-i+1>ans.size()&&checkpalindrome(s,i,j,dp)){
-                   ans=s.substr(i,j-i+1);
-               }
-           }
+        int n=s.length();
+        int start=-1;int end=-1;int len=INT_MIN;
+        for(int i=0;i<n;i++){
+             find(s,i,i,start,end,len);
+             find(s,i,i+1,start,end,len);
         }
-        return ans;
+        return s.substr(start,end-start+1);
     }
 };
