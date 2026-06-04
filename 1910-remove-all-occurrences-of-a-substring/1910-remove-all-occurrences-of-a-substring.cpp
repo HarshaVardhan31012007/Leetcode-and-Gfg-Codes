@@ -25,6 +25,19 @@ public:
 
 
     string removeOccurrences(string s, string part) {
+        // int m=s.length();
+        // int n=part.length();
+        // string ans;
+        // for(int i=0;i<m;i++){
+        //     ans+=s[i];
+        //     int len=ans.length();
+        //     if(len>=n&&ans.compare(len-n,n,part)==0){
+        //         ans.erase(len-n,n);
+        //     }
+        // }
+        // return ans;
+
+
         int m=s.length();
         int n=part.length();
         int j=0;
