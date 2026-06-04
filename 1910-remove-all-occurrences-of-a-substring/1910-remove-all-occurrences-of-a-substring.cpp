@@ -27,14 +27,13 @@ public:
     string removeOccurrences(string s, string part) {
         int m=s.length();
         int n=part.length();
-        string ans;
+        int j=0;
         for(int i=0;i<m;i++){
-            ans+=s[i];
-            int len=ans.length();
-            if(len>=n&&ans.compare(len-n,n,part)==0){
-                ans.erase(len-n,n);
+            s[j++]=s[i];
+            if(j>=n&&s.compare(j-n,n,part)==0){
+               j-=n;
             }
         }
-        return ans;
+        return s.substr(0,j);
     }
 };
