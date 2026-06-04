@@ -1,15 +1,15 @@
 class Solution {
 public:
-    void find(string &s,string &part){
-        int idx=s.find(part);
-        if(idx==string::npos) return;
-        s=s.substr(0,idx)+s.substr(idx+part.length());
-        find(s,part);
-    }
-    string removeOccurrences(string s, string part) {
-        find(s,part);
-        return s;
-    }
+    // void find(string &s,string &part){
+    //     int idx=s.find(part);
+    //     if(idx==string::npos) return;
+    //     s=s.substr(0,idx)+s.substr(idx+part.length());
+    //     find(s,part);
+    // }
+    // string removeOccurrences(string s, string part) {
+    //     find(s,part);
+    //     return s;
+    // }
 
 
    
@@ -21,4 +21,20 @@ public:
     //     }
     //     return s;
     // }
+
+
+
+    string removeOccurrences(string s, string part) {
+        int m=s.length();
+        int n=part.length();
+        string ans;
+        for(int i=0;i<m;i++){
+            ans+=s[i];
+            int len=ans.length();
+            if(len>=n&&ans.compare(len-n,n,part)==0){
+                ans.erase(len-n,n);
+            }
+        }
+        return ans;
+    }
 };
