@@ -40,13 +40,13 @@ public:
     string helper(string &s,int &i,int n){
         string temp="";
         while(i<n){
+            while(i<s.length()&&islower(s[i])){
+                temp+=s[i];
+                i++;
+            }
             int num=0;
             while(i<s.length()&&isdigit(s[i])){
                 num=num*10+(s[i]-'0');
-                i++;
-            }
-            while(i<s.length()&&islower(s[i])){
-                temp+=s[i];
                 i++;
             }
             if(i==n) return temp;
