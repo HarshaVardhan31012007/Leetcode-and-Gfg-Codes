@@ -679,6 +679,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0759-set-intersection-size-at-least-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0759-set-intersection-size-at-least-two) |
 | [0761-special-binary-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0761-special-binary-string) |
 | [0778-reorganize-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0778-reorganize-string) |
+| [0791-custom-sort-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0791-custom-sort-string) |
 | [0807-custom-sort-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0807-custom-sort-string) |
 | [0883-car-fleet](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0883-car-fleet) |
 | [0948-sort-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0948-sort-an-array) |
@@ -804,6 +805,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0753-open-the-lock](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0753-open-the-lock) |
 | [0756-pyramid-transition-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0756-pyramid-transition-matrix) |
 | [0778-reorganize-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0778-reorganize-string) |
+| [0791-custom-sort-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0791-custom-sort-string) |
 | [0807-custom-sort-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0807-custom-sort-string) |
 | [0840-magic-squares-in-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0840-magic-squares-in-grid) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
@@ -1437,6 +1439,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0756-pyramid-transition-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0756-pyramid-transition-matrix) |
 | [0761-special-binary-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0761-special-binary-string) |
 | [0778-reorganize-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0778-reorganize-string) |
+| [0791-custom-sort-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0791-custom-sort-string) |
 | [0796-rotate-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0796-rotate-string) |
 | [0800-letter-case-permutation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0800-letter-case-permutation) |
 | [0807-custom-sort-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0807-custom-sort-string) |
