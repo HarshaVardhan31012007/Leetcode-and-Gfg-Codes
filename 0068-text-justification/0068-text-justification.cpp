@@ -17,7 +17,7 @@ public:
                 string empty="";
                 int nwords=(i-start);
                 if(nwords==1){
-                    string temp=words[start];
+                    temp=words[start];
                     while(temp.length()<maxWidth) temp+=" ";
                     ans.push_back(temp);
                     len=words[i].length();
