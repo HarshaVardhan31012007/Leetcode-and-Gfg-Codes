@@ -14,7 +14,6 @@ public:
             }
             else{
                 string temp="";
-                string empty="";
                 int nwords=(i-start);
                 if(nwords==1){
                     temp=words[start];
@@ -27,6 +26,7 @@ public:
                 int length=(len-(nwords-1));
                 int every=(maxWidth-length)/(nwords-1);
                 int rem=(maxWidth-length)%(nwords-1);
+                string empty="";
                 for(int i=0;i<every;i++)
                 empty+=" ";
                 for(int j=start;j<i;j++){
