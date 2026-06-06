@@ -432,6 +432,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2540-minimum-common-value](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2540-minimum-common-value) |
 | [2553-separate-the-digits-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2553-separate-the-digits-in-an-array) |
+| [2574-left-and-right-sum-differences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2574-left-and-right-sum-differences) |
 | [2597-cycle-length-queries-in-a-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2597-cycle-length-queries-in-a-tree) |
 | [2615-sum-of-distances](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2615-sum-of-distances) |
 | [2616-minimize-the-maximum-difference-of-pairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2616-minimize-the-maximum-difference-of-pairs) |
@@ -995,6 +996,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2465-shifting-letters-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2465-shifting-letters-ii) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
 | [2483-minimum-penalty-for-a-shop](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2483-minimum-penalty-for-a-shop) |
+| [2574-left-and-right-sum-differences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2574-left-and-right-sum-differences) |
 | [2615-sum-of-distances](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2615-sum-of-distances) |
 | [2625-increment-submatrices-by-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2625-increment-submatrices-by-one) |
 | [2906-construct-product-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2906-construct-product-matrix) |
