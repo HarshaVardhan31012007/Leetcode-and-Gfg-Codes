@@ -1,10 +1,12 @@
 class Solution {
 public:
     int garbageCollection(vector<string>& garbage, vector<int>& travel) {
-        int lastP=-1;
-        int lastG=-1;
-        int lastM=-1;
+        int lastP=0;
+        int lastG=0;
+        int lastM=0;
         int ans=0;
+        for(int i=1;i<travel.size();i++)
+        travel[i]+=travel[i-1];
         for(int i=0;i<garbage.size();i++){
             ans+=garbage[i].length();
             for(int j=0;j<garbage[i].length();j++){
@@ -19,11 +21,9 @@ public:
                 }
             }
         }
-        for(int i=1;i<garbage.size();i++){
-            if(lastP>=i) ans+=travel[i-1];
-            if(lastM>=i) ans+=travel[i-1];
-            if(lastG>=i) ans+=travel[i-1];
-        }
+        if(lastP) ans+=travel[lastP-1];
+        if(lastG) ans+=travel[lastG-1];
+        if(lastM) ans+=travel[lastM-1];
         return ans;
     }
 };
