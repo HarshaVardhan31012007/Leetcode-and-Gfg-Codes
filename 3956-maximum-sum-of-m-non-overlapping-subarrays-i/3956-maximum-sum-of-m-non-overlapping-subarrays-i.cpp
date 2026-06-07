@@ -95,12 +95,6 @@ public:
             }
             dp[m][n-1]=max(dp[m][n-1],dp[m][n]);
             for(int i=n-2;i>=0;i--){
-                // long long ans1=LLONG_MIN;
-                // for(int j=(i+l-1);j<=min(n-1,(i+r-1))&&m>0;j++){
-                //     long long rec=dp[m-1][j+1];
-                //     if(rec!=LLONG_MIN)
-                //     ans1=max(ans1,prefix[j+1]-prefix[i]+rec);
-                // }
                 if(!dq.empty()&&dq.back()>(i+r)) dq.pop_back();
                 if(i+l<=n){
                     while(!dq.empty()&&temp[dq.front()]<=temp[i+l]){
