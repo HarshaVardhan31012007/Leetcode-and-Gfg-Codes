@@ -48,7 +48,6 @@ public:
         int rows=tr.c-tl.c+1;
         int cols=bl.r-tl.r+1;
         int sum=prefix[br.r+1][br.c+1]-prefix[tr.r][tr.c+1]-prefix[bl.r+1][bl.c]+prefix[tl.r][tl.c];
-        cout<<rows<<" "<<cols<<" "<<sum<<endl;
         if(sum==rows*cols) return new Node(1,1);
         if(sum==0) return new Node(0,1);
         Node* root=new Node(1,0);
