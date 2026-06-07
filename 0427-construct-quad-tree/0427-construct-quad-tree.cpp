@@ -40,34 +40,62 @@ public:
 
 class Solution {
 public:
-    struct gridnode{
-        int r;
-        int c;
-    };
-    Node* solve(gridnode tl,gridnode tr,gridnode bl,gridnode br,vector<vector<int>>&prefix){
-        int rows=tr.c-tl.c+1;
-        int cols=bl.r-tl.r+1;
-        int sum=prefix[br.r+1][br.c+1]-prefix[tr.r][tr.c+1]-prefix[bl.r+1][bl.c]+prefix[tl.r][tl.c];
+    // struct gridnode{
+    //     int r;
+    //     int c;
+    // };
+    // Node* solve(gridnode tl,gridnode tr,gridnode bl,gridnode br,vector<vector<int>>&prefix){
+    //     int rows=tr.c-tl.c+1;
+    //     int cols=bl.r-tl.r+1;
+    //     int sum=prefix[br.r+1][br.c+1]-prefix[tr.r][tr.c+1]-prefix[bl.r+1][bl.c]+prefix[tl.r][tl.c];
+    //     if(sum==rows*cols) return new Node(1,1);
+    //     if(sum==0) return new Node(0,1);
+    //     Node* root=new Node(1,0);
+    //     root->topLeft=solve(tl,{tl.r,(tl.c+tr.c)/2},{(tl.r+bl.r)/2,tl.c},{(tl.r+br.r)/2,(tl.c+br.c)/2},prefix);
+    //     root->topRight=solve({tl.r,(tl.c+tr.c)/2+1},tr,{(tl.r+br.r)/2,(tl.c+br.c)/2+1},{(tr.r+br.r)/2,tr.c},prefix);
+    //     root->bottomLeft=solve({(tl.r+bl.r)/2+1,tl.c},{(tl.r+br.r)/2+1,(tl.c+br.c)/2},bl,{bl.r,(bl.c+br.c)/2},prefix);
+    //     root->bottomRight=solve({(tl.r+br.r)/2+1,(tl.c+br.c)/2+1},{(tr.r+br.r)/2+1,tr.c},{bl.r,(bl.c+br.c)/2+1},br,prefix);
+    //     return root;
+    // }
+    // Node* construct(vector<vector<int>>& grid) {
+    //     int m=grid.size();
+    //     int n=grid[0].size();
+    //     vector<vector<int>>prefix(m+1,vector<int>(n+1,0));
+    //     for(int i=1;i<=m;i++){
+    //         for(int j=1;j<=n;j++){
+    //             prefix[i][j]=(prefix[i-1][j]+prefix[i][j-1]-prefix[i-1][j-1]+grid[i-1][j-1]);
+    //         }
+    //     }
+    //     gridnode tl={0,0};gridnode tr={0,n-1};
+    //     gridnode bl={m-1,0};gridnode br={m-1,n-1};
+    //     return solve(tl,tr,bl,br,prefix);
+    // }
+
+
+
+    Node* solve(int l,int r,int u,int d,vector<vector<int>>&prefix){
+        int rows=d-u+1;
+        int cols=r-l+1;
+        int sum=prefix[d+1][r+1]-prefix[u][r+1]-prefix[d+1][l]+prefix[u][l];
         if(sum==rows*cols) return new Node(1,1);
         if(sum==0) return new Node(0,1);
         Node* root=new Node(1,0);
-        root->topLeft=solve(tl,{tl.r,(tl.c+tr.c)/2},{(tl.r+bl.r)/2,tl.c},{(tl.r+br.r)/2,(tl.c+br.c)/2},prefix);
-        root->topRight=solve({tl.r,(tl.c+tr.c)/2+1},tr,{(tl.r+br.r)/2,(tl.c+br.c)/2+1},{(tr.r+br.r)/2,tr.c},prefix);
-        root->bottomLeft=solve({(tl.r+bl.r)/2+1,tl.c},{(tl.r+br.r)/2+1,(tl.c+br.c)/2},bl,{bl.r,(bl.c+br.c)/2},prefix);
-        root->bottomRight=solve({(tl.r+br.r)/2+1,(tl.c+br.c)/2+1},{(tr.r+br.r)/2+1,tr.c},{bl.r,(bl.c+br.c)/2+1},br,prefix);
+        int midCol=(l+r)/2;
+        int midRow=(u+d)/2;
+        root->topLeft=solve(l,midCol,u,midRow,prefix);
+        root->topRight=solve(midCol+1,r,u,midRow,prefix);
+        root->bottomLeft=solve(l,midCol,midRow+1,d,prefix);
+        root->bottomRight=solve(midCol+1,r,midRow+1,d,prefix);
         return root;
     }
     Node* construct(vector<vector<int>>& grid) {
         int m=grid.size();
-        int n=grid[0].size();
-        vector<vector<int>>prefix(m+1,vector<int>(n+1,0));
+        vector<vector<int>>prefix(m+1,vector<int>(m+1,0));
         for(int i=1;i<=m;i++){
-            for(int j=1;j<=n;j++){
+            for(int j=1;j<=m;j++){
                 prefix[i][j]=(prefix[i-1][j]+prefix[i][j-1]-prefix[i-1][j-1]+grid[i-1][j-1]);
             }
         }
-        gridnode tl={0,0};gridnode tr={0,n-1};
-        gridnode bl={m-1,0};gridnode br={m-1,n-1};
-        return solve(tl,tr,bl,br,prefix);
+        return solve(0,m-1,0,m-1,prefix);
     }
 };
