@@ -637,6 +637,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2035-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2095-delete-the-middle-node-of-a-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2149-rearrange-array-elements-by-sign) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2396-strictly-palindromic-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2396-strictly-palindromic-number) |
@@ -1900,6 +1901,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1267-remove-zero-sum-consecutive-nodes-from-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1267-remove-zero-sum-consecutive-nodes-from-linked-list) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [1582-design-browser-history](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1582-design-browser-history) |
+| [2095-delete-the-middle-node-of-a-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2871-double-a-number-represented-as-a-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2871-double-a-number-represented-as-a-linked-list) |
