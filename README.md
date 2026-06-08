@@ -419,6 +419,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2149-rearrange-array-elements-by-sign) |
 | [2150-kth-smallest-product-of-two-sorted-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2150-kth-smallest-product-of-two-sorted-arrays) |
+| [2161-partition-array-according-to-given-pivot](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2161-partition-array-according-to-given-pivot) |
 | [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
 | [2169-simple-bank-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2169-simple-bank-system) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2196-create-binary-tree-from-descriptions) |
@@ -640,6 +641,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2149-rearrange-array-elements-by-sign) |
+| [2161-partition-array-according-to-given-pivot](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2161-partition-array-according-to-given-pivot) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2396-strictly-palindromic-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2396-strictly-palindromic-number) |
 | [2540-minimum-common-value](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2540-minimum-common-value) |
@@ -1364,6 +1366,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2149-rearrange-array-elements-by-sign) |
+| [2161-partition-array-according-to-given-pivot](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2161-partition-array-according-to-given-pivot) |
 | [2169-simple-bank-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2169-simple-bank-system) |
 | [2211-count-collisions-on-a-road](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2211-count-collisions-on-a-road) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2274-keep-multiplying-found-values-by-two) |
