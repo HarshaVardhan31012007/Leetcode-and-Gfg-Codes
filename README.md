@@ -520,6 +520,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3651-minimum-cost-path-with-teleportations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3651-minimum-cost-path-with-teleportations) |
 | [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
 | [3660-jump-game-ix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3660-jump-game-ix) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3691-maximum-total-subarray-value-ii) |
 | [3719-longest-balanced-subarray-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3719-longest-balanced-subarray-i) |
 | [3721-longest-balanced-subarray-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3721-longest-balanced-subarray-ii) |
 | [3742-maximum-path-score-in-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3742-maximum-path-score-in-a-grid) |
@@ -1668,6 +1669,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3620-maximum-number-of-distinct-elements-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3620-maximum-number-of-distinct-elements-after-operations) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3691-maximum-total-subarray-value-ii) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3781-maximum-score-after-binary-swaps) |
 ## Enumeration
 |  |
@@ -1846,6 +1848,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3510-minimum-pair-removal-to-sort-array-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3510-minimum-pair-removal-to-sort-array-ii) |
 | [3607-power-grid-maintenance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3607-power-grid-maintenance) |
 | [3650-minimum-cost-path-with-edge-reversals](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3650-minimum-cost-path-with-edge-reversals) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3691-maximum-total-subarray-value-ii) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3781-maximum-score-after-binary-swaps) |
 ## Merge Sort
 |  |
@@ -2510,6 +2513,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1622-fancy-sequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1622-fancy-sequence) |
 | [3161-block-placement-queries](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3161-block-placement-queries) |
 | [3454-separate-squares-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3454-separate-squares-ii) |
+| [3691-maximum-total-subarray-value-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3691-maximum-total-subarray-value-ii) |
 | [3719-longest-balanced-subarray-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3719-longest-balanced-subarray-i) |
 | [3721-longest-balanced-subarray-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3721-longest-balanced-subarray-ii) |
 ## Line Sweep
