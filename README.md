@@ -583,6 +583,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2035-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [2220-minimum-bit-flips-to-convert-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2220-minimum-bit-flips-to-convert-number) |
 | [2433-find-the-original-array-of-prefix-xor](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2433-find-the-original-array-of-prefix-xor) |
+| [2571-minimum-operations-to-reduce-an-integer-to-0](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2571-minimum-operations-to-reduce-an-integer-to-0) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [3233-maximize-the-number-of-partitions-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3233-maximize-the-number-of-partitions-after-operations) |
 | [3314-construct-the-minimum-bitwise-array-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3314-construct-the-minimum-bitwise-array-i) |
@@ -1219,6 +1220,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
+| [2571-minimum-operations-to-reduce-an-integer-to-0](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2571-minimum-operations-to-reduce-an-integer-to-0) |
 | [2616-minimize-the-maximum-difference-of-pairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2616-minimize-the-maximum-difference-of-pairs) |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2977-minimum-cost-to-convert-string-ii) |
@@ -1666,6 +1668,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2126-destroying-asteroids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2126-destroying-asteroids) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
+| [2571-minimum-operations-to-reduce-an-integer-to-0](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2571-minimum-operations-to-reduce-an-integer-to-0) |
 | [2616-minimize-the-maximum-difference-of-pairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2616-minimize-the-maximum-difference-of-pairs) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3075-maximize-happiness-of-selected-children) |
