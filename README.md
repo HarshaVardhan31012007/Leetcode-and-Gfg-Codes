@@ -42,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0486-predict-the-winner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0486-predict-the-winner) |
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
 | [0556-next-greater-element-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0556-next-greater-element-iii) |
+| [0593-valid-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0593-valid-square) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0788-rotated-digits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0788-rotated-digits) |
 | [0830-largest-triangle-area](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0830-largest-triangle-area) |
@@ -2477,6 +2478,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Geometry
 |  |
 | ------- |
+| [0593-valid-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0593-valid-square) |
 | [0830-largest-triangle-area](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0830-largest-triangle-area) |
 | [0973-k-closest-points-to-origin](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0973-k-closest-points-to-origin) |
 | [1266-minimum-time-visiting-all-points](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1266-minimum-time-visiting-all-points) |
