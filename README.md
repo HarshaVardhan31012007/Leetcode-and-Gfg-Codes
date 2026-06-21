@@ -394,6 +394,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1758-distribute-repeating-integers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1758-distribute-repeating-integers) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1824-minimum-sideway-jumps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1824-minimum-sideway-jumps) |
+| [1833-maximum-ice-cream-bars](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1833-maximum-ice-cream-bars) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1861-rotating-the-box](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1861-rotating-the-box) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1877-minimize-maximum-pair-sum-in-array) |
@@ -726,6 +727,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1691-maximum-height-by-stacking-cuboids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1691-maximum-height-by-stacking-cuboids) |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1727-largest-submatrix-with-rearrangements) |
+| [1833-maximum-ice-cream-bars](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1833-maximum-ice-cream-bars) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
@@ -1658,6 +1660,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1753-maximum-score-from-removing-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-maximum-score-from-removing-stones) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1824-minimum-sideway-jumps](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1824-minimum-sideway-jumps) |
+| [1833-maximum-ice-cream-bars](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1833-maximum-ice-cream-bars) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1879-maximum-score-from-removing-stones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1879-maximum-score-from-removing-stones) |
@@ -1884,6 +1887,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0948-sort-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0948-sort-an-array) |
+| [1833-maximum-ice-cream-bars](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1833-maximum-ice-cream-bars) |
 ## Linked List
 |  |
 | ------- |
