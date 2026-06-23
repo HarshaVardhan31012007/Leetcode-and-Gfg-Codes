@@ -154,38 +154,10 @@ public:
 
 
 
-    // const int mod=1e9+7;
-    // int zigZagArrays(int n, int l, int r) {
-    //     vector<vector<long long int>>dp(n+1,vector<long long int>(r+2,0));
-    //     vector<vector<long long int>>dp1(n+1,vector<long long int>(r+2,0));
-    //     long long ans=0;
-    //     int sum=0;
-    //     for(int i=l,j=r;i<=r&&j>=l;i++,j--){
-    //         sum++;
-    //         dp[n][i]=sum;
-    //         dp1[n][j]=sum;
-    //     }
-    //     for(int i=n-1;i>=1;i--){
-    //        long long int sum=0; long long sum1=0;
-    //        for(int prev=l,prev1=r;prev<=r&&prev1>=l;prev++,prev1--){
-    //            sum=(sum+dp1[i+1][prev+1])%mod;
-    //            dp[i][prev]=sum;
-    //            sum1=(sum1+dp[i+1][prev1-1])%mod;
-    //            dp1[i][prev1]=sum1;
-    //        }
-    //        if(i==1){
-    //            ans=(ans+sum)%mod;
-    //            ans=(ans+sum1)%mod;
-    //        }
-    //     }
-    //     return ans;
-    // }
-
-
     const int mod=1e9+7;
-    long long dp[2002][2002];
-    long long dp1[2002][2002];
     int zigZagArrays(int n, int l, int r) {
+        vector<vector<long long int>>dp(n+1,vector<long long int>(r+2,0));
+        vector<vector<long long int>>dp1(n+1,vector<long long int>(r+2,0));
         long long ans=0;
         int sum=0;
         for(int i=l,j=r;i<=r&&j>=l;i++,j--){
@@ -208,4 +180,32 @@ public:
         }
         return ans;
     }
+
+
+    // const int mod=1e9+7;
+    // int zigZagArrays(int n, int l, int r) {
+    //     static long long dp[2001][2001];
+    //     static long long dp1[2001][2001];
+    //     long long ans=0;
+    //     int sum=0;
+    //     for(int i=l,j=r;i<=r&&j>=l;i++,j--){
+    //         sum++;
+    //         dp[n][i]=sum;
+    //         dp1[n][j]=sum;
+    //     }
+    //     for(int i=n-1;i>=1;i--){
+    //        long long int sum=0; long long sum1=0;
+    //        for(int prev=l,prev1=r;prev<=r&&prev1>=l;prev++,prev1--){
+    //            sum=(sum+dp1[i+1][prev+1])%mod;
+    //            dp[i][prev]=sum;
+    //            sum1=(sum1+dp[i+1][prev1-1])%mod;
+    //            dp1[i][prev1]=sum1;
+    //        }
+    //        if(i==1){
+    //            ans=(ans+sum)%mod;
+    //            ans=(ans+sum1)%mod;
+    //        }
+    //     }
+    //     return ans;
+    // }
 };
