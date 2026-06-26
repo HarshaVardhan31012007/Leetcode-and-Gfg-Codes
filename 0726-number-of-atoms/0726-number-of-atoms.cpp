@@ -18,7 +18,7 @@ public:
                 }
                 if(count==0) count=1;
                 auto &mpp=st.top();
-                mpp[temp]=count;
+                mpp[temp]+=count;
             }
             else if(formula[i]=='('){
                 st.push(map<string,int>());
