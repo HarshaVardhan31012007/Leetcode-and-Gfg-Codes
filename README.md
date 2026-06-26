@@ -468,6 +468,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3047-find-the-largest-area-of-square-inside-two-rectangles](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3047-find-the-largest-area-of-square-inside-two-rectangles) |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3070-count-submatrices-with-top-left-element-and-sum-less-than-k) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3075-maximize-happiness-of-selected-children) |
+| [3077-maximum-strength-of-k-disjoint-subarrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3077-maximum-strength-of-k-disjoint-subarrays) |
 | [3093-longest-common-suffix-queries](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3093-longest-common-suffix-queries) |
 | [3122-minimum-number-of-operations-to-satisfy-conditions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3122-minimum-number-of-operations-to-satisfy-conditions) |
 | [3142-check-if-grid-satisfies-conditions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3142-check-if-grid-satisfies-conditions) |
@@ -1033,6 +1034,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2625-increment-submatrices-by-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2625-increment-submatrices-by-one) |
 | [2906-construct-product-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2906-construct-product-matrix) |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3070-count-submatrices-with-top-left-element-and-sum-less-than-k) |
+| [3077-maximum-strength-of-k-disjoint-subarrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3077-maximum-strength-of-k-disjoint-subarrays) |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3129-find-all-possible-stable-binary-arrays-i) |
 | [3130-find-all-possible-stable-binary-arrays-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3130-find-all-possible-stable-binary-arrays-ii) |
 | [3212-count-submatrices-with-equal-frequency-of-x-and-y](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3212-count-submatrices-with-equal-frequency-of-x-and-y) |
@@ -1240,6 +1242,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2616-minimize-the-maximum-difference-of-pairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2616-minimize-the-maximum-difference-of-pairs) |
 | [2770-maximum-number-of-jumps-to-reach-the-last-index](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2770-maximum-number-of-jumps-to-reach-the-last-index) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2977-minimum-cost-to-convert-string-ii) |
+| [3077-maximum-strength-of-k-disjoint-subarrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3077-maximum-strength-of-k-disjoint-subarrays) |
 | [3122-minimum-number-of-operations-to-satisfy-conditions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3122-minimum-number-of-operations-to-satisfy-conditions) |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3129-find-all-possible-stable-binary-arrays-i) |
 | [3130-find-all-possible-stable-binary-arrays-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3130-find-all-possible-stable-binary-arrays-ii) |
