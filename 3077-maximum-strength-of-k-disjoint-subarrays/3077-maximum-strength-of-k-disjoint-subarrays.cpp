@@ -44,10 +44,8 @@ public:
     //                 long long reccall=dp[j+1][k1-1];
     //                 if(reccall!=LLONG_MIN)
     //                 ans=max(ans,sign*k1*sum+reccall);
-    //                 if(k1==k){
-    //                     long long rec1=dp[j+1][k1];
-    //                     ans=max(ans,rec1);
-    //                 }
+    //                 long long rec1=dp[j+1][k1];
+    //                 ans=max(ans,rec1);
     //             }
     //             dp[i][k1]=ans;
     //         }
@@ -77,10 +75,8 @@ public:
                 long long reccall=dp[i+1][k1-1];
                 if(reccall!=LLONG_MIN)
                 ans=max(ans,sign*k1*prefixsum[i+1]+reccall);
-                if(k1==k){
-                    long long rec1=dp[i+1][k1];
-                    curr=max(curr,rec1);
-                }
+                long long rec1=dp[i+1][k1];
+                curr=max(curr,rec1);
                 if(ans!=LLONG_MIN){
                    curr=max(curr,-sign*k1*prefixsum[i]+ans);
                 }
