@@ -89,4 +89,31 @@ public:
         }
         return dp[0][k];
     }
+
+
+
+    // vector<vector<vector<long long>>>dp;
+    // long long solve(int i,vector<int>&nums,int n,long long k,bool started){
+    //     if(k==0) return 0;
+    //     if(i>=n) return -1e14;
+    //     if(dp[i][k][started]!=-1) return dp[i][k][started];
+    //     long long take=LLONG_MIN,not_take=LLONG_MIN;
+    //     if(!started){
+    //        not_take=solve(i+1,nums,n,k,false);
+    //     }
+    //     if(k%2==0){
+    //         take=max(take,-k*nums[i]+solve(i+1,nums,n,k-1,true));
+    //         take=max(take,-k*nums[i]+solve(i+1,nums,n,k,true));
+    //     }
+    //     else{
+    //         take=max(take,k*nums[i]+solve(i+1,nums,n,k-1,true));
+    //         take=max(take,k*nums[i]+solve(i+1,nums,n,k,true));
+    //     }
+    //     return dp[i][k][started]=max(take,not_take);
+    // }
+    // long long maximumStrength(vector<int>& nums, int k) {
+    //     int n=nums.size();
+    //     dp.assign(n+1,vector<vector<long long>>(k+1,vector<long long>(2,-1)));
+    //     return solve(0,nums,n,k,false);
+    // }
 };
