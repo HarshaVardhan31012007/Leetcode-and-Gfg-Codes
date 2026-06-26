@@ -1978,6 +1978,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0538-convert-bst-to-greater-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0538-convert-bst-to-greater-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0543-diameter-of-binary-tree) |
 | [0547-number-of-provinces](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0547-number-of-provinces) |
+| [0572-subtree-of-another-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0572-subtree-of-another-tree) |
 | [0617-merge-two-binary-trees](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0617-merge-two-binary-trees) |
 | [0652-find-duplicate-subtrees](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0652-find-duplicate-subtrees) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0653-two-sum-iv-input-is-a-bst) |
@@ -2243,6 +2244,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0450-delete-node-in-a-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0450-delete-node-in-a-bst) |
 | [0538-convert-bst-to-greater-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0538-convert-bst-to-greater-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0543-diameter-of-binary-tree) |
+| [0572-subtree-of-another-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0572-subtree-of-another-tree) |
 | [0617-merge-two-binary-trees](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0617-merge-two-binary-trees) |
 | [0652-find-duplicate-subtrees](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0652-find-duplicate-subtrees) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0653-two-sum-iv-input-is-a-bst) |
@@ -2320,6 +2322,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0450-delete-node-in-a-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0450-delete-node-in-a-bst) |
 | [0538-convert-bst-to-greater-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0538-convert-bst-to-greater-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0543-diameter-of-binary-tree) |
+| [0572-subtree-of-another-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0572-subtree-of-another-tree) |
 | [0617-merge-two-binary-trees](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0617-merge-two-binary-trees) |
 | [0652-find-duplicate-subtrees](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0652-find-duplicate-subtrees) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0653-two-sum-iv-input-is-a-bst) |
@@ -2416,6 +2419,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0187-repeated-dna-sequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0187-repeated-dna-sequences) |
+| [0572-subtree-of-another-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0572-subtree-of-another-tree) |
 | [0705-design-hashset](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0706-design-hashmap) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
@@ -2423,6 +2427,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+| [0572-subtree-of-another-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0572-subtree-of-another-tree) |
 | [0796-rotate-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0796-rotate-string) |
 | [0812-rotate-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0812-rotate-string) |
 | [1023-camelcase-matching](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1023-camelcase-matching) |
