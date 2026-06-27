@@ -429,6 +429,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2161-partition-array-according-to-given-pivot](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2161-partition-array-according-to-given-pivot) |
 | [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
 | [2169-simple-bank-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2169-simple-bank-system) |
+| [2171-removing-minimum-number-of-magic-beans](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2171-removing-minimum-number-of-magic-beans) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2227-sum-of-subarray-ranges](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2227-sum-of-subarray-ranges) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2244-number-of-laser-beams-in-a-bank) |
@@ -744,6 +745,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2092-find-all-people-with-secret](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2092-find-all-people-with-secret) |
 | [2126-destroying-asteroids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2126-destroying-asteroids) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
+| [2171-removing-minimum-number-of-magic-beans](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2171-removing-minimum-number-of-magic-beans) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2402-meeting-rooms-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2402-meeting-rooms-iii) |
@@ -1027,6 +1029,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
 | [1895-largest-magic-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1895-largest-magic-square) |
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1930-unique-length-3-palindromic-subsequences) |
+| [2171-removing-minimum-number-of-magic-beans](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2171-removing-minimum-number-of-magic-beans) |
 | [2391-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2391-minimum-amount-of-time-to-collect-garbage) |
 | [2465-shifting-letters-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2465-shifting-letters-ii) |
 | [2471-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2471-minimum-amount-of-time-to-collect-garbage) |
@@ -1693,6 +1696,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2126-destroying-asteroids](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2126-destroying-asteroids) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
+| [2171-removing-minimum-number-of-magic-beans](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2171-removing-minimum-number-of-magic-beans) |
 | [2571-minimum-operations-to-reduce-an-integer-to-0](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2571-minimum-operations-to-reduce-an-integer-to-0) |
 | [2616-minimize-the-maximum-difference-of-pairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2616-minimize-the-maximum-difference-of-pairs) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
@@ -1712,6 +1716,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0204-count-primes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0204-count-primes) |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [1925-count-square-sum-triples](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1925-count-square-sum-triples) |
+| [2171-removing-minimum-number-of-magic-beans](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2171-removing-minimum-number-of-magic-beans) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2174-next-greater-numerically-balanced-number) |
 | [2507-number-of-common-factors](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2507-number-of-common-factors) |
 | [2975-maximum-square-area-by-removing-fences-from-a-field](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2975-maximum-square-area-by-removing-fences-from-a-field) |
