@@ -114,6 +114,58 @@ public:
 
     
     long long maxSubarraySum(vector<int>& nums, int k) {
+        // int n=nums.size();
+        // long long ans=LLONG_MIN;
+        // long long sum=0;
+        // for(int i=0;i<n;i++){
+        //     sum+=nums[i];
+        //     ans=max(ans,sum*k);
+        //     if(sum<0){
+        //         sum=0;
+        //     }
+        // }
+        // vector<vector<long long>>dp(n+1,vector<long long>(3,0));
+        // for(int i=n-1;i>=0;i--){
+        //     for(int started=0;started<=2;started++){
+        //         long long current1;
+        //         if(nums[i]>0){
+        //             current1=floor(nums[i]/((double)k));
+        //         }
+        //         else{
+        //             current1=ceil(nums[i]/((double)k));
+        //         }
+        //         long long current=nums[i];
+        //         if(started==0){
+        //             long long reccall=dp[i+1][0];
+        //             long long reccall1=dp[i+1][1];
+        //             long long reccall2=dp[i+1][2];
+        //             long long maxi=max(reccall1,reccall2);
+        //             if(maxi>0)
+        //             current1+=maxi;
+        //             if(reccall>0)
+        //             current+=reccall;
+        //             dp[i][started]=max(current,current1);
+        //         }
+        //         else if(started==1){
+        //             long long reccall=dp[i+1][1];
+        //             long long reccall1=dp[i+1][2];
+        //             long long maxi=max(reccall,reccall1);
+        //             if(maxi>0)
+        //             current1+=maxi;
+        //             dp[i][started]=current1;
+        //         }
+        //         else if(started==2){
+        //             long long reccall=dp[i+1][2];
+        //             if(reccall>0)
+        //             current+=reccall;
+        //             dp[i][started]=current;
+        //         }
+        //         ans=max(ans,dp[i][started]);
+        //     }
+        // }
+        // return ans;
+
+
         int n=nums.size();
         long long ans=LLONG_MIN;
         long long sum=0;
@@ -124,44 +176,15 @@ public:
                 sum=0;
             }
         }
-        vector<vector<long long>>dp(n+1,vector<long long>(3,0));
-        for(int i=n-1;i>=0;i--){
-            for(int started=0;started<=2;started++){
-                long long current1;
-                if(nums[i]>0){
-                    current1=floor(nums[i]/((double)k));
-                }
-                else{
-                    current1=ceil(nums[i]/((double)k));
-                }
-                long long current=nums[i];
-                if(started==0){
-                    long long reccall=dp[i+1][0];
-                    long long reccall1=dp[i+1][1];
-                    long long reccall2=dp[i+1][2];
-                    long long maxi=max(reccall1,reccall2);
-                    if(maxi>0)
-                    current1+=maxi;
-                    if(reccall>0)
-                    current+=reccall;
-                    dp[i][started]=max(current,current1);
-                }
-                else if(started==1){
-                    long long reccall=dp[i+1][1];
-                    long long reccall1=dp[i+1][2];
-                    long long maxi=max(reccall,reccall1);
-                    if(maxi>0)
-                    current1+=maxi;
-                    dp[i][started]=current1;
-                }
-                else if(started==2){
-                    long long reccall=dp[i+1][2];
-                    if(reccall>0)
-                    current+=reccall;
-                    dp[i][started]=current;
-                }
-                ans=max(ans,dp[i][started]);
-            }
+        vector<long long>dp1(n+1,0);
+        vector<long long>dp2(n+1,0);
+        vector<long long>dp3(n+1,0);
+        for(int i=1;i<=n;i++){
+           long long val=(nums[i-1]<0?ceil(nums[i-1]/((double)k)):floor(nums[i-1]/((double)k)));
+           dp1[i]=max(dp1[i-1]+nums[i-1],1LL*nums[i-1]);
+           dp2[i]=max({dp2[i-1]+val,val,dp1[i-1]+val});
+           dp3[i]=max({dp3[i-1]+nums[i-1],dp2[i],dp2[i-1]+nums[i-1]});
+           ans=max({ans,dp1[i],dp2[i],dp3[i]});
         }
         return ans;
     }
