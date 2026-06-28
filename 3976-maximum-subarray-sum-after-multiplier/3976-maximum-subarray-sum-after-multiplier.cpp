@@ -127,43 +127,35 @@ public:
         vector<vector<long long>>dp(n+1,vector<long long>(3,0));
         for(int i=n-1;i>=0;i--){
             for(int started=0;started<=2;started++){
+                long long current1;
+                if(nums[i]>0){
+                    current1=floor(nums[i]/((double)k));
+                }
+                else{
+                    current1=ceil(nums[i]/((double)k));
+                }
+                long long current=nums[i];
                 if(started==0){
                     long long reccall=dp[i+1][0];
                     long long reccall1=dp[i+1][1];
                     long long reccall2=dp[i+1][2];
-                    long long current1;
-                    if(nums[i]>0){
-                        current1=floor(nums[i]/((double)k));
-                    }
-                    else{
-                        current1=ceil(nums[i]/((double)k));
-                    }
                     long long maxi=max(reccall1,reccall2);
                     if(maxi>0)
                     current1+=maxi;
-                    long long current=nums[i];
                     if(reccall>0)
                     current+=reccall;
                     dp[i][started]=max(current,current1);
                 }
                 else if(started==1){
-                    long long current;
-                    if(nums[i]>0){
-                        current=floor(nums[i]/((double)k));
-                    }
-                    else{
-                        current=ceil(nums[i]/((double)k));
-                    }
                     long long reccall=dp[i+1][1];
                     long long reccall1=dp[i+1][2];
                     long long maxi=max(reccall,reccall1);
                     if(maxi>0)
-                    current+=maxi;
-                    dp[i][started]=current;
+                    current1+=maxi;
+                    dp[i][started]=current1;
                 }
                 else if(started==2){
                     long long reccall=dp[i+1][2];
-                    long long current=nums[i];
                     if(reccall>0)
                     current+=reccall;
                     dp[i][started]=current;
