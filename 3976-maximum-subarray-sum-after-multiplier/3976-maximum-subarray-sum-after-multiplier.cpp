@@ -183,7 +183,7 @@ public:
            long long val=(nums[i-1]<0?ceil(nums[i-1]/((double)k)):floor(nums[i-1]/((double)k)));
            dp1[i]=max(dp1[i-1]+nums[i-1],1LL*nums[i-1]);
            dp2[i]=max({dp2[i-1]+val,val,dp1[i-1]+val});
-           dp3[i]=max({dp3[i-1]+nums[i-1],dp2[i],dp2[i-1]+nums[i-1]});
+           dp3[i]=max({dp3[i-1]+nums[i-1],dp2[i],dp2[i-1]+nums[i-1],nums[i-1]*1LL});
            ans=max({ans,dp1[i],dp2[i],dp3[i]});
         }
         return ans;
