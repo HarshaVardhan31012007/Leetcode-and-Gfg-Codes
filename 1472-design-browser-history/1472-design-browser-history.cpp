@@ -107,6 +107,12 @@ public:
     }
     
     void visit(string url) {
+        Node* temp=current->next;
+        while(temp){
+            Node* node=temp;
+            temp=temp->next;
+            delete node;
+        }
         current->next=new Node(url);
         current->next->prev=current;
         current=current->next;
