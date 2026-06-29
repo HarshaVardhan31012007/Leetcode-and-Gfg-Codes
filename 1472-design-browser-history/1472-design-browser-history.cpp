@@ -1,29 +1,69 @@
+// class BrowserHistory {
+// public:
+//     vector<string>browserPages;
+//     int rear;
+//     int current;
+//     BrowserHistory(string homepage) {
+//         browserPages.push_back(homepage);
+//         rear=0;
+//         current=0;
+//     }
+    
+//     void visit(string url) {
+//         int pos=current+1;
+//         if(current==rear){
+//             if(pos<browserPages.size()){
+//                 browserPages[pos]=url;
+//             }
+//             else{
+//                 browserPages.push_back(url);
+//             }
+//         }
+//         else{
+//             browserPages[pos]=url;
+//         }
+//         rear=pos;
+//         current=pos;
+//     }
+    
+//     string back(int steps) {
+//         current=max(0,current-steps);
+//         return browserPages[current];
+//     }
+    
+//     string forward(int steps) {
+//         current=min(rear,current+steps);
+//         return browserPages[current];
+//     }
+// };
+
+// /**
+//  * Your BrowserHistory object will be instantiated and called as such:
+//  * BrowserHistory* obj = new BrowserHistory(homepage);
+//  * obj->visit(url);
+//  * string param_2 = obj->back(steps);
+//  * string param_3 = obj->forward(steps);
+//  */
+
+
+
 class BrowserHistory {
 public:
     vector<string>browserPages;
-    int rear;
     int current;
     BrowserHistory(string homepage) {
         browserPages.push_back(homepage);
-        rear=0;
         current=0;
     }
     
     void visit(string url) {
-        int pos=current+1;
-        if(current==rear){
-            if(pos<browserPages.size()){
-                browserPages[pos]=url;
-            }
-            else{
-                browserPages.push_back(url);
-            }
+        int size=browserPages.size();
+        int noOfDeletes=(size-(current+1));
+        while(noOfDeletes--){
+            browserPages.pop_back();
         }
-        else{
-            browserPages[pos]=url;
-        }
-        rear=pos;
-        current=pos;
+        browserPages.push_back(url);
+        current=current+1;
     }
     
     string back(int steps) {
@@ -32,7 +72,8 @@ public:
     }
     
     string forward(int steps) {
-        current=min(rear,current+steps);
+        int size=browserPages.size();
+        current=min(size-1,current+steps);
         return browserPages[current];
     }
 };
