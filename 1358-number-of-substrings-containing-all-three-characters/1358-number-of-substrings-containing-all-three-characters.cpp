@@ -55,7 +55,7 @@ public:
      
     int numberOfSubstrings(string s) {
         int n=s.length();
-        int a=-1;int b=-1;int c=-1;
+        int a=-1,b=-1,c=-1;
         int ans=0;
         for(int i=0;i<n;i++){
             if(s[i]=='a') a=i;
