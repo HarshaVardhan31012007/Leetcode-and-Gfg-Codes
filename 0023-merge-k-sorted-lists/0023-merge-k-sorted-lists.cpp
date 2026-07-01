@@ -1,13 +1,3 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
 class Solution {
 public:
     class comp{
@@ -25,7 +15,7 @@ public:
         ListNode* ans=NULL;
         ListNode* it=ans;
         if(pq.size()==0) return ans;
-        while(pq.size()>1){
+        while(!pq.empty()){
             ListNode* top=pq.top();
             pq.pop();
             if(!ans){
@@ -40,14 +30,6 @@ public:
                 pq.push(top->next);
             }
         }
-            if(!ans){
-                ans=pq.top();
-                it=ans;
-            }
-            else{
-                it->next=pq.top();
-                it=it->next;
-            }
         return ans;
     }
 };
