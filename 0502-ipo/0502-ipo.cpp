@@ -10,7 +10,7 @@ public:
         priority_queue<pair<int,int>>pq;
         int i=0;
         int ans=w;
-        while(i<n&&k>0){
+        while(k>0){
             while(i<n&&v[i].first<=ans){
                 pq.push({v[i].second,i});
                 i++;
@@ -19,11 +19,11 @@ public:
             ans+=pq.top().first;
             pq.pop();k--;
         }
-        while(k>0&&!pq.empty()&&pq.top().first>0){
-            ans+=pq.top().first;
-            k--;
-            pq.pop();
-        }
+        // while(k>0&&!pq.empty()&&pq.top().first>0){
+        //     ans+=pq.top().first;
+        //     k--;
+        //     pq.pop();
+        // }
         return ans;
     }
 };
