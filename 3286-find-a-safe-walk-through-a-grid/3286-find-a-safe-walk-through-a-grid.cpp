@@ -75,7 +75,7 @@ public:
                 int newr=r+dx[k];
                 int newc=c+dy[k];
                 if(newr<0||newc<0||newr>=m||newc>=n) continue;
-                if(h+grid[newr][newc]<minHealth[newr][newc]){
+                if(minHealth[newr][newc]==INT_MAX){
                     minHealth[newr][newc]=h+grid[newr][newc];
                     if(grid[newr][newc]==0)
                     q.push_front({minHealth[newr][newc],newr,newc});
