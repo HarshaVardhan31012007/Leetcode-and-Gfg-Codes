@@ -299,6 +299,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0926-find-and-replace-pattern](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0926-find-and-replace-pattern) |
 | [0930-binary-subarrays-with-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0930-binary-subarrays-with-sum) |
 | [0931-minimum-falling-path-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0931-minimum-falling-path-sum) |
+| [0934-shortest-bridge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0934-shortest-bridge) |
 | [0943-sum-of-subarray-minimums](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0943-sum-of-subarray-minimums) |
 | [0944-delete-columns-to-make-sorted](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0944-delete-columns-to-make-sorted) |
 | [0948-sort-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0948-sort-an-array) |
@@ -1309,6 +1310,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0840-magic-squares-in-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0840-magic-squares-in-grid) |
 | [0898-transpose-matrix](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0898-transpose-matrix) |
 | [0931-minimum-falling-path-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0931-minimum-falling-path-sum) |
+| [0934-shortest-bridge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0934-shortest-bridge) |
 | [0994-rotting-oranges](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0994-rotting-oranges) |
 | [1020-number-of-enclaves](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1020-number-of-enclaves) |
 | [1036-rotting-oranges](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1036-rotting-oranges) |
@@ -2047,6 +2049,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0827-making-a-large-island](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0827-making-a-large-island) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [0934-shortest-bridge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0934-shortest-bridge) |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [0975-range-sum-of-bst](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0975-range-sum-of-bst) |
 | [1008-binary-tree-cameras](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1008-binary-tree-cameras) |
@@ -2130,6 +2133,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0827-making-a-large-island](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0827-making-a-large-island) |
 | [0865-smallest-subtree-with-all-the-deepest-nodes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0865-smallest-subtree-with-all-the-deepest-nodes) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
+| [0934-shortest-bridge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0934-shortest-bridge) |
 | [0994-rotting-oranges](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0994-rotting-oranges) |
 | [0998-check-completeness-of-a-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0998-check-completeness-of-a-binary-tree) |
 | [1020-number-of-enclaves](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1020-number-of-enclaves) |
