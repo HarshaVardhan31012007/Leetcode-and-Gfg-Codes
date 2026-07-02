@@ -24,7 +24,6 @@ public:
             int i=q1.front().first;
             int j=q1.front().second;
             q1.pop();
-            bool flag=false;
             for(int k=0;k<4;k++){
                 int newi=i+dx[k];
                 int newj=j+dy[k];
@@ -32,14 +31,12 @@ public:
                     continue;
                 }
                 if(grid[newi][newj]==0){
-                    flag=true;
+                    q2.push({1,newi,newj});
+                    visited[newi][newj]=1;
                     continue;
                 }
                 visited[newi][newj]=1;
                 q1.push({newi,newj});
-            }
-            if(flag){
-                q2.push({0,i,j});
             }
         }
         while(!q2.empty()){
