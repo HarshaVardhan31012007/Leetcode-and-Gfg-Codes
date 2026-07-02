@@ -68,8 +68,7 @@ public:
             q.pop_front();
             if(h!=minHealth[r][c]) continue;
             if(r==(m-1)&&c==(n-1)){
-                minH=h;
-                break;
+                return true;
             }
             for(int k=0;k<4;k++){
                 int newr=r+dx[k];
@@ -77,6 +76,7 @@ public:
                 if(newr<0||newc<0||newr>=m||newc>=n) continue;
                 if(minHealth[newr][newc]==INT_MAX){
                     minHealth[newr][newc]=h+grid[newr][newc];
+                    if(minHealth[newr][newc]>=health) continue;
                     if(grid[newr][newc]==0)
                     q.push_front({minHealth[newr][newc],newr,newc});
                     else
@@ -84,6 +84,6 @@ public:
                 }
             }
         }
-        return health>minH;
+        return false;
     }
 };
