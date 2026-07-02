@@ -439,6 +439,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2227-sum-of-subarray-ranges](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2227-sum-of-subarray-ranges) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2274-keep-multiplying-found-values-by-two) |
+| [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2290-minimum-obstacle-removal-to-reach-corner) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2316-count-hills-and-valleys-in-an-array) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2391-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2391-minimum-amount-of-time-to-collect-garbage) |
@@ -1334,6 +1335,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2108-minimize-the-difference-between-target-and-chosen-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2108-minimize-the-difference-between-target-and-chosen-elements) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2244-number-of-laser-beams-in-a-bank) |
+| [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2290-minimum-obstacle-removal-to-reach-corner) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [2625-increment-submatrices-by-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2625-increment-submatrices-by-one) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
@@ -1900,6 +1902,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1902-car-fleet-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1902-car-fleet-ii) |
 | [2054-two-best-non-overlapping-events](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2054-two-best-non-overlapping-events) |
 | [2163-minimum-difference-in-sums-after-removal-of-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2163-minimum-difference-in-sums-after-removal-of-elements) |
+| [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2290-minimum-obstacle-removal-to-reach-corner) |
 | [2402-meeting-rooms-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2402-meeting-rooms-iii) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3013-divide-an-array-into-subarrays-with-minimum-cost-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3013-divide-an-array-into-subarrays-with-minimum-cost-ii) |
@@ -2145,6 +2148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1753-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-path-with-minimum-effort) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2092-find-all-people-with-secret](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2092-find-all-people-with-secret) |
+| [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2290-minimum-obstacle-removal-to-reach-corner) |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
 | [2360-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2360-longest-cycle-in-a-graph) |
 | [2439-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2439-longest-cycle-in-a-graph) |
@@ -2526,6 +2530,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1976-number-of-ways-to-arrive-at-destination) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2090-number-of-ways-to-arrive-at-destination) |
+| [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2290-minimum-obstacle-removal-to-reach-corner) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2976-minimum-cost-to-convert-string-i) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2977-minimum-cost-to-convert-string-ii) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3286-find-a-safe-walk-through-a-grid) |
@@ -2626,6 +2631,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1192-critical-connections-in-a-network](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1192-critical-connections-in-a-network) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1976-number-of-ways-to-arrive-at-destination) |
+| [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2290-minimum-obstacle-removal-to-reach-corner) |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
 | [2360-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2360-longest-cycle-in-a-graph) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2976-minimum-cost-to-convert-string-i) |
