@@ -35,8 +35,7 @@ public:
             pq.pop();
             if(h!=minHealth[r][c]) continue;
             if(r==(m-1)&&c==(n-1)){
-                minH=h;
-                break;
+                return true;
             }
             for(int k=0;k<4;k++){
                 int newr=r+dx[k];
@@ -49,7 +48,7 @@ public:
                 }
             }
         }
-        return health>minH;
+        return false;
 
 
 
