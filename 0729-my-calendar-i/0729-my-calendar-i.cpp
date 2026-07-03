@@ -49,6 +49,52 @@
 
 
 
+// class MyCalendar {
+// public:
+//     set<pair<int,int>>intervals;
+//     MyCalendar() {
+        
+//     }
+    
+//     bool book(int startTime, int endTime) {
+//         if(intervals.empty()){
+//             intervals.insert({startTime,endTime});
+//             return true;
+//         }
+//         auto it=intervals.upper_bound({startTime,endTime});
+//         if(it==intervals.begin()){
+//             if(endTime<=it->first){
+//                 intervals.insert({startTime,endTime});
+//                 return true;
+//             }
+//             return false;
+//         }
+//         if(it==intervals.end()){
+//             it--;
+//             if(startTime>=it->second){
+//                 intervals.insert({startTime,endTime});
+//                 return true;
+//             }
+//             return false;
+//         }
+//         auto it1=it;
+//         it--;
+//         if(it->second<=startTime&&it1->first>=endTime){
+//             intervals.insert({startTime,endTime});
+//             return true;
+//         }
+//         return false;
+//     }
+// };
+
+// /**
+//  * Your MyCalendar object will be instantiated and called as such:
+//  * MyCalendar* obj = new MyCalendar();
+//  * bool param_1 = obj->book(startTime,endTime);
+//  */
+
+
+
 class MyCalendar {
 public:
     set<pair<int,int>>intervals;
@@ -57,33 +103,16 @@ public:
     }
     
     bool book(int startTime, int endTime) {
-        if(intervals.empty()){
-            intervals.insert({startTime,endTime});
-            return true;
-        }
         auto it=intervals.upper_bound({startTime,endTime});
-        if(it==intervals.begin()){
-            if(endTime<=it->first){
-                intervals.insert({startTime,endTime});
-                return true;
-            }
-            return false;
+        if(it!=intervals.end()){
+            if(it->first<endTime) return false;
         }
-        if(it==intervals.end()){
+        if(it!=intervals.begin()){
             it--;
-            if(startTime>=it->second){
-                intervals.insert({startTime,endTime});
-                return true;
-            }
-            return false;
+            if(it->second>startTime) return false;
         }
-        auto it1=it;
-        it--;
-        if(it->second<=startTime&&it1->first>=endTime){
-            intervals.insert({startTime,endTime});
-            return true;
-        }
-        return false;
+        intervals.insert({startTime,endTime});
+        return true;
     }
 };
 
