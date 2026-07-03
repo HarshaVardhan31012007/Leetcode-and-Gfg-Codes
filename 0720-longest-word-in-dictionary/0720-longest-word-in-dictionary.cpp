@@ -21,11 +21,13 @@ public:
         root->index=idx;
     }
     void traverse(Trie* root,int &ansIndex,vector<string>&words){
+        bool flag=false;
         for(int i=0;i<26;i++){
             if(!root->children[i]||root->children[i]->index==-1) continue;
             traverse(root->children[i],ansIndex,words);
+            flag=true;
         }
-        if(root->index!=-1){
+        if(!flag&&root->index!=-1){
            if(ansIndex==-1||words[root->index].length()>words[ansIndex].length())
            ansIndex=root->index;
         }
