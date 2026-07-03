@@ -3,7 +3,7 @@ public:
 
     // Encodes a URL to a shortened URL.
     unordered_map<string,string>mpp;
-    int i=0;
+    long long i=0;
     string encode(string longUrl) {
         char ch=(i+'0');
         string temp="";temp+=ch;
