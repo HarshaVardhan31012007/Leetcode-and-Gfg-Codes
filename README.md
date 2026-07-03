@@ -840,6 +840,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0460-lfu-cache](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0460-lfu-cache) |
 | [0496-next-greater-element-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0496-next-greater-element-i) |
 | [0532-k-diff-pairs-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0532-k-diff-pairs-in-an-array) |
+| [0535-encode-and-decode-tinyurl](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0535-encode-and-decode-tinyurl) |
 | [0560-subarray-sum-equals-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0567-permutation-in-string) |
 | [0575-distribute-candies](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0575-distribute-candies) |
@@ -1514,6 +1515,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0451-sort-characters-by-frequency](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0451-sort-characters-by-frequency) |
 | [0474-ones-and-zeroes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0474-ones-and-zeroes) |
 | [0516-longest-palindromic-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0516-longest-palindromic-subsequence) |
+| [0535-encode-and-decode-tinyurl](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0535-encode-and-decode-tinyurl) |
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
 | [0556-next-greater-element-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0556-next-greater-element-iii) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0557-reverse-words-in-a-string-iii) |
@@ -2249,6 +2251,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0380-insert-delete-getrandom-o1](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0380-insert-delete-getrandom-o1) |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
 | [0460-lfu-cache](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0460-lfu-cache) |
+| [0535-encode-and-decode-tinyurl](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0535-encode-and-decode-tinyurl) |
 | [0622-design-circular-queue](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0622-design-circular-queue) |
 | [0676-implement-magic-dictionary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0676-implement-magic-dictionary) |
 | [0705-design-hashset](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0705-design-hashset) |
@@ -2512,6 +2515,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0187-repeated-dna-sequences](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0187-repeated-dna-sequences) |
+| [0535-encode-and-decode-tinyurl](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0535-encode-and-decode-tinyurl) |
 | [0572-subtree-of-another-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0572-subtree-of-another-tree) |
 | [0705-design-hashset](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0706-design-hashmap) |
