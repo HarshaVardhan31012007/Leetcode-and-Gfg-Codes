@@ -3,10 +3,10 @@ public:
 
     // Encodes a URL to a shortened URL.
     unordered_map<string,string>mpp;
-    char i=0;
+    int i=0;
     string encode(string longUrl) {
-        string temp="";
-        temp+=i;i++;
+        char ch=(i+'0');
+        string temp="";temp+=ch;
         mpp[temp]=longUrl;
         return "http://tinyurl.com/"+temp;
     }
