@@ -1,42 +1,56 @@
 class Allocator {
 public:
-    vector<int>arr;
-    int N;
+    set<pair<int,int>>freeIntervals;
+    unordered_map<int,vector<pair<int,int>>>allocatedIntervals;
     Allocator(int n) {
-        arr.resize(n);
-        N=n;
+        freeIntervals.insert({0,n-1});
     }
     
     int allocate(int size, int mID) {
-        int start=0;int end=-1;
-        int len=0;
-        for(int i=0;i<N;i++){
-            if(arr[i]==0){
-                len++;
-                if(len==size){
-                    end=i;
-                    break;
+        for(auto it=freeIntervals.begin();it!=freeIntervals.end();it++){
+            int l=it->first;
+            int r=it->second;
+            if((r-l+1)>=size){
+                int end=l+size-1;
+                allocatedIntervals[mID].push_back({l,end});
+                if(end<r){
+                    freeIntervals.insert({end+1,r});
                 }
-            }
-            else{
-                start=i+1;
-                len=0;
+                freeIntervals.erase(it);
+                return l;
             }
         }
-        if(end==-1) return -1;
-        for(int i=start;i<=end;i++) arr[i]=mID;
-        return start;
+        return -1;
     }
-    
-    int freeMemory(int mID) {
-        int ans=0;
-        for(int i=0;i<N;i++){
-            if(arr[i]==mID){
-                arr[i]=0;
-                ans++;
+    void insertAndMerge(int l,int r){
+        auto it=freeIntervals.upper_bound({l,r});
+        if(it!=freeIntervals.begin()){
+            auto prev=it;
+            prev--;
+            if(prev->second+1==l){
+                l=prev->first;
+                freeIntervals.erase(prev);
             }
         }
-        return ans;
+        if(it!=freeIntervals.end()){
+            if(it->first==r+1){
+                r=it->second;
+                freeIntervals.erase(it);
+            }
+        }
+        freeIntervals.insert({l,r});
+    }
+    int freeMemory(int mID) {
+        if(!allocatedIntervals.count(mID)) return 0;
+        int freed=0;
+        for(auto &each:allocatedIntervals[mID]){
+            int l=each.first;
+            int r=each.second;
+            freed+=(r-l+1);
+            insertAndMerge(l,r);
+        }
+        allocatedIntervals.erase(mID);
+        return freed;
     }
 };
 
