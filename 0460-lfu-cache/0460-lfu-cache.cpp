@@ -55,10 +55,7 @@ public:
         maxSize=capacity;
         minfreq=INT_MAX;
     }
-    
-    int get(int key) {
-        if(!mpp1.count(key)) return -1;
-        Node* node=mpp1[key];
+    void updateFreq(Node* node){
         mpp2[node->freq]->removeNode(node);
         if(mpp2[node->freq]->size==0){
            mpp2.erase(node->freq);
@@ -68,9 +65,14 @@ public:
         node->freq++;
         if(!mpp2.count(node->freq)) mpp2[node->freq]=new List();
         mpp2[node->freq]->insertNode(node);
+    }
+    int get(int key) {
+        if(!mpp1.count(key)) return -1;
+        Node* node=mpp1[key];
+        updateFreq(node);
         return node->value;
     }
-    
+
     void put(int key, int value) {
         Node* node;
         if(!mpp1.count(key)){
@@ -90,16 +92,8 @@ public:
         }
         else{
             node=mpp1[key];
+            updateFreq(node);
             node->value=value;
-            mpp2[node->freq]->removeNode(node);
-            if(mpp2[node->freq]->size==0){
-            mpp2.erase(node->freq);
-            if(minfreq==node->freq)
-            minfreq++;
-            }
-            node->freq++;
-            if(!mpp2.count(node->freq)) mpp2[node->freq]=new List();
-            mpp2[node->freq]->insertNode(node);
         }
     }    
 };
