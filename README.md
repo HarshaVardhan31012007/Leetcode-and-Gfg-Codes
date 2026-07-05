@@ -1454,6 +1454,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2169-simple-bank-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2169-simple-bank-system) |
 | [2211-count-collisions-on-a-road](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2211-count-collisions-on-a-road) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2274-keep-multiplying-found-values-by-two) |
+| [2296-design-a-text-editor](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2296-design-a-text-editor) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2402-meeting-rooms-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2402-meeting-rooms-iii) |
@@ -1614,6 +1615,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2186-count-vowel-substrings-of-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2186-count-vowel-substrings-of-a-string) |
 | [2211-count-collisions-on-a-road](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2211-count-collisions-on-a-road) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2244-number-of-laser-beams-in-a-bank) |
+| [2296-design-a-text-editor](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2296-design-a-text-editor) |
 | [2391-minimum-amount-of-time-to-collect-garbage](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2391-minimum-amount-of-time-to-collect-garbage) |
 | [2406-decode-the-message](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2406-decode-the-message) |
 | [2446-determine-if-two-events-have-conflict](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2446-determine-if-two-events-have-conflict) |
@@ -1696,6 +1698,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2211-count-collisions-on-a-road](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2211-count-collisions-on-a-road) |
 | [2227-sum-of-subarray-ranges](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2227-sum-of-subarray-ranges) |
+| [2296-design-a-text-editor](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2296-design-a-text-editor) |
 | [2871-double-a-number-represented-as-a-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2871-double-a-number-represented-as-a-linked-list) |
 ## Greedy
 |  |
@@ -2030,6 +2033,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1582-design-browser-history](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1582-design-browser-history) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2182-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
+| [2296-design-a-text-editor](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2296-design-a-text-editor) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2871-double-a-number-represented-as-a-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2871-double-a-number-represented-as-a-linked-list) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
@@ -2231,6 +2235,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
 | [1472-design-browser-history](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1472-design-browser-history) |
 | [1582-design-browser-history](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1582-design-browser-history) |
+| [2296-design-a-text-editor](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2296-design-a-text-editor) |
 | [3507-minimum-pair-removal-to-sort-array-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3507-minimum-pair-removal-to-sort-array-i) |
 | [3510-minimum-pair-removal-to-sort-array-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3510-minimum-pair-removal-to-sort-array-ii) |
 ## Monotonic Stack
@@ -2291,6 +2296,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1582-design-browser-history](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1582-design-browser-history) |
 | [1622-fancy-sequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1622-fancy-sequence) |
 | [2169-simple-bank-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2169-simple-bank-system) |
+| [2296-design-a-text-editor](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2296-design-a-text-editor) |
 | [2502-design-memory-allocator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2502-design-memory-allocator) |
 | [3829-design-ride-sharing-system](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3829-design-ride-sharing-system) |
 ## Queue
