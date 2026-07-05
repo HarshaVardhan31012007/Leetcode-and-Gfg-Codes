@@ -1,7 +1,7 @@
 class AllOne {
 public:
     map<string,int>mpp;
-    map<int,set<string>>freq;
+    map<int,unordered_set<string>>freq;
     AllOne() {
        
     }
