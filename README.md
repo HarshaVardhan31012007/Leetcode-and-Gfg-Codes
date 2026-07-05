@@ -836,6 +836,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0398-random-pick-index](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0398-random-pick-index) |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0424-longest-repeating-character-replacement](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0424-longest-repeating-character-replacement) |
+| [0432-all-oone-data-structure](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0432-all-oone-data-structure) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0451-sort-characters-by-frequency](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0451-sort-characters-by-frequency) |
@@ -2005,6 +2006,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0234-palindrome-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0328-odd-even-linked-list) |
 | [0355-design-twitter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0355-design-twitter) |
+| [0432-all-oone-data-structure](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0432-all-oone-data-structure) |
 | [0460-lfu-cache](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0460-lfu-cache) |
 | [0528-swapping-nodes-in-a-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0528-swapping-nodes-in-a-linked-list) |
 | [0622-design-circular-queue](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0622-design-circular-queue) |
@@ -2217,6 +2219,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0146-lru-cache) |
+| [0432-all-oone-data-structure](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0432-all-oone-data-structure) |
 | [0460-lfu-cache](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0460-lfu-cache) |
 | [0766-flatten-a-multilevel-doubly-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0766-flatten-a-multilevel-doubly-linked-list) |
 | [1472-design-browser-history](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1472-design-browser-history) |
@@ -2258,6 +2261,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0355-design-twitter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0355-design-twitter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0380-insert-delete-getrandom-o1) |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
+| [0432-all-oone-data-structure](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0432-all-oone-data-structure) |
 | [0460-lfu-cache](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0460-lfu-cache) |
 | [0535-encode-and-decode-tinyurl](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0535-encode-and-decode-tinyurl) |
 | [0622-design-circular-queue](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0622-design-circular-queue) |
