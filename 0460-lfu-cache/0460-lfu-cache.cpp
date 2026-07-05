@@ -1,148 +1,107 @@
+class Node{
+    public:
+    int freq,key,value;
+    Node* next;
+    Node* prev;
+    Node(int key,int value){
+        this->key=key;
+        this->value=value;
+        this->freq=1;
+        this->next=this->prev=NULL;
+    }
+};
+class List{
+    public:
+    Node* head;
+    Node* tail;
+    int size;
+
+    List(){
+        head=new Node(-1,-1);
+        tail=new Node(-1,-1);
+        head->next=tail;
+        tail->prev=head;
+        size=0;
+    }
+
+    void insertNode(Node* node){
+        node->next=head->next;
+        head->next->prev=node;
+        node->prev=head;
+        head->next=node;
+        size++;
+    }
+
+    void removeNode(Node* node){
+        node->prev->next=node->next;
+        node->next->prev=node->prev;
+        node->next=node->prev=NULL;
+        size--;
+    }
+
+    Node* removeLRU(){
+        Node* node=tail->prev;
+        removeNode(node);
+        return node;
+    }
+};
 class LFUCache {
 public:
-    class Node{
-        public:
-        int key,val,freq;
-        Node* next;
-        Node* prev;
-        Node(int key,int val){
-            this->key=key;
-            this->val=val;
-            this->prev=this->next=NULL;
-            this->freq=1;
-        }
-    };
-    class List{
-        public:
-            Node* head=new Node(-1,-1);
-            Node* tail=new Node(-1,-1);
-            int size;
-            List(){
-                head->next=tail;
-                tail->prev=head;
-                size=0;
-            }
-            void removeLinks(Node* node){
-                node->prev->next=node->next;
-                node->next->prev=node->prev;
-                node->next=node->prev=NULL;
-                size--;
-            }
-             void addNode(Node* node){
-                node->next=head->next;
-                head->next=node;
-                node->prev=head;
-                node->next->prev=node;
-                size++;
-            }
-    };
-    unordered_map<int,Node*>mpp;
-    map<int,List*>freqMap;
-    int limit;
+    unordered_map<int,Node*>mpp1;
+    unordered_map<int,List*>mpp2;
+    int maxSize;
+    int minfreq;
     LFUCache(int capacity) {
-        limit=capacity;
+        maxSize=capacity;
+        minfreq=INT_MAX;
     }
-    void updateList(Node* node){
-        int &f=node->freq;
-        List* l=freqMap[f];
-        l->removeLinks(node);
-        if(l->size==0){
-            freqMap.erase(f);
-        }
-        f++;
-        if(freqMap.find(f)==freqMap.end())
-        freqMap[f]=new List();
-        freqMap[f]->addNode(node);
-    }
+    
     int get(int key) {
-        auto it=mpp.find(key);
-        if(it==mpp.end())
-        return -1;
-        Node* node=it->second;
-        updateList(node);
-        return node->val;
+        if(!mpp1.count(key)) return -1;
+        Node* node=mpp1[key];
+        mpp2[node->freq]->removeNode(node);
+        if(mpp2[node->freq]->size==0){
+           mpp2.erase(node->freq);
+           if(minfreq==node->freq)
+           minfreq++;
+        }
+        node->freq++;
+        if(!mpp2.count(node->freq)) mpp2[node->freq]=new List();
+        mpp2[node->freq]->insertNode(node);
+        return node->value;
     }
+    
     void put(int key, int value) {
-        auto it=mpp.find(key);
-        if(it!=mpp.end()){
-            Node* node=it->second;
-            node->val=value;
-            updateList(node);
+        Node* node;
+        if(!mpp1.count(key)){
+            if(mpp1.size()==maxSize){
+                node=mpp2[minfreq]->removeLRU();
+                if(mpp2[node->freq]->size==0){
+                    mpp2.erase(node->freq);
+                }
+                mpp1.erase(node->key);
+                delete node;
+            }
+            node=new Node(key,value);
+            minfreq=1;
+            if(!mpp2.count(minfreq)) mpp2[minfreq]=new List();
+            mpp2[minfreq]->insertNode(node);
+            mpp1[key]=node;
         }
         else{
-            if(mpp.size()==limit){
-                 List* l=freqMap.begin()->second;
-                 Node* node=l->tail->prev;
-                 l->removeLinks(node);
-                 mpp.erase(node->key);
-                 if(l->size==0)
-                 freqMap.erase(node->freq);
-                 delete node;
+            node=mpp1[key];
+            node->value=value;
+            mpp2[node->freq]->removeNode(node);
+            if(mpp2[node->freq]->size==0){
+            mpp2.erase(node->freq);
+            if(minfreq==node->freq)
+            minfreq++;
             }
-                Node* newNode=new Node(key,value);
-                mpp[key]=newNode;
-                if(freqMap.find(1)==freqMap.end())
-                freqMap[1]=new List();
-                freqMap[1]->addNode(newNode);
+            node->freq++;
+            if(!mpp2.count(node->freq)) mpp2[node->freq]=new List();
+            mpp2[node->freq]->insertNode(node);
         }
-    }
-
-
-
-
-    // unordered_map<int,list<vector<int>>::iterator>mpp;
-    // map<int,list<vector<int>>>freqMap;
-    // int limit;
-    // LFUCache(int capacity) {
-    //     limit=capacity;
-    // }
-    // void updateList(int key){
-    //     auto& vec=*(mpp[key]);
-    //     int f=vec[2];
-    //     int value=vec[1];
-    //     freqMap[f].erase(mpp[key]);
-    //     if(freqMap[f].empty()){
-    //        freqMap.erase(f);
-    //     }
-    //     f++;
-    //     freqMap[f].push_front({key,value,f});
-    //     mpp.erase(key);
-    //     mpp[key]=freqMap[f].begin();
-    // }
-    // int get(int key) {
-    //     auto it=mpp.find(key);
-    //     if(it==mpp.end())
-    //     return -1;
-    //     auto vec=*(it->second);
-    //     updateList(key);
-    //     return vec[1];
-    // }
-
-    // void put(int key, int value) {
-    //       auto it=mpp.find(key);
-    //       if(it!=mpp.end()){
-    //            auto &vec=*(it->second);
-    //            vec[1]=value;
-    //            updateList(key);
-    //       }
-    //       else{
-    //           if(mpp.size()==limit){
-    //                auto &rem_list=freqMap.begin()->second;
-    //                auto vec=rem_list.back();
-    //                int f=vec[2];
-    //                mpp.erase(vec[0]);
-    //                rem_list.pop_back();
-    //                if(rem_list.empty())
-    //                freqMap.erase(f);
-    //                freqMap[1].push_front({key,value,1});
-    //                mpp[key]=freqMap[1].begin();
-    //           }
-    //           else{
-    //             freqMap[1].push_front({key,value,1});
-    //             mpp[key]=freqMap[1].begin();
-    //           }
-    //       }
-   // }
+    }    
 };
 
 /**
