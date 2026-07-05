@@ -448,6 +448,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2196-create-binary-tree-from-descriptions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2227-sum-of-subarray-ranges](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2227-sum-of-subarray-ranges) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2244-number-of-laser-beams-in-a-bank) |
+| [2258-escape-the-spreading-fire](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2258-escape-the-spreading-fire) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2290-minimum-obstacle-removal-to-reach-corner) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2316-count-hills-and-valleys-in-an-array) |
@@ -1026,6 +1027,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2040-kth-smallest-product-of-two-sorted-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2040-kth-smallest-product-of-two-sorted-arrays) |
 | [2054-two-best-non-overlapping-events](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2054-two-best-non-overlapping-events) |
 | [2150-kth-smallest-product-of-two-sorted-arrays](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2150-kth-smallest-product-of-two-sorted-arrays) |
+| [2258-escape-the-spreading-fire](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2258-escape-the-spreading-fire) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2540-minimum-common-value](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2540-minimum-common-value) |
 | [2616-minimize-the-maximum-difference-of-pairs](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2616-minimize-the-maximum-difference-of-pairs) |
@@ -1373,6 +1375,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2108-minimize-the-difference-between-target-and-chosen-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2108-minimize-the-difference-between-target-and-chosen-elements) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2244-number-of-laser-beams-in-a-bank) |
+| [2258-escape-the-spreading-fire](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2258-escape-the-spreading-fire) |
 | [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2290-minimum-obstacle-removal-to-reach-corner) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [2625-increment-submatrices-by-one](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2625-increment-submatrices-by-one) |
@@ -2201,6 +2204,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1753-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1753-path-with-minimum-effort) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1970-last-day-where-you-can-still-cross) |
 | [2092-find-all-people-with-secret](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2092-find-all-people-with-secret) |
+| [2258-escape-the-spreading-fire](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2258-escape-the-spreading-fire) |
 | [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2290-minimum-obstacle-removal-to-reach-corner) |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
 | [2360-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2360-longest-cycle-in-a-graph) |
