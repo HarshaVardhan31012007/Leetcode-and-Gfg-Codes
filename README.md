@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
 | [0556-next-greater-element-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0556-next-greater-element-iii) |
 | [0593-valid-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0593-valid-square) |
+| [0710-random-pick-with-blacklist](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0710-random-pick-with-blacklist) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0788-rotated-digits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0788-rotated-digits) |
 | [0830-largest-triangle-area](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0830-largest-triangle-area) |
@@ -264,6 +265,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0692-top-k-frequent-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0692-top-k-frequent-words) |
 | [0705-design-hashset](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0706-design-hashmap) |
+| [0710-random-pick-with-blacklist](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0710-random-pick-with-blacklist) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0717-1-bit-and-2-bit-characters](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0717-1-bit-and-2-bit-characters) |
 | [0720-longest-word-in-dictionary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0720-longest-word-in-dictionary) |
@@ -721,6 +723,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0658-find-k-closest-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0692-top-k-frequent-words) |
+| [0710-random-pick-with-blacklist](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0710-random-pick-with-blacklist) |
 | [0720-longest-word-in-dictionary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0720-longest-word-in-dictionary) |
 | [0721-accounts-merge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0721-accounts-merge) |
 | [0726-number-of-atoms](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0726-number-of-atoms) |
@@ -857,6 +860,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0692-top-k-frequent-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0692-top-k-frequent-words) |
 | [0705-design-hashset](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0706-design-hashmap) |
+| [0710-random-pick-with-blacklist](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0710-random-pick-with-blacklist) |
 | [0720-longest-word-in-dictionary](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0720-longest-word-in-dictionary) |
 | [0721-accounts-merge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0721-accounts-merge) |
 | [0726-number-of-atoms](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0726-number-of-atoms) |
@@ -982,6 +986,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0540-single-element-in-a-sorted-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0540-single-element-in-a-sorted-array) |
 | [0611-valid-triangle-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0611-valid-triangle-number) |
 | [0658-find-k-closest-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0658-find-k-closest-elements) |
+| [0710-random-pick-with-blacklist](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0710-random-pick-with-blacklist) |
 | [0729-my-calendar-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0731-my-calendar-ii) |
 | [0732-my-calendar-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0732-my-calendar-iii) |
@@ -2743,6 +2748,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
 | [0398-random-pick-index](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0398-random-pick-index) |
 | [0528-random-pick-with-weight](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0528-random-pick-with-weight) |
+| [0710-random-pick-with-blacklist](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0710-random-pick-with-blacklist) |
 ## Reservoir Sampling
 |  |
 | ------- |
