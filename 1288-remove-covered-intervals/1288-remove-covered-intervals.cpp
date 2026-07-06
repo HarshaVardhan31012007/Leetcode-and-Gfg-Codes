@@ -9,7 +9,7 @@ public:
         int prev=0;
         int ans=0;
         for(int i=1;i<n;i++){
-            if(intervals[i][0]>=intervals[prev][0]&&intervals[prev][1]>=intervals[i][1]){
+            if(intervals[prev][1]>=intervals[i][1]){
                 ans++;
             }
             else
