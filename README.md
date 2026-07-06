@@ -222,6 +222,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0380-insert-delete-getrandom-o1](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0380-insert-delete-getrandom-o1) |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
 | [0396-rotate-function](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0396-rotate-function) |
+| [0399-evaluate-division](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0399-evaluate-division) |
 | [0403-frog-jump](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0403-frog-jump) |
 | [0407-trapping-rain-water-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0407-trapping-rain-water-ii) |
 | [0410-split-array-largest-sum](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0410-split-array-largest-sum) |
@@ -1528,6 +1529,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0345-reverse-vowels-of-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0345-reverse-vowels-of-a-string) |
 | [0387-first-unique-character-in-a-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0387-first-unique-character-in-a-string) |
 | [0394-decode-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0394-decode-string) |
+| [0399-evaluate-division](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0399-evaluate-division) |
 | [0402-remove-k-digits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0402-remove-k-digits) |
 | [0415-add-strings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0415-add-strings) |
 | [0424-longest-repeating-character-replacement](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0424-longest-repeating-character-replacement) |
@@ -2076,6 +2078,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0337-house-robber-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0337-house-robber-iii) |
 | [0341-flatten-nested-list-iterator](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0341-flatten-nested-list-iterator) |
+| [0399-evaluate-division](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0399-evaluate-division) |
 | [0417-pacific-atlantic-water-flow](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0417-pacific-atlantic-water-flow) |
 | [0437-path-sum-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0437-path-sum-iii) |
 | [0463-island-perimeter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0463-island-perimeter) |
@@ -2163,6 +2166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0279-perfect-squares](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0279-perfect-squares) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0322-coin-change](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0322-coin-change) |
+| [0399-evaluate-division](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0399-evaluate-division) |
 | [0407-trapping-rain-water-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0417-pacific-atlantic-water-flow) |
 | [0463-island-perimeter](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0463-island-perimeter) |
@@ -2598,6 +2602,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Shortest Path
 |  |
 | ------- |
+| [0399-evaluate-division](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0399-evaluate-division) |
 | [0743-network-delay-time](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0743-network-delay-time) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0803-cheapest-flights-within-k-stops) |
@@ -2704,6 +2709,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0207-course-schedule](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0210-course-schedule-ii) |
+| [0399-evaluate-division](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0547-number-of-provinces) |
 | [0743-network-delay-time](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0743-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0785-is-graph-bipartite) |
@@ -2736,6 +2742,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0128-longest-consecutive-sequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0200-number-of-islands) |
+| [0399-evaluate-division](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0547-number-of-provinces) |
 | [0721-accounts-merge](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0721-accounts-merge) |
 | [0778-swim-in-rising-water](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0778-swim-in-rising-water) |
