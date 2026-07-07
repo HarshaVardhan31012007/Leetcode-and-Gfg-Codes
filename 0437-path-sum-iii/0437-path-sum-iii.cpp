@@ -92,23 +92,45 @@
 //};
 class Solution {
 public:
-    int solve(TreeNode* root,int t,vector<int>&v){
+    // int solve(TreeNode* root,int t,vector<int>&v){
+    //     if(!root) return 0;
+    //     v.push_back(root->val);
+    //     int l=solve(root->left,t,v);
+    //     int r=solve(root->right,t,v);
+    //     long long sum=0;
+    //     int curr=0;
+    //     for(int i=v.size()-1;i>=0;i--){
+    //         sum+=v[i];
+    //         if(sum==t)
+    //         curr++;
+    //     }
+    //     v.pop_back();
+    //     return curr+l+r;
+    // }
+    // int pathSum(TreeNode* root, int targetSum) {
+    //     vector<int>v;
+    //     return solve(root,targetSum,v);
+    // }
+
+
+    int solve(TreeNode* root,int t,long long &sum,unordered_map<long long,int>&freq){
         if(!root) return 0;
-        v.push_back(root->val);
-        int l=solve(root->left,t,v);
-        int r=solve(root->right,t,v);
-        long long sum=0;
+        sum+=root->val;
+        freq[sum]++;
+        int l=solve(root->left,t,sum,freq);
+        int r=solve(root->right,t,sum,freq);
         int curr=0;
-        for(int i=v.size()-1;i>=0;i--){
-            sum+=v[i];
-            if(sum==t)
-            curr++;
-        }
-        v.pop_back();
+        freq[sum]--;
+        if(freq.count(sum-t))
+        curr=freq[sum-t];
+        if(sum==t)
+        curr++;
+        sum-=root->val;
         return curr+l+r;
     }
     int pathSum(TreeNode* root, int targetSum) {
-        vector<int>v;
-        return solve(root,targetSum,v);
+        long long sum=0;
+        unordered_map<long long,int>freq;
+        return solve(root,targetSum,sum,freq);
     }
 };
