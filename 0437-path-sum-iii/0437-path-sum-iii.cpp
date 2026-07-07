@@ -9,31 +9,42 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-class Solution {
-public:
-    int ans=0;
-    void check(TreeNode *root,int &ans,long long int k){
-       if(root==NULL){
-        return;
-       }
-    //    if(k==root->val){
-    //     ans=ans+1;
+ /**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+// class Solution {
+// public:
+    // int ans=0;
+    // void check(TreeNode *root,int &ans,long long int k){
+    //    if(root==NULL){
+    //     return;
     //    }
-       k=k-root->val;
-       if(k==0){
-          ans++;
-       }
-       check(root->left,ans,k);
-       check(root->right,ans,k);
-    }
-    int pathSum(TreeNode* root, long long int targetSum) {
-        if(root){
-        check(root,ans,targetSum);
-        pathSum(root->left,targetSum);
-        pathSum(root->right,targetSum);
-        }
-        return ans;
-    }
+    // //    if(k==root->val){
+    // //     ans=ans+1;
+    // //    }
+    //    k=k-root->val;
+    //    if(k==0){
+    //       ans++;
+    //    }
+    //    check(root->left,ans,k);
+    //    check(root->right,ans,k);
+    // }
+    // int pathSum(TreeNode* root, long long int targetSum) {
+    //     if(root){
+    //     check(root,ans,targetSum);
+    //     pathSum(root->left,targetSum);
+    //     pathSum(root->right,targetSum);
+    //     }
+    //     return ans;
+    // }
 
 
     // int solve(TreeNode* root,int t,vector<int>&v){
@@ -78,4 +89,26 @@ public:
     //     long long int sum=0;
     //     return solve(root,targetSum,visited,sum);
     // } 
+//};
+class Solution {
+public:
+    int solve(TreeNode* root,int t,vector<int>&v){
+        if(!root) return 0;
+        v.push_back(root->val);
+        int l=solve(root->left,t,v);
+        int r=solve(root->right,t,v);
+        long long sum=0;
+        int curr=0;
+        for(int i=v.size()-1;i>=0;i--){
+            sum+=v[i];
+            if(sum==t)
+            curr++;
+        }
+        v.pop_back();
+        return curr+l+r;
+    }
+    int pathSum(TreeNode* root, int targetSum) {
+        vector<int>v;
+        return solve(root,targetSum,v);
+    }
 };
