@@ -2141,6 +2141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2360-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2360-longest-cycle-in-a-graph) |
 | [2439-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2439-longest-cycle-in-a-graph) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
+| [2493-divide-nodes-into-the-maximum-number-of-groups](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2493-divide-nodes-into-the-maximum-number-of-groups) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 | [2872-maximum-number-of-k-divisible-components](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2872-maximum-number-of-k-divisible-components) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
@@ -2220,6 +2221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2360-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2360-longest-cycle-in-a-graph) |
 | [2439-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2439-longest-cycle-in-a-graph) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
+| [2493-divide-nodes-into-the-maximum-number-of-groups](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2493-divide-nodes-into-the-maximum-number-of-groups) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3286-find-a-safe-walk-through-a-grid) |
@@ -2728,6 +2730,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2290-minimum-obstacle-removal-to-reach-corner](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2290-minimum-obstacle-removal-to-reach-corner) |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
 | [2360-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2360-longest-cycle-in-a-graph) |
+| [2493-divide-nodes-into-the-maximum-number-of-groups](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2493-divide-nodes-into-the-maximum-number-of-groups) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2976-minimum-cost-to-convert-string-i) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2977-minimum-cost-to-convert-string-ii) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3286-find-a-safe-walk-through-a-grid) |
@@ -2761,6 +2764,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1631-path-with-minimum-effort](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1631-path-with-minimum-effort) |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
+| [2493-divide-nodes-into-the-maximum-number-of-groups](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2493-divide-nodes-into-the-maximum-number-of-groups) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3600-maximize-spanning-tree-stability-with-upgrades) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
