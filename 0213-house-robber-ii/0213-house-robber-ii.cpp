@@ -1,16 +1,20 @@
 class Solution {
 public:
-    int solve(vector<int>&nums,int i,int end,vector<int>&dp){
-        if(i>end) return 0;
-        if(dp[i]!=-1) return dp[i];
-        int inc=nums[i]+solve(nums,i+2,end,dp);
-        int exc=solve(nums,i+1,end,dp);
-        return dp[i]=max(inc,exc);
+    int findMax(vector<int>&nums,int s,int e){
+        int next1=0;
+        int next2=0;
+        for(int i=e;i>=s;i--){
+            int take=nums[i]+next2;
+            int not_take=next1;
+            int curr=max(take,not_take);
+            next2=next1;
+            next1=curr;
+        }
+        return next1;
     }
     int rob(vector<int>& nums) {
         int n=nums.size();
-        vector<int>dp1(n+1,-1);
-        vector<int>dp2(n+1,-1);
-        return max(nums[0]+solve(nums,2,n-2,dp1),solve(nums,1,n-1,dp2));
+        if(n==1) return nums[0];
+        return max(findMax(nums,0,n-2),findMax(nums,1,n-1));
     }
 };
