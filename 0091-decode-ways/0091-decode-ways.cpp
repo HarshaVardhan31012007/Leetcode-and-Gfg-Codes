@@ -45,24 +45,46 @@ public:
 
 
     
+    // int numDecodings(string s) {
+    //     int n=s.length();
+    //     vector<int>dp(n+1,0);
+    //     dp[n]=1;
+    //     for(int i=n-1;i>=0;i--){
+    //         int ans=0;
+    //         int num1=(s[i]-'0');
+    //         if(num1>=1&&num1<=9){
+    //             ans+=dp[i+1];
+    //         }
+
+    //         if(i+1<n){
+    //             int num2=10*(s[i]-'0')+(s[i+1]-'0');
+    //             if(num2>=10&&num2<=26)
+    //             ans+=dp[i+2];
+    //         }
+    //         dp[i]=ans;
+    //     }
+    //     return dp[0];
+    // }
+
+
     int numDecodings(string s) {
         int n=s.length();
-        vector<int>dp(n+1,0);
-        dp[n]=1;
+        int next1=1;int next2=0;
         for(int i=n-1;i>=0;i--){
             int ans=0;
             int num1=(s[i]-'0');
             if(num1>=1&&num1<=9){
-                ans+=dp[i+1];
+                ans+=next1;
             }
 
             if(i+1<n){
                 int num2=10*(s[i]-'0')+(s[i+1]-'0');
                 if(num2>=10&&num2<=26)
-                ans+=dp[i+2];
+                ans+=next2;
             }
-            dp[i]=ans;
+            next2=next1;
+            next1=ans;
         }
-        return dp[0];
+        return next1;
     }
 };
