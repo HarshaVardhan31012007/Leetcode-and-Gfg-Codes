@@ -2171,6 +2171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2493-divide-nodes-into-the-maximum-number-of-groups](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2493-divide-nodes-into-the-maximum-number-of-groups) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
+| [2685-count-the-number-of-complete-components](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2685-count-the-number-of-complete-components) |
 | [2872-maximum-number-of-k-divisible-components](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2872-maximum-number-of-k-divisible-components) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 | [3562-maximum-profit-from-trading-stocks-with-discounts](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3562-maximum-profit-from-trading-stocks-with-discounts) |
@@ -2251,6 +2252,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2493-divide-nodes-into-the-maximum-number-of-groups](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2493-divide-nodes-into-the-maximum-number-of-groups) |
 | [2662-check-knight-tour-configuration](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2662-check-knight-tour-configuration) |
+| [2685-count-the-number-of-complete-components](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2685-count-the-number-of-complete-components) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3607-power-grid-maintenance](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3607-power-grid-maintenance) |
@@ -2762,6 +2764,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
 | [2360-longest-cycle-in-a-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2360-longest-cycle-in-a-graph) |
 | [2493-divide-nodes-into-the-maximum-number-of-groups](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2493-divide-nodes-into-the-maximum-number-of-groups) |
+| [2685-count-the-number-of-complete-components](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2685-count-the-number-of-complete-components) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2976-minimum-cost-to-convert-string-i) |
 | [2977-minimum-cost-to-convert-string-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2977-minimum-cost-to-convert-string-ii) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3286-find-a-safe-walk-through-a-grid) |
@@ -2798,6 +2801,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
 | [2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2316-count-unreachable-pairs-of-nodes-in-an-undirected-graph) |
 | [2493-divide-nodes-into-the-maximum-number-of-groups](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2493-divide-nodes-into-the-maximum-number-of-groups) |
+| [2685-count-the-number-of-complete-components](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2685-count-the-number-of-complete-components) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3532-path-existence-queries-in-a-graph-i) |
 | [3600-maximize-spanning-tree-stability-with-upgrades](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/3600-maximize-spanning-tree-stability-with-upgrades) |
