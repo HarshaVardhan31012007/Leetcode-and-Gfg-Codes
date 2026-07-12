@@ -71,37 +71,81 @@
 
 
 
+// class Solution {
+// public:
+//     void dfs(int node,vector<vector<int>>&adjList,vector<int>&visited,int &v,int &e){
+//         visited[node]=1;
+//         v++;
+//         e+=adjList[node].size();
+//         for(auto &adj:adjList[node]){
+//             if(!visited[adj])
+//             dfs(adj,adjList,visited,v,e);
+//         }
+//     }
+//     int countCompleteComponents(int n, vector<vector<int>>& edges) {
+//         vector<set<int>>vertex(n);
+//         for(auto &each:edges){
+//             vertex[each[0]].insert(each[1]);
+//             vertex[each[1]].insert(each[0]);
+//         }
+//         int ans=0;
+//         unordered_map<string,int>mpp;
+//         for(int i=0;i<n;i++){
+//            vertex[i].insert(i);
+//            string temp="";
+//            for(auto &each:vertex[i]){
+//               temp+=to_string(each)+",";
+//            }
+//            mpp[temp]++;
+//         }
+//         for(auto &each:mpp){
+//             int size=count(each.first.begin(),each.first.end(),',');
+//             if(size==each.second)
+//             ans++;
+//         }
+//         return ans;
+//     }
+
+
+
 class Solution {
 public:
-    void dfs(int node,vector<vector<int>>&adjList,vector<int>&visited,int &v,int &e){
-        visited[node]=1;
-        v++;
-        e+=adjList[node].size();
-        for(auto &adj:adjList[node]){
-            if(!visited[adj])
-            dfs(adj,adjList,visited,v,e);
+    int find(int node,vector<int>&parent){
+        if(parent[node]==node) return node;
+        return parent[node]=find(parent[node],parent);
+    }
+    void Union(int x,int y,vector<int>&parent,vector<int>&size){
+        int node1=find(x,parent);
+        int node2=find(y,parent);
+        if(node1==node2) return;
+        if(size[node1]<size[node2]){
+            parent[node1]=node2;
+            size[node2]+=size[node1];
+        }
+        else if(size[node1]>=size[node2]){
+            parent[node2]=node1;
+            size[node1]+=size[node2];
         }
     }
     int countCompleteComponents(int n, vector<vector<int>>& edges) {
-        vector<set<int>>vertex(n);
-        for(auto &each:edges){
-            vertex[each[0]].insert(each[1]);
-            vertex[each[1]].insert(each[0]);
-        }
+        vector<int>size(n,1);
+        vector<int>parent;
+        for(int i=0;i<n;i++) 
+        parent.push_back(i);
         int ans=0;
-        unordered_map<string,int>mpp;
-        for(int i=0;i<n;i++){
-           vertex[i].insert(i);
-           string temp="";
-           for(auto &each:vertex[i]){
-              temp+=to_string(each)+",";
-           }
-           mpp[temp]++;
+        for(auto &each:edges){
+            Union(each[0],each[1],parent,size);
         }
-        for(auto &each:mpp){
-            int size=count(each.first.begin(),each.first.end(),',');
-            if(size==each.second)
-            ans++;
+        unordered_map<int,int>mpp;
+        for(auto &each:edges){
+            mpp[find(each[0],parent)]++;
+        }
+        for(int i=0;i<n;i++){
+            if(find(i,parent)==i){
+                int v=size[i];
+                int e=mpp[i];
+                if(v*(v-1)/2==e) ans++;
+            }
         }
         return ans;
     }
