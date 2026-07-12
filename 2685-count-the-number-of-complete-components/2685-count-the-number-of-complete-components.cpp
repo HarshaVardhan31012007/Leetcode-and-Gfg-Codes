@@ -37,6 +37,40 @@
 
 
 
+// class Solution {
+// public:
+//     void dfs(int node,vector<vector<int>>&adjList,vector<int>&visited,int &v,int &e){
+//         visited[node]=1;
+//         v++;
+//         e+=adjList[node].size();
+//         for(auto &adj:adjList[node]){
+//             if(!visited[adj])
+//             dfs(adj,adjList,visited,v,e);
+//         }
+//     }
+//     int countCompleteComponents(int n, vector<vector<int>>& edges) {
+//         vector<vector<int>>adjList(n);
+//         for(auto &each:edges){
+//             adjList[each[0]].push_back(each[1]);
+//             adjList[each[1]].push_back(each[0]);
+//         }
+//         int ans=0;
+//         vector<int>visited(n,0);
+//         for(int i=0;i<n;i++){
+//             if(!visited[i]){
+//                 int v=0;
+//                 int e=0;
+//                 dfs(i,adjList,visited,v,e);
+//                 if((v*(v-1))==e)
+//                 ans++;
+//             }
+//         }
+//         return ans;
+//     }
+// };
+
+
+
 class Solution {
 public:
     void dfs(int node,vector<vector<int>>&adjList,vector<int>&visited,int &v,int &e){
@@ -49,21 +83,25 @@ public:
         }
     }
     int countCompleteComponents(int n, vector<vector<int>>& edges) {
-        vector<vector<int>>adjList(n);
+        vector<set<int>>vertex(n);
         for(auto &each:edges){
-            adjList[each[0]].push_back(each[1]);
-            adjList[each[1]].push_back(each[0]);
+            vertex[each[0]].insert(each[1]);
+            vertex[each[1]].insert(each[0]);
         }
         int ans=0;
-        vector<int>visited(n,0);
+        unordered_map<string,int>mpp;
         for(int i=0;i<n;i++){
-            if(!visited[i]){
-                int v=0;
-                int e=0;
-                dfs(i,adjList,visited,v,e);
-                if((v*(v-1))==e)
-                ans++;
-            }
+           vertex[i].insert(i);
+           string temp="";
+           for(auto &each:vertex[i]){
+              temp+=to_string(each)+",";
+           }
+           mpp[temp]++;
+        }
+        for(auto &each:mpp){
+            int size=count(each.first.begin(),each.first.end(),',');
+            if(size==each.second)
+            ans++;
         }
         return ans;
     }
