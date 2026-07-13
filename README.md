@@ -1816,6 +1816,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0204-count-primes) |
+| [1291-sequential-digits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1291-sequential-digits) |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [1925-count-square-sum-triples](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1925-count-square-sum-triples) |
 | [2171-removing-minimum-number-of-magic-beans](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2171-removing-minimum-number-of-magic-beans) |
