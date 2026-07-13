@@ -108,42 +108,86 @@
 
 
 
+// class Solution {
+// public:
+//     int find(int node,vector<int>&parent){
+//         if(parent[node]==node) return node;
+//         return parent[node]=find(parent[node],parent);
+//     }
+//     void Union(int x,int y,vector<int>&parent,vector<int>&size){
+//         int node1=find(x,parent);
+//         int node2=find(y,parent);
+//         if(node1==node2) return;
+//         if(size[node1]<size[node2]){
+//             parent[node1]=node2;
+//             size[node2]+=size[node1];
+//         }
+//         else if(size[node1]>=size[node2]){
+//             parent[node2]=node1;
+//             size[node1]+=size[node2];
+//         }
+//     }
+//     int countCompleteComponents(int n, vector<vector<int>>& edges) {
+//         vector<int>size(n,1);
+//         vector<int>parent;
+//         for(int i=0;i<n;i++) 
+//         parent.push_back(i);
+//         int ans=0;
+//         for(auto &each:edges){
+//             Union(each[0],each[1],parent,size);
+//         }
+//         unordered_map<int,int>mpp;
+//         for(auto &each:edges){
+//             mpp[find(each[0],parent)]++;
+//         }
+//         for(int i=0;i<n;i++){
+//             if(find(i,parent)==i){
+//                 int v=size[i];
+//                 int e=mpp[i];
+//                 if(v*(v-1)/2==e) ans++;
+//             }
+//         }
+//         return ans;
+//     }
+
+
+
 class Solution {
 public:
     int find(int node,vector<int>&parent){
         if(parent[node]==node) return node;
         return parent[node]=find(parent[node],parent);
     }
-    void Union(int x,int y,vector<int>&parent,vector<int>&size){
+    void Union(int x,int y,vector<int>&parent,vector<int>&size,vector<int>&nedges){
         int node1=find(x,parent);
         int node2=find(y,parent);
+        nedges[node1]++;
         if(node1==node2) return;
         if(size[node1]<size[node2]){
             parent[node1]=node2;
             size[node2]+=size[node1];
+            nedges[node2]+=nedges[node1];
         }
         else if(size[node1]>=size[node2]){
             parent[node2]=node1;
             size[node1]+=size[node2];
+            nedges[node1]+=nedges[node2];
         }
     }
     int countCompleteComponents(int n, vector<vector<int>>& edges) {
         vector<int>size(n,1);
+        vector<int>nedges(n,0);
         vector<int>parent;
         for(int i=0;i<n;i++) 
         parent.push_back(i);
         int ans=0;
         for(auto &each:edges){
-            Union(each[0],each[1],parent,size);
-        }
-        unordered_map<int,int>mpp;
-        for(auto &each:edges){
-            mpp[find(each[0],parent)]++;
+            Union(each[0],each[1],parent,size,nedges);
         }
         for(int i=0;i<n;i++){
             if(find(i,parent)==i){
                 int v=size[i];
-                int e=mpp[i];
+                int e=nedges[i];
                 if(v*(v-1)/2==e) ans++;
             }
         }
