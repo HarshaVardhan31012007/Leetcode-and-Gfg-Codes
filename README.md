@@ -1607,6 +1607,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1023-camelcase-matching](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1023-camelcase-matching) |
 | [1045-check-if-word-is-valid-after-substitutions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1045-check-if-word-is-valid-after-substitutions) |
 | [1048-longest-string-chain](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1048-longest-string-chain) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1092-shortest-common-supersequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1092-shortest-common-supersequence) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1143-longest-common-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1143-longest-common-subsequence) |
@@ -1716,6 +1717,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1045-check-if-word-is-valid-after-substitutions](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1045-check-if-word-is-valid-after-substitutions) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1072-next-greater-node-in-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1072-next-greater-node-in-linked-list) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1130-minimum-cost-tree-from-leaf-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1130-minimum-cost-tree-from-leaf-values) |
 | [1209-remove-all-adjacent-duplicates-in-string-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1209-remove-all-adjacent-duplicates-in-string-ii) |
@@ -1768,6 +1770,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1018-largest-perimeter-triangle](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1018-largest-perimeter-triangle) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1130-minimum-cost-tree-from-leaf-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1130-minimum-cost-tree-from-leaf-values) |
 | [1228-minimum-cost-tree-from-leaf-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1228-minimum-cost-tree-from-leaf-values) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1262-greatest-sum-divisible-by-three) |
@@ -2303,6 +2306,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0943-sum-of-subarray-minimums](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0943-sum-of-subarray-minimums) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [1072-next-greater-node-in-linked-list](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1072-next-greater-node-in-linked-list) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1130-minimum-cost-tree-from-leaf-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1130-minimum-cost-tree-from-leaf-values) |
 | [1228-minimum-cost-tree-from-leaf-values](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1228-minimum-cost-tree-from-leaf-values) |
 | [1902-car-fleet-ii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1902-car-fleet-ii) |
