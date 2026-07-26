@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0539-minimum-time-difference) |
 | [0556-next-greater-element-iii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0556-next-greater-element-iii) |
 | [0593-valid-square](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0593-valid-square) |
+| [0628-maximum-product-of-three-numbers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0628-maximum-product-of-three-numbers) |
 | [0710-random-pick-with-blacklist](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0710-random-pick-with-blacklist) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0788-rotated-digits](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0788-rotated-digits) |
@@ -264,6 +265,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0611-valid-triangle-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0611-valid-triangle-number) |
 | [0621-task-scheduler](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0621-task-scheduler) |
 | [0622-design-circular-queue](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0622-design-circular-queue) |
+| [0628-maximum-product-of-three-numbers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0628-maximum-product-of-three-numbers) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0643-maximum-average-subarray-i](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0643-maximum-average-subarray-i) |
 | [0648-replace-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0648-replace-words) |
@@ -745,6 +747,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0594-longest-harmonious-subsequence](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0594-longest-harmonious-subsequence) |
 | [0611-valid-triangle-number](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0611-valid-triangle-number) |
 | [0621-task-scheduler](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0621-task-scheduler) |
+| [0628-maximum-product-of-three-numbers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0628-maximum-product-of-three-numbers) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0658-find-k-closest-elements](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/0692-top-k-frequent-words) |
