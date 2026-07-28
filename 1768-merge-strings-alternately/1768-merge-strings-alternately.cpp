@@ -4,14 +4,13 @@ public:
         int n1=word1.length();
         int n2=word2.length();
         int i=0;
-        int j=0;
         string ans="";
-        while(i<n1||j<n2){
+        while(i<max(n1,n2)){
            if(i<n1)
            ans+=word1[i];
-           if(j<n2)
-           ans+=word2[j];
-           i++;j++;
+           if(i<n2)
+           ans+=word2[i];
+           i++;
         }
         // ans+=word1.substr(i);
         // ans+=word2.substr(j);
