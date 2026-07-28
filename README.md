@@ -695,6 +695,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1023-camelcase-matching](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1023-camelcase-matching) |
 | [1048-longest-string-chain](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1048-longest-string-chain) |
 | [1537-get-the-maximum-score](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1537-get-the-maximum-score) |
+| [1768-merge-strings-alternately](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1768-merge-strings-alternately) |
 | [1861-rotating-the-box](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1861-rotating-the-box) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [2035-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/2035-partition-array-into-two-arrays-to-minimize-sum-difference) |
@@ -1647,6 +1648,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1653-minimum-deletions-to-make-string-balanced](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1653-minimum-deletions-to-make-string-balanced) |
 | [1689-partitioning-into-minimum-number-of-deci-binary-numbers](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1689-partitioning-into-minimum-number-of-deci-binary-numbers) |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
+| [1768-merge-strings-alternately](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1768-merge-strings-alternately) |
 | [1781-sum-of-beauty-of-all-substrings](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1781-sum-of-beauty-of-all-substrings) |
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1784-check-if-binary-string-has-at-most-one-segment-of-ones) |
 | [1871-jump-game-vii](https://github.com/HarshaVardhan31012007/Leetcode-and-Gfg-Codes/tree/master/1871-jump-game-vii) |
