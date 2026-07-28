@@ -27,9 +27,7 @@ public:
         }
         vector<vector<int>>temp;
         for(auto &each:ans){
-            vector<int>temp1;
-            temp1.insert(temp1.end(),each.begin(),each.end());
-            temp.push_back(temp1);
+            temp.push_back(vector<int>(each.begin(),each.end()));
         }
         return temp;
     }
