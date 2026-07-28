@@ -124,24 +124,75 @@
 
 class Solution {
 public:
-    void dfs(int ancestor,vector<vector<int>>&adj,int node,vector<vector<int>>&ans,vector<int>&visited){
+    // void dfs(int ancestor,vector<vector<int>>&adj,int node,vector<vector<int>>&ans,vector<int>&visited){
+    //     visited[node]=true;
+    //     for(auto &each:adj[node]){
+    //         if(!visited[each]){
+    //            dfs(ancestor,adj,each,ans,visited);
+    //            ans[each].push_back(ancestor);
+    //         }
+    //     }
+    // }
+    // vector<vector<int>> getAncestors(int n, vector<vector<int>>& edges) {
+    //     vector<vector<int>>adj(n);
+    //     for(auto &each:edges){
+    //         adj[each[0]].push_back(each[1]);
+    //     }
+    //     vector<vector<int>>ans(n);
+    //     for(int i=0;i<n;i++){
+    //         vector<int>visited(n,false);
+    //         dfs(i,adj,i,ans,visited);
+    //     }
+    //     return ans;
+    // }
+
+
+
+    // void dfs(int ancestor,vector<vector<int>>&adj,int node,vector<vector<int>>&ans,vector<int>&visited){
+    //     visited[node]=true;
+    //     for(auto &each:adj[node]){
+    //         if(!visited[each]){
+    //            dfs(ancestor,adj,each,ans,visited);
+    //            ans[each].push_back(ancestor);
+    //         }
+    //     }
+    // }
+    // vector<vector<int>> getAncestors(int n, vector<vector<int>>& edges) {
+    //     vector<vector<int>>adj(n);
+    //     for(auto &each:edges){
+    //         adj[each[0]].push_back(each[1]);
+    //     }
+    //     vector<vector<int>>ans(n);
+    //     for(int i=0;i<n;i++){
+    //         vector<int>visited(n,false);
+    //         dfs(i,adj,i,ans,visited);
+    //     }
+    //     return ans;
+    // }
+
+
+
+     void dfs(vector<vector<int>>&adj,int node,vector<int>&visited){
         visited[node]=true;
         for(auto &each:adj[node]){
             if(!visited[each]){
-               dfs(ancestor,adj,each,ans,visited);
-               ans[each].push_back(ancestor);
+               dfs(adj,each,visited);
             }
         }
     }
     vector<vector<int>> getAncestors(int n, vector<vector<int>>& edges) {
         vector<vector<int>>adj(n);
         for(auto &each:edges){
-            adj[each[0]].push_back(each[1]);
+            adj[each[1]].push_back(each[0]);
         }
         vector<vector<int>>ans(n);
         for(int i=0;i<n;i++){
             vector<int>visited(n,false);
-            dfs(i,adj,i,ans,visited);
+            dfs(adj,i,visited);
+            for(int j=0;j<n;j++){
+                if(i!=j&&visited[j])
+                ans[i].push_back(j);
+            }
         }
         return ans;
     }
