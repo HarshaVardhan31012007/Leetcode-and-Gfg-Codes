@@ -1,58 +1,23 @@
 class Solution {
 public:
-    bool dfs(int src,int color,vector<vector<int>>&graph,vector<int>&visited){
-        visited[src]=color;
-        bool ans=true;
-        for(auto &each:graph[src]){
-            if(visited[each]==-1)
-            ans=ans&&dfs(each,!color,graph,visited);
-            else{
-                if(visited[each]==color) return false;
+    bool possible(int node,int currColor,vector<vector<int>>&graph,vector<int>&color){
+        color[node]=currColor;
+        for(auto &adjNode:graph[node]){
+            if(color[adjNode]==color[node]) return false;
+            if(color[adjNode]==-1){
+                if(!possible(adjNode,!currColor,graph,color)) return false;
             }
         }
-        return ans;
+        return true;
     }
     bool isBipartite(vector<vector<int>>& graph) {
         int n=graph.size();
-        int ans=true;
-        vector<int>visited(n,-1);
+        vector<int>color(n,-1);
         for(int i=0;i<n;i++){
-            if(visited[i]==-1){
-               ans=ans&&dfs(i,0,graph,visited);
+            if(color[i]==-1){
+                if(!possible(i,0,graph,color)) return false;
             }
         }
-        return ans;
+        return true;
     }
-
-
-    // bool bfs(int src,vector<vector<int>>& graph,vector<int>&visited,int color){
-    //     queue<int>q;
-    //     q.push(src);
-    //     visited[src]=color;
-    //     while(!q.empty()){
-    //         auto front=q.front();
-    //         q.pop();
-    //         for(auto &each:graph[front]){
-    //             if(visited[each]==-1){
-    //                 visited[each]=!visited[front];
-    //                 q.push(each);
-    //             }
-    //             else{
-    //                 if(visited[each]==visited[front]) return false;
-    //             }
-    //         }
-    //     }
-    //     return true;
-    // }
-    // bool isBipartite(vector<vector<int>>& graph) {
-    //     int n=graph.size();
-    //     int ans=true;
-    //     vector<int>visited(n,-1);
-    //     for(int i=0;i<n;i++){
-    //         if(visited[i]==-1){
-    //            ans=ans&&bfs(i,graph,visited,0);
-    //         }
-    //     }
-    //     return ans;
-    // }
 };
