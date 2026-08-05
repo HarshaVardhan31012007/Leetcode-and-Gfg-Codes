@@ -62,16 +62,19 @@ public:
             }
         }
         bool flag=true;
+        vector<int>ans;
         for(int i=0;i<n;i++){
             if(visited[i]&&indegree[i]>0){
                 flag=false;
                 break;
             }
-        }
-        vector<int>ans;
-        for(int i=0;i<n;i++){
-            if(visited[i]&&flag) continue;
+            if(!visited[i])
             ans.push_back(i);
+        }
+        if(!flag){
+            vector<int>v;
+            for(int i=0;i<n;i++) v.push_back(i);
+            return v;
         }
         return ans;
     }
