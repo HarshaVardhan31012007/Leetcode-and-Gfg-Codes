@@ -1,10 +1,10 @@
 class Solution {
 public:
-    int find(int n){
+    int find(int n,int &t){
         int p1=1;
         while(n){
             p1=p1*(n%10);
-            if(p1==0) return 0;
+            if(p1%t==0) return 0;
             n=n/10;
         }
         return p1;
@@ -14,7 +14,7 @@ public:
         int add=10-last;
         for(int i=0;i<=add;i++){
             int newn=n+i;
-            int p=find(newn);
+            int p=find(newn,t);
             if(p%t==0){
                 return newn;
             }
