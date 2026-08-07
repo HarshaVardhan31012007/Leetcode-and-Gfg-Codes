@@ -4,6 +4,7 @@ public:
         int p1=1;
         while(n){
             p1=p1*(n%10);
+            if(p1==0) return 0;
             n=n/10;
         }
         return p1;
